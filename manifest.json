@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "v12.2a",
-  "packageFolderName": "Tournament Mod V12.2a",
-  "createdUtc": "2026-08-10T18:41:47.1787949+00:00",
+  "packageVersion": "v12.3",
+  "packageFolderName": "Nova",
+  "createdUtc": "2026-08-15T14:32:26.0576134+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -38,24 +38,29 @@
           "hash": "95e1190ed5f82e79c3ab2e6ff3623262d929703b1f8a705f1b0714ecc8bbd983"
         },
         {
-          "path": "Art/citizenicons128.dds",
-          "size": 87508,
-          "hash": "a2dedc4747d41d869ccd8c9bacd8753f4063aeb724dcf3bc30af95eeefb9cf8c"
+          "path": "Art/CitizenIcons1024.dds",
+          "size": 4194432,
+          "hash": "26a61bf10c298f77175df6a76a9ce759bbadb5ece667d87f20fb4bd5df0fa208"
         },
         {
-          "path": "Art/citizenicons180.dds",
-          "size": 172768,
-          "hash": "8e2c51662fcedafc3f8c3fa25679c7fab09714d93b85092f02fd85d52476d325"
+          "path": "Art/CitizenIcons128.dds",
+          "size": 65664,
+          "hash": "e1f8e2316851f057b13229cc607eb5acc36b7333386ccd212fe3a58339b6f5bf"
         },
         {
-          "path": "Art/citizenicons256.dds",
-          "size": 349652,
-          "hash": "39f16e7cd9984516f698e416f78bed66fd3c731a68102c4ae74e263847bea6a8"
+          "path": "Art/CitizenIcons180.dds",
+          "size": 129728,
+          "hash": "bd28b3b2e401240012a72eb6b466f6ddc118542d67196fc8a15d35788c81fbce"
         },
         {
-          "path": "Art/citizenicons512.dds",
-          "size": 1398228,
-          "hash": "e06d24d8bfb458612fe8846adaccb66b9ef08c7b51506b7b5912ef432e18b0e1"
+          "path": "Art/CitizenIcons256.dds",
+          "size": 262272,
+          "hash": "7e32c4f190fdd69b147025fce76f4d8394f67680f20effb7cef7b8fcb9c440a5"
+        },
+        {
+          "path": "Art/CitizenIcons512.dds",
+          "size": 1048704,
+          "hash": "a106411b9b3e98c0dfffb607660cdf740877607a3096487ef8ddff544dabeaf0"
         },
         {
           "path": "Art/CityStateManufactory.dds",
@@ -330,7 +335,7 @@
         {
           "path": "Art/fonticons_tm_newlux.dds",
           "size": 262272,
-          "hash": "8774348cc426856a2469609c8b3761c697522410f9b6aebe1625ef07c4b9b332"
+          "hash": "a518a56411dd01c966470784ec73a5fc335b4e6054c120efb8e607dea4e3b8ca"
         },
         {
           "path": "Art/FontIcons_TM_NewLux.ggxml",
@@ -340,12 +345,22 @@
         {
           "path": "Art/fonticons_tm_newlux2.dds",
           "size": 262272,
-          "hash": "533c77bf20e45a18710aab61b8e690c1d57c8abc1ea900c8a49a77cc25a7b35c"
+          "hash": "49adb208ffe41442a606dce2de1b1ec65ecdc7831fa5c6a08323f51c04fbe700"
         },
         {
           "path": "Art/FontIcons_TM_NewLux2.ggxml",
           "size": 1489,
           "hash": "cf1ac847eb596070ec04116f598af8f5f7bd79cefb00bbf0a952a383c7a869f3"
+        },
+        {
+          "path": "Art/fonticons_tm_newlux3.dds",
+          "size": 262272,
+          "hash": "30f71cd18b2620a62814979fa1a176b6dcefb6d06b8c03cd13471d3f5fb8ff1d"
+        },
+        {
+          "path": "Art/FontIcons_TM_NewLux3.ggxml",
+          "size": 768,
+          "hash": "d325c22cdbc854915baf7c4b07f28109a29b93f9175d2b82a2dee421137cd94c"
         },
         {
           "path": "Art/ideology_autocracy_glow_80.dds",
@@ -1069,13 +1084,18 @@
         },
         {
           "path": "Art/Lux3D/Rice/rice_decal.fxsxml",
-          "size": 824,
-          "hash": "c017a173035cb5ef8322a33f73b73ba4c32e9d91c2ddfd7c24b5c67040a448e2"
+          "size": 822,
+          "hash": "699466af618f14a84517087f6bccac76513ca27bbb975c169f329407a12d2a61"
         },
         {
           "path": "Art/Lux3D/Rice/rice_decal.gr2",
           "size": 110172,
           "hash": "ed7ddbc13efefa2e837f16ced7383c133d8af87cb3e2ec878737075dc0c10312"
+        },
+        {
+          "path": "Art/Lux3D/Rice/rice_decal_d.dds",
+          "size": 65664,
+          "hash": "21f1a2513008c8825b8d443db7254e23f358fba98cedc6ad048e584aa5b91b51"
         },
         {
           "path": "Art/Lux3D/Rice/rice_wisps_diff.dds",
@@ -1628,6 +1648,26 @@
           "hash": "d93b13bf3b93fe5d22a87c2146105c7eb1ce2a416988aa5e5064b9a681e516ce"
         },
         {
+          "path": "Art/Lux3D/TM/tm_bastion.fxsxml",
+          "size": 483,
+          "hash": "3b3823852798f303459a2362a5cdf1821890bf4c447255b8ffde69c1483b3bd7"
+        },
+        {
+          "path": "Art/Lux3D/TM/tm_bastion.gr2",
+          "size": 77104,
+          "hash": "9a236eaef99633eb1ff8c864d9f8cb8b54a8dfbec95648e78d285a99f4273337"
+        },
+        {
+          "path": "Art/Lux3D/TM/tm_bastion_diff.dds",
+          "size": 1398228,
+          "hash": "2869549914b5a29e82785142433329257b19b25b52cca7a39d47826568473345"
+        },
+        {
+          "path": "Art/Lux3D/TM/tm_bastion_sref.dds",
+          "size": 1398228,
+          "hash": "83821174e77f2c4c3c65378b6eb6e0c7c10b5d08e833a11c4ca0d2b72ac9f4d4"
+        },
+        {
           "path": "Art/Lux3D/TM/tm_beer.fxsxml",
           "size": 231,
           "hash": "5a4a8c19be5c894a9d7cedee37345562bcd431fec4eafdccd251292435b3f043"
@@ -1766,11 +1806,6 @@
           "path": "Art/Lux3D/TM/tm_cognac_plantation.gr2",
           "size": 26220,
           "hash": "a734e2b91bfbb5efa489c192a011f82a674f833cc841ab13856a0a21fc20edb1"
-        },
-        {
-          "path": "Art/Lux3D/TM/tm_cognac_plantation.nb2",
-          "size": 190334,
-          "hash": "85533760897b6e1e2cb583144d2183d3d44d23eb43d489f712774d069170e376"
         },
         {
           "path": "Art/Lux3D/TM/tm_cognac_plantation_diff.dds",
@@ -1978,11 +2013,6 @@
           "hash": "b826ea28c01518f8ffda8684773a68f064f233581261c230f325e3f462e58cbb"
         },
         {
-          "path": "Art/Lux3D/TM/tm_rice_plantation.nb2",
-          "size": 139969,
-          "hash": "4257d149606761f75264bf30ef2611438d1b60ef9f9b3567da76298e2f46defb"
-        },
-        {
           "path": "Art/Lux3D/TM/tm_rice_plantation_diff.dds",
           "size": 1398228,
           "hash": "7c90c68d0b2cdb80fc7ea83f09662109d09c61a660525d18d7170539939a6a72"
@@ -2135,7 +2165,7 @@
         {
           "path": "Art/SocialPoliciesPleiad.dds",
           "size": 224384,
-          "hash": "0d25b0046ca0a097c5fd129745ad0bd4f80107adb4d32a1860352c1111bd13bd"
+          "hash": "a77bd5dcaaaf66c4c691b72127799d8327bf2dca59431fbccbddc1c0ef8ef976"
         },
         {
           "path": "Art/SocialPoliciesWayfaring.dds",
@@ -2415,17 +2445,52 @@
         {
           "path": "Art/TM_PleiadPolicyAtlas256.dds",
           "size": 2097280,
-          "hash": "19fc002db9496a4ed692bd6673fc4aa8aa907ca30b0b0ef7e85cae40846c3359"
+          "hash": "4b05f167afe0ff581c43793d8407b72f89e0ce3cf7b4405cee0dac942089e527"
         },
         {
           "path": "Art/TM_PleiadPolicyAtlas64.dds",
           "size": 131200,
-          "hash": "a6791dc4beb2117d608530894e389b887c025848d524a4775bf3a63c704d5781"
+          "hash": "fde01a2e41b0536c4c41ac89e147e4d933f9475554040f6f58ea6e0ef99bdb27"
         },
         {
           "path": "Art/TM_PleiadPolicyAtlasA64.dds",
           "size": 131200,
-          "hash": "237a9b3b39ef315b89e98a9d5ff5530bf0b844935dc7e9810e90051275be9056"
+          "hash": "b451513ebe4de8694dfcbd9617044585f938de756bf3e9751c42e8c9e988d6ba"
+        },
+        {
+          "path": "Art/TM_QuartermasterActionAtlas45.dds",
+          "size": 16328,
+          "hash": "520905d6052e13e0a95a85d14368dd12a399073b6868a0f9a50a0dc822531d30"
+        },
+        {
+          "path": "Art/TM_QuartermasterActionAtlas64.dds",
+          "size": 32896,
+          "hash": "852c33b91a4798391912fee0d10f79ddfdaeeca2f2f4148bc1ed47098e7b8613"
+        },
+        {
+          "path": "Art/TM_QuartermasterAtlas128.dds",
+          "size": 65664,
+          "hash": "409a70e8af3ced3cbf6913f145af33017e569f126485bd46924a52723033fe3c"
+        },
+        {
+          "path": "Art/TM_QuartermasterAtlas256.dds",
+          "size": 262272,
+          "hash": "ce1f77f4ff514e849c30db7d51bebf496b9e509f5be8db51c75fa30e49000c04"
+        },
+        {
+          "path": "Art/TM_QuartermasterAtlas45.dds",
+          "size": 8228,
+          "hash": "5e3e37bed47cdc2b945f9ff7111f11724b55c05327cc9761fdf8d3a333ffba3e"
+        },
+        {
+          "path": "Art/TM_QuartermasterAtlas64.dds",
+          "size": 16512,
+          "hash": "4643bee188cda8dbe79a6cb0a8c8f950289616eea594508cce8ebe79d6befc49"
+        },
+        {
+          "path": "Art/TM_QuartermasterAtlas80.dds",
+          "size": 25728,
+          "hash": "bcf37265c65a08fa29847ee712daad932da0c53a33518a97918bd053a7c26c73"
         },
         {
           "path": "Art/TM_ReligionBuildingAtlas128.dds",
@@ -2455,27 +2520,27 @@
         {
           "path": "Art/TM_UniqueBuildings2Atlas128.dds",
           "size": 262272,
-          "hash": "9878a923fc6ee8b5c3b8e8d224c73b168614832c91e67f46768e2856fc35390c"
+          "hash": "4bc7a2659b5d39f2749531dac2fab885ccf64ffee16debabda29d00a04b16476"
         },
         {
           "path": "Art/TM_UniqueBuildings2Atlas256.dds",
           "size": 1048704,
-          "hash": "7b75c0b79e240c935404f8320b0615a517503d833e13d816dd5f6c3af823472b"
+          "hash": "a9a98b1c1fc5182f4853e7bd833f3447770527a8a0ab8c944d83f902ed707a90"
         },
         {
           "path": "Art/TM_UniqueBuildings2Atlas45.dds",
           "size": 32528,
-          "hash": "40cfa5885907081229ed35c69f2948aa7a8fb0e65169737ec720787c6468fc6d"
+          "hash": "8da14c680c357b7bbb17707b0b62f4499771da0879cfd1d0e36f1bb4f76db02e"
         },
         {
           "path": "Art/TM_UniqueBuildings2Atlas64.dds",
           "size": 65664,
-          "hash": "5c53d20c55c0193a19b4e57cbcda9c87f0400d1436be51e84cef5700c55680fe"
+          "hash": "36f5ff4dd680c8ce43a80a4f029f5dfaa9db5bf9246f9bd3c27a5d807e094e3f"
         },
         {
           "path": "Art/TM_UniqueBuildings2Atlas80.dds",
           "size": 102528,
-          "hash": "363fb2c2eb212a43bb69e216bde44241d73a479aa24f6e7c8408dff749472759"
+          "hash": "c9e98d5d5f2ca31d3ecac1e18f48091c552982425b8927ca2ab5267234902b79"
         },
         {
           "path": "Art/TM_UniqueBuildingsAtlas128.dds",
@@ -2501,6 +2566,36 @@
           "path": "Art/TM_UniqueBuildingsAtlas80.dds",
           "size": 204928,
           "hash": "d69ed3406a3f167cb45ca2ac76ca447ab49769be3363ae1150b1a85f092539a2"
+        },
+        {
+          "path": "Art/TM_UniqueUnitsAtlas128.dds",
+          "size": 131200,
+          "hash": "fa7115c5b1711081bad1ec4b9f3c572a6145f9b3f48231bbd85b1c04fe2cbe1f"
+        },
+        {
+          "path": "Art/TM_UniqueUnitsAtlas256.dds",
+          "size": 524416,
+          "hash": "d76f91fd148d9f356ff6b37386a52ae32bb35ca1bc1a874a2eaaf561662182e6"
+        },
+        {
+          "path": "Art/TM_UniqueUnitsAtlas45.dds",
+          "size": 16328,
+          "hash": "2ef763242f3246dfe94e3f1cc2f7c00e4066dde82ab745829da38d02613e2ca0"
+        },
+        {
+          "path": "Art/TM_UniqueUnitsAtlas64.dds",
+          "size": 32896,
+          "hash": "d59132a3fe118282b2662488f1931a9678a2416044ce998c9730f1462485257d"
+        },
+        {
+          "path": "Art/TM_UniqueUnitsAtlas80.dds",
+          "size": 51328,
+          "hash": "bceec5b4604fdcf48bc9ab6e260d913164b8435c9d5459fe5774d914b6aff43b"
+        },
+        {
+          "path": "Art/TM_UniqueUnitsFlag32.dds",
+          "size": 8320,
+          "hash": "8a2679e1f0410ac4a5d52205f3073d5307050019fc05b33f9ace2a76da9f2633"
         },
         {
           "path": "Art/TM_WayfaringPolicyAtlas256.dds",
@@ -2541,6 +2636,11 @@
           "path": "Art/UniqueLuxuriesAtlas80.dds",
           "size": 512128,
           "hash": "520cca68b7fa4fa565ba26a686e9b05a72c60b611731f243d64ed33540a104c7"
+        },
+        {
+          "path": "Art/UnitFlagAtlasWhite32_DLC_Korea.dds",
+          "size": 16512,
+          "hash": "03d04b7ace363b65e7cbe70939cdd0043e122944c27c7b686f8d5799ad654e17"
         },
         {
           "path": "Art/WonderVenetianArsenal.dds",
@@ -2584,13 +2684,13 @@
         },
         {
           "path": "CHANGELOG.md",
-          "size": 39581,
-          "hash": "b6995f2f2c9b45325b960096dc9dca33a6085cead5c38142c28b908eb7c8987d"
+          "size": 39564,
+          "hash": "45c6facae7a5c0577395123ab336aa0be6625c49b81c4389a35c87d14d0cc641"
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4372992,
-          "hash": "378fb558b9ba6a60e5fc9b75ad9590e7ca0f550fe77a848d4b4507149e3c8e90"
+          "size": 4384256,
+          "hash": "acc6a49c6cb0b26c64e76d8cb721681c18b74b2daed168582591b9ae9d381f60"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -2769,8 +2869,8 @@
         },
         {
           "path": "Maps/LekHBAssignStartingPlots.lua",
-          "size": 705467,
-          "hash": "22775febd9349697150ec6414693fbb45eff0033957695833e2bfd595b6bec5a"
+          "size": 706587,
+          "hash": "95468e4b69642ebcf88ae4269348d72867e787e23e0fa20416ad9019e414a1b5"
         },
         {
           "path": "Maps/LekHBFeatureGenerator.lua",
@@ -2859,8 +2959,8 @@
         },
         {
           "path": "Maps/LekmapTournamentPangaea.lua",
-          "size": 56023,
-          "hash": "74fee9df42cd86880f1e98b5fb9ec9c52a956126fc8fa0da15b4201ac4dd27d1"
+          "size": 55986,
+          "hash": "fc299915473bca9a38b0b45c4deef65fc6e2da754a55f05fbe8f7e9a0ad66802"
         },
         {
           "path": "Maps/Lekmap_Config.lua",
@@ -2870,32 +2970,32 @@
         {
           "path": "MarshalAtlas128.dds",
           "size": 65664,
-          "hash": "210a26576c581be259d0621f9bf51057b16d4f7ba5ed6f7c346fa3a405ea3577"
+          "hash": "ab01cd02f830978b78c72d56f48718150cdcb77297754f59aaf9ef27dfe40f12"
         },
         {
           "path": "MarshalAtlas256.dds",
           "size": 262272,
-          "hash": "272d041413fb9f74fe4ecd2f8986594b880f8ff7baf6b853a1479790913cca7c"
+          "hash": "261a6d57ad51fd46c47161269323976374d305032ef427c089afe96f4b49d3e9"
         },
         {
           "path": "MarshalAtlas32.dds",
           "size": 4224,
-          "hash": "11adc1c9a2ca4fc521334ffb9199f83e258f65b02dee00016730fe024b802eda"
+          "hash": "efe4d6ff1e2d45786bab893cc3c776bc4f3acf72616f622c167cbae630d7cac7"
         },
         {
           "path": "MarshalAtlas45.dds",
           "size": 8228,
-          "hash": "35e4f0bcc23e43d098467a573af5056d1173060f0b5f416372ab903a179a06b7"
+          "hash": "92a184b69d701dbeef2d0366fd58f33634eecfb7a7cd5f7df7818777f634c8dc"
         },
         {
           "path": "MarshalAtlas64.dds",
           "size": 16512,
-          "hash": "270f226df4ea7c2447d48b1921db8512bd1e139d180bd411c1845b7786e60fbe"
+          "hash": "02722d449f107c9c6a8bff03a5ebe740d7e2cb0952bc59e40be3e83cf7ca2675"
         },
         {
           "path": "MarshalAtlas80.dds",
           "size": 25728,
-          "hash": "a8e271d73740ff1ac5957ceb07c80eb9804bf6145b1e699b09ea49982be3f05c"
+          "hash": "81b153a860530420bdb3bb43caaa4df62c4e406c70e04f72031ee92ffae1eb56"
         },
         {
           "path": "MarshalFlag32.dds",
@@ -2904,8 +3004,8 @@
         },
         {
           "path": "MPModsPack.Civ5Pkg",
-          "size": 1450,
-          "hash": "ce29b8ad12b35115f9f1de36d14a8db2a86af6fd3b217748db135a116540673a"
+          "size": 2625,
+          "hash": "befb0eccadb9dde7dca12b7d6ee2e6a318de9fc489f50e517690bdf3a00c02f9"
         },
         {
           "path": "Override/.claude/settings.local.json",
@@ -3249,8 +3349,8 @@
         },
         {
           "path": "Override/CIV5Controls.xml",
-          "size": 1505728,
-          "hash": "81115b53dc21e4dfaafc136b63f4a79cb5cd9738181ab4bd4482c2751aedd789"
+          "size": 1518923,
+          "hash": "a4fabc7ef2be52c6f6b1d313d1a7d40d8d24b592b3aed298dec05b7b30cfd516"
         },
         {
           "path": "Override/CIV5CultureLevels.xml",
@@ -5184,8 +5284,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 8297584,
-          "hash": "e38e56875504c400ab507fb837db508d9f6548a7ca632113792b4bde95074267"
+          "size": 8311107,
+          "hash": "c738234a0d23fdca4b57869ec77b58ce5beb7f0bf9ed1929524abadfaacbebd0"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -5224,8 +5324,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 6523824,
-          "hash": "4dd41a2b2dda31a48f433fbeac98d4a29ec3ccd2ad3237680664453c981c2f91"
+          "size": 6550492,
+          "hash": "d6028392f1aaf8848fb1934171d65be55be91bad59b00bc6787962612f5f96e0"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
@@ -5513,14 +5613,9 @@
           "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
-          "path": "Override/C\uF03Aclaude_tmpcheesecamp_diff.txt",
-          "size": 1778,
-          "hash": "dcf18323a8e4750c6ad7049e175899aa88148331fbc15762cb7001adc34767be"
-        },
-        {
           "path": "Override/delta.py",
-          "size": 811,
-          "hash": "94366a16f1a36bea5b280c408ac771bd3b838751abcf4f453308b25fab1ba1aa"
+          "size": 794,
+          "hash": "2a41ea91a43592090c745482e02fa57838e565442ddf95f2942d271544731ab6"
         },
         {
           "path": "Override/English.xml",
@@ -5549,8 +5644,8 @@
         },
         {
           "path": "randomize_cursor.bat",
-          "size": 3143,
-          "hash": "a5d213f349e4cf1d25e04ef7eab2d6d3786793b8ea1f404dd248184259d0551a"
+          "size": 3109,
+          "hash": "423b62b7dbd98d095ac2df2cbeaf5384c33348e5296811eeb7671007e1de6952"
         },
         {
           "path": "SolariaAtlas128.dds",
@@ -5669,8 +5764,8 @@
         },
         {
           "path": "tmp/eui/SocialPolicyPopup.lua",
-          "size": 48526,
-          "hash": "a537f82e9ea050c18b931c3009bc511c20573a7aeedb3f95899d31dec96b1028"
+          "size": 49580,
+          "hash": "6352947cc05749c415bf6998d845063a507c3c237bb9699638ca6efe01c5bdb0"
         },
         {
           "path": "tmp/eui/TechButtonInclude.lua",
@@ -5709,8 +5804,8 @@
         },
         {
           "path": "tmp/eui/UnitPanel.lua",
-          "size": 91832,
-          "hash": "f25ec251b55c00597348af59dac996b2d9ca7a8a0905bd6f505232bd66592c86"
+          "size": 92733,
+          "hash": "bcd69fbe93894c5e45d3e6066590b4a904e7fd0b20faaaacfbcc9221ab2b5254"
         },
         {
           "path": "tmp/eui/UnitPanel.xml",
@@ -6014,8 +6109,8 @@
         },
         {
           "path": "tmp/ui/InGame.lua",
-          "size": 45079,
-          "hash": "51444576c3cd094fac45555ff094f5c6386a505b76f3fbc826640d3b944987a0"
+          "size": 45129,
+          "hash": "dc0b192133da130169f73c5cfce4e6f543bc6129c0464b2e48bd20961e354dfc"
         },
         {
           "path": "tmp/ui/JoiningRoom.lua",
@@ -6034,8 +6129,8 @@
         },
         {
           "path": "tmp/ui/LuxuryPlacer.lua",
-          "size": 11473,
-          "hash": "e156967a2c95c3644c673216a65fe7533f45fcefedd4bea361c837d660994b87"
+          "size": 11463,
+          "hash": "f69a05672a8518ad2c8ee2281022b21e6dabd1b2fa339cbcd00b2940977e6461"
         },
         {
           "path": "tmp/ui/MainMenu.lua",
@@ -6046,6 +6141,11 @@
           "path": "tmp/ui/MainMenu.xml",
           "size": 15449,
           "hash": "3a49a1fa84ba6012b2fcf20a415698293fc19fcec7f8da0022c6d2ef74a9e250"
+        },
+        {
+          "path": "tmp/ui/MatchOutcomeRecorder.lua",
+          "size": 9514,
+          "hash": "84de5ae46c979b87676f9af156da2244af77f46ba18f43e686bc710ecca7f552"
         },
         {
           "path": "tmp/ui/MiniMapPanel.lua",
@@ -6229,13 +6329,13 @@
         },
         {
           "path": "tmp/ui/SocialPolicyPopup.lua",
-          "size": 53740,
-          "hash": "74e2424a3c4ff7545af7e2eb32570393396442cdd9adc52f472d8ffec833892b"
+          "size": 54794,
+          "hash": "feacc337132c7f416b2ed51581eed663646eabc961d8cb76ea2ade2cf51531ce"
         },
         {
           "path": "tmp/ui/SocialPolicyPopup.xml",
-          "size": 57244,
-          "hash": "a03a690ef45da5af5bfde43aae53f62870a642805347d3b223e4b6c30b65cdcb"
+          "size": 57249,
+          "hash": "9c2e1cf5f01eca243b892fa9b38eae10e6bbd3b0ffa97a31e76f10eba5417e76"
         },
         {
           "path": "tmp/ui/StagingRoom.lua",
@@ -6309,8 +6409,8 @@
         },
         {
           "path": "tmp/ui/UnitPanel.lua",
-          "size": 70898,
-          "hash": "6cb2117127d7fa929d7088ccb29fe2eba7ae5925a1837675550f566324b97c3c"
+          "size": 72246,
+          "hash": "39f3fc1a801f9cdfac3aaf71bdabd6a534f0e80e7544c1ddddf6b29e8f67bcfd"
         },
         {
           "path": "tmp/ui/UnitPanel.xml",
@@ -6349,8 +6449,8 @@
         },
         {
           "path": "ui_check.bat",
-          "size": 19006,
-          "hash": "75c036e5068ab45e066aeb2cdc83a9d6f21ec0ba94c860d14d116eff47506390"
+          "size": 19113,
+          "hash": "f0396bbba85d7fe80f584b1cff04f75c5f910a039ab67cce88f4e40a549ab036"
         }
       ]
     },
@@ -6358,7 +6458,7 @@
       "id": "maps-game",
       "title": "\u041A\u0430\u0440\u0442\u044B \u0432 \u043F\u0430\u043F\u043A\u0435 \u0438\u0433\u0440\u044B",
       "target": "GameAssetsMaps",
-      "targetSubPath": "Tournament Mod Maps",
+      "targetSubPath": "Nova Maps",
       "sourceSubPath": "Maps",
       "exclusive": true,
       "files": [
@@ -6379,8 +6479,8 @@
         },
         {
           "path": "LekHBAssignStartingPlots.lua",
-          "size": 705467,
-          "hash": "22775febd9349697150ec6414693fbb45eff0033957695833e2bfd595b6bec5a"
+          "size": 706587,
+          "hash": "95468e4b69642ebcf88ae4269348d72867e787e23e0fa20416ad9019e414a1b5"
         },
         {
           "path": "LekHBFeatureGenerator.lua",
@@ -6469,8 +6569,8 @@
         },
         {
           "path": "LekmapTournamentPangaea.lua",
-          "size": 56023,
-          "hash": "74fee9df42cd86880f1e98b5fb9ec9c52a956126fc8fa0da15b4201ac4dd27d1"
+          "size": 55986,
+          "hash": "fc299915473bca9a38b0b45c4deef65fc6e2da754a55f05fbe8f7e9a0ad66802"
         },
         {
           "path": "Lekmap_Config.lua",
@@ -6483,7 +6583,7 @@
       "id": "maps-user",
       "title": "\u041A\u0430\u0440\u0442\u044B \u0432 \u043F\u0440\u043E\u0444\u0438\u043B\u0435 \u0438\u0433\u0440\u043E\u043A\u0430",
       "target": "UserMaps",
-      "targetSubPath": "Tournament Mod Maps",
+      "targetSubPath": "Nova Maps",
       "sourceSubPath": "Maps",
       "exclusive": true,
       "files": [
@@ -6504,8 +6604,8 @@
         },
         {
           "path": "LekHBAssignStartingPlots.lua",
-          "size": 705467,
-          "hash": "22775febd9349697150ec6414693fbb45eff0033957695833e2bfd595b6bec5a"
+          "size": 706587,
+          "hash": "95468e4b69642ebcf88ae4269348d72867e787e23e0fa20416ad9019e414a1b5"
         },
         {
           "path": "LekHBFeatureGenerator.lua",
@@ -6594,8 +6694,8 @@
         },
         {
           "path": "LekmapTournamentPangaea.lua",
-          "size": 56023,
-          "hash": "74fee9df42cd86880f1e98b5fb9ec9c52a956126fc8fa0da15b4201ac4dd27d1"
+          "size": 55986,
+          "hash": "fc299915473bca9a38b0b45c4deef65fc6e2da754a55f05fbe8f7e9a0ad66802"
         },
         {
           "path": "Lekmap_Config.lua",
@@ -6648,6 +6748,11 @@
       {
         "from": "tmp/ui/EraBonuses.lua",
         "to": "UI/EraBonuses.lua",
+        "when": []
+      },
+      {
+        "from": "tmp/ui/MatchOutcomeRecorder.lua",
+        "to": "UI/MatchOutcomeRecorder.lua",
         "when": []
       },
       {
@@ -7813,10 +7918,45 @@
       }
     ]
   },
-  "TotalBytes": 247016646,
-  "TotalFiles": 1313,
-  "EffectiveContent": {
-    "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
-    "layout": "Flat"
+  "news": {
+    "entries": [
+      {
+        "date": "2026-08-15T00:00:00+00:00",
+        "title": "\u0412\u0435\u0442\u043A\u0430 \u00AB\u0411\u0430\u0441\u0442\u0438\u043E\u043D\u00BB \u0438 \u043D\u043E\u0432\u044B\u0439 \u0432\u0435\u043B\u0438\u043A\u0438\u0439 \u0447\u0435\u043B\u043E\u0432\u0435\u043A",
+        "body": "\u041F\u043E\u044F\u0432\u0438\u043B\u0430\u0441\u044C \u0441\u0440\u0435\u0434\u043D\u0435\u0432\u0435\u043A\u043E\u0432\u0430\u044F \u043E\u0431\u043E\u0440\u043E\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u0430\u044F \u0432\u0435\u0442\u043A\u0430 \u043F\u043E\u043B\u0438\u0442\u0438\u043A: \u0441\u043B\u043E\u0442\u044B \u0441\u043F\u0435\u0446\u0438\u0430\u043B\u0438\u0441\u0442\u043E\u0432 \u0432 \u0441\u0442\u0435\u043D\u0430\u0445,\n\u0437\u0430\u043C\u043A\u0430\u0445, \u0430\u0440\u0441\u0435\u043D\u0430\u043B\u0430\u0445 \u0438 \u0432\u043E\u0435\u043D\u043D\u044B\u0445 \u0431\u0430\u0437\u0430\u0445, \u0432\u0434\u0432\u043E\u0435 \u0434\u0435\u0448\u0435\u0432\u043B\u0435 \u043E\u0431\u043E\u0440\u043E\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0435 \u0437\u0434\u0430\u043D\u0438\u044F, \u0438\u043D\u0442\u0435\u043D\u0434\u0430\u043D\u0442\n\u043F\u0440\u0438\u043A\u0430\u043F\u044B\u0432\u0430\u0435\u0442 \u0441\u0445\u0440\u043E\u043D \u0432\u043C\u0435\u0441\u0442\u043E \u0442\u043E\u0433\u043E, \u0447\u0442\u043E\u0431\u044B \u0440\u0430\u0441\u0442\u0432\u043E\u0440\u0438\u0442\u044C\u0441\u044F \u0432 \u0433\u043E\u0440\u043E\u0434\u0435.",
+        "tag": "\u041E\u0411\u041D\u041E\u0412\u041B\u0415\u041D\u0418\u0415",
+        "url": "https://example.org/nova/12.3",
+        "HasUsableUrl": true,
+        "IsUsable": true
+      },
+      {
+        "date": "2026-08-14T00:00:00+00:00",
+        "title": "\u0418\u0433\u0440\u0430 \u0431\u043E\u043B\u044C\u0448\u0435 \u043D\u0435 \u043F\u0430\u0434\u0430\u0435\u0442 \u043F\u0440\u0438 \u0437\u0430\u043F\u0443\u0441\u043A\u0435",
+        "body": "\u041F\u0440\u0438\u0447\u0438\u043D\u0430 \u043E\u043A\u0430\u0437\u0430\u043B\u0430\u0441\u044C \u0432 \u0438\u043C\u0435\u043D\u0438 \u043F\u0430\u043F\u043A\u0438 \u043C\u043E\u0434\u0430: \u043E\u043D\u0430 \u043E\u0431\u044F\u0437\u0430\u043D\u0430 \u0438\u0434\u0442\u0438 \u043F\u043E \u0430\u043B\u0444\u0430\u0432\u0438\u0442\u0443 \u043F\u043E\u0441\u043B\u0435 Expansion2.",
+        "tag": "\u0418\u0421\u041F\u0420\u0410\u0412\u041B\u0415\u041D\u0418\u0415",
+        "HasUsableUrl": false,
+        "IsUsable": true
+      }
+    ],
+    "Usable": [
+      {
+        "date": "2026-08-15T00:00:00+00:00",
+        "title": "\u0412\u0435\u0442\u043A\u0430 \u00AB\u0411\u0430\u0441\u0442\u0438\u043E\u043D\u00BB \u0438 \u043D\u043E\u0432\u044B\u0439 \u0432\u0435\u043B\u0438\u043A\u0438\u0439 \u0447\u0435\u043B\u043E\u0432\u0435\u043A",
+        "body": "\u041F\u043E\u044F\u0432\u0438\u043B\u0430\u0441\u044C \u0441\u0440\u0435\u0434\u043D\u0435\u0432\u0435\u043A\u043E\u0432\u0430\u044F \u043E\u0431\u043E\u0440\u043E\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u0430\u044F \u0432\u0435\u0442\u043A\u0430 \u043F\u043E\u043B\u0438\u0442\u0438\u043A: \u0441\u043B\u043E\u0442\u044B \u0441\u043F\u0435\u0446\u0438\u0430\u043B\u0438\u0441\u0442\u043E\u0432 \u0432 \u0441\u0442\u0435\u043D\u0430\u0445,\n\u0437\u0430\u043C\u043A\u0430\u0445, \u0430\u0440\u0441\u0435\u043D\u0430\u043B\u0430\u0445 \u0438 \u0432\u043E\u0435\u043D\u043D\u044B\u0445 \u0431\u0430\u0437\u0430\u0445, \u0432\u0434\u0432\u043E\u0435 \u0434\u0435\u0448\u0435\u0432\u043B\u0435 \u043E\u0431\u043E\u0440\u043E\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0435 \u0437\u0434\u0430\u043D\u0438\u044F, \u0438\u043D\u0442\u0435\u043D\u0434\u0430\u043D\u0442\n\u043F\u0440\u0438\u043A\u0430\u043F\u044B\u0432\u0430\u0435\u0442 \u0441\u0445\u0440\u043E\u043D \u0432\u043C\u0435\u0441\u0442\u043E \u0442\u043E\u0433\u043E, \u0447\u0442\u043E\u0431\u044B \u0440\u0430\u0441\u0442\u0432\u043E\u0440\u0438\u0442\u044C\u0441\u044F \u0432 \u0433\u043E\u0440\u043E\u0434\u0435.",
+        "tag": "\u041E\u0411\u041D\u041E\u0412\u041B\u0415\u041D\u0418\u0415",
+        "url": "https://example.org/nova/12.3",
+        "HasUsableUrl": true,
+        "IsUsable": true
+      },
+      {
+        "date": "2026-08-14T00:00:00+00:00",
+        "title": "\u0418\u0433\u0440\u0430 \u0431\u043E\u043B\u044C\u0448\u0435 \u043D\u0435 \u043F\u0430\u0434\u0430\u0435\u0442 \u043F\u0440\u0438 \u0437\u0430\u043F\u0443\u0441\u043A\u0435",
+        "body": "\u041F\u0440\u0438\u0447\u0438\u043D\u0430 \u043E\u043A\u0430\u0437\u0430\u043B\u0430\u0441\u044C \u0432 \u0438\u043C\u0435\u043D\u0438 \u043F\u0430\u043F\u043A\u0438 \u043C\u043E\u0434\u0430: \u043E\u043D\u0430 \u043E\u0431\u044F\u0437\u0430\u043D\u0430 \u0438\u0434\u0442\u0438 \u043F\u043E \u0430\u043B\u0444\u0430\u0432\u0438\u0442\u0443 \u043F\u043E\u0441\u043B\u0435 Expansion2.",
+        "tag": "\u0418\u0421\u041F\u0420\u0410\u0412\u041B\u0415\u041D\u0418\u0415",
+        "HasUsableUrl": false,
+        "IsUsable": true
+      }
+    ],
+    "Any": true
   }
 }
