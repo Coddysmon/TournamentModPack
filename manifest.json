@@ -2,12 +2,8 @@
   "schemaVersion": 1,
   "packageVersion": "1.0.0",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-08-16T09:05:48.6912657+00:00",
+  "createdUtc": "2026-08-16T15:29:09.7444765+00:00",
   "hashAlgorithm": "SHA256",
-  "content": {
-    "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
-    "layout": "Flat"
-  },
   "components": [
     {
       "id": "mod",
@@ -2684,8 +2680,8 @@
         },
         {
           "path": "CHANGELOG.md",
-          "size": 39564,
-          "hash": "45c6facae7a5c0577395123ab336aa0be6625c49b81c4389a35c87d14d0cc641"
+          "size": 43467,
+          "hash": "37aa416b8d3af0692378b528fbb4b7047a62d5d6888b541c1bf542a27b330e43"
         },
         {
           "path": "CvGameCore_Expansion2.dll",
@@ -5284,8 +5280,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 8311107,
-          "hash": "c738234a0d23fdca4b57869ec77b58ce5beb7f0bf9ed1929524abadfaacbebd0"
+          "size": 8312802,
+          "hash": "f889608b19f66844a9c620aa86e5705789d690ad4aa24099dd72db75cad85334"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -7974,11 +7970,19 @@
     "Any": true
   },
   "client": {
-    "version": "0.2.0.0",
-    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/nova-client-0.2.0.0.zip",
-    "sha256": "8992e3fcccf20d1fea317d4be25c4f2f44686ca34fefdde2449e9d6aaaa7b329",
-    "size": 60279634,
-    "notes": "\u0423\u0431\u043E\u0440\u043A\u0430 \u043F\u0440\u0435\u0436\u043D\u0435\u0439 \u043F\u0430\u043F\u043A\u0438 \u043C\u043E\u0434\u0430 \u043F\u0440\u0438 \u043F\u0435\u0440\u0435\u0435\u0437\u0434\u0435 \u043D\u0430 Nova, \u0438\u0441\u0442\u043E\u0440\u0438\u044F \u0441\u044B\u0433\u0440\u0430\u043D\u043D\u044B\u0445 \u043F\u0430\u0440\u0442\u0438\u0439, \u043B\u0435\u043D\u0442\u0430 \u043D\u043E\u0432\u043E\u0441\u0442\u0435\u0439, \u043F\u043E\u0441\u0442\u043E\u044F\u043D\u043D\u0430\u044F \u043B\u0438\u0447\u043D\u043E\u0441\u0442\u044C \u0438\u0433\u0440\u043E\u043A\u0430, \u0441\u0430\u043C\u043E\u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435 \u043B\u0430\u0443\u043D\u0447\u0435\u0440\u0430, \u043F\u0435\u0440\u0432\u0430\u044F \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0430 \u0432\u0434\u0432\u043E\u0435 \u0431\u044B\u0441\u0442\u0440\u0435\u0435.",
+    "version": "0.3.0.0",
+    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/nova-client-0.3.0.0.zip",
+    "sha256": "fc8a286bbe9221310f2d906b602e6d94442ed2abfbea5cd37ca10386a2af9147",
+    "size": 60347847,
+    "notes": "\u041F\u0430\u0440\u0442\u0438\u0438 \u0438\u0434\u0443\u0442 \u0447\u0435\u0440\u0435\u0437 \u0441\u0432\u043E\u0439 \u0443\u0437\u0435\u043B \u043C\u0438\u043C\u043E Steam: \u0430\u0434\u0440\u0435\u0441 \u043F\u0440\u0438\u0435\u0437\u0436\u0430\u0435\u0442 \u043C\u0430\u043D\u0438\u0444\u0435\u0441\u0442\u043E\u043C, \u043B\u0430\u0443\u043D\u0447\u0435\u0440 \u043D\u0430\u0441\u0442\u0440\u0430\u0438\u0432\u0430\u0435\u0442 \u0432\u0441\u0451 \u0441\u0430\u043C. \u041F\u043B\u044E\u0441 \u0443\u0431\u043E\u0440\u043A\u0430 \u043F\u0440\u0435\u0436\u043D\u0435\u0439 \u043F\u0430\u043F\u043A\u0438 \u043C\u043E\u0434\u0430, \u0438\u0441\u0442\u043E\u0440\u0438\u044F \u043F\u0430\u0440\u0442\u0438\u0439, \u043D\u043E\u0432\u043E\u0441\u0442\u0438, \u043B\u0438\u0447\u043D\u043E\u0441\u0442\u044C \u0438\u0433\u0440\u043E\u043A\u0430, \u0441\u0430\u043C\u043E\u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435.",
+    "IsUsable": true
+  },
+  "relay": {
+    "host": "109.73.196.175",
+    "port": 45443,
+    "enabled": true,
+    "autoEnable": true,
+    "note": "\u043F\u0440\u043E\u0432\u0435\u0440\u043E\u0447\u043D\u044B\u0439 \u0443\u0437\u0435\u043B \u0432 \u041C\u043E\u0441\u043A\u0432\u0435, \u043F\u0430\u0440\u0442\u0438\u0438 \u0438\u0434\u0443\u0442 \u043C\u0438\u043C\u043E Steam",
     "IsUsable": true
   }
 }
