@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "packageVersion": "1.1.6",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-08-17T21:17:57.918191+00:00",
+  "createdUtc": "2026-08-18T09:22:49.2778948+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -8035,7 +8035,7 @@
   },
   "relay": {
     "host": "109.73.196.175",
-    "port": 45443,
+    "port": 443,
     "enabled": true,
     "autoEnable": true,
     "IsUsable": true
