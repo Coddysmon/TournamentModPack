@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "packageVersion": "1.4.0",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-08-21T10:57:44.0000000+00:00",
+  "createdUtc": "2026-08-21T12:32:28.0000000+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -8383,5 +8383,12 @@
     "size": 61064695,
     "notes": "Установка больше не падает от одной осечки хранилища: шесть попыток с удвоением паузы вместо трёх, окно ожидания 50 секунд вместо 6. Оформление «Горный рассвет» получило рисованные горы во всё окно.",
     "IsUsable": true
+  },
+  "relay": {
+    "host": "109.73.196.175",
+    "port": 443,
+    "enabled": true,
+    "autoEnable": true,
+    "note": "Партии идут через наш узел, мимо Steam. Настраивается само; вернуть обычный путь можно кнопкой в настройках."
   }
 }
