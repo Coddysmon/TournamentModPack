@@ -186,7 +186,7 @@ Nova выросла из Tournament Mod 12.2a. Общими остались д�
     +4 довольства и +4 культуры.
   - БОНУС ЗА ЗАКРЫТИЕ, Долгие дороги: караваны неуязвимы для
     разграбления, +10% к производству зданий, каждая клетка под караваном
-    даёт +1 еды и +1 золота. Приходит, когда взяты все пять основных.
+    даёт +1 еды. Приходит, когда взяты все пять основных.
 `,
       "Оплот": `
 НОВАЯ ВЕТКА ПОЛИТИК: ОПЛОТ
@@ -961,8 +961,8 @@ them -- take them in any order.
   - Trade Charter: the Grand Emporium gives +4 gold, +4 production,
     +4 happiness and +4 culture.
   - FINISHER BONUS, Long Roads: caravans cannot be pillaged, +10%
-    building production, every tile a caravan crosses gives +1 food and
-    +1 gold. Arrives once all five main policies are taken.
+    building production, every tile a caravan crosses gives +1 food.
+    Arrives once all five main policies are taken.
 `,
       "Bulwark": `
 NEW POLICY BRANCH: BULWARK
