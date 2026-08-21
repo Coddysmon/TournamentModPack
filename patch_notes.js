@@ -673,7 +673,6 @@ Nova выросла из Tournament Mod 12.2a. Общими остались д�
   - Интендантский схрон: строит Великий интендант.
   - Усадьба: улучшение великого человека.
   - Бастион: цитадель, которая расширяет границы.
-  - Горный тоннель (Динамит).
   - Понтонный мост (Строительство): наземные юниты пересекают побережье;
     строит военный инженер и расходуется.
   - Океанский мост (Археология).
@@ -1443,7 +1442,6 @@ NEW IMPROVEMENTS
   - Quartermaster Cache: built by the Great Quartermaster.
   - Estate: a great person improvement.
   - Bastion: a citadel that expands borders.
-  - Mountain Tunnel (Dynamite).
   - Pontoon Bridge (Engineering): land units cross coast tiles; built by
     a military engineer, which is consumed.
   - Ocean Bridge (Archaeology).
