@@ -36,38 +36,63 @@ Nova выросла из Tournament Mod 12.2a. Общими остались д�
 
 ПЕРЕРАБОТАННЫЕ СПОСОБНОСТИ НАЦИЙ
 
-  - Австрия: покупка городов-государств осталась, добавлен рост великих
-    торговцев на 25%, венецианский купец теперь с Денег, а не с Мореходства.
-  - Ассирия: захват города даёт технологию, плюс здания больше не требуют
-    пресной воды.
-  - Дания: к тройному золоту за лагеря и грабёж добавлено движение вдоль
-    рек как по дороге.
+Изменены шестнадцать национальных черт. Что именно:
+
+  - Америка: каждый город вмещает на один самолёт больше.
+  - Аравия: механика прежняя, переписано только описание черты.
+  - Ассирия: здания больше не требуют пресной воды.
+  - Венеция: венецианский купец приходит с Денег, а не с Мореходства,
+    и добавлен рост великих торговцев на 25%.
+  - Германия: обращение сухопутных варваров и скидка 25% на содержание
+    наземных юнитов убраны.
   - Египет: каждое чудо света и национальное чудо даёт +1 довольства.
   - Индонезия: города вне родного континента дают по четыре уникальных
     редких ресурса вместо двух.
-  - Испания: бонусы за чудеса природы сняты, вместо них -- морская игра.
-  - Индия убрана из прежней схемы штрафов, ставка на еду.
-  - Корея, Китай, Германия и другие получили свои эра-бонусы вместо
-    прежних пассивных надбавок.
-  - Полинезия: погружённые юниты получают +1 хода и +2 обзора.
+  - Испания: убраны золото за чудеса природы, удвоение довольства от них
+    и бесплатный разведчик при основании столицы.
+  - Нидерланды: удержание довольства при продаже последней единицы
+    роскоши заменено на +1 довольства за каждый ТИП редкого ресурса.
+  - Полинезия: погружённые юниты получают +1 очко перемещения.
   - Португалия: внутренние сухопутные пути считаются морскими.
-  - Рим: производство зданий, уже стоящих в столице, ускорено с 15% до 25%.
+  - Рим: производство зданий, уже стоящих в столице, поднято с 15% до 25%.
   - Сиам: фермы считаются стоящими у пресной воды.
-  - Сонгай: конверсия варваров и скидка на содержание убраны.
-  - Швеция: собственная линейка национальных чудес, см. раздел Здания.
-  - Венеция: поселенцев нет, но появилась постройка поселенцев по особому
-    правилу движка, торговых путей вдвое больше.
+  - Сонгай: движение вдоль рек идёт как по дороге.
+  - Франция: удвоение тематических бонусов в столице убрано; выдачи
+    с редких ресурсов теперь требуют улучшения на клетке.
+  - Швеция: влияние за подарок великого человека городу-государству убрано.
 
-  - ~~У шестнадцати наций сняты уникальные здания -- они строят обычные.~~
-  - ~~У шести уникальных юнитов сняты встроенные способности.~~
-  - ~~Цивилизация Solaria удалена.~~
+УНИКАЛЬНЫЕ ЗДАНИЯ НАЦИЙ
+
+У 32 наций уникальные здания отвязаны от прежних классов, у 12 появились
+новые привязки. Часть зданий не исчезла, а переехала в другой класс:
+Термы у Рима стали акведуком вместо колизея, Торре-де-Белем у Португалии --
+морским портом вместо замка, Миссия у Испании -- гаванью вместо суда.
+Швеция взамен получила собственную линейку национальных чудес, см. раздел
+Здания.
+
+УНИКАЛЬНЫЕ ЮНИТЫ
+
+Встроенные способности сняты у четырёх: пикт кельтов потерял Прикрытие I,
+корейский корабль-черепаха -- Защитника родины, персидский Бессмертный --
+Марш, броненосец -- Паровой ход. Отдельно вся бронетехника сменила
+врождённую прокачку, см. раздел Юниты.
 `,
       "Наследие": `
 НОВАЯ ВЕТКА ПОЛИТИК: НАСЛЕДИЕ
 
-Ветка из 22 политик, куда сложены эра-бонусы. Каждую эпоху открывается
-ряд из трёх общих бонусов -- культурного, экономического и военного --
-и одного национального.
+Сюда сложены эра-бонусы: 21 общий и 43 национальных, всего 64 политики.
+
+КАК УСТРОЕНА ВЕТКА
+  - Бонус за ОТКРЫТИЕ есть и даётся сразу, как только вы вложились
+    в ветку.
+  - Бонуса за ЗАКРЫТИЕ у Наследия НЕТ. Ветка не рассчитана на то, чтобы
+    брать её целиком.
+  - Требований между политиками внутри ветки нет: ни одна не заперта
+    соседней. Единственный ограничитель -- эпоха: ряд открывается тогда,
+    когда вы в неё входите.
+  - В каждом ряду три общих бонуса -- культурный, экономический
+    и военный -- и один национальный, доступный только вашей нации.
+  - Рядов семь: от Античности до Информационной эпохи.
 
 ОБЩИЕ ПО ЭПОХАМ
 
@@ -144,9 +169,12 @@ Nova выросла из Tournament Mod 12.2a. Общими остались д�
       "Пути": `
 НОВАЯ ВЕТКА ПОЛИТИК: ПУТИ
 
-Семь политик о дорогах, караванах и связности державы.
+Семь политик о дорогах, караванах и связности державы: вход, пять
+основных и закрытие. Доступна с начала игры, эпоха не требуется.
+Требований между пятью основными нет -- берите в любом порядке.
 
-  - Пути (вход): +100% к производству караванов и караван-сараев.
+  - БОНУС ЗА ОТКРЫТИЕ, Пути: +100% к производству караванов
+    и караван-сараев. Даётся сразу при вложении в ветку.
   - Постоялые дворы: караван-сараи дают +1 культуры и +1 производства.
   - Охранная грамота: бесплатный караван, +1 торговый путь, караван-сараи
     дают +1 довольства, дороги не требуют содержания.
@@ -156,18 +184,24 @@ Nova выросла из Tournament Mod 12.2a. Общими остались д�
     и +25% науки от Гранд-эмпориума.
   - Торговая хартия: Гранд-эмпориум даёт +4 золота, +4 производства,
     +4 довольства и +4 культуры.
-  - Долгие дороги (закрытие): караваны неуязвимы для разграбления,
-    +10% к производству зданий, каждая клетка под караваном даёт
-    +1 еды и +1 золота.
+  - БОНУС ЗА ЗАКРЫТИЕ, Долгие дороги: караваны неуязвимы для
+    разграбления, +10% к производству зданий, каждая клетка под караваном
+    даёт +1 еды и +1 золота. Приходит, когда взяты все пять основных.
 `,
-      "Бастион": `
-НОВАЯ ВЕТКА ПОЛИТИК: БАСТИОН
+      "Оплот": `
+НОВАЯ ВЕТКА ПОЛИТИК: ОПЛОТ
 
-Семь политик средневековой обороны. Смысл ветки в том, что стены, замок,
-арсенал и военная база перестают быть чистым расходом и начинают кормить
-город.
+Семь политик обороны: вход, пять основных и закрытие. Открывается
+со Средневековья. Смысл ветки в том, что Стены, Замок, Арсенал и Военная
+база перестают быть чистым расходом и начинают кормить город.
 
-  - Оплот (вход): Стены, Замок, Арсенал и Военная база на 50% дешевле.
+СВЯЗИ ВНУТРИ ВЕТКИ
+  Интендантство, Внешние укрепления и Гарнизонные склады берутся свободно,
+  в любом порядке. Речные заставы заперты: их нельзя взять, пока не взяты
+  все три. Родовые стены ни от чего не зависят.
+
+  - БОНУС ЗА ОТКРЫТИЕ, Оплот: Стены, Замок, Арсенал и Военная база
+    на 50% дешевле. Даётся сразу при вложении в ветку.
   - Интендантство: бесплатный Великий интендант; в каждое из четырёх
     оборонительных зданий добавляется слот специалиста-интенданта (+3 еды).
   - Внешние укрепления: каждая клетка в радиусе 1 от города получает
@@ -177,12 +211,22 @@ Nova выросла из Tournament Mod 12.2a. Общими остались д�
     +5% накопленной еды при росте, до +20% при всех четырёх.
   - Родовые стены: каждое из четырёх зданий даёт +2 культуры в первых
     пяти городах державы.
-  - Речные заставы: клетки на реке дают +1 золота.
-  - Твердыня (закрытие): +30% дальнобойной мощи городов с гарнизоном,
-    каждая клетка в радиусе 1 от города даёт +1 науки и не может быть
-    разграблена, врагам рядом наносится урон.
+  - Речные заставы: клетки на реке дают +1 золота. ТРЕБУЕТ три политики
+    выше.
+  - БОНУС ЗА ЗАКРЫТИЕ, Твердыня: +30% дальнобойной мощи городов
+    с гарнизоном, каждая клетка в радиусе 1 от города даёт +1 науки
+    и не может быть разграблена, врагам рядом наносится урон.
 `,
       "Политики": `
+КАК ЧИТАТЬ ВЕТКИ
+
+У ветки есть бонус за ОТКРЫТИЕ -- он приходит сразу, как только вы
+вложились в ветку, -- и бонус за ЗАКРЫТИЕ, который приходит, когда взяты
+все её политики. Внутри ветки политики стоят на уровнях: чтобы добраться
+до нижнего уровня, надо сперва набрать политики на верхнем. Часть политик
+вдобавок прямо требует конкретных соседей. В разделах Наследие, Пути
+и Оплот вход, закрытие и связи названы поимённо.
+
 ОТДЕЛЬНЫЕ НОВЫЕ ПОЛИТИКИ
 
   - Свободный разум (Свобода): +33% к появлению великих художников,
@@ -192,11 +236,114 @@ Nova выросла из Tournament Mod 12.2a. Общими остались д�
     и науку за убийства и на 50% больше опыта в бою.
   - Народная армия (Порядок): +75% туризма, пока держава довольна.
 
-ОБЩИЙ СЧЁТ
+ПЕРЕРАБОТАННЫЕ СТАРЫЕ ПОЛИТИКИ
 
-  - 82 новые политики, 87 переработанных.
-  - Убраны: ~~Их звёздный час~~, ~~Всеобщее здравоохранение~~ в обеих
+Из прежних политик 59 изменены по существу, ещё 15 просто переставлены
+в дереве без правки эффекта.
+
+ВХОДЫ И ЗАКРЫТИЯ ПРЕЖНИХ ВЕТОК
+  - Торговля, вход: добавлено +25% к росту великих торговцев.
+  - Торговля, закрытие: бесплатный юнит теперь выдаётся сразу.
+  - Честь, вход: при основании города появляется Маршал.
+  - Честь, закрытие: золото за убийства убрано и заменено наукой
+    за убийства; технология за захват города убрана; добавлено +10%
+    к росту городов.
+  - Покровительство, вход: замедление падения влияния убрано, взамен
+    влияние не опускается ниже 20.
+  - Рационализм, вход: надбавка к разовому открытию убрана, взамен
+    +20% к великим учёным.
+  - Рационализм, закрытие: перестало быть одноразовым.
+  - Мореплавание, закрытие: +1 довольства за каждый редкий ресурс
+    и +100% к великим флотоводцам.
+
+ТРАДИЦИИ
+  - Аристократия: +15% к производству чудес.
+  - Землевладельческая элита: рост столицы +15% вместо +10%.
+
+СВОБОДА (ранняя ветка)
+  - Меритократия: +15% золота с торговых путей между своими городами.
+  - Представительство: скидка на политики за города -33% вместо -30%.
+
+ЧЕСТЬ
+  - Дисциплина: теперь выдаёт бесплатный юнит.
+  - Военная каста: культура и довольство за гарнизон убраны, взамен
+    гарнизон не требует содержания.
+  - Военные традиции: +50% опыта убрано.
+  - Профессиональная армия: скидка 33% на улучшение юнитов убрана.
+  - Кодекс воина: +50% к великим полководцам убрано, взамен четыре
+    бесплатных юнита.
+
+ТОРГОВЛЯ
+  - Предпринимательство: +25% к великим торговцам убрано, взамен
+    выдаётся бесплатный юнит.
+
+ПОКРОВИТЕЛЬСТВО
+  - Федерация торговцев: торговые пути и довольство за них убраны,
+    взамен +200% к торговле городов-государств и постоянный приток
+    влияния к подопечным.
+  - Филантропия: +1 делегат вместо +2.
+  - Схоластика: культура за дипломатов убрана, взамен союзные
+    города-государства делятся наукой.
+
+БЛАГОЧЕСТИЕ
+  - Реформация: клетки дешевеют по мере роста границ.
+
+РАЦИОНАЛИЗМ
+  - Гуманизм: +10% к науке от разовых открытий.
+  - Научная революция: +25% к великим учёным убрано, перестала быть
+    одноразовой.
+
+МОРЕПЛАВАНИЕ
+  - Колониализм: +6 к захвату территории и +2 жителя новому городу.
+  - Школа навигации: +50% к великим флотоводцам убрано, бесплатный юнит
+    больше не выдаётся.
+  - Серебряный флот: неуязвимость грузов и +200 золота с морских путей
+    убраны.
+
+СВОБОДА (идеология)
+  - Арсенал демократии: +25% к прочности городов.
+  - Экономический союз: наука по населению убрана, взамен +2 торговых
+    пути и +5% золота с путей в города-государства.
+  - Военный блок: разовый скачок влияния на 45 убран.
+  - Контрактная армия: 3 бесплатных юнита вместо 10.
+  - Космические закупки: бесплатный юнит убран.
+  - На другие уровни ветки переехали: Капитализм, Свобода творчества,
+    Медиакультура, Новый курс, Бесплатная медицина, Урбанизация.
+
+ПОРЯДОК
+  - Диктатура пролетариата: +15% к производству зданий и +25%
+    к стратегическим ресурсам, туризм при довольстве убран.
+  - Двойные агенты: лишний шпион и обнаружение шпионов убраны.
+  - Народный герой: +20% к великим людям вместо +25%.
+  - Железный занавес: лишний торговый путь убран, внутренние пути дают
+    +200% вместо +100%.
+  - Переселение: прирост населения по державе и довольство за город
+    заменены на +4 к захвату территории и +4 жителя новому городу.
+  - Небоскрёбы: скидка на содержание зданий убрана, покупка зданий
+    дешевле на 50% вместо 33%.
+  - На другие уровни переехали: Академия наук, Партийное руководство,
+    Отечественная война, Юные пионеры.
+
+АВТОКРАТИЯ
+  - Культ личности: туризм против врага заменён туризмом против общего
+    врага, вдвое сильнее.
+  - Укрепление границ: +14 довольства вместо +10.
+  - Промышленный шпионаж: лишний шпион убран, кража технологий вдвое
+    быстрее.
+  - Мобилизация: содержание юнитов дешевле на 25%.
+  - Национализм: скидка 50% на содержание убрана, взамен +100% опыта
+    в своих границах.
+  - Тотальная война: +15% к военному производству вместо +25%.
+  - Объединённый фронт: подарки юнитами от городов-государств убраны.
+  - На другие уровни переехали: Элитные войска, Блицкриг, Милитаризм,
+    Полицейское государство.
+
+УБРАНЫ СОВСЕМ
+  - ~~Их звёздный час~~, ~~Всеобщее здравоохранение~~ в обеих
     идеологических версиях.
+
+ОБЩИЙ СЧЁТ
+  82 новые политики, 59 переработанных, 15 переставленных, 3 убранных.
 `,
       "Религия": `
 58 НОВЫХ ВЕРОВАНИЙ
@@ -666,36 +813,62 @@ branch, described in its own section.
 
 REWORKED CIVILIZATION ABILITIES
 
-  - Austria: city-state buying stays, plus 25% great merchant rate; the
-    Venetian merchant now comes with Currency instead of Sailing.
-  - Assyria: capturing a city grants a technology, and buildings no
-    longer require fresh water.
-  - Denmark: on top of triple gold from camps and pillaging, movement
-    along rivers now works like a road.
+Sixteen national traits changed. Precisely:
+
+  - America: every city holds one more aircraft.
+  - Arabia: mechanics unchanged, only the trait text was rewritten.
+  - Assyria: buildings no longer require fresh water.
   - Egypt: every world and national wonder gives +1 happiness.
+  - France: the doubled capital theming bonus is gone; luxury yields now
+    require the tile to be improved.
+  - Germany: land barbarian conversion and the 25% land unit maintenance
+    discount removed.
   - Indonesia: cities off the home continent give four unique luxuries
     each instead of two.
-  - Spain: natural wonder bonuses removed, replaced by a naval game.
-  - Polynesia: embarked units get +1 movement and +2 sight.
+  - Netherlands: keeping happiness after selling the last copy of a
+    luxury is replaced by +1 happiness per luxury TYPE.
+  - Polynesia: embarked units get +1 movement.
   - Portugal: internal land routes count as sea routes.
   - Rome: production of buildings already present in the capital raised
     from 15% to 25%.
   - Siam: farms count as being next to fresh water.
-  - Songhai: barbarian conversion and the maintenance discount removed.
-  - Sweden: its own line of national wonders, see Buildings.
-  - Venice: still no settlers by trait, but a dedicated engine rule now
-    allows building them; twice the trade routes.
+  - Songhai: movement along rivers now works like a road.
+  - Spain: gold from natural wonders, their doubled happiness and the
+    free scout on founding the capital are all removed.
+  - Sweden: influence from gifting a great person to a city-state removed.
+  - Venice: the Venetian merchant arrives with Currency instead of
+    Sailing, plus a 25% great merchant rate.
 
-  - ~~Sixteen civilizations lost their unique buildings.~~
-  - ~~Six unique units lost their built-in abilities.~~
-  - ~~The Solaria civilization was removed.~~
+CIVILIZATION UNIQUE BUILDINGS
+
+32 civilizations had a unique building unbound from its old class, and 12
+gained new bindings. Some buildings did not disappear but moved class:
+Rome's Thermae became an aqueduct instead of a colosseum, Portugal's
+Torre de Belem a seaport instead of a castle, Spain's Mission a harbour
+instead of a courthouse. Sweden got its own line of national wonders in
+exchange, see Buildings.
+
+UNIQUE UNITS
+
+Four lost their built-in abilities: the Celtic Pictish Warrior lost
+Cover I, the Korean Turtle Ship lost Homeland Guardian, the Persian
+Immortal lost March, and the Ironclad lost Steam Powered. Separately, all
+armour changed its innate promotion, see Units.
 `,
       "Legacy": `
 NEW POLICY BRANCH: LEGACY
 
-A branch of 22 policies holding the era bonuses. Each era opens a row of
-three shared bonuses -- cultural, economic and military -- plus one
-national bonus.
+This is where the era bonuses live: 21 shared and 43 national, 64 policies
+in total.
+
+HOW THE BRANCH WORKS
+  - There IS an opener bonus, granted the moment you invest in the branch.
+  - There is NO finisher bonus. The branch is not meant to be completed.
+  - No policy inside the branch requires another one. The only gate is the
+    era: a row opens when you enter that era.
+  - Each row holds three shared bonuses -- cultural, economic and
+    military -- plus one national bonus available only to your civ.
+  - There are seven rows, from Classical to Information.
 
 SHARED, BY ERA
 
@@ -771,9 +944,13 @@ NATIONAL
       "Wayfaring": `
 NEW POLICY BRANCH: WAYFARING
 
-Seven policies about roads, caravans and keeping the empire connected.
+Seven policies about roads, caravans and keeping the empire connected:
+an opener, five main policies and a finisher. Available from the start,
+no era required. The five main policies have no prerequisites between
+them -- take them in any order.
 
-  - Wayfaring (opener): +100% caravan and caravansary production.
+  - OPENER BONUS, Wayfaring: +100% caravan and caravansary production.
+    Granted the moment you invest in the branch.
   - Waystations: caravansaries give +1 culture and +1 production.
   - Safe Conduct: free caravan, +1 trade route, caravansaries give
     +1 happiness, roads cost no maintenance.
@@ -783,17 +960,25 @@ Seven policies about roads, caravans and keeping the empire connected.
     science from the Grand Emporium.
   - Trade Charter: the Grand Emporium gives +4 gold, +4 production,
     +4 happiness and +4 culture.
-  - Long Roads (finisher): caravans cannot be pillaged, +10% building
-    production, every tile a caravan crosses gives +1 food and +1 gold.
+  - FINISHER BONUS, Long Roads: caravans cannot be pillaged, +10%
+    building production, every tile a caravan crosses gives +1 food and
+    +1 gold. Arrives once all five main policies are taken.
 `,
       "Bulwark": `
 NEW POLICY BRANCH: BULWARK
 
-Seven medieval defence policies. The point of the branch is that Walls,
+Seven defence policies: an opener, five main policies and a finisher.
+Unlocks in the Medieval era. The point of the branch is that Walls,
 Castle, Arsenal and Military Base stop being pure upkeep and start
 feeding the city.
 
-  - Bulwark (opener): Walls, Castle, Arsenal and Military Base 50% cheaper.
+LINKS INSIDE THE BRANCH
+  Logistics, Outworks and Garrison Stores are free to take in any order.
+  River Tolls is locked until all three of them are taken. Ancestral Walls
+  depends on nothing.
+
+  - OPENER BONUS, Bulwark: Walls, Castle, Arsenal and Military Base 50%
+    cheaper. Granted the moment you invest in the branch.
   - Logistics: a free Great Quartermaster; each of the four defensive
     buildings gains a quartermaster specialist slot (+3 food).
   - Outworks: every tile within radius 1 of the city gets +1 food for
@@ -803,12 +988,22 @@ feeding the city.
     stored food on growth, up to +20% with all four.
   - Ancestral Walls: each of the four buildings gives +2 culture in your
     first five cities.
-  - River Tolls: river tiles give +1 gold.
-  - Stronghold (finisher): +30% ranged strength for garrisoned cities,
-    every tile within radius 1 gives +1 science and cannot be pillaged,
-    and nearby enemies take damage.
+  - River Tolls: river tiles give +1 gold. REQUIRES the three policies
+    above.
+  - FINISHER BONUS, Stronghold: +30% ranged strength for garrisoned
+    cities, every tile within radius 1 gives +1 science and cannot be
+    pillaged, and nearby enemies take damage.
 `,
       "Policies": `
+HOW TO READ A BRANCH
+
+Every branch has an OPENER bonus, granted the moment you invest in the
+branch, and a FINISHER bonus, granted once all its policies are taken.
+Inside a branch policies sit on levels: to reach a lower level you must
+first take policies on the level above. Some policies additionally
+require specific neighbours. The Legacy, Wayfaring and Bulwark sections
+name their opener, finisher and links explicitly.
+
 STANDALONE NEW POLICIES
 
   - Free Mind (Freedom): +33% great artist, writer and musician rate;
@@ -817,11 +1012,110 @@ STANDALONE NEW POLICIES
     kills and 50% more experience in combat.
   - People's Army (Order): +75% tourism while the empire is happy.
 
-TOTALS
+REWORKED OLD POLICIES
 
-  - 82 new policies, 87 reworked.
-  - Removed: ~~Their Finest Hour~~, ~~Universal Healthcare~~ in both
-    ideology versions.
+Of the existing policies 59 changed in substance; another 15 were merely
+moved around the tree without any change to their effect.
+
+OPENERS AND FINISHERS OF THE OLD BRANCHES
+  - Commerce opener: added +25% great merchant rate.
+  - Commerce finisher: the free unit is now granted immediately.
+  - Honor opener: a Marshal appears when you found a city.
+  - Honor finisher: gold from kills removed and replaced by science from
+    kills; the technology for capturing a city removed; +10% city growth
+    added.
+  - Patronage opener: slower influence decay removed; instead influence
+    never drops below 20.
+  - Rationalism opener: the bonus to one-off discoveries removed;
+    instead +20% great scientists.
+  - Rationalism finisher: no longer one-shot.
+  - Exploration finisher: +1 happiness per luxury and +100% great
+    admirals.
+
+TRADITION
+  - Aristocracy: +15% wonder production.
+  - Landed Elite: capital growth +15% instead of +10%.
+
+LIBERTY
+  - Meritocracy: +15% gold from internal trade routes.
+  - Representation: policy cost discount per city -33% instead of -30%.
+
+HONOR
+  - Discipline: now grants a free unit.
+  - Military Caste: culture and happiness per garrison removed; instead
+    the garrison needs no maintenance.
+  - Military Tradition: +50% experience removed.
+  - Professional Army: the 33% upgrade discount removed.
+  - Warrior Code: +50% great generals removed; instead four free units.
+
+COMMERCE
+  - Entrepreneurship: +25% great merchants removed; instead a free unit.
+
+PATRONAGE
+  - Merchant Confederacy: trade routes and their happiness removed;
+    instead +200% city-state trade and a steady influence gain with
+    protected city-states.
+  - Philanthropy: +1 delegate instead of +2.
+  - Scholasticism: culture per diplomat removed; instead allied
+    city-states share science.
+
+PIETY
+  - Reformation: tiles get cheaper as borders grow.
+
+RATIONALISM
+  - Humanism: +10% science from one-off discoveries.
+  - Scientific Revolution: +25% great scientists removed, no longer
+    one-shot.
+
+EXPLORATION
+  - Colonialism: +6 territory claim and +2 population for a new city.
+  - Navigation School: +50% great admirals removed, the free unit is gone.
+  - Treasure Fleets: cargo immunity and +200 gold from sea routes removed.
+
+FREEDOM
+  - Arsenal of Democracy: +25% city strength.
+  - Economic Union: science by population removed; instead +2 trade
+    routes and +5% gold from city-state routes.
+  - Military Bloc: the one-off influence jump of 45 removed.
+  - Volunteer Army: 3 free units instead of 10.
+  - Space Procurements: the free unit removed.
+  - Moved to other levels: Capitalism, Creative Expression, Media Culture,
+    New Deal, Universal Healthcare, Urbanization.
+
+ORDER
+  - Dictatorship of the Proletariat: +15% building production and +25%
+    strategic resources; tourism while happy removed.
+  - Double Agents: the extra spy and spy detection removed.
+  - Hero of the People: +20% great people instead of +25%.
+  - Iron Curtain: the extra trade route removed, internal routes give
+    +200% instead of +100%.
+  - Resettlement: empire-wide population growth and happiness per city
+    replaced by +4 territory claim and +4 population for a new city.
+  - Skyscrapers: the building maintenance discount removed, building
+    purchases 50% cheaper instead of 33%.
+  - Moved to other levels: Academy of Sciences, Party Leadership,
+    Patriotic War, Young Pioneers.
+
+AUTOCRACY
+  - Cult of Personality: tourism against an enemy replaced by tourism
+    against a common foe, twice as strong.
+  - Fortified Borders: +14 happiness instead of +10.
+  - Industrial Espionage: the extra spy removed, tech stealing twice as
+    fast.
+  - Mobilization: unit maintenance 25% cheaper.
+  - Nationalism: the 50% maintenance discount removed; instead +100%
+    experience inside your borders.
+  - Total War: +15% military production instead of +25%.
+  - United Front: unit gifts from city-states removed.
+  - Moved to other levels: Elite Forces, Lightning Warfare, Militarism,
+    Police State.
+
+REMOVED ENTIRELY
+  - ~~Their Finest Hour~~, ~~Universal Healthcare~~ in both ideology
+    versions.
+
+TOTALS
+  82 new policies, 59 reworked, 15 repositioned, 3 removed.
 `,
       "Religion": `
 58 NEW BELIEFS
