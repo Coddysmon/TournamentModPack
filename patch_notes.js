@@ -180,7 +180,7 @@ Nova выросла из Tournament Mod 12.2a. Общими остались д�
     дают +1 довольства, дороги не требуют содержания.
   - Царская дорога: +2 еды и +2 золота в столице; города, связанные
     со столицей, получают +1 еды, +1 производства и +1 культуры.
-  - Странствующие учёные: +2 науки в каждом связанном со столицей городе
+  - Странствующие учёные: +1 науки в каждом связанном со столицей городе
     и +25% науки от Гранд-эмпориума.
   - Торговая хартия: Гранд-эмпориум даёт +4 золота, +4 производства,
     +4 довольства и +4 культуры.
@@ -286,6 +286,8 @@ Nova выросла из Tournament Mod 12.2a. Общими остались д�
     города-государства делятся наукой.
 
 БЛАГОЧЕСТИЕ
+  - Веротерпимость: удвоение бонуса пантеона убрано. Осталась наука:
+    +2 с каждого храма и +25% от Великого храма.
   - Реформация: клетки дешевеют по мере роста границ.
 
 РАЦИОНАЛИЗМ
@@ -956,7 +958,7 @@ them -- take them in any order.
     +1 happiness, roads cost no maintenance.
   - Royal Road: +2 food and +2 gold in the capital; cities connected to
     it get +1 food, +1 production and +1 culture.
-  - Wandering Scholars: +2 science in every connected city and +25%
+  - Wandering Scholars: +1 science in every connected city and +25%
     science from the Grand Emporium.
   - Trade Charter: the Grand Emporium gives +4 gold, +4 production,
     +4 happiness and +4 culture.
@@ -1060,6 +1062,8 @@ PATRONAGE
     city-states share science.
 
 PIETY
+  - Religious Tolerance: the doubled pantheon bonus is gone. The science
+    remains: +2 per Temple and +25% from the Grand Temple.
   - Reformation: tiles get cheaper as borders grow.
 
 RATIONALISM
