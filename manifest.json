@@ -7922,11 +7922,11 @@
     ]
   },
   "client": {
-    "version": "0.3.7.0",
-    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/nova-client-0.3.7.0.zip",
-    "sha256": "bd7b218b601b986c15cc885203d3d2c7eb6e09364ac472af5f3dcc1f91a52d62",
-    "size": 59121616,
-    "notes": "Кнопка «Играть» всегда запускает DirectX 11. Через ссылку Steam выбор версии оставался за ним: он либо спрашивал, либо молча брал ту, что запускали в прошлый раз, и партия могла уйти в девятый DirectX."
+    "version": "0.3.8.0",
+    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/nova-client-0.3.8.0.zip",
+    "sha256": "b584a57b1e682de47e8e560865d25002f18498e8baae881911988804eb35e6ad",
+    "size": 59122007,
+    "notes": "EUI опознаётся по любой папке UI_bc1*, а не только по точному имени. У сборки UI_bc1_xits проваливались все четырнадцать проверок: клиент решал, что EUI нет, и клал не-EUI экраны поверх работающего EUI — на экране политик выбрать институт было нечем. В списке курсоров появился родной курсор игры."
   },
   "relay": {
     "host": "109.73.196.175",
