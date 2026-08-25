@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.8",
+  "packageVersion": "1.5.9",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-08-24T22:41:25.9468016+00:00",
+  "createdUtc": "2026-08-25T10:24:42.6859554+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -2278,6 +2278,36 @@
           "hash": "38f2342d65c1220dbd6c63d8510def4af5bd26e84edc07990f807880ccf857ee"
         },
         {
+          "path": "Art/NovaAura_Crown.dds",
+          "size": 1398228,
+          "hash": "7968d0e51f5759e54342589adc6a820076c55c7f65e1c325787b90293861ada6"
+        },
+        {
+          "path": "Art/NovaAura_Ember.dds",
+          "size": 1398228,
+          "hash": "b19acd5210fda3aec5f60daa2d7433cb7f22ae7162fc4ee32ecf5147f4551b61"
+        },
+        {
+          "path": "Art/NovaAura_Halo.dds",
+          "size": 1398228,
+          "hash": "2b219d6c24fc5f9295deddc9f3c0ade21f156d3bf7155e494e4508c1a6dcc5b7"
+        },
+        {
+          "path": "Art/NovaAura_Pulse.dds",
+          "size": 1398228,
+          "hash": "4aff67a773ef64f7ecd3dd63b58b2abcc242719125e12944fe8af13a9182a8fb"
+        },
+        {
+          "path": "Art/NovaAura_Rime.dds",
+          "size": 1398228,
+          "hash": "2f5c2e511744d3f889e5f84ef9efcd3f4e5dcca701aa1e531105d82dc9d17060"
+        },
+        {
+          "path": "Art/NovaAura_Sigil.dds",
+          "size": 1398228,
+          "hash": "4d8d6f1e49d773c56fdc23dca47edb528d23e939c7bd7fa6548fca768304040a"
+        },
+        {
           "path": "Art/NovaMenuBackground.dds",
           "size": 8294528,
           "hash": "0b2513f1fc86475c58a1250ebfce715923a835f36afd6af848359bcba69cfd52"
@@ -3134,13 +3164,18 @@
         },
         {
           "path": "Override/Audio2DScriptsExpansion1.xml",
-          "size": 1555,
-          "hash": "22f7352bf0feface3f62723ac91d055d13b61cddbe8dd458e1d68a099d3f137c"
+          "size": 6733,
+          "hash": "4694cf7b134026d797472ac102fea68124d6ef509f790158416d671e228bce6d"
         },
         {
           "path": "Override/AudioDefinesExpansion1.xml",
-          "size": 1057,
-          "hash": "680602326d607f79a418dea002e5e7c4b5ea28866fcba263fc1f6d3e6141dfe9"
+          "size": 3980,
+          "hash": "5da664eb5a9d70dd4421aee1cf5d9b1569fc1468c805eac6d1b96ff8b0e84bfe"
+        },
+        {
+          "path": "Override/AudioParams.xml",
+          "size": 10087,
+          "hash": "3e28244d63fa9641cbc8325bb09bfff1fdedd333922862c26fa04bc5d5a7ecc2"
         },
         {
           "path": "Override/CIV5AICityStrategies.xml",
@@ -3469,8 +3504,8 @@
         },
         {
           "path": "Override/CIV5Controls.xml",
-          "size": 1532490,
-          "hash": "30599ab74b83530c776c43a261d2450fddcdbd374138c6351c9aa128f290ba03"
+          "size": 1532913,
+          "hash": "5eeaeceaa0bb3399de2472523aa54f37205cf2546cca9e3fa8f4681647c37ac2"
         },
         {
           "path": "Override/CIV5CultureLevels.xml",
@@ -5444,8 +5479,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 6639383,
-          "hash": "3e62a1badd6c1d11f96e75a8d10561378b7ad24d1841ae219210ecddc4734c10"
+          "size": 6642792,
+          "hash": "7f23634e335519c8bb434dfcd1a01acf075168387179e5e0e821b0cfc5ffccb6"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
@@ -5768,6 +5803,91 @@
           "hash": "423b62b7dbd98d095ac2df2cbeaf5384c33348e5296811eeb7671007e1de6952"
         },
         {
+          "path": "Sounds/Streamed/NovaCW_09.mp3",
+          "size": 17598,
+          "hash": "4a2b0042cda9562ebf41814bc2f6b4843031bf958bac5bcc33b517017b6534b1"
+        },
+        {
+          "path": "Sounds/Streamed/NovaCW_10.mp3",
+          "size": 57774,
+          "hash": "19583ea2148cb0cc46699f0e1e059d9c4750259434ae12648888b0b6e5feffee"
+        },
+        {
+          "path": "Sounds/Streamed/NovaCW_11.mp3",
+          "size": 21829,
+          "hash": "7597abb4d9b0c8373ac44f01d722ba3a6e20326ed0a57e732483cc922f89f239"
+        },
+        {
+          "path": "Sounds/Streamed/NovaCW_12.mp3",
+          "size": 56886,
+          "hash": "ae4a0a9b00f489508c44825b06bcd2dfa2eaa304af617b09303ea347df6b80a7"
+        },
+        {
+          "path": "Sounds/Streamed/NovaCW_13.mp3",
+          "size": 22020,
+          "hash": "0cfb793a16b13fe5dd8264fdb926725bbc7591b9297d28c2e63b985d5109f138"
+        },
+        {
+          "path": "Sounds/Streamed/NovaCW_14.mp3",
+          "size": 28465,
+          "hash": "0342ba159934ec2f1f5942619e10700375ad8f3d19243aadb353da45b0396ab8"
+        },
+        {
+          "path": "Sounds/Streamed/NovaCW_15.mp3",
+          "size": 96685,
+          "hash": "34b82d96b10566a5c7c9bbd3e5bbd18a91ca81d9c6a2e9f17e126bf9c0be6c44"
+        },
+        {
+          "path": "Sounds/Streamed/NovaCW_16.mp3",
+          "size": 16344,
+          "hash": "1074fd01d31ff2126809ae2b79edc546042460040c087e246bb788faa790ca43"
+        },
+        {
+          "path": "Sounds/Streamed/NovaCW_17.mp3",
+          "size": 25539,
+          "hash": "72699bdea2d7355bda34fa63513cba828f794960dbfe93ccce5bb7fb5db4be64"
+        },
+        {
+          "path": "Sounds/Streamed/NovaCW_18.mp3",
+          "size": 672426,
+          "hash": "abcacbf40df4ea1fe56b490a1138b1c6c8582507129d5fe741b4c5266a34cf1e"
+        },
+        {
+          "path": "Sounds/Streamed/NovaCW_19.mp3",
+          "size": 33472,
+          "hash": "79970e362655a6e8ec4c41687320806dbe9231c872279dda247567c0dfc67512"
+        },
+        {
+          "path": "Sounds/Streamed/NovaCW_20.mp3",
+          "size": 35987,
+          "hash": "26a1b1c935cdb5ede001bdbdfdb978a1c259854fdb35da01e1c0584867b25745"
+        },
+        {
+          "path": "Sounds/Streamed/NovaCW_21.mp3",
+          "size": 272807,
+          "hash": "f71199a048f0712eb74a3c5a42ba3debcee05ea94be4b536b26c47ac5888cca4"
+        },
+        {
+          "path": "Sounds/Streamed/NovaCW_22.mp3",
+          "size": 36245,
+          "hash": "b567e068f155439b5f3862fd3216ab8b45507bc2c396f4679dcdffa92d0c1e1a"
+        },
+        {
+          "path": "Sounds/Streamed/NovaCW_23.mp3",
+          "size": 25509,
+          "hash": "0824cc1a09afc5a9c390ee8cd1deae5b75a4ba6491eff8e36df19a6c39857953"
+        },
+        {
+          "path": "Sounds/Streamed/NovaCW_24.mp3",
+          "size": 12455,
+          "hash": "e84aeede0649a6f005358dd49c2a9fa1db62c4c1414e79a672afd314d8fb230f"
+        },
+        {
+          "path": "Sounds/Streamed/NovaCW_25.mp3",
+          "size": 58653,
+          "hash": "9abfcfdfa944180e6e1b71931e847bedb3a8ddecf985b2c5aafb73374373c1d9"
+        },
+        {
           "path": "Sounds/Streamed/NovaCW_Goida.mp3",
           "size": 35793,
           "hash": "11c3d3ed83e390766cd9f6e3432363d9916c4a5f9b269d8da93e9d5eac6f9a0f"
@@ -5839,8 +5959,8 @@
         },
         {
           "path": "tmp/eui/DiploCorner.lua",
-          "size": 30187,
-          "hash": "55a8df2fe86ee8a55f6f9c734cb4d581257e4f4fa1431da38d542f7d979a4b47"
+          "size": 31337,
+          "hash": "1829767b6551f8a58acecab476568d71f8ed83b8ebafac808c9a6c97cfff4cf3"
         },
         {
           "path": "tmp/eui/DiploCorner.xml",
@@ -5859,13 +5979,13 @@
         },
         {
           "path": "tmp/eui/OptionsMenu.lua.ignore",
-          "size": 114086,
-          "hash": "676e6c64778eec52f72e095b1ab500cc1ccd7e09bf7be39b1c2f78016918172b"
+          "size": 116342,
+          "hash": "1c71522ac05cc20d032dd261ca0a04ee7f272c63132e757167bc311336e98964"
         },
         {
           "path": "tmp/eui/OptionsMenu.xml.ignore",
-          "size": 42690,
-          "hash": "a44d6e0387541f70602b48f73da11d136f42f422c62ca500d18f6ec32e6d748a"
+          "size": 43075,
+          "hash": "13b85296668f5e5f76f6cd3864c749614afe75767d6918d0444666196e41d16c"
         },
         {
           "path": "tmp/eui/SocialPolicyPopup.lua",
@@ -5969,13 +6089,13 @@
         },
         {
           "path": "tmp/ui/ChatWheel.lua",
-          "size": 4898,
-          "hash": "04fbe26a18af4ad8191dc67391cef165af38f79c94db85172765599a4b99b0a6"
+          "size": 9879,
+          "hash": "3d763143bbc6586063dad2235e53fb5031100604b12bc5e95dfe52187b010bce"
         },
         {
           "path": "tmp/ui/ChatWheel.xml",
-          "size": 3087,
-          "hash": "b267d0011861bdc852ecdb14c3e81924b715d48e51962946790af0aad3ff941a"
+          "size": 6615,
+          "hash": "90dbd7aeb332a3fc1509285547f28564d6d7074ab091b36589f7fe4c5a262a4d"
         },
         {
           "path": "tmp/ui/ChooseIdeologyPopup.lua",
@@ -6094,8 +6214,8 @@
         },
         {
           "path": "tmp/ui/DiploCorner.lua",
-          "size": 28743,
-          "hash": "32ad434fb3061eddf86b8d9cdeaa3cd569da11f962f5d2871c0795a6110618ea"
+          "size": 29893,
+          "hash": "31cf3cdfb5f3ae2bc1651580014e8abdaa28a9fab312f6a5f8a6d78ef7d050ce"
         },
         {
           "path": "tmp/ui/DiploCorner.xml",
@@ -6179,8 +6299,8 @@
         },
         {
           "path": "tmp/ui/FrontEnd.lua",
-          "size": 2223,
-          "hash": "ae2e6ded8b4e43f7e4c5ae09148b359dd0bade9176b4a2680effabaee8e8bb97"
+          "size": 2800,
+          "hash": "11c8505e97d5adfc15716612ec37e64644c2d2896890581f89633ab5e4e9d582"
         },
         {
           "path": "tmp/ui/GameMenu.lua",
@@ -6209,8 +6329,8 @@
         },
         {
           "path": "tmp/ui/Highlights.xml",
-          "size": 3333,
-          "hash": "3696e2d5468b690dc10672b9a06796cee3414019413e304ee4d656338dd81fa7"
+          "size": 7299,
+          "hash": "11e45ed443e609a263ebc9a1b05d42aa06b782aaed866f899b454ad84f6f7f31"
         },
         {
           "path": "tmp/ui/ImportHappiness.lua",
@@ -6224,8 +6344,8 @@
         },
         {
           "path": "tmp/ui/InGame.lua",
-          "size": 45486,
-          "hash": "971d7bd02f6cfecdd62f22d95410eb98705dce45c5344aeaf0dec10c227b054d"
+          "size": 45821,
+          "hash": "12325beea2cb110901508fe990b5fe05f753ec1b01114d1ac2ff3d54b4cbb386"
         },
         {
           "path": "tmp/ui/JoiningRoom.lua",
@@ -6249,13 +6369,13 @@
         },
         {
           "path": "tmp/ui/MainMenu.lua",
-          "size": 17236,
-          "hash": "275ae67b5e85dbd7144baf49d4e7b8c31e4a9a559db5c1d115a9e26006b15cdb"
+          "size": 18987,
+          "hash": "afcf5d51fc411832fe367bfe1cc016a63c8a8fc8dfaaca92d3288d74a677ae99"
         },
         {
           "path": "tmp/ui/MainMenu.xml",
-          "size": 14828,
-          "hash": "fc2bb1bc21aaaaf8158ac678a958d50a6d211ec13ed5e0a35433bb0fc4edd4bb"
+          "size": 15428,
+          "hash": "5927feb056b5b2af3064eba9f7d5b1ba41a8915b86894f8f06fdd254f3811f7b"
         },
         {
           "path": "tmp/ui/MatchOutcomeRecorder.lua",
@@ -6318,14 +6438,24 @@
           "hash": "464c5bda2469cd2e65c7947be1adadc975dc7a324e606b3c74b24a3766844001"
         },
         {
+          "path": "tmp/ui/NovaAura.lua",
+          "size": 14717,
+          "hash": "55951247b0bb7cd860d05bea95d017428df9b3be0a0d9b3305d3d3d9a79be4c6"
+        },
+        {
+          "path": "tmp/ui/NovaAura.xml",
+          "size": 1245,
+          "hash": "0fe8ce05ff5435be728e94a956a7f87a999fa6d4529dcf70dd471f5bfc560b5e"
+        },
+        {
           "path": "tmp/ui/OptionsMenu.lua.ignore",
-          "size": 112704,
-          "hash": "4c77f6cf432906232c4f4af5bfa4e600ce0cc57af006209c4782691812766c11"
+          "size": 114920,
+          "hash": "e9e8b1df9ae841645adfe88453ff31e157fcf16d62bc8a84ecadc6e732ddc1ce"
         },
         {
           "path": "tmp/ui/OptionsMenu.xml.ignore",
-          "size": 41443,
-          "hash": "3223daeaf2041f4e12442b44da0e2a49017be829ce5f4725d3ca2ce649011c42"
+          "size": 41848,
+          "hash": "0e39455599c2bf076ae37c6550996bbad3de79b63440b4875ffcb85e88a033f7"
         },
         {
           "path": "tmp/ui/PlotHelpManager.lua",
@@ -6574,8 +6704,8 @@
         },
         {
           "path": "ui_check.bat",
-          "size": 20437,
-          "hash": "50ef9b33ab71448bc7dcd6fb83eb3534deed5322839f451e1e894709b1348a9a"
+          "size": 20603,
+          "hash": "593c7b571a0c316f2068ab286abad17cfbf0925579fe68773b76e05b61d8867e"
         }
       ]
     },
@@ -6673,6 +6803,16 @@
       {
         "from": "tmp/ui/TurnProfiler.xml",
         "to": "UI/TurnProfiler.xml",
+        "when": []
+      },
+      {
+        "from": "tmp/ui/NovaAura.lua",
+        "to": "UI/NovaAura.lua",
+        "when": []
+      },
+      {
+        "from": "tmp/ui/NovaAura.xml",
+        "to": "UI/NovaAura.xml",
         "when": []
       },
       {
@@ -7847,6 +7987,14 @@
     "entries": [
       {
         "date": "2026-08-25T00:00:00+00:00",
+        "title": "Nova 1.5.9 \u2014 \u0433\u043E\u043B\u043E\u0441\u043E\u0432\u044B\u0435 \u043A\u043E\u043C\u0430\u043D\u0434\u044B \u0438 \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438 \u0437\u0432\u0443\u043A\u0430",
+        "body": "\u041F\u0430\u043D\u0435\u043B\u044C \u0433\u043E\u043B\u043E\u0441\u043E\u0432\u044B\u0445 \u043A\u043E\u043C\u0430\u043D\u0434 \u0432\u044B\u0440\u043E\u0441\u043B\u0430 \u0441 8 \u0444\u0440\u0430\u0437 \u0434\u043E 25, \u0438\u0437 \u043D\u0438\u0445 17 \u043D\u043E\u0432\u044B\u0445. \u041E\u0442\u043A\u0440\u044B\u0432\u0430\u0435\u0442\u0441\u044F\n\u043A\u043B\u0430\u0432\u0438\u0448\u0435\u0439 H \u2014 \u043A\u043B\u0430\u0432\u0438\u0448\u0443 \u043C\u043E\u0436\u043D\u043E \u043F\u0435\u0440\u0435\u043D\u0430\u0437\u043D\u0430\u0447\u0438\u0442\u044C \u0432 \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0430\u0445 \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F, \u0440\u0430\u0437\u0434\u0435\u043B\n\u00AB\u0418\u0433\u0440\u043E\u0432\u044B\u0435 \u043A\u043E\u043C\u0430\u043D\u0434\u044B\u00BB, \u0441\u0442\u0440\u043E\u043A\u0430 \u00AB\u041F\u0430\u043D\u0435\u043B\u044C \u0437\u0432\u0443\u043A\u043E\u0432\u044B\u0445 \u043A\u043E\u043C\u0430\u043D\u0434\u00BB.\n\u041C\u0435\u0436\u0434\u0443 \u043E\u0442\u043F\u0440\u0430\u0432\u043A\u0430\u043C\u0438 \u0442\u0435\u043F\u0435\u0440\u044C \u043F\u0430\u0443\u0437\u0430 \u0432 \u0434\u0432\u0435 \u043C\u0438\u043D\u0443\u0442\u044B: \u043D\u0430 \u043A\u043D\u043E\u043F\u043A\u0435 \u0432\u0438\u0434\u043D\u043E, \u0441\u043A\u043E\u043B\u044C\u043A\u043E \u043E\u0441\u0442\u0430\u043B\u043E\u0441\u044C.\n\u0421\u0447\u0438\u0442\u0430\u0435\u0442 \u043D\u0435 \u0442\u043E\u043B\u044C\u043A\u043E \u0443 \u043E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u0435\u043B\u044F, \u043D\u043E \u0438 \u0443 \u043F\u043E\u043B\u0443\u0447\u0430\u0442\u0435\u043B\u044F, \u0442\u0430\u043A \u0447\u0442\u043E \u0437\u0430\u0441\u044B\u043F\u0430\u0442\u044C \u0432\u0441\u0435\u0445\n\u0444\u0440\u0430\u0437\u0430\u043C\u0438 \u043D\u0435 \u0432\u044B\u0439\u0434\u0435\u0442 \u043D\u0438 \u043F\u0440\u0438 \u043A\u0430\u043A\u0438\u0445 \u043F\u0440\u0430\u0432\u043A\u0430\u0445 \u043D\u0430 \u0441\u0432\u043E\u0435\u0439 \u0441\u0442\u043E\u0440\u043E\u043D\u0435.\n\u0412 \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0430\u0445 \u0437\u0432\u0443\u043A\u0430 \u043F\u043E\u044F\u0432\u0438\u043B\u0441\u044F \u043E\u0442\u0434\u0435\u043B\u044C\u043D\u044B\u0439 \u043F\u043E\u043B\u0437\u0443\u043D\u043E\u043A \u00AB\u0413\u043E\u043B\u043E\u0441\u043E\u0432\u044B\u0435 \u043A\u043E\u043C\u0430\u043D\u0434\u044B\u00BB. \u0420\u0430\u043D\u044C\u0448\u0435 \u0438\u0445\n\u0433\u0440\u043E\u043C\u043A\u043E\u0441\u0442\u044C \u0448\u043B\u0430 \u043E\u0431\u0449\u0435\u0439 \u043A\u0443\u0447\u0435\u0439 \u0441\u043E \u0437\u0432\u0443\u043A\u0430\u043C\u0438 \u0438\u0433\u0440\u044B, \u0438 \u043F\u0440\u0438\u0433\u043B\u0443\u0448\u0438\u0442\u044C \u0442\u043E\u043B\u044C\u043A\u043E \u0444\u0440\u0430\u0437\u044B, \u043E\u0441\u0442\u0430\u0432\u0438\u0432\n\u0437\u0432\u0443\u043A\u0438 \u0438 \u043C\u0443\u0437\u044B\u043A\u0443, \u0431\u044B\u043B\u043E \u043D\u0435\u0447\u0435\u043C.\n\u0413\u043B\u0430\u0432\u043D\u043E\u0435 \u043C\u0435\u043D\u044E: \u0443\u0431\u0440\u0430\u043D\u044B \u043D\u0430\u0434\u043F\u0438\u0441\u0438, \u043B\u0435\u0436\u0430\u0432\u0448\u0438\u0435 \u0434\u0440\u0443\u0433 \u043D\u0430 \u0434\u0440\u0443\u0433\u0435, \u043F\u0430\u043D\u0435\u043B\u044C \u0441\u043B\u0435\u0432\u0430 \u0431\u043E\u043B\u044C\u0448\u0435 \u043D\u0435\n\u0442\u044F\u043D\u0435\u0442\u0441\u044F \u043F\u0443\u0441\u0442\u043E\u0442\u043E\u0439 \u0434\u043E \u043D\u0438\u0437\u0430 \u044D\u043A\u0440\u0430\u043D\u0430, \u0430 \u0444\u043E\u043D \u043F\u0435\u0440\u0435\u0441\u0442\u0430\u043B \u043C\u0435\u043D\u044F\u0442\u044C\u0441\u044F \u043F\u0440\u0438 \u0437\u0430\u0445\u043E\u0434\u0435 \u0432 \u043F\u043E\u0434\u043C\u0435\u043D\u044E.\n\u042F\u0440\u043B\u044B\u043A \u0432\u0435\u0440\u0441\u0438\u0438 \u0432 \u043C\u0435\u043D\u044E \u043D\u0430\u043A\u043E\u043D\u0435\u0446 \u0441\u043E\u0432\u043F\u0430\u0434\u0430\u0435\u0442 \u0441 \u043D\u0430\u0441\u0442\u043E\u044F\u0449\u0435\u0439. \u0412 1.5.8 \u0435\u0433\u043E \u043F\u043E\u0434\u043D\u044F\u0442\u044C \u0437\u0430\u0431\u044B\u043B\u0438,\n\u0438 \u043C\u0435\u043D\u044E \u0431\u0435\u0441\u0441\u0440\u043E\u0447\u043D\u043E \u043F\u0440\u0435\u0434\u043B\u0430\u0433\u0430\u043B\u043E \u043E\u0431\u043D\u043E\u0432\u0438\u0442\u044C\u0441\u044F \u0434\u043E \u0442\u043E\u0433\u043E, \u0447\u0442\u043E \u0443\u0436\u0435 \u0441\u0442\u043E\u044F\u043B\u043E.",
+        "tag": "\u041E\u0411\u041D\u041E\u0412\u041B\u0415\u041D\u0418\u0415",
+        "HasUsableUrl": false,
+        "IsUsable": true
+      },
+      {
+        "date": "2026-08-25T00:00:00+00:00",
         "title": "Nova 1.5.8 \u2014 \u0442\u0440\u0438 \u043D\u043E\u0432\u044B\u0445 \u0447\u0443\u0434\u0430 \u0441\u0432\u0435\u0442\u0430",
         "body": "\u041C\u0435\u0442\u0440\u043E\u043F\u043E\u043B\u0438\u0442\u0435\u043D (\u043F\u0430\u0440\u043E\u0432\u043E\u0439 \u0434\u0432\u0438\u0433\u0430\u0442\u0435\u043B\u044C): \u0432\u0430\u0448\u0438 \u044E\u043D\u0438\u0442\u044B \u043F\u043E\u043B\u0443\u0447\u0430\u044E\u0442 \u002B2 \u0445\u043E\u0434\u0430, \u043F\u043E\u043A\u0430 \u043D\u0430\u0445\u043E\u0434\u044F\u0442\u0441\u044F \u043D\u0430\n\u0441\u0432\u043E\u0435\u0439 \u0442\u0435\u0440\u0440\u0438\u0442\u043E\u0440\u0438\u0438 \u2014 \u0440\u0430\u0431\u043E\u0447\u0438\u0435 \u0438 \u043F\u043E\u0441\u0435\u043B\u0435\u043D\u0446\u044B \u0442\u043E\u0436\u0435. \u041F\u043B\u044E\u0441 5 \u0434\u043E\u0432\u043E\u043B\u044C\u0441\u0442\u0432\u0430, 2 \u043A\u0443\u043B\u044C\u0442\u0443\u0440\u044B \u0438\n2 \u043E\u0447\u043A\u0430 \u0432\u0435\u043B\u0438\u043A\u043E\u0433\u043E \u0438\u043D\u0436\u0435\u043D\u0435\u0440\u0430 \u0437\u0430 \u0445\u043E\u0434.\n\u041F\u0451\u0440\u043B-\u0425\u0430\u0440\u0431\u043E\u0440 (\u044D\u043B\u0435\u043A\u0442\u0440\u043E\u043D\u0438\u043A\u0430): \u002B25% \u043A \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0443 \u043A\u043E\u0440\u0430\u0431\u043B\u0435\u0439 \u0432 \u044D\u0442\u043E\u043C \u0433\u043E\u0440\u043E\u0434\u0435, \u0438 \u044D\u0442\u0438\n\u043A\u043E\u0440\u0430\u0431\u043B\u0438 \u043F\u043E\u043B\u0443\u0447\u0430\u044E\u0442 \u002B1 \u043A \u043E\u0431\u0437\u043E\u0440\u0443. \u041F\u0440\u0438 \u043F\u043E\u0441\u0442\u0440\u043E\u0439\u043A\u0435 \u0432 \u0433\u043E\u0440\u043E\u0434\u0435 \u043F\u043E\u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u0432\u0435\u043B\u0438\u043A\u0438\u0439 \u0430\u0434\u043C\u0438\u0440\u0430\u043B.\n\u041F\u043B\u044E\u0441 1 \u043A\u0443\u043B\u044C\u0442\u0443\u0440\u0430.\n\u0427\u0435\u0440\u043D\u043E\u0431\u044B\u043B\u044C\u0441\u043A\u0430\u044F \u0410\u042D\u0421 (\u043C\u043E\u0431\u0438\u043B\u044C\u043D\u0430\u044F \u0442\u0430\u043A\u0442\u0438\u043A\u0430): \u043F\u044F\u0442\u044C \u0432\u0430\u0448\u0438\u0445 \u0441\u0442\u0430\u0440\u0435\u0439\u0448\u0438\u0445 \u0433\u043E\u0440\u043E\u0434\u043E\u0432 \u043F\u043E\u043B\u0443\u0447\u0430\u044E\u0442 \u043F\u043E\n\u0431\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u043E\u0439 \u0430\u0442\u043E\u043C\u043D\u043E\u0439 \u044D\u043B\u0435\u043A\u0442\u0440\u043E\u0441\u0442\u0430\u043D\u0446\u0438\u0438, \u0438 \u0447\u0443\u0434\u043E \u0434\u0430\u0451\u0442 5 \u0443\u0440\u0430\u043D\u0430 \u2014 \u0442\u043E\u0433\u043E \u0441\u0430\u043C\u043E\u0433\u043E, \u043D\u0430 \u043A\u043E\u0442\u043E\u0440\u043E\u043C\n\u044D\u0442\u0438 \u0441\u0442\u0430\u043D\u0446\u0438\u0438 \u0438 \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0442.\n\u0412 \u043B\u043E\u0431\u0431\u0438 \u043F\u043E\u044F\u0432\u0438\u043B\u0430\u0441\u044C \u043A\u043D\u043E\u043F\u043A\u0430 \u00AB\u0426\u0438\u0432\u0438\u043B\u043E\u043F\u0435\u0434\u0438\u044F\u00BB \u2014 \u0440\u044F\u0434\u043E\u043C \u0441 \u00AB\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C\u00BB \u0438 \u00AB\u0414\u0440\u0430\u0444\u0442\u044B\u00BB.\n\u0424\u043E\u043D \u0433\u043B\u0430\u0432\u043D\u043E\u0433\u043E \u043C\u0435\u043D\u044E \u043F\u0435\u0440\u0435\u0440\u0438\u0441\u043E\u0432\u0430\u043D: \u043F\u0440\u0435\u0436\u043D\u0438\u0439 \u0440\u0430\u0441\u0442\u044F\u0433\u0438\u0432\u0430\u043B\u0441\u044F \u0441 1168 \u0442\u043E\u0447\u0435\u043A \u0434\u043E \u0440\u0430\u0437\u043C\u0435\u0440\u0430\n\u044D\u043A\u0440\u0430\u043D\u0430 \u0438 \u0437\u0430\u043E\u0434\u043D\u043E \u043F\u043B\u044E\u0449\u0438\u043B\u0441\u044F \u043F\u043E \u0433\u043E\u0440\u0438\u0437\u043E\u043D\u0442\u0430\u043B\u0438, \u043E\u0442\u0447\u0435\u0433\u043E \u0432\u044B\u0433\u043B\u044F\u0434\u0435\u043B \u043C\u044B\u043B\u044C\u043D\u044B\u043C. \u041D\u043E\u0432\u044B\u0439 \u0441\u0434\u0435\u043B\u0430\u043D\n\u043F\u043E\u0434 1920x1080 \u043E\u0434\u0438\u043D \u043A \u043E\u0434\u043D\u043E\u043C\u0443.",
         "tag": "\u041E\u0411\u041D\u041E\u0412\u041B\u0415\u041D\u0418\u0415",
@@ -7999,6 +8147,14 @@
       }
     ],
     "Usable": [
+      {
+        "date": "2026-08-25T00:00:00+00:00",
+        "title": "Nova 1.5.9 \u2014 \u0433\u043E\u043B\u043E\u0441\u043E\u0432\u044B\u0435 \u043A\u043E\u043C\u0430\u043D\u0434\u044B \u0438 \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438 \u0437\u0432\u0443\u043A\u0430",
+        "body": "\u041F\u0430\u043D\u0435\u043B\u044C \u0433\u043E\u043B\u043E\u0441\u043E\u0432\u044B\u0445 \u043A\u043E\u043C\u0430\u043D\u0434 \u0432\u044B\u0440\u043E\u0441\u043B\u0430 \u0441 8 \u0444\u0440\u0430\u0437 \u0434\u043E 25, \u0438\u0437 \u043D\u0438\u0445 17 \u043D\u043E\u0432\u044B\u0445. \u041E\u0442\u043A\u0440\u044B\u0432\u0430\u0435\u0442\u0441\u044F\n\u043A\u043B\u0430\u0432\u0438\u0448\u0435\u0439 H \u2014 \u043A\u043B\u0430\u0432\u0438\u0448\u0443 \u043C\u043E\u0436\u043D\u043E \u043F\u0435\u0440\u0435\u043D\u0430\u0437\u043D\u0430\u0447\u0438\u0442\u044C \u0432 \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0430\u0445 \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F, \u0440\u0430\u0437\u0434\u0435\u043B\n\u00AB\u0418\u0433\u0440\u043E\u0432\u044B\u0435 \u043A\u043E\u043C\u0430\u043D\u0434\u044B\u00BB, \u0441\u0442\u0440\u043E\u043A\u0430 \u00AB\u041F\u0430\u043D\u0435\u043B\u044C \u0437\u0432\u0443\u043A\u043E\u0432\u044B\u0445 \u043A\u043E\u043C\u0430\u043D\u0434\u00BB.\n\u041C\u0435\u0436\u0434\u0443 \u043E\u0442\u043F\u0440\u0430\u0432\u043A\u0430\u043C\u0438 \u0442\u0435\u043F\u0435\u0440\u044C \u043F\u0430\u0443\u0437\u0430 \u0432 \u0434\u0432\u0435 \u043C\u0438\u043D\u0443\u0442\u044B: \u043D\u0430 \u043A\u043D\u043E\u043F\u043A\u0435 \u0432\u0438\u0434\u043D\u043E, \u0441\u043A\u043E\u043B\u044C\u043A\u043E \u043E\u0441\u0442\u0430\u043B\u043E\u0441\u044C.\n\u0421\u0447\u0438\u0442\u0430\u0435\u0442 \u043D\u0435 \u0442\u043E\u043B\u044C\u043A\u043E \u0443 \u043E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u0435\u043B\u044F, \u043D\u043E \u0438 \u0443 \u043F\u043E\u043B\u0443\u0447\u0430\u0442\u0435\u043B\u044F, \u0442\u0430\u043A \u0447\u0442\u043E \u0437\u0430\u0441\u044B\u043F\u0430\u0442\u044C \u0432\u0441\u0435\u0445\n\u0444\u0440\u0430\u0437\u0430\u043C\u0438 \u043D\u0435 \u0432\u044B\u0439\u0434\u0435\u0442 \u043D\u0438 \u043F\u0440\u0438 \u043A\u0430\u043A\u0438\u0445 \u043F\u0440\u0430\u0432\u043A\u0430\u0445 \u043D\u0430 \u0441\u0432\u043E\u0435\u0439 \u0441\u0442\u043E\u0440\u043E\u043D\u0435.\n\u0412 \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0430\u0445 \u0437\u0432\u0443\u043A\u0430 \u043F\u043E\u044F\u0432\u0438\u043B\u0441\u044F \u043E\u0442\u0434\u0435\u043B\u044C\u043D\u044B\u0439 \u043F\u043E\u043B\u0437\u0443\u043D\u043E\u043A \u00AB\u0413\u043E\u043B\u043E\u0441\u043E\u0432\u044B\u0435 \u043A\u043E\u043C\u0430\u043D\u0434\u044B\u00BB. \u0420\u0430\u043D\u044C\u0448\u0435 \u0438\u0445\n\u0433\u0440\u043E\u043C\u043A\u043E\u0441\u0442\u044C \u0448\u043B\u0430 \u043E\u0431\u0449\u0435\u0439 \u043A\u0443\u0447\u0435\u0439 \u0441\u043E \u0437\u0432\u0443\u043A\u0430\u043C\u0438 \u0438\u0433\u0440\u044B, \u0438 \u043F\u0440\u0438\u0433\u043B\u0443\u0448\u0438\u0442\u044C \u0442\u043E\u043B\u044C\u043A\u043E \u0444\u0440\u0430\u0437\u044B, \u043E\u0441\u0442\u0430\u0432\u0438\u0432\n\u0437\u0432\u0443\u043A\u0438 \u0438 \u043C\u0443\u0437\u044B\u043A\u0443, \u0431\u044B\u043B\u043E \u043D\u0435\u0447\u0435\u043C.\n\u0413\u043B\u0430\u0432\u043D\u043E\u0435 \u043C\u0435\u043D\u044E: \u0443\u0431\u0440\u0430\u043D\u044B \u043D\u0430\u0434\u043F\u0438\u0441\u0438, \u043B\u0435\u0436\u0430\u0432\u0448\u0438\u0435 \u0434\u0440\u0443\u0433 \u043D\u0430 \u0434\u0440\u0443\u0433\u0435, \u043F\u0430\u043D\u0435\u043B\u044C \u0441\u043B\u0435\u0432\u0430 \u0431\u043E\u043B\u044C\u0448\u0435 \u043D\u0435\n\u0442\u044F\u043D\u0435\u0442\u0441\u044F \u043F\u0443\u0441\u0442\u043E\u0442\u043E\u0439 \u0434\u043E \u043D\u0438\u0437\u0430 \u044D\u043A\u0440\u0430\u043D\u0430, \u0430 \u0444\u043E\u043D \u043F\u0435\u0440\u0435\u0441\u0442\u0430\u043B \u043C\u0435\u043D\u044F\u0442\u044C\u0441\u044F \u043F\u0440\u0438 \u0437\u0430\u0445\u043E\u0434\u0435 \u0432 \u043F\u043E\u0434\u043C\u0435\u043D\u044E.\n\u042F\u0440\u043B\u044B\u043A \u0432\u0435\u0440\u0441\u0438\u0438 \u0432 \u043C\u0435\u043D\u044E \u043D\u0430\u043A\u043E\u043D\u0435\u0446 \u0441\u043E\u0432\u043F\u0430\u0434\u0430\u0435\u0442 \u0441 \u043D\u0430\u0441\u0442\u043E\u044F\u0449\u0435\u0439. \u0412 1.5.8 \u0435\u0433\u043E \u043F\u043E\u0434\u043D\u044F\u0442\u044C \u0437\u0430\u0431\u044B\u043B\u0438,\n\u0438 \u043C\u0435\u043D\u044E \u0431\u0435\u0441\u0441\u0440\u043E\u0447\u043D\u043E \u043F\u0440\u0435\u0434\u043B\u0430\u0433\u0430\u043B\u043E \u043E\u0431\u043D\u043E\u0432\u0438\u0442\u044C\u0441\u044F \u0434\u043E \u0442\u043E\u0433\u043E, \u0447\u0442\u043E \u0443\u0436\u0435 \u0441\u0442\u043E\u044F\u043B\u043E.",
+        "tag": "\u041E\u0411\u041D\u041E\u0412\u041B\u0415\u041D\u0418\u0415",
+        "HasUsableUrl": false,
+        "IsUsable": true
+      },
       {
         "date": "2026-08-25T00:00:00+00:00",
         "title": "Nova 1.5.8 \u2014 \u0442\u0440\u0438 \u043D\u043E\u0432\u044B\u0445 \u0447\u0443\u0434\u0430 \u0441\u0432\u0435\u0442\u0430",
@@ -8169,5 +8325,10 @@
     "autoEnable": true,
     "note": "\u041F\u0430\u0440\u0442\u0438\u0438 \u0438\u0434\u0443\u0442 \u0447\u0435\u0440\u0435\u0437 \u043D\u0430\u0448 \u0443\u0437\u0435\u043B, \u043C\u0438\u043C\u043E Steam. \u041D\u0430\u0441\u0442\u0440\u0430\u0438\u0432\u0430\u0435\u0442\u0441\u044F \u0441\u0430\u043C\u043E; \u0432\u0435\u0440\u043D\u0443\u0442\u044C \u043E\u0431\u044B\u0447\u043D\u044B\u0439 \u043F\u0443\u0442\u044C \u043C\u043E\u0436\u043D\u043E \u043A\u043D\u043E\u043F\u043A\u043E\u0439 \u0432 \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0430\u0445.",
     "IsUsable": true
+  },
+  "rating": {
+    "url": "relay://109.73.196.175:443",
+    "enabled": true,
+    "note": "\u0420\u0435\u0439\u0442\u0438\u043D\u0433 \u043F\u043E \u0438\u0442\u043E\u0433\u0430\u043C \u0441\u0435\u0442\u0435\u0432\u044B\u0445 \u043F\u0430\u0440\u0442\u0438\u0439. \u0417\u0430\u043F\u0438\u0441\u044C \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u043F\u043E\u0441\u043B\u0435 \u043A\u043E\u043D\u0446\u0430 \u0438\u0433\u0440\u044B."
   }
 }
