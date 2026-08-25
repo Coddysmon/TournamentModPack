@@ -7,7 +7,7 @@
 set -e
 
 BIN_URL="https://raw.githubusercontent.com/Coddysmon/TournamentModPack/main/server/nova-rating"
-BIN_SHA="d64244cb87e82a72a8b5c067c07208ecca73f19ae7b45be1f1052ff70c870e8f"
+BIN_SHA="b0fb68a292c39a24cb284f658853b82cd92bf88a7ae57d87da75157ad036d904"
 
 echo "== качаю программу (36 МБ) =="
 curl -fL --retry 3 -o /tmp/nova-rating "$BIN_URL"
