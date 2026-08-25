@@ -49,7 +49,7 @@ Wants=network-online.target
 Type=simple
 User=nova-rating
 Group=nova-rating
-ExecStart=/opt/nova-rating/nova-rating --bind 0.0.0.0 --port 45445 --ledger /var/lib/nova-rating/matches.jsonl --log /var/log/nova-rating.log --min-reports 2
+ExecStart=/opt/nova-rating/nova-rating --bind 0.0.0.0 --port 80 --ledger /var/lib/nova-rating/matches.jsonl --log /var/log/nova-rating.log --min-reports 2
 Restart=always
 RestartSec=5
 ReadWritePaths=/var/lib/nova-rating /var/log
@@ -57,6 +57,10 @@ ProtectSystem=strict
 ProtectHome=yes
 PrivateTmp=yes
 NoNewPrivileges=yes
+# Порт 80 привилегированный, а служба работает не от root. Это право —
+# единственное, что ей для него нужно; полномочий root оно не даёт.
+AmbientCapabilities=CAP_NET_BIND_SERVICE
+CapabilityBoundingSet=CAP_NET_BIND_SERVICE
 
 [Install]
 WantedBy=multi-user.target
@@ -72,13 +76,13 @@ systemctl is-active --quiet nova-rating || {
     echo "  НЕ ПОДНЯЛАСЬ. Смотри: journalctl -u nova-rating -n 40"
     exit 1
 }
-curl -sf -m 5 http://127.0.0.1:45445/health >/dev/null && echo "  отвечает" || {
+curl -sf -m 5 http://127.0.0.1:80/health >/dev/null && echo "  отвечает" || {
     echo "  не отвечает на /health"
     exit 1
 }
 
 echo
-echo "  Служба слушает 45445. Если включён экран, открой порт:"
-echo "     ufw allow 45445/tcp"
+echo "  Служба слушает 80. Если включён экран, открой порт:"
+echo "     ufw allow 80/tcp"
 echo
 echo "ГОТОВО."
