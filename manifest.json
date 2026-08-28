@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.18",
+  "packageVersion": "1.5.19",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-08-28T09:44:06.6025295+00:00",
+  "createdUtc": "2026-08-28T10:43:05.2852642+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -2501,6 +2501,31 @@
           "path": "Art/SV_TM_Tin.dds",
           "size": 349652,
           "hash": "61fcd6b79d4aa672d07b7af4312ea21ade2aad2b569d7e5717c126d308a8fc50"
+        },
+        {
+          "path": "Art/TM_AntiTankRifleAtlas128.dds",
+          "size": 65664,
+          "hash": "0b2e47b55c21adb8250083fa1a5e3b9f6eda29aa9924ae82f621f3928892b857"
+        },
+        {
+          "path": "Art/TM_AntiTankRifleAtlas256.dds",
+          "size": 262272,
+          "hash": "8e0c19f1076afed59d37823e4fd88bf9c81a71f5cef5da7eb7895bddd1193cb8"
+        },
+        {
+          "path": "Art/TM_AntiTankRifleAtlas45.dds",
+          "size": 8228,
+          "hash": "f4815c58a2570ef5bfe0f3f715040d367d92594e9b712f69cdc5d47ce3f804ec"
+        },
+        {
+          "path": "Art/TM_AntiTankRifleAtlas64.dds",
+          "size": 16512,
+          "hash": "8042df3edd03d6a832cb5175e69837b757fe6e6b8c3dc880018916aa28a63b55"
+        },
+        {
+          "path": "Art/TM_AntiTankRifleAtlas80.dds",
+          "size": 25728,
+          "hash": "a6832b2dda98e3f4cb8ba25f9823aabdc960923eeb8207d8a8484ad9ab716529"
         },
         {
           "path": "Art/TM_EnvoyCaravanAtlas128.dds",
@@ -5439,8 +5464,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 8441227,
-          "hash": "df306d229d970410e456abb3fd7f7f45754fcfd2dc31d271a4c03204c12f7ae4"
+          "size": 8445131,
+          "hash": "3cbd37634dec9b78a56169d42b0cbbbbd6c3f0c369d4f0ec4ecb68771dff1100"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -5479,8 +5504,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 6657806,
-          "hash": "9bbbf3b1835a88689dfba37ab214a8ca211d9491862b4ba8d2bda387bf61fe62"
+          "size": 6658734,
+          "hash": "b2be6731454ed6b5608fb88a972f1ac2bdd294c92d6898b8229e404164b25994"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
@@ -6089,8 +6114,8 @@
         },
         {
           "path": "tmp/ui/ChatWheel.lua",
-          "size": 9879,
-          "hash": "3d763143bbc6586063dad2235e53fb5031100604b12bc5e95dfe52187b010bce"
+          "size": 10733,
+          "hash": "998c43cd1d51f0c9a8b252485264b4abf730459e11471cacef6cbb9b4f9d7021"
         },
         {
           "path": "tmp/ui/ChatWheel.xml",
@@ -6736,13 +6761,7 @@
       "targetSubPath": "Nova Maps",
       "sourceSubPath": "Maps",
       "exclusive": true,
-      "files": [
-        {
-          "path": "LekmapTournamentPangaea.lua",
-          "size": 874462,
-          "hash": "a26becede116d2d1b1a52759669e3ecf9c22243b412f38054ed083957a87470d"
-        }
-      ]
+      "files": []
     }
   ],
   "generated": {
