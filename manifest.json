@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.17",
+  "packageVersion": "1.5.18",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-08-27T21:14:46.7519485+00:00",
+  "createdUtc": "2026-08-28T09:44:06.6025295+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -2949,8 +2949,8 @@
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4405248,
-          "hash": "8370163d4c44f1e1d0965ae7a2daa2e97b27f57fea33e55329cbbbadea07cfc5"
+          "size": 4405760,
+          "hash": "24d236577b4688cac7a83d0a49e1b44722c193fdf1c2fc4b49bcfd1d032c3996"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -3169,8 +3169,8 @@
         },
         {
           "path": "Override/AudioDefinesExpansion1.xml",
-          "size": 3980,
-          "hash": "5da664eb5a9d70dd4421aee1cf5d9b1569fc1468c805eac6d1b96ff8b0e84bfe"
+          "size": 6827,
+          "hash": "1412d484eb9de153e5da6f8239038b59a03bb985b1fd63868a913803ca6b0730"
         },
         {
           "path": "Override/AudioParams.xml",
@@ -3505,7 +3505,7 @@
         {
           "path": "Override/CIV5Controls.xml",
           "size": 1532441,
-          "hash": "cd0b345eb6a3f5a645cedf45d1fd5d875fb915c6b6f40de0a7ba6d2a67a155f8"
+          "hash": "60efc9392e549915b2d787c9917b6470cc609a416f66769d70e347802f1cf674"
         },
         {
           "path": "Override/CIV5CultureLevels.xml",
@@ -5439,8 +5439,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 8434817,
-          "hash": "9917a409ce31ddeebed62c5ec7cc9d1b5ad02fb90c53ec62e51fc95d85f02bb4"
+          "size": 8441227,
+          "hash": "df306d229d970410e456abb3fd7f7f45754fcfd2dc31d271a4c03204c12f7ae4"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -5479,8 +5479,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 6655788,
-          "hash": "0f9d34dffb9a56d659df65ba3bf3e5372977818b80171db8fcdef75fbcd17a60"
+          "size": 6657806,
+          "hash": "9bbbf3b1835a88689dfba37ab214a8ca211d9491862b4ba8d2bda387bf61fe62"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
@@ -5939,8 +5939,8 @@
         },
         {
           "path": "tmp/eui/CityView.lua",
-          "size": 102942,
-          "hash": "4ee6384ece145aced2e2540a29f5644955b56f171d2f6c43fa0e0186417aaa71"
+          "size": 103635,
+          "hash": "d7fd70d624086ef2cda08ee1a1802b70ae2cc7ebd24a18faca23735291ccc7b7"
         },
         {
           "path": "tmp/eui/CityView.xml",
@@ -5959,8 +5959,8 @@
         },
         {
           "path": "tmp/eui/DiploCorner.lua",
-          "size": 31337,
-          "hash": "1829767b6551f8a58acecab476568d71f8ed83b8ebafac808c9a6c97cfff4cf3"
+          "size": 32755,
+          "hash": "6eea1a5255ac17d6fb7a22b241e969ea2c64b316137c6e261f945f32e0da104b"
         },
         {
           "path": "tmp/eui/DiploCorner.xml",
@@ -6214,8 +6214,8 @@
         },
         {
           "path": "tmp/ui/DiploCorner.lua",
-          "size": 29893,
-          "hash": "31cf3cdfb5f3ae2bc1651580014e8abdaa28a9fab312f6a5f8a6d78ef7d050ce"
+          "size": 31311,
+          "hash": "b24813befd2fbfdb55dc1a05cc857670e502b0daa906f85f29e5c8b9043666f8"
         },
         {
           "path": "tmp/ui/DiploCorner.xml",
@@ -6344,8 +6344,8 @@
         },
         {
           "path": "tmp/ui/InGame.lua",
-          "size": 45821,
-          "hash": "12325beea2cb110901508fe990b5fe05f753ec1b01114d1ac2ff3d54b4cbb386"
+          "size": 46495,
+          "hash": "eb7511109160d76f29504d2f5eab8fd45f9f28bca02768dedfb2d1ca53dd48c0"
         },
         {
           "path": "tmp/ui/JoiningRoom.lua",
@@ -6389,8 +6389,8 @@
         },
         {
           "path": "tmp/ui/MiniMapPanel.lua",
-          "size": 37926,
-          "hash": "2633ca99cdd9c0b6b5faa0607a6cd4265d53e5838b8f3647efd896209028372e"
+          "size": 37924,
+          "hash": "0ce557bb6031d67d81d2a8e8a50b6bbf8990a4ba963a28d959e9436f94819dce"
         },
         {
           "path": "tmp/ui/MiniMapPanel.xml",
@@ -6579,8 +6579,8 @@
         },
         {
           "path": "tmp/ui/SocialPolicyPopup.lua",
-          "size": 55801,
-          "hash": "09d355a302cb7ef2286731dfa7ce32b8849ef8d49bee30809baf0a825f1fa525"
+          "size": 62456,
+          "hash": "210042a835ddea0d8ffe8a385e9a5756aaaeb7a6681644a8c7c062fa63964e49"
         },
         {
           "path": "tmp/ui/SocialPolicyPopup.xml",
@@ -6589,8 +6589,8 @@
         },
         {
           "path": "tmp/ui/StagingRoom.lua",
-          "size": 153809,
-          "hash": "2c2c204bcac0b9b03275537d4263252d8902cb1d938706c4651d293d65bfaad0"
+          "size": 154600,
+          "hash": "93566a6cf34c2a7ee9c9744fb5cee5a3e39558ccd76512c859a0fecb2701386a"
         },
         {
           "path": "tmp/ui/StagingRoom.xml",
@@ -6609,13 +6609,13 @@
         },
         {
           "path": "tmp/ui/TechPopup.lua",
-          "size": 14358,
-          "hash": "c1b39a32a6f2ed5bf4e028b78fafc57eb1182f95e9547c2168e706df945d11f7"
+          "size": 14356,
+          "hash": "6b203de960c3498385ff5fefb370f26e98457924c48eb7ee0e90dcd494d4e6e5"
         },
         {
           "path": "tmp/ui/TechTree.lua",
-          "size": 36927,
-          "hash": "d07ca5e8fa3597addb6810b58995d2d0aff02bd2e10bc3bc25898113bca51f8b"
+          "size": 36925,
+          "hash": "9f5853ce00a5b562ee4e845b210993a2c84b624c65dbbf4a487e17e9030892dd"
         },
         {
           "path": "tmp/ui/TechTree.xml",
@@ -7993,6 +7993,27 @@
       }
     ]
   },
+  "client": {
+    "version": "0.3.22.0",
+    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/nova-client-0.3.22.0.zip",
+    "sha256": "66ac694dec48464a94b9218ddea34f9ffd3262d6ec31029a6c22cc80ddaa1dec",
+    "size": 61493936,
+    "notes": "\u0420\u0430\u0437\u0431\u043E\u0440 \u043B\u043E\u0433\u043E\u0432 \u0443\u0445\u043E\u0434\u0438\u0442 \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A\u0443 \u0441\u0430\u043C \u043F\u043E\u0441\u043B\u0435 \u043F\u0430\u0440\u0442\u0438\u0438, \u0435\u0441\u043B\u0438 \u0432 \u043B\u043E\u0433\u0430\u0445 \u0435\u0441\u0442\u044C \u043E\u0448\u0438\u0431\u043A\u0438. \u0421\u0435\u0442\u0435\u0432\u044B\u0435 \u043D\u0435\u0443\u0434\u0430\u0447\u0438 \u0442\u0435\u043F\u0435\u0440\u044C \u0442\u043E\u0436\u0435 \u0441\u0447\u0438\u0442\u0430\u044E\u0442\u0441\u044F \u043E\u0448\u0438\u0431\u043A\u0430\u043C\u0438: \u043D\u0435\u0443\u0434\u0430\u0447\u043D\u044B\u0439 \u0432\u0445\u043E\u0434 \u0432 \u043A\u043E\u043C\u043D\u0430\u0442\u0443, \u0432\u044B\u043F\u0430\u0434\u0435\u043D\u0438\u0435 \u0438\u0437 \u043F\u0430\u0440\u0442\u0438\u0438, \u043E\u0442\u043A\u0430\u0437\u044B \u0443\u0437\u043B\u0430 \u0441\u0432\u044F\u0437\u0438 \u2014 \u0440\u0430\u043D\u044C\u0448\u0435 \u0432\u0441\u0451 \u044D\u0442\u043E \u043F\u0440\u043E\u0445\u043E\u0434\u0438\u043B\u043E \u043A\u0430\u043A \u00AB\u043E\u0448\u0438\u0431\u043E\u043A \u043D\u0435\u0442\u00BB. \u041E\u0442\u043F\u0440\u0430\u0432\u043A\u0443 \u043C\u043E\u0436\u043D\u043E \u0432\u044B\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u0432 \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0430\u0445. \u041F\u043E\u0432\u0442\u043E\u0440\u044B \u0432 \u043E\u0442\u0447\u0451\u0442\u0435 \u0441\u0445\u043B\u043E\u043F\u044B\u0432\u0430\u044E\u0442\u0441\u044F, \u0430 \u0441\u043F\u0438\u0441\u043E\u043A \u0447\u0443\u0436\u0438\u0445 \u043F\u0430\u043F\u043E\u043A \u0432 Assets\\DLC \u0431\u043E\u043B\u044C\u0448\u0435 \u043D\u0435 \u0441\u0447\u0438\u0442\u0430\u0435\u0442 \u0432\u0430\u043D\u0438\u043B\u044C\u043D\u044B\u0435 \u043D\u0430\u0431\u043E\u0440\u044B \u043A\u0430\u0440\u0442 \u0447\u0443\u0436\u0438\u043C\u0438."
+  },
+  "relay": {
+    "host": "109.73.196.175",
+    "port": 443,
+    "enabled": true,
+    "autoEnable": true,
+    "note": "\u041F\u0430\u0440\u0442\u0438\u0438 \u0438\u0434\u0443\u0442 \u0447\u0435\u0440\u0435\u0437 \u043D\u0430\u0448 \u0443\u0437\u0435\u043B, \u043C\u0438\u043C\u043E Steam. \u041D\u0430\u0441\u0442\u0440\u0430\u0438\u0432\u0430\u0435\u0442\u0441\u044F \u0441\u0430\u043C\u043E; \u0432\u0435\u0440\u043D\u0443\u0442\u044C \u043E\u0431\u044B\u0447\u043D\u044B\u0439 \u043F\u0443\u0442\u044C \u043C\u043E\u0436\u043D\u043E \u043A\u043D\u043E\u043F\u043A\u043E\u0439 \u0432 \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0430\u0445.",
+    "tlsKey": "a9e218ad72254891d12d21a14115ac2b2ff649a72bd6fb90a7e8b2057d3ff82c",
+    "IsUsable": true
+  },
+  "rating": {
+    "url": "relay://109.73.196.175:443",
+    "enabled": true,
+    "note": "\u0420\u0435\u0439\u0442\u0438\u043D\u0433 \u043F\u043E \u0438\u0442\u043E\u0433\u0430\u043C \u0441\u0435\u0442\u0435\u0432\u044B\u0445 \u043F\u0430\u0440\u0442\u0438\u0439. \u0417\u0430\u043F\u0438\u0441\u044C \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u043F\u043E\u0441\u043B\u0435 \u043A\u043E\u043D\u0446\u0430 \u0438\u0433\u0440\u044B."
+  },
   "news": {
     "entries": [
       {
@@ -8383,26 +8404,5 @@
       }
     ],
     "Any": true
-  },
-  "client": {
-    "version": "0.3.21.0",
-    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/nova-client-0.3.21.0.zip",
-    "sha256": "864932723dde2d728ecd4a4d22336b4e5686dd7bbaffb7b25346de2ba81c5930",
-    "size": 61485706,
-    "notes": "\u041B\u0430\u0443\u043D\u0447\u0435\u0440 \u0443\u043C\u0435\u0435\u0442 \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u044F\u0442\u044C \u0440\u0430\u0437\u0431\u043E\u0440 \u043B\u043E\u0433\u043E\u0432 \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A\u0443. \u0423\u0445\u043E\u0434\u044F\u0442 \u043D\u0435 \u0444\u0430\u0439\u043B\u044B \u043B\u043E\u0433\u043E\u0432, \u0430 \u0440\u0430\u0437\u0431\u043E\u0440, \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u043B\u0430\u0443\u043D\u0447\u0435\u0440 \u0438 \u0442\u0430\u043A \u0434\u0435\u043B\u0430\u0435\u0442: \u043F\u0435\u0440\u0432\u0430\u044F \u043D\u0430\u0441\u0442\u043E\u044F\u0449\u0430\u044F \u043E\u0448\u0438\u0431\u043A\u0430 \u0438 \u043F\u0440\u043E\u0431\u043B\u0435\u043C\u043D\u044B\u0435 \u0441\u0442\u0440\u043E\u043A\u0438. \u041F\u0435\u0440\u0435\u0434 \u043E\u0442\u043F\u0440\u0430\u0432\u043A\u043E\u0439 \u043F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0435\u0442\u0441\u044F \u0440\u043E\u0432\u043D\u043E \u0442\u043E\u0442 \u0442\u0435\u043A\u0441\u0442, \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u0443\u0435\u0434\u0435\u0442, \u2014 \u0443\u0436\u0435 \u0441 \u0437\u0430\u043C\u0435\u043D\u0451\u043D\u043D\u044B\u043C\u0438 \u0438\u043C\u0435\u043D\u0435\u043C \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044F Windows \u0438 \u043D\u0438\u043A\u043E\u043C Steam; \u0431\u0435\u0437 \u0441\u043E\u0433\u043B\u0430\u0441\u0438\u044F \u043D\u0435 \u0443\u0445\u043E\u0434\u0438\u0442 \u043D\u0438\u0447\u0435\u0433\u043E. \u041F\u043E\u0441\u043B\u0435 \u043F\u0430\u0434\u0435\u043D\u0438\u044F \u0438\u0433\u0440\u044B \u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0435\u043D\u0438\u0435 \u043F\u043E\u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u0441\u0430\u043C\u043E, \u043E\u0434\u0438\u043D \u0440\u0430\u0437 \u043D\u0430 \u043F\u0430\u0434\u0435\u043D\u0438\u0435. \u0412 \u043E\u0442\u0447\u0451\u0442 \u043F\u043E\u043F\u0430\u0434\u0430\u0435\u0442 \u0441\u043F\u0438\u0441\u043E\u043A \u0447\u0443\u0436\u0438\u0445 \u043F\u0430\u043F\u043E\u043A \u0432 Assets\\DLC \u2014 \u043F\u043E \u043D\u0435\u043C\u0443 \u0432\u0438\u0434\u043D\u043E, \u043A\u0430\u043A\u043E\u0439 \u0443 \u0432\u0430\u0441 \u0438\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441."
-  },
-  "relay": {
-    "host": "109.73.196.175",
-    "port": 443,
-    "enabled": true,
-    "autoEnable": true,
-    "note": "\u041F\u0430\u0440\u0442\u0438\u0438 \u0438\u0434\u0443\u0442 \u0447\u0435\u0440\u0435\u0437 \u043D\u0430\u0448 \u0443\u0437\u0435\u043B, \u043C\u0438\u043C\u043E Steam. \u041D\u0430\u0441\u0442\u0440\u0430\u0438\u0432\u0430\u0435\u0442\u0441\u044F \u0441\u0430\u043C\u043E; \u0432\u0435\u0440\u043D\u0443\u0442\u044C \u043E\u0431\u044B\u0447\u043D\u044B\u0439 \u043F\u0443\u0442\u044C \u043C\u043E\u0436\u043D\u043E \u043A\u043D\u043E\u043F\u043A\u043E\u0439 \u0432 \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0430\u0445.",
-    "tlsKey": "a9e218ad72254891d12d21a14115ac2b2ff649a72bd6fb90a7e8b2057d3ff82c",
-    "IsUsable": true
-  },
-  "rating": {
-    "url": "relay://109.73.196.175:443",
-    "enabled": true,
-    "note": "\u0420\u0435\u0439\u0442\u0438\u043D\u0433 \u043F\u043E \u0438\u0442\u043E\u0433\u0430\u043C \u0441\u0435\u0442\u0435\u0432\u044B\u0445 \u043F\u0430\u0440\u0442\u0438\u0439. \u0417\u0430\u043F\u0438\u0441\u044C \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u043F\u043E\u0441\u043B\u0435 \u043A\u043E\u043D\u0446\u0430 \u0438\u0433\u0440\u044B."
   }
 }
