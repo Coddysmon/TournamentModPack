@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.24",
+  "packageVersion": "1.5.25",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-08-29T13:11:34.6514972+00:00",
+  "createdUtc": "2026-08-29T14:02:12.9049625+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -5469,7 +5469,7 @@
         {
           "path": "Override/CIV5Units.xml",
           "size": 8444533,
-          "hash": "c69823a019e3977cab73fa4ee7ee009703036194dae2113ed55cefec0a0718f0"
+          "hash": "121eafde74921cd801a7eda7c8d5269a7e5b53963e7dd47daf1d656a470f9be1"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -5509,7 +5509,7 @@
         {
           "path": "Override/CIV5Units_Mongol.xml",
           "size": 9640429,
-          "hash": "969be09ab3b7404780fb173f9817c0f773e3148e1380f533c111ebc0db58fdfd"
+          "hash": "a836cebdac8a3b92ee95e4315a0f526816670b79f2a3da99957a1cb2bddccc68"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
@@ -8018,6 +8018,12 @@
   },
   "news": {
     "entries": [
+    {
+          "date": "2026-08-29T00:00:00+00:00",
+          "title": "Nova 1.5.25 \u2014 \u00AB\u0421\u0432\u044F\u0449\u0435\u043D\u043D\u044B\u0435 \u043C\u0435\u0441\u0442\u0430\u00BB \u043E\u0441\u043B\u0430\u0431\u043B\u0435\u043D\u044B",
+          "tag": "\u0420\u0410\u0412\u041D\u041E\u0412\u0415\u0421\u0418\u0415",
+          "body": "\u0412\u0435\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u00AB\u0421\u0432\u044F\u0449\u0435\u043D\u043D\u044B\u0435 \u043C\u0435\u0441\u0442\u0430\u00BB \u043E\u0441\u043B\u0430\u0431\u043B\u0435\u043D\u043E: \u0437\u0434\u0430\u043D\u0438\u0435, \u043A\u0443\u043F\u043B\u0435\u043D\u043D\u043E\u0435 \u0437\u0430 \u0432\u0435\u0440\u0443, \u0434\u0430\u0451\u0442 \u0442\u0435\u043F\u0435\u0440\u044C\n+1 \u0435\u0434\u044B \u0438 +1 \u043A\u0443\u043B\u044C\u0442\u0443\u0440\u044B \u0432\u043C\u0435\u0441\u0442\u043E +2. \u0417\u043E\u043B\u043E\u0442\u043E \u043E\u0441\u0442\u0430\u043B\u043E\u0441\u044C \u043F\u0440\u0435\u0436\u043D\u0438\u043C, +2. \u041E\u043F\u0438\u0441\u0430\u043D\u0438\u0435 \u0432 \u0438\u0433\u0440\u0435\n\u043F\u043E\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u043E \u0432\u043C\u0435\u0441\u0442\u0435 \u0441 \u043C\u0435\u0445\u0430\u043D\u0438\u043A\u043E\u0439 \u2014 \u0440\u0430\u043D\u044C\u0448\u0435 \u043E\u043D\u043E \u043E\u0431\u0435\u0449\u0430\u043B\u043E \u0431\u044B \u0442\u043E, \u0447\u0435\u0433\u043E \u0431\u043E\u043B\u044C\u0448\u0435 \u043D\u0435\u0442."
+    },
     {
           "date": "2026-08-29T00:00:00+00:00",
           "title": "Nova 1.5.24 \u2014 \u00AB\u0411\u0443\u043B\u044C\u0432\u0430\u0440\u043A\u00BB \u043D\u0430\u043A\u043E\u043D\u0435\u0446 \u0434\u0430\u0451\u0442 \u0442\u043E, \u0447\u0442\u043E \u043E\u0431\u0435\u0449\u0430\u0435\u0442",
