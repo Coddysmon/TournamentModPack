@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.20",
+  "packageVersion": "1.5.21",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-08-28T23:28:44.1470632+00:00",
+  "createdUtc": "2026-08-29T00:57:45.1863357+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -2978,7 +2978,7 @@
         {
           "path": "CvGameCore_Expansion2.dll",
           "size": 4410880,
-          "hash": "be6909a359757e639383fb96c8985dc1bd5c5be70d003b53e58fda105b3c0770"
+          "hash": "48b26f458e6bd3fb26bb43ca4ec0de1ddda392bd328c647e0e2048daea690239"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
