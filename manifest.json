@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.21",
+  "packageVersion": "1.5.22",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-08-29T00:57:45.1863357+00:00",
+  "createdUtc": "2026-08-29T10:15:42.4281089+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -3143,8 +3143,8 @@
         },
         {
           "path": "Maps/LekmapTournamentPangaea.lua",
-          "size": 875607,
-          "hash": "6d0507849e3535862131b02d85477b996f4ed03b91bc9feee0e68cfac3e8e5ca"
+          "size": 876026,
+          "hash": "78d77935abfb9fe5ef26c844e6d3d60e53d7c3299604d2e7cc953cb1c9dd0994"
         },
         {
           "path": "MarshalAtlas128.dds",
@@ -5468,8 +5468,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 8444026,
-          "hash": "25d9df4735baf340109c4148efd23d0704e63e0738c720d67b2bef22c3b2905b"
+          "size": 8443908,
+          "hash": "c94b088b4da0290cae85fd2ba10b38f725a24d247ac091b1add63d6837b02ec9"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -6753,8 +6753,8 @@
       "files": [
         {
           "path": "LekmapTournamentPangaea.lua",
-          "size": 875607,
-          "hash": "6d0507849e3535862131b02d85477b996f4ed03b91bc9feee0e68cfac3e8e5ca"
+          "size": 876026,
+          "hash": "78d77935abfb9fe5ef26c844e6d3d60e53d7c3299604d2e7cc953cb1c9dd0994"
         }
       ]
     },
