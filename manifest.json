@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.33",
+  "packageVersion": "1.5.34",
   "packageFolderName": "Nova",
   "createdUtc": "2026-08-30T15:21:51.1906197+00:00",
   "hashAlgorithm": "SHA256",
@@ -3107,8 +3107,8 @@
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4414464,
-          "hash": "bda41385f435a7d430f66d6b29758675c865a381fb3aa8ec82f677d55908a2cb"
+          "size": 4416000,
+          "hash": "fcc5109b94640a579e79d83c25f9fbfc2a2853b4fce3fe9f7ec8e4709300c0a7"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -5627,8 +5627,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 8455269,
-          "hash": "dd29cd097f0338ef62ff597ba290adb2e4ba2e9a00ebca1aedc028c93ad1016e"
+          "size": 8458927,
+          "hash": "618202195d68f9cd0e642aa6be7cee22d43e9a060608dca46c03d4dca1bf4974"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -5667,8 +5667,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 9709059,
-          "hash": "07b93340e75cff657a90d7971b04b553dd7fee75538c28d7dfa1813c156637f6"
+          "size": 9710800,
+          "hash": "38bf6c8873197550becc867b2341274c66534fe30a2e18a96b70c2b47c655674"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
@@ -6432,8 +6432,8 @@
         },
         {
           "path": "tmp/ui/EraBonuses.lua",
-          "size": 13708,
-          "hash": "6653408c16b46a5f5896f6490eec907fdfe28b5541924c5b00ccba70fb772fd7"
+          "size": 18982,
+          "hash": "cd45469eadedbb0cec868040073e719a39ff677eb4f5568471594aa3a8b4ece5"
         },
         {
           "path": "tmp/ui/EspionageOverview.lua",
