@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.32",
+  "packageVersion": "1.5.33",
   "packageFolderName": "Nova",
   "createdUtc": "2026-08-30T15:21:51.1906197+00:00",
   "hashAlgorithm": "SHA256",
@@ -297,8 +297,8 @@
         },
         {
           "path": "Art/Cursors/tm_cursor_random.ani",
-          "size": 4362,
-          "hash": "7c758eb3bd2ac0d299657724e4f346646fff7e0d3140c9df4b48cb6313113f6b"
+          "size": 68916,
+          "hash": "d0801926a0f411b4404cc8bc4bf9accd03fd4ccdd16de0474f2106ed41c17434"
         },
         {
           "path": "Art/Cursors/tm_flaming_sword.ani",
@@ -2296,6 +2296,126 @@
           "hash": "2b219d6c24fc5f9295deddc9f3c0ade21f156d3bf7155e494e4508c1a6dcc5b7"
         },
         {
+          "path": "Art/NovaAura_Orbit00.dds",
+          "size": 349652,
+          "hash": "0303f8e0543e1c88b26154b8289549e0ce28b457c1d49d5a9d17da6b8980772c"
+        },
+        {
+          "path": "Art/NovaAura_Orbit01.dds",
+          "size": 349652,
+          "hash": "29184abb3e07762f9362374a6c6e0011f2b6cffc7aa6dd4ceb28efc36687dfd5"
+        },
+        {
+          "path": "Art/NovaAura_Orbit02.dds",
+          "size": 349652,
+          "hash": "05b72fb6dfca0df8e0cdf3f2f9b76248210be7ac3b6c01fd59429ad175359c70"
+        },
+        {
+          "path": "Art/NovaAura_Orbit03.dds",
+          "size": 349652,
+          "hash": "2c0b09bf025eada0b1a2da4149ba244cb7b02edcedda1e524a2a53a3289d7c3b"
+        },
+        {
+          "path": "Art/NovaAura_Orbit04.dds",
+          "size": 349652,
+          "hash": "ad1f5fbd2dc963a560dd1143bc757cd7d34e19ca58ce1df5e879eccabaa80511"
+        },
+        {
+          "path": "Art/NovaAura_Orbit05.dds",
+          "size": 349652,
+          "hash": "83897278612e5364e89e169e543dd9cdea08bfd20ce89f0c5a9bd0137f033eaa"
+        },
+        {
+          "path": "Art/NovaAura_Orbit06.dds",
+          "size": 349652,
+          "hash": "dfb9340283534acbc610a8aae4760cbffeb34ea450731b35aa49655bec7ca4c2"
+        },
+        {
+          "path": "Art/NovaAura_Orbit07.dds",
+          "size": 349652,
+          "hash": "7b0229daec13786370f486fd86cc663f8060c7d20487ddaa449c956fcede3eba"
+        },
+        {
+          "path": "Art/NovaAura_Orbit08.dds",
+          "size": 349652,
+          "hash": "dab5d647bc86df1df74acde4c0a248047c2aef639f70bca8537e4900d631a108"
+        },
+        {
+          "path": "Art/NovaAura_Orbit09.dds",
+          "size": 349652,
+          "hash": "e5907d0d064cb06d73b271c264fc1a56d2461ff3e252594350e581055c1bc70b"
+        },
+        {
+          "path": "Art/NovaAura_Orbit10.dds",
+          "size": 349652,
+          "hash": "5e9a470b48da58cb7937594555f9d88e03bebfafad16ca222b1415641a437807"
+        },
+        {
+          "path": "Art/NovaAura_Orbit11.dds",
+          "size": 349652,
+          "hash": "16fe146278775c961d0fd7847be5067a9701cceee3d8ab5579b38ea5f59b8cea"
+        },
+        {
+          "path": "Art/NovaAura_Orbit12.dds",
+          "size": 349652,
+          "hash": "3cb04ec17be9ce74f826e29d540b6a417da99f7625f18d66639ed23ef83f647c"
+        },
+        {
+          "path": "Art/NovaAura_Orbit13.dds",
+          "size": 349652,
+          "hash": "b651cf1496f6769f16c61cc53bee6c0f734584e155cb90b2b222749c1c5ed69f"
+        },
+        {
+          "path": "Art/NovaAura_Orbit14.dds",
+          "size": 349652,
+          "hash": "5fdb1d3ce9308f1b0d3350c94bf2751d4e528852c0f41e1c080ce9ea83c25d9b"
+        },
+        {
+          "path": "Art/NovaAura_Orbit15.dds",
+          "size": 349652,
+          "hash": "3ee16b333ea0d5694ecb7577f429c99248dfee19636d964b8716614d67a6f9e1"
+        },
+        {
+          "path": "Art/NovaAura_Orbit16.dds",
+          "size": 349652,
+          "hash": "7731e1b5f8d130c2b88a62519b3aef52e1e89e39a7b1eb87407b89be55bb3cf7"
+        },
+        {
+          "path": "Art/NovaAura_Orbit17.dds",
+          "size": 349652,
+          "hash": "5b1b4fbc7cf82605592fc7269622f67f41232842b66452cfab6d014fd872f52f"
+        },
+        {
+          "path": "Art/NovaAura_Orbit18.dds",
+          "size": 349652,
+          "hash": "bd503c7b5f3f54b14e9decef79424b8eb8c90169d6766a73071886fa5f2278a8"
+        },
+        {
+          "path": "Art/NovaAura_Orbit19.dds",
+          "size": 349652,
+          "hash": "25276499cbc679a4637eeff8666992dbccc219c3af6ef24e7890558f8b05de7b"
+        },
+        {
+          "path": "Art/NovaAura_Orbit20.dds",
+          "size": 349652,
+          "hash": "0455d5409cdb91ecd286377c8d41791871810174540f10903c34a04345ed9f4e"
+        },
+        {
+          "path": "Art/NovaAura_Orbit21.dds",
+          "size": 349652,
+          "hash": "4b70f02b8cbcb506e638d057f4df694c7b6d1232dde2e71645a0e2378f132ba0"
+        },
+        {
+          "path": "Art/NovaAura_Orbit22.dds",
+          "size": 349652,
+          "hash": "30f09a248119ea2f1a79c1d887013545661a713832f36c988425766b5f783b4d"
+        },
+        {
+          "path": "Art/NovaAura_Orbit23.dds",
+          "size": 349652,
+          "hash": "15547d67442314b9310d458ae7dd0ac858ddd378c91a36db71f5f3da540a9aa3"
+        },
+        {
           "path": "Art/NovaAura_Pulse.dds",
           "size": 1398228,
           "hash": "4aff67a773ef64f7ecd3dd63b58b2abcc242719125e12944fe8af13a9182a8fb"
@@ -2988,7 +3108,7 @@
         {
           "path": "CvGameCore_Expansion2.dll",
           "size": 4414464,
-          "hash": "a9a12ca57f6c952211b58a42d643fe241308f3390e6b0cecd989c0ae4619c63e"
+          "hash": "bda41385f435a7d430f66d6b29758675c865a381fb3aa8ec82f677d55908a2cb"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -3572,8 +3692,8 @@
         },
         {
           "path": "Override/CIV5Controls.xml",
-          "size": 1532440,
-          "hash": "082c728b1243935edfb5ea72302ca772bb2d5a84e18c125ac1263af28f0b0766"
+          "size": 1532445,
+          "hash": "9716ad67b3e5e910664faabb8ed5eedc7d70c804819fb774dde4be553e4b7345"
         },
         {
           "path": "Override/CIV5CultureLevels.xml",
@@ -5507,8 +5627,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 8449702,
-          "hash": "ceefa718239125a335ece4eae3f2fcd07157efe99d28e854e565100fea4fef63"
+          "size": 8455269,
+          "hash": "dd29cd097f0338ef62ff597ba290adb2e4ba2e9a00ebca1aedc028c93ad1016e"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -5547,8 +5667,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 9649079,
-          "hash": "5c6f1261116891bd6d5b9f83b4f81ef1a0b3835c0a58dc039fe6fb9848fb65b4"
+          "size": 9709059,
+          "hash": "07b93340e75cff657a90d7971b04b553dd7fee75538c28d7dfa1813c156637f6"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
@@ -6037,8 +6157,8 @@
         },
         {
           "path": "tmp/eui/NotificationPanel.lua",
-          "size": 81815,
-          "hash": "6b3195376dc6dee674928b07e332f4c34e06441208c17da89c1998d0eab59c58"
+          "size": 82111,
+          "hash": "cf180402d352be5ee2ae0e7c41fbf2c9f9336424b8578f1abd996c1d84d73b85"
         },
         {
           "path": "tmp/eui/NotificationPanel.xml",
@@ -6397,8 +6517,8 @@
         },
         {
           "path": "tmp/ui/Highlights.xml",
-          "size": 7299,
-          "hash": "11e45ed443e609a263ebc9a1b05d42aa06b782aaed866f899b454ad84f6f7f31"
+          "size": 10740,
+          "hash": "e72fab0dcbbb9ba84af2100177f219c12bec67d1da1cacb2bbec8e7f00a75563"
         },
         {
           "path": "tmp/ui/ImportHappiness.lua",
@@ -6502,8 +6622,8 @@
         },
         {
           "path": "tmp/ui/NotificationPanel.lua",
-          "size": 33045,
-          "hash": "a80b7cff29676147b0eaa23bedd7a7b1ee116dbe46add5700055bdef47155812"
+          "size": 33433,
+          "hash": "3869c26d6538c040d2d5f51622a64fbd9e991098204d490fe7bd2f72c019afb3"
         },
         {
           "path": "tmp/ui/NotificationPanel.xml",
@@ -6512,8 +6632,8 @@
         },
         {
           "path": "tmp/ui/NovaAura.lua",
-          "size": 17450,
-          "hash": "4227bd02eeb20941e07bca04d245af01a27d96c897e60434ac4680a0be64cedc"
+          "size": 27132,
+          "hash": "ffbd45fdb980b1fe596970cecbcfb99a07d4b8dd1893e7394b19b4dd889de68f"
         },
         {
           "path": "tmp/ui/NovaAura.xml",
