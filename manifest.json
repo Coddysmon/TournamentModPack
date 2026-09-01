@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.35",
+  "packageVersion": "1.5.36",
   "packageFolderName": "Nova",
   "createdUtc": "2026-08-30T15:21:51.1906197+00:00",
   "hashAlgorithm": "SHA256",
@@ -3107,8 +3107,8 @@
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4417536,
-          "hash": "7a10fdc66601ab040524d976e68cbab74d9a0fa8f577af89bb635a699eb72698"
+          "size": 4418048,
+          "hash": "4cbf7707d0f949630b694f7657f1e8095cc2134e29c808525ad06e453e982884"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -5627,8 +5627,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 8460690,
-          "hash": "2ee7b580e5a0d4558c15b5e9c6de85dc4b9d7b5bcd3c71028d934a70bb2cea4a"
+          "size": 8460947,
+          "hash": "d6bc22b1dd618172a013e9f46e6636bf7afcc40efd4d9ead36094116f9245010"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -5667,8 +5667,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 9736374,
-          "hash": "e936cbefbfaa5c6ed55be7f5b15ff28184d77019f4d01dd914d62516aa96f863"
+          "size": 9739545,
+          "hash": "e0f4bacca6c03fe20ae822d3860ec1f6afda114a86c9f8231fdb350ee8846cf3"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
