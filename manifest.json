@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.34",
+  "packageVersion": "1.5.35",
   "packageFolderName": "Nova",
   "createdUtc": "2026-08-30T15:21:51.1906197+00:00",
   "hashAlgorithm": "SHA256",
@@ -3107,8 +3107,8 @@
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4416000,
-          "hash": "fcc5109b94640a579e79d83c25f9fbfc2a2853b4fce3fe9f7ec8e4709300c0a7"
+          "size": 4417536,
+          "hash": "7a10fdc66601ab040524d976e68cbab74d9a0fa8f577af89bb635a699eb72698"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -5627,8 +5627,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 8458927,
-          "hash": "618202195d68f9cd0e642aa6be7cee22d43e9a060608dca46c03d4dca1bf4974"
+          "size": 8460690,
+          "hash": "2ee7b580e5a0d4558c15b5e9c6de85dc4b9d7b5bcd3c71028d934a70bb2cea4a"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -5667,8 +5667,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 9710800,
-          "hash": "38bf6c8873197550becc867b2341274c66534fe30a2e18a96b70c2b47c655674"
+          "size": 9736374,
+          "hash": "e936cbefbfaa5c6ed55be7f5b15ff28184d77019f4d01dd914d62516aa96f863"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
@@ -6277,8 +6277,8 @@
         },
         {
           "path": "tmp/ui/ChatWheel.lua",
-          "size": 10733,
-          "hash": "998c43cd1d51f0c9a8b252485264b4abf730459e11471cacef6cbb9b4f9d7021"
+          "size": 11802,
+          "hash": "b0d9765674ac88505f7b121c7e2cc6a8ac4be94fb5b3136172011f023e555959"
         },
         {
           "path": "tmp/ui/ChatWheel.xml",
@@ -6532,8 +6532,8 @@
         },
         {
           "path": "tmp/ui/InGame.lua",
-          "size": 46495,
-          "hash": "eb7511109160d76f29504d2f5eab8fd45f9f28bca02768dedfb2d1ca53dd48c0"
+          "size": 46720,
+          "hash": "98a5489e001615ad579d642299976e990367d26fdf8a355792f005b7bd612c0a"
         },
         {
           "path": "tmp/ui/JoiningRoom.lua",
@@ -6632,8 +6632,8 @@
         },
         {
           "path": "tmp/ui/NovaAura.lua",
-          "size": 27132,
-          "hash": "ffbd45fdb980b1fe596970cecbcfb99a07d4b8dd1893e7394b19b4dd889de68f"
+          "size": 28574,
+          "hash": "a01e1729d3961270d1475228345ade499f79ff350332930903f8f301521fdcb5"
         },
         {
           "path": "tmp/ui/NovaAura.xml",
