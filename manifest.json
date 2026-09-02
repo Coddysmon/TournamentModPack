@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.37",
+  "packageVersion": "1.5.38",
   "packageFolderName": "Nova",
   "createdUtc": "2026-08-30T15:21:51.1906197+00:00",
   "hashAlgorithm": "SHA256",
@@ -3107,8 +3107,8 @@
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4416512,
-          "hash": "968b36b69b796e66cb5a7b2b8aff53f816b21d7644df7ef8693c4649a67b3aae"
+          "size": 4417536,
+          "hash": "65e5fee942c98fbc01fcb745b977d82216ba1af9d7e7c65573b531f2f9935f51"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -5627,8 +5627,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 8460947,
-          "hash": "d6bc22b1dd618172a013e9f46e6636bf7afcc40efd4d9ead36094116f9245010"
+          "size": 8459371,
+          "hash": "839938a640ebe0d05c547c59549b84e42ff027bd373c4e524a55911179adf2c6"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -5667,8 +5667,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 9739545,
-          "hash": "d24f77d1b730cd0c6275e9b8cfc7ba4a21716a6acf87e48fb7017e0bcebf4d30"
+          "size": 9742116,
+          "hash": "78f41e08c3feb1fcee7fbbc06d8e6374ab667c0bb78341b0a2b5c3d7c1f432d9"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
@@ -6202,8 +6202,8 @@
         },
         {
           "path": "tmp/eui/TradeLogic.lua",
-          "size": 103604,
-          "hash": "b14ac36998004f879aba26f57427b8dca91bc5f3f52000043b818c687dc0ee5b"
+          "size": 103705,
+          "hash": "ea9bb5e058c2c79a808c8ea31544c8b21a6f90323295f3505ff3e8d26b36acb0"
         },
         {
           "path": "tmp/eui/UnitFlagManager.lua",
@@ -6662,8 +6662,8 @@
         },
         {
           "path": "tmp/ui/PlotMouseoverInclude.lua",
-          "size": 15498,
-          "hash": "4b85afd89bab74304053aa2f07b6ccdc5e832af7d511262a9654c1da52d220f3"
+          "size": 16420,
+          "hash": "c858352139544691ca7f1f90f46c26144c638da86aaa1f13d5295f0b4ed0f2f9"
         },
         {
           "path": "tmp/ui/PopulateUniques.lua",
@@ -6817,8 +6817,8 @@
         },
         {
           "path": "tmp/ui/TradeLogic.lua",
-          "size": 149613,
-          "hash": "94a4f9ab5dabdf2891214130d977f842a65b078ca894dcdbd7c10d45a3d83e5c"
+          "size": 149828,
+          "hash": "1ba540ccde22633c8e4186c8146e3ca0498984247bd1e8fec940d321d129932b"
         },
         {
           "path": "tmp/ui/TradeRouteHelpers.lua",
@@ -6897,8 +6897,8 @@
         },
         {
           "path": "ui_check.bat",
-          "size": 20680,
-          "hash": "21e57622b0b0632f77d69bd0ebeff52740e1b3bf002bc92f525365949a1df47d"
+          "size": 20896,
+          "hash": "65f1f340a167274925a62f1924a8e4d9de00cf8c6b636d7dbe7d0a18e4e703e2"
         }
       ]
     },
@@ -8631,14 +8631,11 @@
     "Any": true
   },
   "client": {
-    "version": "0.3.33.0",
-    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/nova-client-0.3.33.0.zip",
-    "sha256": "3bc4ff964cffd0a1d459b95dc2e22cf7eb6a6146e2943cb17ae5389f8e9347a7",
-    "size": 61538076,
-    "notes": "\u041D\u043E\u0432\u0430\u044F \u0433\u043B\u0430\u0432\u043D\u0430\u044F \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0430: \u0443 \u043A\u043D\u043E\u043F\u043A\u0438 \u00AB\u0418\u0433\u0440\u0430\u0442\u044C\u00BB \u043F\u043E\u044F\u0432\u0438\u043B\u0441\u044F \u0432\u044B\u0431\u043E\u0440 DirectX 9 \u0438\u043B\u0438 11, \u0440\u044F\u0434\u043E\u043C \u0432\u0441\u0442\u0430\u043B\u0438 \u043F\u043B\u0438\u0442\u043A\u0438 \u0441\u043E \u0441\u0447\u0451\u0442\u0447\u0438\u043A\u043E\u043C \u0438\u0433\u0440\u043E\u043A\u043E\u0432, \u0447\u0438\u0441\u043B\u043E\u043C \u0430\u043A\u0442\u0438\u0432\u043D\u044B\u0445 \u043F\u0430\u0440\u0442\u0438\u0439 \u0438 \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u0435\u043C \u0441\u0435\u0440\u0432\u0435\u0440\u0430, \u0441\u043F\u0438\u0441\u043E\u043A \u043A\u043E\u043C\u043D\u0430\u0442 \u043F\u0435\u0440\u0435\u043F\u0438\u0441\u0430\u043D. \u041A\u0440\u043E\u043C\u0435 \u0432\u0438\u0434\u0430: \u0447\u0442\u0435\u043D\u0438\u044E \u043C\u0430\u043D\u0438\u0444\u0435\u0441\u0442\u0430 \u0437\u0430\u0434\u0430\u043D \u0441\u0440\u043E\u043A \u0432 15 \u0441\u0435\u043A\u0443\u043D\u0434, \u0447\u0442\u043E\u0431\u044B \u00AB\u0427\u0438\u0442\u0430\u044E \u043C\u0430\u043D\u0438\u0444\u0435\u0441\u0442\u00BB \u0431\u043E\u043B\u044C\u0448\u0435 \u043D\u0435 \u0432\u0438\u0441\u0435\u043B\u043E \u0431\u0435\u0441\u043A\u043E\u043D\u0435\u0447\u043D\u043E, \u0430 \u0441\u0430\u043C\u043E\u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435 \u043B\u0430\u0443\u043D\u0447\u0435\u0440\u0430 \u043D\u0430\u0443\u0447\u0438\u043B\u043E\u0441\u044C \u0438\u0434\u0442\u0438 \u0447\u0435\u0440\u0435\u0437 \u0437\u0435\u0440\u043A\u0430\u043B\u043E, \u0435\u0441\u043B\u0438 \u043E\u0441\u043D\u043E\u0432\u043D\u043E\u0439 \u0430\u0434\u0440\u0435\u0441 \u0437\u0430\u043A\u0440\u044B\u0442. \u0423\u043C\u043E\u043B\u0447\u0430\u043D\u0438\u0435 \u043F\u043E\u0440\u0442\u0430 \u0443\u0437\u043B\u0430 \u0432\u043E\u0437\u0432\u0440\u0430\u0449\u0435\u043D\u043E \u043D\u0430 443 \u2014 \u043F\u0440\u043E\u0432\u0435\u0440\u0435\u043D\u043E \u043F\u0440\u044F\u043C\u043E \u043D\u0430 \u0441\u0435\u0440\u0432\u0435\u0440\u0435: \u043D\u0430 45443 \u043D\u0435 \u0441\u043B\u0443\u0448\u0430\u0435\u0442 \u043D\u0438\u043A\u0442\u043E.",
-    "mirrors": [
-      "relay://109.73.196.175:443/client/nova-client-0.3.33.0.zip"
-    ]
+    "version": "0.3.34.0",
+    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/nova-client-0.3.34.0.zip",
+    "sha256": "67665c6af1e1636ca5731890c72f665a58e65adf8189da8c764d7dc9d0b50d20",
+    "size": 61539552,
+    "notes": "\u0421\u0431\u043E\u0440 \u043B\u043E\u0433\u043E\u0432 \u0442\u0435\u043F\u0435\u0440\u044C \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u044F\u0435\u0442 \u0421\u0410\u041C \u0410\u0420\u0425\u0418\u0412, \u0430 \u043D\u0435 \u0442\u043E\u043B\u044C\u043A\u043E \u0441\u0432\u043E\u0434\u043A\u0443: \u0448\u0435\u0441\u0442\u043D\u0430\u0434\u0446\u0430\u0442\u044C \u0432\u0438\u0434\u043E\u0432 \u0436\u0443\u0440\u043D\u0430\u043B\u043E\u0432, \u043E\u0431\u0435\u0437\u043B\u0438\u0447\u0435\u043D\u043D\u044B\u0435, \u043F\u043E\u0434 \u0442\u0435\u043C \u0436\u0435 \u043A\u043E\u0434\u043E\u043C. \u0420\u0430\u043D\u044C\u0448\u0435 \u0443\u0435\u0437\u0436\u0430\u043B \u0440\u0430\u0437\u0431\u043E\u0440 \u0432 \u043D\u0435\u0441\u043A\u043E\u043B\u044C\u043A\u043E \u043A\u0438\u043B\u043E\u0431\u0430\u0439\u0442, \u0438 \u043E\u043D \u043F\u0440\u044F\u0442\u0430\u043B \u043F\u043E\u0432\u0442\u043E\u0440\u044B \u2014 \u0430 \u0438\u043C\u0435\u043D\u043D\u043E \u0447\u0430\u0441\u0442\u043E\u0442\u0430 \u043F\u043E\u0432\u0442\u043E\u0440\u043E\u0432 \u0438 \u043E\u0442\u043B\u0438\u0447\u0430\u0435\u0442 \u043C\u0435\u043B\u044C\u043A\u043D\u0443\u0432\u0448\u0443\u044E \u043E\u0448\u0438\u0431\u043A\u0443 \u043E\u0442 \u0442\u043E\u0439, \u0447\u0442\u043E \u0441\u044B\u043F\u043B\u0435\u0442\u0441\u044F \u0432\u0435\u0441\u044C \u0445\u043E\u0434."
   },
   "relay": {
     "host": "109.73.196.175",
