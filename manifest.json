@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.38",
+  "packageVersion": "1.5.39",
   "packageFolderName": "Nova",
   "createdUtc": "2026-08-30T15:21:51.1906197+00:00",
   "hashAlgorithm": "SHA256",
@@ -2661,6 +2661,11 @@
           "hash": "a6832b2dda98e3f4cb8ba25f9823aabdc960923eeb8207d8a8484ad9ab716529"
         },
         {
+          "path": "Art/TM_AntiTankRifleFlag32.dds",
+          "size": 4224,
+          "hash": "b875a0dd083184eab9cdf355161d769494fadc2e66f1e9513f899e26dd8a51dd"
+        },
+        {
           "path": "Art/TM_EnvoyCaravanAtlas128.dds",
           "size": 65664,
           "hash": "b13d6d71e5f4358d545b54dfadbc0436aa08748a20e2fa4e2588b68eb21575f4"
@@ -3108,7 +3113,7 @@
         {
           "path": "CvGameCore_Expansion2.dll",
           "size": 4417536,
-          "hash": "65e5fee942c98fbc01fcb745b977d82216ba1af9d7e7c65573b531f2f9935f51"
+          "hash": "bcde816051127717e59e6f87ff19782826fc0a3fb85a63c3ed93bda270320b7c"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -3272,8 +3277,8 @@
         },
         {
           "path": "Maps/LekmapTournamentPangaea.lua",
-          "size": 876026,
-          "hash": "78d77935abfb9fe5ef26c844e6d3d60e53d7c3299604d2e7cc953cb1c9dd0994"
+          "size": 882753,
+          "hash": "2b723fe8eaa0d15bc77b8ca6fcc13067c19ce8b546dcb0da9edcc2e168083ee1"
         },
         {
           "path": "MarshalAtlas128.dds",
@@ -5627,8 +5632,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 8459371,
-          "hash": "839938a640ebe0d05c547c59549b84e42ff027bd373c4e524a55911179adf2c6"
+          "size": 8463894,
+          "hash": "44f3e2c428aa950d18b779b36981ad72ab54919ce431d98c68f0b69258a480b4"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -5667,8 +5672,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 9742116,
-          "hash": "78f41e08c3feb1fcee7fbbc06d8e6374ab667c0bb78341b0a2b5c3d7c1f432d9"
+          "size": 9747010,
+          "hash": "146397147c787d7b8d9eaed6594938a71111229dfae63d694f579c945216719e"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
@@ -6192,8 +6197,8 @@
         },
         {
           "path": "tmp/eui/TopPanel.lua",
-          "size": 159629,
-          "hash": "4ca1ff1723d7672c4a05d0fbe5d6e9ced4097d3f68b2644b834401226ab821b9"
+          "size": 159205,
+          "hash": "6e89ca544edfbe9fe520d314b10034c2980f20a0976dad5ad07b6b8a7576ec36"
         },
         {
           "path": "tmp/eui/TopPanel.xml",
@@ -6427,8 +6432,8 @@
         },
         {
           "path": "tmp/ui/EnemyUnitPanel.lua",
-          "size": 107553,
-          "hash": "5cb58782ee95986fe82d4b567a70540aa782ec8c335e29045edd8528488df65a"
+          "size": 107025,
+          "hash": "3acf74e883af17597fbbdf80b997176588e6ba570cb1384869288f3ecf7c79ff"
         },
         {
           "path": "tmp/ui/EraBonuses.lua",
@@ -6812,8 +6817,8 @@
         },
         {
           "path": "tmp/ui/TopPanel.lua",
-          "size": 57031,
-          "hash": "9eb87d174e40c7aaa49247bda0b9ccc856f03a44c8657fbf0535b5cb7a31b4ea"
+          "size": 56298,
+          "hash": "249365b6eb2ddc5a38738c6c61032595dceabb6b7e5a064263505269678bf744"
         },
         {
           "path": "tmp/ui/TradeLogic.lua",
@@ -6912,8 +6917,8 @@
       "files": [
         {
           "path": "LekmapTournamentPangaea.lua",
-          "size": 876026,
-          "hash": "78d77935abfb9fe5ef26c844e6d3d60e53d7c3299604d2e7cc953cb1c9dd0994"
+          "size": 882753,
+          "hash": "2b723fe8eaa0d15bc77b8ca6fcc13067c19ce8b546dcb0da9edcc2e168083ee1"
         }
       ]
     },
