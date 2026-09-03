@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.40",
+  "packageVersion": "1.5.41",
   "packageFolderName": "Nova",
   "createdUtc": "2026-08-30T15:21:51.1906197+00:00",
   "hashAlgorithm": "SHA256",
@@ -3277,8 +3277,8 @@
         },
         {
           "path": "Maps/LekmapTournamentPangaea.lua",
-          "size": 883836,
-          "hash": "0b8874cf8e87881e06dc36684006faebd9b56f911d531a196445d77fa7eff755"
+          "size": 887095,
+          "hash": "9f1926545cac5efd5012d52b733e6807dda2d30cd5c7fc995a46622cf5663c5e"
         },
         {
           "path": "MarshalAtlas128.dds",
@@ -5673,7 +5673,7 @@
         {
           "path": "Override/CIV5Units_Mongol.xml",
           "size": 9747010,
-          "hash": "740d48f40bfab98bee0ea6b5f9473e10b060d397065ca441d3ab59312f931d64"
+          "hash": "675e17b0249243b9c36121c820273cd0e2ec4859343aab00870f11ca0437e790"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
@@ -6917,8 +6917,8 @@
       "files": [
         {
           "path": "LekmapTournamentPangaea.lua",
-          "size": 883836,
-          "hash": "0b8874cf8e87881e06dc36684006faebd9b56f911d531a196445d77fa7eff755"
+          "size": 887095,
+          "hash": "9f1926545cac5efd5012d52b733e6807dda2d30cd5c7fc995a46622cf5663c5e"
         }
       ]
     },
