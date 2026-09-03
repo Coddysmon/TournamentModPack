@@ -6924,7 +6924,13 @@
       "targetSubPath": "Nova Maps",
       "sourceSubPath": "Maps",
       "exclusive": true,
-      "files": []
+      "files": [
+        {
+          "path": "LekmapTournamentPangaea.lua",
+          "size": 887095,
+          "hash": "9f1926545cac5efd5012d52b733e6807dda2d30cd5c7fc995a46622cf5663c5e"
+        }
+      ]
     },
     {
       "id": "maps-user",
