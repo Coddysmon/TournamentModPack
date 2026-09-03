@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.45",
+  "packageVersion": "1.5.46",
   "packageFolderName": "Nova",
   "createdUtc": "2026-08-30T15:21:51.1906197+00:00",
   "hashAlgorithm": "SHA256",
@@ -5492,8 +5492,8 @@
         },
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xml",
-          "size": 834469,
-          "hash": "68032f4d8d98586fcb1e22f87328a8dd6516bed34a5b5c427b27bd2f72af5f79"
+          "size": 834464,
+          "hash": "12eafb9b8efa9913e9c194a3369593aba58f198eb808747c6d45321a13ce4533"
         },
         {
           "path": "Override/CIV5Trades.xml",
@@ -5637,8 +5637,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 8553257,
-          "hash": "5e02529bd8c57aed8fbf81c9c9df9523bfcd8bbbb71743b0f45888bacfe6d2ae"
+          "size": 8553193,
+          "hash": "18d1518f1fd66e582ebb686ea6d7f1b29ccb1d2821d6362af2799053488e84a0"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -5677,8 +5677,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 9748882,
-          "hash": "44208f2b2693f6679d3d953ebf587cf727f97138363375b1c917d55d5add1880"
+          "size": 9748899,
+          "hash": "de3f71e6efe4fc889b9fbd22f3daa830a3d2f85909406e6cddc2a8a7ac029fda"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
@@ -5998,7 +5998,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 7,
-          "hash": "893bc4bb66760da3553636fc1e2140cabae97cd103888b99415e1dd5476c98f5"
+          "hash": "0dde3c925b6be06ab799f9bf6d6cc997d9f9d71481874f27d03acc44b1ebbf29"
         },
         {
           "path": "randomize_cursor.bat",
@@ -6322,13 +6322,13 @@
         },
         {
           "path": "tmp/ui/ChoosePantheonPopup.lua",
-          "size": 15068,
-          "hash": "fc1efeea45fcad901cc148b5c8dfbbd6536ca982365f48867fa0944fd1e667fe"
+          "size": 15666,
+          "hash": "443caf3cb4a50af4724afcd0f5f95878c4f07d8d2eb1770057a5e6e20c018260"
         },
         {
           "path": "tmp/ui/ChoosePantheonPopup.xml",
-          "size": 5885,
-          "hash": "ba2e84ff5eb08eb305febc3c8786d16f75983fafbdf4c248e2fe20336efde94e"
+          "size": 5886,
+          "hash": "8118affecb1dd3749c5f05ed119ac45e310c72b815747e92ec60e314e75bad60"
         },
         {
           "path": "tmp/ui/ChooseReligionPopup.lua",
@@ -6557,8 +6557,8 @@
         },
         {
           "path": "tmp/ui/InGame.lua",
-          "size": 49167,
-          "hash": "1353af0beb580d9251742065526ff18a0a9b28a8267c93cc46a473a0945903e3"
+          "size": 50289,
+          "hash": "d73bbc083ee468481dc225d7fa2bf86c4ea217f6c8583160e6df37bb9399facd"
         },
         {
           "path": "tmp/ui/JoiningRoom.lua",
