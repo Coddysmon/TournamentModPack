@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.42",
+  "packageVersion": "1.5.43",
   "packageFolderName": "Nova",
   "createdUtc": "2026-08-30T15:21:51.1906197+00:00",
   "hashAlgorithm": "SHA256",
@@ -3277,8 +3277,8 @@
         },
         {
           "path": "Maps/LekmapTournamentPangaea.lua",
-          "size": 887095,
-          "hash": "9f1926545cac5efd5012d52b733e6807dda2d30cd5c7fc995a46622cf5663c5e"
+          "size": 890021,
+          "hash": "c36f2b4b710a07664fc97d97886f9438aef682d79bb87d831b8184b3949ede06"
         },
         {
           "path": "MarshalAtlas128.dds",
@@ -5673,7 +5673,7 @@
         {
           "path": "Override/CIV5Units_Mongol.xml",
           "size": 9747992,
-          "hash": "33fb81fa4a09a87750d0dc953f2215eb65476f1130114635afc7fbb1612185d2"
+          "hash": "275b68d4845997b74c9794c51e6f114e3a6628093c470f797ca8a104cdce7e19"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
@@ -6312,23 +6312,23 @@
         },
         {
           "path": "tmp/ui/ChoosePantheonPopup.lua",
-          "size": 13687,
-          "hash": "d84c07162e5972a9fef05e50be2097e69343251dd0f28f595877976a02d1ce13"
+          "size": 13684,
+          "hash": "2bb6c561b4eb7569a4c022dde2bbc0c74a1a7f6d61e2ccf7d35ace35bc55e22e"
         },
         {
           "path": "tmp/ui/ChoosePantheonPopup.xml",
-          "size": 5889,
-          "hash": "392ca0c6e3c715f96a28984412aa79b728d4508d51ed22924f38e95471962855"
+          "size": 5886,
+          "hash": "ccd54d570ae650c3519ecaf27d44afcf78c0543ed0c1c4e1b70c1815d1ca83d6"
         },
         {
           "path": "tmp/ui/ChooseReligionPopup.lua",
-          "size": 34694,
-          "hash": "5780d2d254550d39a13267756b0103b0d2c09d278cab6774b9eb5ad35c6cead4"
+          "size": 34691,
+          "hash": "cac1a69b6c76fdceae80ade762455e060da3843903a4a5ae12f409cbf40c8ca5"
         },
         {
           "path": "tmp/ui/ChooseReligionPopup.xml",
-          "size": 15183,
-          "hash": "fd17823c04bddc4263053f848556802e972a23dae8a304b8be86de3d60bad7a4"
+          "size": 15180,
+          "hash": "604cd4312eb1e38ff2df4387d74d658ddab56e1c3a83e8f38cb21e0b7a17c23f"
         },
         {
           "path": "tmp/ui/CityBannerManager.lua",
@@ -6927,8 +6927,8 @@
       "files": [
         {
           "path": "LekmapTournamentPangaea.lua",
-          "size": 887095,
-          "hash": "9f1926545cac5efd5012d52b733e6807dda2d30cd5c7fc995a46622cf5663c5e"
+          "size": 890021,
+          "hash": "c36f2b4b710a07664fc97d97886f9438aef682d79bb87d831b8184b3949ede06"
         }
       ]
     },
@@ -7163,8 +7163,18 @@
         "when": []
       },
       {
+        "from": "tmp/ui/ChoosePantheonPopup.xml",
+        "to": "UI/ChoosePantheonPopup.xml",
+        "when": []
+      },
+      {
         "from": "tmp/ui/ChooseReligionPopup.lua",
         "to": "UI/ChooseReligionPopup.lua",
+        "when": []
+      },
+      {
+        "from": "tmp/ui/ChooseReligionPopup.xml",
+        "to": "UI/ChooseReligionPopup.xml",
         "when": []
       },
       {
@@ -7540,13 +7550,7 @@
       {
         "from": "tmp/ui/PlotMouseoverInclude.lua",
         "to": "UI/PlotMouseoverInclude.lua",
-        "when": [
-          {
-            "kind": "PathExists",
-            "path": "UI_bc1/PlotHelp/PlotHelpManager.lua",
-            "expected": false
-          }
-        ]
+        "when": []
       },
       {
         "from": "tmp/ui/PlotHelpManager.xml",
