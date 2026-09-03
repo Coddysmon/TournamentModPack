@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.39",
+  "packageVersion": "1.5.40",
   "packageFolderName": "Nova",
   "createdUtc": "2026-08-30T15:21:51.1906197+00:00",
   "hashAlgorithm": "SHA256",
@@ -3113,7 +3113,7 @@
         {
           "path": "CvGameCore_Expansion2.dll",
           "size": 4417536,
-          "hash": "bcde816051127717e59e6f87ff19782826fc0a3fb85a63c3ed93bda270320b7c"
+          "hash": "3b2a30d4df98f90f42dfb6265043c6559ea1e633d1431ef00b3613cb55684617"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -3277,8 +3277,8 @@
         },
         {
           "path": "Maps/LekmapTournamentPangaea.lua",
-          "size": 882753,
-          "hash": "2b723fe8eaa0d15bc77b8ca6fcc13067c19ce8b546dcb0da9edcc2e168083ee1"
+          "size": 883836,
+          "hash": "0b8874cf8e87881e06dc36684006faebd9b56f911d531a196445d77fa7eff755"
         },
         {
           "path": "MarshalAtlas128.dds",
@@ -5673,7 +5673,7 @@
         {
           "path": "Override/CIV5Units_Mongol.xml",
           "size": 9747010,
-          "hash": "146397147c787d7b8d9eaed6594938a71111229dfae63d694f579c945216719e"
+          "hash": "740d48f40bfab98bee0ea6b5f9473e10b060d397065ca441d3ab59312f931d64"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
@@ -6917,8 +6917,8 @@
       "files": [
         {
           "path": "LekmapTournamentPangaea.lua",
-          "size": 882753,
-          "hash": "2b723fe8eaa0d15bc77b8ca6fcc13067c19ce8b546dcb0da9edcc2e168083ee1"
+          "size": 883836,
+          "hash": "0b8874cf8e87881e06dc36684006faebd9b56f911d531a196445d77fa7eff755"
         }
       ]
     },
