@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.44",
+  "packageVersion": "1.5.45",
   "packageFolderName": "Nova",
   "createdUtc": "2026-08-30T15:21:51.1906197+00:00",
   "hashAlgorithm": "SHA256",
@@ -1097,8 +1097,8 @@
         },
         {
           "path": "Art/Lux3D/Rice/rice_decal_d.dds",
-          "size": 65664,
-          "hash": "21f1a2513008c8825b8d443db7254e23f358fba98cedc6ad048e584aa5b91b51"
+          "size": 262272,
+          "hash": "6c7f07d587a104d4958f6bb9ab8c29ef5ed0daba153cec255c59312fe493d2f4"
         },
         {
           "path": "Art/Lux3D/Rice/rice_wisps_diff.dds",
@@ -2233,22 +2233,22 @@
         {
           "path": "Art/NewBuildings/NewBuildings128.dds",
           "size": 3145856,
-          "hash": "8d1b7056da65ba9e9801bc7adf3b15d829d0a75edd3e89e81df15bf3b0777e39"
+          "hash": "208e4c2fd514dadd8eb9af384b517dbd6022fa0f8354192f78f2a063869e0c07"
         },
         {
           "path": "Art/NewBuildings/NewBuildings256.dds",
           "size": 12583040,
-          "hash": "92504cf59dc4fe4cde5f04b1e079792ebbddfff12d22f97c8c98e06086e20d3a"
+          "hash": "b874b9a66378d0ce198d622349f399e6b7f270206e6e69f6cccd4c1dcc7bbfb6"
         },
         {
           "path": "Art/NewBuildings/NewBuildings45.dds",
           "size": 388928,
-          "hash": "7732bca5bf1e080309a1068d5948ab0805df1b6280fc27ba9aa7c80f1f8844b8"
+          "hash": "2134db59ae80491f2a4f6e6ab3300e9c70f9e4763a79c2f178e78a67bf7b48ad"
         },
         {
           "path": "Art/NewBuildings/NewBuildings64.dds",
           "size": 786560,
-          "hash": "2cc118e0d75836cce4d455ef6f1e2b375934f874ba7d8fa7a4cccc4056a0e748"
+          "hash": "07237d093867fab6b70a9742876c9f1f82b36454a63f5842a29e42d2f6341e3c"
         },
         {
           "path": "Art/noncivicons_128.dds",
@@ -2483,32 +2483,32 @@
         {
           "path": "Art/nova_wonders_128.dds",
           "size": 196736,
-          "hash": "e38373cbef65934631622e2351a0fda7f961de66039ec8328df63b1c98476ab1"
+          "hash": "467875dd66cc23ecf77574e9f6c4214b1619c2f4d71a99e72b339194337eafa6"
         },
         {
           "path": "Art/nova_wonders_256.dds",
           "size": 786560,
-          "hash": "c2693a4a288f3d5c149f70d242619ac2cdbef6d906964e1798e28b0f803627b7"
+          "hash": "072d4a7d3ea0b5b9422da5ef5a9d788ee55eeebfd8e1cf754dfda53506ec510a"
         },
         {
           "path": "Art/nova_wonders_32.dds",
           "size": 12416,
-          "hash": "7b0de355d92f01cd0eed918e8d7e1b31863e976bc2bdfeef8bf6c50e2dea90b9"
+          "hash": "cb25b69c6891260ec384a526a4763ec3113f174dde147ca7dcf4bd4985664259"
         },
         {
           "path": "Art/nova_wonders_45.dds",
           "size": 24428,
-          "hash": "8c17801123693e65917beafbb1ded8a380081771e37f63446db2513350ee241d"
+          "hash": "1dbb818e488fc11e9d66fbb8685ff69a6f9be47fb4dd82864cd130ea95aba583"
         },
         {
           "path": "Art/nova_wonders_64.dds",
           "size": 49280,
-          "hash": "1d2abc498bdf19e9993686e065a8f8cdf10c9a35a1ff9d98bb002f902d95d778"
+          "hash": "89b65270ebf5f5174292db7515655c8baec8b9943328f3c9f2f7db9b8f0e1258"
         },
         {
           "path": "Art/nova_wonders_80.dds",
           "size": 76928,
-          "hash": "352e479215786db83c005d79f36dd726fe32e595651dbf5fbbba7d05aae9a37c"
+          "hash": "0d6622ea26dd95d0052166057ab41d68526281a9759b5d6b0c75135ecd8f651e"
         },
         {
           "path": "Art/SocialPoliciesPleiad.dds",
@@ -2968,27 +2968,27 @@
         {
           "path": "Art/TM_UniqueUnits2Atlas128.dds",
           "size": 131200,
-          "hash": "9b43984a380f3d24ab39f96eb7f33e86d6b2569012cc913fe4812b25a02cca7d"
+          "hash": "1e6e84f0563ef760f929c3ccf0521d7427aaaf7ae0aabf0b71cfc92fc5963dfe"
         },
         {
           "path": "Art/TM_UniqueUnits2Atlas256.dds",
           "size": 524416,
-          "hash": "687292ebc58a7d024ffac30a357ec715646f9d1c46eb8be6ba341446e225c6ae"
+          "hash": "f1322e1ae385db382450e0ab742b71eb8a129363ef0256b151f39b7255cdde08"
         },
         {
           "path": "Art/TM_UniqueUnits2Atlas45.dds",
           "size": 16328,
-          "hash": "1209ffc914de11ecc1029b23054188796f35d221d00ec2906028c6a94c0a48d6"
+          "hash": "a48c61d457c52a5bcd002f6b5539510aa5937a6b1e88fdc6fb5f748870949a04"
         },
         {
           "path": "Art/TM_UniqueUnits2Atlas64.dds",
           "size": 32896,
-          "hash": "19965af79c50b51f96e67d42c08e2ff4b58c540c0acc7d5aee8435e73fe586c9"
+          "hash": "a4f46af80e2dc3eb419c1e59e1a59e0129a5f147423430d54e04dc4fa24f16a3"
         },
         {
           "path": "Art/TM_UniqueUnits2Atlas80.dds",
           "size": 51328,
-          "hash": "4505c03e27610ca15495e1cdfbe2c6c19c28d792148d6536410e5abfe2447353"
+          "hash": "e4c3060a5391d70d33f75a4d65c1be6c8663060a103d565179d09433cb0334c7"
         },
         {
           "path": "Art/TM_UniqueUnitsAtlas128.dds",
@@ -3113,7 +3113,7 @@
         {
           "path": "CvGameCore_Expansion2.dll",
           "size": 4417536,
-          "hash": "3b2a30d4df98f90f42dfb6265043c6559ea1e633d1431ef00b3613cb55684617"
+          "hash": "3a65709541dabead92214d78b3f347822a9931a8fd67a931a4b9d00282df8ed7"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -3277,8 +3277,8 @@
         },
         {
           "path": "Maps/LekmapTournamentPangaea.lua",
-          "size": 884357,
-          "hash": "3af4b671a115ddd9f2765e7f8233d20c41b79054c9735ce967a3422dc2e9bdfa"
+          "size": 886624,
+          "hash": "db1bd5d3c11e4524d8c692ff673be88b57b7343cac1f5686ea721581c2463f7a"
         },
         {
           "path": "MarshalAtlas128.dds",
@@ -5491,6 +5491,11 @@
           "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
+          "path": "Override/CIV5Text_Nova_RU_RU.xml",
+          "size": 834469,
+          "hash": "68032f4d8d98586fcb1e22f87328a8dd6516bed34a5b5c427b27bd2f72af5f79"
+        },
+        {
           "path": "Override/CIV5Trades.xml",
           "size": 0,
           "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -5632,8 +5637,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 8463894,
-          "hash": "44f3e2c428aa950d18b779b36981ad72ab54919ce431d98c68f0b69258a480b4"
+          "size": 8553257,
+          "hash": "5e02529bd8c57aed8fbf81c9c9df9523bfcd8bbbb71743b0f45888bacfe6d2ae"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -5672,8 +5677,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 9747992,
-          "hash": "effbe1c7e3479d594900e8f0366b8a0c17cceee4257438527a70a133142789b7"
+          "size": 9748882,
+          "hash": "44208f2b2693f6679d3d953ebf587cf727f97138363375b1c917d55d5add1880"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
@@ -5989,6 +5994,11 @@
           "path": "Override/Notifications.xml",
           "size": 0,
           "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "PATCH_VERSION.txt",
+          "size": 7,
+          "hash": "893bc4bb66760da3553636fc1e2140cabae97cd103888b99415e1dd5476c98f5"
         },
         {
           "path": "randomize_cursor.bat",
@@ -6312,8 +6322,8 @@
         },
         {
           "path": "tmp/ui/ChoosePantheonPopup.lua",
-          "size": 13684,
-          "hash": "2bb6c561b4eb7569a4c022dde2bbc0c74a1a7f6d61e2ccf7d35ace35bc55e22e"
+          "size": 15068,
+          "hash": "fc1efeea45fcad901cc148b5c8dfbbd6536ca982365f48867fa0944fd1e667fe"
         },
         {
           "path": "tmp/ui/ChoosePantheonPopup.xml",
@@ -6442,8 +6452,8 @@
         },
         {
           "path": "tmp/ui/EnemyUnitPanel.lua",
-          "size": 107025,
-          "hash": "3acf74e883af17597fbbdf80b997176588e6ba570cb1384869288f3ecf7c79ff"
+          "size": 108181,
+          "hash": "f6fdf179ed7ed82189c3a9bd45781a2cdee1807a6af3af4235eb539cdd0b24d9"
         },
         {
           "path": "tmp/ui/EraBonuses.lua",
@@ -6547,8 +6557,8 @@
         },
         {
           "path": "tmp/ui/InGame.lua",
-          "size": 46720,
-          "hash": "98a5489e001615ad579d642299976e990367d26fdf8a355792f005b7bd612c0a"
+          "size": 49167,
+          "hash": "1353af0beb580d9251742065526ff18a0a9b28a8267c93cc46a473a0945903e3"
         },
         {
           "path": "tmp/ui/JoiningRoom.lua",
@@ -6927,8 +6937,8 @@
       "files": [
         {
           "path": "LekmapTournamentPangaea.lua",
-          "size": 884357,
-          "hash": "3af4b671a115ddd9f2765e7f8233d20c41b79054c9735ce967a3422dc2e9bdfa"
+          "size": 886624,
+          "hash": "db1bd5d3c11e4524d8c692ff673be88b57b7343cac1f5686ea721581c2463f7a"
         }
       ]
     },
