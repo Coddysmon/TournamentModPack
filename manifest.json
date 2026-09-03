@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.47",
+  "packageVersion": "1.5.48",
   "packageFolderName": "Nova",
   "createdUtc": "2026-08-30T15:21:51.1906197+00:00",
   "hashAlgorithm": "SHA256",
@@ -3112,8 +3112,8 @@
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4417536,
-          "hash": "3a65709541dabead92214d78b3f347822a9931a8fd67a931a4b9d00282df8ed7"
+          "size": 4416512,
+          "hash": "269d98e4b465efc9db8f14ea18dde2fb1cadc164f8b47c18e742a6712a699041"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -5493,7 +5493,7 @@
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xml",
           "size": 834464,
-          "hash": "0b09fa329da209615e3bee4d3a43529653614c8e4ca72f5810b9ad6486b3cf85"
+          "hash": "3cd4675d248139b38109fef919cc561c41feb66e0529f2c2179cbabe14d7df24"
         },
         {
           "path": "Override/CIV5Trades.xml",
@@ -5637,8 +5637,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 8553193,
-          "hash": "18d1518f1fd66e582ebb686ea6d7f1b29ccb1d2821d6362af2799053488e84a0"
+          "size": 8554047,
+          "hash": "bf5a836b423065257ea1b9414e3ad24c3a98b9c30edd72d388c09495040b911f"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -5678,7 +5678,7 @@
         {
           "path": "Override/CIV5Units_Mongol.xml",
           "size": 9748899,
-          "hash": "94babbd369e13eb086e6eac7022277a31fc325256a695c5b1869a50451d37b62"
+          "hash": "37ceeea0ecfd44f9b3079beff28a5cfe8c04e5d7869608f77f4174ccd2273acd"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
@@ -5998,7 +5998,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 7,
-          "hash": "b4f970a88a03e5363300479219316b5164badc83e169c16c9dd87ba2fc0f6d61"
+          "hash": "41b9cc2f4193106818f437ea39a34f70f55db24d721e1bb75216d3329c2dd4fc"
         },
         {
           "path": "randomize_cursor.bat",
