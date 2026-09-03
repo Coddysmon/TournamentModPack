@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.49",
+  "packageVersion": "1.5.51",
   "packageFolderName": "Nova",
   "createdUtc": "2026-08-30T15:21:51.1906197+00:00",
   "hashAlgorithm": "SHA256",
@@ -2233,22 +2233,22 @@
         {
           "path": "Art/NewBuildings/NewBuildings128.dds",
           "size": 3145856,
-          "hash": "208e4c2fd514dadd8eb9af384b517dbd6022fa0f8354192f78f2a063869e0c07"
+          "hash": "9e216ba841fb89c18ca967dfaacfde6d4869514aae3a4ff875c13a59f134af4c"
         },
         {
           "path": "Art/NewBuildings/NewBuildings256.dds",
           "size": 12583040,
-          "hash": "b874b9a66378d0ce198d622349f399e6b7f270206e6e69f6cccd4c1dcc7bbfb6"
+          "hash": "57193dc538ce5c25c68ee72aeb320ca641c2ec621d9eb4baca093e2a94f28e61"
         },
         {
           "path": "Art/NewBuildings/NewBuildings45.dds",
           "size": 388928,
-          "hash": "2134db59ae80491f2a4f6e6ab3300e9c70f9e4763a79c2f178e78a67bf7b48ad"
+          "hash": "6d45a8e3e7e8ce1f1f03672572079666f98dd037cdd5febdcd0fb9ab41b0e49b"
         },
         {
           "path": "Art/NewBuildings/NewBuildings64.dds",
           "size": 786560,
-          "hash": "07237d093867fab6b70a9742876c9f1f82b36454a63f5842a29e42d2f6341e3c"
+          "hash": "9360d2d8d934991c17672cd7ba8d13c0340a1cdd9c20a10216edef3d281f010f"
         },
         {
           "path": "Art/noncivicons_128.dds",
@@ -5493,7 +5493,7 @@
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xml",
           "size": 834464,
-          "hash": "42a3fe573e2a9a6396610c4a9780fd6e4ade623850f9903b64dd2db9c3210723"
+          "hash": "f00c682c1a85a1047ddccf65385d5a59133c2af50a1faaf366df76c780d9ebbb"
         },
         {
           "path": "Override/CIV5Trades.xml",
@@ -5678,7 +5678,7 @@
         {
           "path": "Override/CIV5Units_Mongol.xml",
           "size": 9748899,
-          "hash": "121c3b89f190c0ca2dd90ae0e3e14d4a30d574f1f06bb7277aae55bb2abe1732"
+          "hash": "4e14fb7b8c78c3847ef154a0e3bbb92a2aa55d05f65071aae2262afedbeef7e0"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
@@ -5998,7 +5998,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 7,
-          "hash": "8655e04f3f9b49ffbcca138fa346e0ac99e73ec7308d0e9ae17583bf7b3376c8"
+          "hash": "8a7717036343d8c24600e1106fde68fc9a3fba2bf946d88bce32067e38b2e57b"
         },
         {
           "path": "randomize_cursor.bat",
@@ -6327,8 +6327,8 @@
         },
         {
           "path": "tmp/ui/ChoosePantheonPopup.xml",
-          "size": 5886,
-          "hash": "8118affecb1dd3749c5f05ed119ac45e310c72b815747e92ec60e314e75bad60"
+          "size": 6079,
+          "hash": "52693f0d11437ad0594c624b5248a91db736fbce9957f0f63186a28b803e1be4"
         },
         {
           "path": "tmp/ui/ChooseReligionPopup.lua",
