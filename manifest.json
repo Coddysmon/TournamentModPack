@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.46",
+  "packageVersion": "1.5.47",
   "packageFolderName": "Nova",
   "createdUtc": "2026-08-30T15:21:51.1906197+00:00",
   "hashAlgorithm": "SHA256",
@@ -5493,7 +5493,7 @@
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xml",
           "size": 834464,
-          "hash": "12eafb9b8efa9913e9c194a3369593aba58f198eb808747c6d45321a13ce4533"
+          "hash": "0b09fa329da209615e3bee4d3a43529653614c8e4ca72f5810b9ad6486b3cf85"
         },
         {
           "path": "Override/CIV5Trades.xml",
@@ -5678,7 +5678,7 @@
         {
           "path": "Override/CIV5Units_Mongol.xml",
           "size": 9748899,
-          "hash": "de3f71e6efe4fc889b9fbd22f3daa830a3d2f85909406e6cddc2a8a7ac029fda"
+          "hash": "94babbd369e13eb086e6eac7022277a31fc325256a695c5b1869a50451d37b62"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
@@ -5998,7 +5998,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 7,
-          "hash": "0dde3c925b6be06ab799f9bf6d6cc997d9f9d71481874f27d03acc44b1ebbf29"
+          "hash": "b4f970a88a03e5363300479219316b5164badc83e169c16c9dd87ba2fc0f6d61"
         },
         {
           "path": "randomize_cursor.bat",
@@ -6557,8 +6557,8 @@
         },
         {
           "path": "tmp/ui/InGame.lua",
-          "size": 50289,
-          "hash": "d73bbc083ee468481dc225d7fa2bf86c4ea217f6c8583160e6df37bb9399facd"
+          "size": 50228,
+          "hash": "25331acd037f90a25aee0e978400adc75b0c4d121a966ffcbf99c1d70b21d3d1"
         },
         {
           "path": "tmp/ui/JoiningRoom.lua",
