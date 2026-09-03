@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.41",
+  "packageVersion": "1.5.42",
   "packageFolderName": "Nova",
   "createdUtc": "2026-08-30T15:21:51.1906197+00:00",
   "hashAlgorithm": "SHA256",
@@ -5672,8 +5672,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 9747010,
-          "hash": "675e17b0249243b9c36121c820273cd0e2ec4859343aab00870f11ca0437e790"
+          "size": 9747992,
+          "hash": "33fb81fa4a09a87750d0dc953f2215eb65476f1130114635afc7fbb1612185d2"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
@@ -6312,13 +6312,23 @@
         },
         {
           "path": "tmp/ui/ChoosePantheonPopup.lua",
-          "size": 11297,
-          "hash": "17a699c19fe30deb66f5256131ff617f65b1f24d3b2ccb84c2401f9284405c50"
+          "size": 13687,
+          "hash": "d84c07162e5972a9fef05e50be2097e69343251dd0f28f595877976a02d1ce13"
+        },
+        {
+          "path": "tmp/ui/ChoosePantheonPopup.xml",
+          "size": 5889,
+          "hash": "392ca0c6e3c715f96a28984412aa79b728d4508d51ed22924f38e95471962855"
         },
         {
           "path": "tmp/ui/ChooseReligionPopup.lua",
-          "size": 32051,
-          "hash": "c9e1e990968cb6af3f8887602f3affaf836e69b1c35365360e57d6a658602dbb"
+          "size": 34694,
+          "hash": "5780d2d254550d39a13267756b0103b0d2c09d278cab6774b9eb5ad35c6cead4"
+        },
+        {
+          "path": "tmp/ui/ChooseReligionPopup.xml",
+          "size": 15183,
+          "hash": "fd17823c04bddc4263053f848556802e972a23dae8a304b8be86de3d60bad7a4"
         },
         {
           "path": "tmp/ui/CityBannerManager.lua",
@@ -6902,8 +6912,8 @@
         },
         {
           "path": "ui_check.bat",
-          "size": 20896,
-          "hash": "65f1f340a167274925a62f1924a8e4d9de00cf8c6b636d7dbe7d0a18e4e703e2"
+          "size": 21106,
+          "hash": "785ba7f6b60c9fed69121bcc306b5f2448cbf646c1344fcadc8842d3e85b05ef"
         }
       ]
     },
@@ -6914,13 +6924,7 @@
       "targetSubPath": "Nova Maps",
       "sourceSubPath": "Maps",
       "exclusive": true,
-      "files": [
-        {
-          "path": "LekmapTournamentPangaea.lua",
-          "size": 887095,
-          "hash": "9f1926545cac5efd5012d52b733e6807dda2d30cd5c7fc995a46622cf5663c5e"
-        }
-      ]
+      "files": []
     },
     {
       "id": "maps-user",
