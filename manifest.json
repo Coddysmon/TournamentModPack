@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.43",
+  "packageVersion": "1.5.44",
   "packageFolderName": "Nova",
   "createdUtc": "2026-08-30T15:21:51.1906197+00:00",
   "hashAlgorithm": "SHA256",
@@ -3277,8 +3277,8 @@
         },
         {
           "path": "Maps/LekmapTournamentPangaea.lua",
-          "size": 890021,
-          "hash": "c36f2b4b710a07664fc97d97886f9438aef682d79bb87d831b8184b3949ede06"
+          "size": 884357,
+          "hash": "3af4b671a115ddd9f2765e7f8233d20c41b79054c9735ce967a3422dc2e9bdfa"
         },
         {
           "path": "MarshalAtlas128.dds",
@@ -5673,7 +5673,7 @@
         {
           "path": "Override/CIV5Units_Mongol.xml",
           "size": 9747992,
-          "hash": "275b68d4845997b74c9794c51e6f114e3a6628093c470f797ca8a104cdce7e19"
+          "hash": "effbe1c7e3479d594900e8f0366b8a0c17cceee4257438527a70a133142789b7"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
@@ -6317,8 +6317,8 @@
         },
         {
           "path": "tmp/ui/ChoosePantheonPopup.xml",
-          "size": 5886,
-          "hash": "ccd54d570ae650c3519ecaf27d44afcf78c0543ed0c1c4e1b70c1815d1ca83d6"
+          "size": 5885,
+          "hash": "ba2e84ff5eb08eb305febc3c8786d16f75983fafbdf4c248e2fe20336efde94e"
         },
         {
           "path": "tmp/ui/ChooseReligionPopup.lua",
@@ -6927,8 +6927,8 @@
       "files": [
         {
           "path": "LekmapTournamentPangaea.lua",
-          "size": 890021,
-          "hash": "c36f2b4b710a07664fc97d97886f9438aef682d79bb87d831b8184b3949ede06"
+          "size": 884357,
+          "hash": "3af4b671a115ddd9f2765e7f8233d20c41b79054c9735ce967a3422dc2e9bdfa"
         }
       ]
     },
