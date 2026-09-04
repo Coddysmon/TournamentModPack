@@ -2,11 +2,14 @@
   "schemaVersion": 1,
   "packageVersion": "1.5.52",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-09-04T13:03:57.3719983+00:00",
+  "createdUtc": "2026-09-04T13:16:12.0758714+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
-    "layout": "Flat"
+    "layout": "Flat",
+    "mirrors": [
+      "relay://109.73.196.175:443/blobs/"
+    ]
   },
   "components": [
     {
