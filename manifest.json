@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.54",
+  "packageVersion": "1.5.55",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-09-04T22:01:37.6289211+00:00",
+  "createdUtc": "2026-09-04T23:07:05.1382182+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -9494,8 +9494,8 @@
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4420608,
-          "hash": "bdfbee75c20fe26fe063214ed659cf1e7e5c2f04ebb0d4b90519ab8cb5ff34a8"
+          "size": 4421632,
+          "hash": "e6cfe8e8d218c198acb64493fb1e6cb37db04fa974ea18076d4df05ab7459a64"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -13054,8 +13054,8 @@
         },
         {
           "path": "tmp/ui/NovaSkins.lua",
-          "size": 5757,
-          "hash": "34dcb1976df7e19dbd67f3f9bd3ae091e25eac73803c8cefaf509aa1e39344b1"
+          "size": 8319,
+          "hash": "36fd72d7a99cb021f56e709386dae677ea6626f4c02e7beb93074ea84b7f8a48"
         },
         {
           "path": "tmp/ui/OptionsMenu.lua.ignore",
