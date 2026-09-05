@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.59",
-  "packageFolderName": "Nova",
-  "createdUtc": "2026-09-05T16:01:47.5745249+00:00",
+  "packageVersion": "1.5.60",
+  "packageFolderName": "stage-src",
+  "createdUtc": "2026-09-05T21:51:50.4224976+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -2434,8 +2434,8 @@
         },
         {
           "path": "Art/Skins/10TP.gr2",
-          "size": 23436,
-          "hash": "8f687cd9b35108856f4b65e05bebdbc6255ed10387c17a4fa44dda9786fc6c90"
+          "size": 22876,
+          "hash": "2d0d83e4bf19aaa307f3e97d98af13f4afaa2d2e80179a9871308daf74d9a0fe"
         },
         {
           "path": "Art/Skins/155mmDeBang.dds",
@@ -2529,8 +2529,8 @@
         },
         {
           "path": "Art/Skins/A12_Matilda_II_5.gr2",
-          "size": 41352,
-          "hash": "a38999064ddec19b46efb2678f6b4881034aa7a9e9b16c1a826fa3ecf87aad48"
+          "size": 40844,
+          "hash": "1299a7ff81a91e37df98d2e809332c84afc5c15a0483edaeaeaaf78fdd9ef10d"
         },
         {
           "path": "Art/Skins/Admiralen_Class.dds",
@@ -2544,8 +2544,8 @@
         },
         {
           "path": "Art/Skins/Admiralen_Class.gr2",
-          "size": 24508,
-          "hash": "794e05e2deabc3dc5076fbaf0c40eb6dbb3205be97da8bcb5b991e54d6360b61"
+          "size": 24096,
+          "hash": "52a15f716530ac0636bf6851f41bb8fc75a6bf780ca3ad3400aadd48d60f82cb"
         },
         {
           "path": "Art/Skins/Admiralen_Class_gloss.dds",
@@ -2609,8 +2609,8 @@
         },
         {
           "path": "Art/Skins/Aquila_Class.gr2",
-          "size": 40276,
-          "hash": "2d5530ac7b4ae919830f61b6d77f7c1cd9f38138f122ffbc3e0d82db87891ac4"
+          "size": 39504,
+          "hash": "c9699dd0e80b4d4d2ee6c19097c5fcd3246f3dbdc695a37cb9552df46630a11a"
         },
         {
           "path": "Art/Skins/Aquila_Class_gloss.dds",
@@ -2989,8 +2989,8 @@
         },
         {
           "path": "Art/Skins/Bismark_Class.gr2",
-          "size": 27564,
-          "hash": "79786c106d2efbf3a53a6ec04ff2b01f4453cba37194f489acc67111b5c36828"
+          "size": 26996,
+          "hash": "1e8bf6be5dac84421f61e3f9f1f8f88da794d02a2e250791a057060136809a0f"
         },
         {
           "path": "Art/Skins/Bismark_Class_gloss.dds",
@@ -3009,8 +3009,8 @@
         },
         {
           "path": "Art/Skins/BMP2GreenTeam.gr2",
-          "size": 25644,
-          "hash": "80447b77fc09e52a6a21befb7cb88cc8214af6944c7c87f15cc6429fad203ff4"
+          "size": 25096,
+          "hash": "dfbdcacc30c827fd2c961d109679525d52e8440e6b6f4884002f35c4d880b96d"
         },
         {
           "path": "Art/Skins/bombardTurk.fxsxml",
@@ -4109,8 +4109,8 @@
         },
         {
           "path": "Art/Skins/F15.gr2",
-          "size": 30308,
-          "hash": "ab115f30b50859e8c33323e7f4213b3c7d9e37b91c1f80862c4fc1e497a3cbf1"
+          "size": 29696,
+          "hash": "170f07dd1bf2eb6de91a24fdc53b5595f97d3cf5421849116694d087ed2785e5"
         },
         {
           "path": "Art/Skins/F15SREF.dds",
@@ -4129,8 +4129,8 @@
         },
         {
           "path": "Art/Skins/F4DKorea.gr2",
-          "size": 31380,
-          "hash": "dfc6c63121dfeb7e8a1a3a1ccfdf1a762b52c095538791fb439ac46c9820fc34"
+          "size": 30728,
+          "hash": "4731d3f188b3787886d9ff896a8413d2c5ca3a712d02c4893af663f7942ace67"
         },
         {
           "path": "Art/Skins/Fiat_3000.dds",
@@ -4144,8 +4144,8 @@
         },
         {
           "path": "Art/Skins/Fiat_3000.gr2",
-          "size": 17944,
-          "hash": "800f68bca0c33b6da2a347fe6135ed0ad519af1b2d06db08d8e33515f31a2f7e"
+          "size": 17384,
+          "hash": "d5a30c1de4d071b0963a91c922b4f05d023a96cfa3f413e879f0a7aa772d6378"
         },
         {
           "path": "Art/Skins/Fletcher_Class.dds",
@@ -4159,8 +4159,8 @@
         },
         {
           "path": "Art/Skins/Fletcher_Class.gr2",
-          "size": 48868,
-          "hash": "2acc7561f2b95cb545dce694a25e051e9d9f8bc8f6930a3cf69285bcfe27b0c2"
+          "size": 48472,
+          "hash": "7efca3472839782440b9fe15210c5413e21a7771eb5718f1cddbdce255446f49"
         },
         {
           "path": "Art/Skins/Fletcher_Class_gloss.dds",
@@ -4324,8 +4324,8 @@
         },
         {
           "path": "Art/Skins/Goteborg_Class.gr2",
-          "size": 37668,
-          "hash": "5f91f5f1b52848d6d1ef467014cdca311596effdb9d751d5b1376688bcad602f"
+          "size": 37212,
+          "hash": "caf02da19a80416792632ebb2fe40120561ed6e58e871f2e55266b13ee3de454"
         },
         {
           "path": "Art/Skins/Goteborg_Class_gloss.dds",
@@ -4779,8 +4779,8 @@
         },
         {
           "path": "Art/Skins/Iowa_Class.gr2",
-          "size": 35964,
-          "hash": "c95a1988e09d39e8a9f88b4d6dbc7a01168b250417a6a6085dc9588d20ca790e"
+          "size": 35620,
+          "hash": "d1eeea985d9365203857adac151392ec4bfa217762d940462c3a4aeb66d49c9a"
         },
         {
           "path": "Art/Skins/Iowa_Class_gloss.dds",
@@ -4904,8 +4904,8 @@
         },
         {
           "path": "Art/Skins/King_George_V_Class.gr2",
-          "size": 49856,
-          "hash": "4e8bcbcf9f1ff645503de8c39d279bf1420d11fdb2ad854c0e53814fd2908e94"
+          "size": 49532,
+          "hash": "be39a758ccfa7b15499ad23e97d42f7120a95970375ef5e16a8fddf40f3873f5"
         },
         {
           "path": "Art/Skins/King_George_V_Class_gloss.dds",
@@ -5289,8 +5289,8 @@
         },
         {
           "path": "Art/Skins/Landsverk_L-62.gr2",
-          "size": 27812,
-          "hash": "2167b20747cceaa60b5753f0393b57f3c6b6eed9fbe5ba92f740e6573da25a7b"
+          "size": 27240,
+          "hash": "9a5e92b453b837c90d6b5ba52c6ac8fcc8d41a78bb835a5d648b939c43dc4aae"
         },
         {
           "path": "Art/Skins/Leclerc.fxsxml",
@@ -5299,8 +5299,8 @@
         },
         {
           "path": "Art/Skins/leclerc.gr2",
-          "size": 27876,
-          "hash": "42ba46818ade6339a751842b0634143cef7aea99b03af8979aacd113f72c0c94"
+          "size": 27296,
+          "hash": "4d94b4a2f0e33dbec1b194be5b63f94cb12bf0b83e94182d33f5d20475962e66"
         },
         {
           "path": "Art/Skins/leclerc_diff.dds",
@@ -5324,8 +5324,8 @@
         },
         {
           "path": "Art/Skins/Leopard1_Netherlands.gr2",
-          "size": 25408,
-          "hash": "0579cd23f5c1a59e0d019a0c76da205c6a2058108048b2f8d9756b85e7518847"
+          "size": 24832,
+          "hash": "8d9b74de38d41a49d08605234014585dda50fd6112ad2702ab2a862d70a8ddf3"
         },
         {
           "path": "Art/Skins/Leopard2.dds",
@@ -5339,8 +5339,8 @@
         },
         {
           "path": "Art/Skins/Leopard2.gr2",
-          "size": 26764,
-          "hash": "8b8e15badcbfdc6734da1e9d174d75b8160c26948112a78ac9494f4e50406fac"
+          "size": 26340,
+          "hash": "1bee4307728bd9ef247a30ce618d44101e277ac038347e9e31f8d3461112ffe0"
         },
         {
           "path": "Art/Skins/Leopard2_Gloss.dds",
@@ -5699,8 +5699,8 @@
         },
         {
           "path": "Art/Skins/M1Abrams.gr2",
-          "size": 76804,
-          "hash": "70e8c675f88d221bca3b3f89d6db54001e2c56858d8f8455f833c5ed287fea0a"
+          "size": 76384,
+          "hash": "a59683be6faa6e7de96a51f20396a3b074878d0bf49353120cf0f2c149dc61ab"
         },
         {
           "path": "Art/Skins/M4A3E8_Sherman_Easy_Eight.dds",
@@ -5714,8 +5714,8 @@
         },
         {
           "path": "Art/Skins/M4A3E8_Sherman_Easy_Eight.gr2",
-          "size": 15876,
-          "hash": "e5895cdb6d5799ff0c55fc8d5c54a35b9c56061e3fcfaca7d4b9e33583e74849"
+          "size": 15296,
+          "hash": "d03fbb2c4192eeffb6e3236ffdffb5881025855ccfbf1f325d962c25587f51de"
         },
         {
           "path": "Art/Skins/MakuriaSwordsman.fxsxml",
@@ -5864,8 +5864,8 @@
         },
         {
           "path": "Art/Skins/MTSL-1GI4.gr2",
-          "size": 19212,
-          "hash": "006196409a4efd2ffe00600a2d0ecc0065e0b453aa535bcf252fce1c098c2e84"
+          "size": 18636,
+          "hash": "c33cac15c2c687108c55ed33a2d096eb4c8b9a38c8ad5bdd3684e91230015db0"
         },
         {
           "path": "Art/Skins/musketman_diff.dds",
@@ -5889,8 +5889,8 @@
         },
         {
           "path": "Art/Skins/Nieuport_17.gr2",
-          "size": 29484,
-          "hash": "afca4fcc2f0d36bef6ee12c74a7e8e5ea4281325dfc6e079f6013123cf0e88a4"
+          "size": 29032,
+          "hash": "89c6395957cb813a449d25769b4f7fe4674fe68c1aae23b9f728c299cde73d87"
         },
         {
           "path": "Art/Skins/NubianSwordsman.dds",
@@ -5964,8 +5964,8 @@
         },
         {
           "path": "Art/Skins/P-51_Mustang.gr2",
-          "size": 25708,
-          "hash": "e473d16aab9aa83f5933d29f508cfba710604cf113a1227a5be44199da8ed98c"
+          "size": 25252,
+          "hash": "da608cc565e4be1dd1ab4dd52294131f71b1cb05297dc9854a37b5ea7f3bf4be"
         },
         {
           "path": "Art/Skins/P40Brazil.dds",
@@ -5979,8 +5979,8 @@
         },
         {
           "path": "Art/Skins/P40Brazil.gr2",
-          "size": 26596,
-          "hash": "2801d8f9357d0a52697a4d41b6a7e146a685cf4b0d2496bc8444db2b4322bbdd"
+          "size": 26156,
+          "hash": "e30cc7cd7a6457b4a11ff47624a8638aa37cdf6f18ec5d5c8aed45f94e1fc831"
         },
         {
           "path": "Art/Skins/Panzer_IV_Ausf_G.dds",
@@ -5994,8 +5994,8 @@
         },
         {
           "path": "Art/Skins/Panzer_IV_Ausf_G.gr2",
-          "size": 24528,
-          "hash": "f2a23a6479a477784b4a5e0661c2b8c19c2184ae6de7ba36a7e37faa72037613"
+          "size": 23968,
+          "hash": "1428dbcaaaa0fb43e1b6f6c7538760beb50ff1235014198aa9ae6f16047d3b4b"
         },
         {
           "path": "Art/Skins/Paratrooper_China.dds",
@@ -6484,8 +6484,8 @@
         },
         {
           "path": "Art/Skins/PVKV_M43.gr2",
-          "size": 24412,
-          "hash": "729d6168093e5a871bdf44824de64f6b1f59e5c7d2b4ce4d5f1b5bb3c9adf1b8"
+          "size": 23852,
+          "hash": "ab978d18fa56c8bf961a192db10946f473653b1ed1488de6825dfcb2e39f05a5"
         },
         {
           "path": "Art/Skins/PZL_P.23_Karas.dds",
@@ -6574,8 +6574,8 @@
         },
         {
           "path": "Art/Skins/RenaultFTBrazil.gr2",
-          "size": 28628,
-          "hash": "c8d8b2a83664a03dab723f47af8c52a9d828bccc32f202c39378e34b35f2a661"
+          "size": 28064,
+          "hash": "307e6e1112a1b9838d233b1b748e0683a44fb2f91dfeb4cd9d0411986c1504bb"
         },
         {
           "path": "Art/Skins/re_umberto_bb.fxsxml",
@@ -6669,8 +6669,8 @@
         },
         {
           "path": "Art/Skins/SAAB_B18.gr2",
-          "size": 24728,
-          "hash": "3a28298e5dca5a5af52d030b2ba6447e7a13bb1713694124dccff5a958db6115"
+          "size": 23800,
+          "hash": "ed7dc62a0b34b4fba3f6c5968dbfd6778bc7eeefbb30545fed36d43f44475bfd"
         },
         {
           "path": "Art/Skins/SacredBand.dds",
@@ -6744,8 +6744,8 @@
         },
         {
           "path": "Art/Skins/ShortBomber.gr2",
-          "size": 28776,
-          "hash": "5f559c8a349d094da045f9984a032b9d295817889181aa19ab798169a4b167b8"
+          "size": 28396,
+          "hash": "6b5c0bf4022d0365f0b5fa339e40cc744479e2d5ce104d5c3dcd48f101bc93be"
         },
         {
           "path": "Art/Skins/ShortBomberSREF.dds",
@@ -7144,8 +7144,8 @@
         },
         {
           "path": "Art/Skins/Spowith_Camel.gr2",
-          "size": 30824,
-          "hash": "f36e571acf128391d03097624f3a304c08b680bbab9aa44f06dac610dc605748"
+          "size": 30336,
+          "hash": "8d032a55e8f1dc984c92b62509114a49e63e0ac7729f0d577d96eccb301cee55"
         },
         {
           "path": "Art/Skins/Strv_M21.dds",
@@ -7159,8 +7159,8 @@
         },
         {
           "path": "Art/Skins/Strv_M21.gr2",
-          "size": 14264,
-          "hash": "df6bc488d293a9725d9358e11710f90eb7727cb0f0334fa619b5423e2e0b31fd"
+          "size": 13680,
+          "hash": "3b71ba235828025ec6bade8fe5bbd7c6af869f2f7333738967e04a76dc840c38"
         },
         {
           "path": "Art/Skins/Strv_M41.dds",
@@ -7174,8 +7174,8 @@
         },
         {
           "path": "Art/Skins/Strv_M41.gr2",
-          "size": 55948,
-          "hash": "fc647042330e895b360347d1dc57194ff8fe0fcaf09ed7ae8a3de20e3161de94"
+          "size": 55384,
+          "hash": "c7e4282df55769eaacbba6951712f6bf0052a740e04c14df674e5f7efcd2fd47"
         },
         {
           "path": "Art/Skins/SudanSwordsman.dds",
@@ -7399,8 +7399,8 @@
         },
         {
           "path": "Art/Skins/T-34-85.gr2",
-          "size": 17760,
-          "hash": "7cbbd8da2bae875860f70222bfab99ac368c4bbfc6bba40c5238cedecc5b8220"
+          "size": 17220,
+          "hash": "ee7110c5f2f24532747e563b0936d9208d67ea1072c56a529f7049d63969ff16"
         },
         {
           "path": "Art/Skins/T55Ethiopia.dds",
@@ -7414,8 +7414,8 @@
         },
         {
           "path": "Art/Skins/T55Ethiopia.gr2",
-          "size": 39784,
-          "hash": "5486da15ea3b6518e09ccf81d80a9b994183f5e40a6bee63092bca4fd039e025"
+          "size": 39232,
+          "hash": "97c031c8d513f5d5faa4ed1c2b555099618dce194bd1ffc7c3851ef2c3b82780"
         },
         {
           "path": "Art/Skins/T55Mali.dds",
@@ -7429,8 +7429,8 @@
         },
         {
           "path": "Art/Skins/T55Mali.gr2",
-          "size": 39780,
-          "hash": "a44e6d183378e1f6495e85cc108fbf43b51f62387c8a50d1eb83415a8ceabf65"
+          "size": 39224,
+          "hash": "59de4e74c5fad3267f42ad044339b45a636a21b02c9b40d28224c9b47ac7e991"
         },
         {
           "path": "Art/Skins/T55Peru.dds",
@@ -7464,8 +7464,8 @@
         },
         {
           "path": "Art/Skins/T72_India.gr2",
-          "size": 37452,
-          "hash": "7f4dc2ff7fcd2e6b5fda74123a262cc789eacdab1a524d142fa09163a2482f0a"
+          "size": 36884,
+          "hash": "604e6daa541949eb0b1bfb0673cc43be4cd29b9dc3c9d6ee84405c8096eb88f5"
         },
         {
           "path": "Art/Skins/T72_Iran.fxsxml",
@@ -7474,8 +7474,8 @@
         },
         {
           "path": "Art/Skins/T72_Iran.gr2",
-          "size": 37448,
-          "hash": "73d59555dd6d2bd3969d28729a1eccf1909d92d4a1aad434f91e7595bad00664"
+          "size": 36884,
+          "hash": "220d216c9a787f4fbd945c930ffb74f17baaed420913dc0b2a04c3725606b74c"
         },
         {
           "path": "Art/Skins/ThraikanPezoi.dds",
@@ -7524,8 +7524,8 @@
         },
         {
           "path": "Art/Skins/Type1_Ho-Ni_I.gr2",
-          "size": 26928,
-          "hash": "a66ff8e964cf5886d726344597979428d968381e7f1a87394e08a63b5c3e61a4"
+          "size": 26348,
+          "hash": "2730aa77f1245afddd98c27230e9e7f0cb1b45044af5cc866809f273688d5f2c"
         },
         {
           "path": "Art/Skins/Type1_Ho-Ni_I_2.dds",
@@ -7544,8 +7544,8 @@
         },
         {
           "path": "Art/Skins/Type98_Ko-Hi.gr2",
-          "size": 34496,
-          "hash": "36f7ce726e280156ee019876c0a047f854b74b050103c9f1c170f8fbe2dab770"
+          "size": 33948,
+          "hash": "39dd6619ebe5ba992ed4dcff66959fc72577b457bdca76819cd543981cf610d1"
         },
         {
           "path": "Art/Skins/UFlag_Netherlands_Pikeman.dds",
