@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.56",
+  "packageVersion": "1.5.57",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-09-05T11:40:50.9004072+00:00",
+  "createdUtc": "2026-09-05T12:08:25.9642134+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -2454,8 +2454,8 @@
         },
         {
           "path": "Art/Skins/77cmFk.fxsxml",
-          "size": 3198,
-          "hash": "24f6c084d1ffc7255dece0d02faf9c3bddefe8c28f1f7093030291eaf2cd6405"
+          "size": 3237,
+          "hash": "8946a418e2fac345e47ce974f87866649c14d9de5a5a7d7376fe4249ffa3e5e3"
         },
         {
           "path": "Art/Skins/77cmFk.gr2",
@@ -6549,8 +6549,8 @@
         },
         {
           "path": "Art/Skins/redcoat.fxsxml",
-          "size": 3911,
-          "hash": "e724c91e63baaf9546e4ee26ace85934d97816a8c8ef26d879658e874d556ebb"
+          "size": 3945,
+          "hash": "eb1f74ef45ae440e39cc151f88f7e5370a666418abd9cb18fb0c3f6ecf40584d"
         },
         {
           "path": "Art/Skins/redcoat.gr2",
@@ -12019,8 +12019,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 10449784,
-          "hash": "7ba7b5866af83a8b5fdf7c1e461ba5135b12b03efbe22ede6e3523d12ab5d4b0"
+          "size": 10449640,
+          "hash": "027f009cd9250a0007ec694472db1715621840737ce8f7434235f6ce35275801"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
