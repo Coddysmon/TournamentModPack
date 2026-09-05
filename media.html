@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Галерея Nova — облики войск</title>
+<meta name="description" content="Все облики войск модпака Nova: национальные модели для каждого вида войск, по одной картинке на облик. Набор «Named Ethnic Units» автора _GAIA_, использован с его согласия.">
+<meta name="theme-color" content="#0D131A">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">К содержимому</a>
+<div class="shell">
+<aside class="side" id="side" aria-label="Разделы сайта">
+  <a class="mark" href="index.html">
+    <span class="mark-name">NOVA</span>
+    <span class="mark-rule"><b>PATCH</b></span>
+  </a>
+  <nav class="menu">
+      <a href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5,8.5 H17.5 A4.5,4.5 0 0 1 17.5,17.5 H6.5 A4.5,4.5 0 0 1 6.5,8.5 Z M9,11 V15 M7,13 H11 M13.9,12.4 A0.85,0.85 0 1 0 15.6,12.4 A0.85,0.85 0 1 0 13.9,12.4 Z M15.4,14.9 A0.85,0.85 0 1 0 17.1,14.9 A0.85,0.85 0 1 0 15.4,14.9 Z"/></svg>Мод</a>
+      <a href="changes.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5,20 H20.5 M6,20 V12.5 M11,20 V7 M16,20 V14.5 M20,20 V9.5"/></svg>Что меняет</a>
+      <a href="news.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5,5 H15 L18.5,8.5 V19.5 H5.5 Z M15,5 V8.5 H18.5 M8.2,11.5 H15.8 M8.2,14.5 H15.8 M8.2,17.5 H13"/></svg>Новости</a>
+      <a href="media.html" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5,6 H19.5 V18 H4.5 Z M4.5,15 L9,10.5 L12.5,14 L15.5,11.5 L19.5,15.5 M15.6,9 A1,1 0 1 0 17.6,9 A1,1 0 1 0 15.6,9 Z"/></svg>Галерея</a>
+      <a href="subscribe.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12,4.4 L14.2,9.5 L19.7,10.1 L15.6,13.8 L16.8,19.3 L12,16.4 L7.2,19.3 L8.4,13.8 L4.3,10.1 L9.8,9.5 Z"/></svg>Подписка</a>
+      <a href="team.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.2,11.2 A2.9,2.9 0 1 1 9.2,5.4 A2.9,2.9 0 1 1 9.2,11.2 Z M3.8,19 C3.8,15.6 6.2,13.6 9.2,13.6 C12.2,13.6 14.6,15.6 14.6,19 M15.9,6.1 A2.4,2.4 0 0 1 15.9,10.7 M17.3,13.8 C19.2,14.4 20.4,16.2 20.4,19"/></svg>Авторы</a>
+      <a href="faq.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12,3.6 A8.4,8.4 0 1 1 12,20.4 A8.4,8.4 0 1 1 12,3.6 Z M9.6,9.7 A2.5,2.5 0 0 1 14.4,10.5 C14.4,12.3 12,12.5 12,14.3 M12,17.1 V17.2"/></svg>Помощь</a>
+  </nav>
+  <div class="side-foot">
+    <p>мод <span data-nova="mod-version">…</span></p>
+    <p>лаунчер <span data-nova="client-version">…</span></p>
+    <p data-nova="domain-box" hidden><span data-nova="domain"></span></p>
+  </div>
+</aside>
+<div class="scrim" id="scrim"></div>
+
+<div class="col">
+  <div class="topbar">
+    <button class="burger" id="burger" type="button" aria-expanded="false"
+            aria-controls="side" aria-label="Разделы сайта">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4,7 H20 M4,12 H20 M4,17 H20"/></svg>
+    </button>
+    <a class="topbrand" href="index.html">NOVA</a>
+  </div>
+
+  <header class="hero">
+    <div class="hero-emblem" aria-hidden="true">
+      <svg viewBox="1 2 30 19"><path d="M2,20 L16,3 L30,20 M8.5,20 L16,11 L23.5,20"/></svg>
+      <span class="n">NOVA</span><span class="r"></span><span class="p">PATCH</span>
+    </div>
+    <div class="hero-title">
+      <h1>Облики войск</h1>
+      <p class="sub">У каждого вида войск есть национальные варианты внешнего вида. Характеристики не меняются никогда — это только модель на карте. Выбранный облик видят <b>все</b> участники партии, а не только вы.</p>
+    </div>
+  </header>
+
+  <main class="wrap" id="main">
+
+
+<div class="badges">
+  <div><b data-nova="skin-units">…</b><span>видов войск</span></div>
+  <div><b data-nova="skin-variants">…</b><span>обликов</span></div>
+</div>
+
+<p class="small dim" id="skins-credit">Набор моделей — <b>«Named Ethnic Units»</b>,
+автор <i>_GAIA_</i>. Использовано с его согласия. Картинки отрисованы из самих моделей мода,
+это не рекламные кадры: облик выглядит в игре так же.</p>
+
+<div class="skin-controls">
+  <label>Вид войск
+    <select id="skin-kind"><option value="">все</option></select>
+  </label>
+  <label>Поиск
+    <input id="skin-search" type="search" placeholder="название или народ" autocomplete="off">
+  </label>
+  <span class="skin-count dim" id="skin-count"></span>
+</div>
+
+<div id="skins"><p class="dim">Загружаю опись обликов…</p></div>
+
+<h2 id="shots-head">Скриншотов игры пока нет</h2>
+<div class="todo" id="shots-todo">
+  <b>И рисовать их вместо владельца мы не будем.</b> Скриншот из чужого мода или картинка
+  «для красоты» здесь хуже пустого места: человек ставит мод, ожидая увиденное.
+  <p>Что нужно снять, чтобы этот раздел ожил:</p>
+  <ul>
+    <li><b>Пары «до и после»</b> — один и тот же вид в базовой игре и в Nova. Ценнее всего
+    там, где разница видна глазом: клетка с новым люксом, экран политик с новыми ветками,
+    выбор эра-бонуса.</li>
+    <li><b>Гифки механик</b> — 3–8 секунд, без звука. Например: выбор эра-бонуса при входе
+    в эпоху, колесо быстрых фраз на клавише H, смена облика войск в лаунчере.</li>
+    <li><b>Один крупный кадр для шапки</b> — то, что увидит человек, впервые открывший сайт.</li>
+  </ul>
+  <p>Файлы кладутся в <code>assets/img/</code>, подписи — в <code>data/site.json</code>,
+  раздел <code>gallery</code>. Формат каждой записи описан в самом файле. Правка HTML не нужна.</p>
+</div>
+
+<div id="gallery" hidden></div>
+
+</main>
+
+<footer>
+  <div class="cols">
+    <div>
+      <p>Nova <span data-nova="mod-version">…</span> · лаунчер <span data-nova="client-version">…</span></p>
+      <p data-nova="domain-box" hidden><span data-nova="domain"></span></p>
+    </div>
+    <div><p><a href="index.html">На главную</a> · <a href="changes.html">Изменения</a> ·
+      <a href="news.html">Новости</a></p></div>
+  </div>
+  <p class="small">Неофициальный любительский проект. Модели раздела «Облики войск» —
+  набор «Named Ethnic Units» автора _GAIA_, использованы с его согласия.</p>
+</footer>
+
+</div><!-- /col -->
+</div><!-- /shell -->
+
+<script src="assets/site.js"></script>
+<script>
+NOVA.fillCommon();
+
+/* ---------------------------------------------------------------- облики */
+/* Разметка строится из data/skins.json — той же описи, по которой лаунчер
+   показывает раздел «Облик войск». Числа и названия сюда руками не вписаны:
+   при следующей починке облики уже разъезжались с текстом (было «32 вида,
+   241 облик» против настоящих 38 и 247). */
+NOVA.skins().then(data => {
+  const box = document.getElementById('skins');
+  const esc = NOVA.esc;
+  const units = (data && Array.isArray(data.units)) ? data.units : [];
+
+  if (!units.length) {
+    box.innerHTML = '<p class="dim">Опись обликов получить не удалось. '
+      + 'Обновите страницу — файл лежит рядом с сайтом и обычно доезжает.</p>';
+    return;
+  }
+
+  // Авторство набора — из самой описи, а не из разметки: сменится набор —
+  // сменится и подпись.
+  const src = data.source || {};
+  if (src.set && src.author) {
+    // В описи набор записан так же, как он подписан у автора: «=Named Ethnic
+    // Units=». Рамка из знаков равенства — украшение заголовка на форуме, в
+    // тексте страницы она читается как опечатка, поэтому снимается.
+    const setName = String(src.set).replace(/^[=\s]+|[=\s]+$/g, '');
+    document.getElementById('skins-credit').innerHTML =
+      'Набор моделей — <b>' + esc(setName) + '</b>, автор <i>' + esc(src.author) + '</i>. '
+      + esc(src.note || '')
+      + ' Картинки отрисованы из самих моделей мода, это не рекламные кадры: '
+      + 'облик выглядит в игре так же.';
+  }
+
+  // Выпадающий список видов войск.
+  const sel = document.getElementById('skin-kind');
+  units.forEach((u, i) => {
+    const o = document.createElement('option');
+    o.value = String(i);
+    o.textContent = (u.title || u.unitClass) + ' (' + (u.variants || []).length + ')';
+    sel.appendChild(o);
+  });
+
+  box.className = 'skins';
+  box.innerHTML = units.map((u, i) => {
+    const vs = (u.variants || []).filter(v => v && v.model);
+    const cards = vs.map(v => {
+      const key = [u.title, v.title, v.origin, v.model].filter(Boolean).join(' ').toLowerCase();
+      return '<figure class="skin" data-key="' + esc(key) + '">'
+        + '<img data-src="assets/skins/' + encodeURIComponent(v.model) + '.png"'
+        + ' alt="' + esc((u.title || '') + ' — ' + (v.title || '')) + '"'
+        + ' width="192" height="192" loading="lazy" decoding="async">'
+        + '<figcaption>'
+        + '<span class="t">' + esc(v.title || v.model) + '</span>'
+        + (v.origin ? '<span class="o">' + esc(v.origin) + '</span>' : '')
+        + '</figcaption></figure>';
+    }).join('');
+    return '<section class="skin-group" data-idx="' + i + '">'
+      + '<h3>' + esc(u.title || u.unitClass)
+      + ' <span class="dim">' + vs.length + '</span></h3>'
+      + '<div class="skin-grid">' + cards + '</div>'
+      + '</section>';
+  }).join('');
+
+  // Наблюдатель за картинками создаётся ОДИН на страницу и переиспользуется
+  // фильтром. Второй наблюдатель поверх первого приводил к src="undefined":
+  // оба видели одну и ту же картинку, второй срабатывал после того, как первый
+  // уже забрал адрес из data-src.
+  const io = NOVA.lazyImages(box);
+
+  /* Фильтр. Прячем через hidden, а не пересобираем разметку: пересборка
+     сбрасывала бы уже загруженные картинки и качала их заново. */
+  const groups = NOVA.$$('.skin-group', box);
+  const counter = document.getElementById('skin-count');
+  const search = document.getElementById('skin-search');
+
+  function apply() {
+    const kind = sel.value;
+    const q = search.value.trim().toLowerCase();
+    let shown = 0;
+    groups.forEach(g => {
+      const okKind = !kind || g.dataset.idx === kind;
+      let inGroup = 0;
+      NOVA.$$('.skin', g).forEach(fig => {
+        const ok = okKind && (!q || fig.dataset.key.indexOf(q) >= 0);
+        fig.hidden = !ok;
+        if (ok) inGroup++;
+      });
+      g.hidden = inGroup === 0;
+      shown += inGroup;
+    });
+    counter.textContent = shown === 0 ? 'ничего не нашлось'
+      : 'показано обликов: ' + shown;
+    // Часть картинок могла быть скрыта в момент первой загрузки — наблюдатель
+    // их не увидел. Подписываем заново то, что показалось, тем же наблюдателем…
+    if (io) NOVA.$$('img[data-src]', box).forEach(i => io.observe(i));
+    // …и тут же грузим попавшее в поле зрения, не дожидаясь его. Наблюдатель
+    // узнаёт о показе только на следующем кадре отрисовки; замерено, что без
+    // этой строки фильтр на последний вид войск оставлял все его карточки
+    // пустыми (0 из 3), а после неё они грузятся сразу.
+    NOVA.lazyNow(box);
+  }
+  sel.addEventListener('change', apply);
+  search.addEventListener('input', apply);
+  apply();
+});
+
+/* ------------------------------------------------- скриншоты самой игры */
+NOVA.site().then(s => {
+  const box = document.getElementById('gallery');
+  const items = (s && Array.isArray(s.gallery)) ? s.gallery : [];
+  if (!items.length) return;                 // заглушка выше уже всё объясняет
+
+  const esc = NOVA.esc;
+  document.getElementById('shots-todo').hidden = true;
+  document.getElementById('shots-head').textContent = 'Скриншоты игры';
+  box.hidden = false;
+  box.className = 'gallery';
+  box.innerHTML = items.map(it => {
+    const cap = it.caption ? '<div class="cap">' + esc(it.caption) + '</div>' : '';
+    if (it.type === 'before-after' && it.before && it.after) {
+      return '<figure class="shot">'
+        + '<img src="' + esc(it.before) + '" alt="до: ' + esc(it.caption || '') + '" loading="lazy">'
+        + '<img src="' + esc(it.after) + '" alt="после: ' + esc(it.caption || '') + '" loading="lazy">'
+        + '<figcaption class="cap">До и после' + (it.caption ? ' — ' + esc(it.caption) : '') + '</figcaption>'
+        + '</figure>';
+    }
+    if (!it.src) return '';
+    return '<figure class="shot"><img src="' + esc(it.src) + '" alt="'
+      + esc(it.caption || 'Скриншот Nova') + '" loading="lazy">' + cap + '</figure>';
+  }).join('');
+});
+</script>
+</body>
+</html>

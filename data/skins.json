@@ -1,0 +1,2005 @@
+{
+  "_note": "Облики юнитов. Каждый вариант — отдельный тип юнита, одинаковый по характеристикам: движок выбирает модель по типу, а тип едет по сети, поэтому облик видят ВСЕ игроки партии. Вариант 0 — обычный вид.",
+  "source": {
+    "set": "=Named Ethnic Units=",
+    "author": "_GAIA_",
+    "note": "Использовано с согласия автора."
+  },
+  "units": [
+    {
+      "unitClass": "UNITCLASS_ANTI_AIRCRAFT_GUN",
+      "unitType": "UNIT_ANTI_AIRCRAFT_GUN",
+      "title": "Зенитка",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "Landsverk L-62",
+          "unit": "UNIT_ANTI_AIRCRAFT_GUN_SKIN1",
+          "model": "Landsverk_L-62",
+          "origin": "Швеция"
+        },
+        {
+          "variant": 2,
+          "title": "Type98 Ko-Hi",
+          "unit": "UNIT_ANTI_AIRCRAFT_GUN_SKIN2",
+          "model": "Type98_Ko-Hi",
+          "origin": "Индонезия"
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_ANTI_TANK_GUN",
+      "unitType": "UNIT_ANTI_TANK_GUN",
+      "title": "Противотанковая пушка",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "PVKV M43",
+          "unit": "UNIT_ANTI_TANK_GUN_SKIN1",
+          "model": "PVKV_M43",
+          "origin": "Швеция"
+        },
+        {
+          "variant": 2,
+          "title": "Type1 Ho-Ni I",
+          "unit": "UNIT_ANTI_TANK_GUN_SKIN2",
+          "model": "Type1_Ho-Ni_I",
+          "origin": "Индонезия"
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_ARCHER",
+      "unitType": "UNIT_ARCHER",
+      "title": "Лучник",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "Archer Aztec",
+          "unit": "UNIT_ARCHER_SKIN1",
+          "model": "Archer_Aztec",
+          "origin": "Ацтеки"
+        },
+        {
+          "variant": 2,
+          "title": "Archer Babylon",
+          "unit": "UNIT_ARCHER_SKIN2",
+          "model": "Archer_Babylon",
+          "origin": "Ассирия, Вавилон"
+        },
+        {
+          "variant": 3,
+          "title": "Archer China",
+          "unit": "UNIT_ARCHER_SKIN3",
+          "model": "Archer_China",
+          "origin": "Китай"
+        },
+        {
+          "variant": 4,
+          "title": "Archer Egypt",
+          "unit": "UNIT_ARCHER_SKIN4",
+          "model": "Archer_Egypt",
+          "origin": "Египет"
+        },
+        {
+          "variant": 5,
+          "title": "Archer Greece",
+          "unit": "UNIT_ARCHER_SKIN5",
+          "model": "Archer_Greece",
+          "origin": "Греция"
+        },
+        {
+          "variant": 6,
+          "title": "Archer Korea",
+          "unit": "UNIT_ARCHER_SKIN6",
+          "model": "Archer_Korea",
+          "origin": "Индонезия, Корея"
+        },
+        {
+          "variant": 7,
+          "title": "Archer Mongol",
+          "unit": "UNIT_ARCHER_SKIN7",
+          "model": "Archer_Mongol",
+          "origin": "Монголия"
+        },
+        {
+          "variant": 8,
+          "title": "Archer Persia",
+          "unit": "UNIT_ARCHER_SKIN8",
+          "model": "Archer_Persia",
+          "origin": "Персия"
+        },
+        {
+          "variant": 9,
+          "title": "Archer Viking",
+          "unit": "UNIT_ARCHER_SKIN9",
+          "model": "Archer_Viking",
+          "origin": "Дания"
+        },
+        {
+          "variant": 10,
+          "title": "Ethiopia Archer",
+          "unit": "UNIT_ARCHER_SKIN10",
+          "model": "EthiopiaArcher",
+          "origin": "Эфиопия"
+        },
+        {
+          "variant": 11,
+          "title": "Civ5 Iroco1",
+          "unit": "UNIT_ARCHER_SKIN11",
+          "model": "civ5_iroco1",
+          "origin": "Ирокезы"
+        },
+        {
+          "variant": 12,
+          "title": "Hawaii Ikaika",
+          "unit": "UNIT_ARCHER_SKIN12",
+          "model": "hawaii_ikaika",
+          "origin": "Полинезия"
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_ARTILLERY",
+      "unitType": "UNIT_ARTILLERY",
+      "title": "Артиллерия",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "155mm De Bang",
+          "unit": "UNIT_ARTILLERY_SKIN1",
+          "model": "155mmDeBang",
+          "origin": "Сиам"
+        },
+        {
+          "variant": 2,
+          "title": "77cm Fk",
+          "unit": "UNIT_ARTILLERY_SKIN2",
+          "model": "77cmFk",
+          "origin": "Бразилия"
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_BATTLESHIP",
+      "unitType": "UNIT_BATTLESHIP",
+      "title": "Линкор",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "Bismark Class",
+          "unit": "UNIT_BATTLESHIP_SKIN1",
+          "model": "Bismark_Class",
+          "origin": "Германия"
+        },
+        {
+          "variant": 2,
+          "title": "Iowa Class",
+          "unit": "UNIT_BATTLESHIP_SKIN2",
+          "model": "Iowa_Class",
+          "origin": "Америка"
+        },
+        {
+          "variant": 3,
+          "title": "King George V Class",
+          "unit": "UNIT_BATTLESHIP_SKIN3",
+          "model": "King_George_V_Class",
+          "origin": "Англия"
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_BOMBER",
+      "unitType": "UNIT_BOMBER",
+      "title": "Бомбардировщик",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "EAW Tu-95",
+          "unit": "UNIT_BOMBER_SKIN1",
+          "model": "EAW_Tu-95",
+          "origin": "Россия"
+        },
+        {
+          "variant": 2,
+          "title": "SAAB B18",
+          "unit": "UNIT_BOMBER_SKIN2",
+          "model": "SAAB_B18",
+          "origin": "Швеция"
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_CANNON",
+      "unitType": "UNIT_CANNON",
+      "title": "Пушка",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "Bombard Turk",
+          "unit": "UNIT_CANNON_SKIN1",
+          "model": "bombardTurk",
+          "origin": ""
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_CARRIER",
+      "unitType": "UNIT_CARRIER",
+      "title": "Авианосец",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "Aquila Class",
+          "unit": "UNIT_CARRIER_SKIN1",
+          "model": "Aquila_Class",
+          "origin": ""
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_CAVALRY",
+      "unitType": "UNIT_CAVALRY",
+      "title": "Кавалерия",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "Freca1",
+          "unit": "UNIT_CAVALRY_SKIN1",
+          "model": "freca1",
+          "origin": ""
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_COMPOSITE_BOWMAN",
+      "unitType": "UNIT_COMPOSITE_BOWMAN",
+      "title": "Составной лук",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "Composite Bowman Arabia",
+          "unit": "UNIT_COMPOSITE_BOWMAN_SKIN1",
+          "model": "Composite_Bowman_Arabia",
+          "origin": "Аравия"
+        },
+        {
+          "variant": 2,
+          "title": "Composite Bowman Egypt",
+          "unit": "UNIT_COMPOSITE_BOWMAN_SKIN2",
+          "model": "Composite_Bowman_Egypt",
+          "origin": "Египет"
+        },
+        {
+          "variant": 3,
+          "title": "Composite Bowman France",
+          "unit": "UNIT_COMPOSITE_BOWMAN_SKIN3",
+          "model": "Composite_Bowman_France",
+          "origin": "Франция"
+        },
+        {
+          "variant": 4,
+          "title": "Composite Bowman Greek",
+          "unit": "UNIT_COMPOSITE_BOWMAN_SKIN4",
+          "model": "Composite_Bowman_Greek",
+          "origin": "Греция"
+        },
+        {
+          "variant": 5,
+          "title": "Composite Bowman Inca",
+          "unit": "UNIT_COMPOSITE_BOWMAN_SKIN5",
+          "model": "Composite_Bowman_Inca",
+          "origin": "Инки"
+        },
+        {
+          "variant": 6,
+          "title": "Composite Bowman Maya",
+          "unit": "UNIT_COMPOSITE_BOWMAN_SKIN6",
+          "model": "Composite_Bowman_Maya",
+          "origin": "Майя"
+        },
+        {
+          "variant": 7,
+          "title": "Composite Bowman Mongol",
+          "unit": "UNIT_COMPOSITE_BOWMAN_SKIN7",
+          "model": "Composite_Bowman_Mongol",
+          "origin": "Монголия"
+        },
+        {
+          "variant": 8,
+          "title": "Composite Bowman Rome",
+          "unit": "UNIT_COMPOSITE_BOWMAN_SKIN8",
+          "model": "Composite_Bowman_Rome",
+          "origin": "Византия, Рим"
+        },
+        {
+          "variant": 9,
+          "title": "Matatoa",
+          "unit": "UNIT_COMPOSITE_BOWMAN_SKIN9",
+          "model": "matatoa",
+          "origin": "Полинезия"
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_CROSSBOWMAN",
+      "unitType": "UNIT_CROSSBOWMAN",
+      "title": "Арбалетчик",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "Berber Crossbowman",
+          "unit": "UNIT_CROSSBOWMAN_SKIN1",
+          "model": "Berber_Crossbowman",
+          "origin": "Марокко"
+        },
+        {
+          "variant": 2,
+          "title": "Composite Bowman Aztec",
+          "unit": "UNIT_CROSSBOWMAN_SKIN2",
+          "model": "Composite_Bowman_Aztec",
+          "origin": "Ацтеки"
+        },
+        {
+          "variant": 3,
+          "title": "Crossbowman Rome",
+          "unit": "UNIT_CROSSBOWMAN_SKIN3",
+          "model": "Crossbowman_Rome",
+          "origin": "Византия, Рим"
+        },
+        {
+          "variant": 4,
+          "title": "Crossbowman Russia",
+          "unit": "UNIT_CROSSBOWMAN_SKIN4",
+          "model": "Crossbowman_Russia",
+          "origin": "Польша"
+        },
+        {
+          "variant": 5,
+          "title": "Crossbowman Turkey",
+          "unit": "UNIT_CROSSBOWMAN_SKIN5",
+          "model": "Crossbowman_Turkey",
+          "origin": "Османы"
+        },
+        {
+          "variant": 6,
+          "title": "Crossbowman Viking",
+          "unit": "UNIT_CROSSBOWMAN_SKIN6",
+          "model": "Crossbowman_Viking",
+          "origin": "Дания"
+        },
+        {
+          "variant": 7,
+          "title": "Ethiopia Crossbow",
+          "unit": "UNIT_CROSSBOWMAN_SKIN7",
+          "model": "EthiopiaCrossbow",
+          "origin": "Эфиопия"
+        },
+        {
+          "variant": 8,
+          "title": "Longbowman Arabia",
+          "unit": "UNIT_CROSSBOWMAN_SKIN8",
+          "model": "Longbowman_Arabia",
+          "origin": "Аравия"
+        },
+        {
+          "variant": 9,
+          "title": "Longbowman Babylon",
+          "unit": "UNIT_CROSSBOWMAN_SKIN9",
+          "model": "Longbowman_Babylon",
+          "origin": "Ассирия, Вавилон"
+        },
+        {
+          "variant": 10,
+          "title": "Longbowman Greece",
+          "unit": "UNIT_CROSSBOWMAN_SKIN10",
+          "model": "Longbowman_Greece",
+          "origin": "Греция"
+        },
+        {
+          "variant": 11,
+          "title": "Longbowman Inca",
+          "unit": "UNIT_CROSSBOWMAN_SKIN11",
+          "model": "Longbowman_Inca",
+          "origin": "Инки"
+        },
+        {
+          "variant": 12,
+          "title": "Longbowman India",
+          "unit": "UNIT_CROSSBOWMAN_SKIN12",
+          "model": "Longbowman_India",
+          "origin": "Индия"
+        },
+        {
+          "variant": 13,
+          "title": "Longbowman Japan",
+          "unit": "UNIT_CROSSBOWMAN_SKIN13",
+          "model": "Longbowman_Japan",
+          "origin": "Япония"
+        },
+        {
+          "variant": 14,
+          "title": "Longbowman Maya",
+          "unit": "UNIT_CROSSBOWMAN_SKIN14",
+          "model": "Longbowman_Maya",
+          "origin": "Майя"
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_DESTROYER",
+      "unitType": "UNIT_DESTROYER",
+      "title": "Эсминец",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "Admiralen Class",
+          "unit": "UNIT_DESTROYER_SKIN1",
+          "model": "Admiralen_Class",
+          "origin": "Нидерланды"
+        },
+        {
+          "variant": 2,
+          "title": "Fletcher Class",
+          "unit": "UNIT_DESTROYER_SKIN2",
+          "model": "Fletcher_Class",
+          "origin": "Америка"
+        },
+        {
+          "variant": 3,
+          "title": "Goteborg Class",
+          "unit": "UNIT_DESTROYER_SKIN3",
+          "model": "Goteborg_Class",
+          "origin": "Швеция"
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_FIGHTER",
+      "unitType": "UNIT_FIGHTER",
+      "title": "Истребитель",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "P-51 Mustang",
+          "unit": "UNIT_FIGHTER_SKIN1",
+          "model": "P-51_Mustang",
+          "origin": "Америка"
+        },
+        {
+          "variant": 2,
+          "title": "P40 Brazil",
+          "unit": "UNIT_FIGHTER_SKIN2",
+          "model": "P40Brazil",
+          "origin": "Бразилия"
+        },
+        {
+          "variant": 3,
+          "title": "PZL P.23 Karas",
+          "unit": "UNIT_FIGHTER_SKIN3",
+          "model": "PZL_P.23_Karas",
+          "origin": "Польша"
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_GREAT_WAR_INFANTRY",
+      "unitType": "UNIT_GREAT_WAR_INFANTRY",
+      "title": "Пехота Великой войны",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "Persian WW1",
+          "unit": "UNIT_GREAT_WAR_INFANTRY_SKIN1",
+          "model": "Persian_WW1",
+          "origin": "Гунны"
+        },
+        {
+          "variant": 2,
+          "title": "Ausgw1",
+          "unit": "UNIT_GREAT_WAR_INFANTRY_SKIN2",
+          "model": "ausgw1",
+          "origin": "Австрия"
+        },
+        {
+          "variant": 3,
+          "title": "Fregw1",
+          "unit": "UNIT_GREAT_WAR_INFANTRY_SKIN3",
+          "model": "fregw1",
+          "origin": "Франция"
+        },
+        {
+          "variant": 4,
+          "title": "Gergw1",
+          "unit": "UNIT_GREAT_WAR_INFANTRY_SKIN4",
+          "model": "gergw1",
+          "origin": "Германия"
+        },
+        {
+          "variant": 5,
+          "title": "Hunrm1",
+          "unit": "UNIT_GREAT_WAR_INFANTRY_SKIN5",
+          "model": "hunrm1",
+          "origin": "Венеция"
+        },
+        {
+          "variant": 6,
+          "title": "Japgw1",
+          "unit": "UNIT_GREAT_WAR_INFANTRY_SKIN6",
+          "model": "japgw1",
+          "origin": "Китай"
+        },
+        {
+          "variant": 7,
+          "title": "Ottgw1",
+          "unit": "UNIT_GREAT_WAR_INFANTRY_SKIN7",
+          "model": "ottgw1",
+          "origin": "Османы"
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_HELICOPTER_GUNSHIP",
+      "unitType": "UNIT_HELICOPTER_GUNSHIP",
+      "title": "Боевой вертолёт",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "Mi8 Russia",
+          "unit": "UNIT_HELICOPTER_GUNSHIP_SKIN1",
+          "model": "Mi8Russia",
+          "origin": ""
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_HORSEMAN",
+      "unitType": "UNIT_HORSEMAN",
+      "title": "Всадник",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "Ethiopia Med Horseman",
+          "unit": "UNIT_HORSEMAN_SKIN1",
+          "model": "EthiopiaMedHorseman",
+          "origin": "Эфиопия"
+        },
+        {
+          "variant": 2,
+          "title": "Horseman Japan",
+          "unit": "UNIT_HORSEMAN_SKIN2",
+          "model": "Horseman_Japan",
+          "origin": "Япония"
+        },
+        {
+          "variant": 3,
+          "title": "Horseman Korea",
+          "unit": "UNIT_HORSEMAN_SKIN3",
+          "model": "Horseman_Korea",
+          "origin": "Корея"
+        },
+        {
+          "variant": 4,
+          "title": "Horseman Mongol",
+          "unit": "UNIT_HORSEMAN_SKIN4",
+          "model": "Horseman_Mongol",
+          "origin": "Монголия"
+        },
+        {
+          "variant": 5,
+          "title": "Horseman Rome V2",
+          "unit": "UNIT_HORSEMAN_SKIN5",
+          "model": "Horseman_Rome_v2",
+          "origin": "Рим"
+        },
+        {
+          "variant": 6,
+          "title": "Horseman Russia V2",
+          "unit": "UNIT_HORSEMAN_SKIN6",
+          "model": "Horseman_Russia_v2",
+          "origin": "Сиам"
+        },
+        {
+          "variant": 7,
+          "title": "Horseman Turkey",
+          "unit": "UNIT_HORSEMAN_SKIN7",
+          "model": "Horseman_Turkey",
+          "origin": "Османы"
+        },
+        {
+          "variant": 8,
+          "title": "Horseman Viking",
+          "unit": "UNIT_HORSEMAN_SKIN8",
+          "model": "Horseman_Viking",
+          "origin": "Дания"
+        },
+        {
+          "variant": 9,
+          "title": "Civ5 Irohm3",
+          "unit": "UNIT_HORSEMAN_SKIN9",
+          "model": "civ5_irohm3",
+          "origin": "Ирокезы"
+        },
+        {
+          "variant": 10,
+          "title": "U Cuman Chabani",
+          "unit": "UNIT_HORSEMAN_SKIN10",
+          "model": "u_cuman_chabani",
+          "origin": "Гунны"
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_INFANTRY",
+      "unitType": "UNIT_INFANTRY",
+      "title": "Пехота",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "African Infantry",
+          "unit": "UNIT_INFANTRY_SKIN1",
+          "model": "AfricanInfantry",
+          "origin": "Зулусы"
+        },
+        {
+          "variant": 2,
+          "title": "Infantry German V2",
+          "unit": "UNIT_INFANTRY_SKIN2",
+          "model": "Infantry_German_v2",
+          "origin": "Германия"
+        },
+        {
+          "variant": 3,
+          "title": "Infantry Italy",
+          "unit": "UNIT_INFANTRY_SKIN3",
+          "model": "Infantry_Italy",
+          "origin": "Венеция"
+        },
+        {
+          "variant": 4,
+          "title": "Infantry Japan V3",
+          "unit": "UNIT_INFANTRY_SKIN4",
+          "model": "Infantry_Japan_v3",
+          "origin": "Япония"
+        },
+        {
+          "variant": 5,
+          "title": "Infantry Russia",
+          "unit": "UNIT_INFANTRY_SKIN5",
+          "model": "Infantry_Russia",
+          "origin": "Россия"
+        },
+        {
+          "variant": 6,
+          "title": "Infantry Spain",
+          "unit": "UNIT_INFANTRY_SKIN6",
+          "model": "Infantry_Spain",
+          "origin": "Испания"
+        },
+        {
+          "variant": 7,
+          "title": "Infantry Sweden",
+          "unit": "UNIT_INFANTRY_SKIN7",
+          "model": "Infantry_Sweden",
+          "origin": "Швеция"
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_IRONCLAD",
+      "unitType": "UNIT_IRONCLAD",
+      "title": "Броненосец",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "Connecticut BB",
+          "unit": "UNIT_IRONCLAD_SKIN1",
+          "model": "Connecticut_BB",
+          "origin": "Китай"
+        },
+        {
+          "variant": 2,
+          "title": "Re Umberto Bb",
+          "unit": "UNIT_IRONCLAD_SKIN2",
+          "model": "re_umberto_bb",
+          "origin": "Венеция"
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_JET_FIGHTER",
+      "unitType": "UNIT_JET_FIGHTER",
+      "title": "Реактивный истребитель",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "A-7",
+          "unit": "UNIT_JET_FIGHTER_SKIN1",
+          "model": "A-7",
+          "origin": "Сиам"
+        },
+        {
+          "variant": 2,
+          "title": "A-7 Portugal",
+          "unit": "UNIT_JET_FIGHTER_SKIN2",
+          "model": "A-7Portugal",
+          "origin": "Португалия"
+        },
+        {
+          "variant": 3,
+          "title": "F15",
+          "unit": "UNIT_JET_FIGHTER_SKIN3",
+          "model": "F15",
+          "origin": "Америка"
+        },
+        {
+          "variant": 4,
+          "title": "F4 DKorea",
+          "unit": "UNIT_JET_FIGHTER_SKIN4",
+          "model": "F4DKorea",
+          "origin": "Корея"
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_KNIGHT",
+      "unitType": "UNIT_KNIGHT",
+      "title": "Рыцарь",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "Armored Cavalry",
+          "unit": "UNIT_KNIGHT_SKIN1",
+          "model": "Armored_Cavalry",
+          "origin": "Индонезия"
+        },
+        {
+          "variant": 2,
+          "title": "Carthage Med Horseman",
+          "unit": "UNIT_KNIGHT_SKIN2",
+          "model": "Carthage_Med_Horseman",
+          "origin": "Карфаген"
+        },
+        {
+          "variant": 3,
+          "title": "Knight Arabia",
+          "unit": "UNIT_KNIGHT_SKIN3",
+          "model": "Knight_Arabia",
+          "origin": "Аравия"
+        },
+        {
+          "variant": 4,
+          "title": "Knight Babylon",
+          "unit": "UNIT_KNIGHT_SKIN4",
+          "model": "Knight_Babylon",
+          "origin": "Ассирия, Вавилон"
+        },
+        {
+          "variant": 5,
+          "title": "Knight China",
+          "unit": "UNIT_KNIGHT_SKIN5",
+          "model": "Knight_China",
+          "origin": "Китай"
+        },
+        {
+          "variant": 6,
+          "title": "Knight England",
+          "unit": "UNIT_KNIGHT_SKIN6",
+          "model": "Knight_England",
+          "origin": "Англия"
+        },
+        {
+          "variant": 7,
+          "title": "Knight France",
+          "unit": "UNIT_KNIGHT_SKIN7",
+          "model": "Knight_France",
+          "origin": "Франция"
+        },
+        {
+          "variant": 8,
+          "title": "Knight German",
+          "unit": "UNIT_KNIGHT_SKIN8",
+          "model": "Knight_German",
+          "origin": "Германия"
+        },
+        {
+          "variant": 9,
+          "title": "Knight Greece V2",
+          "unit": "UNIT_KNIGHT_SKIN9",
+          "model": "Knight_Greece_v2",
+          "origin": "Греция"
+        },
+        {
+          "variant": 10,
+          "title": "Knight India",
+          "unit": "UNIT_KNIGHT_SKIN10",
+          "model": "Knight_India",
+          "origin": "Индия"
+        },
+        {
+          "variant": 11,
+          "title": "Knight Japan",
+          "unit": "UNIT_KNIGHT_SKIN11",
+          "model": "Knight_Japan",
+          "origin": "Япония"
+        },
+        {
+          "variant": 12,
+          "title": "Knight Rome",
+          "unit": "UNIT_KNIGHT_SKIN12",
+          "model": "Knight_Rome",
+          "origin": "Рим"
+        },
+        {
+          "variant": 13,
+          "title": "Knight Spain",
+          "unit": "UNIT_KNIGHT_SKIN13",
+          "model": "Knight_Spain",
+          "origin": "Испания"
+        },
+        {
+          "variant": 14,
+          "title": "Knight Viking",
+          "unit": "UNIT_KNIGHT_SKIN14",
+          "model": "Knight_Viking",
+          "origin": "Швеция"
+        },
+        {
+          "variant": 15,
+          "title": "Sioux Knight",
+          "unit": "UNIT_KNIGHT_SKIN15",
+          "model": "Sioux_Knight",
+          "origin": "Шошоны"
+        },
+        {
+          "variant": 16,
+          "title": "Vitez",
+          "unit": "UNIT_KNIGHT_SKIN16",
+          "model": "Vitez",
+          "origin": "Польша"
+        },
+        {
+          "variant": 17,
+          "title": "U Cuman Mamluk",
+          "unit": "UNIT_KNIGHT_SKIN17",
+          "model": "u_cuman_mamluk",
+          "origin": "Гунны"
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_LANCER",
+      "unitType": "UNIT_LANCER",
+      "title": "Улан",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "Qizilbash",
+          "unit": "UNIT_LANCER_SKIN1",
+          "model": "Qizilbash",
+          "origin": "Персия"
+        },
+        {
+          "variant": 2,
+          "title": "Hunhu1",
+          "unit": "UNIT_LANCER_SKIN2",
+          "model": "hunhu1",
+          "origin": "Гунны"
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_LONGSWORDSMAN",
+      "unitType": "UNIT_LONGSWORDSMAN",
+      "title": "Воин с двуручным мечом",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "Longswordsman Arabia",
+          "unit": "UNIT_LONGSWORDSMAN_SKIN1",
+          "model": "Longswordsman_Arabia",
+          "origin": "Аравия"
+        },
+        {
+          "variant": 2,
+          "title": "Longswordsman Aztec",
+          "unit": "UNIT_LONGSWORDSMAN_SKIN2",
+          "model": "Longswordsman_Aztec",
+          "origin": "Ацтеки"
+        },
+        {
+          "variant": 3,
+          "title": "Longswordsman China V3",
+          "unit": "UNIT_LONGSWORDSMAN_SKIN3",
+          "model": "Longswordsman_China_v3",
+          "origin": "Китай"
+        },
+        {
+          "variant": 4,
+          "title": "Longswordsman Egypt",
+          "unit": "UNIT_LONGSWORDSMAN_SKIN4",
+          "model": "Longswordsman_Egypt",
+          "origin": "Египет"
+        },
+        {
+          "variant": 5,
+          "title": "Longswordsman Greece",
+          "unit": "UNIT_LONGSWORDSMAN_SKIN5",
+          "model": "Longswordsman_Greece",
+          "origin": "Греция"
+        },
+        {
+          "variant": 6,
+          "title": "Longswordsman Maya",
+          "unit": "UNIT_LONGSWORDSMAN_SKIN6",
+          "model": "Longswordsman_Maya",
+          "origin": "Майя"
+        },
+        {
+          "variant": 7,
+          "title": "Longswordsman Mongol",
+          "unit": "UNIT_LONGSWORDSMAN_SKIN7",
+          "model": "Longswordsman_Mongol",
+          "origin": "Монголия"
+        },
+        {
+          "variant": 8,
+          "title": "Longswordsman Russia",
+          "unit": "UNIT_LONGSWORDSMAN_SKIN8",
+          "model": "Longswordsman_Russia",
+          "origin": "Польша"
+        },
+        {
+          "variant": 9,
+          "title": "Longswordsman Turkey V2",
+          "unit": "UNIT_LONGSWORDSMAN_SKIN9",
+          "model": "Longswordsman_Turkey_v2",
+          "origin": "Османы"
+        },
+        {
+          "variant": 10,
+          "title": "Longswordsman Viking V3",
+          "unit": "UNIT_LONGSWORDSMAN_SKIN10",
+          "model": "Longswordsman_Viking_v3",
+          "origin": "Швеция"
+        },
+        {
+          "variant": 11,
+          "title": "Portugal Longsw8",
+          "unit": "UNIT_LONGSWORDSMAN_SKIN11",
+          "model": "Portugal_longsw8",
+          "origin": "Португалия"
+        },
+        {
+          "variant": 12,
+          "title": "Sudan Swordsman",
+          "unit": "UNIT_LONGSWORDSMAN_SKIN12",
+          "model": "SudanSwordsman",
+          "origin": "Сонгай"
+        },
+        {
+          "variant": 13,
+          "title": "Austria Longsw2",
+          "unit": "UNIT_LONGSWORDSMAN_SKIN13",
+          "model": "austria_longsw2",
+          "origin": "Австрия"
+        },
+        {
+          "variant": 14,
+          "title": "Byzantium Longsw1",
+          "unit": "UNIT_LONGSWORDSMAN_SKIN14",
+          "model": "byzantium_longsw1",
+          "origin": "Византия"
+        },
+        {
+          "variant": 15,
+          "title": "Wales Longsw1",
+          "unit": "UNIT_LONGSWORDSMAN_SKIN15",
+          "model": "wales_longsw1",
+          "origin": "Кельты"
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_MARINE",
+      "unitType": "UNIT_MARINE",
+      "title": "Морская пехота",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "Asian SF",
+          "unit": "UNIT_MARINE_SKIN1",
+          "model": "AsianSF",
+          "origin": "Индонезия"
+        },
+        {
+          "variant": 2,
+          "title": "Civ5 African SF V2",
+          "unit": "UNIT_MARINE_SKIN2",
+          "model": "Civ5_AfricanSF_v2",
+          "origin": "Зулусы"
+        },
+        {
+          "variant": 3,
+          "title": "RM Commando",
+          "unit": "UNIT_MARINE_SKIN3",
+          "model": "RM_Commando",
+          "origin": "Англия"
+        },
+        {
+          "variant": 4,
+          "title": "Russian SF",
+          "unit": "UNIT_MARINE_SKIN4",
+          "model": "RussianSF",
+          "origin": "Россия"
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_MECHANIZED_INFANTRY",
+      "unitType": "UNIT_MECHANIZED_INFANTRY",
+      "title": "Мотопехота",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "BMP2 Green Team",
+          "unit": "UNIT_MECHANIZED_INFANTRY_SKIN1",
+          "model": "BMP2GreenTeam",
+          "origin": ""
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_MODERN_ARMOR",
+      "unitType": "UNIT_MODERN_ARMOR",
+      "title": "Современный танк",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "Ariete",
+          "unit": "UNIT_MODERN_ARMOR_SKIN1",
+          "model": "Ariete",
+          "origin": "Венеция"
+        },
+        {
+          "variant": 2,
+          "title": "Leclerc",
+          "unit": "UNIT_MODERN_ARMOR_SKIN2",
+          "model": "Leclerc",
+          "origin": "Франция"
+        },
+        {
+          "variant": 3,
+          "title": "Leopard1 Netherlands",
+          "unit": "UNIT_MODERN_ARMOR_SKIN3",
+          "model": "Leopard1_Netherlands",
+          "origin": "Нидерланды"
+        },
+        {
+          "variant": 4,
+          "title": "Leopard2",
+          "unit": "UNIT_MODERN_ARMOR_SKIN4",
+          "model": "Leopard2",
+          "origin": "Индонезия"
+        },
+        {
+          "variant": 5,
+          "title": "M1 Abrams",
+          "unit": "UNIT_MODERN_ARMOR_SKIN5",
+          "model": "M1Abrams",
+          "origin": "Америка"
+        },
+        {
+          "variant": 6,
+          "title": "T55 Ethiopia",
+          "unit": "UNIT_MODERN_ARMOR_SKIN6",
+          "model": "T55Ethiopia",
+          "origin": "Эфиопия"
+        },
+        {
+          "variant": 7,
+          "title": "T55 Mali",
+          "unit": "UNIT_MODERN_ARMOR_SKIN7",
+          "model": "T55Mali",
+          "origin": "Сонгай"
+        },
+        {
+          "variant": 8,
+          "title": "T55 Peru",
+          "unit": "UNIT_MODERN_ARMOR_SKIN8",
+          "model": "T55Peru",
+          "origin": "Инки"
+        },
+        {
+          "variant": 9,
+          "title": "T72 India",
+          "unit": "UNIT_MODERN_ARMOR_SKIN9",
+          "model": "T72_India",
+          "origin": "Индия"
+        },
+        {
+          "variant": 10,
+          "title": "T72 Iran",
+          "unit": "UNIT_MODERN_ARMOR_SKIN10",
+          "model": "T72_Iran",
+          "origin": "Персия"
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_MUSKETMAN",
+      "unitType": "UNIT_MUSKETMAN",
+      "title": "Мушкетёр",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "Berber Musketman",
+          "unit": "UNIT_MUSKETMAN_SKIN1",
+          "model": "Berber_Musketman",
+          "origin": "Марокко"
+        },
+        {
+          "variant": 2,
+          "title": "Brazil Pretos Forros",
+          "unit": "UNIT_MUSKETMAN_SKIN2",
+          "model": "BrazilPretosForros",
+          "origin": "Бразилия"
+        },
+        {
+          "variant": 3,
+          "title": "Siamese Musketman",
+          "unit": "UNIT_MUSKETMAN_SKIN3",
+          "model": "Siamese_Musketman",
+          "origin": "Сиам"
+        },
+        {
+          "variant": 4,
+          "title": "Civ5 Iromu1",
+          "unit": "UNIT_MUSKETMAN_SKIN4",
+          "model": "civ5_iromu1",
+          "origin": "Ирокезы"
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_PARATROOPER",
+      "unitType": "UNIT_PARATROOPER",
+      "title": "Десантник",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "Paratrooper China MG",
+          "unit": "UNIT_PARATROOPER_SKIN1",
+          "model": "Paratrooper_China_MG",
+          "origin": "Китай"
+        },
+        {
+          "variant": 2,
+          "title": "Paratrooper Dutch MG",
+          "unit": "UNIT_PARATROOPER_SKIN2",
+          "model": "Paratrooper_Dutch_MG",
+          "origin": "Нидерланды"
+        },
+        {
+          "variant": 3,
+          "title": "Paratrooper German V2",
+          "unit": "UNIT_PARATROOPER_SKIN3",
+          "model": "Paratrooper_German_v2",
+          "origin": "Австрия"
+        },
+        {
+          "variant": 4,
+          "title": "Paratrooper Spain",
+          "unit": "UNIT_PARATROOPER_SKIN4",
+          "model": "Paratrooper_Spain",
+          "origin": "Испания"
+        },
+        {
+          "variant": 5,
+          "title": "Paratrooper Sweden",
+          "unit": "UNIT_PARATROOPER_SKIN5",
+          "model": "Paratrooper_Sweden",
+          "origin": "Швеция"
+        },
+        {
+          "variant": 6,
+          "title": "Paratrooper UK",
+          "unit": "UNIT_PARATROOPER_SKIN6",
+          "model": "Paratrooper_UK",
+          "origin": "Англия"
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_PIKEMAN",
+      "unitType": "UNIT_PIKEMAN",
+      "title": "Пикинёр",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "Carthage Pikeman",
+          "unit": "UNIT_PIKEMAN_SKIN1",
+          "model": "Carthage_Pikeman",
+          "origin": "Марокко"
+        },
+        {
+          "variant": 2,
+          "title": "Ethiopian Pikeman",
+          "unit": "UNIT_PIKEMAN_SKIN2",
+          "model": "EthiopianPikeman",
+          "origin": "Эфиопия"
+        },
+        {
+          "variant": 3,
+          "title": "GAIA Goedendag",
+          "unit": "UNIT_PIKEMAN_SKIN3",
+          "model": "GAIA_Goedendag",
+          "origin": "Нидерланды"
+        },
+        {
+          "variant": 4,
+          "title": "Halberdier China",
+          "unit": "UNIT_PIKEMAN_SKIN4",
+          "model": "Halberdier_China",
+          "origin": "Китай"
+        },
+        {
+          "variant": 5,
+          "title": "Pikeman Aztec",
+          "unit": "UNIT_PIKEMAN_SKIN5",
+          "model": "Pikeman_Aztec",
+          "origin": "Ацтеки"
+        },
+        {
+          "variant": 6,
+          "title": "Pikeman Babylon",
+          "unit": "UNIT_PIKEMAN_SKIN6",
+          "model": "Pikeman_Babylon",
+          "origin": "Ассирия, Вавилон"
+        },
+        {
+          "variant": 7,
+          "title": "Pikeman Egypt",
+          "unit": "UNIT_PIKEMAN_SKIN7",
+          "model": "Pikeman_Egypt",
+          "origin": "Египет"
+        },
+        {
+          "variant": 8,
+          "title": "Pikeman Inca",
+          "unit": "UNIT_PIKEMAN_SKIN8",
+          "model": "Pikeman_Inca",
+          "origin": "Инки"
+        },
+        {
+          "variant": 9,
+          "title": "Pikeman India",
+          "unit": "UNIT_PIKEMAN_SKIN9",
+          "model": "Pikeman_India",
+          "origin": "Индия"
+        },
+        {
+          "variant": 10,
+          "title": "Pikeman Maya",
+          "unit": "UNIT_PIKEMAN_SKIN10",
+          "model": "Pikeman_Maya",
+          "origin": "Майя"
+        },
+        {
+          "variant": 11,
+          "title": "Pikeman Mongol",
+          "unit": "UNIT_PIKEMAN_SKIN11",
+          "model": "Pikeman_Mongol",
+          "origin": "Монголия"
+        },
+        {
+          "variant": 12,
+          "title": "Pikeman Persia",
+          "unit": "UNIT_PIKEMAN_SKIN12",
+          "model": "Pikeman_Persia",
+          "origin": "Персия"
+        },
+        {
+          "variant": 13,
+          "title": "Pikeman Rome",
+          "unit": "UNIT_PIKEMAN_SKIN13",
+          "model": "Pikeman_Rome",
+          "origin": "Рим"
+        },
+        {
+          "variant": 14,
+          "title": "Pikeman Spain",
+          "unit": "UNIT_PIKEMAN_SKIN14",
+          "model": "Pikeman_Spain",
+          "origin": "Испания"
+        },
+        {
+          "variant": 15,
+          "title": "Pikeman Turkey",
+          "unit": "UNIT_PIKEMAN_SKIN15",
+          "model": "Pikeman_Turkey",
+          "origin": "Османы"
+        },
+        {
+          "variant": 16,
+          "title": "Pikeman Viking",
+          "unit": "UNIT_PIKEMAN_SKIN16",
+          "model": "Pikeman_Viking",
+          "origin": "Дания, Швеция"
+        },
+        {
+          "variant": 17,
+          "title": "Sacred Band",
+          "unit": "UNIT_PIKEMAN_SKIN17",
+          "model": "SacredBand",
+          "origin": "Карфаген"
+        },
+        {
+          "variant": 18,
+          "title": "Songhai Pikeman",
+          "unit": "UNIT_PIKEMAN_SKIN18",
+          "model": "SonghaiPikeman",
+          "origin": "Сонгай"
+        },
+        {
+          "variant": 19,
+          "title": "Spearman Japan",
+          "unit": "UNIT_PIKEMAN_SKIN19",
+          "model": "Spearman_Japan",
+          "origin": "Япония"
+        },
+        {
+          "variant": 20,
+          "title": "Civ5 Iropi1",
+          "unit": "UNIT_PIKEMAN_SKIN20",
+          "model": "civ5_iropi1",
+          "origin": "Ирокезы"
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_PRIVATEER",
+      "unitType": "UNIT_PRIVATEER",
+      "title": "Капер",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "Canhoneira",
+          "unit": "UNIT_PRIVATEER_SKIN1",
+          "model": "Canhoneira",
+          "origin": "Бразилия"
+        },
+        {
+          "variant": 2,
+          "title": "Eia",
+          "unit": "UNIT_PRIVATEER_SKIN2",
+          "model": "Eia",
+          "origin": "Полинезия"
+        },
+        {
+          "variant": 3,
+          "title": "Portuguese Galleon",
+          "unit": "UNIT_PRIVATEER_SKIN3",
+          "model": "portuguese_galleon",
+          "origin": "Португалия"
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_RIFLEMAN",
+      "unitType": "UNIT_RIFLEMAN",
+      "title": "Стрелок",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "Brazilian Rifleman",
+          "unit": "UNIT_RIFLEMAN_SKIN1",
+          "model": "Brazilian_Rifleman",
+          "origin": "Бразилия"
+        },
+        {
+          "variant": 2,
+          "title": "Ararm1",
+          "unit": "UNIT_RIFLEMAN_SKIN2",
+          "model": "ararm1",
+          "origin": "Аравия"
+        },
+        {
+          "variant": 3,
+          "title": "Celrm1",
+          "unit": "UNIT_RIFLEMAN_SKIN3",
+          "model": "celrm1",
+          "origin": "Кельты"
+        },
+        {
+          "variant": 4,
+          "title": "Civ5 Chirm2",
+          "unit": "UNIT_RIFLEMAN_SKIN4",
+          "model": "civ5_chirm2",
+          "origin": "Китай"
+        },
+        {
+          "variant": 5,
+          "title": "Civ5 Dutrm1",
+          "unit": "UNIT_RIFLEMAN_SKIN5",
+          "model": "civ5_dutrm1",
+          "origin": "Нидерланды"
+        },
+        {
+          "variant": 6,
+          "title": "Civ5 Engrm1",
+          "unit": "UNIT_RIFLEMAN_SKIN6",
+          "model": "civ5_engrm1",
+          "origin": "Англия"
+        },
+        {
+          "variant": 7,
+          "title": "Civ5 Frerm",
+          "unit": "UNIT_RIFLEMAN_SKIN7",
+          "model": "civ5_frerm",
+          "origin": "Франция"
+        },
+        {
+          "variant": 8,
+          "title": "Civ5 Indrm1",
+          "unit": "UNIT_RIFLEMAN_SKIN8",
+          "model": "civ5_indrm1",
+          "origin": "Индия"
+        },
+        {
+          "variant": 9,
+          "title": "Civ5 Ottrm",
+          "unit": "UNIT_RIFLEMAN_SKIN9",
+          "model": "civ5_ottrm",
+          "origin": "Османы"
+        },
+        {
+          "variant": 10,
+          "title": "Civ5 Perrm",
+          "unit": "UNIT_RIFLEMAN_SKIN10",
+          "model": "civ5_perrm",
+          "origin": "Персия"
+        },
+        {
+          "variant": 11,
+          "title": "Civ5 Rusrm",
+          "unit": "UNIT_RIFLEMAN_SKIN11",
+          "model": "civ5_rusrm",
+          "origin": "Россия"
+        },
+        {
+          "variant": 12,
+          "title": "Civ5 Siarm1",
+          "unit": "UNIT_RIFLEMAN_SKIN12",
+          "model": "civ5_siarm1",
+          "origin": "Сиам"
+        },
+        {
+          "variant": 13,
+          "title": "Civ5 Sparm1",
+          "unit": "UNIT_RIFLEMAN_SKIN13",
+          "model": "civ5_sparm1",
+          "origin": "Испания"
+        },
+        {
+          "variant": 14,
+          "title": "Civ5 Swerm1",
+          "unit": "UNIT_RIFLEMAN_SKIN14",
+          "model": "civ5_swerm1",
+          "origin": "Швеция"
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_SCOUT",
+      "unitType": "UNIT_SCOUT",
+      "title": "Разведчик",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "Afr Scout",
+          "unit": "UNIT_SCOUT_SKIN1",
+          "model": "AfrScout",
+          "origin": "Зулусы"
+        },
+        {
+          "variant": 2,
+          "title": "Carthage Scout",
+          "unit": "UNIT_SCOUT_SKIN2",
+          "model": "CarthageScout",
+          "origin": "Карфаген"
+        },
+        {
+          "variant": 3,
+          "title": "Ethiopian Scout",
+          "unit": "UNIT_SCOUT_SKIN3",
+          "model": "EthiopianScout",
+          "origin": "Эфиопия"
+        },
+        {
+          "variant": 4,
+          "title": "Euro Scout",
+          "unit": "UNIT_SCOUT_SKIN4",
+          "model": "EuroScout",
+          "origin": "Кельты"
+        },
+        {
+          "variant": 5,
+          "title": "Songhai Scout",
+          "unit": "UNIT_SCOUT_SKIN5",
+          "model": "SonghaiScout",
+          "origin": "Сонгай"
+        },
+        {
+          "variant": 6,
+          "title": "Civ5 Irosc1",
+          "unit": "UNIT_SCOUT_SKIN6",
+          "model": "civ5_irosc1",
+          "origin": "Ирокезы"
+        },
+        {
+          "variant": 7,
+          "title": "Egyption Scout",
+          "unit": "UNIT_SCOUT_SKIN7",
+          "model": "egyption_scout",
+          "origin": "Египет"
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_SPEARMAN",
+      "unitType": "UNIT_SPEARMAN",
+      "title": "Копейщик",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "Bantu Spearman",
+          "unit": "UNIT_SPEARMAN_SKIN1",
+          "model": "BantuSpearman",
+          "origin": "Зулусы"
+        },
+        {
+          "variant": 2,
+          "title": "Batavian Spearman",
+          "unit": "UNIT_SPEARMAN_SKIN2",
+          "model": "BatavianSpearman",
+          "origin": "Нидерланды"
+        },
+        {
+          "variant": 3,
+          "title": "Carthage Spearman",
+          "unit": "UNIT_SPEARMAN_SKIN3",
+          "model": "CarthageSpearman",
+          "origin": "Карфаген"
+        },
+        {
+          "variant": 4,
+          "title": "Hun Warrior",
+          "unit": "UNIT_SPEARMAN_SKIN4",
+          "model": "HunWarrior",
+          "origin": "Гунны"
+        },
+        {
+          "variant": 5,
+          "title": "Portugal Spearman",
+          "unit": "UNIT_SPEARMAN_SKIN5",
+          "model": "PortugalSpearman",
+          "origin": "Португалия"
+        },
+        {
+          "variant": 6,
+          "title": "Songhai Med Spearman",
+          "unit": "UNIT_SPEARMAN_SKIN6",
+          "model": "SonghaiMedSpearman",
+          "origin": "Марокко"
+        },
+        {
+          "variant": 7,
+          "title": "Songhai Spearman",
+          "unit": "UNIT_SPEARMAN_SKIN7",
+          "model": "SonghaiSpearman",
+          "origin": "Сонгай"
+        },
+        {
+          "variant": 8,
+          "title": "Spearman Arabia",
+          "unit": "UNIT_SPEARMAN_SKIN8",
+          "model": "Spearman_Arabia",
+          "origin": "Аравия"
+        },
+        {
+          "variant": 9,
+          "title": "Spearman Aztec",
+          "unit": "UNIT_SPEARMAN_SKIN9",
+          "model": "Spearman_Aztec",
+          "origin": "Ацтеки"
+        },
+        {
+          "variant": 10,
+          "title": "Spearman China V2",
+          "unit": "UNIT_SPEARMAN_SKIN10",
+          "model": "Spearman_China_v2",
+          "origin": "Китай"
+        },
+        {
+          "variant": 11,
+          "title": "Spearman Egypt",
+          "unit": "UNIT_SPEARMAN_SKIN11",
+          "model": "Spearman_Egypt",
+          "origin": "Египет"
+        },
+        {
+          "variant": 12,
+          "title": "Spearman Inca",
+          "unit": "UNIT_SPEARMAN_SKIN12",
+          "model": "Spearman_Inca",
+          "origin": "Инки"
+        },
+        {
+          "variant": 13,
+          "title": "Spearman Korea",
+          "unit": "UNIT_SPEARMAN_SKIN13",
+          "model": "Spearman_Korea",
+          "origin": "Корея"
+        },
+        {
+          "variant": 14,
+          "title": "Spearman Mongol",
+          "unit": "UNIT_SPEARMAN_SKIN14",
+          "model": "Spearman_Mongol",
+          "origin": "Монголия"
+        },
+        {
+          "variant": 15,
+          "title": "Spearman Persia",
+          "unit": "UNIT_SPEARMAN_SKIN15",
+          "model": "Spearman_Persia",
+          "origin": "Персия"
+        },
+        {
+          "variant": 16,
+          "title": "Spearman Rome",
+          "unit": "UNIT_SPEARMAN_SKIN16",
+          "model": "Spearman_Rome",
+          "origin": "Византия, Рим"
+        },
+        {
+          "variant": 17,
+          "title": "Civ5 Irosp2",
+          "unit": "UNIT_SPEARMAN_SKIN17",
+          "model": "civ5_irosp2",
+          "origin": "Ирокезы"
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_SWORDSMAN",
+      "unitType": "UNIT_SWORDSMAN",
+      "title": "Мечник",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "Carthage Swordsman",
+          "unit": "UNIT_SWORDSMAN_SKIN1",
+          "model": "CarthageSwordsman",
+          "origin": "Карфаген, Марокко"
+        },
+        {
+          "variant": 2,
+          "title": "Egypt Swordsman",
+          "unit": "UNIT_SWORDSMAN_SKIN2",
+          "model": "EgyptSwordsman",
+          "origin": "Египет"
+        },
+        {
+          "variant": 3,
+          "title": "Gaul Merc",
+          "unit": "UNIT_SWORDSMAN_SKIN3",
+          "model": "GaulMerc",
+          "origin": "Кельты"
+        },
+        {
+          "variant": 4,
+          "title": "Hun Warrior2",
+          "unit": "UNIT_SWORDSMAN_SKIN4",
+          "model": "HunWarrior2",
+          "origin": "Гунны"
+        },
+        {
+          "variant": 5,
+          "title": "Makuria Swordsman",
+          "unit": "UNIT_SWORDSMAN_SKIN5",
+          "model": "MakuriaSwordsman",
+          "origin": "Сонгай"
+        },
+        {
+          "variant": 6,
+          "title": "Nubian Swordsman",
+          "unit": "UNIT_SWORDSMAN_SKIN6",
+          "model": "NubianSwordsman",
+          "origin": "Зулусы"
+        },
+        {
+          "variant": 7,
+          "title": "Polynesian Footman",
+          "unit": "UNIT_SWORDSMAN_SKIN7",
+          "model": "PolynesianFootman",
+          "origin": "Полинезия"
+        },
+        {
+          "variant": 8,
+          "title": "Scout Japan",
+          "unit": "UNIT_SWORDSMAN_SKIN8",
+          "model": "Scout_Japan",
+          "origin": "Япония"
+        },
+        {
+          "variant": 9,
+          "title": "Scout Korea",
+          "unit": "UNIT_SWORDSMAN_SKIN9",
+          "model": "Scout_Korea",
+          "origin": "Корея"
+        },
+        {
+          "variant": 10,
+          "title": "Swordsman Aztec",
+          "unit": "UNIT_SWORDSMAN_SKIN10",
+          "model": "Swordsman_Aztec",
+          "origin": "Ацтеки"
+        },
+        {
+          "variant": 11,
+          "title": "Swordsman Babylon",
+          "unit": "UNIT_SWORDSMAN_SKIN11",
+          "model": "Swordsman_Babylon",
+          "origin": "Ассирия, Вавилон"
+        },
+        {
+          "variant": 12,
+          "title": "Swordsman China V2",
+          "unit": "UNIT_SWORDSMAN_SKIN12",
+          "model": "Swordsman_China_v2",
+          "origin": "Китай"
+        },
+        {
+          "variant": 13,
+          "title": "Swordsman Greece",
+          "unit": "UNIT_SWORDSMAN_SKIN13",
+          "model": "Swordsman_Greece",
+          "origin": "Греция"
+        },
+        {
+          "variant": 14,
+          "title": "Swordsman Inca",
+          "unit": "UNIT_SWORDSMAN_SKIN14",
+          "model": "Swordsman_Inca",
+          "origin": "Инки"
+        },
+        {
+          "variant": 15,
+          "title": "Swordsman India",
+          "unit": "UNIT_SWORDSMAN_SKIN15",
+          "model": "Swordsman_India",
+          "origin": "Индия"
+        },
+        {
+          "variant": 16,
+          "title": "Swordsman Maya",
+          "unit": "UNIT_SWORDSMAN_SKIN16",
+          "model": "Swordsman_Maya",
+          "origin": "Майя"
+        },
+        {
+          "variant": 17,
+          "title": "Civ5 Russm1",
+          "unit": "UNIT_SWORDSMAN_SKIN17",
+          "model": "civ5_russm1",
+          "origin": "Польша"
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_TANK",
+      "unitType": "UNIT_TANK",
+      "title": "Танк",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "10 TP",
+          "unit": "UNIT_TANK_SKIN1",
+          "model": "10TP",
+          "origin": "Польша"
+        },
+        {
+          "variant": 2,
+          "title": "A12 Matilda II 5",
+          "unit": "UNIT_TANK_SKIN2",
+          "model": "A12_Matilda_II_5",
+          "origin": "Португалия"
+        },
+        {
+          "variant": 3,
+          "title": "M4 A3 E8 Sherman Easy Eight",
+          "unit": "UNIT_TANK_SKIN3",
+          "model": "M4A3E8_Sherman_Easy_Eight",
+          "origin": "Америка"
+        },
+        {
+          "variant": 4,
+          "title": "MTSL-1 GI4",
+          "unit": "UNIT_TANK_SKIN4",
+          "model": "MTSL-1GI4",
+          "origin": "Нидерланды"
+        },
+        {
+          "variant": 5,
+          "title": "Panzer IV Ausf G",
+          "unit": "UNIT_TANK_SKIN5",
+          "model": "Panzer_IV_Ausf_G",
+          "origin": "Австрия"
+        },
+        {
+          "variant": 6,
+          "title": "Strv M41",
+          "unit": "UNIT_TANK_SKIN6",
+          "model": "Strv_M41",
+          "origin": "Швеция"
+        },
+        {
+          "variant": 7,
+          "title": "T-34-85",
+          "unit": "UNIT_TANK_SKIN7",
+          "model": "T-34-85",
+          "origin": "Россия"
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_TRIPLANE",
+      "unitType": "UNIT_TRIPLANE",
+      "title": "Триплан",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "Nieuport 17",
+          "unit": "UNIT_TRIPLANE_SKIN1",
+          "model": "Nieuport_17",
+          "origin": "Франция"
+        },
+        {
+          "variant": 2,
+          "title": "Spowith Camel",
+          "unit": "UNIT_TRIPLANE_SKIN2",
+          "model": "Spowith_Camel",
+          "origin": "Эфиопия"
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_WARRIOR",
+      "unitType": "UNIT_WARRIOR",
+      "title": "Воин",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "Austria Warrior",
+          "unit": "UNIT_WARRIOR_SKIN1",
+          "model": "AustriaWarrior",
+          "origin": "Австрия"
+        },
+        {
+          "variant": 2,
+          "title": "Caetranann",
+          "unit": "UNIT_WARRIOR_SKIN2",
+          "model": "Caetranann",
+          "origin": "Португалия"
+        },
+        {
+          "variant": 3,
+          "title": "Caetrati",
+          "unit": "UNIT_WARRIOR_SKIN3",
+          "model": "Caetrati",
+          "origin": "Испания"
+        },
+        {
+          "variant": 4,
+          "title": "Carthage Warrior",
+          "unit": "UNIT_WARRIOR_SKIN4",
+          "model": "CarthageWarrior",
+          "origin": "Карфаген"
+        },
+        {
+          "variant": 5,
+          "title": "Celtic Warrior",
+          "unit": "UNIT_WARRIOR_SKIN5",
+          "model": "CelticWarrior",
+          "origin": "Кельты"
+        },
+        {
+          "variant": 6,
+          "title": "Denmark Warrior",
+          "unit": "UNIT_WARRIOR_SKIN6",
+          "model": "DenmarkWarrior",
+          "origin": "Дания"
+        },
+        {
+          "variant": 7,
+          "title": "Mesopotamic Warrior Tc",
+          "unit": "UNIT_WARRIOR_SKIN7",
+          "model": "Mesopotamic_warrior_tc",
+          "origin": "Ассирия, Вавилон"
+        },
+        {
+          "variant": 8,
+          "title": "Oceanic Warrior",
+          "unit": "UNIT_WARRIOR_SKIN8",
+          "model": "Oceanic_warrior",
+          "origin": "Полинезия"
+        },
+        {
+          "variant": 9,
+          "title": "Thraikan Pezoi",
+          "unit": "UNIT_WARRIOR_SKIN9",
+          "model": "ThraikanPezoi",
+          "origin": "Византия"
+        },
+        {
+          "variant": 10,
+          "title": "Hebrew Warrior",
+          "unit": "UNIT_WARRIOR_SKIN10",
+          "model": "hebrew_warrior",
+          "origin": "Марокко"
+        },
+        {
+          "variant": 11,
+          "title": "Impi 1",
+          "unit": "UNIT_WARRIOR_SKIN11",
+          "model": "impi_1",
+          "origin": "Зулусы"
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_WWI_BOMBER",
+      "unitType": "UNIT_WWI_BOMBER",
+      "title": "Бомбардировщик Первой мировой",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "Short Bomber",
+          "unit": "UNIT_WWI_BOMBER_SKIN1",
+          "model": "ShortBomber",
+          "origin": ""
+        }
+      ]
+    },
+    {
+      "unitClass": "UNITCLASS_WWI_TANK",
+      "unitType": "UNIT_WWI_TANK",
+      "title": "Танк Первой мировой",
+      "variants": [
+        {
+          "variant": 1,
+          "title": "Fiat 3000",
+          "unit": "UNIT_WWI_TANK_SKIN1",
+          "model": "Fiat_3000",
+          "origin": "Венеция"
+        },
+        {
+          "variant": 2,
+          "title": "Renault FTBrazil",
+          "unit": "UNIT_WWI_TANK_SKIN2",
+          "model": "RenaultFTBrazil",
+          "origin": "Бразилия"
+        },
+        {
+          "variant": 3,
+          "title": "Strv M21",
+          "unit": "UNIT_WWI_TANK_SKIN3",
+          "model": "Strv_M21",
+          "origin": "Швеция"
+        }
+      ]
+    }
+  ]
+}

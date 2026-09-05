@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nova — модпак для Civilization V</title>
+<meta name="description" content="Nova — бесплатный модпак для Civilization V: своя сборка движка, эра-бонусы у каждой нации, три новые ветки политик, 15 ресурсов, 41 здание. Ставится и обновляется лаунчером.">
+<meta property="og:title" content="Nova — модпак для Civilization V">
+<meta property="og:description" content="Бесплатный модпак: своя сборка движка, эра-бонусы у каждой нации, три новые ветки политик. Ставится лаунчером в один клик.">
+<meta property="og:image" content="assets/hero_nova.jpg">
+<meta name="theme-color" content="#0D131A">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">К содержимому</a>
+<div class="shell">
+<aside class="side" id="side" aria-label="Разделы сайта">
+  <a class="mark" href="index.html">
+    <span class="mark-name">NOVA</span>
+    <span class="mark-rule"><b>PATCH</b></span>
+  </a>
+  <nav class="menu">
+      <a href="index.html" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5,8.5 H17.5 A4.5,4.5 0 0 1 17.5,17.5 H6.5 A4.5,4.5 0 0 1 6.5,8.5 Z M9,11 V15 M7,13 H11 M13.9,12.4 A0.85,0.85 0 1 0 15.6,12.4 A0.85,0.85 0 1 0 13.9,12.4 Z M15.4,14.9 A0.85,0.85 0 1 0 17.1,14.9 A0.85,0.85 0 1 0 15.4,14.9 Z"/></svg>Мод</a>
+      <a href="changes.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5,20 H20.5 M6,20 V12.5 M11,20 V7 M16,20 V14.5 M20,20 V9.5"/></svg>Что меняет</a>
+      <a href="news.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5,5 H15 L18.5,8.5 V19.5 H5.5 Z M15,5 V8.5 H18.5 M8.2,11.5 H15.8 M8.2,14.5 H15.8 M8.2,17.5 H13"/></svg>Новости</a>
+      <a href="media.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5,6 H19.5 V18 H4.5 Z M4.5,15 L9,10.5 L12.5,14 L15.5,11.5 L19.5,15.5 M15.6,9 A1,1 0 1 0 17.6,9 A1,1 0 1 0 15.6,9 Z"/></svg>Галерея</a>
+      <a href="subscribe.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12,4.4 L14.2,9.5 L19.7,10.1 L15.6,13.8 L16.8,19.3 L12,16.4 L7.2,19.3 L8.4,13.8 L4.3,10.1 L9.8,9.5 Z"/></svg>Подписка</a>
+      <a href="team.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.2,11.2 A2.9,2.9 0 1 1 9.2,5.4 A2.9,2.9 0 1 1 9.2,11.2 Z M3.8,19 C3.8,15.6 6.2,13.6 9.2,13.6 C12.2,13.6 14.6,15.6 14.6,19 M15.9,6.1 A2.4,2.4 0 0 1 15.9,10.7 M17.3,13.8 C19.2,14.4 20.4,16.2 20.4,19"/></svg>Авторы</a>
+      <a href="faq.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12,3.6 A8.4,8.4 0 1 1 12,20.4 A8.4,8.4 0 1 1 12,3.6 Z M9.6,9.7 A2.5,2.5 0 0 1 14.4,10.5 C14.4,12.3 12,12.5 12,14.3 M12,17.1 V17.2"/></svg>Помощь</a>
+  </nav>
+  <div class="side-foot">
+    <p>мод <span data-nova="mod-version">…</span></p>
+    <p>лаунчер <span data-nova="client-version">…</span></p>
+    <p data-nova="domain-box" hidden><span data-nova="domain"></span></p>
+  </div>
+</aside>
+<div class="scrim" id="scrim"></div>
+
+<div class="col">
+  <div class="topbar">
+    <button class="burger" id="burger" type="button" aria-expanded="false"
+            aria-controls="side" aria-label="Разделы сайта">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4,7 H20 M4,12 H20 M4,17 H20"/></svg>
+    </button>
+    <a class="topbrand" href="index.html">NOVA</a>
+  </div>
+
+
+  <header class="hero">
+    <div class="hero-emblem" aria-hidden="true">
+      <svg viewBox="1 2 30 19"><path d="M2,20 L16,3 L30,20 M8.5,20 L16,11 L23.5,20"/></svg>
+      <span class="n">NOVA</span><span class="r"></span><span class="p">PATCH</span>
+    </div>
+    <div class="hero-title">
+      <h1>Nova — модпак для Civilization V</h1>
+      <p class="sub">Мод для Brave New World: своя сборка игрового движка, эра-бонусы у каждой нации, три новые ветки политик, новые ресурсы, здания и чудеса. Ставится и обновляется лаунчером — руками в папки игры лезть не нужно.</p>
+    </div>
+  </header>
+
+  <main class="wrap" id="main">
+
+
+<div class="badges">
+  <div><b data-nova="mod-version">…</b><span>версия мода</span></div>
+  <div><b data-nova="client-version">…</b><span>версия лаунчера</span></div>
+  <div><b data-nova="built">…</b><span>дата сборки</span></div>
+</div>
+
+<div class="cta" id="download">
+  <a class="btn primary" data-nova="download" aria-disabled="true" href="#"><span data-nova="download-label">Скачать лаунчер</span></a>
+  <a class="btn discord" data-nova="discord" aria-disabled="true" href="#" rel="noopener">Discord</a>
+</div>
+<p class="cta-note">Windows 10 и новее, <span data-nova="client-size">…</span>.
+Нужна купленная Civilization V с дополнением Brave New World в Steam.
+Устанавливать .NET или что-то ещё не нужно — распаковали и запустили.</p>
+<p class="cta-note" data-nova="client-notes-box" hidden><b>Что нового в лаунчере:</b>
+<span data-nova="client-notes"></span></p>
+
+<div class="todo" data-nova="discord-missing" hidden>
+  <b>Ссылки на Discord пока нет.</b> Кнопка выключена намеренно: приглашение знает
+  только владелец сервера. Нужна <b>бессрочная</b> ссылка вида
+  <code>https://discord.gg/…</code> — срочная протухнет и кнопка молча начнёт вести в никуда.
+</div>
+
+<h2>Что это такое</h2>
+<p>Nova выросла из Tournament Mod 12.2a. Общими остались основа движка, семейство карт и
+интерфейс EUI; содержимое и баланс разошлись. Мод ставится не как обычная модификация
+из мастерской, а как дополнение игры — движок грузит его сам, отдельного экрана модов
+включать не надо, и работает мультиплеер.</p>
+<p>Модпак бесплатный целиком. Платного содержимого в игре нет: подписка открывает только
+курсоры мыши, на баланс и правила она не влияет никак —
+<a href="subscribe.html">подробнее о подписке</a>.</p>
+
+<h2>Что меняет патч</h2>
+<p class="small dim">Числа посчитаны построчным сравнением данных и кода с Tournament Mod
+12.2a, а не написаны по памяти.</p>
+<div class="badges">
+  <div><b>159</b><span>таблиц данных разошлись</span></div>
+  <div><b>1905</b><span>строк добавлено</span></div>
+  <div><b>80</b><span>новых механик в движке</span></div>
+  <div><b>45</b><span>изменённых файлов кода</span></div>
+</div>
+
+<div class="cards">
+  <div class="card"><h3>Эра-бонус у каждой нации</h3><p>При входе в новую эпоху выбор из
+  четырёх бонусов вместо трёх: четвёртый принадлежит только вашей нации. Всего
+  43 национальных бонуса и 21 общий.</p></div>
+  <div class="card"><h3>Три новые ветки политик</h3><p>«Наследие» — 64 политики эра-бонусов,
+  «Пути» — дороги, караваны и связность державы, «Оплот» — оборона: стены, замок и арсенал
+  перестают быть чистым расходом.</p></div>
+  <div class="card"><h3>15 новых люксов</h3><p>Пиво, мёд, коньяк, сыр, рис, сталь, платина,
+  сера, картофель, ячмень, ананас, известняк, икра, перья, красная икра — со своими
+  моделями на клетке и своими зданиями.</p></div>
+  <div class="card"><h3>41 новое здание и новые чудеса</h3><p>Здания, работающие от люксов
+  города; чудеса с собственными эффектами и иконками.</p></div>
+  <div class="card"><h3>58 новых верований</h3><p>Пантеоны, привязанные к ресурсам,
+  и новые догматы религий.</p></div>
+  <div class="card"><h3>Своя сборка движка</h3><p>80 механик, которых в коде базовой игры
+  нет вовсе. Формат сохранений при этом не менялся: старые партии загружаются.</p></div>
+  <a class="card link" href="media.html"><h3>Облики войск</h3><p><span data-nova="skin-variants">…</span>
+  национальных вариантов внешнего вида для <span data-nova="skin-units">…</span> видов войск.
+  Характеристики не меняются, облик видят все в партии. Посмотреть все →</p></a>
+</div>
+<p><a href="changes.html">Полный список изменений и история версий →</a></p>
+
+<h2>Свежие новости</h2>
+<div id="news-preview"><p class="dim">Загружаю…</p></div>
+<p><a href="news.html">Все новости →</a></p>
+
+<h2>Лаунчер</h2>
+<p>Программа, через которую мод попадает в игру и остаётся в актуальном состоянии.
+Что она делает:</p>
+<ul>
+  <li>ставит и обновляет мод, сверяя каждый файл по хешу, — качается только то, что
+  изменилось;</li>
+  <li>переживает прерванное обновление и стёртые папки: следующий запуск доводит установку
+  до конца, а не оставляет мод в полусостоянии;</li>
+  <li>показывает живые комнаты Steam и метку сборки хоста — расхождение версий видно
+  до входа, а не по вылету посреди партии;</li>
+  <li>собирает логи игры, прячет известный шум и показывает первую настоящую ошибку;</li>
+  <li>чистит кеш баз игры (сохранения и историю не трогает никогда);</li>
+  <li>меняет курсор и облик войск.</li>
+</ul>
+<p><a href="faq.html">Как установить и что делать, если не работает →</a></p>
+
+</main>
+
+<footer>
+  <div class="cols">
+    <div>
+      <p>Nova <span data-nova="mod-version">…</span> · лаунчер <span data-nova="client-version">…</span></p>
+      <p data-nova="domain-box" hidden>Постоянный адрес сайта — <b><span data-nova="domain"></span></b></p>
+      <p>Модпак бесплатный. <a href="subscribe.html">Подписка</a> открывает только курсоры.</p>
+    </div>
+    <div>
+      <p><a href="changes.html">Изменения</a> · <a href="news.html">Новости</a> ·
+         <a href="faq.html">Помощь</a> · <a href="team.html">Авторы</a></p>
+      <p><a href="https://github.com/Coddysmon/TournamentModPack" rel="noopener">Репозиторий раздачи</a></p>
+    </div>
+  </div>
+  <p class="small">Неофициальный любительский проект. Sid Meier's Civilization V —
+  товарный знак Firaxis Games и 2K; проект с ними никак не связан.</p>
+</footer>
+
+</div><!-- /col -->
+</div><!-- /shell -->
+
+<script src="assets/site.js"></script>
+<script>
+NOVA.fillCommon();
+NOVA.news().then(text => {
+  const box = document.getElementById('news-preview');
+  if (!text) { box.innerHTML = '<p class="dim">Ленту новостей получить не удалось.</p>'; return; }
+  const list = NOVA.parseNews(text).slice(0, 3);
+  box.innerHTML = list.length ? list.map(NOVA.newsHtml).join('')
+    : '<p class="dim">Новостей пока нет.</p>';
+});
+</script>
+</body>
+</html>
