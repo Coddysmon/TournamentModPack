@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.61",
+  "packageVersion": "1.5.62",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-09-05T22:13:21.9340688+00:00",
+  "createdUtc": "2026-09-06T02:47:56.0103682+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -250,7 +250,7 @@
         {
           "path": "Art/fonticons_tm_newlux.dds",
           "size": 262272,
-          "hash": "b2a1e0afc7f2757f43823b9c905f74dd62a053cc9b1ccaf8edcdc10a8be0b519"
+          "hash": "276ac1d024c2705ef82d645dc47ee8ac3a477c030bef34d766c79614f175278d"
         },
         {
           "path": "Art/FontIcons_TM_NewLux.ggxml",
@@ -260,7 +260,7 @@
         {
           "path": "Art/fonticons_tm_newlux2.dds",
           "size": 262272,
-          "hash": "49adb208ffe41442a606dce2de1b1ec65ecdc7831fa5c6a08323f51c04fbe700"
+          "hash": "4cad6c10c352cc641f9ef5aeca10e7b55414fd8c82c392a29272cf2151d5d0c5"
         },
         {
           "path": "Art/FontIcons_TM_NewLux2.ggxml",
@@ -2391,6 +2391,16 @@
           "path": "Art/nova_colosseum_80.dds",
           "size": 25728,
           "hash": "148f1263f69b0c8eec70e4f827f45311d2226d1b6344272ee33ee995d92d0072"
+        },
+        {
+          "path": "Art/nova_tipi_256.dds",
+          "size": 262272,
+          "hash": "1abf384aa3c02a3c2a9b2749aff129fe304cd9949818295d74e4c342a6f3474a"
+        },
+        {
+          "path": "Art/nova_tipi_64.dds",
+          "size": 16512,
+          "hash": "ec8e248387cdc59dda1f6d94fb43ba642a308dadb72cfea729343984cfb8d249"
         },
         {
           "path": "Art/nova_wonders_128.dds",
@@ -9489,13 +9499,13 @@
         },
         {
           "path": "CHANGELOG.md",
-          "size": 76108,
-          "hash": "00124ee7373113d1103c21d1f5b7982ebbef0ad1bf28d5f76bd31b6b8331c2f9"
+          "size": 76769,
+          "hash": "d8c52e48672ad896f1c6a9c18de2e77b8a401b583d0a7e03a7383d62205859de"
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4421632,
-          "hash": "4faa90aa6a6b02e19c93956b23d5e19da5628c29244a97d56beea2a049aa4b10"
+          "size": 4423168,
+          "hash": "ede4acb8bf360aea5040b4edeea26b0ae1b7fbdb40b6029fe4eefaf27139d3be"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -10079,8 +10089,8 @@
         },
         {
           "path": "Override/CIV5Controls.xml",
-          "size": 1532445,
-          "hash": "9716ad67b3e5e910664faabb8ed5eedc7d70c804819fb774dde4be553e4b7345"
+          "size": 1533044,
+          "hash": "072170744099304d1f96efc5eb22c78d9aa6a92bd980aae143b4156771e533bc"
         },
         {
           "path": "Override/CIV5CultureLevels.xml",
@@ -11874,8 +11884,8 @@
         },
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xml",
-          "size": 836710,
-          "hash": "6a4179c0fb4970d52a5d6dc284beda47955414c85698da709dd04b555912a9e8"
+          "size": 842123,
+          "hash": "cc5be61db1e8493b5304c55b8c312ef70ba29fbf6d06c3fae699dc8e5922ae8d"
         },
         {
           "path": "Override/CIV5Trades.xml",
@@ -12019,8 +12029,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 10449640,
-          "hash": "027f009cd9250a0007ec694472db1715621840737ce8f7434235f6ce35275801"
+          "size": 10453357,
+          "hash": "16e9e5ec7f23548274d8156584e2a6fffe5df3e300e5773f9fe02f523db2f31d"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -12059,8 +12069,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 9750053,
-          "hash": "dadf646f3602f6d049c0442b5c5f25f98cf708623ab81e25d3facedf988821ac"
+          "size": 9772508,
+          "hash": "a55459b4e55b1643f689592b03cbe563781c794019b7e6c96213250dade04cf6"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
@@ -12879,8 +12889,8 @@
         },
         {
           "path": "tmp/ui/EUI_tooltip_library.lua",
-          "size": 166581,
-          "hash": "dfe222a779eba9811dd95dd55a9f2a839511396d19d84fd22e3a95b2889bc4c5"
+          "size": 167473,
+          "hash": "d995a12dce1c706be53fd82fb23a8dce2b30bb24e5be9ff8cf5dd23351f1b78c"
         },
         {
           "path": "tmp/ui/EUI_unit_include.lua",
@@ -13243,6 +13253,16 @@
           "hash": "29dd0fc04949fcaabed159d50058ca883d3988d74543a067aaf1af7583fd0933"
         },
         {
+          "path": "tmp/ui/TradeRouteOverview.lua",
+          "size": 18193,
+          "hash": "e87070a1c218b4086828fc3eae63f1a414848663a0a5d47d402463503fd4ab45"
+        },
+        {
+          "path": "tmp/ui/TradeRouteOverview.xml",
+          "size": 18510,
+          "hash": "f2fd88de54340e0cdcb82ad9717a3fdd685f781184522d5df133f784e63ff4a7"
+        },
+        {
           "path": "tmp/ui/TurnProfiler.lua",
           "size": 11817,
           "hash": "a72b0bae8b1f97771541402073749976fed76b0bc659c96b1dbb537b05a0b698"
@@ -13314,8 +13334,8 @@
         },
         {
           "path": "ui_check.bat",
-          "size": 21191,
-          "hash": "02bbb8547fde6426ff949597ef27e99f429cd924a28d50cfb9ae1b945b8869e8"
+          "size": 21569,
+          "hash": "e4a02684a727f4dd5cb8322e02ee05f53b4a3be3e2b1b2b91a81c58f515224c1"
         }
       ]
     },
@@ -13677,6 +13697,16 @@
       {
         "from": "tmp/ui/TradeRouteHelpers.lua",
         "to": "UI/TradeRouteHelpers.lua",
+        "when": []
+      },
+      {
+        "from": "tmp/ui/TradeRouteOverview.lua",
+        "to": "UI/TradeRouteOverview.lua",
+        "when": []
+      },
+      {
+        "from": "tmp/ui/TradeRouteOverview.xml",
+        "to": "UI/TradeRouteOverview.xml",
         "when": []
       },
       {
