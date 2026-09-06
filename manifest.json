@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.66",
+  "packageVersion": "1.5.67",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-09-06T11:20:19.0936565+00:00",
+  "createdUtc": "2026-09-06T12:01:13.6364588+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -2844,8 +2844,8 @@
         },
         {
           "path": "Art/Skins/Ariete.gr2",
-          "size": 22800,
-          "hash": "fbdc976c31bbc0ec13b8c0b7981e5b67285391c739ead857d335bdea1ef68ecc"
+          "size": 39224,
+          "hash": "7ba6e60dc609f777b6e481efcd5ef2a0fccc2c77f33edf35b18d2497683b8833"
         },
         {
           "path": "Art/Skins/Ariete_diff.dds",
@@ -7464,8 +7464,8 @@
         },
         {
           "path": "Art/Skins/T55Peru.gr2",
-          "size": 22800,
-          "hash": "fbdc976c31bbc0ec13b8c0b7981e5b67285391c739ead857d335bdea1ef68ecc"
+          "size": 39224,
+          "hash": "7ba6e60dc609f777b6e481efcd5ef2a0fccc2c77f33edf35b18d2497683b8833"
         },
         {
           "path": "Art/Skins/T72 India.dds",
@@ -12040,7 +12040,7 @@
         {
           "path": "Override/CIV5Units.xml",
           "size": 10453907,
-          "hash": "eb93e49a06efb57a3b61eca8059d824810c66c3f8225acda9cd3c5891b6e1e30"
+          "hash": "001f637fdc5a15c70a88abb33ab52c83541be3831e46ce2e66bb05f14250d62e"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
