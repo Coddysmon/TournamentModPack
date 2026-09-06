@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.62",
+  "packageVersion": "1.5.63",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-09-06T02:47:56.0103682+00:00",
+  "createdUtc": "2026-09-06T10:56:45.9581742+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -7449,8 +7449,8 @@
         },
         {
           "path": "Art/Skins/T55Peru.fxsxml",
-          "size": 3235,
-          "hash": "ab14597d6fd9674f6c5290c9627db73caacca5c24931d3e09bddd6b63ec4961e"
+          "size": 3067,
+          "hash": "c3e948995672805abbae5cd6bb0b977102fbdf766f5931dbc7e6407e4c687af6"
         },
         {
           "path": "Art/Skins/T55Peru.gr2",
@@ -10090,7 +10090,7 @@
         {
           "path": "Override/CIV5Controls.xml",
           "size": 1533044,
-          "hash": "072170744099304d1f96efc5eb22c78d9aa6a92bd980aae143b4156771e533bc"
+          "hash": "bb40d2f21fadd1591544b25d9b21ca5e0abea97eeea5d9997d6a1bd25c1b3c3c"
         },
         {
           "path": "Override/CIV5CultureLevels.xml",
@@ -12356,11 +12356,6 @@
           "path": "Override/CIV5_Victory.xml",
           "size": 0,
           "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-        },
-        {
-          "path": "Override/delta.py",
-          "size": 794,
-          "hash": "2a41ea91a43592090c745482e02fa57838e565442ddf95f2942d271544731ab6"
         },
         {
           "path": "Override/English.xml",
