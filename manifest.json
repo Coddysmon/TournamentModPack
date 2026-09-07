@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "packageVersion": "1.5.70",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-09-07T14:55:06.2721723+00:00",
+  "createdUtc": "2026-09-07T22:02:47.3751033+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -8279,8 +8279,8 @@
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4414464,
-          "hash": "4f83125323a2f98ad2b62dff1edd3a7d2a62cca78321cd0d6cef1d80d0f79c55"
+          "size": 4418560,
+          "hash": "ab272263361ed3ffd4d8b3da89bc6ce4da968e487f65a02a62e981a6974b7cbe"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -12609,8 +12609,8 @@
         },
         {
           "path": "tmp/eui/TopPanel.lua",
-          "size": 159205,
-          "hash": "6e89ca544edfbe9fe520d314b10034c2980f20a0976dad5ad07b6b8a7576ec36"
+          "size": 133479,
+          "hash": "212b53dec7e93f4f2f672ab6e952d6fa29389ae63754091ab32035b2815c6ca5"
         },
         {
           "path": "tmp/eui/TopPanel.xml",
@@ -12754,8 +12754,8 @@
         },
         {
           "path": "tmp/ui/CityList.lua",
-          "size": 17294,
-          "hash": "f7a8824596e7c26a31eacbecdc5d63fa38aa1838348f7b56b036db75ffc25107"
+          "size": 18348,
+          "hash": "4cd0f675d4b5f16b27ab35ad391fd86b398180acf42ced147ef4273a0b835a44"
         },
         {
           "path": "tmp/ui/CityList.xml",
@@ -12934,8 +12934,8 @@
         },
         {
           "path": "tmp/ui/GPList.lua",
-          "size": 21569,
-          "hash": "2ed35e6f8dda8fbdd9a66db21fbbeb6aae4e595a7fe58e06e9af7a8c494e2ee2"
+          "size": 23255,
+          "hash": "20f24443f9b3a597d824c9659433aec056bcecc3fd51ffdd5fcce3b23253765f"
         },
         {
           "path": "tmp/ui/GPList.xml",
@@ -12959,8 +12959,8 @@
         },
         {
           "path": "tmp/ui/InGame.lua",
-          "size": 51794,
-          "hash": "2c4e6547b42d3acf53f6bf451ea4eee3f7050ffb8c40d72eadfd1d25337d44ac"
+          "size": 52339,
+          "hash": "ee6cdf9a1519e79dfe87ac971605e31755637739d49bbd836d80c1bbc9e9e446"
         },
         {
           "path": "tmp/ui/JoiningRoom.lua",
@@ -13004,8 +13004,8 @@
         },
         {
           "path": "tmp/ui/MiniMapPanel.lua",
-          "size": 37924,
-          "hash": "0ce557bb6031d67d81d2a8e8a50b6bbf8990a4ba963a28d959e9436f94819dce"
+          "size": 39446,
+          "hash": "4e82e68f92abf4ef99a42339781c2121d1b3d05b3c83541f0c9235d5fcfd5efe"
         },
         {
           "path": "tmp/ui/MiniMapPanel.xml",
@@ -13059,8 +13059,8 @@
         },
         {
           "path": "tmp/ui/NovaAura.lua",
-          "size": 28574,
-          "hash": "a01e1729d3961270d1475228345ade499f79ff350332930903f8f301521fdcb5"
+          "size": 34351,
+          "hash": "819704ae544c8a229943d91a42d826d9b297be0a54f88ce0d58d1c18d7f4d334"
         },
         {
           "path": "tmp/ui/NovaAura.xml",
@@ -13139,8 +13139,8 @@
         },
         {
           "path": "tmp/ui/ResourceList.lua",
-          "size": 12104,
-          "hash": "06d484f823ca80a6b90f598e3dbe2c49906dd38c7cb7bee97176334b183fec4b"
+          "size": 13050,
+          "hash": "ca822546dbf002a3f6cb62b9be58e60487ee9711877a9d26461f6cdb84223b0a"
         },
         {
           "path": "tmp/ui/ResourceList.xml",
@@ -13289,8 +13289,8 @@
         },
         {
           "path": "tmp/ui/UnitList.lua",
-          "size": 17148,
-          "hash": "8b749cfb296af81f9aef569e7b93e5a437957e9265b8b1329d7f7b01703c8e46"
+          "size": 18219,
+          "hash": "9991790faa51aecd0096144608d94bfdaf337a2cc68d30a13144792f034adbee"
         },
         {
           "path": "tmp/ui/UnitList.xml",
