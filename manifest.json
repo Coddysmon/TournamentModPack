@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.70",
+  "packageVersion": "1.5.71",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-09-07T22:02:47.3751033+00:00",
+  "createdUtc": "2026-09-07T23:00:48.2503213+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -604,8 +604,8 @@
         },
         {
           "path": "Art/Lux3D/Obsidian/Obsidian_Quarry_Decal_H.dds",
-          "size": 349652,
-          "hash": "30ab59c385cc2791f2d1ffc81d30e8e60d41c030de94633846d972a18b514759"
+          "size": 43832,
+          "hash": "2a9869949eb1ea64918cd2ab520ce636fd8301768eb3ceb15a122aae0d0265ca"
         },
         {
           "path": "Art/Lux3D/Obsidian/Obsidian_Quarry_Rock_D.dds",
@@ -1009,8 +1009,8 @@
         },
         {
           "path": "Art/Lux3D/Rice/rice_decal_d.dds",
-          "size": 262272,
-          "hash": "6c7f07d587a104d4958f6bb9ab8c29ef5ed0daba153cec255c59312fe493d2f4"
+          "size": 65664,
+          "hash": "b8df6875b08ee204867938173c7d4f5878cf2cb046974cd3e7feb7e626c3a6de"
         },
         {
           "path": "Art/Lux3D/Rice/rice_wisps_diff.dds",
@@ -1129,8 +1129,8 @@
         },
         {
           "path": "Art/Lux3D/Sulfur/Sulfur_Quarry_Decal_H.dds",
-          "size": 349652,
-          "hash": "30ab59c385cc2791f2d1ffc81d30e8e60d41c030de94633846d972a18b514759"
+          "size": 43832,
+          "hash": "2a9869949eb1ea64918cd2ab520ce636fd8301768eb3ceb15a122aae0d0265ca"
         },
         {
           "path": "Art/Lux3D/Sulfur/Sulfur_Quarry_Rock_D.dds",
@@ -1514,8 +1514,8 @@
         },
         {
           "path": "Art/Lux3D/TM/tm_alabaster_diff.dds",
-          "size": 1398228,
-          "hash": "f1c10cc5739ba21e36fc04176c20f6931bd0d3c54b4bfb93f7dec53cda283dba"
+          "size": 349680,
+          "hash": "a1b06f9fbdbc3222f955a1e10943ddbf6437a56c32f1614a91a574380c86db5d"
         },
         {
           "path": "Art/Lux3D/TM/tm_antlers.fxsxml",
@@ -1529,8 +1529,8 @@
         },
         {
           "path": "Art/Lux3D/TM/tm_antlers_diff.dds",
-          "size": 1398228,
-          "hash": "da58edbbdb1271c20e1206dccd66a8a18dc617b03a8c94f5176d6c7d2d9daedb"
+          "size": 349680,
+          "hash": "02f8db06cab25e2fdbb1d020e66135c4be9201c8ab8ebb79fa2e2ca326713f2c"
         },
         {
           "path": "Art/Lux3D/TM/tm_barley.fxsxml",
@@ -1544,8 +1544,8 @@
         },
         {
           "path": "Art/Lux3D/TM/tm_barley_diff.dds",
-          "size": 1398228,
-          "hash": "0644085236d8f891840d4da61ef9042fbc28055b897a18f0ead0bbbb0d30d53c"
+          "size": 349680,
+          "hash": "d62b9946c1ab992e82d07e1876202c6ed94f1138a4fab8f7755974616273d7a3"
         },
         {
           "path": "Art/Lux3D/TM/tm_barley_plantation.fxsxml",
@@ -1559,8 +1559,8 @@
         },
         {
           "path": "Art/Lux3D/TM/tm_barley_plantation_diff.dds",
-          "size": 1398228,
-          "hash": "d93b13bf3b93fe5d22a87c2146105c7eb1ce2a416988aa5e5064b9a681e516ce"
+          "size": 349680,
+          "hash": "1a014d52b0b0ba891e4a5677cd6bb2bb6bdb45f87a4523bda578fa76229ae938"
         },
         {
           "path": "Art/Lux3D/TM/tm_bastion.fxsxml",
@@ -1574,13 +1574,13 @@
         },
         {
           "path": "Art/Lux3D/TM/tm_bastion_diff.dds",
-          "size": 1398228,
-          "hash": "2869549914b5a29e82785142433329257b19b25b52cca7a39d47826568473345"
+          "size": 349680,
+          "hash": "fdb09d2dce9afc579deeb46f743d4dc0193a43d2587bf700fd159d9b2618fe57"
         },
         {
           "path": "Art/Lux3D/TM/tm_bastion_sref.dds",
-          "size": 1398228,
-          "hash": "83821174e77f2c4c3c65378b6eb6e0c7c10b5d08e833a11c4ca0d2b72ac9f4d4"
+          "size": 349680,
+          "hash": "cfe02a7202fa065f9cced612cca18bedecc3d168cea2af280515a2046a93acfa"
         },
         {
           "path": "Art/Lux3D/TM/tm_beer.fxsxml",
@@ -1594,8 +1594,8 @@
         },
         {
           "path": "Art/Lux3D/TM/tm_beer_diff.dds",
-          "size": 1398228,
-          "hash": "1fc8ccfeefab5d2a0d040cbdbb985de6d78913462be75692b2d73ab56ca5fc8e"
+          "size": 349680,
+          "hash": "91562a7dde8861b067b6e30c71eeca0c700d21a8c02a49c5396d36af479e054f"
         },
         {
           "path": "Art/Lux3D/TM/tm_beer_plantation.fxsxml",
@@ -1609,8 +1609,8 @@
         },
         {
           "path": "Art/Lux3D/TM/tm_beer_plantation_diff.dds",
-          "size": 1398228,
-          "hash": "0a1975002e4c3e3f2db66278daeb011ab2e757fa1bc913b12034b36aadea8a26"
+          "size": 349680,
+          "hash": "40cbdd47645e95d4b619a3fe2b26e1953afd43fe5ae8e9fe7c80ebd438928635"
         },
         {
           "path": "Art/Lux3D/TM/tm_caviar.fxsxml",
@@ -1624,8 +1624,8 @@
         },
         {
           "path": "Art/Lux3D/TM/tm_caviar_diff.dds",
-          "size": 1398228,
-          "hash": "0049751f7ec1b01c2a7a70f9b5dfb04a80cebc1762a38ffe9b516e4e72d62f0a"
+          "size": 349680,
+          "hash": "d83f17d34fe219cf83d31396526f939be49b0f63dcef465354f603ca3ab81c65"
         },
         {
           "path": "Art/Lux3D/TM/tm_caviar_fish.fxsxml",
@@ -1659,8 +1659,8 @@
         },
         {
           "path": "Art/Lux3D/TM/TM_Caviar_Fish_DIFF.dds",
-          "size": 2860,
-          "hash": "feed311cf8c3a6ad86e49c220caadd54d8ff9a286fc51b480cbb35ed8bb2a5f2"
+          "size": 848,
+          "hash": "32cedb0605f05a6d6cebb9a81f755a49fc69285d64efbe56fda6451c4003a1ef"
         },
         {
           "path": "Art/Lux3D/TM/tm_caviar_Idle.gr2",
@@ -1689,13 +1689,13 @@
         },
         {
           "path": "Art/Lux3D/TM/tm_cheese_camp_diff.dds",
-          "size": 1398228,
-          "hash": "ecc833030dfc5d1ff865a323fbaad87b8a0b5a646dfa246f084a5606e0c53e59"
+          "size": 349680,
+          "hash": "8a046c9b2178400a5d54c59ef2ee27343d9eb59273e371c4a1deb74462f477ea"
         },
         {
           "path": "Art/Lux3D/TM/tm_cheese_diff.dds",
-          "size": 1398228,
-          "hash": "c0b3eaaf4297ba668e77e8dea7abcfd79476fd3c39cba0fe2f040e8f18125f6d"
+          "size": 349680,
+          "hash": "20100a49570d527636953ceec1d92f4ac8fa436ad41c0e8bf96f0a79a8e6163f"
         },
         {
           "path": "Art/Lux3D/TM/tm_cognac.fxsxml",
@@ -1709,8 +1709,8 @@
         },
         {
           "path": "Art/Lux3D/TM/tm_cognac_diff.dds",
-          "size": 1398228,
-          "hash": "96ee8cb7b7e4c7ab1e0d808cfe35d15a11ccf736ad01fbcfa7ae9d4d44f836a2"
+          "size": 349680,
+          "hash": "0ea64fa530ad68997037896870701d635117976305a5bcd165862b7441e7c03b"
         },
         {
           "path": "Art/Lux3D/TM/tm_cognac_plantation.fxsxml",
@@ -1724,8 +1724,8 @@
         },
         {
           "path": "Art/Lux3D/TM/tm_cognac_plantation_diff.dds",
-          "size": 1398228,
-          "hash": "2663ccc70c90187eab2abfcc79d8eeb0d1f2ee67c311b8538a06e7f06b3acb7c"
+          "size": 349680,
+          "hash": "60ccc10809df4469d77ac2f92235119c499d0086c58e533acfa20f229ddc44a1"
         },
         {
           "path": "Art/Lux3D/TM/tm_feathers.fxsxml",
@@ -1749,13 +1749,13 @@
         },
         {
           "path": "Art/Lux3D/TM/tm_feathers_camp_diff.dds",
-          "size": 1398228,
-          "hash": "adf81795f7f70e9a16054c8ab10d538beb3d3b9dcb2f8e1d39ee3eeb15be4e3f"
+          "size": 349680,
+          "hash": "2136d155582435a0cc685991316199291d388038b44e248cdd04b4fd445f49ac"
         },
         {
           "path": "Art/Lux3D/TM/tm_feathers_diff.dds",
-          "size": 1398228,
-          "hash": "d4d9700c286c5836e19edf4d20d054d76f512e4cb58af7ddffe1ecc22d4354a0"
+          "size": 349680,
+          "hash": "979685719bf9d838f3a9265026edf1c7af439d89eb45267e4e633ac7eed82ec2"
         },
         {
           "path": "Art/Lux3D/TM/tm_honey.fxsxml",
@@ -1779,13 +1779,13 @@
         },
         {
           "path": "Art/Lux3D/TM/tm_honey_camp_diff.dds",
-          "size": 1398228,
-          "hash": "59dcf8c6062538faabef04126c020acbe834a1e114efb7254415f9bd38ac1d52"
+          "size": 349680,
+          "hash": "73ebf804f2fd3da8ea474596ff2958c1e1ddeec2d1916ba2cef2700d4f95a4b6"
         },
         {
           "path": "Art/Lux3D/TM/tm_honey_diff.dds",
-          "size": 1398228,
-          "hash": "f49538d4b39cd68f0a214aeb2881ec5ac30ab77f62ea76f1d50599303bebb5ce"
+          "size": 349680,
+          "hash": "aafaa3d5fbe0b115ebd7dbd239694d74d1139b222c0c2d1c9185d3e8b509f5ae"
         },
         {
           "path": "Art/Lux3D/TM/tm_kelp.fxsxml",
@@ -1799,8 +1799,8 @@
         },
         {
           "path": "Art/Lux3D/TM/tm_kelp_diff.dds",
-          "size": 1398228,
-          "hash": "16661d6659f2d1d5f4858db0144a08b82607b94b38292c0488cf17add0805a69"
+          "size": 349680,
+          "hash": "3243410f7eba79cddb59e2b35eef5c39bfbb6a93be8722ae85922f8a9ba20396"
         },
         {
           "path": "Art/Lux3D/TM/tm_kelp_Idle.gr2",
@@ -1819,8 +1819,8 @@
         },
         {
           "path": "Art/Lux3D/TM/tm_limestone_diff.dds",
-          "size": 349652,
-          "hash": "d6b597c5db2f5fbed3aea1b380cba66ef4d3e866f78c5e07d849042e89a992bd"
+          "size": 43832,
+          "hash": "f06440f6f8dfc5799ac35ea14e7f523f59185900b218e84c6ce7075331c650c4"
         },
         {
           "path": "Art/Lux3D/TM/tm_oysters.fxsxml",
@@ -1834,8 +1834,8 @@
         },
         {
           "path": "Art/Lux3D/TM/tm_oysters_diff.dds",
-          "size": 1398228,
-          "hash": "a818543a9d6e9672d353a9a8c52e5ac2d63166661f6c8ed6368cb5b5f5fe65be"
+          "size": 349680,
+          "hash": "125daf78314e762b5bf840b9d28b0dc50b5d68034f776bbd6d88a3369b829ef2"
         },
         {
           "path": "Art/Lux3D/TM/tm_oysters_Idle.gr2",
@@ -1844,8 +1844,8 @@
         },
         {
           "path": "Art/Lux3D/TM/TM_RedCaviar_Fish_DIFF.dds",
-          "size": 2860,
-          "hash": "5244b5a904e2094308bfba8baa5ad50f0c53b8de9e5aeeb419d89ed6a3bc0352"
+          "size": 848,
+          "hash": "7a785ad5aa05337f71a503380d101e07b747a504081b0a835e58006687e12a28"
         },
         {
           "path": "Art/Lux3D/TM/tm_red_caviar.fxsxml",
@@ -1869,8 +1869,8 @@
         },
         {
           "path": "Art/Lux3D/TM/tm_red_caviar_boats_diff.dds",
-          "size": 1398228,
-          "hash": "7883f34fa31615d77c43cc9d8668c44f41131494da5fdd303e91ef2833f2c265"
+          "size": 349680,
+          "hash": "d94fc7618ab55b6925b2733eacf8042293dfd7a9e778c9108179ce8f61914d34"
         },
         {
           "path": "Art/Lux3D/TM/tm_red_caviar_boats_Idle.gr2",
@@ -1879,8 +1879,8 @@
         },
         {
           "path": "Art/Lux3D/TM/tm_red_caviar_diff.dds",
-          "size": 1398228,
-          "hash": "a112a5b5a64e4c2dcca6e63dc8c446dc87dc21a36a56b580753456f6f0670e68"
+          "size": 349680,
+          "hash": "24aaa46d411a29f689bfc73f60fd132b75c25f405e54428a624b5c69d1831250"
         },
         {
           "path": "Art/Lux3D/TM/tm_red_caviar_fish.fxsxml",
@@ -1929,8 +1929,8 @@
         },
         {
           "path": "Art/Lux3D/TM/tm_rice_plantation_diff.dds",
-          "size": 1398228,
-          "hash": "7c90c68d0b2cdb80fc7ea83f09662109d09c61a660525d18d7170539939a6a72"
+          "size": 349680,
+          "hash": "75cbe4cf672a1ca29f670d60c4f2833b2d69efcec94648a9a972ff30e4bd17ff"
         },
         {
           "path": "Art/Lux3D/TM/tm_steel.fxsxml",
@@ -1944,8 +1944,8 @@
         },
         {
           "path": "Art/Lux3D/TM/tm_steel_diff.dds",
-          "size": 1398228,
-          "hash": "a41cf4d32a01861bc42f15e22a2b72e18377193602f0410ba4959883bc988559"
+          "size": 349680,
+          "hash": "b78582cabfcafd772afe994d2d106a336b3bc012ff281a6610ad9133d1e3dfa9"
         },
         {
           "path": "Art/Lux3D/TM/tm_steel_mine.fxsxml",
@@ -1959,13 +1959,13 @@
         },
         {
           "path": "Art/Lux3D/TM/tm_steel_mine_decal_D.dds",
-          "size": 65664,
-          "hash": "6a1351e42e07c4c02e9b02e6010bbec0f2f7c72ae4930db2f1cc9525328d2924"
+          "size": 16512,
+          "hash": "04ba7b2d7bde8cd7c92c734389696f94b80fafb6d55bc922e0bbf77006bfc6f1"
         },
         {
           "path": "Art/Lux3D/TM/tm_steel_mine_diff.dds",
-          "size": 1398228,
-          "hash": "fa762d7223151077962edb6a841078ca2b7702ebd2bde4c39f14105eb8939604"
+          "size": 349680,
+          "hash": "bea965ac082f624e10380c5427d6db8a3222cb42e5aed502afd39ce69dd82ad4"
         },
         {
           "path": "Art/Lux3D/TM/tm_steel_mine_hb_ind.fxsxml",
@@ -2029,28 +2029,28 @@
         },
         {
           "path": "Art/Lux3D/TM/tm_steel_ore_decal_DIFF.dds",
-          "size": 65664,
-          "hash": "c7b9c423bf586f1adc07618cdfafb2b387beed3fb12b808b264166a46299935b"
+          "size": 16512,
+          "hash": "c5ac860e83fd805421acd18e27f6adad970dfaae6b42ecdf4540d935673f61e6"
         },
         {
           "path": "Art/Lux3D/TM/tm_steel_ore_DIFF.dds",
-          "size": 65664,
-          "hash": "8306b98c4fbe5c908b48208467c8cbf6854193eb509a69b7dead46af341195a2"
+          "size": 8320,
+          "hash": "258cfa436f75ec24a070ce9380dcb35958d6d44f41f71eebc4d7754e734191e9"
         },
         {
           "path": "Art/Lux3D/TM/tm_steel_pl_mine_decal_D.dds",
-          "size": 65664,
-          "hash": "e024884c3213cfc2d2bf2fe9301f604ec079afe7302b176b05e98e04322408ee"
+          "size": 16512,
+          "hash": "d2f9d959af54fb8bb8643d66921a068bafb40de95199b5a6aa257e21b824e6ca"
         },
         {
           "path": "Art/Lux3D/TM/tm_steel_rubble_DIFF.dds",
-          "size": 262272,
-          "hash": "1c00d0a7d7313294a23d4db277ab55f8fdf7cec904d27a4e1c3af29cd0509a78"
+          "size": 32896,
+          "hash": "e00af92e70bb7691178be5edb353eea0be3fe060016e8a970204ce8496b3afb8"
         },
         {
           "path": "Art/Lux3D/TM/tm_sulfur_mine_decal_D.dds",
-          "size": 87508,
-          "hash": "0b60ca688be9cdb5d976b25df94ec13604fb621dbadb26ad6588fe2586b66298"
+          "size": 22000,
+          "hash": "fbd77450ef21b1e20208a87ee247f7598bbc278b84738d6d079efaab21f64061"
         },
         {
           "path": "Art/Lux3D/TM/tm_sulfur_mine_hb_ind.fxsxml",
@@ -2114,23 +2114,23 @@
         },
         {
           "path": "Art/Lux3D/TM/tm_sulfur_ore_decal_DIFF.dds",
-          "size": 87508,
-          "hash": "050140677f11c7bf260b1a8e5dd8665abeba3c4b70b7869c1d269802a60d358b"
+          "size": 22000,
+          "hash": "0434363d75d94b939482921d9a31d6176b6bfa9bc65e2159cd344c66adfe2dd2"
         },
         {
           "path": "Art/Lux3D/TM/tm_sulfur_ore_DIFF.dds",
-          "size": 87508,
-          "hash": "07b3a94754af8f8b2cb7198d7789531dccc49f8856376940e2c9723204195375"
+          "size": 11064,
+          "hash": "c453fac2ddb737bef07e779340e989893f46f65a8d588ceb211ad5289c543b00"
         },
         {
           "path": "Art/Lux3D/TM/tm_sulfur_pl_mine_decal_D.dds",
-          "size": 87508,
-          "hash": "af391cedf90388f053a3326f9d3362a86fa751019c431ca9092a92720db005c9"
+          "size": 22000,
+          "hash": "4b70894362dac102fac27751f557551d62bb3b7793a6f1b662eb9b75a611868b"
         },
         {
           "path": "Art/Lux3D/TM/tm_sulfur_rubble_DIFF.dds",
-          "size": 349652,
-          "hash": "9bd1abb5625d36a86b0216bbdba3745668dbc71c475fdda892dece1d4613abf6"
+          "size": 43832,
+          "hash": "5c4189ec3103b96e7341f44187482bddffb4596aac6b15976705ee3d0bad97fd"
         },
         {
           "path": "Art/LuxuryMine45.dds",
@@ -2191,156 +2191,6 @@
           "path": "Art/noncivicons_80.dds",
           "size": 38528,
           "hash": "38f2342d65c1220dbd6c63d8510def4af5bd26e84edc07990f807880ccf857ee"
-        },
-        {
-          "path": "Art/NovaAura_Crown.dds",
-          "size": 1398228,
-          "hash": "7968d0e51f5759e54342589adc6a820076c55c7f65e1c325787b90293861ada6"
-        },
-        {
-          "path": "Art/NovaAura_Ember.dds",
-          "size": 1398228,
-          "hash": "b19acd5210fda3aec5f60daa2d7433cb7f22ae7162fc4ee32ecf5147f4551b61"
-        },
-        {
-          "path": "Art/NovaAura_Halo.dds",
-          "size": 1398228,
-          "hash": "2b219d6c24fc5f9295deddc9f3c0ade21f156d3bf7155e494e4508c1a6dcc5b7"
-        },
-        {
-          "path": "Art/NovaAura_Orbit00.dds",
-          "size": 349652,
-          "hash": "0303f8e0543e1c88b26154b8289549e0ce28b457c1d49d5a9d17da6b8980772c"
-        },
-        {
-          "path": "Art/NovaAura_Orbit01.dds",
-          "size": 349652,
-          "hash": "29184abb3e07762f9362374a6c6e0011f2b6cffc7aa6dd4ceb28efc36687dfd5"
-        },
-        {
-          "path": "Art/NovaAura_Orbit02.dds",
-          "size": 349652,
-          "hash": "05b72fb6dfca0df8e0cdf3f2f9b76248210be7ac3b6c01fd59429ad175359c70"
-        },
-        {
-          "path": "Art/NovaAura_Orbit03.dds",
-          "size": 349652,
-          "hash": "2c0b09bf025eada0b1a2da4149ba244cb7b02edcedda1e524a2a53a3289d7c3b"
-        },
-        {
-          "path": "Art/NovaAura_Orbit04.dds",
-          "size": 349652,
-          "hash": "ad1f5fbd2dc963a560dd1143bc757cd7d34e19ca58ce1df5e879eccabaa80511"
-        },
-        {
-          "path": "Art/NovaAura_Orbit05.dds",
-          "size": 349652,
-          "hash": "83897278612e5364e89e169e543dd9cdea08bfd20ce89f0c5a9bd0137f033eaa"
-        },
-        {
-          "path": "Art/NovaAura_Orbit06.dds",
-          "size": 349652,
-          "hash": "dfb9340283534acbc610a8aae4760cbffeb34ea450731b35aa49655bec7ca4c2"
-        },
-        {
-          "path": "Art/NovaAura_Orbit07.dds",
-          "size": 349652,
-          "hash": "7b0229daec13786370f486fd86cc663f8060c7d20487ddaa449c956fcede3eba"
-        },
-        {
-          "path": "Art/NovaAura_Orbit08.dds",
-          "size": 349652,
-          "hash": "dab5d647bc86df1df74acde4c0a248047c2aef639f70bca8537e4900d631a108"
-        },
-        {
-          "path": "Art/NovaAura_Orbit09.dds",
-          "size": 349652,
-          "hash": "e5907d0d064cb06d73b271c264fc1a56d2461ff3e252594350e581055c1bc70b"
-        },
-        {
-          "path": "Art/NovaAura_Orbit10.dds",
-          "size": 349652,
-          "hash": "5e9a470b48da58cb7937594555f9d88e03bebfafad16ca222b1415641a437807"
-        },
-        {
-          "path": "Art/NovaAura_Orbit11.dds",
-          "size": 349652,
-          "hash": "16fe146278775c961d0fd7847be5067a9701cceee3d8ab5579b38ea5f59b8cea"
-        },
-        {
-          "path": "Art/NovaAura_Orbit12.dds",
-          "size": 349652,
-          "hash": "3cb04ec17be9ce74f826e29d540b6a417da99f7625f18d66639ed23ef83f647c"
-        },
-        {
-          "path": "Art/NovaAura_Orbit13.dds",
-          "size": 349652,
-          "hash": "b651cf1496f6769f16c61cc53bee6c0f734584e155cb90b2b222749c1c5ed69f"
-        },
-        {
-          "path": "Art/NovaAura_Orbit14.dds",
-          "size": 349652,
-          "hash": "5fdb1d3ce9308f1b0d3350c94bf2751d4e528852c0f41e1c080ce9ea83c25d9b"
-        },
-        {
-          "path": "Art/NovaAura_Orbit15.dds",
-          "size": 349652,
-          "hash": "3ee16b333ea0d5694ecb7577f429c99248dfee19636d964b8716614d67a6f9e1"
-        },
-        {
-          "path": "Art/NovaAura_Orbit16.dds",
-          "size": 349652,
-          "hash": "7731e1b5f8d130c2b88a62519b3aef52e1e89e39a7b1eb87407b89be55bb3cf7"
-        },
-        {
-          "path": "Art/NovaAura_Orbit17.dds",
-          "size": 349652,
-          "hash": "5b1b4fbc7cf82605592fc7269622f67f41232842b66452cfab6d014fd872f52f"
-        },
-        {
-          "path": "Art/NovaAura_Orbit18.dds",
-          "size": 349652,
-          "hash": "bd503c7b5f3f54b14e9decef79424b8eb8c90169d6766a73071886fa5f2278a8"
-        },
-        {
-          "path": "Art/NovaAura_Orbit19.dds",
-          "size": 349652,
-          "hash": "25276499cbc679a4637eeff8666992dbccc219c3af6ef24e7890558f8b05de7b"
-        },
-        {
-          "path": "Art/NovaAura_Orbit20.dds",
-          "size": 349652,
-          "hash": "0455d5409cdb91ecd286377c8d41791871810174540f10903c34a04345ed9f4e"
-        },
-        {
-          "path": "Art/NovaAura_Orbit21.dds",
-          "size": 349652,
-          "hash": "4b70f02b8cbcb506e638d057f4df694c7b6d1232dde2e71645a0e2378f132ba0"
-        },
-        {
-          "path": "Art/NovaAura_Orbit22.dds",
-          "size": 349652,
-          "hash": "30f09a248119ea2f1a79c1d887013545661a713832f36c988425766b5f783b4d"
-        },
-        {
-          "path": "Art/NovaAura_Orbit23.dds",
-          "size": 349652,
-          "hash": "15547d67442314b9310d458ae7dd0ac858ddd378c91a36db71f5f3da540a9aa3"
-        },
-        {
-          "path": "Art/NovaAura_Pulse.dds",
-          "size": 1398228,
-          "hash": "4aff67a773ef64f7ecd3dd63b58b2abcc242719125e12944fe8af13a9182a8fb"
-        },
-        {
-          "path": "Art/NovaAura_Rime.dds",
-          "size": 1398228,
-          "hash": "2f5c2e511744d3f889e5f84ef9efcd3f4e5dcca701aa1e531105d82dc9d17060"
-        },
-        {
-          "path": "Art/NovaAura_Sigil.dds",
-          "size": 1398228,
-          "hash": "4d8d6f1e49d773c56fdc23dca47edb528d23e939c7bd7fa6548fca768304040a"
         },
         {
           "path": "Art/NovaEraBonusNotif128.dds",
@@ -3159,8 +3009,8 @@
         },
         {
           "path": "Art/Skins/Canhoneira_dmg_diff.dds",
-          "size": 699180,
-          "hash": "10bdbfff4b6498711a33b6785645d07f3f60f9ce5fd86d3f3f79a8971604d776"
+          "size": 87528,
+          "hash": "5997497ee20a3b74817eabb08fbc70cf1ed9c2fe7532f92e00368052c9b9f606"
         },
         {
           "path": "Art/Skins/Canhoneira_sref.dds",
@@ -3204,8 +3054,8 @@
         },
         {
           "path": "Art/Skins/CarthageSpearman_sref.dds",
-          "size": 262272,
-          "hash": "3cefc254393d81e76c87912aba978adfbbe23e27cad251781b339da9c49d3afa"
+          "size": 65664,
+          "hash": "12a633d3451913a530be438732086975044b4c6ad6e78bade046b0bd4666e8b5"
         },
         {
           "path": "Art/Skins/CarthageSwordsman.dds",
@@ -3324,8 +3174,8 @@
         },
         {
           "path": "Art/Skins/Celtic_Warrior_sref.dds",
-          "size": 262272,
-          "hash": "499781fbbb4d3ff0d2751711da798bec4c052ef728345c68fd033069e1d1920b"
+          "size": 32896,
+          "hash": "ea84b028a53909660d90de76273335374833e301ca20f7ef5fd447aba9b51273"
         },
         {
           "path": "Art/Skins/chirm2.dds",
@@ -3964,13 +3814,13 @@
         },
         {
           "path": "Art/Skins/Eia_DIFF.dds",
-          "size": 524416,
-          "hash": "4c57f29848ec48d5af523aeee73d1c4e040caeea6b89c8095a009a61930b558e"
+          "size": 131200,
+          "hash": "1e7138b0aad057cd06eb476c6d373ec7fd17bf800cb4594a861e98a705efda6b"
         },
         {
           "path": "Art/Skins/Eia_DMG_DIFF.dds",
-          "size": 524416,
-          "hash": "9d9f7060a04c3ee140ee32ff418b4a316a473a300b0e71089591ab014644de70"
+          "size": 131200,
+          "hash": "62b519d29c9c82982c563cc9387aaf0ad9a5b4fb37cd7a71846ec6fa040dcfac"
         },
         {
           "path": "Art/Skins/Eia_DMG_SREF.dds",
@@ -4009,13 +3859,13 @@
         },
         {
           "path": "Art/Skins/EthiopiaArcher_sref.dds",
-          "size": 262272,
-          "hash": "0678f146b7c1b64bca668d68768981329699f9c11fe671e786b7c57eb74de89a"
+          "size": 32896,
+          "hash": "023c88bd1aab0bfff74cc653beef36e4557d883615c11c83bf907baf448d183d"
         },
         {
           "path": "Art/Skins/EthiopiaCrossbow.dds",
-          "size": 262272,
-          "hash": "9e20f7d5d2b667e5c825532c1c7fa71253c43fc7b967ccae21a777f328663f97"
+          "size": 32896,
+          "hash": "6ddd0615e07914fe03d3a16cd9893b420510bc691dbd431c8d8d37a3e6835ccf"
         },
         {
           "path": "Art/Skins/EthiopiaCrossbow.fxsxml",
@@ -4029,18 +3879,18 @@
         },
         {
           "path": "Art/Skins/EthiopiaCrossbow_sref.dds",
-          "size": 262272,
-          "hash": "45b1dd567a0db16dc5e137a039d5160437e4df3679eb5d51aa484eed1eb96dce"
+          "size": 32896,
+          "hash": "d79917ec465352f8ce114c49c28066d76bf5130a327766486ba946cbbd0193ad"
         },
         {
           "path": "Art/Skins/EthiopiaMedHorse.dds",
-          "size": 65664,
-          "hash": "819457c20e6a6eda607cf04c3e4901dd6861e8e38d0ec1ef59a51f72be3f9cec"
+          "size": 8320,
+          "hash": "27d4550fd7ebc0271109f911844273a47d8d099bc1b5b64b63726eabe48dab6d"
         },
         {
           "path": "Art/Skins/EthiopiaMedHorseman.dds",
-          "size": 262272,
-          "hash": "c7324015d38fc0320f2099dc074264b87a71df6ab98d5e4f0c440e26b91ef3e6"
+          "size": 32896,
+          "hash": "0fd7fd2d83f34238eebdbfba0288de7db14faeaf8e505c175f9cacd04cd10e59"
         },
         {
           "path": "Art/Skins/EthiopiaMedHorseman.fxsxml",
@@ -4054,13 +3904,13 @@
         },
         {
           "path": "Art/Skins/EthiopiaMedHorseman_sref.dds",
-          "size": 262272,
-          "hash": "2397c98c0ce1c05e6f4465aa6b165d9a5489861831509e05f29b082b8e127a18"
+          "size": 32896,
+          "hash": "805bf49dfc5b11d2c91af3b8b2b270a6cbb2f4a3105a767b99bc09d2c5d2f240"
         },
         {
           "path": "Art/Skins/EthiopiaMedHorse_sref.dds",
-          "size": 65664,
-          "hash": "89e5f673f22b32233d0fbd932dd9d49f67fcd69e096785aee153381a3cf4a1be"
+          "size": 8320,
+          "hash": "43a551a76b8f0a52371062500e29428e4c81d907dd18dd5750a6594c6e4b5062"
         },
         {
           "path": "Art/Skins/EthiopianPikeman.dds",
@@ -4079,8 +3929,8 @@
         },
         {
           "path": "Art/Skins/EthiopianPikeman_sref.dds",
-          "size": 262272,
-          "hash": "4c42f65cb6da59a781e7238acfda44bf7ad58a33c9fb26d0ca9df0648bf4be71"
+          "size": 32896,
+          "hash": "32ec0b58d2b28231dd9e1a35c4db965ea12d4502f3506d35a9c12f1d813f980e"
         },
         {
           "path": "Art/Skins/EthiopianScout.dds",
@@ -4099,8 +3949,8 @@
         },
         {
           "path": "Art/Skins/EthiopianScout_sref.dds",
-          "size": 262272,
-          "hash": "7fe02bb642980e8b29325e5c7571ae36b113b523449211adad93ffba7bfa0736"
+          "size": 32896,
+          "hash": "e9d233a970890ed915f85c819d6dbef56a00a6efab838bfb61248d64c41527d5"
         },
         {
           "path": "Art/Skins/EuroScout.fxsxml",
@@ -4619,8 +4469,8 @@
         },
         {
           "path": "Art/Skins/HunWarrior.dds",
-          "size": 262272,
-          "hash": "99425900088849b8354435d477a14699fe46b0cd04c84c7d032f9c0de2dfd415"
+          "size": 65664,
+          "hash": "dc034ce2b4d6f92bac3623ff57df610ef750f3dab81077cb012f706db2cfd9d1"
         },
         {
           "path": "Art/Skins/HunWarrior.fxsxml",
@@ -4634,8 +4484,8 @@
         },
         {
           "path": "Art/Skins/HunWarrior2.dds",
-          "size": 262272,
-          "hash": "87b6b1de8bae7798ea75bb22bdaea02d1555891330a1b227ca14b648cfcac982"
+          "size": 65664,
+          "hash": "c92ba307a384dd4d3dcdebbe9b06b302980d8f312694acd9476089cb4d011c46"
         },
         {
           "path": "Art/Skins/HunWarrior2.fxsxml",
@@ -4649,13 +4499,13 @@
         },
         {
           "path": "Art/Skins/HunWarrior2_sref.dds",
-          "size": 262272,
-          "hash": "4ddfc72c182b0b3f92d3c4f99bc7589bee202baafd75308c3d44c69a62c8172c"
+          "size": 65664,
+          "hash": "7e7aed81a309191e36e3794aa82bdd8536f37768f8ac6fa931fcfec5ca291e33"
         },
         {
           "path": "Art/Skins/HunWarrior_sref.dds",
-          "size": 262272,
-          "hash": "4c3003a167b3014d48172e1b64e5ec14f0576caa30a1fc3ccc47cf657920fc3b"
+          "size": 65664,
+          "hash": "a2830ca13ddb5846958ad1d0e1c33e2a7ade78a6c8444ef5ad435e75cbb4d33c"
         },
         {
           "path": "Art/Skins/impi_1.dds",
@@ -4809,23 +4659,23 @@
         },
         {
           "path": "Art/Skins/iroco1.dds",
-          "size": 262272,
-          "hash": "f5f0d1fff5297d4a1a5bc9dff9212fdef80b2eb83479124e8e1e19d733ec3fa9"
+          "size": 65664,
+          "hash": "edf4acf5e11746fd1ea6fe4bf36fd67816a1bcac46677c22bce8511362b531eb"
         },
         {
           "path": "Art/Skins/iroco1_sref.dds",
-          "size": 262272,
-          "hash": "b02c73ee155e0e735d1392e6137b696df8c643492aa2198072fede7a1f4413d6"
+          "size": 65664,
+          "hash": "dbabc14c380f3d182c1072d58a7f5f846bd86cad0a5e2567a33d79e2825d16fb"
         },
         {
           "path": "Art/Skins/irohm3.dds",
-          "size": 262272,
-          "hash": "a550bba2d1804ed336e0835f1f04cb2a7e23549f1e39edb1b1a86f86033a1b52"
+          "size": 65664,
+          "hash": "2d164153e4f28389e881bfca88e0f8687779d2c589c4b526f045c28b34abbf83"
         },
         {
           "path": "Art/Skins/irohm3_sref.dds",
-          "size": 262272,
-          "hash": "dcb61a2b9ba0277609c0093ff1128a0bc3bf089152e4da33ce9dde0c9660acce"
+          "size": 65664,
+          "hash": "c5ccc7bc073ae115a63c58c14f8d697d287d62eb33f419952e780bff9e8162fe"
         },
         {
           "path": "Art/Skins/irohorse3.dds",
@@ -4839,23 +4689,23 @@
         },
         {
           "path": "Art/Skins/iromu1.dds",
-          "size": 262272,
-          "hash": "fca4ab697719fff22378b039051beba2fa19d172b2fd98dd545c81a512c98be4"
+          "size": 65664,
+          "hash": "f9c46f2e165f2667614dfdc3faaedcfdb498ae4a0c947f35ffa41c1e5993f338"
         },
         {
           "path": "Art/Skins/iromu1_sref.dds",
-          "size": 262272,
-          "hash": "cea6e6f8070eccf85ddcda31d3ad65b2764ff8c4521a9535a568f7f55b742c7c"
+          "size": 65664,
+          "hash": "a9a4801f783bd51f88980a3c71cf0cc8e63c4e26c7714d457803810dc30fe5fa"
         },
         {
           "path": "Art/Skins/iropi1.dds",
-          "size": 262272,
-          "hash": "2e5ec478839bb7f87e807a5cacb4736bce17c48409eea2e52e05caa7ab70f3dd"
+          "size": 65664,
+          "hash": "2fd621cbeb6fc08a75df60ec5bb0ce018a34763167adf2fb4b1efb59c7b18a34"
         },
         {
           "path": "Art/Skins/iropi1_sref.dds",
-          "size": 262272,
-          "hash": "6da00abab8b3735e83799a2c565e31842612cfcbb4fdc2c4907d58dad19112e7"
+          "size": 65664,
+          "hash": "3d43599411954a3f6d4e7c50845783d2db0572118dcf889437f447560d5d61b4"
         },
         {
           "path": "Art/Skins/irosc1.dds",
@@ -5709,8 +5559,8 @@
         },
         {
           "path": "Art/Skins/M1Abrams.dds",
-          "size": 16777344,
-          "hash": "ed1e47478bcf98c2931c6f8a8141c6a968ccd2b7e5d0bb73f16a53848a2aceb6"
+          "size": 2097280,
+          "hash": "9311c1d8a678b0f7d68114a67871148cd29e9741478845af5d631018aeed16e6"
         },
         {
           "path": "Art/Skins/M1Abrams.fxsxml",
@@ -5784,8 +5634,8 @@
         },
         {
           "path": "Art/Skins/matatoa_diff.dds",
-          "size": 349652,
-          "hash": "efb93b6b712728c062aaa8477913daf8e335f33602ee5fc6df1a4f2268a04544"
+          "size": 87536,
+          "hash": "e6283a5fe2f4e5c8749981001a570a5ffa7c7348dacb2faea20cbdf5dc03992c"
         },
         {
           "path": "Art/Skins/Mesopotamic_warrior_tc.dds",
@@ -6439,8 +6289,8 @@
         },
         {
           "path": "Art/Skins/PolySword_sref.dds",
-          "size": 262272,
-          "hash": "bf5aa125126558cd522c2fcf3c08dc9a55aaef0f9ffdb34ba8ad545089c3ae4c"
+          "size": 32896,
+          "hash": "105357a4442b21f1723dacdd77eba60ec291c5fbf36f83b19ad3ffc92f519a5c"
         },
         {
           "path": "Art/Skins/PortugalSpearman.dds",
@@ -6884,8 +6734,8 @@
         },
         {
           "path": "Art/Skins/SonghaiPikeman_sref.dds",
-          "size": 262272,
-          "hash": "c983970cf31321bb91abc18acef9707a87c5fb2e4b7e280f8d2391ee79610be3"
+          "size": 32896,
+          "hash": "8b91c161383905753a7ebefc70f10c57e269c9c8c2ee56ba3a2cf375e65d27fc"
         },
         {
           "path": "Art/Skins/SonghaiScout.dds",
@@ -6904,8 +6754,8 @@
         },
         {
           "path": "Art/Skins/SonghaiScout_sref.dds",
-          "size": 262272,
-          "hash": "b7d3c673556a0e95d0b0e6a4c0247c7f9957d7f80af8e37610620b083a8291a9"
+          "size": 32896,
+          "hash": "2d4f44b1e30e8815a340c68a965e912a78a3c3e4f53020a5598dcc7b20a75c6e"
         },
         {
           "path": "Art/Skins/SonghaiSpearman.dds",
@@ -6924,8 +6774,8 @@
         },
         {
           "path": "Art/Skins/SonghaiSpearman_sref.dds",
-          "size": 262272,
-          "hash": "a5742d0f22f7bb1fecd16ad9c8dc46b6686919a63528fbe205368525149e2905"
+          "size": 32896,
+          "hash": "e807737701355ff6563ceedccafc3a8afebfcfaa6312b6dde5a9046346b7580c"
         },
         {
           "path": "Art/Skins/sparm1.dds",
@@ -7214,8 +7064,8 @@
         },
         {
           "path": "Art/Skins/SudanSwordsman_sref.dds",
-          "size": 262272,
-          "hash": "ff67e5bff6aeb94e7c67956591899bcc1bbd6887aaf25cbefa883d71cd005e6f"
+          "size": 32896,
+          "hash": "48ef4ec679cd70169f6a9f12ff1b411de44f1ddb23324983ed9b94d2f6661558"
         },
         {
           "path": "Art/Skins/sv_Vitez.dds",
@@ -7524,8 +7374,8 @@
         },
         {
           "path": "Art/Skins/Tu-95_diff.dds",
-          "size": 262272,
-          "hash": "49454b2031b505506995eef4412fc480eb68c70f82667cd93cc53aaf1d8409ca"
+          "size": 65664,
+          "hash": "5b6f85fcb5087f314356b8c15afe47891595267f2d89046ce7123e32c14e3c75"
         },
         {
           "path": "Art/Skins/Tu-95_sref.dds",
@@ -8294,113 +8144,113 @@
         },
         {
           "path": "Fonts/JPHeavyFK14.dds",
-          "size": 3276928,
-          "hash": "34898271eb1fe9f70ba26b99711b71983df6796ee20cca17ee229ff4b3a3d987"
+          "size": 819328,
+          "hash": "fd8b3013a3d36a5ddf4c5a69251c8d4e0d273bf97d271d4b7393aac48f16617e"
         },
         {
           "path": "Fonts/JPHeavyFK14Shadow.dds",
-          "size": 4369020,
-          "hash": "735962d92d521528ad932641aa80b9ddc81655efc96bd77c323792c0ff9455ff"
+          "size": 1093392,
+          "hash": "8fcb0de6ac2b85dace921fe8386f53ede246dc177e288142a9f281b26ac4e526"
         },
         {
           "path": "Fonts/JPHeavyFK14Soft.dds",
-          "size": 3276928,
-          "hash": "986810f6d8244dcb3e2c7c12b98d9afa5a9e327e8930d223df34234ce80de33a"
+          "size": 819328,
+          "hash": "612bc86a09d1d0ff7738c5966722de8216ef1a1ed8210d39bcce17bc08df48b1"
         },
         {
           "path": "Fonts/JPHeavyFK14Stroke.dds",
-          "size": 3276928,
-          "hash": "5004562930e1c8c6383cad967abfb5ba3aabde79c05c5a20d6490f303693308b"
+          "size": 819328,
+          "hash": "90d812298a388160a886356fc131e69fc5d96812f341f0464e1617a49b161c73"
         },
         {
           "path": "Fonts/JPHeavyFK16.dds",
-          "size": 4369020,
-          "hash": "b5a7f8b1c5c6561b4a6b5a9517f2af090e9b81ca64af961b90aeb4696d2f2d4d"
+          "size": 1093392,
+          "hash": "68e6eb4464436935f2b4d74bb6fb33c49d7a350126ec6d02fe40068c7671a4f8"
         },
         {
           "path": "Fonts/JPHeavyFK16Shadow.dds",
-          "size": 4369020,
-          "hash": "ab3732a5499bbc0531e0cf3ee8cc84fe60a58d95143774e015d9964ec6d0ee8d"
+          "size": 1093392,
+          "hash": "e36f6f0625a24bcbe301cef0ad1b668005404c5a3c00facd5e7f592563bd9c3d"
         },
         {
           "path": "Fonts/JPHeavyFK16Soft.dds",
-          "size": 3276928,
-          "hash": "ea695243f648e85cc04a077cab8f7f6c522f082be901d87d4957fbc6205f6361"
+          "size": 819328,
+          "hash": "6223d0d69efd25e5f1033bcdd90a1f4d9b668db2eb9779d27a513184c0bd35a5"
         },
         {
           "path": "Fonts/JPHeavyFK16Stroke.dds",
-          "size": 3276928,
-          "hash": "771eebec9576b84f1c36b3dd7c62b0eeb452b39b495cc23382443c1ae6810c10"
+          "size": 819328,
+          "hash": "a9b0d30ca09084d105f149b855fca79bc2643028dc0346a5aea0b547cbab582a"
         },
         {
           "path": "Fonts/JPHeavyFK18.dds",
-          "size": 4369020,
-          "hash": "a38efec4fd45a3251bd99152f0263021552441598261b2ac78a17cfda430a02c"
+          "size": 1093392,
+          "hash": "5044c2c8449639c3a37fef8be55d3d6585b6f87ba3e989d9a327406a740d6648"
         },
         {
           "path": "Fonts/JPHeavyFK18Shadow.dds",
-          "size": 4369020,
-          "hash": "f738ca4f6a5bdf9abcf79c8f8cb449f5fe8237751cda415e7bc07d6c897173d3"
+          "size": 1093392,
+          "hash": "107db0fbf42893fb03af5fabd6708262dd2628f51414d3496c0356bab607b136"
         },
         {
           "path": "Fonts/JPHeavyFK18Soft.dds",
-          "size": 3276928,
-          "hash": "2ad111aafee39ea89c87961944e534e5da5daeead8093add30d9b021d3d0c741"
+          "size": 819328,
+          "hash": "d1c62b736477c3abb3dee6457d4beebd3c0569e2c62ee18e7e01b4f1b76c64ec"
         },
         {
           "path": "Fonts/JPHeavyFK18Stroke.dds",
-          "size": 3276928,
-          "hash": "6e0431a267794a0b5e666bef987c50cd3053da01d118225546266aaaf78a60c4"
+          "size": 819328,
+          "hash": "3c859945ccb99966f38f4e838002ca0b98657eb8a7dac9dd3d33570f7684d192"
         },
         {
           "path": "Fonts/JPHeavyFK20.dds",
-          "size": 4369020,
-          "hash": "90993e2ec522ce54227f0950ab7aed479a0aaf39154776a643908973fc457efd"
+          "size": 1093392,
+          "hash": "c23ffcb9cea12a469353eb3cafcd8712dde743e3b7692a1632bbdfee827e1d5d"
         },
         {
           "path": "Fonts/JPHeavyFK20Shadow.dds",
-          "size": 4369020,
-          "hash": "5ac1d63439ed3b7c88454778e2da11bd8e0414c73e8464378f01a93389156091"
+          "size": 1093392,
+          "hash": "a31e39a314bd463935f4d34a78ae51d3019f6443a01c21568766d35c24f15760"
         },
         {
           "path": "Fonts/JPHeavyFK20Soft.dds",
-          "size": 3276928,
-          "hash": "caf4ff2c8071bb2bf3d6749b7e8059639dd3497945981b3fbe0c54f6d6e8a70c"
+          "size": 819328,
+          "hash": "b90bbba1b0d8b6149747c81482e380c88bd0be7918cbaa8b5a8e3fc48ef98fd6"
         },
         {
           "path": "Fonts/JPHeavyFK20Stroke.dds",
-          "size": 3276928,
-          "hash": "4590bcbd7511edc09af2fca967a5fd8a8e72461d74facf642e933a3a58ac4875"
+          "size": 819328,
+          "hash": "0f238b66cb15e711ea842e6a1b6a9f684b1405dec862619a35c34af10f397fb9"
         },
         {
           "path": "Fonts/JPHeavyFK22.dds",
-          "size": 4369020,
-          "hash": "610ecfc6f390796b22b015a2c2138797d030ede2ccc2f5a6ae9b56436f29791a"
+          "size": 1093392,
+          "hash": "b54a16a24e3949d06d3facf09151284b7a020170bd97a1179feb78c68c5eea7f"
         },
         {
           "path": "Fonts/JPHeavyFK22Shadow.dds",
-          "size": 4369020,
-          "hash": "e9e33bb893837e9a3d04c81e497c61abd25b5b0ea27840cb92e41f5de573c297"
+          "size": 1093392,
+          "hash": "4d814fd22d6ef4a16f033613aa8cb054af1238572afd1394d8b00edc428f67f4"
         },
         {
           "path": "Fonts/JPHeavyFK22Soft.dds",
-          "size": 3276928,
-          "hash": "2578579391edf020a0ecd0852ac12141268d82e0ac99a5a0647d5b93d36520ac"
+          "size": 819328,
+          "hash": "94d32ab4f2af308efbd55cfec6f27dc9ad9ac77c2d0c62d3e15c94d3ec4a3d6e"
         },
         {
           "path": "Fonts/JPHeavyFK22Stroke.dds",
-          "size": 3276928,
-          "hash": "10614f8a08ae9fedd182308b975344e1740747b224576192165ece5eb39eb3d1"
+          "size": 819328,
+          "hash": "0cabc44bac8610e0c502c27ee1fd15d2aca0d5feff574994734ddb02a3b8a1a5"
         },
         {
           "path": "Fonts/JPHeavyFK24.dds",
-          "size": 4369020,
-          "hash": "8027e2166b95a81b0b85d6868546b46ca4b4c8e0da12fd3a8796b30f62e47e41"
+          "size": 1093392,
+          "hash": "fa9946e5fdb5f0757dae15fafceb9217c6e9cc6301cb7f77d3607420963d003b"
         },
         {
           "path": "Fonts/JPHeavyFK24Shadow.dds",
-          "size": 4369020,
-          "hash": "f89ab7457f3c62292a2e2cac50deefca33fd2b51c3a9a6299cabdc32b8ec0936"
+          "size": 1093392,
+          "hash": "f77071b1d3169ba0b6b898623bceeb8e870829e5b090265b9d2b0d6898f32047"
         },
         {
           "path": "Fonts/JPHeavyFK24Soft.dds",
@@ -8409,8 +8259,8 @@
         },
         {
           "path": "Fonts/JPHeavyFK24Stroke.dds",
-          "size": 3276928,
-          "hash": "a3ab0112bc8cb02288e64437085a7f70d7d1168a0f5150bbb5d8dddd93372718"
+          "size": 819328,
+          "hash": "d85c54c06adeca0237d162c8346de9ef4701207d8bcf460fe35e0c965976384b"
         },
         {
           "path": "Fonts/TwCenMT14.ggxml",
@@ -12944,8 +12794,8 @@
         },
         {
           "path": "tmp/ui/Highlights.xml",
-          "size": 10740,
-          "hash": "e72fab0dcbbb9ba84af2100177f219c12bec67d1da1cacb2bbec8e7f00a75563"
+          "size": 6433,
+          "hash": "970f006935e368c50bb0e309e1d7e49fbc34232d44307a679a1892ac44c3d43d"
         },
         {
           "path": "tmp/ui/ImportHappiness.lua",
@@ -12959,8 +12809,8 @@
         },
         {
           "path": "tmp/ui/InGame.lua",
-          "size": 52339,
-          "hash": "ee6cdf9a1519e79dfe87ac971605e31755637739d49bbd836d80c1bbc9e9e446"
+          "size": 52300,
+          "hash": "8dafebc1cfe64f3e4389a765156364fe72fc8aae8138d3311e40565b81a63513"
         },
         {
           "path": "tmp/ui/JoiningRoom.lua",
@@ -13056,16 +12906,6 @@
           "path": "tmp/ui/NotificationPanel.xml",
           "size": 127970,
           "hash": "59b508c858e3a02f9ff4884a507ffb87a2edf35b4cdc825fcdad90b747813148"
-        },
-        {
-          "path": "tmp/ui/NovaAura.lua",
-          "size": 34351,
-          "hash": "819704ae544c8a229943d91a42d826d9b297be0a54f88ce0d58d1c18d7f4d334"
-        },
-        {
-          "path": "tmp/ui/NovaAura.xml",
-          "size": 1245,
-          "hash": "0fe8ce05ff5435be728e94a956a7f87a999fa6d4529dcf70dd471f5bfc560b5e"
         },
         {
           "path": "tmp/ui/NovaSkins.lua",
@@ -13339,8 +13179,8 @@
         },
         {
           "path": "ui_check.bat",
-          "size": 21569,
-          "hash": "e4a02684a727f4dd5cb8322e02ee05f53b4a3be3e2b1b2b91a81c58f515224c1"
+          "size": 21403,
+          "hash": "4127bf0e822f3150606ddc20a7a10c0651cd13bcf182084d91fdd85859fc3e77"
         }
       ]
     },
@@ -13437,16 +13277,6 @@
       {
         "from": "tmp/ui/TurnProfiler.xml",
         "to": "UI/TurnProfiler.xml",
-        "when": []
-      },
-      {
-        "from": "tmp/ui/NovaAura.lua",
-        "to": "UI/NovaAura.lua",
-        "when": []
-      },
-      {
-        "from": "tmp/ui/NovaAura.xml",
-        "to": "UI/NovaAura.xml",
         "when": []
       },
       {
