@@ -23,7 +23,7 @@
      news.txt           лента новостей (тот же файл, что читает лаунчер)
      data/changelog.md  история версий (кладётся при выкладке из Nova/CHANGELOG.md)
      data/skins.json    опись обликов войск (кладётся при выкладке из Nova/skins.json),
-                        картинки к ней — assets/skins/ из Nova/Art/SkinShots/
+                        картинки к ней — assets/skins/ из Nova/SkinShots/
      data/site.json     то, что знает только владелец: Discord, авторы, галерея
    --------------------------------------------------------------------------- */
 
