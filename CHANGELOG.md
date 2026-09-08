@@ -6,6 +6,37 @@
 
 ---
 
+## [1.5.84] — 2026-09-09
+
+### Added
+- Своя модель `Mi24Russia` у `UNIT_ATTACK_HELICOPTER` вместо ванильной
+  `HelicopterGunship`. 35 костей в ванильных мировых позициях (расхождение ≤ 0.0005),
+  анимации ванильные, `Scale` ванильный 0.1, `ZOffset` отсутствует — высота висения
+  вшита в геометрию, как у ванильного вертолёта. Новые строки в `ArtDefine_UnitInfos`,
+  `ArtDefine_UnitInfoMemberInfos`, `ArtDefine_UnitMemberInfos`,
+  `ArtDefine_UnitMemberCombats`, `ArtDefine_UnitMemberCombatWeapons`,
+  `ArtDefine_StrategicView`; переключён `Units.UnitArtInfo`.
+
+### Fixed
+- **Двойная скидка Биг-Бена.** Скидка на покупку зданий была задана дважды:
+  колонкой `Buildings.BuildingHurryCostModifierGlobal` (−15, только здания) и строкой
+  ванильной таблицы `Building_HurryModifiers` (−15, вообще всё). Оба слагаемых падали
+  в одну сумму: −30% вместо −15%, причём ванильное резало цену и юнитам. Лишняя строка
+  удалена, осталась колонка форка — она building-only и совпадает с текстом чуда.
+- `TXT_KEY_POLICY_SKYSCRAPERS_HELP` (en_US): «reduced by 50%» → 33%, по данным
+  (`BuildingPurchaseCostModifier = -33`). Обе русские копии уже говорили 33%.
+- `TXT_KEY_BUILDING_BIG_BEN_STRATEGY` (en_US): убраны «units and Wonders», «25%» и
+  «+2 культуры каждому специалисту» — ни одного из этих эффектов у чуда нет
+  (проверено полным перебором таблиц базы).
+- `Art/Skins/Mi8Russia.fxsxml`: ссылка на несуществующий `fx_triggers_Mi8.ftsxml`
+  заменена на общий `FX_Triggers_HelicopterGunship.ftsxml`; возвращена отдельная
+  строка анимации `AttackA` — её коды событий были присобачены к `AttackB`, и своя
+  анимация атаки не проигрывалась вовсе.
+
+### Не проверено в игре
+- Ми-24: висение, проигрывание анимаций, вспышки на стволах, иконка стратегического
+  вида. Проверка только статическая.
+
 ## [1.5.83] — 2026-09-08
 
 ### Fixed
