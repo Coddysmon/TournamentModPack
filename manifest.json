@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.71",
+  "packageVersion": "1.5.72",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-09-07T23:00:48.2503213+00:00",
+  "createdUtc": "2026-09-08T09:46:13.6148408+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -2243,6 +2243,26 @@
           "hash": "148f1263f69b0c8eec70e4f827f45311d2226d1b6344272ee33ee995d92d0072"
         },
         {
+          "path": "Art/nova_quartermaster_cache_256.dds",
+          "size": 262272,
+          "hash": "7ba0707bd45a67db9103756598de8bf4c0f017720c3aff3d4d8d5e54e110437f"
+        },
+        {
+          "path": "Art/nova_quartermaster_cache_32.dds",
+          "size": 4224,
+          "hash": "c286dc7dd86408eb439eec66c320de84e0ab45c9829f8844283d21ac74d64089"
+        },
+        {
+          "path": "Art/nova_quartermaster_cache_45.dds",
+          "size": 8228,
+          "hash": "f766d2087a7a515e56dc2eb2e0e2493cbeb308c00f0caaf9b794064e28b7cfc4"
+        },
+        {
+          "path": "Art/nova_quartermaster_cache_64.dds",
+          "size": 16512,
+          "hash": "04bdc71b20cbc5523aad411d5aaaaf8f1d3236f894e4f16d395b444fa1ab9d85"
+        },
+        {
           "path": "Art/nova_tipi_256.dds",
           "size": 262272,
           "hash": "1abf384aa3c02a3c2a9b2749aff129fe304cd9949818295d74e4c342a6f3474a"
@@ -2304,8 +2324,8 @@
         },
         {
           "path": "Art/Skins/10TP.gr2",
-          "size": 23412,
-          "hash": "3c6dea4cf01d2ce0cf8559944c800d94267d5edb6132b5bfcbd3ad201adb3be2"
+          "size": 22868,
+          "hash": "7237f8cee1d488bfbda8d887d51e114ed2a24b180ad5c9381d63dfd6fb962086"
         },
         {
           "path": "Art/Skins/155mmDeBang.dds",
@@ -2329,8 +2349,8 @@
         },
         {
           "path": "Art/Skins/77cmFk.gr2",
-          "size": 67716,
-          "hash": "73d5951c922127dd7e5667ad4dded8f97ee945e13d9e3b6b068d7377e175361f"
+          "size": 67720,
+          "hash": "088acc84e57a866e3ee8ca66c81b9585b7deb30092f5a805d00bc0d4c7a3a731"
         },
         {
           "path": "Art/Skins/77cmFkCrew_diff.dds",
@@ -2359,8 +2379,8 @@
         },
         {
           "path": "Art/Skins/A-7.gr2",
-          "size": 25640,
-          "hash": "d1a5ff2c8b7d9faa1197382cbc1aa46a45a54d7596b316dfd8fedab53ee0c478"
+          "size": 25660,
+          "hash": "3afd85deaa23ee2d3d7e6e4b8a3cdf8ece497ec37528786fd3476690e653ce50"
         },
         {
           "path": "Art/Skins/A-7Portugal.fxsxml",
@@ -2369,8 +2389,8 @@
         },
         {
           "path": "Art/Skins/A-7Portugal.gr2",
-          "size": 25660,
-          "hash": "6e8faa1d03f869d6315a5d2fc21b0eb089925298be12f7086682879e326d70f9"
+          "size": 25680,
+          "hash": "4c02452c5d7ef68b2f5899851814e5cc4776c0e350860ec0a630f826ad3c116f"
         },
         {
           "path": "Art/Skins/A-7Portugal_diff.dds",
@@ -2399,8 +2419,8 @@
         },
         {
           "path": "Art/Skins/A12_Matilda_II_5.gr2",
-          "size": 41360,
-          "hash": "5cabf003fda008635438e70891bfdd046b33646ed98144b5adaf3fafd98f5089"
+          "size": 40836,
+          "hash": "2cc4b2a05a20c3291e55e34171fba122cd5d51fdd7393fb487a352aa88ed13e0"
         },
         {
           "path": "Art/Skins/Admiralen_Class.dds",
@@ -2414,8 +2434,8 @@
         },
         {
           "path": "Art/Skins/Admiralen_Class.gr2",
-          "size": 24468,
-          "hash": "6956f5b90da9a38bd57f99c4f9419ad2251e681752923e59bf8ea8d3b78395f6"
+          "size": 24096,
+          "hash": "69d11fb3f04510cbc10983bd75860fd4f554f59f55dc52094995fad9c99e0e26"
         },
         {
           "path": "Art/Skins/Admiralen_Class_gloss.dds",
@@ -2434,8 +2454,8 @@
         },
         {
           "path": "Art/Skins/AfricanInfantry.gr2",
-          "size": 27932,
-          "hash": "9ffb23bc0c472908dc4cfb9a1dcebb0bf08dd36fea83e5b8821294f2cf124085"
+          "size": 27984,
+          "hash": "968fa23b1dc24134e9164b4774487c254566c69aa21b3e47f9c5f89477d30c9d"
         },
         {
           "path": "Art/Skins/AfricanSF_diff.dds",
@@ -2449,8 +2469,8 @@
         },
         {
           "path": "Art/Skins/AfrScout.gr2",
-          "size": 27404,
-          "hash": "75645089ea177320671e13bee7475ff2b361d14ce60fdd7274f84847e5cc80eb"
+          "size": 27408,
+          "hash": "e2542b9f16e58e338fb822e80cc1c8d5e8ad49788a9a622b53e50407fb01ae19"
         },
         {
           "path": "Art/Skins/AfrScout_diff.dds",
@@ -2479,8 +2499,8 @@
         },
         {
           "path": "Art/Skins/Aquila_Class.gr2",
-          "size": 40236,
-          "hash": "1234d66b645146af17bcd70797921a294fcf9413a3850a9b6b7f4caa3208e823"
+          "size": 39492,
+          "hash": "b68515a5e5d7a54211a49927463e649e20a5a52a5cc2e53edb4b17411225bb6e"
         },
         {
           "path": "Art/Skins/Aquila_Class_gloss.dds",
@@ -2499,8 +2519,8 @@
         },
         {
           "path": "Art/Skins/ararm1.gr2",
-          "size": 30060,
-          "hash": "ca3008e2b010bc375ba16ad6c0857b4fcbb34cd3107b0e44f96ca847a4298722"
+          "size": 30096,
+          "hash": "a58e2c9c21d2458d9e38474142657b2c897192beabec581f9f88adcbf4290254"
         },
         {
           "path": "Art/Skins/ararm1_sref.dds",
@@ -2694,8 +2714,8 @@
         },
         {
           "path": "Art/Skins/Ariete.gr2",
-          "size": 22800,
-          "hash": "fbdc976c31bbc0ec13b8c0b7981e5b67285391c739ead857d335bdea1ef68ecc"
+          "size": 22820,
+          "hash": "79b4417f6265f7e488058821124c168535576230bcaa444e415cc73a0ce4dceb"
         },
         {
           "path": "Art/Skins/Ariete_diff.dds",
@@ -2714,8 +2734,8 @@
         },
         {
           "path": "Art/Skins/Armored_Cavalry.gr2",
-          "size": 68684,
-          "hash": "99d54a6db809f858d2c90e3c882664b48dae5b79df729b3bc6711dd8e3724f9b"
+          "size": 68692,
+          "hash": "766e24abfb54d306f4945fd23ad899a2b2f40836d6b1a0d02a88e41ea86f987c"
         },
         {
           "path": "Art/Skins/AsianSF.fxsxml",
@@ -2759,8 +2779,8 @@
         },
         {
           "path": "Art/Skins/AustriaWarrior.gr2",
-          "size": 24992,
-          "hash": "aff84809eeb4a6a51a91da0516f195edfda80646b7a84cf6ee2bfe71cd323dc3"
+          "size": 25028,
+          "hash": "fdf13ac4edbb6dd235b5e6dcafe95b970b88bf675ba065dd8221c119dbaabf12"
         },
         {
           "path": "Art/Skins/AustriaWarrior_sref.dds",
@@ -2779,8 +2799,8 @@
         },
         {
           "path": "Art/Skins/austria_longsw2.gr2",
-          "size": 30120,
-          "hash": "6da85b74bd3ed565ed1cec45a0fd218356dd53fbf1704a8600d3b4b88d7e6e43"
+          "size": 30172,
+          "hash": "2158058cf0e7a59d8767b42241536366181e916cfa5111b1f8c474d5b26dd351"
         },
         {
           "path": "Art/Skins/BantuSpearman.dds",
@@ -2794,8 +2814,8 @@
         },
         {
           "path": "Art/Skins/BantuSpearman.gr2",
-          "size": 31808,
-          "hash": "49abe408df301ce9f61325d59470ef847d3e85d6f4899d2fbb6ff3d72aaa6287"
+          "size": 31844,
+          "hash": "6a99ed09676579ea751ae911c792987cc3807349c31e6f07a3a871860d8624db"
         },
         {
           "path": "Art/Skins/BantuSpearman_sref.dds",
@@ -2814,8 +2834,8 @@
         },
         {
           "path": "Art/Skins/BatavianSpearman.gr2",
-          "size": 43340,
-          "hash": "fe6b45db31ce70f11fca6f1ca630b13ba821024f89f32bc59de37993dd8a3723"
+          "size": 43380,
+          "hash": "d0db3be3a3d49d97a3df670d574b0e9c521551211bec8221b7cebac622b3eb59"
         },
         {
           "path": "Art/Skins/BatavianSpearman_sref.dds",
@@ -2844,8 +2864,8 @@
         },
         {
           "path": "Art/Skins/Berber_Musketman.gr2",
-          "size": 32932,
-          "hash": "08e5929b32ecc0e9f1a1f4f2a2e3e3481422eb857d108f6b10dd17dc316b2ce5"
+          "size": 32928,
+          "hash": "5855025fe1f09c2790ee9aa5c41417e4f51581416e68233d1637f21978bd6e17"
         },
         {
           "path": "Art/Skins/Bismark_Class.dds",
@@ -2859,8 +2879,8 @@
         },
         {
           "path": "Art/Skins/Bismark_Class.gr2",
-          "size": 27532,
-          "hash": "7bf78f00c13e5e7e92fcfe3c81371d85f6912aacce59bc87b3853fd0f5f5d38e"
+          "size": 26996,
+          "hash": "c035f3debc47ef7bdfd8e04af407057e65a5db0cce76609a1c30569e8455b305"
         },
         {
           "path": "Art/Skins/Bismark_Class_gloss.dds",
@@ -2879,8 +2899,8 @@
         },
         {
           "path": "Art/Skins/BMP2GreenTeam.gr2",
-          "size": 25612,
-          "hash": "7b4345ae36dbc85d10ee520e7abdd0a27e4f07e10c2f524eb8fb90d8e70c3e28"
+          "size": 25092,
+          "hash": "ea648bbe1176ddc0bb9002c6ba350e8c6ed18435af5fb5b4230cccf8f171edf6"
         },
         {
           "path": "Art/Skins/bombardTurk.fxsxml",
@@ -2889,8 +2909,8 @@
         },
         {
           "path": "Art/Skins/bombardTurk.gr2",
-          "size": 57164,
-          "hash": "050097bd1692b263bf9f3310ab50ee871a1540abea8851cdae1d4d09bd6a1f75"
+          "size": 57156,
+          "hash": "5fb16d7ac576c0e94e6f6049827b0b1f1292bb94d73c7de79badfe461988c0a9"
         },
         {
           "path": "Art/Skins/BombardTurk_diff.dds",
@@ -2914,8 +2934,8 @@
         },
         {
           "path": "Art/Skins/Brazilian_Rifleman.gr2",
-          "size": 44200,
-          "hash": "baac917db46991edcbb0a964317ff8448930c89d882eb79e880b9840f3cadcaf"
+          "size": 44196,
+          "hash": "1f3232e6f005aa9ccbc346bc8718570e535c2db3655df1ff468e4f9fea095058"
         },
         {
           "path": "Art/Skins/BrazilPretosForros.dds",
@@ -2929,8 +2949,8 @@
         },
         {
           "path": "Art/Skins/BrazilPretosForros.gr2",
-          "size": 85964,
-          "hash": "38b6003c1ae8015924a7f06f5d528d5c6dd642f20f7be442040bc9e3541770cf"
+          "size": 85988,
+          "hash": "37519252daa747aa3e56f717f21703bd464a64f2423e05ddba6fe2ed91583a87"
         },
         {
           "path": "Art/Skins/BrazilPretosForros_sref.dds",
@@ -2949,8 +2969,8 @@
         },
         {
           "path": "Art/Skins/byzantium_longsw1.gr2",
-          "size": 29416,
-          "hash": "46952dc2032b84777859f159559e55fc1c4f4d5ba28ea9aefe09629669ff453d"
+          "size": 29464,
+          "hash": "c71a94f17db337f485a858445ce88d619d25eeb160b8f8054d43e98132817305"
         },
         {
           "path": "Art/Skins/Caetranann.dds",
@@ -2964,8 +2984,8 @@
         },
         {
           "path": "Art/Skins/Caetranann.gr2",
-          "size": 30360,
-          "hash": "7397d0b9b2b5e02498c1d928e8d2d22a743cf6e422696c646c8e3f8175ccd1e3"
+          "size": 30392,
+          "hash": "4d025648d770a3f095783067677f90ef8bdac6172ca1909aebf2288cfe07c366"
         },
         {
           "path": "Art/Skins/Caetranann_sref.dds",
@@ -2984,8 +3004,8 @@
         },
         {
           "path": "Art/Skins/Caetrati.gr2",
-          "size": 39588,
-          "hash": "a888d8ec84f8c0c918746ddb6dfb265a22e9051737922495639f1a95495bd721"
+          "size": 39624,
+          "hash": "5969b67bb1316590adc7c1931124f60688b963355b2cc3322f19cc297720338d"
         },
         {
           "path": "Art/Skins/Caetrati_sref.dds",
@@ -2999,8 +3019,8 @@
         },
         {
           "path": "Art/Skins/Canhoneira.gr2",
-          "size": 564132,
-          "hash": "663a546a7b02ea6cbbeb6f0fc05b1f81df9d104b2c1c77676ca8cbae74c69a06"
+          "size": 564124,
+          "hash": "58808702b789c8afb9f44122258d5164b3460a3c993bb1028b4f2f8322bc55a3"
         },
         {
           "path": "Art/Skins/Canhoneira_diff.dds",
@@ -3089,8 +3109,8 @@
         },
         {
           "path": "Art/Skins/CarthageWarrior.gr2",
-          "size": 23816,
-          "hash": "817fac6e331349e5d69c7bcc62f8d3980a89432b5f065b2a4e0bc17d9d71c7eb"
+          "size": 23844,
+          "hash": "5af328e000a1edac6c08b0c12cc886e5c32c57dcb68b7097ccd4e761a944791d"
         },
         {
           "path": "Art/Skins/CarthageWarrior_sref.dds",
@@ -3149,8 +3169,8 @@
         },
         {
           "path": "Art/Skins/celrm1.gr2",
-          "size": 33012,
-          "hash": "6185b50126031efada89955fa35e17616c71f2bfc10be087049f770c82c7d370"
+          "size": 33052,
+          "hash": "151b79ee30588b35bb739eee41240640049e24132e1da47e0fc4ee9d1ac69ad6"
         },
         {
           "path": "Art/Skins/celrm1_sref.dds",
@@ -3169,8 +3189,8 @@
         },
         {
           "path": "Art/Skins/CelticWarrior.gr2",
-          "size": 22364,
-          "hash": "b95949e4b85e468f349006db339babd274707cd1500e4d137692d688717734f0"
+          "size": 22396,
+          "hash": "14aefae8c20fdbd160d5676cf82aa23cbbef61a4c1c0b06e3527d43f4aa074d1"
         },
         {
           "path": "Art/Skins/Celtic_Warrior_sref.dds",
@@ -3204,8 +3224,8 @@
         },
         {
           "path": "Art/Skins/civ5_chirm2.gr2",
-          "size": 29048,
-          "hash": "0190d826d0ab1a6c97fe30ea8652c88b7d829530180306472e037c7f1e923d12"
+          "size": 29100,
+          "hash": "1d43f99c4489dbb3330cedc6f49834105158d7ff6de56b211c04bc5669abd4d9"
         },
         {
           "path": "Art/Skins/civ5_danrm1.fxsxml",
@@ -3224,8 +3244,8 @@
         },
         {
           "path": "Art/Skins/civ5_dutrm1.gr2",
-          "size": 29992,
-          "hash": "36b04a4d57fdc29e7e9a67bba573d2d96795c0027360b5564815f676e5edb89f"
+          "size": 30036,
+          "hash": "b5a92aa435b7f640f9b3ee9b2925d9467c7b4a86ffa87c649ec5433c334a9b11"
         },
         {
           "path": "Art/Skins/civ5_egysm1.gr2",
@@ -3239,8 +3259,8 @@
         },
         {
           "path": "Art/Skins/civ5_engrm1.gr2",
-          "size": 29648,
-          "hash": "0191740321c738b56bc4c5fb12dd089fd28e9f058da4ba520cb04f5049e11417"
+          "size": 29708,
+          "hash": "4bbeb18f588c302322e87250a8eae2236f1dd9f2163b278774cf309bd02e9e6d"
         },
         {
           "path": "Art/Skins/civ5_frerm.fxsxml",
@@ -3249,8 +3269,8 @@
         },
         {
           "path": "Art/Skins/civ5_frerm.gr2",
-          "size": 42576,
-          "hash": "bada38392181c35f653320e594aa51f8d1d018ed6f66570e9e21236ef6312098"
+          "size": 42636,
+          "hash": "a8798e0495b92a98100eec5e0ef770670467dfbcd2aa466adee2051385db1958"
         },
         {
           "path": "Art/Skins/civ5_gerrm.fxsxml",
@@ -3269,8 +3289,8 @@
         },
         {
           "path": "Art/Skins/civ5_indrm1.gr2",
-          "size": 29376,
-          "hash": "f3526ef2a39eca96e8279d07d9571c7489f3e64b4fbe4ec94536e34afdb1187c"
+          "size": 29424,
+          "hash": "6d7ffe79b240ac91b66b1f61dd2bd143dcf2a6957dcdd2ba1604bc0f4c9686d2"
         },
         {
           "path": "Art/Skins/civ5_iroco1.fxsxml",
@@ -3299,8 +3319,8 @@
         },
         {
           "path": "Art/Skins/civ5_iromu1.gr2",
-          "size": 117060,
-          "hash": "32fca96c342a5e8a53c887f18cbcb7b36cbc9cb7bfb56eca8c094042ee5d895a"
+          "size": 117100,
+          "hash": "3cc721724c0c4d9d35194034d2cc15645ba52c7f0f077a604be2eb37224693de"
         },
         {
           "path": "Art/Skins/civ5_iropi1.fxsxml",
@@ -3319,8 +3339,8 @@
         },
         {
           "path": "Art/Skins/civ5_irosc1.gr2",
-          "size": 122544,
-          "hash": "c0cef50fab2e7b3410ed2c588e1b80e6ed5d75bb20a95a0ec0e94935a6ebdd2b"
+          "size": 122576,
+          "hash": "da6a62e270700222524796d1b9adae8b69b3d3634bdd27917f274d7beeea62c4"
         },
         {
           "path": "Art/Skins/civ5_irosp2.fxsxml",
@@ -3329,8 +3349,8 @@
         },
         {
           "path": "Art/Skins/civ5_irosp2.gr2",
-          "size": 113792,
-          "hash": "dd1d5cdd881f1f790c4de2d9df41c2cba6e7a8c9159c43c1b5c9eb9f6e3f0eff"
+          "size": 113812,
+          "hash": "f32526a929977c88f4f17899501c56d02d6ef2b2515f466be71383cc7659de1e"
         },
         {
           "path": "Art/Skins/civ5_ottrm.fxsxml",
@@ -3339,8 +3359,8 @@
         },
         {
           "path": "Art/Skins/civ5_ottrm.gr2",
-          "size": 38964,
-          "hash": "d0270e4a5ec7610c8d9406f8d03ebfff8a5095ed0399e4bc8e7c376dda605e62"
+          "size": 39016,
+          "hash": "487420befb5798c0b616fbba6722c9488f8d6f7e3cb86ef41426d54c81d649c9"
         },
         {
           "path": "Art/Skins/civ5_perrm.fxsxml",
@@ -3349,8 +3369,8 @@
         },
         {
           "path": "Art/Skins/civ5_perrm.gr2",
-          "size": 28580,
-          "hash": "40befa4066912ba1f9ab7e2af50bc3461d77fd03fdf66df4437621c68ab89e63"
+          "size": 28640,
+          "hash": "63da47e9c312581cce3454082fe85769ab2500572e7c5e96dafd4aa3171f5c26"
         },
         {
           "path": "Art/Skins/civ5_rusrm.fxsxml",
@@ -3359,8 +3379,8 @@
         },
         {
           "path": "Art/Skins/civ5_rusrm.gr2",
-          "size": 33328,
-          "hash": "68cf0a56753f8807536e8487a88315237c16545c80b15de6031883df9e419e65"
+          "size": 33368,
+          "hash": "333c66160f693389f9235072f3f5e6b0261937acfa2cf4bd5750af7b4fcda42e"
         },
         {
           "path": "Art/Skins/civ5_russm1.fxsxml",
@@ -3369,8 +3389,8 @@
         },
         {
           "path": "Art/Skins/civ5_russm1.gr2",
-          "size": 35664,
-          "hash": "87816a28b4b9e5b784a98a1d4b157d1bda208b875b11e01c5e00cb7cf041beaa"
+          "size": 35704,
+          "hash": "e8ef9b634e6c30a1dab6ab10e6330c67517eca5d2b012287e97b5a9152ce8447"
         },
         {
           "path": "Art/Skins/civ5_siarm1.fxsxml",
@@ -3379,8 +3399,8 @@
         },
         {
           "path": "Art/Skins/civ5_siarm1.gr2",
-          "size": 29320,
-          "hash": "d18d73ebf5809df59c5758188912f5383720ace87a0f0a1235d70fcdbd8ba602"
+          "size": 29376,
+          "hash": "8750bf4ca268269f3a35896eef0a051df212ea09072ea5d2764bf2c641fa2f49"
         },
         {
           "path": "Art/Skins/civ5_sparm1.fxsxml",
@@ -3389,8 +3409,8 @@
         },
         {
           "path": "Art/Skins/civ5_sparm1.gr2",
-          "size": 30808,
-          "hash": "ce0d6ea936ddee3fc6548273c369cade15ee368ba6204c2e53fa16d2dd71acef"
+          "size": 30840,
+          "hash": "8d3e53692a63d686f2e7b15f9ea966726be5feec67089755cdbe9af450d44702"
         },
         {
           "path": "Art/Skins/civ5_swerm1.fxsxml",
@@ -3399,8 +3419,8 @@
         },
         {
           "path": "Art/Skins/civ5_swerm1.gr2",
-          "size": 29860,
-          "hash": "60c288207ce73cebdab40092673c5cb0b0ae6c03b12374dff9a492134522fe6d"
+          "size": 29908,
+          "hash": "1fb448409fb56a0bae155dcd93547b9b04d0b3bd0de38db9c48bc0da72a2634d"
         },
         {
           "path": "Art/Skins/Composite_Bowman_Arabia.dds",
@@ -3619,8 +3639,8 @@
         },
         {
           "path": "Art/Skins/Connecticut_BB.gr2",
-          "size": 39912,
-          "hash": "4883bb105c859db177eac684ba644b7b8e1a70742feea802b55a83363837fd42"
+          "size": 39928,
+          "hash": "40f9f66de49e0fc956628828112763bdd6156f6b592663516bdb8bd9c4070dda"
         },
         {
           "path": "Art/Skins/Connecticut_BB_diff.dds",
@@ -3654,8 +3674,8 @@
         },
         {
           "path": "Art/Skins/Crossbowman_Rome.gr2",
-          "size": 29256,
-          "hash": "3d33f54a027775e9c700c5ce5a7fbda6fd213e7284d7fe65c78b0e91447a9b8c"
+          "size": 29284,
+          "hash": "16acbed4564d10fb4bb73dc5e0eb24cb671b16986d719229e225e635e26cffc1"
         },
         {
           "path": "Art/Skins/Crossbowman_Rome_gloss.dds",
@@ -3674,8 +3694,8 @@
         },
         {
           "path": "Art/Skins/Crossbowman_Russia.gr2",
-          "size": 31304,
-          "hash": "4a90c0140dbcffe9663a3bcf04bd9f5ed1e13ee066ecf2672db5db873bab14c3"
+          "size": 31336,
+          "hash": "b6742de143944a43ea678053bbd2a85696dfee6dd38677583b3dc8def96aec9c"
         },
         {
           "path": "Art/Skins/Crossbowman_Russia_gloss.dds",
@@ -3694,8 +3714,8 @@
         },
         {
           "path": "Art/Skins/Crossbowman_Turkey.gr2",
-          "size": 31016,
-          "hash": "1ae8b53f1286172afb76c796b291ba845e719c6ef6a5882df8b104bc53dbd3d9"
+          "size": 31048,
+          "hash": "6fd8fb9eaa78f12c339819821404298d662522514cbb4c9b07dc230f8302b314"
         },
         {
           "path": "Art/Skins/Crossbowman_Turkey_gloss.dds",
@@ -3714,8 +3734,8 @@
         },
         {
           "path": "Art/Skins/Crossbowman_Viking.gr2",
-          "size": 31048,
-          "hash": "2f15f41ac5a25d9cef4a8359f6a8b16a1a4c5dbf4f14cd0d1071de403d48ba97"
+          "size": 31080,
+          "hash": "cea2ca6e4aa58c2f6add97f91e22e7185461a25cf0d63f32d41082856596118f"
         },
         {
           "path": "Art/Skins/Crossbowman_Viking_gloss.dds",
@@ -3749,8 +3769,8 @@
         },
         {
           "path": "Art/Skins/DenmarkWarrior.gr2",
-          "size": 30928,
-          "hash": "ee7622121ba2a7a8b79ca0e8ee9dd3aa20a344b8431838d78290b392155c92bc"
+          "size": 30952,
+          "hash": "0bf4ccf328282a553c57caa30a3b16af0a0bedd7e02e6a67afa0234a73a8e557"
         },
         {
           "path": "Art/Skins/DenmarkWarrior_sref.dds",
@@ -3779,8 +3799,8 @@
         },
         {
           "path": "Art/Skins/egyption_scout.gr2",
-          "size": 23756,
-          "hash": "edc1e25865fb9f71ed116e1eb991258ce869713a5d6a7928f5c84248e02b1379"
+          "size": 23764,
+          "hash": "cca4af10ddf6aab288f25736dca4992e835daa7b2fa079ffbc4c6d3cb81b9dc7"
         },
         {
           "path": "Art/Skins/egyption_scout_128.dds",
@@ -3874,8 +3894,8 @@
         },
         {
           "path": "Art/Skins/EthiopiaCrossbow.gr2",
-          "size": 33204,
-          "hash": "a7704dea1c2a5d6c3202c6293768d09be4a12452d6858b88bac68413ff6d30a5"
+          "size": 33240,
+          "hash": "b5dc8d9f0270a173d9a31ae7ea40a1768fed179a47450757d84573eee7a352fa"
         },
         {
           "path": "Art/Skins/EthiopiaCrossbow_sref.dds",
@@ -3899,8 +3919,8 @@
         },
         {
           "path": "Art/Skins/EthiopiaMedHorseman.gr2",
-          "size": 44208,
-          "hash": "35e3697d03501d029df64e3fc16d7829c01383650095b01a2ae0a8fc614da4a7"
+          "size": 44256,
+          "hash": "42c174e5d1a9f99a371a0beed22f1c63218db5e46155ae9a0afe615bb95dea6a"
         },
         {
           "path": "Art/Skins/EthiopiaMedHorseman_sref.dds",
@@ -3944,8 +3964,8 @@
         },
         {
           "path": "Art/Skins/EthiopianScout.gr2",
-          "size": 20828,
-          "hash": "abc97739990df1fb3cfffe04c24ead51ac21c00b51f47405e7e336fbfd49840d"
+          "size": 20864,
+          "hash": "3dc1c76fd8001c25ea8dba9a8166c7298c947f5f5e320362ec2c5ff26506c060"
         },
         {
           "path": "Art/Skins/EthiopianScout_sref.dds",
@@ -3959,8 +3979,8 @@
         },
         {
           "path": "Art/Skins/EuroScout.gr2",
-          "size": 27408,
-          "hash": "bd0b9eecc43dee6a0a7a80dfff89900c712b008c98959b247a116ab53bd7bb1b"
+          "size": 27412,
+          "hash": "482b0775e7602a434faad7ebe8f6e32e37d85e486d0ff28b0f001b9da6cd76a4"
         },
         {
           "path": "Art/Skins/EuroScout_diff.dds",
@@ -3979,8 +3999,8 @@
         },
         {
           "path": "Art/Skins/F15.gr2",
-          "size": 30268,
-          "hash": "8eaa758d78c7802e57fdb9ed9f264ea30a849215a8d8c9da6408cbfff559cb25"
+          "size": 29696,
+          "hash": "dca2e7f944194c9e62611983a28881e27720a6eba562c424d189f0121089df15"
         },
         {
           "path": "Art/Skins/F15SREF.dds",
@@ -3999,8 +4019,8 @@
         },
         {
           "path": "Art/Skins/F4DKorea.gr2",
-          "size": 31336,
-          "hash": "8ec03266573b7dd2c18b584b28a7951bfcf20e3557953d1de6cb92d45687c43e"
+          "size": 30728,
+          "hash": "9550308358dfe31d03e1ba6b9c3bb137e7e9f6007f95d0f673b560fa4707ea1b"
         },
         {
           "path": "Art/Skins/Fiat_3000.dds",
@@ -4014,8 +4034,8 @@
         },
         {
           "path": "Art/Skins/Fiat_3000.gr2",
-          "size": 17924,
-          "hash": "2777a201fc72cb08514e390ea1569afbaa6d437fa25f56d3aa15bded3e0fe662"
+          "size": 17384,
+          "hash": "6197fc947e5b20dd4c7c3c83f917811e275029772c0366df1df3592036c0f26f"
         },
         {
           "path": "Art/Skins/Fletcher_Class.dds",
@@ -4029,8 +4049,8 @@
         },
         {
           "path": "Art/Skins/Fletcher_Class.gr2",
-          "size": 48832,
-          "hash": "33ceba5c61026a0792e1bfeae1797c53ae08f95bcd7707c9f883558c78b6970a"
+          "size": 48472,
+          "hash": "846bb0a059307b3b7c1ca327e4aef09771d08c0a164651ec5d81c2d795212887"
         },
         {
           "path": "Art/Skins/Fletcher_Class_gloss.dds",
@@ -4094,8 +4114,8 @@
         },
         {
           "path": "Art/Skins/GAIA_Goedendag.gr2",
-          "size": 28504,
-          "hash": "7cdc0c1a073d795c2df4d14bb7d909e1068b068e8ddce74812f750bce5f21334"
+          "size": 28496,
+          "hash": "7a49bcab7f45fbf88cba856c292e449d9d1688d8474b072ea20f7f0027b03fb8"
         },
         {
           "path": "Art/Skins/GAIA_Goedendag_045.dds",
@@ -4139,8 +4159,8 @@
         },
         {
           "path": "Art/Skins/GaulMerc.gr2",
-          "size": 41504,
-          "hash": "de4473bae86e72ba19f477a395594dbe7d549735b7d55bc97a1c9dc402b3b8dc"
+          "size": 41532,
+          "hash": "b074182d28044f1d74cc9fad97b6410112853a45bc74311d23e89f0a1e4be6ad"
         },
         {
           "path": "Art/Skins/GaulMerc_sref.dds",
@@ -4194,8 +4214,8 @@
         },
         {
           "path": "Art/Skins/Goteborg_Class.gr2",
-          "size": 37636,
-          "hash": "64154e733cdd805b720358f7bd585da0ef9f0d551e4c001aa5b1a5f86f354ba1"
+          "size": 37208,
+          "hash": "a626fcf984bbbf36a24628a8307781dbd53d9834d916f1757f052c60d33b43e6"
         },
         {
           "path": "Art/Skins/Goteborg_Class_gloss.dds",
@@ -4214,8 +4234,8 @@
         },
         {
           "path": "Art/Skins/Halberdier_China.gr2",
-          "size": 34148,
-          "hash": "e12d98d4c47e69f1eba1c2f6603d9c5e9f5288d4fa05d4f42b4d63b2f4805a61"
+          "size": 34184,
+          "hash": "b4d22f37a13e30d83740767a163a93c755249bcec3ddc0ec516fee1af1ac7b16"
         },
         {
           "path": "Art/Skins/Halberdier_China_gloss.dds",
@@ -4229,8 +4249,8 @@
         },
         {
           "path": "Art/Skins/hawaii_ikaika.gr2",
-          "size": 50352,
-          "hash": "81392b64bd646d8ce3e76456d94daa5681b797b83d1f7beb336de7d150cc6ee0"
+          "size": 50348,
+          "hash": "caf7950b09f188fc07fb3396798524efccfded3aa8e36126fb4d9f8c29ead13b"
         },
         {
           "path": "Art/Skins/hawaii_ikaika_diff.dds",
@@ -4249,8 +4269,8 @@
         },
         {
           "path": "Art/Skins/hebrew_warrior.gr2",
-          "size": 26404,
-          "hash": "085a8ab0acfd3c30110be098db08679e585e3d3025ef3963bb424f08c3524671"
+          "size": 26400,
+          "hash": "ed1bd0a6aed46d5c59339693c41f224a5a004bb5f24b27e14885c4a1c6e7bb16"
         },
         {
           "path": "Art/Skins/hebrew_warrior_diff.dds",
@@ -4269,8 +4289,8 @@
         },
         {
           "path": "Art/Skins/Horseman_Japan.gr2",
-          "size": 41548,
-          "hash": "e572c12d1b8c8727638ffe702a1176512ccf761cbd0a6e34b0c634a50fe7806f"
+          "size": 41576,
+          "hash": "446a7b8743441229a616dea49a746d28dd599438f23aa5aaa94d9acb24d20047"
         },
         {
           "path": "Art/Skins/Horseman_Japan_gloss.dds",
@@ -4294,8 +4314,8 @@
         },
         {
           "path": "Art/Skins/Horseman_Korea.gr2",
-          "size": 39612,
-          "hash": "5e5875ae2cde94e10547fd2370a2c516523227f2f1a4c6accff96ffc8181dfcd"
+          "size": 39640,
+          "hash": "284d706775315d66f025bd45f3f384b0d7e09c7612cf44904eb2497e802230a1"
         },
         {
           "path": "Art/Skins/Horseman_Korea_gloss.dds",
@@ -4319,8 +4339,8 @@
         },
         {
           "path": "Art/Skins/Horseman_Mongol.gr2",
-          "size": 43364,
-          "hash": "83bdf10da2e22f5f9ce82b4c6b16cca979c16e975f16a33d460a194cb2299f03"
+          "size": 43404,
+          "hash": "3937a9a978b73b0d272a4cda4e3cad7006fa8cadc3fdba17ba54be2ba92e6fca"
         },
         {
           "path": "Art/Skins/Horseman_Mongol_gloss.dds",
@@ -4349,8 +4369,8 @@
         },
         {
           "path": "Art/Skins/Horseman_Rome_v2.gr2",
-          "size": 43176,
-          "hash": "56558e74988eca28e5e8ded9df73e3dc9186f573ea6201db3b966f5e0442f7d0"
+          "size": 43216,
+          "hash": "6d9273cb54101b5b534e6fb506e3f4939fef631d0ee9b0a1f90648b62f4e5363"
         },
         {
           "path": "Art/Skins/Horseman_Rome_v2_gloss.dds",
@@ -4369,8 +4389,8 @@
         },
         {
           "path": "Art/Skins/Horseman_Russia_v2.gr2",
-          "size": 49048,
-          "hash": "af4ed66f645f8e38590722ce5a6a928ecb741e0fa80b689eb7ea42da42669cf7"
+          "size": 49080,
+          "hash": "78065efd023563e398ce6a6519e4a9e7a9ce284f63468226b7fb7f16a402c01f"
         },
         {
           "path": "Art/Skins/Horseman_Russia_v2_gloss.dds",
@@ -4389,8 +4409,8 @@
         },
         {
           "path": "Art/Skins/Horseman_Turkey.gr2",
-          "size": 48936,
-          "hash": "5c6a16c476cb4b32c679c11dff3f3c553a4a20f680d9fea11c6329bf065b5a62"
+          "size": 48980,
+          "hash": "da7e9bf1404b161b9d54889d0b1344611716a8367c355c7a063c4b7bd7b60875"
         },
         {
           "path": "Art/Skins/Horseman_Turkey_gloss.dds",
@@ -4414,8 +4434,8 @@
         },
         {
           "path": "Art/Skins/Horseman_Viking.gr2",
-          "size": 40308,
-          "hash": "706500b6855028abd63f278082adbed410e020f08cc8b6a4a6df91e7c465617a"
+          "size": 40352,
+          "hash": "d9984805d2cdd0a373e22d088c2aaa0bb99639928629655f19cd41144a0b6ee2"
         },
         {
           "path": "Art/Skins/Horseman_Viking_gloss.dds",
@@ -4459,8 +4479,8 @@
         },
         {
           "path": "Art/Skins/hunrm1.gr2",
-          "size": 38640,
-          "hash": "610973a253449588ccfc999983c921f5296b99c9e8be1b982db5d7cc6b126ca3"
+          "size": 38688,
+          "hash": "4814a3be34ea73677c56e7f4d28693b66744af092c2af71eeefc599716a1fe3e"
         },
         {
           "path": "Art/Skins/hunrm1_sref.dds",
@@ -4479,8 +4499,8 @@
         },
         {
           "path": "Art/Skins/HunWarrior.gr2",
-          "size": 25356,
-          "hash": "a5fed9e142c18db3b8c4e06d89dcafaf1ba61fd5a15f84f8eebad13575f41fb0"
+          "size": 25384,
+          "hash": "b56a16e2039e5c92706ab78f0c5079b6b3c7b48c1f6aeed2aee21b6bd43b37f3"
         },
         {
           "path": "Art/Skins/HunWarrior2.dds",
@@ -4494,8 +4514,8 @@
         },
         {
           "path": "Art/Skins/HunWarrior2.gr2",
-          "size": 27008,
-          "hash": "329305fc0bc5d50af74121f7cdc414e74aca91783db62c224d079e3f4b1988d1"
+          "size": 27036,
+          "hash": "58eef74588ed212d0aab6ee86ba92d448a1facdab13eb3f868ac9ba6bd854235"
         },
         {
           "path": "Art/Skins/HunWarrior2_sref.dds",
@@ -4519,8 +4539,8 @@
         },
         {
           "path": "Art/Skins/impi_1.gr2",
-          "size": 26676,
-          "hash": "a8c2e31d1af554f352d049f02fca1c6396227275aa2581d79114223944122ee8"
+          "size": 26716,
+          "hash": "09e29f2757797ef9904fa2a2757b456f69d0516c8a36f64b7193e986efe88f2f"
         },
         {
           "path": "Art/Skins/impi_sref.dds",
@@ -4549,8 +4569,8 @@
         },
         {
           "path": "Art/Skins/Infantry_German_v2.gr2",
-          "size": 33004,
-          "hash": "02d1c48c3249410db9609f2a590dbc2e3d993ad611bf6cebd403f85dbc8d0788"
+          "size": 33044,
+          "hash": "cf13e51e409de961e6c31b0802d800a59fe73767d901700c97ebe8693ea9248f"
         },
         {
           "path": "Art/Skins/Infantry_Italy.dds",
@@ -4564,8 +4584,8 @@
         },
         {
           "path": "Art/Skins/Infantry_Italy.gr2",
-          "size": 35988,
-          "hash": "b589e6e1d545af357e836f3a30c2cfa44fde64ec68bbbb9a1b3db070ee7d3a97"
+          "size": 36028,
+          "hash": "0f7b3438a51b2170ec46a156c371ea322399f3f01e24e19cdf121c574757552b"
         },
         {
           "path": "Art/Skins/Infantry_Italy_2.dds",
@@ -4584,8 +4604,8 @@
         },
         {
           "path": "Art/Skins/Infantry_Japan_v3.gr2",
-          "size": 30312,
-          "hash": "1bdd0fe13acafb8f6f46ad3de7bdba3a97790abd4548563692b63da788a03631"
+          "size": 30352,
+          "hash": "01194bee6bc872bbbe5d4c9c6d1d74757c26f53732a70f9d51d45a357cae4baf"
         },
         {
           "path": "Art/Skins/Infantry_Japan_v3_temp.dds",
@@ -4604,8 +4624,8 @@
         },
         {
           "path": "Art/Skins/Infantry_Russia.gr2",
-          "size": 34148,
-          "hash": "f356e8b4608949b159af7c49bc644f2f2fe7054a2897da891027821661f8f24a"
+          "size": 34208,
+          "hash": "9b4a2ec3a85b277d8674f3e6a841b2fdc9bf596189b7757fc0eb7261b1fa021a"
         },
         {
           "path": "Art/Skins/Infantry_Spain.dds",
@@ -4619,8 +4639,8 @@
         },
         {
           "path": "Art/Skins/Infantry_Spain.gr2",
-          "size": 30220,
-          "hash": "75897b51f80b20e38c6ca4fdd42ac82b2656c948c9164ad4a990b44f166229ac"
+          "size": 30268,
+          "hash": "97e70b215d1266b2c6f9c6838b68dad3277e494e4edcaf752cd3eba75660d8c3"
         },
         {
           "path": "Art/Skins/Infantry_Sweden.dds",
@@ -4634,8 +4654,8 @@
         },
         {
           "path": "Art/Skins/Infantry_Sweden.gr2",
-          "size": 30936,
-          "hash": "2340e77dc62c21b6b2a7171093e9a2536ac9398cd93c652661965c6a203c5c76"
+          "size": 30972,
+          "hash": "3c756863a24c7de27dc894d565052bed2016113b39b5d228133c5ef2aeb59f01"
         },
         {
           "path": "Art/Skins/Iowa_Class.dds",
@@ -4649,8 +4669,8 @@
         },
         {
           "path": "Art/Skins/Iowa_Class.gr2",
-          "size": 35928,
-          "hash": "245751978d3df954f11080ba9302a6ae7d80e474b0c1453cb1c0c262759f8cd9"
+          "size": 35612,
+          "hash": "38776794b662a504660edcc42a21eb4ed7b8acc3ba23be10b3aea5856d8e985c"
         },
         {
           "path": "Art/Skins/Iowa_Class_gloss.dds",
@@ -4774,8 +4794,8 @@
         },
         {
           "path": "Art/Skins/King_George_V_Class.gr2",
-          "size": 49800,
-          "hash": "7129412c24b27d59d978bd5fcd561582254b7243de878e5b4b8765771504447b"
+          "size": 49524,
+          "hash": "a04fcbb2c117469eb1e2dfd81f6d2bb009ac3bacd5dab20efc011792de3e28b0"
         },
         {
           "path": "Art/Skins/King_George_V_Class_gloss.dds",
@@ -4794,8 +4814,8 @@
         },
         {
           "path": "Art/Skins/Knight_Arabia.gr2",
-          "size": 49916,
-          "hash": "fa5a8e83c0cd6ab1a317ed5bae65d2883dc07354539e874d6e689ac5e1b14a08"
+          "size": 49948,
+          "hash": "1b20f9da4538f7c209bb35cbabf32d67db7fc2326d107d41b0ef0a4d24fd3d3d"
         },
         {
           "path": "Art/Skins/Knight_Arabia_gloss.dds",
@@ -4854,8 +4874,8 @@
         },
         {
           "path": "Art/Skins/Knight_China.gr2",
-          "size": 48656,
-          "hash": "67bfe306e718f1f5388b7d3c67314007cf1f51d71f3815073bf415acd1a73157"
+          "size": 48684,
+          "hash": "e002f9d5d6a4ed65e03efd79c50944d2fa35384d104846bdccbf43ed1ea3f4a5"
         },
         {
           "path": "Art/Skins/Knight_China_gloss.dds",
@@ -4884,8 +4904,8 @@
         },
         {
           "path": "Art/Skins/Knight_England.gr2",
-          "size": 41672,
-          "hash": "fa5e162a6d21af15cd4e31ae2a59160a4abcf55a87cc72827e1ff474696beea3"
+          "size": 41700,
+          "hash": "e87f4632ada171e4450b7abb99d152dc8ea5ef77a9e57b1c9897b997312d08d1"
         },
         {
           "path": "Art/Skins/Knight_England_gloss.dds",
@@ -4914,8 +4934,8 @@
         },
         {
           "path": "Art/Skins/Knight_France.gr2",
-          "size": 46344,
-          "hash": "6ba4667c3d4b892ed35cce6d182c7523792a244ad8d494abc832b356665be7c5"
+          "size": 46372,
+          "hash": "149406b5d0ac7b685d495368482db04e111f555f50f7954a231c381e1d1e4870"
         },
         {
           "path": "Art/Skins/Knight_France_gloss.dds",
@@ -4944,8 +4964,8 @@
         },
         {
           "path": "Art/Skins/Knight_German.gr2",
-          "size": 50464,
-          "hash": "67aa2c0eff775bdcebdea9e3f18eee160ac9eb5cafe2d8fb3c42a60ffb1973c3"
+          "size": 50504,
+          "hash": "03a5f3eda3554f4ce18d6fe62fc0d7b08c12771bf284d1117b782a85be6a40bf"
         },
         {
           "path": "Art/Skins/Knight_German_gloss.dds",
@@ -4984,8 +5004,8 @@
         },
         {
           "path": "Art/Skins/Knight_Greece_v2.gr2",
-          "size": 47280,
-          "hash": "9b8994f9715c92c0b7772a408f651819abcd4e8d982e4b1838871d74093da609"
+          "size": 47312,
+          "hash": "29cbcb73c419710282ff2059d5f1c879d6a6a5e2c5070e889201de797295b1c7"
         },
         {
           "path": "Art/Skins/Knight_Greece_v2_gloss.dds",
@@ -5004,8 +5024,8 @@
         },
         {
           "path": "Art/Skins/Knight_India.gr2",
-          "size": 67988,
-          "hash": "6c800cb6b63f79da3e09a9f55c0298448afd1ab76ef76133d45091cec87f3b9b"
+          "size": 68004,
+          "hash": "cf35065af915a5563140a5fb718872db6452e2edc4e482e31b94eb136e64c845"
         },
         {
           "path": "Art/Skins/Knight_India_gloss.dds",
@@ -5034,8 +5054,8 @@
         },
         {
           "path": "Art/Skins/Knight_Japan.gr2",
-          "size": 49200,
-          "hash": "b3321325b8b774fd939c6093046489373a9aa54c4e5a588e07dbeb6ea19148d6"
+          "size": 49244,
+          "hash": "3b2c2fd3644d543a01174a6f895cf78d8239509e1982ab2f14c34f567cc0340a"
         },
         {
           "path": "Art/Skins/Knight_Japan_gloss.dds",
@@ -5064,8 +5084,8 @@
         },
         {
           "path": "Art/Skins/Knight_Rome.gr2",
-          "size": 47568,
-          "hash": "4e1b205f822207d4181a589f9e859b5193dbe63a2e938ab8d9688e56d83a06b4"
+          "size": 47600,
+          "hash": "4d228eaa44d3346700a0619b524114db1f33f2bdc078c5f49ba436ec3cb95122"
         },
         {
           "path": "Art/Skins/Knight_Rome_gloss.dds",
@@ -5094,8 +5114,8 @@
         },
         {
           "path": "Art/Skins/Knight_Spain.gr2",
-          "size": 41064,
-          "hash": "6428b421c117ea3b31de549c0a25d817aa7a0ec027bd9b6512d9d4b021ce11e8"
+          "size": 41112,
+          "hash": "89f62e0867aa2436f4d4958fb46b2ad26950b4b3b85de5fbe0f4034f7ae561d3"
         },
         {
           "path": "Art/Skins/Knight_Spain_gloss.dds",
@@ -5124,8 +5144,8 @@
         },
         {
           "path": "Art/Skins/Knight_Viking.gr2",
-          "size": 39892,
-          "hash": "52b7821b6a06d0e2d4062943078b14576252fb797fa4525fba3a3e5a9fee5be3"
+          "size": 39932,
+          "hash": "6518462ccdfd4a21c005d1b3743432bc01e6d8c35cc61ae1b77d0937d52cd42d"
         },
         {
           "path": "Art/Skins/Knight_Viking_gloss.dds",
@@ -5159,8 +5179,8 @@
         },
         {
           "path": "Art/Skins/Landsverk_L-62.gr2",
-          "size": 27784,
-          "hash": "c344f6630c66bf305fb4b464085051b649932c439120c3ed935d60c18f8acc3e"
+          "size": 27236,
+          "hash": "b5c04aad80cea87e798a510ea46dc5189541c6576084d88a244a5f5321c31d0d"
         },
         {
           "path": "Art/Skins/Leclerc.fxsxml",
@@ -5194,8 +5214,8 @@
         },
         {
           "path": "Art/Skins/Leopard1_Netherlands.gr2",
-          "size": 25364,
-          "hash": "146e48bcda93e90f2b386a0190f11bb44f5f23e414b1ac253891cc9cbea1e861"
+          "size": 24828,
+          "hash": "4e1b5973064983ef38134cf02897aa55d7bf37f1560355a80dc4b44fc0e8b9e9"
         },
         {
           "path": "Art/Skins/Leopard2.dds",
@@ -5209,8 +5229,8 @@
         },
         {
           "path": "Art/Skins/Leopard2.gr2",
-          "size": 26768,
-          "hash": "facb3480dd4739e0cd8443991f2bd95487bf2f4d81ee96cec4fe2d5a287a332a"
+          "size": 26336,
+          "hash": "f2674aa2d73a8a9bf2c8bc257d883910cc61c3ae39c1956240ef615028feaf75"
         },
         {
           "path": "Art/Skins/Leopard2_Gloss.dds",
@@ -5369,8 +5389,8 @@
         },
         {
           "path": "Art/Skins/Longswordsman_Arabia.gr2",
-          "size": 38300,
-          "hash": "25d56b9522ff0a124c25d86a8d00632c11e9a423e0c0642c6288231c532d7a58"
+          "size": 38340,
+          "hash": "196e5d449409c5620b74c41e49da200dde240338526d5ead7fee6bf83335b25a"
         },
         {
           "path": "Art/Skins/Longswordsman_Arabia_gloss.dds",
@@ -5409,8 +5429,8 @@
         },
         {
           "path": "Art/Skins/Longswordsman_China_v3.gr2",
-          "size": 34604,
-          "hash": "6daea33cf571371a0c098ae54eafe398a465fb21c3871ef1fa7688b05cf5bfc4"
+          "size": 34632,
+          "hash": "ef0dd4db922c33301221da33c24cd41f6042cade8da1f833c7f1972f2cbd5bd0"
         },
         {
           "path": "Art/Skins/Longswordsman_China_v3_gloss.dds",
@@ -5429,8 +5449,8 @@
         },
         {
           "path": "Art/Skins/Longswordsman_Egypt.gr2",
-          "size": 28952,
-          "hash": "b5003ce4b4ae5ebd50afb1043e5b004f5ce328cad9aac682b48d46384b11160a"
+          "size": 28980,
+          "hash": "a45049ae22fe29149b14057f349eeddafc8bf6a4f73864cc86a49779a43f18d6"
         },
         {
           "path": "Art/Skins/Longswordsman_Egypt_gloss.dds",
@@ -5449,8 +5469,8 @@
         },
         {
           "path": "Art/Skins/Longswordsman_Greece.gr2",
-          "size": 34192,
-          "hash": "1a1bddb5bfc7c77832f234815656dd8dc4e6c40dd3b4cd00e849383d44db3720"
+          "size": 34220,
+          "hash": "c5d6ba2904943e4af31d1decdd78f5839167bd764dae2ef42feeaf8430f3add1"
         },
         {
           "path": "Art/Skins/Longswordsman_Greece_gloss.dds",
@@ -5489,8 +5509,8 @@
         },
         {
           "path": "Art/Skins/Longswordsman_Mongol.gr2",
-          "size": 25388,
-          "hash": "d703ce9e294d8fc8493b0edae7664d33bdee3d82a362e462da7701e0c088eb19"
+          "size": 25416,
+          "hash": "24e9ec04b314e66e184d60a824e0415c9e34f53277a18a2150321b5870f3ffb7"
         },
         {
           "path": "Art/Skins/Longswordsman_Mongol_gloss.dds",
@@ -5509,8 +5529,8 @@
         },
         {
           "path": "Art/Skins/Longswordsman_Russia.gr2",
-          "size": 33168,
-          "hash": "4e0d97ee4a829d675f858250862120e3608dc03d2a6f14318ffeef0d0edcf6ff"
+          "size": 33204,
+          "hash": "ceab4d960040f06c67ba96db3de9bd48abc6fd3afbfef0a77ce23a48dd9145e4"
         },
         {
           "path": "Art/Skins/Longswordsman_Russia_gloss.dds",
@@ -5529,8 +5549,8 @@
         },
         {
           "path": "Art/Skins/Longswordsman_Turkey_v2.gr2",
-          "size": 38788,
-          "hash": "f60bd3ad67e3fffaec05841c5d9dc56962d2f376de82a5cea4837293cdca46ae"
+          "size": 38824,
+          "hash": "8c6d293d3cd4593df5d16d2c3ee29f238c6c981179528e038c32d804f8e183d4"
         },
         {
           "path": "Art/Skins/Longswordsman_Turkey_v2_gloss.dds",
@@ -5554,8 +5574,8 @@
         },
         {
           "path": "Art/Skins/Longswordsman_Viking_v3.gr2",
-          "size": 26336,
-          "hash": "c48ea7f7641e8e4ffc7655e97221d34f88cf7b8ff207f863a1efabc5db012944"
+          "size": 26360,
+          "hash": "f27c21bb83ccad3b93bd71249cfbc83f84b0bf3cdbb3078518b8b52851b8d260"
         },
         {
           "path": "Art/Skins/M1Abrams.dds",
@@ -5569,8 +5589,8 @@
         },
         {
           "path": "Art/Skins/M1Abrams.gr2",
-          "size": 76768,
-          "hash": "b66591f7d56f2fec8889fa5fec08123b3b477fc13d2999b11ed08e114157459b"
+          "size": 76376,
+          "hash": "cf61bf753890e62feb9ef6ae9f5d948b45242ee38d6aab4d81d2fcb259600e93"
         },
         {
           "path": "Art/Skins/M4A3E8_Sherman_Easy_Eight.dds",
@@ -5584,8 +5604,8 @@
         },
         {
           "path": "Art/Skins/M4A3E8_Sherman_Easy_Eight.gr2",
-          "size": 15836,
-          "hash": "bba300d810ec5f0c1269fffd99a7cffd79ee22e37f4bdc150185f7faa2a559a5"
+          "size": 15288,
+          "hash": "549326930125a926951881ffca9b1e0a5d28254c8550c0a73f85926fc5bf8ace"
         },
         {
           "path": "Art/Skins/MakuriaSwordsman.fxsxml",
@@ -5594,8 +5614,8 @@
         },
         {
           "path": "Art/Skins/MakuriaSwordsman.gr2",
-          "size": 30408,
-          "hash": "f36672266194bd998abd6ad2ee6508b6e9b8afae87b2ccaa87c63fa2b2beeb25"
+          "size": 30436,
+          "hash": "d9ea3bed35dbf66c646385b6af36ddc16aef494d13244a17ca73e293f4b871b6"
         },
         {
           "path": "Art/Skins/Makuria_Final.dds",
@@ -5629,8 +5649,8 @@
         },
         {
           "path": "Art/Skins/matatoa.gr2",
-          "size": 42436,
-          "hash": "68ba0fbafa15ec421cc53ae62082aec6bd15b54366fa45b7af06a16997714d57"
+          "size": 42440,
+          "hash": "7016120f2f3d39ca28dadfa50c23fb1442b286aa581675ba4e704b7a83f3beca"
         },
         {
           "path": "Art/Skins/matatoa_diff.dds",
@@ -5649,8 +5669,8 @@
         },
         {
           "path": "Art/Skins/Mesopotamic_warrior_tc.gr2",
-          "size": 26332,
-          "hash": "8b9cb48fdd56b8cf1b4c6f81fc33cf8989c1e83a4a2082d2531c4b88acb69260"
+          "size": 26336,
+          "hash": "bf82b39f91891cc37b4e5281a2f9c95513093ebe8469f87351a8e945f976123c"
         },
         {
           "path": "Art/Skins/Mi8Russia.dds",
@@ -5664,8 +5684,8 @@
         },
         {
           "path": "Art/Skins/Mi8Russia.gr2",
-          "size": 41664,
-          "hash": "4782e51a3639d5d3d83a8853e62f171c9759e3861a195dd4617055be1b3f0dc6"
+          "size": 41696,
+          "hash": "6a31b92f71297fe71faf3b0358c9ec453fe09913b07e71b4d3615ae36fe81a52"
         },
         {
           "path": "Art/Skins/ModernMarine_Attack.gr2",
@@ -5734,8 +5754,8 @@
         },
         {
           "path": "Art/Skins/MTSL-1GI4.gr2",
-          "size": 19172,
-          "hash": "b1ed65cb92cc5a0b91ad62fe6664ce84d0aab10f536f4bfbdf78dd0c9dfca447"
+          "size": 18632,
+          "hash": "6ad1a0c0a867f28faf206376ff363442684721eda8cfa8e678c9c2f9cc861f17"
         },
         {
           "path": "Art/Skins/musketman_diff.dds",
@@ -5759,8 +5779,8 @@
         },
         {
           "path": "Art/Skins/Nieuport_17.gr2",
-          "size": 29440,
-          "hash": "e66f8a4e75ed5be80550863ed3d1af597711b4ce6fb262a36035fcbe024e3bcf"
+          "size": 29044,
+          "hash": "da39d3b6f3a39f8c1e310ff074604b0df55df28216f0cf1865083177fdcb8e15"
         },
         {
           "path": "Art/Skins/NubianSwordsman.dds",
@@ -5774,8 +5794,8 @@
         },
         {
           "path": "Art/Skins/NubianSwordsman.gr2",
-          "size": 40360,
-          "hash": "a9dab520842c233a59e2dbefe0105b43db9be4af56086aed2cf540bc744074e1"
+          "size": 40380,
+          "hash": "8c0eb3c51f4b7637b3ef10715bdfbe229968a3a685c08d0ec3e5a44e8c6f5369"
         },
         {
           "path": "Art/Skins/NubianSwordsman_sref.dds",
@@ -5789,8 +5809,8 @@
         },
         {
           "path": "Art/Skins/Oceanic_warrior.gr2",
-          "size": 25424,
-          "hash": "ee9e8519305800fc4ad0b3c255af4c8f9c459fe1c7c17f5cd9a5b660c39d93cf"
+          "size": 25416,
+          "hash": "6fc9e186d9f461bf1212caee2dcf5b188e37fd858c23e25cc7ea078759db047c"
         },
         {
           "path": "Art/Skins/Oceanic_warrior_128.dds",
@@ -5834,8 +5854,8 @@
         },
         {
           "path": "Art/Skins/P-51_Mustang.gr2",
-          "size": 25664,
-          "hash": "c92f01f230f39623352d5debc6a8f912c4c64a0419ad051eb817df4ee836d8be"
+          "size": 25260,
+          "hash": "23fe870c5c80c52146995a668607b3cc819f133b8f5ccd3d2d71be297f680796"
         },
         {
           "path": "Art/Skins/P40Brazil.dds",
@@ -5849,8 +5869,8 @@
         },
         {
           "path": "Art/Skins/P40Brazil.gr2",
-          "size": 26556,
-          "hash": "bf322f0d1c3356b2fbc0d7f8e9b0f8a514703c7ec3f2c9812c11af110ade5e08"
+          "size": 26164,
+          "hash": "419f889d780c0758d06f7449b71367bbbc3522599367f86819943c758be47461"
         },
         {
           "path": "Art/Skins/Panzer_IV_Ausf_G.dds",
@@ -5864,8 +5884,8 @@
         },
         {
           "path": "Art/Skins/Panzer_IV_Ausf_G.gr2",
-          "size": 24492,
-          "hash": "bf1de29bf809638f601b7dc37cd9530f13dc5b7ebf7b9a2cffe90052698f358d"
+          "size": 23960,
+          "hash": "a5adf8dbb68dade145e6bf05eabf1943c99df99fc58eaaf83d1db980cfa9aa17"
         },
         {
           "path": "Art/Skins/Paratrooper_China.dds",
@@ -5879,8 +5899,8 @@
         },
         {
           "path": "Art/Skins/Paratrooper_China_MG.gr2",
-          "size": 27420,
-          "hash": "53317eb293a16f664e4d708cdb9a5ec8411bf64827785efd9b1c4a58a3734fc6"
+          "size": 27448,
+          "hash": "7e436fef1bb16dc255953d8434b2ea5e14a8a9db9fb1246475b132c2e0b67131"
         },
         {
           "path": "Art/Skins/Paratrooper_Dutch.dds",
@@ -5904,8 +5924,8 @@
         },
         {
           "path": "Art/Skins/Paratrooper_Dutch_MG.gr2",
-          "size": 26324,
-          "hash": "54878869a7fe4b90b0b16b2afb99d696b18130101684718af8273ab0f8c56b7d"
+          "size": 26352,
+          "hash": "974ee542e10995e494f89b13f596392facf3912a60e4ee215f0f44f96d4922f5"
         },
         {
           "path": "Art/Skins/Paratrooper_German_MG_v2.fxsxml",
@@ -5929,8 +5949,8 @@
         },
         {
           "path": "Art/Skins/Paratrooper_German_v2.gr2",
-          "size": 31076,
-          "hash": "6c5454cb4b41fc1daf2deb2757fffc47a1f1c87ab20fe5c14ead8218691cbd8f"
+          "size": 31124,
+          "hash": "655b23e98dfff8b34b297afb2433d7118ed752b51d544eb158ef367bca942631"
         },
         {
           "path": "Art/Skins/Paratrooper_Spain.dds",
@@ -5944,8 +5964,8 @@
         },
         {
           "path": "Art/Skins/Paratrooper_Spain.gr2",
-          "size": 28736,
-          "hash": "0cac3a5e54782315fe91396cfcd7a3133f00197775f8e8521ac613311c49966d"
+          "size": 28788,
+          "hash": "5dbd2eb5e5d015f7a8901f53f580e7846fe96ba7948babe144cb27ad161fe236"
         },
         {
           "path": "Art/Skins/Paratrooper_Sweden.dds",
@@ -5959,8 +5979,8 @@
         },
         {
           "path": "Art/Skins/Paratrooper_Sweden.gr2",
-          "size": 29516,
-          "hash": "717c09225aa0b246b0eae9d39fde697bd3e369f26b181f1ec764316ea46d1981"
+          "size": 29564,
+          "hash": "d16b2ecf23137cc7b1a1c81190dfa2aeddd864e3d6428bc7988b181e5a3b1a45"
         },
         {
           "path": "Art/Skins/Paratrooper_UK.dds",
@@ -5974,8 +5994,8 @@
         },
         {
           "path": "Art/Skins/Paratrooper_UK.gr2",
-          "size": 30764,
-          "hash": "83d3730b96290d67ad7a209008cb02db9ec17f75c891c0f3e183e06f841c3d7d"
+          "size": 30804,
+          "hash": "52eac852cd63b1dd760fb9c5f240502a08411c5f88607aaf4e6883602d9d3abc"
         },
         {
           "path": "Art/Skins/perrm_diff.dds",
@@ -6014,8 +6034,8 @@
         },
         {
           "path": "Art/Skins/Pikeman_Aztec.gr2",
-          "size": 36620,
-          "hash": "b4f46eb34cf7ec3aad10e25f88929af6b6ac27a66f484d2bfcae63ef941cae31"
+          "size": 36648,
+          "hash": "1c994233c28a2f6b28e4d7107ab924efcf676b3d2a3d0b33d49123450a425373"
         },
         {
           "path": "Art/Skins/Pikeman_Aztec_gloss.dds",
@@ -6034,8 +6054,8 @@
         },
         {
           "path": "Art/Skins/Pikeman_Babylon.gr2",
-          "size": 27868,
-          "hash": "d7e74930dcda1ca3447ff8af55efd597fbf1957916a28e05d9f9cab215c8fe43"
+          "size": 27912,
+          "hash": "a23880029a2eb61be3e18c3e1f8531f8c3f5f3cd1aa8a5892fce60f7285e3122"
         },
         {
           "path": "Art/Skins/Pikeman_Babylon_gloss.dds",
@@ -6054,8 +6074,8 @@
         },
         {
           "path": "Art/Skins/Pikeman_Egypt.gr2",
-          "size": 22436,
-          "hash": "a868c3f28910487505e567d44fb2b74a682c4b3196160bc7ac1c154976e40a98"
+          "size": 22464,
+          "hash": "c0c800bc5f6b41a1d627d1175f5026299b93bb59ad6f5c8d14dfde8627d2b747"
         },
         {
           "path": "Art/Skins/Pikeman_Egypt_gloss.dds",
@@ -6104,8 +6124,8 @@
         },
         {
           "path": "Art/Skins/Pikeman_India.gr2",
-          "size": 41252,
-          "hash": "5312047f1d2e219699912be3c192c57512f3534788e32fd3f52177e41c324c47"
+          "size": 41288,
+          "hash": "5103e8d7a3ab8cfeb837706f053ec42807329c7901d95df1836dc47bf37dc82b"
         },
         {
           "path": "Art/Skins/Pikeman_India_gloss.dds",
@@ -6144,8 +6164,8 @@
         },
         {
           "path": "Art/Skins/Pikeman_Maya.gr2",
-          "size": 32420,
-          "hash": "7f94a66bfa5419f4e162fd02264a89543af53fa44b9140e7f11e149cde32bd18"
+          "size": 32456,
+          "hash": "2e064bcc4cbe1c7f9a69de3465d0557297168d809ffc348fde335ace966681e5"
         },
         {
           "path": "Art/Skins/Pikeman_Maya_gloss.dds",
@@ -6164,8 +6184,8 @@
         },
         {
           "path": "Art/Skins/Pikeman_Mongol.gr2",
-          "size": 27568,
-          "hash": "8bd8b8728df9cb2182c73d73f4dc5fe7696b35d08026f4496f0ef85d615bd38e"
+          "size": 27600,
+          "hash": "8ca165fe2f07a363cd26b94d55df6beebee99764f6515f29335218a8bacebbc1"
         },
         {
           "path": "Art/Skins/Pikeman_Mongol_gloss.dds",
@@ -6184,8 +6204,8 @@
         },
         {
           "path": "Art/Skins/Pikeman_Persia.gr2",
-          "size": 28756,
-          "hash": "3f5a3f6b353fb0664fb0978cbd65e2a3696b56d7f17eef8df5ef549056ac5244"
+          "size": 28792,
+          "hash": "c0e05c9047af6b79ca7de6e891c64c222f4937c4323cb111e835925a7daafe3a"
         },
         {
           "path": "Art/Skins/Pikeman_Persia_gloss.dds",
@@ -6204,8 +6224,8 @@
         },
         {
           "path": "Art/Skins/Pikeman_Rome.gr2",
-          "size": 31184,
-          "hash": "64ff0eccb2daaa4738a75caed018a692b7b0395c80c9dd563e719ac5c5a63f54"
+          "size": 31216,
+          "hash": "5b973846e79c34b483115a15451fa7a165e8a2c9b7b92a7a852fca32089a3341"
         },
         {
           "path": "Art/Skins/Pikeman_Rome_gloss.dds",
@@ -6224,8 +6244,8 @@
         },
         {
           "path": "Art/Skins/Pikeman_Spain.gr2",
-          "size": 26364,
-          "hash": "418b93f633723508fd2a37dcd59b41c0d9eb04929b2afb8b6a4932af9ec622f1"
+          "size": 26388,
+          "hash": "83e18c3689d0972a2662d4bae613645c59a48059565fd4bafba80c7909f8f6df"
         },
         {
           "path": "Art/Skins/Pikeman_Spain_gloss.dds",
@@ -6244,8 +6264,8 @@
         },
         {
           "path": "Art/Skins/Pikeman_Turkey.gr2",
-          "size": 32280,
-          "hash": "0f90a7e101c93eee52f77413e801c8c7c8e4545206b316c169870505d1d6e5db"
+          "size": 32320,
+          "hash": "0fd5980e607f4cac2c97d4d4241a7f9ae5e1b7dbeda01a810fc608a0164cc563"
         },
         {
           "path": "Art/Skins/Pikeman_Turkey_gloss.dds",
@@ -6264,8 +6284,8 @@
         },
         {
           "path": "Art/Skins/Pikeman_Viking.gr2",
-          "size": 24192,
-          "hash": "02bbc3051a7c07db5f2f33d44990e5f14a6228ed7d04733b035b31f8e91cbeb0"
+          "size": 24220,
+          "hash": "23a66d201b1c34f6b9089a1873812d87029634a0c8dd620ee115276b714fe644"
         },
         {
           "path": "Art/Skins/Pikeman_Viking_gloss.dds",
@@ -6279,8 +6299,8 @@
         },
         {
           "path": "Art/Skins/PolynesianFootman.gr2",
-          "size": 30768,
-          "hash": "cb0e2ca0841c90b2ff66d2fd029f520573e5f2b215e6823a985501ac6fae576b"
+          "size": 30800,
+          "hash": "4adc446b45dc29db341c3c701f9b6cbd35e6708fea6e2f1f09e34997b8817177"
         },
         {
           "path": "Art/Skins/PolySword.dds",
@@ -6304,8 +6324,8 @@
         },
         {
           "path": "Art/Skins/PortugalSpearman.gr2",
-          "size": 31772,
-          "hash": "e1272425377414cd14d20b0f7c73f363003087a90f976669709215e943357432"
+          "size": 31808,
+          "hash": "feb04c7a524e63e6c88e272ada192d3cab2641728a781d6c30ee04ff30cbd8be"
         },
         {
           "path": "Art/Skins/PortugalSpearman_sref.dds",
@@ -6324,8 +6344,8 @@
         },
         {
           "path": "Art/Skins/portugal_longsw8.gr2",
-          "size": 26692,
-          "hash": "7d3699debe3f08ec7de32f3fcb921e2ad2fd6681c7f61d1143d5dc11b7be3c32"
+          "size": 26736,
+          "hash": "5c8f13641678b2bc2d96190e9557b17466274b0d248dabaab8fdcc25dd3f1bb5"
         },
         {
           "path": "Art/Skins/portuguese_galleon.fxsxml",
@@ -6334,8 +6354,8 @@
         },
         {
           "path": "Art/Skins/portuguese_galleon.gr2",
-          "size": 89080,
-          "hash": "0380ade9dbcfc6d35f4e6ab04462c30724b35a6419e1f578bb2c39e2c6b1d39a"
+          "size": 89052,
+          "hash": "d96d3fe27a9bd5012dc09732f150c60189d7adb5b075743b887a5d6df0949175"
         },
         {
           "path": "Art/Skins/portuguese_galleon_diff.dds",
@@ -6354,8 +6374,8 @@
         },
         {
           "path": "Art/Skins/PVKV_M43.gr2",
-          "size": 24380,
-          "hash": "7355d01d0eb7f7457f4e17b6fb4d8db5aa30d793838ce041a20fd2ba24781b93"
+          "size": 23844,
+          "hash": "9ed3e5d2f64f9096d2f4f4c9c282e0c8476f3720c73ad28ddaa33b995ffe8534"
         },
         {
           "path": "Art/Skins/PZL_P.23_Karas.dds",
@@ -6390,7 +6410,7 @@
         {
           "path": "Art/Skins/Qizilbash.gr2",
           "size": 47684,
-          "hash": "597a95815b63f5e0d56cace589b527ecb8e0bce680cbdd883665141f4eca7120"
+          "hash": "c1140e44da3dd2e4bfbbd43717cb29119ca30be3b8817bcd17eaf3c31753c128"
         },
         {
           "path": "Art/Skins/Qizilbash_Horse_diff.dds",
@@ -6444,8 +6464,8 @@
         },
         {
           "path": "Art/Skins/RenaultFTBrazil.gr2",
-          "size": 28596,
-          "hash": "213037c831dec50b555e1243861616dd44a86f7bfa42f2dcb981106938f0aa34"
+          "size": 28060,
+          "hash": "dcd4de595c574e2758bcf923053846b08c92339fddcec8567cdc28e1f7600666"
         },
         {
           "path": "Art/Skins/re_umberto_bb.fxsxml",
@@ -6454,8 +6474,8 @@
         },
         {
           "path": "Art/Skins/re_umberto_bb.gr2",
-          "size": 33580,
-          "hash": "a1f56ef3c13386c8a37d4670f36c1e9002b45e9fa7ba54b5c47d3b2a795444d2"
+          "size": 33572,
+          "hash": "06252384ac558424a100233b110d098b3acaabac6a81c8cf4e2b5b7489677d55"
         },
         {
           "path": "Art/Skins/re_umberto_bb_diff.dds",
@@ -6539,8 +6559,8 @@
         },
         {
           "path": "Art/Skins/SAAB_B18.gr2",
-          "size": 24672,
-          "hash": "4faf140ff93c8928a494a93ebaa6625e0859ff96540b057ce0ed5a497f3cd7f4"
+          "size": 23792,
+          "hash": "8169b05a8169b06fc4bbb6299da868cbb9f270918f560030c6f0c0370bd3b3cc"
         },
         {
           "path": "Art/Skins/SacredBand.dds",
@@ -6574,8 +6594,8 @@
         },
         {
           "path": "Art/Skins/Scout_Japan.gr2",
-          "size": 22480,
-          "hash": "223f89467f90d5461c1c6d03965c15fa3245b6227c3ebbcec6feec2ebe13e0b9"
+          "size": 22508,
+          "hash": "3ee3b591e5d6587ab0d8bdcb4067416c9ae6aec0bf85915cd6e6ec246a6430c4"
         },
         {
           "path": "Art/Skins/Scout_Japan_gloss.dds",
@@ -6594,8 +6614,8 @@
         },
         {
           "path": "Art/Skins/Scout_Korea.gr2",
-          "size": 22424,
-          "hash": "9189d844049b505fa6204dc63b440d52c1f9c28b904a77d766b7f9e10539214b"
+          "size": 22460,
+          "hash": "ba062683d2edff72e8c7a9a580dca0f6b6e68b79ba9aee8f552cdb8d21089cd1"
         },
         {
           "path": "Art/Skins/Scout_Korea_gloss.dds",
@@ -6614,8 +6634,8 @@
         },
         {
           "path": "Art/Skins/ShortBomber.gr2",
-          "size": 28744,
-          "hash": "246b73624e3bf09f28a3d1dcc645f9e875a1bf9dfd78fb37d1426d0ec977f14a"
+          "size": 28400,
+          "hash": "7783f078c984ed0b9056deb4b1a320582c6095d2920842d25c9c98d894ea6bb2"
         },
         {
           "path": "Art/Skins/ShortBomberSREF.dds",
@@ -6645,7 +6665,7 @@
         {
           "path": "Art/Skins/Siamese_Musketman.gr2",
           "size": 33564,
-          "hash": "0cc4e3fa0d0f078d8d88a2515b5aad28693080b2c7bfb43ac4686c9a6e9c6b12"
+          "hash": "70a284440f87e252423494b6ecbe6ef8dc47148e7e7e6453946fee0ae7ae2620"
         },
         {
           "path": "Art/Skins/Siamese_Musketman_sref.dds",
@@ -6689,8 +6709,8 @@
         },
         {
           "path": "Art/Skins/Sioux_Knight.gr2",
-          "size": 58048,
-          "hash": "55cac307b867ed209290c4789d772e0ff747b508f889de7383ccbd3b2bacbbcc"
+          "size": 58044,
+          "hash": "91590392a3a4ad6f67a0fc1f92c682b1c69ec4989222c3f76ce5db20e86cca2e"
         },
         {
           "path": "Art/Skins/Sioux_Knight_diff.dds",
@@ -6749,8 +6769,8 @@
         },
         {
           "path": "Art/Skins/SonghaiScout.gr2",
-          "size": 21980,
-          "hash": "7f5cc8ce7962cdbd49831b64e041cda7c5688c1ea9c3a6825ef7e4999a7cc8dc"
+          "size": 22012,
+          "hash": "4d24380dc756bb140923fbf487f5d074958cf4b134a0d48df9e528fef57e3e87"
         },
         {
           "path": "Art/Skins/SonghaiScout_sref.dds",
@@ -6769,8 +6789,8 @@
         },
         {
           "path": "Art/Skins/SonghaiSpearman.gr2",
-          "size": 26624,
-          "hash": "b9fc101103063c3b470319e995ad4886669ad891ce843951eea4fe03beeb0506"
+          "size": 26660,
+          "hash": "9fa6f226594487a76a4c0f5d006cc3c9e710b491cefbdc597a2a095f961573ad"
         },
         {
           "path": "Art/Skins/SonghaiSpearman_sref.dds",
@@ -6799,8 +6819,8 @@
         },
         {
           "path": "Art/Skins/Spearman_Arabia.gr2",
-          "size": 31720,
-          "hash": "1ada5b766a4514626b6d26a200797c67ceaec73bff504997a98e645945c3fbec"
+          "size": 31768,
+          "hash": "cb79453a05d7635047b5e7aba4b745df2f944a21467e5a15962307e0f47d4579"
         },
         {
           "path": "Art/Skins/Spearman_Arabia_gloss.dds",
@@ -6819,8 +6839,8 @@
         },
         {
           "path": "Art/Skins/Spearman_Aztec.gr2",
-          "size": 26768,
-          "hash": "1e6b69f3ea4a4549e5d2ffdb4a3b6b30003f82b8d375e7f0e19fb72a87b35fda"
+          "size": 26796,
+          "hash": "1d0605b11c55c35fa6836ffcbbbd0260f753e8e32684cb6645c0db224bfbd000"
         },
         {
           "path": "Art/Skins/Spearman_Aztec_gloss.dds",
@@ -6839,8 +6859,8 @@
         },
         {
           "path": "Art/Skins/Spearman_China_v2.gr2",
-          "size": 29932,
-          "hash": "ccae855498f441f3d572b9eaade4debc70f94f01166528220dfc891edbf7d107"
+          "size": 29976,
+          "hash": "e5c501acb0a2d59639da94673a77d8a44d881879bf1df0d35d49dd7f5db8a86f"
         },
         {
           "path": "Art/Skins/Spearman_China_v2_gloss.dds",
@@ -6859,8 +6879,8 @@
         },
         {
           "path": "Art/Skins/Spearman_Egypt.gr2",
-          "size": 22432,
-          "hash": "9f0f9740aeede7980350b4a3963d0ed57c14d95a17a7a1c9bec3d08e1a529598"
+          "size": 22460,
+          "hash": "6a8b8c64e400b911d29fb215aae0b47c85c48ce673090b4e6a35bcb2a80742a7"
         },
         {
           "path": "Art/Skins/Spearman_Egypt_gloss.dds",
@@ -6879,8 +6899,8 @@
         },
         {
           "path": "Art/Skins/Spearman_Inca.gr2",
-          "size": 26892,
-          "hash": "08ef3c621ad94350f5cdf662da69e9f2a8ef4b95f847aa768f3d07f41a564ead"
+          "size": 26912,
+          "hash": "2b12720d17f72cec985523fc8d68814c8de27881b35b4e82e6bc73e4bebee66b"
         },
         {
           "path": "Art/Skins/Spearman_Inca_gloss.dds",
@@ -6919,8 +6939,8 @@
         },
         {
           "path": "Art/Skins/Spearman_Korea.gr2",
-          "size": 25452,
-          "hash": "8c844d91a4bf6519d83c704842f589e0ba61b12ddf37b62488559f7c5249c317"
+          "size": 25468,
+          "hash": "cf92fc62ef41bffac24d9b7a809c6c888266ff3c891de7bdc84d049792911942"
         },
         {
           "path": "Art/Skins/Spearman_Maya.dds",
@@ -6954,8 +6974,8 @@
         },
         {
           "path": "Art/Skins/Spearman_Mongol.gr2",
-          "size": 26364,
-          "hash": "480cc68365f6175be0f46fa19b7d9107ed891b6e628cd2fca91eee4b88bd3213"
+          "size": 26400,
+          "hash": "4c777c0ae62547e5d238b4048b9fd4873dcab7615462dcb33a8ea3fe211e76ee"
         },
         {
           "path": "Art/Skins/Spearman_Mongol_gloss.dds",
@@ -6974,8 +6994,8 @@
         },
         {
           "path": "Art/Skins/Spearman_Persia.gr2",
-          "size": 30224,
-          "hash": "4ce2ea061681f9be5d1a9a795bd9c57c335430cf00df82b6a684649e8526537f"
+          "size": 30264,
+          "hash": "1e9f5d57c95997f60b3bbf2b5ad859dcb82fc0a2f44e90bae70dd00fe201c812"
         },
         {
           "path": "Art/Skins/Spearman_Persia_gloss.dds",
@@ -6994,8 +7014,8 @@
         },
         {
           "path": "Art/Skins/Spearman_Rome.gr2",
-          "size": 27284,
-          "hash": "20518ef22124e539a3906ba6b03bce91e34de1b29f00ba068c3ac71346a87619"
+          "size": 27328,
+          "hash": "2a515eac4610d491adf219b7533e0f76b5c3a842438a78b1b6de3cbffaf99365"
         },
         {
           "path": "Art/Skins/Spearman_Rome_gloss.dds",
@@ -7014,8 +7034,8 @@
         },
         {
           "path": "Art/Skins/Spowith_Camel.gr2",
-          "size": 30780,
-          "hash": "0ce68ec97b2f4960ea5cdfc6018d0a6a89a82cc09295266fa9f12017b2c8bded"
+          "size": 30340,
+          "hash": "90e97e531e3ceda6bbbfe3bc349bf77e7d9672571d307daf57731fcee1ec2d75"
         },
         {
           "path": "Art/Skins/Strv_M21.dds",
@@ -7029,8 +7049,8 @@
         },
         {
           "path": "Art/Skins/Strv_M21.gr2",
-          "size": 14236,
-          "hash": "d946a6ec9b17fefc9403982e1ddbcbe2dbc54a3efa3ad6a155dd8023f065e5c0"
+          "size": 13672,
+          "hash": "11148666f4373e667f292d1b142eab7d198d39cb63bfb20b906ad6b76116ef33"
         },
         {
           "path": "Art/Skins/Strv_M41.dds",
@@ -7044,8 +7064,8 @@
         },
         {
           "path": "Art/Skins/Strv_M41.gr2",
-          "size": 55912,
-          "hash": "38d0373ee703a75bbf20b08dc014a157d7d6646620e86e82c9968aa8c091e95b"
+          "size": 55372,
+          "hash": "8a5c49b00e85ab559fa31eb0ef19d2d8a371b040775043625b024a4ee9313572"
         },
         {
           "path": "Art/Skins/SudanSwordsman.dds",
@@ -7059,8 +7079,8 @@
         },
         {
           "path": "Art/Skins/SudanSwordsman.gr2",
-          "size": 34288,
-          "hash": "c83ec337637076c3fd1cb1cb4650e09c0211bff1b143c0e039bad724164b2734"
+          "size": 34316,
+          "hash": "01602571446d7a074d7cc6479f061904f00bf3be4275b3b3b6f0fa2c92497c99"
         },
         {
           "path": "Art/Skins/SudanSwordsman_sref.dds",
@@ -7114,8 +7134,8 @@
         },
         {
           "path": "Art/Skins/Swordsman_Babylon.gr2",
-          "size": 30656,
-          "hash": "ca51155e8c315963f56ac1957297e8f8a5fe7615a6b63b8f5b54841647f321a7"
+          "size": 30692,
+          "hash": "fa8dd1022c6b174102a67b4d550b40707d7f14059e54fba3f73120334e713e97"
         },
         {
           "path": "Art/Skins/Swordsman_Babylon_gloss.dds",
@@ -7134,8 +7154,8 @@
         },
         {
           "path": "Art/Skins/Swordsman_China_v2.gr2",
-          "size": 31964,
-          "hash": "daa9ff31c6eeab2af19657f640ded9e09140d805bb719a3d8d2867c07e6f9323"
+          "size": 31988,
+          "hash": "95e411d92f370a482c6ed4bd89b9e316aea1990e35b103f3f4eeeede67e07f81"
         },
         {
           "path": "Art/Skins/Swordsman_China_v2_gloss.dds",
@@ -7154,8 +7174,8 @@
         },
         {
           "path": "Art/Skins/Swordsman_Greece.gr2",
-          "size": 29584,
-          "hash": "e2df25207cf7e9ecd91025a5c93a2a240faff6f58d921626f5c1d8043e8aad45"
+          "size": 29608,
+          "hash": "c2f5fa55559f20c86c6b61d380352eb6c96b0258b2a8e366c4e76e31773fc208"
         },
         {
           "path": "Art/Skins/Swordsman_Greece_gloss.dds",
@@ -7174,8 +7194,8 @@
         },
         {
           "path": "Art/Skins/Swordsman_Inca.gr2",
-          "size": 28044,
-          "hash": "1033540541d5d5ad865287a4e36cd39f788e1914d767a8fa17913dfbf3647faa"
+          "size": 28076,
+          "hash": "67229fcdec0d64e14ddceb69ab0cefdfdbbc4ca7df416b11325501c5bc9cdd0e"
         },
         {
           "path": "Art/Skins/Swordsman_Inca_gloss.dds",
@@ -7194,8 +7214,8 @@
         },
         {
           "path": "Art/Skins/Swordsman_India.gr2",
-          "size": 34548,
-          "hash": "3252eeeb63eaf08a8b6c378dd8b6a29e0818d11af6c2cf52a789763d158b2f52"
+          "size": 34576,
+          "hash": "60da43c176876892850d21482d5afba9d6a0a2dac19267e210d1ad7bee8a6fe1"
         },
         {
           "path": "Art/Skins/Swordsman_India_2.dds",
@@ -7269,8 +7289,8 @@
         },
         {
           "path": "Art/Skins/T-34-85.gr2",
-          "size": 17740,
-          "hash": "737916120569ab796e1ff67d730623fd9b8d329c3e0d6471f84f824b808b0337"
+          "size": 17212,
+          "hash": "a8799be6f9c9064de25e115f35c7d523d42fbaa531f10f9d4ed8f27d503562de"
         },
         {
           "path": "Art/Skins/T55Ethiopia.dds",
@@ -7284,8 +7304,8 @@
         },
         {
           "path": "Art/Skins/T55Ethiopia.gr2",
-          "size": 39744,
-          "hash": "5abbece388e005a4867a9485af17f7b3870e26048cb37165c4abba0a3edc04fb"
+          "size": 39224,
+          "hash": "deb8211729286019c4da43536396cdcf4e518e7a238d6a22989146e101803762"
         },
         {
           "path": "Art/Skins/T55Mali.dds",
@@ -7299,8 +7319,8 @@
         },
         {
           "path": "Art/Skins/T55Mali.gr2",
-          "size": 39740,
-          "hash": "a20c9936a250f106867c53180b1933364ae27887bfc2f83e5f1885e3e0f4a32f"
+          "size": 39216,
+          "hash": "555216b8d564445546badcf6fa286383ed677f911cb93d32fd96af759158c59b"
         },
         {
           "path": "Art/Skins/T55Peru.dds",
@@ -7334,8 +7354,8 @@
         },
         {
           "path": "Art/Skins/T72_India.gr2",
-          "size": 37420,
-          "hash": "8d4fa0927d7ca734cb3fa4f4d75a4155f6be2cc0f77f4df65b4332cceaea3711"
+          "size": 36880,
+          "hash": "c90c0fe2d44f91aa80ad736abff87c2082612bf8b8c1917dd60a0bbf6e65b28c"
         },
         {
           "path": "Art/Skins/T72_Iran.fxsxml",
@@ -7344,8 +7364,8 @@
         },
         {
           "path": "Art/Skins/T72_Iran.gr2",
-          "size": 37420,
-          "hash": "160f036cb3bfc9d6a917d448606610156d1187e48adf7564125f22df70cb6304"
+          "size": 36880,
+          "hash": "8cd7ee14d0b7dee1cb8c1d552d420268076c5debbd6e666e9280547178191853"
         },
         {
           "path": "Art/Skins/ThraikanPezoi.dds",
@@ -7359,8 +7379,8 @@
         },
         {
           "path": "Art/Skins/ThraikanPezoi.gr2",
-          "size": 40336,
-          "hash": "673166e3574ad0b533a114d5c8e9368a2c5a6580f778f1a077caa013f79c1603"
+          "size": 40360,
+          "hash": "7ce9b8d7c18b0a870cb9d731ca8358950ba1c743815a9a5ad57c46b0ddc54e1f"
         },
         {
           "path": "Art/Skins/ThraikanPezoi_sref.dds",
@@ -7394,8 +7414,8 @@
         },
         {
           "path": "Art/Skins/Type1_Ho-Ni_I.gr2",
-          "size": 26904,
-          "hash": "93d5a7a6673a59e6e69476fd3947e245026d679a52349be492175b1482f66309"
+          "size": 26340,
+          "hash": "bd37e58ca6b1bc7a99750e1c1a16a9335e3bf146cee79a1d55a29c3dd858088e"
         },
         {
           "path": "Art/Skins/Type1_Ho-Ni_I_2.dds",
@@ -7414,8 +7434,8 @@
         },
         {
           "path": "Art/Skins/Type98_Ko-Hi.gr2",
-          "size": 34468,
-          "hash": "10dcc87a16d1173af52e77a17de13b32eb6b25e6aa941064bdf51c6a7cfc48ea"
+          "size": 33944,
+          "hash": "040f1f66567d1b765cf5d46a702987a09755a2d74f3500226b5986f8d90f822f"
         },
         {
           "path": "Art/Skins/UFlag_Netherlands_Pikeman.dds",
@@ -7429,8 +7449,8 @@
         },
         {
           "path": "Art/Skins/u_cuman_chabani.gr2",
-          "size": 53072,
-          "hash": "1c4bd5b90dc372b1a511a35c092faf77e584cb377fc523eeb3eec95302245fbc"
+          "size": 53088,
+          "hash": "8c7f4f60042c8ecefa09cf91228ad8e1cd782fe763018c82d7435fd072ebc577"
         },
         {
           "path": "Art/Skins/u_cuman_chabani_diff.dds",
@@ -7449,8 +7469,8 @@
         },
         {
           "path": "Art/Skins/u_cuman_mamluk.gr2",
-          "size": 57376,
-          "hash": "1f9a500b30e6edc5fde2597a99ffad358e72ed5527df6893b434e351ca170676"
+          "size": 57372,
+          "hash": "9650dc14ea185b01c29f95ffc61a632e31298073d7839ac801afacdaec13a0b1"
         },
         {
           "path": "Art/Skins/u_cuman_mamluk_diff.dds",
@@ -7494,8 +7514,8 @@
         },
         {
           "path": "Art/Skins/Vitez.gr2",
-          "size": 52804,
-          "hash": "7cd2916000eeba3e0dba73219e8a29b5076ad366753637b95029b670f603fe46"
+          "size": 52788,
+          "hash": "a2ec0412d05a073f0c5d9b35a15115b26a253e4b542e2f65ff4b7f9ec9143797"
         },
         {
           "path": "Art/Skins/Vitez_gloss.dds",
@@ -7524,8 +7544,8 @@
         },
         {
           "path": "Art/Skins/wales_longsw1.gr2",
-          "size": 29408,
-          "hash": "097b545f634bb5ea04f56df588d78eba3ad166c1dd66214e4272feab0b1592a1"
+          "size": 29460,
+          "hash": "81fc5d8d66cefa95f04ea2511559cfbc6583d67d0ee8089a685b2cbd452b86ff"
         },
         {
           "path": "Art/SocialPoliciesPleiad.dds",
@@ -8124,13 +8144,13 @@
         },
         {
           "path": "CHANGELOG.md",
-          "size": 76769,
-          "hash": "d8c52e48672ad896f1c6a9c18de2e77b8a401b583d0a7e03a7383d62205859de"
+          "size": 79665,
+          "hash": "734842ceb578050bc571fd70683e47412154624e2643c2233f75aad2ff9003b6"
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4418560,
-          "hash": "ab272263361ed3ffd4d8b3da89bc6ce4da968e487f65a02a62e981a6974b7cbe"
+          "size": 4420608,
+          "hash": "360c93c9a654a5ac3b7d474387ef15321c0beae6e3c24f5d73e98e2e6e625f85"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -8714,8 +8734,8 @@
         },
         {
           "path": "Override/CIV5Controls.xml",
-          "size": 1533042,
-          "hash": "12cf4e4ee65be8c87a45ba8420a48f719eea0432824963f0e29119dde197be9c"
+          "size": 1533054,
+          "hash": "5717802bb4faabb5e52f368740886735399ba9e1e658823f7b6229f30936d505"
         },
         {
           "path": "Override/CIV5CultureLevels.xml",
@@ -10509,8 +10529,8 @@
         },
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xml",
-          "size": 842127,
-          "hash": "9afdb8aa0e2fdc1e329a9ebe3db39f0ad995546be5f7d4b81bae5873676d1170"
+          "size": 843504,
+          "hash": "9c80dea4c70419e89b4e572b3ce708870fad4dee90dca0c0baa727a8a149a2e1"
         },
         {
           "path": "Override/CIV5Trades.xml",
@@ -10654,8 +10674,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 10453907,
-          "hash": "001f637fdc5a15c70a88abb33ab52c83541be3831e46ce2e66bb05f14250d62e"
+          "size": 10447652,
+          "hash": "1baf76802690c340600bacba8c07d3cc0ce469bae861fa41b0ac72f12f92c1fd"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -10694,8 +10714,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 9772515,
-          "hash": "b26bd024fcbd1751ec59d7bd8a8e56459cd00d7ab9009c4a73c6b5e749d73ecd"
+          "size": 9774564,
+          "hash": "db22c5c0099dbad6840cc0aad3e20147fe1a8d3f86532cafe3d541f3b30368b2"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
@@ -11009,8 +11029,8 @@
         },
         {
           "path": "PATCH_VERSION.txt",
-          "size": 7,
-          "hash": "6aed42c7e8a48171b6a25fe95ff8efb8f41b31f30e84e4c5623ecdb77438860c"
+          "size": 8,
+          "hash": "93da1885cde14159d03e382076c2e7181f4a6e096e13cab92aae5fef922a6085"
         },
         {
           "path": "randomize_cursor.bat",
@@ -12854,13 +12874,13 @@
         },
         {
           "path": "tmp/ui/MiniMapPanel.lua",
-          "size": 39446,
-          "hash": "4e82e68f92abf4ef99a42339781c2121d1b3d05b3c83541f0c9235d5fcfd5efe"
+          "size": 41350,
+          "hash": "57547da9469f67ddc689db0e04c12dd8c8503cad8c4b2059d5966dfa5fe18c5c"
         },
         {
           "path": "tmp/ui/MiniMapPanel.xml",
-          "size": 8064,
-          "hash": "cb78615d4cc571334817336d5f03cfa483284436390285da459241befb989086"
+          "size": 10939,
+          "hash": "c1e066f912d600226c57bb29d2202a9b4ac51f15d9fe552767400c86121b76ba"
         },
         {
           "path": "tmp/ui/MPGameDefaults.lua",
@@ -14523,6 +14543,22 @@
   "news": {
     "entries": [
       {
+        "date": "2026-09-08T00:00:00+00:00",
+        "title": "\u042E\u043D\u0438\u0442\u044B \u0441\u043D\u043E\u0432\u0430 \u0441\u0442\u043E\u044F\u0442 \u043D\u0430 \u043D\u043E\u0433\u0430\u0445",
+        "body": "\u0412 \u0432\u0435\u0440\u0441\u0438\u044F\u0445 1.5.69\u20131.5.71 \u0447\u0430\u0441\u0442\u044C \u043C\u043E\u0434\u0435\u043B\u0435\u0439 \u043B\u0435\u0436\u0430\u043B\u0430 \u043D\u0430 \u0431\u043E\u043A\u0443. \u041F\u0440\u0438\u0447\u0438\u043D\u0430 \u2014 \u043E\u0431\u0449\u0430\u044F \u043F\u0440\u0430\u0432\u043A\u0430\n\u0437\u0430\u0433\u043E\u043B\u043E\u0432\u043A\u0430 \u043C\u043E\u0434\u0435\u043B\u0438, \u0441\u0434\u0435\u043B\u0430\u043D\u043D\u0430\u044F \u0440\u0430\u0434\u0438 \u0442\u0435\u0445\u043D\u0438\u043A\u0438: \u0443 \u0442\u0430\u043D\u043A\u043E\u0432 \u0438 \u0442\u0430\u043D\u043A\u0435\u0442\u043E\u043A \u0433\u0435\u043E\u043C\u0435\u0442\u0440\u0438\u044F \u0438 \u043F\u0440\u0430\u0432\u0434\u0430\n\u0431\u044B\u043B\u0430 \u043D\u0430\u0440\u0438\u0441\u043E\u0432\u0430\u043D\u0430 \u0432 \u0438\u0433\u0440\u043E\u0432\u043E\u0439 \u0441\u0438\u0441\u0442\u0435\u043C\u0435 \u043A\u043E\u043E\u0440\u0434\u0438\u043D\u0430\u0442, \u0438 \u0440\u0430\u0437\u0432\u043E\u0440\u043E\u0442 \u043F\u0440\u0438 \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0435 \u0438\u043C \u043C\u0435\u0448\u0430\u043B, \u0430\n\u0443 \u043F\u0435\u0445\u043E\u0442\u044B \u2014 \u043D\u0430\u043E\u0431\u043E\u0440\u043E\u0442, \u0440\u0430\u0437\u0432\u043E\u0440\u043E\u0442 \u0435\u0451 \u043F\u043E\u0434\u043D\u0438\u043C\u0430\u043B. \u041E\u0442\u043A\u043B\u044E\u0447\u0438\u0432 \u0440\u0430\u0437\u0432\u043E\u0440\u043E\u0442 \u0432\u0441\u0435\u043C \u0440\u0430\u0437\u043E\u043C, \u043C\u044B\n\u043F\u043E\u043B\u043E\u0436\u0438\u043B\u0438 \u0441\u043E\u0442\u043D\u044E \u043C\u043E\u0434\u0435\u043B\u0435\u0439.\n\u0422\u0435\u043F\u0435\u0440\u044C \u0440\u0435\u0448\u0435\u043D\u0438\u0435 \u043F\u0440\u0438\u043D\u0438\u043C\u0430\u0435\u0442\u0441\u044F \u043F\u043E \u043A\u0430\u0436\u0434\u043E\u0439 \u043C\u043E\u0434\u0435\u043B\u0438 \u043E\u0442\u0434\u0435\u043B\u044C\u043D\u043E \u2014 \u0441\u0440\u0430\u0432\u043D\u0435\u043D\u0438\u0435\u043C \u0435\u0451 \u0441\u043E\u0431\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0445\n\u0433\u0430\u0431\u0430\u0440\u0438\u0442\u043E\u0432 \u0441 \u0432\u0430\u043D\u0438\u043B\u044C\u043D\u043E\u0439 \u043C\u043E\u0434\u0435\u043B\u044C\u044E, \u0447\u044C\u044E \u0430\u043D\u0438\u043C\u0430\u0446\u0438\u044E \u043E\u043D\u0430 \u0438\u0433\u0440\u0430\u0435\u0442. \u0418\u0437 240 \u043E\u0431\u043B\u0438\u043A\u043E\u0432 119\n\u043E\u0441\u0442\u0430\u043B\u0438\u0441\u044C \u0431\u0435\u0437 \u0440\u0430\u0437\u0432\u043E\u0440\u043E\u0442\u0430, 121 \u0432\u0435\u0440\u043D\u0443\u043B\u0438 \u0440\u043E\u0434\u043D\u043E\u0439. \u0421\u043F\u043B\u043E\u0448\u043D\u0430\u044F \u0441\u0432\u0435\u0440\u043A\u0430 \u043F\u043E\u043A\u0430\u0437\u0430\u043B\u0430 \u0441\u043E\u0432\u043F\u0430\u0434\u0435\u043D\u0438\u0435\n\u0443 239 \u0438\u0437 240.",
+        "tag": "\u0418\u0421\u041F\u0420\u0410\u0412\u041B\u0415\u041D\u0418\u0415",
+        "HasUsableUrl": false,
+        "IsUsable": true
+      },
+      {
+        "date": "2026-09-08T00:00:00+00:00",
+        "title": "\u0421\u0431\u043E\u0440 \u043B\u043E\u0433\u043E\u0432 \u0442\u0435\u043F\u0435\u0440\u044C \u0434\u043E\u0435\u0437\u0436\u0430\u0435\u0442 \u0446\u0435\u043B\u0438\u043A\u043E\u043C",
+        "body": "\u041B\u0430\u0443\u043D\u0447\u0435\u0440 \u0438 \u0440\u0430\u043D\u044C\u0448\u0435 \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u044F\u043B \u0440\u0430\u0437\u0431\u043E\u0440 \u043F\u0430\u0440\u0442\u0438\u0438, \u0435\u0441\u043B\u0438 \u0432 \u043D\u0435\u0439 \u043D\u0430\u0448\u043B\u0430\u0441\u044C \u043E\u0448\u0438\u0431\u043A\u0430, \u043D\u043E \u043F\u043E\u043B\u043D\u044B\u0439\n\u0430\u0440\u0445\u0438\u0432 \u043B\u043E\u0433\u043E\u0432 \u043F\u0440\u0438 \u044D\u0442\u043E\u043C \u043C\u043E\u043B\u0447\u0430 \u043E\u0442\u0431\u0438\u0432\u0430\u043B\u0441\u044F \u0441\u0435\u0440\u0432\u0435\u0440\u043E\u043C. \u0418\u0437-\u0437\u0430 \u044D\u0442\u043E\u0433\u043E \u0440\u0430\u0437\u0431\u043E\u0440 \u0436\u0430\u043B\u043E\u0431 \u0443\u043F\u0438\u0440\u0430\u043B\u0441\u044F\n\u0432 \u043A\u043E\u0440\u043E\u0442\u043A\u0443\u044E \u0432\u044B\u0436\u0438\u043C\u043A\u0443, \u0430 \u0441\u0430\u043C\u043E\u0433\u043E \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u043E\u0433\u043E \u2014 \u0436\u0443\u0440\u043D\u0430\u043B\u0430 \u0441\u0435\u0442\u0435\u0432\u044B\u0445 \u0441\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0439 \u2014 \u0443 \u043D\u0430\u0441 \u043D\u0435\n\u0431\u044B\u043B\u043E. \u041F\u0440\u0438\u0451\u043C \u0430\u0440\u0445\u0438\u0432\u043E\u0432 \u043F\u043E\u0447\u0438\u043D\u0435\u043D.\n\u0427\u0442\u043E \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u044F\u0435\u0442\u0441\u044F, \u0432\u0438\u0434\u043D\u043E \u0432 \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0430\u0445 \u043B\u0430\u0443\u043D\u0447\u0435\u0440\u0430, \u0438 \u043E\u0442\u043F\u0440\u0430\u0432\u043A\u0443 \u043C\u043E\u0436\u043D\u043E \u0432\u044B\u043A\u043B\u044E\u0447\u0438\u0442\u044C.",
+        "tag": "\u041B\u0410\u0423\u041D\u0427\u0415\u0420",
+        "HasUsableUrl": false,
+        "IsUsable": true
+      },
+      {
         "date": "2026-08-28T00:00:00+00:00",
         "title": "\u041B\u0430\u0443\u043D\u0447\u0435\u0440 0.3.23 \u2014 \u0432\u0445\u043E\u0434 \u0432 \u043A\u043E\u043C\u043D\u0430\u0442\u0443 \u0438 \u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435 \u043A \u0443\u0437\u043B\u0443",
         "body": "\u0421\u043C\u0435\u0448\u0430\u043D\u043D\u043E\u0435 \u043B\u043E\u0431\u0431\u0438 \u0431\u043E\u043B\u044C\u0448\u0435 \u043D\u0435 \u0440\u0430\u0437\u0432\u0430\u043B\u0438\u0432\u0430\u0435\u0442\u0441\u044F. \u041F\u0440\u043E\u0441\u043B\u043E\u0439\u043A\u0430 \u043E\u0442\u0434\u0430\u0432\u0430\u043B\u0430 \u0432 \u043D\u0430\u0448 \u0443\u0437\u0435\u043B \u0432\u043E\u043E\u0431\u0449\u0435\n\u0432\u0441\u0451, \u0432\u043A\u043B\u044E\u0447\u0430\u044F \u0441\u043E\u043F\u0435\u0440\u043D\u0438\u043A\u043E\u0432, \u043A\u043E\u0442\u043E\u0440\u044B\u0445 \u043D\u0430 \u0443\u0437\u043B\u0435 \u043D\u0435\u0442; \u0442\u0430\u043A\u0438\u0435 \u043F\u0430\u043A\u0435\u0442\u044B \u0443\u0437\u0435\u043B \u0442\u0435\u0440\u044F\u043B, \u0430 \u0438\u0433\u0440\u0435\n\u043F\u0440\u0438 \u044D\u0442\u043E\u043C \u043E\u0442\u0432\u0435\u0447\u0430\u043B\u0438, \u0447\u0442\u043E \u0441\u0432\u044F\u0437\u044C \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D\u0430. \u0418\u0433\u0440\u0430 \u0436\u0434\u0430\u043B\u0430 \u0442\u0438\u0448\u0438\u043D\u0443 \u0438 \u043F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u043B\u0430 \u043E\u0448\u0438\u0431\u043A\u0443\n\u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F. \u0422\u0435\u043F\u0435\u0440\u044C \u0443\u0437\u0435\u043B \u0441\u0430\u043C \u0433\u043E\u0432\u043E\u0440\u0438\u0442, \u043A\u0442\u043E \u043D\u0430 \u043D\u0451\u043C \u0435\u0441\u0442\u044C, \u0438 \u0441 \u0442\u0435\u043C\u0438, \u043A\u043E\u0433\u043E \u0442\u0430\u043C \u043D\u0435\u0442,\n\u0438\u0433\u0440\u0430 \u043E\u0431\u0449\u0430\u0435\u0442\u0441\u044F \u0447\u0435\u0440\u0435\u0437 Steam, \u043A\u0430\u043A \u0440\u0430\u043D\u044C\u0448\u0435.\n\u0412\u0445\u043E\u0434 \u043F\u043E \u0441\u043F\u0438\u0441\u043A\u0443 \u043A\u043E\u043C\u043D\u0430\u0442 \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442 \u0438 \u0442\u043E\u0433\u0434\u0430, \u043A\u043E\u0433\u0434\u0430 Steam \u043D\u0435 \u0441\u043E\u043E\u0431\u0449\u0430\u0435\u0442 \u0432\u043B\u0430\u0434\u0435\u043B\u044C\u0446\u0430\n\u043A\u043E\u043C\u043D\u0430\u0442\u044B. \u0420\u0430\u043D\u044C\u0448\u0435 \u043A\u043D\u043E\u043F\u043A\u0430 \u0432 \u044D\u0442\u043E\u043C \u0441\u043B\u0443\u0447\u0430\u0435 \u0433\u0430\u0441\u043B\u0430, \u0445\u043E\u0442\u044F \u0432\u043E\u0439\u0442\u0438 \u0431\u044B\u043B\u043E \u043C\u043E\u0436\u043D\u043E: \u043F\u0440\u0438\n\u0432\u044B\u043A\u043B\u044E\u0447\u0435\u043D\u043D\u043E\u0439 \u0438\u0433\u0440\u0435 \u0432\u0445\u043E\u0434 \u0438\u0434\u0451\u0442 \u043F\u043E \u043D\u043E\u043C\u0435\u0440\u0443 \u043B\u043E\u0431\u0431\u0438, \u0438 \u0432\u043B\u0430\u0434\u0435\u043B\u0435\u0446 \u0434\u043B\u044F \u043D\u0435\u0433\u043E \u043D\u0435 \u043D\u0443\u0436\u0435\u043D.\n\u0418\u043C\u0435\u043D\u043D\u043E \u043F\u043E\u044D\u0442\u043E\u043C\u0443 \u0432\u0445\u043E\u0434 \u0447\u0435\u0440\u0435\u0437 \u0434\u0440\u0443\u0437\u0435\u0439 \u0440\u0430\u0431\u043E\u0442\u0430\u043B, \u0430 \u0447\u0435\u0440\u0435\u0437 \u0441\u043F\u0438\u0441\u043E\u043A \u2014 \u043D\u0435\u0442.\n\u041F\u043E\u0434\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435 \u043A \u0443\u0437\u043B\u0443 \u043D\u0430\u0447\u0438\u043D\u0430\u0435\u0442\u0441\u044F \u0441 \u043D\u0430\u0441\u0442\u043E\u044F\u0449\u0435\u0433\u043E \u0440\u0443\u043A\u043E\u043F\u043E\u0436\u0430\u0442\u0438\u044F. \u0423 \u0447\u0430\u0441\u0442\u0438 \u0438\u0433\u0440\u043E\u043A\u043E\u0432\n\u043F\u043E\u0441\u0440\u0435\u0434\u043D\u0438\u043A \u043D\u0430 \u043F\u0443\u0442\u0438 (VPN, \u0444\u0438\u043B\u044C\u0442\u0440 \u043F\u0440\u043E\u0432\u0430\u0439\u0434\u0435\u0440\u0430, \u0430\u043D\u0442\u0438\u0432\u0438\u0440\u0443\u0441 \u0441 \u043F\u0440\u043E\u0432\u0435\u0440\u043A\u043E\u0439 \u0437\u0430\u0449\u0438\u0449\u0451\u043D\u043D\u044B\u0445\n\u0441\u043E\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u0439) \u0433\u043B\u0443\u0448\u0438\u043B \u043D\u0430\u0448\u0435 \u043F\u0440\u0438\u0432\u0435\u0442\u0441\u0442\u0432\u0438\u0435, \u0438 \u0441\u0432\u044F\u0437\u044C \u0441 \u0443\u0437\u043B\u043E\u043C \u043D\u0435 \u043F\u043E\u0434\u043D\u0438\u043C\u0430\u043B\u0430\u0441\u044C \u0432\u043E\u0432\u0441\u0435.\n\u0418\u0433\u0440\u0430 \u0442\u043E\u0433\u0434\u0430 \u0432\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u043B\u0430\u0441\u044C \u043D\u0430 Steam \u0438 \u043B\u043E\u043C\u0430\u043B\u0430 \u043A\u043E\u043C\u043D\u0430\u0442\u0443 \u043E\u0441\u0442\u0430\u043B\u044C\u043D\u044B\u043C.\n\u041C\u043E\u0434 \u043D\u0435 \u0438\u0437\u043C\u0435\u043D\u0438\u043B\u0441\u044F: \u043E\u0431\u043D\u043E\u0432\u0438\u0442\u0441\u044F \u0442\u043E\u043B\u044C\u043A\u043E \u043B\u0430\u0443\u043D\u0447\u0435\u0440.",
@@ -14725,6 +14761,22 @@
     ],
     "Usable": [
       {
+        "date": "2026-09-08T00:00:00+00:00",
+        "title": "\u042E\u043D\u0438\u0442\u044B \u0441\u043D\u043E\u0432\u0430 \u0441\u0442\u043E\u044F\u0442 \u043D\u0430 \u043D\u043E\u0433\u0430\u0445",
+        "body": "\u0412 \u0432\u0435\u0440\u0441\u0438\u044F\u0445 1.5.69\u20131.5.71 \u0447\u0430\u0441\u0442\u044C \u043C\u043E\u0434\u0435\u043B\u0435\u0439 \u043B\u0435\u0436\u0430\u043B\u0430 \u043D\u0430 \u0431\u043E\u043A\u0443. \u041F\u0440\u0438\u0447\u0438\u043D\u0430 \u2014 \u043E\u0431\u0449\u0430\u044F \u043F\u0440\u0430\u0432\u043A\u0430\n\u0437\u0430\u0433\u043E\u043B\u043E\u0432\u043A\u0430 \u043C\u043E\u0434\u0435\u043B\u0438, \u0441\u0434\u0435\u043B\u0430\u043D\u043D\u0430\u044F \u0440\u0430\u0434\u0438 \u0442\u0435\u0445\u043D\u0438\u043A\u0438: \u0443 \u0442\u0430\u043D\u043A\u043E\u0432 \u0438 \u0442\u0430\u043D\u043A\u0435\u0442\u043E\u043A \u0433\u0435\u043E\u043C\u0435\u0442\u0440\u0438\u044F \u0438 \u043F\u0440\u0430\u0432\u0434\u0430\n\u0431\u044B\u043B\u0430 \u043D\u0430\u0440\u0438\u0441\u043E\u0432\u0430\u043D\u0430 \u0432 \u0438\u0433\u0440\u043E\u0432\u043E\u0439 \u0441\u0438\u0441\u0442\u0435\u043C\u0435 \u043A\u043E\u043E\u0440\u0434\u0438\u043D\u0430\u0442, \u0438 \u0440\u0430\u0437\u0432\u043E\u0440\u043E\u0442 \u043F\u0440\u0438 \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0435 \u0438\u043C \u043C\u0435\u0448\u0430\u043B, \u0430\n\u0443 \u043F\u0435\u0445\u043E\u0442\u044B \u2014 \u043D\u0430\u043E\u0431\u043E\u0440\u043E\u0442, \u0440\u0430\u0437\u0432\u043E\u0440\u043E\u0442 \u0435\u0451 \u043F\u043E\u0434\u043D\u0438\u043C\u0430\u043B. \u041E\u0442\u043A\u043B\u044E\u0447\u0438\u0432 \u0440\u0430\u0437\u0432\u043E\u0440\u043E\u0442 \u0432\u0441\u0435\u043C \u0440\u0430\u0437\u043E\u043C, \u043C\u044B\n\u043F\u043E\u043B\u043E\u0436\u0438\u043B\u0438 \u0441\u043E\u0442\u043D\u044E \u043C\u043E\u0434\u0435\u043B\u0435\u0439.\n\u0422\u0435\u043F\u0435\u0440\u044C \u0440\u0435\u0448\u0435\u043D\u0438\u0435 \u043F\u0440\u0438\u043D\u0438\u043C\u0430\u0435\u0442\u0441\u044F \u043F\u043E \u043A\u0430\u0436\u0434\u043E\u0439 \u043C\u043E\u0434\u0435\u043B\u0438 \u043E\u0442\u0434\u0435\u043B\u044C\u043D\u043E \u2014 \u0441\u0440\u0430\u0432\u043D\u0435\u043D\u0438\u0435\u043C \u0435\u0451 \u0441\u043E\u0431\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0445\n\u0433\u0430\u0431\u0430\u0440\u0438\u0442\u043E\u0432 \u0441 \u0432\u0430\u043D\u0438\u043B\u044C\u043D\u043E\u0439 \u043C\u043E\u0434\u0435\u043B\u044C\u044E, \u0447\u044C\u044E \u0430\u043D\u0438\u043C\u0430\u0446\u0438\u044E \u043E\u043D\u0430 \u0438\u0433\u0440\u0430\u0435\u0442. \u0418\u0437 240 \u043E\u0431\u043B\u0438\u043A\u043E\u0432 119\n\u043E\u0441\u0442\u0430\u043B\u0438\u0441\u044C \u0431\u0435\u0437 \u0440\u0430\u0437\u0432\u043E\u0440\u043E\u0442\u0430, 121 \u0432\u0435\u0440\u043D\u0443\u043B\u0438 \u0440\u043E\u0434\u043D\u043E\u0439. \u0421\u043F\u043B\u043E\u0448\u043D\u0430\u044F \u0441\u0432\u0435\u0440\u043A\u0430 \u043F\u043E\u043A\u0430\u0437\u0430\u043B\u0430 \u0441\u043E\u0432\u043F\u0430\u0434\u0435\u043D\u0438\u0435\n\u0443 239 \u0438\u0437 240.",
+        "tag": "\u0418\u0421\u041F\u0420\u0410\u0412\u041B\u0415\u041D\u0418\u0415",
+        "HasUsableUrl": false,
+        "IsUsable": true
+      },
+      {
+        "date": "2026-09-08T00:00:00+00:00",
+        "title": "\u0421\u0431\u043E\u0440 \u043B\u043E\u0433\u043E\u0432 \u0442\u0435\u043F\u0435\u0440\u044C \u0434\u043E\u0435\u0437\u0436\u0430\u0435\u0442 \u0446\u0435\u043B\u0438\u043A\u043E\u043C",
+        "body": "\u041B\u0430\u0443\u043D\u0447\u0435\u0440 \u0438 \u0440\u0430\u043D\u044C\u0448\u0435 \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u044F\u043B \u0440\u0430\u0437\u0431\u043E\u0440 \u043F\u0430\u0440\u0442\u0438\u0438, \u0435\u0441\u043B\u0438 \u0432 \u043D\u0435\u0439 \u043D\u0430\u0448\u043B\u0430\u0441\u044C \u043E\u0448\u0438\u0431\u043A\u0430, \u043D\u043E \u043F\u043E\u043B\u043D\u044B\u0439\n\u0430\u0440\u0445\u0438\u0432 \u043B\u043E\u0433\u043E\u0432 \u043F\u0440\u0438 \u044D\u0442\u043E\u043C \u043C\u043E\u043B\u0447\u0430 \u043E\u0442\u0431\u0438\u0432\u0430\u043B\u0441\u044F \u0441\u0435\u0440\u0432\u0435\u0440\u043E\u043C. \u0418\u0437-\u0437\u0430 \u044D\u0442\u043E\u0433\u043E \u0440\u0430\u0437\u0431\u043E\u0440 \u0436\u0430\u043B\u043E\u0431 \u0443\u043F\u0438\u0440\u0430\u043B\u0441\u044F\n\u0432 \u043A\u043E\u0440\u043E\u0442\u043A\u0443\u044E \u0432\u044B\u0436\u0438\u043C\u043A\u0443, \u0430 \u0441\u0430\u043C\u043E\u0433\u043E \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u043E\u0433\u043E \u2014 \u0436\u0443\u0440\u043D\u0430\u043B\u0430 \u0441\u0435\u0442\u0435\u0432\u044B\u0445 \u0441\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0439 \u2014 \u0443 \u043D\u0430\u0441 \u043D\u0435\n\u0431\u044B\u043B\u043E. \u041F\u0440\u0438\u0451\u043C \u0430\u0440\u0445\u0438\u0432\u043E\u0432 \u043F\u043E\u0447\u0438\u043D\u0435\u043D.\n\u0427\u0442\u043E \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u044F\u0435\u0442\u0441\u044F, \u0432\u0438\u0434\u043D\u043E \u0432 \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0430\u0445 \u043B\u0430\u0443\u043D\u0447\u0435\u0440\u0430, \u0438 \u043E\u0442\u043F\u0440\u0430\u0432\u043A\u0443 \u043C\u043E\u0436\u043D\u043E \u0432\u044B\u043A\u043B\u044E\u0447\u0438\u0442\u044C.",
+        "tag": "\u041B\u0410\u0423\u041D\u0427\u0415\u0420",
+        "HasUsableUrl": false,
+        "IsUsable": true
+      },
+      {
         "date": "2026-08-28T00:00:00+00:00",
         "title": "\u041B\u0430\u0443\u043D\u0447\u0435\u0440 0.3.23 \u2014 \u0432\u0445\u043E\u0434 \u0432 \u043A\u043E\u043C\u043D\u0430\u0442\u0443 \u0438 \u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435 \u043A \u0443\u0437\u043B\u0443",
         "body": "\u0421\u043C\u0435\u0448\u0430\u043D\u043D\u043E\u0435 \u043B\u043E\u0431\u0431\u0438 \u0431\u043E\u043B\u044C\u0448\u0435 \u043D\u0435 \u0440\u0430\u0437\u0432\u0430\u043B\u0438\u0432\u0430\u0435\u0442\u0441\u044F. \u041F\u0440\u043E\u0441\u043B\u043E\u0439\u043A\u0430 \u043E\u0442\u0434\u0430\u0432\u0430\u043B\u0430 \u0432 \u043D\u0430\u0448 \u0443\u0437\u0435\u043B \u0432\u043E\u043E\u0431\u0449\u0435\n\u0432\u0441\u0451, \u0432\u043A\u043B\u044E\u0447\u0430\u044F \u0441\u043E\u043F\u0435\u0440\u043D\u0438\u043A\u043E\u0432, \u043A\u043E\u0442\u043E\u0440\u044B\u0445 \u043D\u0430 \u0443\u0437\u043B\u0435 \u043D\u0435\u0442; \u0442\u0430\u043A\u0438\u0435 \u043F\u0430\u043A\u0435\u0442\u044B \u0443\u0437\u0435\u043B \u0442\u0435\u0440\u044F\u043B, \u0430 \u0438\u0433\u0440\u0435\n\u043F\u0440\u0438 \u044D\u0442\u043E\u043C \u043E\u0442\u0432\u0435\u0447\u0430\u043B\u0438, \u0447\u0442\u043E \u0441\u0432\u044F\u0437\u044C \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D\u0430. \u0418\u0433\u0440\u0430 \u0436\u0434\u0430\u043B\u0430 \u0442\u0438\u0448\u0438\u043D\u0443 \u0438 \u043F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u043B\u0430 \u043E\u0448\u0438\u0431\u043A\u0443\n\u043F\u043E\u0434\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F. \u0422\u0435\u043F\u0435\u0440\u044C \u0443\u0437\u0435\u043B \u0441\u0430\u043C \u0433\u043E\u0432\u043E\u0440\u0438\u0442, \u043A\u0442\u043E \u043D\u0430 \u043D\u0451\u043C \u0435\u0441\u0442\u044C, \u0438 \u0441 \u0442\u0435\u043C\u0438, \u043A\u043E\u0433\u043E \u0442\u0430\u043C \u043D\u0435\u0442,\n\u0438\u0433\u0440\u0430 \u043E\u0431\u0449\u0430\u0435\u0442\u0441\u044F \u0447\u0435\u0440\u0435\u0437 Steam, \u043A\u0430\u043A \u0440\u0430\u043D\u044C\u0448\u0435.\n\u0412\u0445\u043E\u0434 \u043F\u043E \u0441\u043F\u0438\u0441\u043A\u0443 \u043A\u043E\u043C\u043D\u0430\u0442 \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442 \u0438 \u0442\u043E\u0433\u0434\u0430, \u043A\u043E\u0433\u0434\u0430 Steam \u043D\u0435 \u0441\u043E\u043E\u0431\u0449\u0430\u0435\u0442 \u0432\u043B\u0430\u0434\u0435\u043B\u044C\u0446\u0430\n\u043A\u043E\u043C\u043D\u0430\u0442\u044B. \u0420\u0430\u043D\u044C\u0448\u0435 \u043A\u043D\u043E\u043F\u043A\u0430 \u0432 \u044D\u0442\u043E\u043C \u0441\u043B\u0443\u0447\u0430\u0435 \u0433\u0430\u0441\u043B\u0430, \u0445\u043E\u0442\u044F \u0432\u043E\u0439\u0442\u0438 \u0431\u044B\u043B\u043E \u043C\u043E\u0436\u043D\u043E: \u043F\u0440\u0438\n\u0432\u044B\u043A\u043B\u044E\u0447\u0435\u043D\u043D\u043E\u0439 \u0438\u0433\u0440\u0435 \u0432\u0445\u043E\u0434 \u0438\u0434\u0451\u0442 \u043F\u043E \u043D\u043E\u043C\u0435\u0440\u0443 \u043B\u043E\u0431\u0431\u0438, \u0438 \u0432\u043B\u0430\u0434\u0435\u043B\u0435\u0446 \u0434\u043B\u044F \u043D\u0435\u0433\u043E \u043D\u0435 \u043D\u0443\u0436\u0435\u043D.\n\u0418\u043C\u0435\u043D\u043D\u043E \u043F\u043E\u044D\u0442\u043E\u043C\u0443 \u0432\u0445\u043E\u0434 \u0447\u0435\u0440\u0435\u0437 \u0434\u0440\u0443\u0437\u0435\u0439 \u0440\u0430\u0431\u043E\u0442\u0430\u043B, \u0430 \u0447\u0435\u0440\u0435\u0437 \u0441\u043F\u0438\u0441\u043E\u043A \u2014 \u043D\u0435\u0442.\n\u041F\u043E\u0434\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435 \u043A \u0443\u0437\u043B\u0443 \u043D\u0430\u0447\u0438\u043D\u0430\u0435\u0442\u0441\u044F \u0441 \u043D\u0430\u0441\u0442\u043E\u044F\u0449\u0435\u0433\u043E \u0440\u0443\u043A\u043E\u043F\u043E\u0436\u0430\u0442\u0438\u044F. \u0423 \u0447\u0430\u0441\u0442\u0438 \u0438\u0433\u0440\u043E\u043A\u043E\u0432\n\u043F\u043E\u0441\u0440\u0435\u0434\u043D\u0438\u043A \u043D\u0430 \u043F\u0443\u0442\u0438 (VPN, \u0444\u0438\u043B\u044C\u0442\u0440 \u043F\u0440\u043E\u0432\u0430\u0439\u0434\u0435\u0440\u0430, \u0430\u043D\u0442\u0438\u0432\u0438\u0440\u0443\u0441 \u0441 \u043F\u0440\u043E\u0432\u0435\u0440\u043A\u043E\u0439 \u0437\u0430\u0449\u0438\u0449\u0451\u043D\u043D\u044B\u0445\n\u0441\u043E\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u0439) \u0433\u043B\u0443\u0448\u0438\u043B \u043D\u0430\u0448\u0435 \u043F\u0440\u0438\u0432\u0435\u0442\u0441\u0442\u0432\u0438\u0435, \u0438 \u0441\u0432\u044F\u0437\u044C \u0441 \u0443\u0437\u043B\u043E\u043C \u043D\u0435 \u043F\u043E\u0434\u043D\u0438\u043C\u0430\u043B\u0430\u0441\u044C \u0432\u043E\u0432\u0441\u0435.\n\u0418\u0433\u0440\u0430 \u0442\u043E\u0433\u0434\u0430 \u0432\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u043B\u0430\u0441\u044C \u043D\u0430 Steam \u0438 \u043B\u043E\u043C\u0430\u043B\u0430 \u043A\u043E\u043C\u043D\u0430\u0442\u0443 \u043E\u0441\u0442\u0430\u043B\u044C\u043D\u044B\u043C.\n\u041C\u043E\u0434 \u043D\u0435 \u0438\u0437\u043C\u0435\u043D\u0438\u043B\u0441\u044F: \u043E\u0431\u043D\u043E\u0432\u0438\u0442\u0441\u044F \u0442\u043E\u043B\u044C\u043A\u043E \u043B\u0430\u0443\u043D\u0447\u0435\u0440.",
@@ -14926,14 +14978,6 @@
       }
     ],
     "Any": true
-  },
-  "client": {
-    "version": "0.3.39",
-    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas3/nova-client-0.3.39.zip",
-    "sha256": "955ccdd4392498da37e1874ec919ec0e82269f67c8d4bb926b9c7abb7fa1f40c",
-    "size": 60425241,
-    "notes": "\u041F\u0435\u0440\u0432\u044B\u0439 \u044D\u0442\u0430\u043F \u043F\u043B\u0430\u043D\u0430 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u0438. \u041B\u0430\u0443\u043D\u0447\u0435\u0440 \u0431\u043E\u043B\u044C\u0448\u0435 \u043D\u0435 \u0432\u043A\u043B\u044E\u0447\u0430\u0435\u0442 \u0438\u0433\u0440\u043E\u043A\u0443 ValidateGameDatabase (\u043F\u043E\u043B\u043D\u0430\u044F \u043F\u0440\u043E\u0432\u0435\u0440\u043A\u0430 \u0431\u0430\u0437\u044B \u043F\u0440\u0438 \u043A\u0430\u0436\u0434\u043E\u0439 \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0435, \u0441\u0435\u043A\u0443\u043D\u0434\u044B \u043D\u0430 \u0441\u0442\u0430\u0440\u0442\u0435) \u0438 \u0433\u0430\u0441\u0438\u0442 \u0435\u0433\u043E, \u0435\u0441\u043B\u0438 \u0441\u0430\u043C \u043A\u043E\u0433\u0434\u0430-\u0442\u043E \u0432\u043A\u043B\u044E\u0447\u0438\u043B; \u0437\u0430\u043F\u0438\u0441\u044C \u043B\u043E\u0433\u043E\u0432 \u043E\u0441\u0442\u0430\u0451\u0442\u0441\u044F. \u0414\u043E\u0440\u043E\u0433\u0438\u0435 \u043A\u043B\u044E\u0447\u0438 [Debug] \u043D\u0435 \u0442\u0440\u043E\u0433\u0430\u044E\u0442\u0441\u044F \u2014 \u0442\u043E\u043B\u044C\u043A\u043E \u043F\u0440\u0435\u0434\u0443\u043F\u0440\u0435\u0436\u0434\u0435\u043D\u0438\u0435 \u0432 \u0436\u0443\u0440\u043D\u0430\u043B. \u0421\u043D\u0438\u043C\u043A\u0438 \u043E\u0431\u043B\u0438\u043A\u043E\u0432 \u0432\u044B\u043D\u0435\u0441\u0435\u043D\u044B \u0438\u0437 Art\\, \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u0434\u0432\u0438\u0436\u043E\u043A \u0438\u043D\u0434\u0435\u043A\u0441\u0438\u0440\u0443\u0435\u0442 \u0446\u0435\u043B\u0438\u043A\u043E\u043C. \u0423\u0431\u043E\u0440\u043A\u0430 \u0447\u0443\u0436\u0438\u0445 \u043C\u043E\u0434\u043E\u0432 \u0447\u0438\u043D\u0438\u0442\u0441\u044F: \u043F\u0435\u0440\u0435\u043D\u043E\u0441 \u043F\u0430\u043F\u043E\u043A \u043D\u0435 \u0440\u0430\u0431\u043E\u0442\u0430\u043B \u043F\u0440\u043E\u0442\u0438\u0432 \u043F\u043E\u0434\u043F\u0438\u0441\u043E\u043A \u043C\u0430\u0441\u0442\u0435\u0440\u0441\u043A\u043E\u0439 Steam, \u0442\u0435\u043F\u0435\u0440\u044C \u0441\u0431\u0440\u0430\u0441\u044B\u0432\u0430\u0435\u0442\u0441\u044F \u0441\u043F\u0438\u0441\u043E\u043A \u0432\u043A\u043B\u044E\u0447\u0451\u043D\u043D\u044B\u0445 \u043C\u043E\u0434\u043E\u0432 \u0432 \u043A\u044D\u0448\u0435 \u0438\u0433\u0440\u044B.",
-    "IsUsable": true
   },
   "relay": {
     "host": "109.73.196.175",
