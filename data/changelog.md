@@ -6,6 +6,43 @@
 
 ---
 
+## [1.5.75] — 2026-09-08
+
+### Added
+- Чудо `BUILDING_BURG_ELTZ` (замок Эльц): `TECH_MACHINERY`, требует
+  `POLICY_BRANCH_BULWARK`, +1 веры и культуры в радиусе 1 через
+  `Policy_CityRadiusPlotYields`, один `UNIT_GREAT_QUARTERMASTER` при постройке.
+  Иконка, `ArtDefineTag` и сплэш временные, от Химэдзи.
+- `POLICY_FINE_ARTS` даёт `UNITCLASS_WRITER` (потребовалось включить
+  `IncludesOneShotFreeUnits`).
+- `SPECIALIST_QUARTERMASTER` добавлен в `Policy_SpecialistExtraYields` для
+  `POLICY_TREATY_ORGANIZATION` — был единственным из семи, кого там не было.
+- `BUILDING_CRISTO_REDENTOR`: строки для цитадели, прикопа интенданта и
+  концертной площадки музыканта.
+
+### Changed
+- `NOVA_POLICY_BUILDING_HAPPINESS_GLOBAL`: счастье политики за класс здания
+  считается у игрока, а не в городском пуле — тот ограничен населением города
+  (`iLocalHappinessCap = getPopulation()`), и прибавка Военной касты пропадала.
+- `NOVA_BELIEF_PLAYER_HAPPINESS_PER_CITY`: `Beliefs.PlayerHappiness` у верований
+  с `MinPopulation` считается по каждому подходящему городу, а не раз на державу.
+- `NOVA_BRANCH_FAITH_GP_VANILLA_CURVE`: цена великих за веру по закрытой ветке —
+  ванильной кривой с нарастающим шагом; `RELIGION_FAITH_DELTA_NEXT_GREAT_PERSON`
+  0 → 500.
+- `UNIT_SETTLER`: добавлен `EarlyEmbarkTech = TECH_SAILING`, как у рабочего.
+- `POLICY_BULWARK_TOLLS`: вместо золота с речных клеток — +2 еды, производства и
+  науки с `IMPROVEMENT_QUARTERMASTER_CACHE`.
+- `RELIGION_MIN_FAITH_FIRST_PANTHEON` 45 → 23,
+  `RELIGION_GAME_FAITH_DELTA_NEXT_PANTHEON` 3 → 0.
+
+- Снят флаг `NO_OXFORD_AFTER_ATOM`: Оксфордский университет больше не
+  запрещён к постройке с Атомной эпохи (условие жило в `CvCity.cpp`).
+
+### Fixed
+- `TXT_KEY_TRAIT_INGENIOUS`: обещал +2 производства со стен Вавилона при +1 в
+  данных.
+- `TXT_KEY_BUILDING_GRAND_EMPORIUM_HELP`: не упоминал +2 культуры вовсе.
+
 ## [1.5.74] — 2026-09-08
 
 ### Added

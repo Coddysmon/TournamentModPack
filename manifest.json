@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.74",
+  "packageVersion": "1.5.75",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-09-08T12:36:19.8482795+00:00",
+  "createdUtc": "2026-09-08T14:03:40.9992641+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -8144,13 +8144,13 @@
         },
         {
           "path": "CHANGELOG.md",
-          "size": 81370,
-          "hash": "d6c79516445cc801fd2f4bba82873c11959e78b5621da52e45cd259fb5da0869"
+          "size": 83927,
+          "hash": "ca6e3c14bd61f15edc9940049fdccc982bb5e41b28bd80911cb4b6d36e15c4fa"
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4420608,
-          "hash": "360c93c9a654a5ac3b7d474387ef15321c0beae6e3c24f5d73e98e2e6e625f85"
+          "size": 4422144,
+          "hash": "3cfebd1bb9c4d364f28f38ac43399926a36e2fab379364215f621618c8fe19d2"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -10529,8 +10529,8 @@
         },
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xml",
-          "size": 843504,
-          "hash": "4dbf95833e2f4cc95a8e505a2607989b9b935aef2126ba3acc15febf828d5ae5"
+          "size": 846330,
+          "hash": "8cec1bf4107bfd8c91e8e44394f926aca107c140d66f1b9c4d6ef8022eb388d9"
         },
         {
           "path": "Override/CIV5Trades.xml",
@@ -10674,8 +10674,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 10447652,
-          "hash": "1baf76802690c340600bacba8c07d3cc0ce469bae861fa41b0ac72f12f92c1fd"
+          "size": 10456786,
+          "hash": "cd3751e5b891e40473dc55331efaa9d86f0f7a9c1e5a24cb2d9dd8451a8c86c3"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -10714,8 +10714,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 9774564,
-          "hash": "6212d772840f0e729e4850988ee0370d13ecc8faf3884f76a6e23f0ae0ca9789"
+          "size": 9779522,
+          "hash": "07263e8d0a8f1ac14575bc10a642992c71e28e18a70de1af35a91e37cc3f39b3"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
@@ -11030,7 +11030,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 8,
-          "hash": "7855e7e658bc98794369220a2fa663bdf4893654a6cd7d63f0d693ed0615dd1c"
+          "hash": "4d6d75405a1847a8283f60a294e5a6905fbfe690e6a937ad1cbada36646ff0d8"
         },
         {
           "path": "randomize_cursor.bat",
