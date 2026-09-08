@@ -6,6 +6,19 @@
 
 ---
 
+## [1.5.78] — 2026-09-08
+
+### Removed
+- Тенет `POLICY_DICTATORSHIP_PROLETARIAT` (идеология Order, второй уровень) убран
+  целиком: строка в `Policies`, строка в `Policy_ConnectedCityYieldChanges`, три
+  строки в `Policy_YieldModifierPerConnectedCity` и склонность ИИ в `Policy_Flavors`.
+  Второй уровень Ордена: 5 тенетов вместо 6.
+
+### Внутреннее
+- Определения таблиц `Policy_ConnectedCityYieldChanges` и
+  `Policy_YieldModifierPerConnectedCity` оставлены на месте — их читает сборка ядра,
+  и пропажа таблицы дала бы «no such table» в `Database.log`.
+
 ## [1.5.77] — 2026-09-08
 
 ### Added
