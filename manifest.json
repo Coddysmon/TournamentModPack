@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.99",
+  "packageVersion": "1.5.100",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-09-12T12:37:56.8693485+00:00",
+  "createdUtc": "2026-09-12T17:07:28.6572575+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -8205,13 +8205,13 @@
         },
         {
           "path": "CHANGELOG.md",
-          "size": 115344,
-          "hash": "9c03044f1c9aa7187113d14fe58fa2ed1ffee2e7c6536b195e2fbbf921e2bcad"
+          "size": 121192,
+          "hash": "41a1a622864c000fcbe15292c1d39ceeb0d1e91270407552acbc499e5fc4de51"
         },
         {
           "path": "CvGameCore_Expansion2.dll",
           "size": 4443136,
-          "hash": "41baa554efaf9fbc000840968a6a81e8dd7e7e2baf923d40cf72203e097c04cb"
+          "hash": "d6c527b86bc661814e0625d8a960212400567f13006e393436a93b7564d2adad"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -10590,8 +10590,8 @@
         },
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xml",
-          "size": 884360,
-          "hash": "52c8350b669d23af92dedecd24da496f141e2ffeb4ed6ce9ad88beb77f8eed86"
+          "size": 884514,
+          "hash": "8123b8ff35474a96818e7ac149a8924ad196a13078b907b72616034592a5aa94"
         },
         {
           "path": "Override/CIV5Trades.xml",
@@ -10735,8 +10735,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 10477247,
-          "hash": "e037e2fd772346b6b1bbcc202a095931d422161068094772eac5a2b24af7ef0f"
+          "size": 10476590,
+          "hash": "31e24376a2af678ff0e85187ef58650e40d421ce85da4937c946ebdf6fc88002"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -10775,8 +10775,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 9834505,
-          "hash": "f1583d0602165ba2ecdafa61ab2b23715ecfd43f6a0da2087173673c38ab1be7"
+          "size": 9834615,
+          "hash": "d9de689be10ef90589cac2a2439ccd7ba7df50833fbcafa66fb67a5b47fccc17"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
@@ -11100,8 +11100,8 @@
         },
         {
           "path": "PATCH_VERSION.txt",
-          "size": 8,
-          "hash": "6041ee35c0e81adfe3e475e6125e957941c94bedaf9f284aea229f63778367e2"
+          "size": 9,
+          "hash": "06ae60bd94688ed956909f2566b27a38595dffb9f9aa7aeb320ebaee6b407fd3"
         },
         {
           "path": "randomize_cursor.bat",
@@ -12505,8 +12505,8 @@
         },
         {
           "path": "tmp/eui/DiploCorner.lua",
-          "size": 33373,
-          "hash": "85c5bf7d86586da4dc7ebe8ace5c48aa6b523c04764fe0e2087cb86aa961778d"
+          "size": 33375,
+          "hash": "ecdb804156c96c01153bd7d2e9b1f77f2ef736599837950902c1a35d1e96bd64"
         },
         {
           "path": "tmp/eui/DiploCorner.xml",
@@ -12770,8 +12770,8 @@
         },
         {
           "path": "tmp/ui/DiploCorner.lua",
-          "size": 31929,
-          "hash": "64e882594a7f2018211e79be091229a6335e01e9cd76892b9fc10aca36837ee8"
+          "size": 31931,
+          "hash": "ac884b25890e838969d1d2344648101706e04597a4c37e59528743fefd275620"
         },
         {
           "path": "tmp/ui/DiploCorner.xml",
@@ -12780,8 +12780,8 @@
         },
         {
           "path": "tmp/ui/DiploList.lua",
-          "size": 34865,
-          "hash": "28e21f1e9a64824dbcb77fc33f171f3ddb321fdd904db91ece33dd4e969322b9"
+          "size": 34867,
+          "hash": "39f5cefacb36677bfdbeef6d0a6887688b4e3244f4ea4127393aeb581a95cf6f"
         },
         {
           "path": "tmp/ui/DiploList.xml",
@@ -12790,8 +12790,8 @@
         },
         {
           "path": "tmp/ui/DiploRelationships.lua",
-          "size": 23982,
-          "hash": "a430d5e113210f4db39d56c1c63d1754d5b10c58bdee365bfb82e3ff92e86623"
+          "size": 23984,
+          "hash": "f03b4143cfe7ad555db28e264ab38d20b5a0a21776593c4d58a7030b7d849772"
         },
         {
           "path": "tmp/ui/EconomicGeneralInfo.lua",
@@ -12955,8 +12955,8 @@
         },
         {
           "path": "tmp/ui/MiniMapPanel.lua",
-          "size": 43615,
-          "hash": "b2ee277d437a52aa471c3f02ea9e4bcf972a975235b5b310a80062abc16c0b61"
+          "size": 43464,
+          "hash": "aa5ff73048c43d332ed63f32b2695f9d01f0d0f1ad47936899fb5e37f53894e4"
         },
         {
           "path": "tmp/ui/MiniMapPanel.xml",
@@ -12980,13 +12980,13 @@
         },
         {
           "path": "tmp/ui/MPList.lua",
-          "size": 23095,
-          "hash": "a4cf2a1c4a655e9ce7b6f9c64ca13ce0ff6a4171716bb7a1b0305aebb4546b25"
+          "size": 24408,
+          "hash": "475d7ddfe04093c4a91785c449d4fd4d70759105273950ce645afe5e4560dde4"
         },
         {
           "path": "tmp/ui/MPTurnPanel.lua",
-          "size": 15641,
-          "hash": "c661e79aa95fc2aa808b6f02710f8a971a429d3193125b8a659c1b841ca42e89"
+          "size": 15943,
+          "hash": "29314125ec283ab78c846e2a61beabb64ba8ab451f36ce6787447087058839bf"
         },
         {
           "path": "tmp/ui/MPTurnPanel.xml",
@@ -13009,9 +13009,14 @@
           "hash": "59b508c858e3a02f9ff4884a507ffb87a2edf35b4cdc825fcdad90b747813148"
         },
         {
+          "path": "tmp/ui/NovaLobbyNick.lua",
+          "size": 10044,
+          "hash": "8fa8cc9f3ef6477abe24f047bbb33760f8dc5ad10cdd551a5c49e6fd57a75c2f"
+        },
+        {
           "path": "tmp/ui/NovaNick.lua",
-          "size": 5163,
-          "hash": "81960eca435b78c6914e2f6e4296d5828db0b7b1165fd308d4ff2572f1b6c0f0"
+          "size": 5167,
+          "hash": "2a153b7046ac753f50e6b1c1e9123f173c1bbed420003935c999d0c7e8cc3839"
         },
         {
           "path": "tmp/ui/NovaNickStyles.lua",
@@ -13020,68 +13025,68 @@
         },
         {
           "path": "tmp/ui/NovaSkins.lua",
-          "size": 16697,
-          "hash": "c0b85d27b77346f85a7c0108a50a2412f5cfb9a9b919aeeebbbc6c1a818aef5d"
+          "size": 17959,
+          "hash": "11bb8ed7fba90ea8ebcf6392fb8f9c4dd66f744e81fafe13e91347189118b842"
         },
         {
           "path": "tmp/ui/NovaTierRingBaseBronze.dds",
           "size": 16512,
-          "hash": "7dd9f22c7b7dfc9330acd9dab9d35ec1ca885470e9c7c8e8d83ff76a22c782dc"
+          "hash": "d080fb8721abd9551d3d7189fb849b2a0232ed86dde12d8f12a683daa07df332"
         },
         {
           "path": "tmp/ui/NovaTierRingBaseGold.dds",
           "size": 16512,
-          "hash": "09353d14d55cf6aa528de859f68ed653b7cd549db5109aa3a3d0e3999e0be354"
+          "hash": "9a6a28ae3b49a6b5a1bfe27f06ff9747b905c1a2ab373a23ee89cf083235094a"
         },
         {
           "path": "tmp/ui/NovaTierRingBaseSilver.dds",
           "size": 16512,
-          "hash": "2e778e71cd1dce0009752093ae33520a5afbe3ff6893fd8c13d4bfe5662ed57a"
+          "hash": "1b7a38efb07457e25234c72c5095ed0d013ff5c852fa0392178ca0694db9d373"
         },
         {
           "path": "tmp/ui/NovaTierRingCivBronze.dds",
           "size": 16512,
-          "hash": "be6b7a15892516a3fac055371a55c9d45e79fcf314fd03ad9fd229a40a74f34a"
+          "hash": "53e70f7518f7824753d971e62da1c365ae0c9b10a100ed3f40dcc9a1bc3e213f"
         },
         {
           "path": "tmp/ui/NovaTierRingCivGold.dds",
           "size": 16512,
-          "hash": "1fb94fbf80a6db1dd68b9633cd9fa766330cda5768cb15b16b0fdc780d8ae5c7"
+          "hash": "90b0b4a59fd4456e82a28d59af0494dbae19893920fdb41ae93edde1a6ecc43e"
         },
         {
           "path": "tmp/ui/NovaTierRingCivSilver.dds",
           "size": 16512,
-          "hash": "4fafe6d4b7fa094584a7e0cd8fe984334ce80f965a97bce2d45d89566dc78769"
+          "hash": "cde225fcc644c28851ec16248dd22e81049a47109004e4ebd659b804eac7d6b6"
         },
         {
           "path": "tmp/ui/NovaTierRingEmbarkBronze.dds",
           "size": 16512,
-          "hash": "bc8366946022f5b8b936079b4b0a5c8b929083ac5fc4b01a022005225afdd078"
+          "hash": "4d1b3224a0d23d0c3b6023e32d5d8f52841e4a91017f26f04cc0a33c8419dcf1"
         },
         {
           "path": "tmp/ui/NovaTierRingEmbarkGold.dds",
           "size": 16512,
-          "hash": "4fd1c9ac98c6a4a72043e2cdc47fa1909b5e11776717346f2af632d935a1c7c1"
+          "hash": "751b96b456197c55a892a9d7874c8dbf54937b97492f54a2f6ec393348a3e6c1"
         },
         {
           "path": "tmp/ui/NovaTierRingEmbarkSilver.dds",
           "size": 16512,
-          "hash": "7a85205ade9a6a1a3110afb4777d7d20bfff1ea8e3a767430b34f3d630066e78"
+          "hash": "1f606a2dc45d2f6b3a7160db3b3432e921ec9be210c0ac599a31dfcd42e55eba"
         },
         {
           "path": "tmp/ui/NovaTierRingFortifyBronze.dds",
           "size": 16512,
-          "hash": "e512282e6338587ca201beb8e354d217cb51a1fee17bbe64346f16ebf27067e8"
+          "hash": "a4be53430b46cad916d6d409e8d0ecc5144f1148f6b747915e6e6b3b913a9045"
         },
         {
           "path": "tmp/ui/NovaTierRingFortifyGold.dds",
           "size": 16512,
-          "hash": "cdff3ca837a58ca73b5f3681ea62e1b9641dd94bf9412568ce977e39a900d3d5"
+          "hash": "bb8078be3aa4ced95458c279be9a56245549a432a53b405e9a1b236dde850b37"
         },
         {
           "path": "tmp/ui/NovaTierRingFortifySilver.dds",
           "size": 16512,
-          "hash": "ce2948874cf13a8ecdd7fb7411af2bfb42d2c714779b28d980645e577bbd5bc2"
+          "hash": "6c7f8395e2d34b8ffeb9dfb6de6fcd634d41fbc26808124a4d49bc61547a85c4"
         },
         {
           "path": "tmp/ui/OptionsMenu.lua.ignore",
@@ -13220,8 +13225,8 @@
         },
         {
           "path": "tmp/ui/StagingRoom.lua",
-          "size": 154600,
-          "hash": "93566a6cf34c2a7ee9c9744fb5cee5a3e39558ccd76512c859a0fecb2701386a"
+          "size": 157796,
+          "hash": "6a4c2af2dae0696ced6a9ac5c416a7fe688018758f2ea0811f2de8269690a48e"
         },
         {
           "path": "tmp/ui/StagingRoom.xml",
@@ -13296,7 +13301,7 @@
         {
           "path": "tmp/ui/UnitFlagManager.xml",
           "size": 10954,
-          "hash": "8b7183803992860d4db27f9d06845001f467535578d98b9ad8d511587b56f539"
+          "hash": "577bf42bbdf118c5aedc6adebd0583647584403a16411ed7e85f8f3187d8827c"
         },
         {
           "path": "tmp/ui/UnitList.lua",
@@ -13350,8 +13355,8 @@
         },
         {
           "path": "ui_check.bat",
-          "size": 24023,
-          "hash": "e3b09946923efbb0d84dade20a4618b4e4bffba2966ea47a335c4bc6d9feabca"
+          "size": 24116,
+          "hash": "bad2f93cf236fa30fdfbc50dbae3e4432889736449005dbe39da513476616ecc"
         }
       ]
     },
@@ -13538,6 +13543,11 @@
       {
         "from": "tmp/ui/AdvancedSetup.lua",
         "to": "UI/AdvancedSetup.lua",
+        "when": []
+      },
+      {
+        "from": "tmp/ui/NovaLobbyNick.lua",
+        "to": "UI/NovaLobbyNick.lua",
         "when": []
       },
       {
@@ -15713,11 +15723,14 @@
     "Any": true
   },
   "client": {
-    "version": "0.3.56",
-    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas4/nova-client-0.3.56.zip",
-    "sha256": "231eb8a6ecb65934e11e2586665db03a81393f18d289666670cc96a6f14f765d",
-    "size": 61500332,
-    "notes": "\u041F\u0440\u043E\u0441\u043B\u043E\u0439\u043A\u0430 \u0431\u043E\u043B\u044C\u0448\u0435 \u043D\u0435 \u043E\u0431\u0440\u044B\u0432\u0430\u0435\u0442 \u0441\u0432\u044F\u0437\u044C \u0441 \u0443\u0437\u043B\u043E\u043C: \u043E\u0442\u043F\u0440\u0430\u0432\u043A\u0430 \u0432\u044B\u043D\u0435\u0441\u0435\u043D\u0430 \u0438\u0437 \u0438\u0433\u0440\u043E\u0432\u043E\u0433\u043E \u043F\u043E\u0442\u043E\u043A\u0430, \u0438 \u0441\u0432\u044F\u0437\u044C \u043D\u0435 \u0443\u043C\u0438\u0440\u0430\u0435\u0442 \u043D\u0430 \u043F\u0443\u0441\u0442\u043E\u043C \u043C\u0435\u0441\u0442\u0435 (\u043E\u0448\u0438\u0431\u043A\u0430 10053). \u041F\u0443\u0442\u044C \u0434\u043E \u0441\u043E\u043F\u0435\u0440\u043D\u0438\u043A\u0430 \u043F\u0435\u0440\u0435\u0441\u043C\u0430\u0442\u0440\u0438\u0432\u0430\u0435\u0442\u0441\u044F, \u043A\u043E\u0433\u0434\u0430 \u0442\u043E\u0442 \u0437\u0430\u0445\u043E\u0434\u0438\u0442 \u043D\u0430 \u0443\u0437\u0435\u043B, \u2014 \u0440\u0430\u043D\u044C\u0448\u0435 \u0442\u0440\u0435\u0442\u044C \u0441\u0432\u044F\u0437\u0435\u0439 \u043D\u0430\u0432\u0441\u0435\u0433\u0434\u0430 \u0443\u0445\u043E\u0434\u0438\u043B\u0430 \u043C\u0438\u043C\u043E \u0443\u0437\u043B\u0430 \u0432 Steam. \u0423\u0441\u0442\u0430\u0440\u0435\u0432\u0448\u0430\u044F \u043F\u0440\u043E\u0441\u043B\u043E\u0439\u043A\u0430 \u0447\u0438\u043D\u0438\u0442\u0441\u044F \u043F\u0435\u0440\u0435\u0434 \u0437\u0430\u043F\u0443\u0441\u043A\u043E\u043C \u0438\u0433\u0440\u044B. \u041E\u0442\u0447\u0451\u0442 \u043E \u043B\u043E\u0433\u0430\u0445 \u043F\u0440\u0438\u043A\u043B\u0430\u0434\u044B\u0432\u0430\u0435\u0442 \u0436\u0443\u0440\u043D\u0430\u043B \u0442\u0440\u0430\u0441\u0441\u0438\u0440\u043E\u0432\u043A\u0438 \u0445\u043E\u0434\u0430.",
+    "version": "0.3.57",
+    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas4/nova-client-0.3.57.zip",
+    "sha256": "9ce9d4ae2bc45dfc3f15c030eb59d3b4fdd5b2c8b408ce42eaa10128c9554fbd",
+    "size": 61500980,
+    "notes": "\u041F\u043E\u0434\u0441\u043A\u0430\u0437\u043A\u0438 \u0432 \u043B\u0430\u0443\u043D\u0447\u0435\u0440\u0435 \u0431\u044B\u043B\u0438 \u043D\u0435\u0432\u0438\u0434\u0438\u043C\u044B: \u0442\u0451\u043C\u043D\u044B\u0439 \u0442\u0435\u043A\u0441\u0442 \u0442\u0435\u043C\u044B \u043B\u043E\u0436\u0438\u043B\u0441\u044F \u043D\u0430 \u0441\u0432\u0435\u0442\u043B\u0443\u044E \u0441\u0438\u0441\u0442\u0435\u043C\u043D\u0443\u044E \u043F\u043B\u0430\u0448\u043A\u0443, \u0438 \u043D\u0430 \u043C\u0435\u0441\u0442\u0435 \u043F\u043E\u0434\u0441\u043A\u0430\u0437\u043A\u0438 \u0431\u044B\u043B \u043F\u0443\u0441\u0442\u043E\u0439 \u0431\u0435\u043B\u044B\u0439 \u043F\u0440\u044F\u043C\u043E\u0443\u0433\u043E\u043B\u044C\u043D\u0438\u043A. \u0422\u0435\u043F\u0435\u0440\u044C \u0443 \u043F\u043E\u0434\u0441\u043A\u0430\u0437\u043E\u043A \u0441\u0432\u043E\u044F \u043F\u043B\u0430\u0448\u043A\u0430 \u2014 \u0432\u043E \u0432\u0441\u0435\u0445 \u0434\u0435\u0432\u044F\u0442\u0438 \u0442\u0435\u043C\u0430\u0445. \u041D\u0430\u0432\u0435\u0434\u0438\u0442\u0435 \u043D\u0430 \u0440\u043E\u043C\u0431\u0438\u043A \u0443 \u043D\u0438\u043A\u0430: \u0442\u0430\u043C \u043F\u0438\u0448\u0435\u0442\u0441\u044F \u0443\u0440\u043E\u0432\u0435\u043D\u044C \u043F\u043E\u0434\u043F\u0438\u0441\u043A\u0438. \u041F\u0440\u0435\u0432\u044C\u044E \u043C\u043E\u0434\u0435\u043B\u0435\u0439 \u0432 \u0440\u0430\u0437\u0434\u0435\u043B\u0435 \u00AB\u041E\u0431\u043B\u0438\u043A \u0432\u043E\u0439\u0441\u043A\u00BB \u0443\u0436\u0438\u043C\u0430\u044E\u0442\u0441\u044F \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u043C \u0444\u0438\u043B\u044C\u0442\u0440\u043E\u043C \u2014 \u043A\u0440\u0430\u044F \u0431\u043E\u043B\u044C\u0448\u0435 \u043D\u0435 \u0440\u0430\u0441\u0441\u044B\u043F\u0430\u044E\u0442\u0441\u044F \u0432 \u043F\u0438\u043A\u0441\u0435\u043B\u0438.",
+    "mirrors": [
+      "relay://109.73.196.175:443/client/nova-client-0.3.57.zip"
+    ],
     "IsUsable": true
   },
   "relay": {
