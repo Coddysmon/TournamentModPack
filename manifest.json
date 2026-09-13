@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.102",
+  "packageVersion": "1.5.103",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-09-13T10:31:35.7874096+00:00",
+  "createdUtc": "2026-09-13T15:26:44.9524733+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -8205,8 +8205,8 @@
         },
         {
           "path": "CHANGELOG.md",
-          "size": 125451,
-          "hash": "7da9e191e991d3f6ab87fb6ce614af0d55eec6e58da2cdfca456c88ff5e09276"
+          "size": 126542,
+          "hash": "6d7428df9d8683396c131223dbd50547375bc1f27f68e09ed8dbb747e7060e5b"
         },
         {
           "path": "CvGameCore_Expansion2.dll",
@@ -10591,7 +10591,7 @@
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xml",
           "size": 884799,
-          "hash": "e13364e04447004cf4b15f29ec0821b8304dc80d784c76f3146c0ae6d586b6e9"
+          "hash": "117eabc20676a2c19eb58e488ab3682141e8c7d67498e34b18052575e14cbbf0"
         },
         {
           "path": "Override/CIV5Trades.xml",
@@ -10776,7 +10776,7 @@
         {
           "path": "Override/CIV5Units_Mongol.xml",
           "size": 9835097,
-          "hash": "12f2b028e4aa3cd47eea302710e7ce3ad8df65958c0fc0424a788fe2ee78f4b0"
+          "hash": "4b42af45dafc9edb90d42e9d26c84d8f0eeadec923b833d4f39d0bc4a16c4e00"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
@@ -11101,7 +11101,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "49990b60db1338865e4e2a15bc2bc27d780df8b2b1d832fba14ab53c015a1872"
+          "hash": "bb566fec9485761bb578516a051e6a2d84c1d9606b976a1741b0d2eef2d751cf"
         },
         {
           "path": "randomize_cursor.bat",
@@ -11115,1238 +11115,1238 @@
         },
         {
           "path": "SkinShots/10TP.png",
-          "size": 144522,
-          "hash": "59fe7557703310ce161499c6209b61e8cc951572ffa6e0e681c416cfbc792ab7"
+          "size": 194285,
+          "hash": "13436ce21b31af455fab8ba2eff9c542e1bb67969ac7b85510e48d55e6f4f1a8"
         },
         {
           "path": "SkinShots/155mmDeBang.png",
-          "size": 110670,
-          "hash": "1a3943c763d69023cedf1eb47fa8479f747a0b4040e1c43735565dcf84f92c52"
+          "size": 147102,
+          "hash": "08ca0ded13529b244057fe5579a258716c0d194b3213c331137b4ea2daafe6f1"
         },
         {
           "path": "SkinShots/77cmFk.png",
-          "size": 161872,
-          "hash": "788fa3905bbeea577375dbd4848c87a474b0a631d0108b693a235b933c79089e"
+          "size": 179600,
+          "hash": "70cb5e7302a30dfb5942278e54474fca733dc3ee9d456cf768620fbb6fed0b24"
         },
         {
           "path": "SkinShots/A-7.png",
-          "size": 95742,
-          "hash": "f44029297d93dd48a82dd567b6e4b8e6b40cb51d52a82f61bcfbad412b9d4486"
+          "size": 160755,
+          "hash": "f3d6989fdd0310bd0494b39690d9c8ba1df4926f2572d41b4fb4059bc7584c8f"
         },
         {
           "path": "SkinShots/A-7Portugal.png",
-          "size": 92679,
-          "hash": "c04ab52d867997389dc5192a68d5d8d6f2fd9ede55a55dbe8f62969b0f976a6c"
+          "size": 161186,
+          "hash": "a707b78447c5cf61a785ddfd2b6669e74a148b91946fc52bc1aa1b02e46bae1b"
         },
         {
           "path": "SkinShots/A12_Matilda_II_5.png",
-          "size": 173409,
-          "hash": "76077a41c9ac9b3ac883c4c6f3b5dff49b6fb80e547a0aa19d918f5b2d27dbcc"
+          "size": 185817,
+          "hash": "afcd6d401463c329e498403e8d487d5594a4d8a58d3240347ee9cc1ff754dbe1"
         },
         {
           "path": "SkinShots/Admiralen_Class.png",
-          "size": 85216,
-          "hash": "e21aa80aa5ea761662b6b3fc8fe8b06292f2c4767ae7548652296918c7e0bc54"
+          "size": 117851,
+          "hash": "71ef669c664af732f301c42279549ce46d6a1da057133359eb7b5fbfb301348e"
         },
         {
           "path": "SkinShots/AfricanInfantry.png",
-          "size": 85404,
-          "hash": "cdcdaad88b29d0f9c89379f006bcbbc6a2635fc5d556782ac1cf9f41fb3f30d6"
+          "size": 196530,
+          "hash": "8bbe0d3f4fc3588bc7cfa2024cd510c3942bbcc705c3ef8d446545f7fc32c670"
         },
         {
           "path": "SkinShots/AfrScout.png",
-          "size": 101027,
-          "hash": "7c1ebb844b3bd37c3cd7d34b2f16d5d97d0bf3e124ce0e0c39ddf344d3936ad9"
+          "size": 206982,
+          "hash": "5211d57c045292ca739a024ae5964ec82b03c627164d5c12cf0fb327db6a86ee"
         },
         {
           "path": "SkinShots/Aquila_Class.png",
-          "size": 64592,
-          "hash": "7487c319d1397fc0d8542b0231cd0bd141bcf2d0e98b24b39d418b0222c57cba"
+          "size": 124358,
+          "hash": "1ff5e15ba444af8eeee83397eba87ff47263e5e24b294a8e48c25cb4aa2b318c"
         },
         {
           "path": "SkinShots/ararm1.png",
-          "size": 80738,
-          "hash": "fd99444ab898a5cd1af8f2c0223ec10ace42427c49e5268c9e83632297e0a37a"
+          "size": 192623,
+          "hash": "db5d25cb1107c12fe965870dc141e34bfeabc066292b8f41e8884de8117604a5"
         },
         {
           "path": "SkinShots/Archer_Aztec.png",
-          "size": 97431,
-          "hash": "c02e5616bff3f648fcba6c3ddc643f208ba6037539086ec8f8da00262cd15366"
+          "size": 199873,
+          "hash": "62944895df4186dca5d5469816eb9ea00ddcab1fe3dc8bccb2a75bfb0af36004"
         },
         {
           "path": "SkinShots/Archer_Babylon.png",
-          "size": 92667,
-          "hash": "bee0bc542ba472735949e35ac70c0d7b695fc75a06207abbfba00ae33e4ebe46"
+          "size": 195068,
+          "hash": "c972b9c6bacb3f9bd49bff0db2542b83b68d00b8aa1434b696ba40f86a35ea4e"
         },
         {
           "path": "SkinShots/Archer_China.png",
-          "size": 98903,
-          "hash": "72605e562742519d564e939236bc424fa61a78e674a6ef4efa42f2fe460adbd5"
+          "size": 196091,
+          "hash": "f5a28b3b3301d8bcc7fedf63b2ecc9e0bb59e929e7b02f441427689afc70025a"
         },
         {
           "path": "SkinShots/Archer_Egypt.png",
-          "size": 98334,
-          "hash": "b9ebcade2f75ae01a3de405401814acd04357cc128b139104221d183c3b96d0b"
+          "size": 201039,
+          "hash": "b455f75d1fadae8fe1c6845bdb1348c9b524a3795e46c65fc17438dc18510f28"
         },
         {
           "path": "SkinShots/Archer_Greece.png",
-          "size": 94210,
-          "hash": "ad3099cc89755d6743abbaab8830e07212513efb2634e3d4daac5549d37ba273"
+          "size": 200618,
+          "hash": "afc9260b0ec3eef09853bab95365cc9c84a0ddcc7774a64cbc12f2574c648837"
         },
         {
           "path": "SkinShots/Archer_Korea.png",
-          "size": 93263,
-          "hash": "f06df27b9d65daaa35a319b17e2332452a37c216e9f3226d238cc9f0484eb95d"
+          "size": 192767,
+          "hash": "65a8702bbce6842f83e26022dcba0fcc0e4cccaffea912f236682a0980434a16"
         },
         {
           "path": "SkinShots/Archer_Mongol.png",
-          "size": 88075,
-          "hash": "c8867225149c7740d104a46ca16f827dff3dc4b0e54995033d35a0a0fa820564"
+          "size": 195910,
+          "hash": "4c292e5bea713765134d6fc2c4c7beec35cba0efe6972e9abd7c3d678c4551a2"
         },
         {
           "path": "SkinShots/Archer_Persia.png",
-          "size": 97335,
-          "hash": "d7892e435654d68356885c272b034917f5aa2fce0a814984c3d1d3b5ce65a452"
+          "size": 200642,
+          "hash": "f2414488b819836d3888fff09f4f45ffac7f84a6f730da3678c2a0c244888f62"
         },
         {
           "path": "SkinShots/Archer_Viking.png",
-          "size": 93212,
-          "hash": "f32ae80432ad8866003ed4f700dcd772321889a8938274daee52cf068f9045c5"
+          "size": 198186,
+          "hash": "66f244a1d228d74fb897fadf505db2fd250c566cfcc78c0a754a348c0c2a4a99"
         },
         {
           "path": "SkinShots/Ariete.png",
-          "size": 127627,
-          "hash": "c1d99042e1358be06964efe0b269b543e970fe232fc9ecb8835b9cb507f41eb8"
+          "size": 152017,
+          "hash": "7f2c1c1b03085b5c49404aa8e05169b3fab8a058315ad46a3690f08cdc8a44e3"
         },
         {
           "path": "SkinShots/Armored_Cavalry.png",
-          "size": 143767,
-          "hash": "29128af0b9193d41e536f88f527dbfced10c9ff532933643540f36caf335a1d8"
+          "size": 196346,
+          "hash": "2e3fe3674fed8f3a1c565c3b7fae93411fab63673d4cb9837e72b1f7147564f9"
         },
         {
           "path": "SkinShots/AsianSF.png",
-          "size": 103793,
-          "hash": "f4a0eb27d9fa34a9980fe9e8b8dc6f539a96d842d8f8414c7668da371a1d90fe"
+          "size": 200593,
+          "hash": "006eb13bccb173867219b7bc4a5372d934d210cc9d4409f9fe424432c4cd97b3"
         },
         {
           "path": "SkinShots/ausgw1.png",
-          "size": 85556,
-          "hash": "70a670291512ff99b0bfb993abfa7b74116cf88dc77fedc810353b51f341cfd2"
+          "size": 198548,
+          "hash": "23d2792ac2645a01135173b3bdd5d7fbcd3d616edf132d6100b852be90a25c40"
         },
         {
           "path": "SkinShots/AustriaWarrior.png",
-          "size": 104685,
-          "hash": "c4618f0a821fff234c6bda05a046ffb3aea2702459153fe3bb24a96fabceb0af"
+          "size": 208901,
+          "hash": "a477ed725c62191edf4b2fffc9a84293d66a31026f1223300f60970705fd9154"
         },
         {
           "path": "SkinShots/austria_longsw2.png",
-          "size": 117425,
-          "hash": "9b3a251999fc8d7d92af7efddac58cd61b7a06d5b9f37dd763606b42f7c832fb"
+          "size": 200371,
+          "hash": "26099e2af2e8b1175d4a4631a0190a2261ec1f721cc6f3925c93b546fadb59e1"
         },
         {
           "path": "SkinShots/BantuSpearman.png",
-          "size": 63270,
-          "hash": "5904a258da94843d8c0e7565cce35903b85034d38758ef57225e9f1bcfcbf581"
+          "size": 197375,
+          "hash": "55bee0193888b03966522b0dec6d60fb1ee9e2135b92e7a5a5a5d01c78875566"
         },
         {
           "path": "SkinShots/BatavianSpearman.png",
-          "size": 50257,
-          "hash": "3a21dbd41fb87fa6024395074d5d3a523e582bd91ac759b61e1f699aca549d3d"
+          "size": 191893,
+          "hash": "2ab295508f8dfa50339e1b95da5704d82e176c8988616d4a084d69daacf7013f"
         },
         {
           "path": "SkinShots/Berber_Crossbowman.png",
-          "size": 97893,
-          "hash": "e9e83dd4a4c9cfbdf2b14feeb374e1395288bb2e046166ba9ac4fb3370e4a6e9"
+          "size": 198162,
+          "hash": "9db2c783f4ca7f2896b41b7a6d47c0ae0fcf82e6f8081c2b535f1ab487ebfa0a"
         },
         {
           "path": "SkinShots/Berber_Musketman.png",
-          "size": 101727,
-          "hash": "dfe579dbf1f9cc423fa081538d8e32ff71a53d7c029101f9d0c06a01ab7b1ab5"
+          "size": 200354,
+          "hash": "853c216ca7fa02afb46c27d7c4b0cd66d919226d2880521bd74db6bd3f444154"
         },
         {
           "path": "SkinShots/Bismark_Class.png",
-          "size": 92606,
-          "hash": "8af90e75f83e6c934883790fa202b462f7be06e5da54092534a9b5bef54ce547"
+          "size": 116253,
+          "hash": "989a97c9064f555bde2d97358e7f4e80c6ca0066d3678a6f948acb55274e8e24"
         },
         {
           "path": "SkinShots/BMP2GreenTeam.png",
-          "size": 124495,
-          "hash": "22c15a80a25cdb0e24b06a8bd382012cdca330e0ee14946b3b5f3eb027cb76ad"
+          "size": 162302,
+          "hash": "e836c6489705500d8c0e51c7c020c92103d3a1621c508879ea8057e831e4093c"
         },
         {
           "path": "SkinShots/bombardTurk.png",
-          "size": 134093,
-          "hash": "eaa574d9e0e6d86ba07846ade2fd28447e088369aa810eb5d1d35d50085f9dc3"
+          "size": 170974,
+          "hash": "5f8315b57baa35300bc32dc02f404b273f906482790923252b13b0aa5f23b3c7"
         },
         {
           "path": "SkinShots/Brazilian_Rifleman.png",
-          "size": 102305,
-          "hash": "af7015c973032fec2fdf3761d16fe7eb72a40a0afb93346489b346bba5c0eacd"
+          "size": 202077,
+          "hash": "b93f4a126ae03ace05cca7df371019d958d7d1b6249ea437069aff59757dae92"
         },
         {
           "path": "SkinShots/BrazilPretosForros.png",
-          "size": 87576,
-          "hash": "7f257ebab3ec9077d31ab3fd28c26e7a775714fa601c4bcd03e965a347b1d598"
+          "size": 180398,
+          "hash": "917588cb6fa99bf624383ca5dc63375234ca3ebe3fd66ee71727c5eea932a95f"
         },
         {
           "path": "SkinShots/byzantium_longsw1.png",
-          "size": 92909,
-          "hash": "30cb9009d3fbb1671efb36e4bb33e4b260a062923d28ca7dd51c3159a0ba6a46"
+          "size": 191703,
+          "hash": "9c1401cd301da589f874c6fcc950813d05ef2fc9accc10564178e6ccdf8a290f"
         },
         {
           "path": "SkinShots/Caetranann.png",
-          "size": 99568,
-          "hash": "fd758014499b936eff9d2c4f884d8d811e548f7220c18b15906ef77682a1bb39"
+          "size": 212987,
+          "hash": "480b788df8880fde864fb272250a2057807cb49db7aebc18b95fce3d4e0a37b8"
         },
         {
           "path": "SkinShots/Caetrati.png",
-          "size": 108871,
-          "hash": "ecd8c70aec88b4ac17fd934d197cd9bb9a0b18c87bc6b618e9f78eb9b3aaba01"
+          "size": 184234,
+          "hash": "984bcf031bc4c92e91541f5fca9e9a1e6c32edf7bfb4677f0779833ae0a04952"
         },
         {
           "path": "SkinShots/Canhoneira.png",
-          "size": 226081,
-          "hash": "86d131fab2ed1b39a63a08c62f78baef4197ac1fff0949aeb44474a13cd6c3d9"
+          "size": 197769,
+          "hash": "007668177732eaa796dd51eab92d8fcb345dd79ef76711a910eb3ad8c9af9704"
         },
         {
           "path": "SkinShots/CarthageScout.png",
-          "size": 89229,
-          "hash": "392895b63eff0b5363605dba52adecb9d4903c79efb89b39f3c6fb50837d94c5"
+          "size": 197684,
+          "hash": "13e8beb456ddc9dbdbeb7b94211da6dd8d0baf40164b0f708c8521200c1a1fe4"
         },
         {
           "path": "SkinShots/CarthageSpearman.png",
-          "size": 67899,
-          "hash": "f6667729c8640f2a2fadf2db69f612f97525bdc7114b1e191a79e5ffef70d4e1"
+          "size": 149182,
+          "hash": "58054e099cac38a5fda995966977fbd7800a2393254fb353c85309959a3041d5"
         },
         {
           "path": "SkinShots/CarthageSwordsman.png",
-          "size": 96798,
-          "hash": "a04bf22405ec4267d3188ce44e4b426612fe5133a0b26c8ed6e5c0fa809c31be"
+          "size": 204943,
+          "hash": "7d55e00e880771e67ed2f48dc734a803ab6bcf11fbe8ea6f3626544dc8f8fabc"
         },
         {
           "path": "SkinShots/CarthageWarrior.png",
-          "size": 66574,
-          "hash": "ce1ac0ee29a8bee9fdc6ee0fdd2873dc68eeb8c4b151e892941b8d7f094cdc0e"
+          "size": 192189,
+          "hash": "c7127a47873b52df93d771bb9d10cba6b5dc7a21a6ac6531389ada65630e8fa4"
         },
         {
           "path": "SkinShots/Carthage_Med_Horseman.png",
-          "size": 140464,
-          "hash": "7865188d87dd7612107457d4e57895d079fc13cb0e2d31317afa69de533c6d34"
+          "size": 210379,
+          "hash": "a3876328fee77678e7864438237668daa68567d83e0017615599609596185c9e"
         },
         {
           "path": "SkinShots/Carthage_Pikeman.png",
-          "size": 43477,
-          "hash": "9cb9ca0aad76cf05118f0db5627ff068977f771ee2fbdba71c430c783ac2102f"
+          "size": 165053,
+          "hash": "dd27437d455c400e26818d6d58a4a202e91aba8c7052ca142db352d5690eec31"
         },
         {
           "path": "SkinShots/celrm1.png",
-          "size": 85157,
-          "hash": "3bbab400e50b094f0373215f8761bec40fa3c4e76749ec9cb73609e097c7cf5e"
+          "size": 187709,
+          "hash": "cdd9f2a3eb746dc4a5bdd317ed1400a2344897ac0af9e828e8668d3a59861f32"
         },
         {
           "path": "SkinShots/CelticWarrior.png",
-          "size": 113484,
-          "hash": "42d454909801b34269b47212a050b89ac62921cd5e4764a008354b585ca39c26"
+          "size": 209578,
+          "hash": "02303529158fb36499947504d7332fc80bbdd1294a5c03efa868577de3a08a01"
         },
         {
           "path": "SkinShots/Civ5_AfricanSF_v2.png",
-          "size": 110015,
-          "hash": "900aa6eb96e11fd571ff24608482b0066d92d3a0f004d98ade199000a54658c7"
+          "size": 201736,
+          "hash": "6c5eb8243d0715325f29bf5bc933f8105a9ac9c8112a3911085f65c06873dd67"
         },
         {
           "path": "SkinShots/civ5_chirm2.png",
-          "size": 88049,
-          "hash": "4451e434c24be8db8a75ef9299a7c37d6e7d472c46068d57b2c26d3a9d3588df"
+          "size": 203909,
+          "hash": "2fc2cac5364ccbef6881c05425d6dbe69024a5660928702feb7b85f701182b25"
         },
         {
           "path": "SkinShots/civ5_dutrm1.png",
-          "size": 81210,
-          "hash": "0916385ed2c40cfd74803f1ac3ed46bf4945f877d8c41faf6636fa59b288bdd9"
+          "size": 191906,
+          "hash": "7f9cef2c05367c4a5b966884e9b0fc2f3aa4ff661e4e73c0a59c4700f6a471bc"
         },
         {
           "path": "SkinShots/civ5_engrm1.png",
-          "size": 88375,
-          "hash": "cc9d093178a078139b8c09b10de0c0b69bf43a5bdb0efe84446781843ccd30cc"
+          "size": 192591,
+          "hash": "d4580927e73d44769cd988bbbca8dfab99bd83468a5f3a814637cfe22590c383"
         },
         {
           "path": "SkinShots/civ5_frerm.png",
-          "size": 89257,
-          "hash": "15cff9ae2b6855a0b2da0a5da35c92cb49102971032ded21098fb586dd5bb271"
+          "size": 203708,
+          "hash": "6c2328305a8fba94fdf8f87e9e65974121597ef658d35ca179d31fc353b64dd7"
         },
         {
           "path": "SkinShots/civ5_indrm1.png",
-          "size": 85429,
-          "hash": "85ba11a35c53ebdf18d7a6b39d969c51968314ab3936453754cfede6a7da6776"
+          "size": 194824,
+          "hash": "6cfe0075a2363ce1613460e84f537337c6f3436913bfb1dc019333fa3a73522d"
         },
         {
           "path": "SkinShots/civ5_iroco1.png",
-          "size": 106674,
-          "hash": "ca9f81d62f258a26d5109807867e2fd216c11bb01a68f4d861b70e7b43901a31"
+          "size": 206176,
+          "hash": "21f895b1364fff9baa0b8cce1c75125bfc51bf1d7faf6c4e7b98dde4f9958723"
         },
         {
           "path": "SkinShots/civ5_irohm3.png",
-          "size": 142981,
-          "hash": "765a33174ad9b233ac69dd01e0118983b046a71549efb97461ede304771b4ee9"
+          "size": 188589,
+          "hash": "1a9a3022db75117037c451d1ad62cc4036e7ef317c3b866376ed6eba2fa11535"
         },
         {
           "path": "SkinShots/civ5_iromu1.png",
-          "size": 90071,
-          "hash": "b9bf7f18abaacbe70d8fccedd82c8395be227393b317941d9c0f869bb51de6e8"
+          "size": 185293,
+          "hash": "e93049344d5dab8bf1f0f18c321a8c73cd7e08716aa9bd6555ec31924671e353"
         },
         {
           "path": "SkinShots/civ5_iropi1.png",
-          "size": 58965,
-          "hash": "4204f456a64b5bb2cdf1d1b52c7c927f3f0edfa72170bad2c2cd3a806e9b2431"
+          "size": 197285,
+          "hash": "7884c659a061633d169b00d13d9f4a5c50b2a78177242af19f6e40e7ce5b3dd5"
         },
         {
           "path": "SkinShots/civ5_irosc1.png",
-          "size": 75587,
-          "hash": "129e8f040cd1b0555d9f0e429f4cc89373ccd26d4f9f8f5a313c856e335638a0"
+          "size": 192982,
+          "hash": "931fdc2bffd0188b0c3ff23b09e3491cd3aa8c0d089d3053692ff81cb5860755"
         },
         {
           "path": "SkinShots/civ5_irosp2.png",
-          "size": 76906,
-          "hash": "aeee421da94979f2a50c96f245f6e37e017004cf18f73c6c0991177bbae31d3d"
+          "size": 214700,
+          "hash": "6c7395741d151132aba44382f0bf8424042d8a1033d4ad6f8ae05bc85e0ee56c"
         },
         {
           "path": "SkinShots/civ5_ottrm.png",
-          "size": 87064,
-          "hash": "d08a2a7d6c1dd1959700b9a9fa3de2568381687e92094a4767978ed293cd1550"
+          "size": 188869,
+          "hash": "3de756d7678832c03f06e289ff2467200d590bed914caff184e2a5f6dedc718f"
         },
         {
           "path": "SkinShots/civ5_perrm.png",
-          "size": 86171,
-          "hash": "b0b19c68c3b354738c92bc2b2db93de93e4805c0173b7e0d4ea49560387b40f5"
+          "size": 199163,
+          "hash": "71ff6ece7d1d57b6515f41e274359e386c10daf725dfa7661a684690fc9689fe"
         },
         {
           "path": "SkinShots/civ5_rusrm.png",
-          "size": 90778,
-          "hash": "c608bc92efba2985728808486ca1d03443cb0c04e5ee5c94db3b30518acc165d"
+          "size": 189058,
+          "hash": "0758ef9d1b5f40a07add860c7be2a1d7d4293e943fa1c9855429510a553c99e9"
         },
         {
           "path": "SkinShots/civ5_russm1.png",
-          "size": 124135,
-          "hash": "a1bcf085f6f0094b350486cc1e19763d8d3e2d61e3aa3c562b3c46700a58f425"
+          "size": 200075,
+          "hash": "21d67fd544f6b07d6231083ab44e3f85737774d3e8dd81582a5cfe2e1e0ef225"
         },
         {
           "path": "SkinShots/civ5_siarm1.png",
-          "size": 83595,
-          "hash": "486d77ecb82bddf5c86edce519b20ca2276b32465913150ea039d9ce5fbb7521"
+          "size": 204212,
+          "hash": "57f68dfe31db5fe7ee785ac78d666a67264198cf7763094059686bea5a13a338"
         },
         {
           "path": "SkinShots/civ5_sparm1.png",
-          "size": 86087,
-          "hash": "ba9d0badd2562848a4b4b2e89c586b3fa871c27f440ed897963902fd121e938e"
+          "size": 198980,
+          "hash": "db9cbfdc89b93ef4bcc994f41763ab089ef53f6c8dbd8f37cf8a277ced432ddc"
         },
         {
           "path": "SkinShots/civ5_swerm1.png",
-          "size": 79189,
-          "hash": "7ceaf05f5d75cc5c526407c083ebbb9f3e62d104f8584651e69e0b0a6dd42073"
+          "size": 200496,
+          "hash": "2aac817d02e8207a888698fa1e996745b94ed73fe1493d69a9641d76f1221150"
         },
         {
           "path": "SkinShots/Composite_Bowman_Arabia.png",
-          "size": 101994,
-          "hash": "5a64613b829562a8109bc9b1e7acb3893b1ffbea47fc03dfea080c7e4224472e"
+          "size": 202154,
+          "hash": "0e3c22967d9f3e54a73d4394fc136d87664aea691caf2d063f39e8846475cf38"
         },
         {
           "path": "SkinShots/Composite_Bowman_Aztec.png",
-          "size": 91615,
-          "hash": "61380aa52d9a3299c05fd5d3847689d99a1fa282a723556af24ef789f9b8bcd0"
+          "size": 192961,
+          "hash": "c6edc2ae649ba0e9fa70e7f4fc305a6c1d45f1ba9112a570df20c81bf4162401"
         },
         {
           "path": "SkinShots/Composite_Bowman_Egypt.png",
-          "size": 110179,
-          "hash": "03715b323a61985f777640a1e2e03ed3df50cfd208c202acdc2c6f241aaff36c"
+          "size": 210818,
+          "hash": "25b5d71694c7e00bc86e2f4f8982574bd61c65418bf93430457ba1450dc2f180"
         },
         {
           "path": "SkinShots/Composite_Bowman_France.png",
-          "size": 101541,
-          "hash": "61cec13b49a2fb326ad14b3c1ba3813689ed689c114dcdbcf7a27b77e6dec190"
+          "size": 201979,
+          "hash": "2f334d265b13c12373264c73f467373b5be972aec8b407117116321d1ed539dc"
         },
         {
           "path": "SkinShots/Composite_Bowman_Greek.png",
-          "size": 106810,
-          "hash": "6a781e2b6a2499d0f2a98b717436302100e1e9d6957647cf2583dfa48e9dbb11"
+          "size": 210699,
+          "hash": "0756d42d51ca4a4b1ae94f25d047a4d7d6194fef5dd81ab637c7b90ede78a090"
         },
         {
           "path": "SkinShots/Composite_Bowman_Inca.png",
-          "size": 103068,
-          "hash": "bbe839b0235764d0c3c6027f2db56e84d5b5e0a265622b60af03e723109ae699"
+          "size": 207821,
+          "hash": "4a4cb4ec76294f225bcd3d279e571ed0c19a93353f23bfc0b95096c71c6ba7b7"
         },
         {
           "path": "SkinShots/Composite_Bowman_Maya.png",
-          "size": 98455,
-          "hash": "0fc2f87c60cbcdeddc5f8144ae969f4f1229070173fa3a111e019f0589cb48ec"
+          "size": 198167,
+          "hash": "96dbe36318db6ddeb9ff264e4aeb2989c817a91649c24eab8673fdf1f1c25b66"
         },
         {
           "path": "SkinShots/Composite_Bowman_Mongol.png",
-          "size": 106321,
-          "hash": "6511235031ef54f8fb3e45be70febad475b037f8695c72d359c724a2d39c88c0"
+          "size": 201529,
+          "hash": "913d408acb5134fc4591f097c868d11ebe9e95134ccd3eca9d3cf9a8026b9582"
         },
         {
           "path": "SkinShots/Composite_Bowman_Rome.png",
-          "size": 93832,
-          "hash": "0688c9d57489f9cae931c58b7cd5685bcfead88d85378ee7a32660645ab2a374"
+          "size": 198050,
+          "hash": "c7dbb69a6040c20257dbb996121a404cc39d1dace7ff6c019ccc6165c969277c"
         },
         {
           "path": "SkinShots/Connecticut_BB.png",
-          "size": 94867,
-          "hash": "0cf424d5527dcc626a25c3ba7857185955912d62bdc547cd71cdaabff7f31917"
+          "size": 128145,
+          "hash": "8551c0a94d9af3cfe2157a277e0010d187cb34d2f7e74d1f9962e6509b1e15e2"
         },
         {
           "path": "SkinShots/Crossbowman_Rome.png",
-          "size": 94680,
-          "hash": "87a0de381353439fec6cbc6ca67c4f7b8ad5f69f5c8428fbccb48a44ecae87c1"
+          "size": 185562,
+          "hash": "b44456dd6725da6c40ba23ef24820b0cc3f15fa4b2d33fe485a8bbdec75e907b"
         },
         {
           "path": "SkinShots/Crossbowman_Russia.png",
-          "size": 92273,
-          "hash": "a906dff5936914d7c85af5aa7ec6cf57fec2f3d2563ff18546a632ccbb51ad81"
+          "size": 187628,
+          "hash": "5f624b723f1b22cc342d54c12a7d25b9bdb26434c093ee4829fe8c22fb72470e"
         },
         {
           "path": "SkinShots/Crossbowman_Turkey.png",
-          "size": 89373,
-          "hash": "2d3754c9679e9b7b81856113d3590558dd940e7c2be4c99f36cb1291cebd54af"
+          "size": 185352,
+          "hash": "7c8aefe72b89cfacef0c1124b0b21e8502705c2ddae4296cacd07b721cbb3bcf"
         },
         {
           "path": "SkinShots/Crossbowman_Viking.png",
-          "size": 92520,
-          "hash": "005e92c48ba6190cd88e8a775498e6f016e995cb1ae0fcc662ee71d124eb482d"
+          "size": 187809,
+          "hash": "2a1f746e3849511d10a819adfa17f034e5225ad0a4f40b2fdeb6b412f2cb2bb6"
         },
         {
           "path": "SkinShots/DenmarkWarrior.png",
-          "size": 95979,
-          "hash": "d344779f540ebdecda03805741798accc589c5c0e65c576655d834e8602860aa"
+          "size": 207430,
+          "hash": "9b38d39fd90165eccdc017e8931f6c3373004424410d1cc2e76fd449cc808ad7"
         },
         {
           "path": "SkinShots/EAW_Tu-95.png",
-          "size": 44722,
-          "hash": "53a400c830ae6f7ce63d21135d082075da302eeec4ce62a814771ad0aeaedfb9"
+          "size": 134962,
+          "hash": "9dee714dacc94ff6efb67992601ecc446104776a8b05670b707426234c3b660c"
         },
         {
           "path": "SkinShots/egyption_scout.png",
-          "size": 87638,
-          "hash": "fde7d0b1b1d999068d982a4e641b77497bd12f8f221add39f199e1e0f851c359"
+          "size": 190683,
+          "hash": "69ceaa1dc43f623fea106128fef8ef3a286e4f523bc9ae39f3e605d7f10c9e1f"
         },
         {
           "path": "SkinShots/EgyptSwordsman.png",
-          "size": 123446,
-          "hash": "9b6c380affa61559e4f88a61f645510240b1bb149a8af006bc4e35f977fa20ef"
+          "size": 212008,
+          "hash": "3018c3d693888f9632eb7b7978f862383491e05839341c3fc859c443c58779b7"
         },
         {
           "path": "SkinShots/Eia.png",
-          "size": 190372,
-          "hash": "6d2cd7caa065b67baf4f86d087c3d4407b9e1dd2e551a0f8ba369e3a0b30024c"
+          "size": 197686,
+          "hash": "efa18e1315991be6b8e9ddf6303507a41fb94dc7b056d082e4808f6e6105ad43"
         },
         {
           "path": "SkinShots/EthiopiaArcher.png",
-          "size": 72629,
-          "hash": "c58e9a9c9d6df63e839e43e3e9f2208a1be2626998f5fe561247b668a1cf1103"
+          "size": 190339,
+          "hash": "cf1e6c52b264b218e59c0729561c704b87d115a4720da176b13728fbaef53591"
         },
         {
           "path": "SkinShots/EthiopiaCrossbow.png",
-          "size": 87553,
-          "hash": "b74fd2029855db7a1bebe95e396b09162ed8a77d3c8842aae2cc7e371140c5c0"
+          "size": 190887,
+          "hash": "adcf218aa82928723ca69c7dcc3d7be5fdbfc65e4ffa11b047ef9fa99f7b4e89"
         },
         {
           "path": "SkinShots/EthiopiaMedHorseman.png",
-          "size": 118441,
-          "hash": "78c3c713044f742a004112377019c8bb4804245950e8fb2b57249cf6e80ea785"
+          "size": 210405,
+          "hash": "45cac4fc0611cf7a55e5bba1020cadff0bdbd23488651afcd069054d33923ee2"
         },
         {
           "path": "SkinShots/EthiopianPikeman.png",
-          "size": 42491,
-          "hash": "2ca4060b19f5e68c0bd999fbed3fa4d992cd02f82f457902b3ff0254de108427"
+          "size": 154897,
+          "hash": "63ca865043dd0ef5f35681425be2ce600a286e4308b29effe37f09fbf11caabf"
         },
         {
           "path": "SkinShots/EthiopianScout.png",
-          "size": 62588,
-          "hash": "0db13266742b31822b93c3cb6596f7c63670e8710629d90e91b1575661feb687"
+          "size": 181319,
+          "hash": "af1146fee0a91643aab2aef6bf764e926405782b4373dc94dab60060474a2aee"
         },
         {
           "path": "SkinShots/EuroScout.png",
-          "size": 104526,
-          "hash": "8f555d65f9206033be5946670b2a9ecc9ec46f115b8ffb721c36c5c9623ef0e9"
+          "size": 204178,
+          "hash": "4454627fe2b71c46971c98f6ead2c3b79f8add16704bf3c0841b682fecb16fff"
         },
         {
           "path": "SkinShots/F15.png",
-          "size": 79714,
-          "hash": "15808c21aa68412170edd46eafce9f40839974bef2445dfbcc903bd79b4ae1f7"
+          "size": 139036,
+          "hash": "a2af7adff4306427dd07e0a67d5d4e3447bfe94a55e05b3d6bb45d072530657c"
         },
         {
           "path": "SkinShots/F4DKorea.png",
-          "size": 105068,
-          "hash": "5563af2972a5062ec14be6d2e14f1ffcc2ebd43c74def1f07ed80f814e46f7ef"
+          "size": 154613,
+          "hash": "c97a6f6c5fd44bccb2e7cb18b2f44997ef3e5f83b848cc3300a85318eee541e2"
         },
         {
           "path": "SkinShots/Fiat_3000.png",
-          "size": 148595,
-          "hash": "dab4e334c31ecfb9db7285359565e2d5e6049b4ef4d7cc5dc8c757e9183253bd"
+          "size": 176152,
+          "hash": "c6670385c61f4f0c9ed003854ac97c685f81d5ba06ff4fee342afcfe6cf30940"
         },
         {
           "path": "SkinShots/Fletcher_Class.png",
-          "size": 79732,
-          "hash": "17fbd5407ac344f57241dc9381e4573c16bde11ab80b608c5b59d96dba023a6b"
+          "size": 124476,
+          "hash": "c419d56bdd12fb90341c1a296b6b2692e5440085e0997fc2ddf799a1c75cbeaf"
         },
         {
           "path": "SkinShots/freca1.png",
-          "size": 145820,
-          "hash": "4f2ccf6e582146adba0a53558cd4eb2b263587d1077871142b266f019ef89ddb"
+          "size": 215904,
+          "hash": "c5938277428152e93a082afc6639815861b474800e8cacaa56ed21721cc048da"
         },
         {
           "path": "SkinShots/fregw1.png",
-          "size": 84264,
-          "hash": "be751c4ad392b34e9caf48b9dcd83edb1fccc9ea5bce313729ec52514281b9d6"
+          "size": 192098,
+          "hash": "c8f26963bfd15cf22a7be0bc7707a91257e0a1193ceef645815001528586dacb"
         },
         {
           "path": "SkinShots/GAIA_Goedendag.png",
-          "size": 34504,
-          "hash": "c69ecc787c5bbd073c152f83445ce1ee417788c4bd7f3a3cabf9488bbeb632ab"
+          "size": 178082,
+          "hash": "b2ab2cccccdcb9439e57668ca6c03ff8d595fdf91c3655f952fcd0641e6d571d"
         },
         {
           "path": "SkinShots/GaulMerc.png",
-          "size": 92592,
-          "hash": "7d742a02e8a74ad005010a6f3b7f320490ec463391262323562d68402f57f893"
+          "size": 209505,
+          "hash": "3bfecefab80374d104c2703f455fea77eab8cd280f0518e1c4099550582b58f8"
         },
         {
           "path": "SkinShots/gergw1.png",
-          "size": 80492,
-          "hash": "a6159f5405d74c438d00b742c9a49ce2bb5860f753fcd3356ed947e6e57d1c48"
+          "size": 183423,
+          "hash": "27b903a8600cdfe4d0f060c39217066d840c61f5550343f7abb0fe3a8eff9346"
         },
         {
           "path": "SkinShots/Goteborg_Class.png",
-          "size": 88929,
-          "hash": "86c025eaba50d481bf4ee58ad8c8682027018bf84c0f21bfdc3dd87055aa8ec4"
+          "size": 121521,
+          "hash": "e6ae0d4cbd1325be2486990c25746c1d1cf8026d8845b458ddc21e9f3eafab55"
         },
         {
           "path": "SkinShots/Halberdier_China.png",
-          "size": 70887,
-          "hash": "eed3afc2f39704048ee2e9152e0f645c723afd4f721bb8b2235c17d066dac391"
+          "size": 178537,
+          "hash": "6b5af833e152c2d73b8a7856f555483c590f0a905295efb8d592f21261d637d8"
         },
         {
           "path": "SkinShots/hawaii_ikaika.png",
-          "size": 96557,
-          "hash": "0c90da686f82888e4a9eb40b27dd485e0b5901f00795ce6cab720a82a0d0ae6f"
+          "size": 201152,
+          "hash": "5962408212fdcd0b1c96fe73000c05fee139e01a8af3dd198680df9c31a0b02e"
         },
         {
           "path": "SkinShots/hebrew_warrior.png",
-          "size": 89063,
-          "hash": "ac263df08d9cf6294b82099886a46f7669b2218d98e24bbe926bb400c78015d3"
+          "size": 193100,
+          "hash": "d750b69739828e18b6db70e5827edfc51bf14b07f0f9d7556e0d015dd7893645"
         },
         {
           "path": "SkinShots/Horseman_Japan.png",
-          "size": 99296,
-          "hash": "546dcdcf2129fa9510d1478e5b6c28ab9d4f08e7158611e4369d416a43271ddf"
+          "size": 208534,
+          "hash": "cc50f655c6b04e3ca64f2f2307df371f5fa7091b5705cfc11058a6be4e3430fe"
         },
         {
           "path": "SkinShots/Horseman_Korea.png",
-          "size": 159124,
-          "hash": "37e7aba66b4d55483dc01664c5642526f0948c82e9cbd0305ed790e911f0b203"
+          "size": 208683,
+          "hash": "9bfb3d36a356ade7be8c757e34c56efa5fe64ef93809af8b5aaffb525031a694"
         },
         {
           "path": "SkinShots/Horseman_Mongol.png",
-          "size": 142206,
-          "hash": "79d7fffc6ab3959c805046b4032582c8acdf6a24b6113ab346dab0c48fcf3348"
+          "size": 197346,
+          "hash": "c7b5dc5528f54b9c9fb074298a1e2d742589d8b924b3f69f2ac81392b2ed379f"
         },
         {
           "path": "SkinShots/Horseman_Rome_v2.png",
-          "size": 158121,
-          "hash": "abbc726e80399cf5b99f10dc7849e44d1950eacc9cabd2fa55bfcd3eef6f02fb"
+          "size": 203237,
+          "hash": "0a41cfc062e77f327cf5adb0cd12a3112748c3fccc7e97b669a9f4d94f9f17aa"
         },
         {
           "path": "SkinShots/Horseman_Russia_v2.png",
-          "size": 158476,
-          "hash": "6ccc3e8c7f1d7079091a4a3df6ef4c938729ecb48dfd621d3640fb440423629a"
+          "size": 202223,
+          "hash": "4cbcff7017a47335e035efc4c942c27fcc1e9f1d1881173e4b60b8d6b88ac55e"
         },
         {
           "path": "SkinShots/Horseman_Turkey.png",
-          "size": 159329,
-          "hash": "8edec9b7c38bfdec8f3d07f090507a7a6e37044f86ac8873229e9e223928af94"
+          "size": 211132,
+          "hash": "b75287c698c3cf9f21ec7de43d795bfa92f156a93997676174a7621ec0405011"
         },
         {
           "path": "SkinShots/Horseman_Viking.png",
-          "size": 155845,
-          "hash": "bcb805d433dbf6a63f854c8efc70762f27a7b89ed3bcef4831cd3e6d29228d34"
+          "size": 218409,
+          "hash": "c9ed03e4346a78f16d08aca250709cf8296fe6c2d24fd2873295937721e6d288"
         },
         {
           "path": "SkinShots/hunhu1.png",
-          "size": 128084,
-          "hash": "c2fa6894e2ee454f2491f2f1780653ecbe1630a753b0d60b553c8a484d20ebe8"
+          "size": 207325,
+          "hash": "b304cc34d26f801bc50517a5765c984345a6a44e4e3e25a03a3274edb8303a87"
         },
         {
           "path": "SkinShots/hunrm1.png",
-          "size": 80194,
-          "hash": "bf750358c71c9c60395f8bc0eadd8e1a8345941d9f35e79144925cf38f56369c"
+          "size": 194593,
+          "hash": "df10ff06474fdc0e5bb4ea0b79fde02115ff217c583b2c982ef0d099629150a5"
         },
         {
           "path": "SkinShots/HunWarrior.png",
-          "size": 51259,
-          "hash": "773836be31b3fd9e4de8eafca26ff3c4549fe50dfecd710f367dbfa7d26cbe8f"
+          "size": 173719,
+          "hash": "c13b1bd8028ded983b85daee1316f22e3d3eeb2ec365881c8c0ad7f658e1b96c"
         },
         {
           "path": "SkinShots/HunWarrior2.png",
-          "size": 100283,
-          "hash": "d942d8b70f8c84b9941a6b8497b5ccd5901c9dabaa6308ae49e8f9dbe7c185ba"
+          "size": 202238,
+          "hash": "e529124d52811dc5c1afe162e6887bcf0818baeced47e01eee25cfdef58295f0"
         },
         {
           "path": "SkinShots/impi_1.png",
-          "size": 113434,
-          "hash": "bb1e1be79a0545944131e874e91300124aa9b0a509b8a4933841e9ecdc9f7707"
+          "size": 212136,
+          "hash": "397b0c885361051a4a34d757a78aa989dfb4dfb2511ac35f6dad1dbeb79b6d4d"
         },
         {
           "path": "SkinShots/Infantry_German_v2.png",
-          "size": 83242,
-          "hash": "76afb594a73caf1907a047a6934db6660ec332b8611a1927e902ce1550b40a25"
+          "size": 186323,
+          "hash": "77246594753bfe64602d0ade9387259bf12f92c78795d877d1fb28a5084d64f9"
         },
         {
           "path": "SkinShots/Infantry_Italy.png",
-          "size": 83054,
-          "hash": "3632e07f9146124e263deef79c440a51f1935ba23a3d1536135bb604366a4e68"
+          "size": 177535,
+          "hash": "412deb8a62ef0019a88b94fc640f7e0f41554a843fefc58804883e5083ff6d2a"
         },
         {
           "path": "SkinShots/Infantry_Japan_v3.png",
-          "size": 86853,
-          "hash": "e8e1876e81bd271d94eee62d64963cf3e92fad2551173b41f3ae2dea3b42f78a"
+          "size": 188159,
+          "hash": "0e4b6e93e7d9256543303bca6dd32f5ba4548513570f3b39343ce9e8cabedb17"
         },
         {
           "path": "SkinShots/Infantry_Russia.png",
-          "size": 85866,
-          "hash": "ded6e242219fe874a7afcbacfbf30eb0e30ac5a7bacc7958a751bfdbaa2085b2"
+          "size": 179629,
+          "hash": "73fe42104bdfdee97e2e315cc416ed4ffb07dcac178778a0094020e1a9cd6473"
         },
         {
           "path": "SkinShots/Infantry_Spain.png",
-          "size": 88579,
-          "hash": "53d81bb97150a766b028686594596dffa7f59796bca8caf1b0c4cf17e20bf278"
+          "size": 193475,
+          "hash": "6d82898348e39d5d353652f78a704ab6b6bc52ab23faecd6f4abaaaa049a459f"
         },
         {
           "path": "SkinShots/Infantry_Sweden.png",
-          "size": 81060,
-          "hash": "c42777869789051b017c1e5726abaf303f5b12425c1acccec4f81f51f19c0acb"
+          "size": 191075,
+          "hash": "0fee46f0319bbb6e9907cb9bf5db49476a0421990c73daac46b8eabdfd3c0e1c"
         },
         {
           "path": "SkinShots/Iowa_Class.png",
-          "size": 86710,
-          "hash": "996fcb3780b7d3d752d953d4a514dddddf413d161f4a2cdbcd2a2329d30b34c2"
+          "size": 117873,
+          "hash": "9e4381ca5206b3b3185e3f5379f64e037ee8366ad9d7fa655b890d62767872cf"
         },
         {
           "path": "SkinShots/japgw1.png",
-          "size": 87336,
-          "hash": "9c9531cb94ee9618f3afe2d77983a89d78c49cf24764569ec59ea694f8f34139"
+          "size": 199685,
+          "hash": "4b1518a0f94b423555da4e323a6a284684da9e0ae36afff55ae5336029e0b4c8"
         },
         {
           "path": "SkinShots/King_George_V_Class.png",
-          "size": 99016,
-          "hash": "04f14437e3a39266c647ac5c033fd9480ac7e19968c9c7ca30692ed282887d03"
+          "size": 122162,
+          "hash": "5579b816dee07d9c7d3977bb54073cb51e5083ccb31c8e07cea070e30077de9f"
         },
         {
           "path": "SkinShots/Knight_Arabia.png",
-          "size": 171281,
-          "hash": "ea8452d2338e5938b04037810ffcbfa2046a7d522f138ffddaae3ed9856c4549"
+          "size": 201660,
+          "hash": "dbc2fed976d370fb64e78a27c5e778f9f1e8cd3801fda0fe2a583dcabdef34c1"
         },
         {
           "path": "SkinShots/Knight_Babylon.png",
-          "size": 142034,
-          "hash": "92c14b5dcc3f34c52c2f4461b54444e4f5206f255c359fb2f65b270492595a68"
+          "size": 198189,
+          "hash": "a5849f4b31297b53f815b1e8b2e9727b8e3a06cd9976039a20651aea7ffa6a5c"
         },
         {
           "path": "SkinShots/Knight_China.png",
-          "size": 103264,
-          "hash": "05f2494c76a7ab4681a218c037d24d0cd634b7a7bdb34cd0f3b407aae19c7d3e"
+          "size": 202862,
+          "hash": "c9c877b1a8702b1cab77b1ac08f86ded2090a947b49d15e431708099640ed190"
         },
         {
           "path": "SkinShots/Knight_England.png",
-          "size": 87213,
-          "hash": "154cad01a87d6cc325ba71964a2e50282b00a77e0dba924e368afec97aa265c7"
+          "size": 181151,
+          "hash": "a6403b5387012c4851df37fc834b0e8092922ba02fbe12d87405e2643e2dfc98"
         },
         {
           "path": "SkinShots/Knight_France.png",
-          "size": 98004,
-          "hash": "5a66a331bc76e0272d3588eae52a49a05065d417190c6d6357c1c6e5036fa74a"
+          "size": 182662,
+          "hash": "3414af6c69c98a43d1cbd32a2c0dd8a429dd4907f3d27afaec31ed84b29164b9"
         },
         {
           "path": "SkinShots/Knight_German.png",
-          "size": 88038,
-          "hash": "af711c01fa414bfb738c8b98cfeaee1b3119fa6b7c73d4ab43b2ffa9f752232a"
+          "size": 193220,
+          "hash": "6625cf938e9fbd44353e99bb3441c0ad0dcd667b39666e089c50fa3b8c25c23e"
         },
         {
           "path": "SkinShots/Knight_Greece_v2.png",
-          "size": 159685,
-          "hash": "343ba9691e3b9cab05da82c67fbdee35a8db8feea7b718b0678d5c0d1bbd4d30"
+          "size": 204650,
+          "hash": "5f2e3bf13adc39178cb8962ac17a016ec8b270b8fc85b83007b5bd3aa106883e"
         },
         {
           "path": "SkinShots/Knight_India.png",
-          "size": 171462,
-          "hash": "31dc75e18db39fd7ef6c7c226f41ec648661ff4ced98d34d03fc2af8398dfc53"
+          "size": 214593,
+          "hash": "de673c2f0148e582e5199428dd3e829db2996a8f41d9ecc2af7f4cdb70dcb9ac"
         },
         {
           "path": "SkinShots/Knight_Japan.png",
-          "size": 91515,
-          "hash": "0d85a23e3b5cf3251a0233689f807fb0eadf37e82cbb3263b4d962d5a1f6251a"
+          "size": 200115,
+          "hash": "8f662f348287eb1407bbbe97bead58abb6a23d3af3498ae0b2e1fdef8b4e7922"
         },
         {
           "path": "SkinShots/Knight_Rome.png",
-          "size": 105527,
-          "hash": "d432b5af30b2ea650112d9350664416d83a5883a55f96e5b7ebc644f24dca8d1"
+          "size": 188255,
+          "hash": "26f8f4ba91997b6f7b199c06df2ca414f266b77aa014d4be39956546b4ffa8cb"
         },
         {
           "path": "SkinShots/Knight_Spain.png",
-          "size": 160993,
-          "hash": "271df75c0cedf078ff5060197b329ae6b533d58de2c567e678bb093069a957ae"
+          "size": 218371,
+          "hash": "d26d783cd0b294be35b24e6997c8ca0496b1230a7a6abc0b94bca8750ce10310"
         },
         {
           "path": "SkinShots/Knight_Viking.png",
-          "size": 161269,
-          "hash": "b10919b0406f836aa4ec9dd9035714f74e1f68b675d4da3708b3f6abde5d0970"
+          "size": 218052,
+          "hash": "bae393341e26d68d31745a76088878590839cb8b192830065389393fe8bd3ff7"
         },
         {
           "path": "SkinShots/Landsverk_L-62.png",
-          "size": 191892,
-          "hash": "b7e7ab5a64c5a74afbf434f8f3e6963efdfed6ac70cf60ef29202adc97074a02"
+          "size": 201935,
+          "hash": "3bece4eb45e4028b14f208eb19a87e8ab25bc07428e09aa0aaa037c79c53fc37"
         },
         {
           "path": "SkinShots/Leclerc.png",
-          "size": 138183,
-          "hash": "8857c230f9f99b423a121b9fbf6c054595c8440cd2edcba69f8644684738654f"
+          "size": 145490,
+          "hash": "a9d0ce6858206c53f3c3036d261da6639fab2c55af2a7a8aea1c7c60517e3a34"
         },
         {
           "path": "SkinShots/Leopard1_Netherlands.png",
-          "size": 113062,
-          "hash": "09afb9751d89c5675208e4994128519388dcba0fd41ea0565439e15506076012"
+          "size": 140185,
+          "hash": "124f6a4cd3cb21b5fa48f72a56ea2a8658fdba14b3516e253813dcb17edc183e"
         },
         {
           "path": "SkinShots/Leopard2.png",
-          "size": 112484,
-          "hash": "85d65b7a1702fe202673cf027e611f607ee3f7fa48c1992ec9912d04b957d05f"
+          "size": 143098,
+          "hash": "73673f9fddbfdb177ad97c62c9edbe95d7f3e36aff42a495732736089328ae03"
         },
         {
           "path": "SkinShots/Longbowman_Arabia.png",
-          "size": 100721,
-          "hash": "5a6e3f3247aed47dd85982886ab09307b2cf15a2dfc8dacc33def223f65c0528"
+          "size": 196967,
+          "hash": "a814be7827fba7c76888b3dc52e9f6b1406be73b8209d0d875f0b55eb1aaebed"
         },
         {
           "path": "SkinShots/Longbowman_Babylon.png",
-          "size": 103073,
-          "hash": "78d9d2511662622122bc7e62ed2b164521bfad26a2810a9ad14aa273c1251000"
+          "size": 206203,
+          "hash": "0b8d343a4900dcffd09911d147d1febcb9e3ec31421c59393a6cf6b7a4ba7838"
         },
         {
           "path": "SkinShots/Longbowman_Greece.png",
-          "size": 116554,
-          "hash": "59eac7b81e48d69e654f10119ca15a0597c94cc82a1076d106f746be4bca035a"
+          "size": 212297,
+          "hash": "4ac7d26f742a3da60e5138534ddb6da01b07bcc4d1342be926b192a18d45e8d1"
         },
         {
           "path": "SkinShots/Longbowman_Inca.png",
-          "size": 101271,
-          "hash": "a6473970482d94e93d5def6ac3e02fcd669ef3390f078f98be36c9f8deb74d48"
+          "size": 201829,
+          "hash": "c5e56f4cfeb092a6b4e4d3f79945aab82fd6a0ce3a5044674d1a4a1fcd99fb1f"
         },
         {
           "path": "SkinShots/Longbowman_India.png",
-          "size": 104973,
-          "hash": "29ce6c26cba55d67bc5fbb8314de36a6bc2e5be66469e6b2997a96076969fc01"
+          "size": 203098,
+          "hash": "101d6ef945d62e4f9f20fe1eaacb32a98f84cc54b8a48c026c870b12e0dbdfd5"
         },
         {
           "path": "SkinShots/Longbowman_Japan.png",
-          "size": 91967,
-          "hash": "8663a3df201be4861cd59a5c7950c427879b33c29d575b92e795035b74fd369e"
+          "size": 232451,
+          "hash": "3676ae56f103e138cdbcb0a8d240faccc867c8962cfecace64c628ea31446e05"
         },
         {
           "path": "SkinShots/Longbowman_Maya.png",
-          "size": 93818,
-          "hash": "a81022e12ed1eae53054c6304ddda0140a90b528bc118508ae37df63ebace444"
+          "size": 196939,
+          "hash": "1ac5a2374517e6a396c06f24e67453cf3da90a26139d4a27b8d03a6bbeca0ae5"
         },
         {
           "path": "SkinShots/Longswordsman_Arabia.png",
-          "size": 122610,
-          "hash": "e4a79162aa66c8660f6c26550481086a7afb73a3dbe0119464e4f68392bd4064"
+          "size": 208501,
+          "hash": "9c537237521262d2523103ca623c4dd82474981c8f6fc720b7acae0edfd03c63"
         },
         {
           "path": "SkinShots/Longswordsman_Aztec.png",
-          "size": 77389,
-          "hash": "60e9324d0d083aeabbf21ed2f4fbd1174161360f08c492524919ec7b762e8c52"
+          "size": 202258,
+          "hash": "e6af51d0aee1a3446155ca5faf49c01a012bbadd3204a690f43f445a3821d7e8"
         },
         {
           "path": "SkinShots/Longswordsman_China_v3.png",
-          "size": 110658,
-          "hash": "558358227fb16843e52740c713e84f80d373c3d531627aa64dc18ebe9fa44ad5"
+          "size": 209435,
+          "hash": "64d202cadc52f6fe071e6728a2cfd72e5ba1996ecca687c152fdeedf56791168"
         },
         {
           "path": "SkinShots/Longswordsman_Egypt.png",
-          "size": 133737,
-          "hash": "0a7d4bce547708410b1e037b51f1227a76e038fc749d4438912c8eab07173dcc"
+          "size": 212118,
+          "hash": "ef108fa24ff1d447e6f98bf1f1896f986802056f7e54fdb6b89ed21cf5ebaa57"
         },
         {
           "path": "SkinShots/Longswordsman_Greece.png",
-          "size": 95677,
-          "hash": "2ddddff40cab6fae9f10df2de4fb83bac8eaf1a4e907961c81f3a6740f44df6d"
+          "size": 196487,
+          "hash": "24c58e69ecca90349f510e9b7cf32784ed9c47bc3052b4d0ec64504f7bb8c258"
         },
         {
           "path": "SkinShots/Longswordsman_Maya.png",
-          "size": 119650,
-          "hash": "e6f6196985451463abb894855d159da69413f51ca538a088d73d471a42dcc059"
+          "size": 214560,
+          "hash": "9f13351ea8301e1499c559c8e939841389c2d7e6af24d0cd33ee08d5c22e4321"
         },
         {
           "path": "SkinShots/Longswordsman_Mongol.png",
-          "size": 100555,
-          "hash": "61d7a4c32477b0803067ed20bdc6dac93f35e94fb0d9b61d2e7326b30d2af552"
+          "size": 201835,
+          "hash": "3945b64ec637aed85a0f03a5ecd80edde3f756a6d7be1a9b012cdb6329254ba1"
         },
         {
           "path": "SkinShots/Longswordsman_Russia.png",
-          "size": 111925,
-          "hash": "4afae4ea0603332adce67d081362ce24b34eb8e245407e27ca06863fa90eddb9"
+          "size": 198710,
+          "hash": "96f0230908d856ae3326a6d1e7a4637fb900278e834a36ff8ce64ff3fdad0b0c"
         },
         {
           "path": "SkinShots/Longswordsman_Turkey_v2.png",
-          "size": 108468,
-          "hash": "db3c43b38520d3b810da03cb5960c0b6d050e1cc83f7ea82250e8e34bc725391"
+          "size": 191879,
+          "hash": "06e90d7fd6e5c59bbf51e602ee16bd4bb7adc883fa2f488a8058ff15c3c92a66"
         },
         {
           "path": "SkinShots/Longswordsman_Viking_v3.png",
-          "size": 114004,
-          "hash": "8b670230db9fa5a309fb651edcb5158531c9d6ef7c5d54409884f45fe0fbe387"
+          "size": 214586,
+          "hash": "cf132ea07e3e7ad6c4f9fd6c18e167b135954994a4a0229f0c7f5af19dbf34f0"
         },
         {
           "path": "SkinShots/M1Abrams.png",
-          "size": 96966,
-          "hash": "779fafa8cbe8b065ec00c2a36f48903eb6215ef51e0b1a538adab94304ba7ce3"
+          "size": 137837,
+          "hash": "d548c386bd9caf4799d9f65a2403dc9d7c63c592c1a2b6db1091ad66a7e4ec62"
         },
         {
           "path": "SkinShots/M4A3E8_Sherman_Easy_Eight.png",
-          "size": 147865,
-          "hash": "eaf0eba9208c452272a45c5312d88383ab531b46d24e90a462ccecc10406276a"
+          "size": 160142,
+          "hash": "6ca2f01a7365e9e4a11989d63f3ba541a6f45b2cfb3266cb06f71c17037b9595"
         },
         {
           "path": "SkinShots/MakuriaSwordsman.png",
-          "size": 110703,
-          "hash": "a1babcb31e6ef2b7a6d502587a0233728f8d87f4a1f57d7e161a717479c394a7"
+          "size": 210696,
+          "hash": "72e0aa7a5df5f0c81a98a4dbb750efe598192b093439bf46a6758e2f547e6be3"
         },
         {
           "path": "SkinShots/matatoa.png",
-          "size": 130232,
-          "hash": "560e8ec9e54bfea44436e91889cd045cf38e5881c5463bc874a9e440e4fe359c"
+          "size": 209895,
+          "hash": "c641409637386cd352adf92d57ad35a82f2092009de8cd57fb9c0ddd5692bfb8"
         },
         {
           "path": "SkinShots/Mesopotamic_warrior_tc.png",
-          "size": 107351,
-          "hash": "5be6e0c3998ed5ab854815c1f90f2930944afea2864ac25c61fe818a8cdbc0f6"
+          "size": 203028,
+          "hash": "506e3c90babf967b39210ca3739ecb3a446d359badfb730e564d3a57a8119bc2"
         },
         {
           "path": "SkinShots/Mi8Russia.png",
-          "size": 106325,
-          "hash": "5d7a79872d9c088364ba944ba09ced774f1810a9e0bb3ceda702be4f8eaacea4"
+          "size": 154523,
+          "hash": "db033e70a960c9226f457670ce10add4164914575f30949a5bc3e1f92a61086d"
         },
         {
           "path": "SkinShots/MTSL-1GI4.png",
-          "size": 129213,
-          "hash": "bd6c81b8a149cd7844c3a79c04b819d4a9f8b3292726590a3502c414b2e34e38"
+          "size": 205449,
+          "hash": "b1b8bc4041eccb7c1cbae39b48934a31c7c4efeecb0c4ca61e809199526f8bc5"
         },
         {
           "path": "SkinShots/Nieuport_17.png",
-          "size": 96932,
-          "hash": "4bb5eca8fb39434bc57fb50f3beb0bb18b6de1cb74104f458f18d0b8a61bd74f"
+          "size": 174182,
+          "hash": "413743ee881670d92b0a96eb02c29fc40e447419a938e9b0eb4040953b49c53d"
         },
         {
           "path": "SkinShots/NubianSwordsman.png",
-          "size": 83296,
-          "hash": "05e6239311873bb2dc07180ffc1e4cb8eefc45bfe1ef15756068720f0db32167"
+          "size": 187840,
+          "hash": "fa5c5c78488d951fcf9db25cf71e04cc50e37ccf593209cad5a05c4a3d6d034e"
         },
         {
           "path": "SkinShots/Oceanic_warrior.png",
-          "size": 92695,
-          "hash": "368df8985505341461b9716761ca3acf0106b7deb082ad72e5d6771d259ff6a9"
+          "size": 197439,
+          "hash": "0c3e30e7c055769b64fa6c6c78ac58fcb55c683110fe76cd76f4656a44e73ef4"
         },
         {
           "path": "SkinShots/ottgw1.png",
-          "size": 78122,
-          "hash": "ebbadbcbabdd0262fcb28b635cbed4be8c7e3e602a05932c30475c7e33326b3e"
+          "size": 194828,
+          "hash": "5b06a854830adf133cbbc9c5e2e7d5527577e731ddea6bde5c9bceeaad7dd0ae"
         },
         {
           "path": "SkinShots/P-51_Mustang.png",
-          "size": 65563,
-          "hash": "d6dd3e6a775b9ebd1c44da51d7eea907dacf3b787e3eb55da390193e9999eeca"
+          "size": 149203,
+          "hash": "89964918083af2c3dc2e1d6489263da5a4395e664d6b842f49fd633b4fe08226"
         },
         {
           "path": "SkinShots/P40Brazil.png",
-          "size": 60052,
-          "hash": "2fed003385848be1170760e31dd91d338900cf33103496876c5936c715e20637"
+          "size": 146308,
+          "hash": "6d3c2f8b7bdfa58a99ccca442529b8b1f154f0cbbf2ed70c772fe6531e1bd990"
         },
         {
           "path": "SkinShots/Panzer_IV_Ausf_G.png",
-          "size": 164624,
-          "hash": "dedd8b55d12a9cdba8e4b82ae41844085cd2a818639dad0ab8fbd4e33741d09a"
+          "size": 170080,
+          "hash": "6a7be0c66bb9c8923912332e7da112ad3ed86e220522d76469063264c2e0d995"
         },
         {
           "path": "SkinShots/Paratrooper_China_MG.png",
-          "size": 89784,
-          "hash": "b054f7cf95c790fe1a0f90fa8fed71a3c7810cbed514a90e270265a21b10e185"
+          "size": 186686,
+          "hash": "6c44eaeede6657a21f09fd3997720b8e22d01188d3235b424ef3dbe06a7bc750"
         },
         {
           "path": "SkinShots/Paratrooper_Dutch_MG.png",
-          "size": 88456,
-          "hash": "1fb4fb320a02ad31e7c92fda55743d5e8958b0ea230f1232f078d543d9d97dfa"
+          "size": 186540,
+          "hash": "3a2681c63516f10714ee91ba0b6832b6f6ce57f20440465a9003375f8a9f4f9e"
         },
         {
           "path": "SkinShots/Paratrooper_German_v2.png",
-          "size": 90130,
-          "hash": "ea3fca3fd65333ef88d5083d9d45d13e9c191af38985d11339e652932a097248"
+          "size": 196231,
+          "hash": "51cb517a24869591445d8f3fda5f7366e8ed3da85ab720ea8e23f3986f16c1a1"
         },
         {
           "path": "SkinShots/Paratrooper_Spain.png",
-          "size": 86867,
-          "hash": "34e745887892ebd74ff1fc29e48186f0a57dcf3a394ae1f3a01b7a022caa364d"
+          "size": 186073,
+          "hash": "775653742e1eb75f2724f1baa3471a10908be5d2fe8c78a3dbb5691519e10127"
         },
         {
           "path": "SkinShots/Paratrooper_Sweden.png",
-          "size": 84976,
-          "hash": "d5f7932a0ea39bf5141c499382de1dd5bd9bc8c3f3f18d9d1a26fdb8009d7ea3"
+          "size": 195315,
+          "hash": "8c3dadcf34024dcc91df453784819b9e015d9f1d234e63b8e773e3915defdfad"
         },
         {
           "path": "SkinShots/Paratrooper_UK.png",
-          "size": 89864,
-          "hash": "424b36fda41651fd013395afbcc5cf159b9fe1f81d8025009d74ae43af518672"
+          "size": 191400,
+          "hash": "294ebc1010312f83372f57aeaec12cf28233c7e88d6b8aee01b9cc20c0c4f237"
         },
         {
           "path": "SkinShots/Persian_WW1.png",
-          "size": 92570,
-          "hash": "efe4fe125fdce3aaa2236c2a5520f75e1908e1954485f611a258244ac11fc9e2"
+          "size": 186565,
+          "hash": "97d35f83aeafc37dab6e2ab11881962f2876da6f84edaa3250d9c4db172f4565"
         },
         {
           "path": "SkinShots/Pikeman_Aztec.png",
-          "size": 64207,
-          "hash": "99afbd64f4dea8e2cebd5c4d650f68b5410c7a50532bfb8dce1b1c9b90a4196c"
+          "size": 160839,
+          "hash": "aa32cb8cf1c30a8722c6a113d8c7522949bbee3254c2e0802b550fc4df00b407"
         },
         {
           "path": "SkinShots/Pikeman_Babylon.png",
-          "size": 61960,
-          "hash": "eb1ff9103f2eec79053074e5c07a1029504704d4516c798db8009f05ed2ff3c1"
+          "size": 194106,
+          "hash": "3966ab2109e9241ac41dc7342d37a7ac461464381fbe0a83853b798c0f40a004"
         },
         {
           "path": "SkinShots/Pikeman_Egypt.png",
-          "size": 63086,
-          "hash": "a32c48b1d143bf3e79e096275c0e4462e92f05002359ed818480381365213abb"
+          "size": 170980,
+          "hash": "f9452438ae69e2bf3851434c422004b56b05a18e8c3c8874dbee224280c90d69"
         },
         {
           "path": "SkinShots/Pikeman_Inca.png",
-          "size": 49064,
-          "hash": "e2efbbd8a97fd4b47af4af675bf96e3158a1eca5a754e600ec9ca4f245975aea"
+          "size": 160959,
+          "hash": "b596b079dff07a72336b952a37bd88d1cbccbc9f4f85b0e25a54131864ea0f41"
         },
         {
           "path": "SkinShots/Pikeman_India.png",
-          "size": 66659,
-          "hash": "7cbbd979e645206407079fa7f42115788e609a3d0df7483089e5c8ff3ee87251"
+          "size": 194557,
+          "hash": "7f8b654be2aa73bb4dd4f3a164b88ac46375151f4d9a691f774decd7bce8e4cc"
         },
         {
           "path": "SkinShots/Pikeman_Maya.png",
-          "size": 30987,
-          "hash": "9d8bf0977819533413c57f89115ff5627d476969ec59fbdbbdbbdfcaaffd936f"
+          "size": 165948,
+          "hash": "319a080b329d79edbf047e400775e238096a4b7bc783fc2ed811e476f0ea88f9"
         },
         {
           "path": "SkinShots/Pikeman_Mongol.png",
-          "size": 57853,
-          "hash": "365ca37c618db0afc6ce0d1e820047398933846d647e3f4094688c61b9a8c374"
+          "size": 188137,
+          "hash": "b5ee822652985765c9abd09194d6718378cbf7e1c3c2dd24524ccfb445f13154"
         },
         {
           "path": "SkinShots/Pikeman_Persia.png",
-          "size": 65846,
-          "hash": "d9fa3d7c51ce12e1dbbdb712e1049814b09ae88af605c089d6e786cda3b12426"
+          "size": 194043,
+          "hash": "a89daec77011abe47bd0d962297786dd4809cfdbafac7167038ace16fc304aa4"
         },
         {
           "path": "SkinShots/Pikeman_Rome.png",
-          "size": 56117,
-          "hash": "ed216b897a9595965e2c1576659a3bfa1d5428c32908c66c897d7b25948787a3"
+          "size": 188892,
+          "hash": "702eed061441d0b73b1aa4d943212e0b0be6233fbe87c72251360623c0b7e5f8"
         },
         {
           "path": "SkinShots/Pikeman_Spain.png",
-          "size": 63463,
-          "hash": "74f6626c51976e5bd2a799ec31c8364e70d4414d2059c058ab05f429906806e2"
+          "size": 173344,
+          "hash": "a825dbd143a5f3bd14e0300cf2301b4717788e5477e110e243cad83153f955be"
         },
         {
           "path": "SkinShots/Pikeman_Turkey.png",
-          "size": 59593,
-          "hash": "fbea11673ff5b4e9fb04d699cfe3c044f2c6f050316701a66458a28cf486f2cb"
+          "size": 161403,
+          "hash": "a32454c0f9c753fcac0f7ba8fe3aa1dc5e97a093f2737646e5fa67d7c7736689"
         },
         {
           "path": "SkinShots/Pikeman_Viking.png",
-          "size": 61253,
-          "hash": "4fbcb9b389221ff5a182abb96bcfb8f97a33a70f3db2bb829498e39126592533"
+          "size": 185148,
+          "hash": "74a006508ddf23503df777c67d97183eb1fe302d54bbbf0ad79205c566f48678"
         },
         {
           "path": "SkinShots/PolynesianFootman.png",
-          "size": 87456,
-          "hash": "cc09c6f880cef3e7b804a6d69e31d6ad7494c958e8a9f5d82b14ea9bcbe9c7c7"
+          "size": 194663,
+          "hash": "fd266340f3e7709fc4dc3e7bb7bfb10801b4e2c8724429df6d456fcb22db4fc5"
         },
         {
           "path": "SkinShots/PortugalSpearman.png",
-          "size": 53561,
-          "hash": "acf7aeed07ec6b92c9da741b39033914cdf60c460748a264c443a0fc3156c726"
+          "size": 194833,
+          "hash": "58a0117d158deaa3748cabb6dd024f1ca0b5d47d7709f1e675e9047ac590f8ce"
         },
         {
           "path": "SkinShots/Portugal_longsw8.png",
-          "size": 115000,
-          "hash": "6db1387e311dad4ad1a6f325a683444a8a08a48bfc67914b59a051aa3a1c6ae4"
+          "size": 195511,
+          "hash": "43837871d781b350348e2a3f445ae2802e485abd500a3d1a41fa9e853cb3aa10"
         },
         {
           "path": "SkinShots/portuguese_galleon.png",
-          "size": 188366,
-          "hash": "1fdaf54e44477ed230c111a164a65aad6aa89545d6c406c7f09dddb38f38ccd5"
+          "size": 189602,
+          "hash": "4183254cf93ae5c20c91703da9fab9f473dd9c37c3907f69085ee18e024bb834"
         },
         {
           "path": "SkinShots/PVKV_M43.png",
-          "size": 127352,
-          "hash": "0a6ef9e574e30656e5a309ecddf6cc8b9e9d89eaa3f70d2eeccf5f0f7f73d5d1"
+          "size": 155427,
+          "hash": "120be5e746c3cadc13bf8cde4a056737a9ded527649804108a60eec7be8b93e1"
         },
         {
           "path": "SkinShots/PZL_P.23_Karas.png",
-          "size": 68248,
-          "hash": "7783fad333638b8eb7f26c0414f809b1de0473a272c71c6ac510cff68104bbee"
+          "size": 154189,
+          "hash": "53e47db0aa6a4b5f32f5e787259611d26e690fb374be3923251c8540b04765d9"
         },
         {
           "path": "SkinShots/Qizilbash.png",
-          "size": 60195,
-          "hash": "5b411a98379335421a7cb161045d0b2d880905e22740c2d23412e4d97c19b7ea"
+          "size": 140667,
+          "hash": "5e4b0247708f2f34749dfe596b313670cb997269b699544a8277d10a22797b92"
         },
         {
           "path": "SkinShots/RenaultFTBrazil.png",
-          "size": 138024,
-          "hash": "37379c6121152d4e48bdc3824f763c9c77364f1f62ddbf33a4375223400c91e0"
+          "size": 169922,
+          "hash": "0a17814792732d9a180659995db999a6648f086ad7a51dbdf5129f547afb8ab8"
         },
         {
           "path": "SkinShots/re_umberto_bb.png",
-          "size": 91092,
-          "hash": "ea600f8347b878d2d874ddf95a6355cd727f8850a1c1a57f9708fddcec7b5e33"
+          "size": 123725,
+          "hash": "0852bed42d05bab9a8ce6f0c5f8757e651d9eba804d75bc34cf0e6e7e33fa92e"
         },
         {
           "path": "SkinShots/RM_Commando.png",
-          "size": 89434,
-          "hash": "66d04f5af3f2b82469d1a96a95bceb601a4fbdfd76afa90809825ed99ec01a34"
+          "size": 202122,
+          "hash": "431c44b05bc7eef5139ec9507085fc670ef263d75c72f6a75caca7e28b7c28ae"
         },
         {
           "path": "SkinShots/RussianSF.png",
-          "size": 90441,
-          "hash": "7c89db6ced897204e0e4ff45b997b731e7a1720e9337a3948cafd384b7c3a88b"
+          "size": 198922,
+          "hash": "41e4081bf4391c7f9809885d4b2d983d160078723ef210d9b88af35c04e30aa4"
         },
         {
           "path": "SkinShots/SAAB_B18.png",
-          "size": 64661,
-          "hash": "83b3ab1cfbb429549b347b245a5572b663052e429c26e5e0c60d9bb785228151"
+          "size": 148541,
+          "hash": "8308e2c2a9d9864b386598071bc0bc9826945c89f42583f03c133549dbec7467"
         },
         {
           "path": "SkinShots/SacredBand.png",
-          "size": 112815,
-          "hash": "0091d32b3ab5f7762466fe6746a5cbc8257f6e3ece2fb1a9972cc0c735f5515f"
+          "size": 211882,
+          "hash": "d1b61b4dbd43663ac142a726dfc060218eabcccc3b47533c6166ecc337205b8f"
         },
         {
           "path": "SkinShots/Scout_Japan.png",
-          "size": 92497,
-          "hash": "6d6391188f24d4f629e4dfd885d5e81401f1c41705236d033e9c4a7f6623593d"
+          "size": 198380,
+          "hash": "ae647d9bafcb40ef09be4c99e0058c906e44581d5ee48efabda146e8246a55ec"
         },
         {
           "path": "SkinShots/Scout_Korea.png",
-          "size": 99361,
-          "hash": "38a4c04226fb8ff347c42815605a3010375f173cfc3cee721329b819c001a9b7"
+          "size": 200777,
+          "hash": "07b528fad178aabe44cd4a7baea0ec3c88ea1c79b0ff9dd7ebcf3d4c6b573652"
         },
         {
           "path": "SkinShots/ShortBomber.png",
-          "size": 58405,
-          "hash": "547b5393b26e75da1cc7e170f69d06631bda93fc77ddfe67c28a22d6e719fd0f"
+          "size": 144517,
+          "hash": "c31fb8dc71eb1d0d59a631429e9f3c94dd9076c66a56a5f28329b123040315a6"
         },
         {
           "path": "SkinShots/Siamese_Musketman.png",
-          "size": 82507,
-          "hash": "370c67f44800fb22a0a092ac5b677f90a95d3b80b93bc6a492de98e7b2f31fa4"
+          "size": 190885,
+          "hash": "547acf343f69512287b8b0fb257d3ca3298180b9a10f622908c7146b3d553e69"
         },
         {
           "path": "SkinShots/Sioux_Knight.png",
-          "size": 148466,
-          "hash": "cb3cd4926c4fdcb8e1357bdde0366089d0311fb7a66208caacf0b0fbe2e16519"
+          "size": 205212,
+          "hash": "44bf496916625ef774a29cbc06e0e29dc309c4079dc59d52170a8a484df0a151"
         },
         {
           "path": "SkinShots/SonghaiMedSpearman.png",
-          "size": 52968,
-          "hash": "71ed0d75eef8ba9555ddf00b17c433026da91789abc4307d4c0774bbf833fc36"
+          "size": 189276,
+          "hash": "1870c8e7b3e0875587dd4577293393e29615ade2afce614ffe31f97c9ef4e329"
         },
         {
           "path": "SkinShots/SonghaiPikeman.png",
-          "size": 42732,
-          "hash": "5c98610dcc1ecad6328273a71073d0a90d78c0f038072fce062bd0bdfb05349e"
+          "size": 162247,
+          "hash": "49f7589a789bf6ae41716cdcd9ea2e506a3418c4099cc8f605e795deeb5c72ea"
         },
         {
           "path": "SkinShots/SonghaiScout.png",
-          "size": 62579,
-          "hash": "5db3b5beefa08de824fdd4a62ad88135ea31508e8ba6d5682fb0cf364ec17d33"
+          "size": 181265,
+          "hash": "761acd9ed2186409429ed2deef0b521cb0beab10d4ed840a05e7dd0c71c83103"
         },
         {
           "path": "SkinShots/SonghaiSpearman.png",
-          "size": 69132,
-          "hash": "f3cfc42a9d21e63d406abe820c836a0a38ae3484fa186a674a0ed8fe139ff603"
+          "size": 145588,
+          "hash": "5698fb94f891d77a5c50fe32d523a49ed630b4b0dec92e7963c20855780c0073"
         },
         {
           "path": "SkinShots/Spearman_Arabia.png",
-          "size": 59207,
-          "hash": "53f5734d2283bd9a72746bd962fcc6de7bd170e9de5e97050939a0d819fa014c"
+          "size": 175469,
+          "hash": "ba618fb6e3d18b07ef6e25b047979502da7cc9762d17c69e7f7119fdb1b6e782"
         },
         {
           "path": "SkinShots/Spearman_Aztec.png",
-          "size": 61927,
-          "hash": "562bf3d29fb68c8991d4a1c8dbaa5d598e39074ffb517b919d37b6e5040063a4"
+          "size": 163581,
+          "hash": "1597cc1cc2624844be4b21d3b177d56c992e0fdedecfe1397e34c339695d368c"
         },
         {
           "path": "SkinShots/Spearman_China_v2.png",
-          "size": 66221,
-          "hash": "4b53133db67a7bb5164f996a5c8695965ae7bf7c946aff3fd76ee7de4b5d902c"
+          "size": 175805,
+          "hash": "3588ce95a9966030f3c7fd087c0530d6cada46ecfab6f69aac661f8b328fa5a5"
         },
         {
           "path": "SkinShots/Spearman_Egypt.png",
-          "size": 74128,
-          "hash": "1725b1dfa240adac1f9d44d23d82eb1abc5d788fdff355dd0ff65e3f1f2b703f"
+          "size": 182015,
+          "hash": "e276470fe88eee5c1870ce9c39db68a31e480bc976ec18fc83472c8d871bfbf2"
         },
         {
           "path": "SkinShots/Spearman_Inca.png",
-          "size": 36102,
-          "hash": "162b1cd6bb07bc9e239f11e78f4984e18c272e4f05adb94ce83e11fbdc11fce5"
+          "size": 172510,
+          "hash": "3a2a7da5eaafad166758c2d457cf7108bf75c5a654fbce167c8b4ca277104178"
         },
         {
           "path": "SkinShots/Spearman_Japan.png",
-          "size": 53019,
-          "hash": "8383797a63ae272e448f37897df97e8aa431d3cc42405f18cee02e6bfec3e13d"
+          "size": 174434,
+          "hash": "24aff052b8da2fadcc897f0fbc5a6242f33b57d640561324edc712bd4eeca226"
         },
         {
           "path": "SkinShots/Spearman_Korea.png",
-          "size": 64710,
-          "hash": "b411b7af3c892e6424180c6aa5765568706502446d69f66c32d3d8477d71f915"
+          "size": 185739,
+          "hash": "e60eed2d4db0d7b9823c03112734e92f91a8309cd18a3ef7ca0b63c392149540"
         },
         {
           "path": "SkinShots/Spearman_Mongol.png",
-          "size": 68894,
-          "hash": "7e74bd9b42e849476fc96ed427a7c261365a3a720bddfc2e02891d953e6f6462"
+          "size": 178591,
+          "hash": "c2a2e8e77c3fbf889a4c414344ba2d16ba0fefd5205a017ec3cd5bf3d6c20275"
         },
         {
           "path": "SkinShots/Spearman_Persia.png",
-          "size": 55759,
-          "hash": "dff0b890589de5bacb4e524fff14013d98b0109bb41f605e1944b1887cec87b9"
+          "size": 177768,
+          "hash": "d9dccfec32a0780051de89dbdd5339445fa1557272f1f2ba2910635c69ce140d"
         },
         {
           "path": "SkinShots/Spearman_Rome.png",
-          "size": 63572,
-          "hash": "10615960edd846258b2de3f3f907b3eab9412839ceae26cf5266e8e5ccf769a6"
+          "size": 192824,
+          "hash": "bd7d6a81193df7e84c4d92564658db2ec9bda55ccc109c417026b96ea57b55f3"
         },
         {
           "path": "SkinShots/Spowith_Camel.png",
-          "size": 103878,
-          "hash": "e542b03612651fd76210b0c9abc148c66c780750ffa80d8528e188369a1ea569"
+          "size": 179022,
+          "hash": "7d1c0a08935dd2a25a5771c17330c647d626b9e793c7c1a02c61bc5b9170947f"
         },
         {
           "path": "SkinShots/Strv_M21.png",
-          "size": 156526,
-          "hash": "bb606b6dc2cccfc2b16e4b18f6166aa7b7c5afd446d71e81b5822688d8429c4a"
+          "size": 168988,
+          "hash": "b03e332578c2c6243da4f682d1cf0ac9dbfebee266f63b3bca44e6d727f93e98"
         },
         {
           "path": "SkinShots/Strv_M41.png",
-          "size": 168516,
-          "hash": "8d6294c1c71a579ca7f546455660523e2e0fa0f357da8c45651c5655a933ad41"
+          "size": 209301,
+          "hash": "a6de8036a33b72d97daf79305c7e40fb8398afb12bf3ec3e308eb73669a0c5ca"
         },
         {
           "path": "SkinShots/SudanSwordsman.png",
-          "size": 92735,
-          "hash": "55fbab9dab82da8c8c7ff3cc9928e4ea15222ef4dbf5105b77fcedefcb3d8d7b"
+          "size": 182786,
+          "hash": "8c2cb763395a8df3a3533268e22269a4d695179619b3123900179d34c14a9e50"
         },
         {
           "path": "SkinShots/Swordsman_Aztec.png",
-          "size": 106575,
-          "hash": "2fa0276e01b1ad1fc5b5c59571e78f390a0d365b2e995765fd5d67ede9c4cfdd"
+          "size": 211291,
+          "hash": "0bf5e98750b28e492671cc894b75f68821c523ba1fb66fb005cf62b7f226f3ab"
         },
         {
           "path": "SkinShots/Swordsman_Babylon.png",
-          "size": 123387,
-          "hash": "e69075ac562a752a67cb87631e3bfceb6acb614eb59f441c52cbdb672d92551f"
+          "size": 223329,
+          "hash": "3d2efac0928b709fba665865a229aba07a115e1788116b1a72b4939466eede47"
         },
         {
           "path": "SkinShots/Swordsman_China_v2.png",
-          "size": 64457,
-          "hash": "4e48bba662144220e5923235f581f0f4139ef0afed22d2a08ad6dd53079ddd91"
+          "size": 186462,
+          "hash": "ac831c1aedd3edfd686634665889b28a03b84714c73a5c91482fbf01830a7bfc"
         },
         {
           "path": "SkinShots/Swordsman_Greece.png",
-          "size": 97969,
-          "hash": "01342af080c37542c666e7c0cd1d7f08d7e8cf26659f75c6921b2760a7ee19cf"
+          "size": 195365,
+          "hash": "d7eab71cc2ea4e6a6c94a917e14f0e2ee04cfae1244685ad33dd01923ec31c9b"
         },
         {
           "path": "SkinShots/Swordsman_Inca.png",
-          "size": 90409,
-          "hash": "df21b023a2167bc34e01ddad0d170b455eefac2857c93b0995853b552faffc3f"
+          "size": 199247,
+          "hash": "d88775a57b769cc2e005d4482e4d11428724fc8f7ab1875be62d5cb766bc351c"
         },
         {
           "path": "SkinShots/Swordsman_India.png",
-          "size": 106548,
-          "hash": "0fbea953e2fca218dd6560655e3f8b5ac076bdbbde82519aafae6350a473728d"
+          "size": 201552,
+          "hash": "93b176cd09641b84ea8845d67eb9c5d9e86489798d6e493427780f8b6e1839a9"
         },
         {
           "path": "SkinShots/Swordsman_Maya.png",
-          "size": 118523,
-          "hash": "2ef87e3aec48d5938c304c415b8c8eef086b117146cbe5ab5d8c41dcf037d99e"
+          "size": 214522,
+          "hash": "6c65c3e87c884a686037567a28a993910ecf7999061ba3ec930ee31b05737772"
         },
         {
           "path": "SkinShots/T-34-85.png",
-          "size": 139823,
-          "hash": "2823e0c5d51d07b806305d7bc616dfce73b4c86ed0c22947b0e108bd1da41dcb"
+          "size": 147820,
+          "hash": "3ef0203ac20c1e88042d454bdc9b41fa6b2b4d8c92e61f3a4f04c43b3c5805f6"
         },
         {
           "path": "SkinShots/T55Ethiopia.png",
-          "size": 159784,
-          "hash": "32d4d299c905f49307fc1b7010ea5654b6d9426a43219426bfca27dd715e0370"
+          "size": 159511,
+          "hash": "03087a23509ab05115ae141c7e58b2d23803eabffcd0f00d9107d3c6e1f7f89f"
         },
         {
           "path": "SkinShots/T55Mali.png",
-          "size": 168092,
-          "hash": "dfe556e1ba551b7360f2588a1970310cece3f33ee3a6fa4f2f2205a919f88a54"
+          "size": 163129,
+          "hash": "6d1c5d21352e67f5558b9ae23fcf1fe5180447f72299480663f5db2e026be2b9"
         },
         {
           "path": "SkinShots/T55Peru.png",
-          "size": 164039,
-          "hash": "3737ac97ca7e5fe65d8231fc556178f0504eba8caf34c81ec16ccb6c733a88ff"
+          "size": 157599,
+          "hash": "d538120d6a403523fff0249f1381928afa0e61b0119232369abf419bcefb7964"
         },
         {
           "path": "SkinShots/T72_India.png",
-          "size": 126811,
-          "hash": "aa644468cc5db6157fc94ce65cf52d8c298bbcb9c1b3ab39a6a4fc2b7684d428"
+          "size": 146101,
+          "hash": "654a9ebba11dea32cf3f99a0151125966daf85eb5cc4a9eae5b58f8abba73c2f"
         },
         {
           "path": "SkinShots/T72_Iran.png",
-          "size": 126068,
-          "hash": "eca0c52368027e25b0d9d02ee54485a2fb4947a17541ee9e9bc82d03f1d0dd45"
+          "size": 147240,
+          "hash": "964b1d70f8de5f33f48b7734e1136b9ff4466caba14250cef6c491d9a4de1d07"
         },
         {
           "path": "SkinShots/ThraikanPezoi.png",
-          "size": 96573,
-          "hash": "8706fdd1d2c35263210b69645659fba7b5bbcf72292a9f9d077b49c7a0c084ec"
+          "size": 204622,
+          "hash": "b46d17dd57b01327cf18cbf4ffaf60e33dd810b4fafbe97120d4d5000d188b76"
         },
         {
           "path": "SkinShots/Type1_Ho-Ni_I.png",
-          "size": 173426,
-          "hash": "10441e15111c244efa69267eeb425d39a1a02759f1527d1d80e69dee498c51f0"
+          "size": 165452,
+          "hash": "42b76423dc3ee265300e030fd0ca9bd0019792229554744757476f8592f040ba"
         },
         {
           "path": "SkinShots/Type98_Ko-Hi.png",
-          "size": 171116,
-          "hash": "feef374c2bf5b6581c739776cc016fafd46e3fd364708c1781bcd0ac860364ee"
+          "size": 188766,
+          "hash": "09b9140e80d9b87b61361091787a7415e6c5dfdce0f3af230260a668d4d7cd10"
         },
         {
           "path": "SkinShots/u_cuman_chabani.png",
-          "size": 124844,
-          "hash": "267330d84b98ab0dd1a968d03c7b911364372ca6e8d046dd3b85205293501af2"
+          "size": 212104,
+          "hash": "846e66ecd256a4e8fbef36952f7fd58e248c6b1a8ba144228c05a91c04de710b"
         },
         {
           "path": "SkinShots/u_cuman_mamluk.png",
-          "size": 127096,
-          "hash": "459e7ddb0dadec1fd59e5a9282553c1af92ce605cc2e7533f51b29ca7abc6edc"
+          "size": 177812,
+          "hash": "f2f20724a677fbe12c81525b37ed72faa804b5197bb50893f69cce10b94152c3"
         },
         {
           "path": "SkinShots/Vitez.png",
-          "size": 171888,
-          "hash": "0639df405ffacb73fb51559c65c11d49f1dfad5ab57b4baa2c537e252606d288"
+          "size": 194655,
+          "hash": "210e3fd02c05b743402048f5b9a6e213de2ca7561cb1806060356da6e6f33a24"
         },
         {
           "path": "SkinShots/wales_longsw1.png",
-          "size": 95824,
-          "hash": "09400d00b80924915eb98fd567766240adb6d41925f7866918dc4f90c8f0c6c5"
+          "size": 191233,
+          "hash": "17516b84f3675862013714d634cc8a23f041eb9caa029323d87d1ce4b47d4cb7"
         },
         {
           "path": "Sounds/Streamed/NovaCW_09.mp3",
@@ -14791,6 +14791,14 @@
     "entries": [
       {
         "date": "2026-09-13T00:00:00+00:00",
+        "title": "Nova 1.5.103 \u2014 \u043E\u0431\u043B\u0438\u043A\u0438 \u0432\u043E\u0439\u0441\u043A: \u043E\u0442\u0440\u044F\u0434 \u043D\u0430 \u043A\u043B\u0435\u0442\u043A\u0435",
+        "body": "\u041F\u0440\u0435\u0432\u044C\u044E \u0432 \u0440\u0430\u0437\u0434\u0435\u043B\u0435 \u00AB\u041E\u0431\u043B\u0438\u043A \u0432\u043E\u0439\u0441\u043A\u00BB \u0441\u0434\u0435\u043B\u0430\u043D\u044B \u0437\u0430\u043D\u043E\u0432\u043E, \u0442\u0435\u043F\u0435\u0440\u044C \u044D\u0442\u043E \u043C\u0430\u043B\u0435\u043D\u044C\u043A\u0430\u044F \u0441\u0446\u0435\u043D\u0430, \u043A\u0430\u043A \u043D\u0430 \u043A\u0430\u0440\u0442\u0435:\n\u043E\u0442\u0440\u044F\u0434 \u0441\u0442\u043E\u0438\u0442 \u043D\u0430 \u043A\u043B\u0435\u0442\u043A\u0435 \u043C\u0435\u0441\u0442\u043D\u043E\u0441\u0442\u0438. \u041F\u0435\u0445\u043E\u0442\u0430 \u2014 \u0442\u0440\u0438 \u0431\u043E\u0439\u0446\u0430, \u043A\u043E\u043D\u043D\u0438\u0446\u0430 \u2014 \u0434\u0432\u0430 \u0432\u0441\u0430\u0434\u043D\u0438\u043A\u0430, \u0442\u0430\u043D\u043A\u0438 \u0438 \u043F\u0443\u0448\u043A\u0438 \u2014\n\u043E\u0434\u043D\u0430 \u043C\u0430\u0448\u0438\u043D\u0430, \u043A\u043E\u0440\u0430\u0431\u043B\u0438 \u043D\u0430 \u0432\u043E\u0434\u0435, \u0441\u0430\u043C\u043E\u043B\u0451\u0442\u044B \u043D\u0430\u0434 \u043A\u043B\u0435\u0442\u043A\u043E\u0439. \u0423 \u043A\u0430\u0436\u0434\u043E\u0433\u043E \u0431\u043E\u0439\u0446\u0430 \u0441\u0432\u043E\u0439 \u043F\u043E\u0432\u043E\u0440\u043E\u0442, \u0435\u0441\u0442\u044C \u0441\u0432\u0435\u0442\n\u0438 \u0442\u0435\u043D\u0438. \u0420\u0438\u0441\u043E\u0432\u0430\u043B\u0438 \u0432 Blender, \u0432\u0441\u0435 247 \u043E\u0431\u043B\u0438\u043A\u043E\u0432.\n\u041B\u0430\u0443\u043D\u0447\u0435\u0440 \u043E\u0431\u043D\u043E\u0432\u0438\u0442\u0441\u044F \u0434\u043E 0.3.59: \u043A\u0430\u0440\u0442\u043E\u0447\u043A\u0430 \u043E\u0431\u043B\u0438\u043A\u0430 \u043F\u043E\u0434\u043E\u0433\u043D\u0430\u043D\u0430 \u043F\u043E\u0434 \u043D\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u0438\u043D\u043A\u0438. \u0418\u0433\u0440\u043E\u0432\u044B\u0435 \u0434\u0430\u043D\u043D\u044B\u0435\n\u043D\u0435 \u043C\u0435\u043D\u044F\u044E\u0442\u0441\u044F.",
+        "tag": "\u041E\u0411\u041D\u041E\u0412\u041B\u0415\u041D\u0418\u0415",
+        "HasUsableUrl": false,
+        "IsUsable": true
+      },
+      {
+        "date": "2026-09-13T00:00:00+00:00",
         "title": "Nova 1.5.102 \u2014 \u043D\u043E\u0432\u044B\u0435 \u043F\u0440\u0435\u0432\u044C\u044E \u043E\u0431\u043B\u0438\u043A\u043E\u0432 \u0432 \u043B\u0430\u0443\u043D\u0447\u0435\u0440\u0435",
         "body": "\u0420\u0430\u0437\u0434\u0435\u043B \u00AB\u041E\u0431\u043B\u0438\u043A \u0432\u043E\u0439\u0441\u043A\u00BB \u043F\u0435\u0440\u0435\u0440\u0438\u0441\u043E\u0432\u0430\u043D \u0446\u0435\u043B\u0438\u043A\u043E\u043C: \u0432\u0441\u0435 247 \u043F\u0440\u0435\u0432\u044C\u044E \u0437\u0430\u043D\u043E\u0432\u043E. \u041F\u0430\u0440\u0430\u0448\u044E\u0442\u0438\u0441\u0442\u044B, \u043F\u0435\u0445\u043E\u0442\u0430 \u0438\n\u0440\u0430\u0437\u0432\u0435\u0434\u0447\u0438\u043A\u0438 \u0431\u043E\u043B\u044C\u0448\u0435 \u043D\u0435 \u043B\u0435\u0436\u0430\u0442 \u043D\u0430 \u0431\u043E\u043A\u0443 \u2014 \u043C\u043E\u0434\u0435\u043B\u0438 \u0441\u0442\u043E\u044F\u0442 \u043F\u0440\u044F\u043C\u043E \u0432 \u0441\u0432\u043E\u0435\u0439 \u043F\u043E\u0437\u0435 \u043F\u043E\u043A\u043E\u044F, \u043A\u0430\u043A \u043D\u0430 \u043A\u0430\u0440\u0442\u0435.\n\u0412\u0441\u0430\u0434\u043D\u0438\u043A\u0438 \u0441\u0438\u0434\u044F\u0442 \u0432 \u0441\u0435\u0434\u043B\u0435, \u043A\u043E\u043F\u044C\u044F, \u0432\u0438\u043D\u0442\u043E\u0432\u043A\u0438 \u0438 \u043F\u043E\u0441\u043E\u0445\u0438 \u2014 \u0432 \u0440\u0443\u043A\u0430\u0445, \u0430 \u043D\u0435 \u0440\u044F\u0434\u043E\u043C \u0441 \u0431\u043E\u0439\u0446\u043E\u043C.\n\u041A\u0430\u0440\u0442\u0438\u043D\u043A\u0438 \u0441\u0442\u0430\u043B\u0438 \u043A\u0440\u0443\u043F\u043D\u0435\u0435 \u0438 \u0447\u0451\u0442\u0447\u0435, \u0442\u0451\u043C\u043D\u044B\u0435 \u043C\u043E\u0434\u0435\u043B\u0438 \u2014 \u0441\u0432\u0435\u0442\u043B\u0435\u0435.\n\u041B\u0430\u0443\u043D\u0447\u0435\u0440 \u043E\u0431\u043D\u043E\u0432\u0438\u0442\u0441\u044F \u0434\u043E 0.3.58: \u043A\u0430\u0440\u0442\u043E\u0447\u043A\u0430 \u043E\u0431\u043B\u0438\u043A\u0430 \u0441\u0442\u0430\u043B\u0430 \u0432\u044B\u0448\u0435, \u043C\u043E\u0434\u0435\u043B\u044C \u0441\u0442\u043E\u0438\u0442 \u043D\u0430 \u043F\u043E\u0434\u0441\u0432\u0435\u0442\u043A\u0435 \u0438\n\u0437\u0430\u043D\u0438\u043C\u0430\u0435\u0442 \u0435\u0451 \u0446\u0435\u043B\u0438\u043A\u043E\u043C. \u0418\u0433\u0440\u043E\u0432\u044B\u0435 \u0434\u0430\u043D\u043D\u044B\u0435 \u043D\u0435 \u043C\u0435\u043D\u044F\u044E\u0442\u0441\u044F.",
         "tag": "\u041E\u0411\u041D\u041E\u0412\u041B\u0415\u041D\u0418\u0415",
@@ -15279,6 +15287,14 @@
       }
     ],
     "Usable": [
+      {
+        "date": "2026-09-13T00:00:00+00:00",
+        "title": "Nova 1.5.103 \u2014 \u043E\u0431\u043B\u0438\u043A\u0438 \u0432\u043E\u0439\u0441\u043A: \u043E\u0442\u0440\u044F\u0434 \u043D\u0430 \u043A\u043B\u0435\u0442\u043A\u0435",
+        "body": "\u041F\u0440\u0435\u0432\u044C\u044E \u0432 \u0440\u0430\u0437\u0434\u0435\u043B\u0435 \u00AB\u041E\u0431\u043B\u0438\u043A \u0432\u043E\u0439\u0441\u043A\u00BB \u0441\u0434\u0435\u043B\u0430\u043D\u044B \u0437\u0430\u043D\u043E\u0432\u043E, \u0442\u0435\u043F\u0435\u0440\u044C \u044D\u0442\u043E \u043C\u0430\u043B\u0435\u043D\u044C\u043A\u0430\u044F \u0441\u0446\u0435\u043D\u0430, \u043A\u0430\u043A \u043D\u0430 \u043A\u0430\u0440\u0442\u0435:\n\u043E\u0442\u0440\u044F\u0434 \u0441\u0442\u043E\u0438\u0442 \u043D\u0430 \u043A\u043B\u0435\u0442\u043A\u0435 \u043C\u0435\u0441\u0442\u043D\u043E\u0441\u0442\u0438. \u041F\u0435\u0445\u043E\u0442\u0430 \u2014 \u0442\u0440\u0438 \u0431\u043E\u0439\u0446\u0430, \u043A\u043E\u043D\u043D\u0438\u0446\u0430 \u2014 \u0434\u0432\u0430 \u0432\u0441\u0430\u0434\u043D\u0438\u043A\u0430, \u0442\u0430\u043D\u043A\u0438 \u0438 \u043F\u0443\u0448\u043A\u0438 \u2014\n\u043E\u0434\u043D\u0430 \u043C\u0430\u0448\u0438\u043D\u0430, \u043A\u043E\u0440\u0430\u0431\u043B\u0438 \u043D\u0430 \u0432\u043E\u0434\u0435, \u0441\u0430\u043C\u043E\u043B\u0451\u0442\u044B \u043D\u0430\u0434 \u043A\u043B\u0435\u0442\u043A\u043E\u0439. \u0423 \u043A\u0430\u0436\u0434\u043E\u0433\u043E \u0431\u043E\u0439\u0446\u0430 \u0441\u0432\u043E\u0439 \u043F\u043E\u0432\u043E\u0440\u043E\u0442, \u0435\u0441\u0442\u044C \u0441\u0432\u0435\u0442\n\u0438 \u0442\u0435\u043D\u0438. \u0420\u0438\u0441\u043E\u0432\u0430\u043B\u0438 \u0432 Blender, \u0432\u0441\u0435 247 \u043E\u0431\u043B\u0438\u043A\u043E\u0432.\n\u041B\u0430\u0443\u043D\u0447\u0435\u0440 \u043E\u0431\u043D\u043E\u0432\u0438\u0442\u0441\u044F \u0434\u043E 0.3.59: \u043A\u0430\u0440\u0442\u043E\u0447\u043A\u0430 \u043E\u0431\u043B\u0438\u043A\u0430 \u043F\u043E\u0434\u043E\u0433\u043D\u0430\u043D\u0430 \u043F\u043E\u0434 \u043D\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u0438\u043D\u043A\u0438. \u0418\u0433\u0440\u043E\u0432\u044B\u0435 \u0434\u0430\u043D\u043D\u044B\u0435\n\u043D\u0435 \u043C\u0435\u043D\u044F\u044E\u0442\u0441\u044F.",
+        "tag": "\u041E\u0411\u041D\u041E\u0412\u041B\u0415\u041D\u0418\u0415",
+        "HasUsableUrl": false,
+        "IsUsable": true
+      },
       {
         "date": "2026-09-13T00:00:00+00:00",
         "title": "Nova 1.5.102 \u2014 \u043D\u043E\u0432\u044B\u0435 \u043F\u0440\u0435\u0432\u044C\u044E \u043E\u0431\u043B\u0438\u043A\u043E\u0432 \u0432 \u043B\u0430\u0443\u043D\u0447\u0435\u0440\u0435",
@@ -15771,13 +15787,13 @@
     "Any": true
   },
   "client": {
-    "version": "0.3.58",
-    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas4/nova-client-0.3.58.zip",
-    "sha256": "6c0f1f9223b8e061cd5d3e5f31f62ee87932abb8e4f996a5510db327475c55b2",
-    "size": 61501229,
-    "notes": "\u0420\u0430\u0437\u0434\u0435\u043B \u00AB\u041E\u0431\u043B\u0438\u043A \u0432\u043E\u0439\u0441\u043A\u00BB: \u043A\u0430\u0440\u0442\u043E\u0447\u043A\u0430 \u043E\u0431\u043B\u0438\u043A\u0430 \u0441\u0442\u0430\u043B\u0430 \u0432\u044B\u0448\u0435, \u043C\u043E\u0434\u0435\u043B\u044C \u0441\u0442\u043E\u0438\u0442 \u043D\u0430 \u043F\u043E\u0434\u0441\u0432\u0435\u0442\u043A\u0435 \u0438 \u0437\u0430\u043D\u0438\u043C\u0430\u0435\u0442 \u043A\u0430\u0440\u0442\u043E\u0447\u043A\u0443 \u0446\u0435\u043B\u0438\u043A\u043E\u043C. \u0412\u043C\u0435\u0441\u0442\u0435 \u0441 \u043C\u043E\u0434\u043E\u043C 1.5.102 \u043F\u0440\u0438\u0448\u043B\u0438 \u043D\u043E\u0432\u044B\u0435 \u043F\u0440\u0435\u0432\u044C\u044E \u0432\u0441\u0435\u0445 247 \u043E\u0431\u043B\u0438\u043A\u043E\u0432 \u2014 \u043C\u043E\u0434\u0435\u043B\u0438 \u0441\u0442\u043E\u044F\u0442 \u043F\u0440\u044F\u043C\u043E, \u0432\u0441\u0430\u0434\u043D\u0438\u043A\u0438 \u0432 \u0441\u0435\u0434\u043B\u0435, \u043E\u0440\u0443\u0436\u0438\u0435 \u0432 \u0440\u0443\u043A\u0430\u0445.",
+    "version": "0.3.59",
+    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas4/nova-client-0.3.59.zip",
+    "sha256": "138b7006a671456215f5db5fa8e5d2f1052f4fbbb0116063ca0c159c75c2f947",
+    "size": 61501132,
+    "notes": "\u0420\u0430\u0437\u0434\u0435\u043B \u00AB\u041E\u0431\u043B\u0438\u043A \u0432\u043E\u0439\u0441\u043A\u00BB: \u043A\u0430\u0440\u0442\u043E\u0447\u043A\u0430 \u043E\u0431\u043B\u0438\u043A\u0430 \u043F\u043E\u0434\u043E\u0433\u043D\u0430\u043D\u0430 \u043F\u043E\u0434 \u043D\u043E\u0432\u044B\u0435 \u043F\u0440\u0435\u0432\u044C\u044E \u2014 \u043E\u0442\u0440\u044F\u0434 \u043D\u0430 \u043A\u043B\u0435\u0442\u043A\u0435 \u043C\u0435\u0441\u0442\u043D\u043E\u0441\u0442\u0438 \u0441\u0442\u043E\u0438\u0442 \u043F\u043E \u0446\u0435\u043D\u0442\u0440\u0443, \u0431\u0435\u0437 \u043F\u043E\u0434\u0441\u0442\u0430\u0432\u043A\u0438. \u0421\u0430\u043C\u0438 \u043F\u0440\u0435\u0432\u044C\u044E \u0432\u0441\u0435\u0445 247 \u043E\u0431\u043B\u0438\u043A\u043E\u0432 \u043F\u0440\u0438\u0448\u043B\u0438 \u0441 \u043C\u043E\u0434\u043E\u043C 1.5.103.",
     "mirrors": [
-      "relay://109.73.196.175:443/client/nova-client-0.3.58.zip"
+      "relay://109.73.196.175:443/client/nova-client-0.3.59.zip"
     ],
     "IsUsable": true
   },
