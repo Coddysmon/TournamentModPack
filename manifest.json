@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.105",
+  "packageVersion": "1.5.106",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-09-15T16:36:13.1811651+00:00",
+  "createdUtc": "2026-09-16T09:32:29.6394639+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -92,366 +92,6 @@
           "hash": "970559319e70ea97b110724dec81ab88f3d8770b7d6c47ecb530ead7491f713e"
         },
         {
-          "path": "Art/Cursors/pool/tm_cursor_alchemy_flask.ani",
-          "size": 4362,
-          "hash": "acb088ba7443c50369cbd830b70de4bbbd01a3a3008500ca33b33128a42e7451"
-        },
-        {
-          "path": "Art/Cursors/pool/tm_cursor_arrowhead.ani",
-          "size": 4362,
-          "hash": "54e5ebb210fdc3951b6af885276a6710bde631e93248b238537d5db4ec3c989b"
-        },
-        {
-          "path": "Art/Cursors/pool/tm_cursor_astrolabe.ani",
-          "size": 4362,
-          "hash": "064b07c7e297e0ad705b74623cc5ec56659c077a7a37ec5b1d89ffb0de62bb92"
-        },
-        {
-          "path": "Art/Cursors/pool/tm_cursor_battle_standard.ani",
-          "size": 4362,
-          "hash": "7d9c1491c0a1e958e4931807e05b6147f658869dd49961d3d942bbdf4fa549b4"
-        },
-        {
-          "path": "Art/Cursors/pool/tm_cursor_beast_track.ani",
-          "size": 4362,
-          "hash": "a1fba5bf5b1b6b0829747512463d270d1f502608a031b7b70e4a0a461c0a8026"
-        },
-        {
-          "path": "Art/Cursors/pool/tm_cursor_caravan_hook.ani",
-          "size": 4362,
-          "hash": "fccad1cf8b51256c36b77e9497fb32eae13b82488ce78e74009ccc5038ab9255"
-        },
-        {
-          "path": "Art/Cursors/pool/tm_cursor_cartographer_quill.ani",
-          "size": 4362,
-          "hash": "5f41d9c8f2e28b07ed4082fee820b61646b23eb75a40fdc0ff86f33f78c326a4"
-        },
-        {
-          "path": "Art/Cursors/pool/tm_cursor_chronicler_brush.ani",
-          "size": 4362,
-          "hash": "d23c3d87c73ce8f1f3fe40a2bba606e558c531698b40d5b484f448eaa211284d"
-        },
-        {
-          "path": "Art/Cursors/pool/tm_cursor_coin.ani",
-          "size": 4362,
-          "hash": "e4c5caddd35b9cc87ce8673028aa14bba97e640db06bf6fe0f5d271fac8653e7"
-        },
-        {
-          "path": "Art/Cursors/pool/tm_cursor_coin_purse.ani",
-          "size": 4362,
-          "hash": "e575fe2cf415496a9b492a834416adedcf1bc8f06901ca7ef3a4b2ebde5a91c3"
-        },
-        {
-          "path": "Art/Cursors/pool/tm_cursor_commander_reticle.ani",
-          "size": 4362,
-          "hash": "4621d4ef0bbdc3d3d4b6da243c9e094085e7da332550e117dc3c9dda3a2ee002"
-        },
-        {
-          "path": "Art/Cursors/pool/tm_cursor_compass.ani",
-          "size": 4362,
-          "hash": "94077897ddb2d7f4657cdc49e11405d81b79fb18916bf6d33d531fa8537d2d92"
-        },
-        {
-          "path": "Art/Cursors/pool/tm_cursor_dagger.ani",
-          "size": 4362,
-          "hash": "894df0a861d60c3e30a958e6a23bdf1113b24adaa2e8609dad57fb9495750bbb"
-        },
-        {
-          "path": "Art/Cursors/pool/tm_cursor_fang.ani",
-          "size": 4362,
-          "hash": "9514684e9397f7d9640ea1c2e0e403a7c575e2859563e5f1c62081e0a7a14140"
-        },
-        {
-          "path": "Art/Cursors/pool/tm_cursor_fern_leaf.ani",
-          "size": 4362,
-          "hash": "14c58da75d697cedb298410eadb74354f07b4edf04b567a1714048935cc69ffb"
-        },
-        {
-          "path": "Art/Cursors/pool/tm_cursor_gear.ani",
-          "size": 4362,
-          "hash": "bdd318c8c13647166f89f1685aeec235d0429123a2b37f0495d31eb229f3706d"
-        },
-        {
-          "path": "Art/Cursors/pool/tm_cursor_mini_sword.ani",
-          "size": 4362,
-          "hash": "efba131a93b17f22fbcbeddcefc4bb0f5f21827c22a39be92223668154708402"
-        },
-        {
-          "path": "Art/Cursors/pool/tm_cursor_olive_branch.ani",
-          "size": 4362,
-          "hash": "95e68f3879639205b004edeac83fa976afbe1dc728e24633b908718fe18154f2"
-        },
-        {
-          "path": "Art/Cursors/pool/tm_cursor_quill_inkwell.ani",
-          "size": 4362,
-          "hash": "af6cde5fcb94e6068726252a360fe77d1e8af0103cedbee492b9bf0ded0ba205"
-        },
-        {
-          "path": "Art/Cursors/pool/tm_cursor_scales.ani",
-          "size": 4362,
-          "hash": "3ed9e3d7d8128dc6d6f515b38abc2b3750de3e9e69b0386ac3feccc7c2a10a25"
-        },
-        {
-          "path": "Art/Cursors/pool/tm_cursor_scroll.ani",
-          "size": 4362,
-          "hash": "477da909814f4016575a7e305422c20af838b25968815d3c8c4daa8300d5e673"
-        },
-        {
-          "path": "Art/Cursors/pool/tm_cursor_stone_point.ani",
-          "size": 4362,
-          "hash": "d6adf422383447d985724dc83192269805ccd8b386987ac251a3d701c42f52c1"
-        },
-        {
-          "path": "Art/Cursors/pool/tm_cursor_telescope.ani",
-          "size": 4362,
-          "hash": "198afa63d2858cf7a1917f1f6445d854559b2547ff9ac246feef49a2b9f13179"
-        },
-        {
-          "path": "Art/Cursors/pool/tm_cursor_torch.ani",
-          "size": 4362,
-          "hash": "6247e3946d1dcf6c01f8756ebd3679fc80454fb9a4241496441adcfd0a3eb140"
-        },
-        {
-          "path": "Art/Cursors/pool48/tm_cursor_alchemy_flask_48.ani",
-          "size": 9738,
-          "hash": "68f31981b7ec693e587c4e31e0e7ec9e3ea0f03ad3df173f1c04ce07a5002153"
-        },
-        {
-          "path": "Art/Cursors/pool48/tm_cursor_arrowhead_48.ani",
-          "size": 9738,
-          "hash": "4d712ef92686626ac8c8a206390b57762cc055e5c1688eee39a3c70f0c06f567"
-        },
-        {
-          "path": "Art/Cursors/pool48/tm_cursor_astrolabe_48.ani",
-          "size": 9738,
-          "hash": "9701560c50cd4df2be51f2a08e621f0192818369071a1c1f141d33734a0bb656"
-        },
-        {
-          "path": "Art/Cursors/pool48/tm_cursor_battle_standard_48.ani",
-          "size": 9738,
-          "hash": "3033e5368cbe54f06c12d60edc753414ea16b2d0895e67a6e33921736cb0086a"
-        },
-        {
-          "path": "Art/Cursors/pool48/tm_cursor_beast_track_48.ani",
-          "size": 9738,
-          "hash": "6980400bb1a2e5302fcff19d33c31889b3e273759d940f7e018808cd51c19c44"
-        },
-        {
-          "path": "Art/Cursors/pool48/tm_cursor_caravan_hook_48.ani",
-          "size": 9738,
-          "hash": "5b88287d401d1c00bc07f46318acab735ef2e3f7d50886194e6ad10faa8a98e0"
-        },
-        {
-          "path": "Art/Cursors/pool48/tm_cursor_cartographer_quill_48.ani",
-          "size": 9738,
-          "hash": "02aca8a90cc73e6f35547db5ca0311a1c4d4d0ba3a30ac8ee8d5616b2b91a2ea"
-        },
-        {
-          "path": "Art/Cursors/pool48/tm_cursor_chronicler_brush_48.ani",
-          "size": 9738,
-          "hash": "394ac34949b872c5305b96a01c638b1366caefb3614426bb6cec80802967297d"
-        },
-        {
-          "path": "Art/Cursors/pool48/tm_cursor_coin_48.ani",
-          "size": 9738,
-          "hash": "70a9af07d1e0ddb846b60a001d2410ae626ad10d911a9dba8662362d0daddf42"
-        },
-        {
-          "path": "Art/Cursors/pool48/tm_cursor_coin_purse_48.ani",
-          "size": 9738,
-          "hash": "3d8cd53a7031e63ae49b5dbc37246a6d48cc0ddf54df0b985ebf0a1a2e21281d"
-        },
-        {
-          "path": "Art/Cursors/pool48/tm_cursor_commander_reticle_48.ani",
-          "size": 9738,
-          "hash": "33acef1046892eafb82bda31340200c6d3635367060bb3f8ad3f168c39dd38c0"
-        },
-        {
-          "path": "Art/Cursors/pool48/tm_cursor_compass_48.ani",
-          "size": 9738,
-          "hash": "9ed5df7df79b87f31dcd3a6c3889fe945868ca8d243f97c9e5c2262bab2ba504"
-        },
-        {
-          "path": "Art/Cursors/pool48/tm_cursor_dagger_48.ani",
-          "size": 9738,
-          "hash": "91a1e5b3ef9af2563a9ad5e6418feb363ee2bb49f7eb88a3d18e7429ecf82c92"
-        },
-        {
-          "path": "Art/Cursors/pool48/tm_cursor_fang_48.ani",
-          "size": 9738,
-          "hash": "8b8a3b67b63c39a8075b9ec8490d36943780402c12f1febbba95f38d36a101ac"
-        },
-        {
-          "path": "Art/Cursors/pool48/tm_cursor_fern_leaf_48.ani",
-          "size": 9738,
-          "hash": "9eb1544cc3daeea17950d3008c5fd9dde8dd693ccbf257e480277bc70119fb90"
-        },
-        {
-          "path": "Art/Cursors/pool48/tm_cursor_gear_48.ani",
-          "size": 9738,
-          "hash": "c08ce8d314a508745360fda1f25aae253904b8ad2560818e9b026f56d08556d5"
-        },
-        {
-          "path": "Art/Cursors/pool48/tm_cursor_mini_sword_48.ani",
-          "size": 9738,
-          "hash": "40242867bdae56bd427c9204cd59c5ea13d914f7fb3dd1fdbe9056febf1c6c6e"
-        },
-        {
-          "path": "Art/Cursors/pool48/tm_cursor_olive_branch_48.ani",
-          "size": 9738,
-          "hash": "096ce3477e0669932e4731dc31a09757dbe7a5a28f252fac1340635d21621a61"
-        },
-        {
-          "path": "Art/Cursors/pool48/tm_cursor_quill_inkwell_48.ani",
-          "size": 9738,
-          "hash": "921aa405b1e6ae44853524a44c6cdafb98387d884f4791e112dbd89c78136e41"
-        },
-        {
-          "path": "Art/Cursors/pool48/tm_cursor_scales_48.ani",
-          "size": 9738,
-          "hash": "866b1f89d57287562285e03a0d10d6a9da09145074c90a49c9fbdbb2973a0824"
-        },
-        {
-          "path": "Art/Cursors/pool48/tm_cursor_scroll_48.ani",
-          "size": 9738,
-          "hash": "defee4f0fda89e8bc0e3dd68c83a8162e2d98d3f2dec37fa6fd7248255cc5f84"
-        },
-        {
-          "path": "Art/Cursors/pool48/tm_cursor_stone_point_48.ani",
-          "size": 9738,
-          "hash": "b737e2c16efab5e75e24d1ce207ebaed05ba584a9d63e0db57c9af2a24c1d548"
-        },
-        {
-          "path": "Art/Cursors/pool48/tm_cursor_telescope_48.ani",
-          "size": 9738,
-          "hash": "6aeb9ad064256669632977133fa3babd3118509cbbd8619aaa929eee45a66910"
-        },
-        {
-          "path": "Art/Cursors/pool48/tm_cursor_torch_48.ani",
-          "size": 9738,
-          "hash": "528629b901d6d205401d3244300f5bfc935b8c646272e16801ae2a89e46f5b28"
-        },
-        {
-          "path": "Art/Cursors/pool64/tm_cursor_alchemy_flask_64.ani",
-          "size": 17034,
-          "hash": "7a04603b32a1796c1b2e33ae710f0ed71213fe5a1c571e7d62e22c9aff4b624e"
-        },
-        {
-          "path": "Art/Cursors/pool64/tm_cursor_arrowhead_64.ani",
-          "size": 17034,
-          "hash": "d7ff5bd9caeb47210060dcf5723168803d2827df0a52235908e30c0d24a87656"
-        },
-        {
-          "path": "Art/Cursors/pool64/tm_cursor_astrolabe_64.ani",
-          "size": 17034,
-          "hash": "990d4285f92a42b7a2cb71c0f7325be7b69357f8719ae5e107d55eaeda92e971"
-        },
-        {
-          "path": "Art/Cursors/pool64/tm_cursor_battle_standard_64.ani",
-          "size": 17034,
-          "hash": "c46dffccc84fa821b5141efd34301159ca5711aa6e1d6c02adf3037a3cff6b5e"
-        },
-        {
-          "path": "Art/Cursors/pool64/tm_cursor_beast_track_64.ani",
-          "size": 17034,
-          "hash": "773d882b27f70af4fb30dc262e2d8e34e858440f2bc3ff72ae5b9e4aa21ba131"
-        },
-        {
-          "path": "Art/Cursors/pool64/tm_cursor_caravan_hook_64.ani",
-          "size": 17034,
-          "hash": "b963586b5419a8eb6f73295ad0db19bdeca9dbba6917d7ea1c4be1d82b60b0c8"
-        },
-        {
-          "path": "Art/Cursors/pool64/tm_cursor_cartographer_quill_64.ani",
-          "size": 17034,
-          "hash": "796717d9c255d29f97d6bcdea4debe151742e204152c4699ad00fe865f649fcf"
-        },
-        {
-          "path": "Art/Cursors/pool64/tm_cursor_chronicler_brush_64.ani",
-          "size": 17034,
-          "hash": "dfe34802c21b40490c8c8128e99884b12914c49703cd9e7dae179583fe925c45"
-        },
-        {
-          "path": "Art/Cursors/pool64/tm_cursor_coin_64.ani",
-          "size": 17034,
-          "hash": "722a41a1bbf407c273d1312bf261def608a00b4aff7b3d9bee29e1058c1be7f5"
-        },
-        {
-          "path": "Art/Cursors/pool64/tm_cursor_coin_purse_64.ani",
-          "size": 17034,
-          "hash": "d4d1a3a5237320e536656d7c6b9053593d2e0ada8408f702cde48dde3598ad27"
-        },
-        {
-          "path": "Art/Cursors/pool64/tm_cursor_commander_reticle_64.ani",
-          "size": 17034,
-          "hash": "fac33254b9a16e61edb29257647f060b2ef0d36dacde5918b20c0a4d33559dad"
-        },
-        {
-          "path": "Art/Cursors/pool64/tm_cursor_compass_64.ani",
-          "size": 17034,
-          "hash": "4e9d47710c6c4142c4af77ea3f1bfa6475e0d522c07f36d58de44c7f3f51d22d"
-        },
-        {
-          "path": "Art/Cursors/pool64/tm_cursor_dagger_64.ani",
-          "size": 17034,
-          "hash": "ea44ee65a19c6d8511ac96b41954b4439d16173ac6b0e31377683501da44c4e2"
-        },
-        {
-          "path": "Art/Cursors/pool64/tm_cursor_fang_64.ani",
-          "size": 17034,
-          "hash": "a381d40a1004d50e429854ba584aa48397b697d11c0d4d0e386cd8ad3e779182"
-        },
-        {
-          "path": "Art/Cursors/pool64/tm_cursor_fern_leaf_64.ani",
-          "size": 17034,
-          "hash": "72f4d889ebe6c650056e5d1eb8f2528ac3053612ad8bd28356c6017d26006bf3"
-        },
-        {
-          "path": "Art/Cursors/pool64/tm_cursor_gear_64.ani",
-          "size": 17034,
-          "hash": "16476ff877f6fb1443bab425e5ac57f491267409c402e04125e89dd33e6652f7"
-        },
-        {
-          "path": "Art/Cursors/pool64/tm_cursor_mini_sword_64.ani",
-          "size": 17034,
-          "hash": "8e787057e91e9f3791350bebd7616f773a4c02f2331a7a7ce9eda959a3362a3b"
-        },
-        {
-          "path": "Art/Cursors/pool64/tm_cursor_olive_branch_64.ani",
-          "size": 17034,
-          "hash": "c2780b60310e747edf7733231729c76f2173962d78b433abc66a8710a661e657"
-        },
-        {
-          "path": "Art/Cursors/pool64/tm_cursor_quill_inkwell_64.ani",
-          "size": 17034,
-          "hash": "80278392a3bc2f9ce19615f7f914bda9b1460530b281cf8547a924726f57af6a"
-        },
-        {
-          "path": "Art/Cursors/pool64/tm_cursor_scales_64.ani",
-          "size": 17034,
-          "hash": "fe8b37e3a0c98979157645c293f7915198b932417d1e9419d5276dcdc774a3c2"
-        },
-        {
-          "path": "Art/Cursors/pool64/tm_cursor_scroll_64.ani",
-          "size": 17034,
-          "hash": "80af38dd79579f51b8ab478ccdd755fca037934b68ff3f7c990d71b5dd9a16c4"
-        },
-        {
-          "path": "Art/Cursors/pool64/tm_cursor_stone_point_64.ani",
-          "size": 17034,
-          "hash": "dfb883d68c4c56a62731a95a0d8715e44dd1fb0030a4b3ff13b7bbd6c25c0728"
-        },
-        {
-          "path": "Art/Cursors/pool64/tm_cursor_telescope_64.ani",
-          "size": 17034,
-          "hash": "08d0b90a2a9c1fd322281540326717d71a7743ba130bebc7652a864f4b76df71"
-        },
-        {
-          "path": "Art/Cursors/pool64/tm_cursor_torch_64.ani",
-          "size": 17034,
-          "hash": "0940ab5bbc82cf172da036a808baf404c4430a08fbafc4ed903863cf2ee1227b"
-        },
-        {
           "path": "Art/Cursors/tm_cursor_random.ani",
           "size": 68916,
           "hash": "d0801926a0f411b4404cc8bc4bf9accd03fd4ccdd16de0474f2106ed41c17434"
@@ -489,7 +129,7 @@
         {
           "path": "Art/EmoteIcons_Patch.dds",
           "size": 262272,
-          "hash": "06003fbaa79bf647ff69cca898fb4d815afde7251ad1b922d6f145eadff2753e"
+          "hash": "727344ffda6aeba5ee2f5178c5ca786ce86b5af5ed2db9a217a275c1b79dfbf2"
         },
         {
           "path": "Art/FontIcons_Patch.dds",
@@ -16828,18 +16468,18 @@
         },
         {
           "path": "CHANGELOG.md",
-          "size": 132807,
-          "hash": "ceb30c36e42893666bcaaacfbf6140742f061db8766a5ff5433213d243b7fd9d"
+          "size": 139148,
+          "hash": "565e8c5d90f63c52973436664255ca22689d372b1cb9151e7804b3cb196bdb0d"
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4447232,
-          "hash": "dd3ea2de5337189231dbe965163946bbd0a775171a2e3e17224e4ec7ab302658"
+          "size": 4462592,
+          "hash": "d21a483ef2adc188a5fba854ee44b31de5264113033005aaf7827353da62d488"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
-          "size": 3362,
-          "hash": "5dc6863120ab289204f0e4e6afe09645509168352d767d165ce2760a870160e0"
+          "size": 3467,
+          "hash": "635e0808c4c3104e7064a0327b1889fb022ff638fbfe1efeb1da8575f8218535"
         },
         {
           "path": "Fonts/FontIcons_Patch.ggxml",
@@ -19514,7 +19154,7 @@
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xml",
           "size": 885743,
-          "hash": "68bf0ce3caa2538fc70c301635547311b72985ca6688da3344cf1a385fbe5d45"
+          "hash": "ac61f8030cd60d20abd94403e0f0b5970e10075a84927add41ee022d9e0d867b"
         },
         {
           "path": "Override/CIV5Trades.xml",
@@ -19658,8 +19298,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 13621840,
-          "hash": "f0bd4e61c371be6889e3f5ac0182f2e79807f3d016ce0b58f5df1888ca087010"
+          "size": 13622000,
+          "hash": "e8a6d62a2f59ee6ffcce10a062b618577a4d08234f7dad5e53a170e9c3f413f3"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -19699,7 +19339,7 @@
         {
           "path": "Override/CIV5Units_Mongol.xml",
           "size": 9836520,
-          "hash": "6bc4dced8fc96c9a9986e0135553ea8aed318fc09b879c29e41ea54db2170cfc"
+          "hash": "33513e11f5f1261d79c78ca72d7e86d04fa507a3be954f6879d173c89497880c"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
@@ -20024,12 +19664,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "325f8a44399356e6b26a3e8958b93a48f7be3c2aecb9d245370c3f042f089576"
-        },
-        {
-          "path": "randomize_cursor.bat",
-          "size": 3109,
-          "hash": "423b62b7dbd98d095ac2df2cbeaf5384c33348e5296811eeb7671007e1de6952"
+          "hash": "d72c30fbf6125f63c5e557409b22b6234e0a4f1f2c816a15f3284de87f8148c8"
         },
         {
           "path": "skins.json",
@@ -23453,8 +23088,8 @@
         },
         {
           "path": "tmp/eui/DiploCorner.lua",
-          "size": 35077,
-          "hash": "36338c7a88729bf35fe22cbbf0a058074380339a9c68e76376e0d37a6ef5039b"
+          "size": 37920,
+          "hash": "e9f812938e854d6b5e13d92bb189b03c285ffe10491acbd2a793e036ca99b5d4"
         },
         {
           "path": "tmp/eui/DiploCorner.xml",
@@ -23583,8 +23218,8 @@
         },
         {
           "path": "tmp/ui/ChatWheel.lua",
-          "size": 11802,
-          "hash": "b0d9765674ac88505f7b121c7e2cc6a8ac4be94fb5b3136172011f023e555959"
+          "size": 14560,
+          "hash": "3e93dea81398fa3687aca726c6fa393bc26443d3fbc69ae43aea9c68ce7f1914"
         },
         {
           "path": "tmp/ui/ChatWheel.xml",
@@ -23718,8 +23353,8 @@
         },
         {
           "path": "tmp/ui/DiploCorner.lua",
-          "size": 33633,
-          "hash": "e6fd44b35405b7a83a6a1a771a72687ca93cacb4c88595b1b3c41fd540bbf461"
+          "size": 36476,
+          "hash": "f1a9b0253588952b9653d74c3f77d2058b386e3126d30d1e0d021517270886a4"
         },
         {
           "path": "tmp/ui/DiploCorner.xml",
@@ -23818,8 +23453,8 @@
         },
         {
           "path": "tmp/ui/FrontEnd.lua",
-          "size": 4776,
-          "hash": "eee134d13a9101bfcade56aa74a21ae2aa34f3812177b9d9a4f50397a51e7e07"
+          "size": 5258,
+          "hash": "fc23b848ea488485be63cabca33606ed184e239eeb7844686ca3f18dc4c11ed1"
         },
         {
           "path": "tmp/ui/GameMenu.lua",
@@ -23893,8 +23528,8 @@
         },
         {
           "path": "tmp/ui/MainMenu.lua",
-          "size": 21362,
-          "hash": "5d351e80a5fa4419375fd4f104a36d535ed13bbf6694259c4b14b862b436e599"
+          "size": 22209,
+          "hash": "94384fc798134add76f2a4595444f12723cb64c0ac45395005937c879a734068"
         },
         {
           "path": "tmp/ui/MainMenu.xml",
@@ -23903,8 +23538,8 @@
         },
         {
           "path": "tmp/ui/MatchOutcomeRecorder.lua",
-          "size": 18112,
-          "hash": "f2ee1ac810f2f681f0869548d9b0cf592e2ec3c68d11dbf6040f8b14c45544cf"
+          "size": 20347,
+          "hash": "f7ee48016a79c7e13dea9a356912e79f7e9fe2dca4cf3f42fea33b533d497c5f"
         },
         {
           "path": "tmp/ui/MiniMapPanel.lua",
@@ -23973,23 +23608,23 @@
         },
         {
           "path": "tmp/ui/NovaLobbyNick.lua",
-          "size": 12277,
-          "hash": "d81a9474cb94752de8d73dbc56a1f6876e96964be293eff6941d7d6220f8e34b"
+          "size": 14373,
+          "hash": "54974a64944778a600baadb14c0666f0b4f177167b2077d5bda597400331c48a"
         },
         {
           "path": "tmp/ui/NovaNick.lua",
-          "size": 6705,
-          "hash": "825d2af6ece5afaf50c6028822deaaf1d6f911b5e81f960e035a435d03234b0a"
+          "size": 6803,
+          "hash": "e3eb0c88f654b39f46b7362e3d16c88cee2bea83311b5c6900cfa4cea432d95d"
         },
         {
           "path": "tmp/ui/NovaNickStyles.lua",
-          "size": 7738,
-          "hash": "28b489d6dc730f9a12c04d9dcfb986387b294837b254c0ba34d9ee96a3fe5917"
+          "size": 10218,
+          "hash": "143c1d3e14da28238a5b1358c54a4fb7b03d20cd8d895a740f6eba85ac1b06ee"
         },
         {
           "path": "tmp/ui/NovaSkins.lua",
-          "size": 18607,
-          "hash": "953179f9e82463f76777e41a639c9b6bc083d7faed1f9348c38347e0fd5659ca"
+          "size": 21818,
+          "hash": "ae1db5e4488ceccd71ec74a86e4e34fb46ad1292af646c02ee95df42064817a0"
         },
         {
           "path": "tmp/ui/NovaTierRingBaseBronze.dds",
@@ -24323,8 +23958,8 @@
         },
         {
           "path": "ui_check.bat",
-          "size": 25904,
-          "hash": "f49a68207e95b74f6fe7fd5ff3c5b15e9e72fa8a36dfd26869e5fc60aaa20965"
+          "size": 40573,
+          "hash": "d09aa895f0b40fd3ecd30a566fb7bc7fb8230704a1d172f36d7330bf9492603e"
         }
       ]
     },
@@ -25733,8 +25368,21 @@
   },
   "cursors": {
     "premium": [
+      "alchemy_flask",
+      "arrowhead",
+      "astrolabe",
+      "battle_standard",
+      "beast_track",
       "blazing_blade",
+      "caravan_hook",
+      "cartographer_quill",
+      "chronicler_brush",
+      "coin",
+      "coin_purse",
+      "commander_reticle",
+      "compass",
       "crown",
+      "dagger",
       "diplomatic_seal",
       "divine_light",
       "electric_discharge",
@@ -25744,39 +25392,82 @@
       "era_industrial",
       "era_medieval",
       "era_renaissance",
+      "fang",
+      "fern_leaf",
+      "gear",
       "ice_shard",
       "imperial_seal",
       "laurel_branch",
+      "mini_sword",
       "noble_glove",
+      "olive_branch",
       "poison_trail",
+      "quill_inkwell",
+      "scales",
+      "scroll",
       "smoke_trail",
+      "stone_point",
+      "telescope",
+      "torch",
       "violet_aura"
     ],
-    "note": "18 \u043A\u0443\u0440\u0441\u043E\u0440\u043E\u0432 \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u044B \u043F\u043E \u043F\u043E\u0434\u043F\u0438\u0441\u043A\u0435 \u2014 \u043E\u0442 500 RUB \u0432 \u043C\u0435\u0441\u044F\u0446.",
+    "note": "\u0412\u044B\u0431\u043E\u0440 \u043A\u0443\u0440\u0441\u043E\u0440\u0430 \u2014 \u0432\u0441\u0435 42 \u043A\u0443\u0440\u0441\u043E\u0440\u0430 \u0432 \u0440\u0430\u0437\u043C\u0435\u0440\u0430\u0445 32, 48 \u0438 64 \u2014 \u0441 \u043F\u043E\u0434\u043F\u0438\u0441\u043A\u0438 \u00AB\u0411\u0440\u043E\u043D\u0437\u0430\u00BB, \u043E\u0442 500 RUB \u0432 \u043C\u0435\u0441\u044F\u0446. \u0411\u0435\u0437 \u043F\u043E\u0434\u043F\u0438\u0441\u043A\u0438 \u2014 \u0441\u0442\u0430\u043D\u0434\u0430\u0440\u0442\u043D\u044B\u0439 \u043A\u0443\u0440\u0441\u043E\u0440 \u0438\u0433\u0440\u044B.",
     "tiers": {
+      "alchemy_flask": "bronze",
+      "arrowhead": "bronze",
+      "astrolabe": "bronze",
+      "battle_standard": "bronze",
+      "beast_track": "bronze",
+      "blazing_blade": "bronze",
+      "caravan_hook": "bronze",
+      "cartographer_quill": "bronze",
+      "chronicler_brush": "bronze",
+      "coin": "bronze",
+      "coin_purse": "bronze",
+      "commander_reticle": "bronze",
+      "compass": "bronze",
+      "crown": "bronze",
+      "dagger": "bronze",
+      "diplomatic_seal": "bronze",
+      "divine_light": "bronze",
+      "electric_discharge": "bronze",
       "era_ancient": "bronze",
       "era_classical": "bronze",
+      "era_future": "bronze",
+      "era_industrial": "bronze",
       "era_medieval": "bronze",
       "era_renaissance": "bronze",
-      "era_industrial": "bronze",
-      "era_future": "bronze",
-      "blazing_blade": "silver",
-      "divine_light": "silver",
-      "electric_discharge": "silver",
-      "ice_shard": "silver",
-      "poison_trail": "silver",
-      "smoke_trail": "silver",
-      "violet_aura": "silver",
-      "crown": "gold",
-      "imperial_seal": "gold",
-      "diplomatic_seal": "gold",
-      "laurel_branch": "gold",
-      "noble_glove": "gold"
+      "fang": "bronze",
+      "fern_leaf": "bronze",
+      "gear": "bronze",
+      "ice_shard": "bronze",
+      "imperial_seal": "bronze",
+      "laurel_branch": "bronze",
+      "mini_sword": "bronze",
+      "noble_glove": "bronze",
+      "olive_branch": "bronze",
+      "poison_trail": "bronze",
+      "quill_inkwell": "bronze",
+      "scales": "bronze",
+      "scroll": "bronze",
+      "smoke_trail": "bronze",
+      "stone_point": "bronze",
+      "telescope": "bronze",
+      "torch": "bronze",
+      "violet_aura": "bronze"
     },
     "Any": true
   },
   "news": {
     "entries": [
+      {
+        "date": "2026-09-16T00:00:00+00:00",
+        "title": "Nova 1.5.106 \u2014 \u043F\u043E\u0434\u043F\u0438\u0441\u043A\u0430 \u0432 \u0438\u0433\u0440\u0435, \u0441\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043A\u0430 \u043F\u0430\u0440\u0442\u0438\u0439",
+        "body": "\u0428\u0440\u0438\u0444\u0442 \u043D\u0438\u043A\u0430 \u0442\u0435\u043F\u0435\u0440\u044C \u0441 \u043F\u043E\u0434\u043F\u0438\u0441\u043A\u0438 \u0411\u0440\u043E\u043D\u0437\u0430, \u0431\u0435\u0437 \u043F\u043E\u0434\u043F\u0438\u0441\u043A\u0438 \u043D\u0438\u043A \u043F\u0438\u0448\u0435\u0442\u0441\u044F \u043E\u0431\u044B\u0447\u043D\u044B\u043C \u0448\u0440\u0438\u0444\u0442\u043E\u043C. \u041A\u043E\u043B\u0435\u0441\u043E \u0431\u044B\u0441\u0442\u0440\u044B\u0445\n\u0444\u0440\u0430\u0437 (\u043A\u043B\u0430\u0432\u0438\u0448\u0430 H) \u043E\u0442\u043A\u0440\u044B\u0432\u0430\u0435\u0442\u0441\u044F \u0442\u043E\u043B\u044C\u043A\u043E \u0441 \u0417\u043E\u043B\u043E\u0442\u043E\u043C, \u0430 \u0444\u0440\u0430\u0437\u044B \u043F\u043E-\u043F\u0440\u0435\u0436\u043D\u0435\u043C\u0443 \u0432\u0438\u0434\u044F\u0442 \u0438 \u0441\u043B\u044B\u0448\u0430\u0442 \u0432\u0441\u0435.\n\u041E\u0431\u043B\u0438\u043A\u0438 \u0432\u043E\u0439\u0441\u043A \u0432 \u0438\u0433\u0440\u0435 \u2014 \u0442\u043E\u043B\u044C\u043A\u043E \u0441 \u0417\u043E\u043B\u043E\u0442\u043E\u043C: \u0431\u0435\u0437 \u043D\u0435\u0433\u043E \u0432\u043E\u0439\u0441\u043A\u0430 \u043D\u0430 \u043A\u0430\u0440\u0442\u0435 \u0432\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u044E\u0442\u0441\u044F \u043A \u043E\u0431\u044B\u0447\u043D\u043E\u043C\u0443 \u0432\u0438\u0434\u0443.\n\u041A\u0443\u0440\u0441\u043E\u0440\u044B: \u0432\u0441\u0435 42 \u043A\u0443\u0440\u0441\u043E\u0440\u0430 \u0432 \u0440\u0430\u0437\u043C\u0435\u0440\u0430\u0445 32, 48 \u0438 64 \u2014 \u0441 \u043F\u043E\u0434\u043F\u0438\u0441\u043A\u0438 \u0411\u0440\u043E\u043D\u0437\u0430, \u0438\u0445 \u0434\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442 \u043B\u0430\u0443\u043D\u0447\u0435\u0440.\n\u0412 \u0441\u0430\u043C\u043E\u043C \u043C\u043E\u0434\u0435 \u043E\u0441\u0442\u0430\u043B\u0441\u044F \u0441\u0442\u0430\u043D\u0434\u0430\u0440\u0442\u043D\u044B\u0439 \u043A\u0443\u0440\u0441\u043E\u0440.\n\u0413\u043B\u0430\u0432\u043D\u043E\u0435 \u043C\u0435\u043D\u044E \u0438\u0433\u0440\u044B \u043F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0435\u0442 \u0437\u0430\u0441\u0442\u0430\u0432\u043A\u0443, \u0432\u044B\u0431\u0440\u0430\u043D\u043D\u0443\u044E \u0432 \u043B\u0430\u0443\u043D\u0447\u0435\u0440\u0435 (\u0441 \u0411\u0440\u043E\u043D\u0437\u044B).\n\u0416\u0443\u0440\u043D\u0430\u043B \u043F\u0430\u0440\u0442\u0438\u0438 \u0431\u043E\u043B\u044C\u0448\u0435 \u043D\u0435 \u0445\u0440\u0430\u043D\u0438\u0442\u0441\u044F \u0432\u043D\u0443\u0442\u0440\u0438 \u0441\u043E\u0445\u0440\u0430\u043D\u0435\u043D\u0438\u044F, \u0430 \u043F\u0438\u0448\u0435\u0442\u0441\u044F \u043E\u0442\u0434\u0435\u043B\u044C\u043D\u044B\u043C \u0444\u0430\u0439\u043B\u043E\u043C; \u0432 \u043A\u043E\u043D\u0446\u0435 \u043F\u0430\u0440\u0442\u0438\u0438\n\u0442\u0443\u0434\u0430 \u0437\u0430\u043F\u0438\u0441\u044B\u0432\u0430\u0435\u0442\u0441\u044F \u0438\u0442\u043E\u0433.\n\u041B\u0430\u0443\u043D\u0447\u0435\u0440 0.3.62: \u043D\u043E\u0432\u044B\u0439 \u0440\u0430\u0437\u0434\u0435\u043B \u00AB\u0421\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043A\u0430\u00BB. \u041F\u043E\u0441\u043B\u0435 \u0441\u0435\u0442\u0435\u0432\u043E\u0439 \u043F\u0430\u0440\u0442\u0438\u0438 \u043B\u0430\u0443\u043D\u0447\u0435\u0440 \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u044F\u0435\u0442 \u0436\u0443\u0440\u043D\u0430\u043B\n\u043F\u0430\u0440\u0442\u0438\u0438 \u043D\u0430 \u0441\u0435\u0440\u0432\u0435\u0440, \u043E\u0434\u0438\u043D\u043E\u0447\u043D\u044B\u0435 \u043F\u0430\u0440\u0442\u0438\u0438 \u043D\u0435 \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u044F\u044E\u0442\u0441\u044F; \u0447\u0442\u043E \u0443\u0445\u043E\u0434\u0438\u0442 \u0438 \u043A\u0430\u043A \u0432\u044B\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u2014 \u0432 \u0442\u043E\u043C \u0436\u0435\n\u0440\u0430\u0437\u0434\u0435\u043B\u0435. \u041E\u043F\u043B\u0430\u0442\u0430 \u043F\u043E\u0434\u043F\u0438\u0441\u043A\u0438: \u043E\u0434\u043D\u0430 \u043F\u043E\u043A\u0443\u043F\u043A\u0430 \u2014 \u043E\u0434\u0438\u043D \u0437\u0430\u043F\u0440\u043E\u0441, \u0430 \u0435\u0441\u043B\u0438 \u043F\u043B\u043E\u0449\u0430\u0434\u043A\u0430 \u043E\u0442\u043A\u0430\u0437\u0430\u043B\u0430, \u043B\u0430\u0443\u043D\u0447\u0435\u0440\n\u043F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0435\u0442 \u0435\u0451 \u043F\u0440\u0438\u0447\u0438\u043D\u0443. \u0417\u0430\u0441\u0442\u0430\u0432\u043A\u0430 \u0438 \u043F\u0440\u043E\u0444\u0438\u043B\u044C \u0432 \u0442\u0430\u0431\u043B\u0438\u0446\u0435 \u043F\u043E\u0434\u043F\u0438\u0441\u043A\u0438 \u0431\u043E\u043B\u044C\u0448\u0435 \u043D\u0435 \u00AB\u0441\u043A\u043E\u0440\u043E\u00BB.",
+        "tag": "\u041E\u0411\u041D\u041E\u0412\u041B\u0415\u041D\u0418\u0415",
+        "HasUsableUrl": false,
+        "IsUsable": true
+      },
       {
         "date": "2026-09-15T00:00:00+00:00",
         "title": "Nova 1.5.105 \u2014 \u043A\u043E\u0440\u0430\u0431\u043B\u0438 \u0432\u0438\u0434\u043D\u044B, \u0438\u043A\u043E\u043D\u043A\u0438 \u0437\u0434\u0430\u043D\u0438\u0439, \u0448\u0440\u0438\u0444\u0442 \u043D\u0438\u043A\u0430",
@@ -26291,6 +25982,14 @@
       }
     ],
     "Usable": [
+      {
+        "date": "2026-09-16T00:00:00+00:00",
+        "title": "Nova 1.5.106 \u2014 \u043F\u043E\u0434\u043F\u0438\u0441\u043A\u0430 \u0432 \u0438\u0433\u0440\u0435, \u0441\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043A\u0430 \u043F\u0430\u0440\u0442\u0438\u0439",
+        "body": "\u0428\u0440\u0438\u0444\u0442 \u043D\u0438\u043A\u0430 \u0442\u0435\u043F\u0435\u0440\u044C \u0441 \u043F\u043E\u0434\u043F\u0438\u0441\u043A\u0438 \u0411\u0440\u043E\u043D\u0437\u0430, \u0431\u0435\u0437 \u043F\u043E\u0434\u043F\u0438\u0441\u043A\u0438 \u043D\u0438\u043A \u043F\u0438\u0448\u0435\u0442\u0441\u044F \u043E\u0431\u044B\u0447\u043D\u044B\u043C \u0448\u0440\u0438\u0444\u0442\u043E\u043C. \u041A\u043E\u043B\u0435\u0441\u043E \u0431\u044B\u0441\u0442\u0440\u044B\u0445\n\u0444\u0440\u0430\u0437 (\u043A\u043B\u0430\u0432\u0438\u0448\u0430 H) \u043E\u0442\u043A\u0440\u044B\u0432\u0430\u0435\u0442\u0441\u044F \u0442\u043E\u043B\u044C\u043A\u043E \u0441 \u0417\u043E\u043B\u043E\u0442\u043E\u043C, \u0430 \u0444\u0440\u0430\u0437\u044B \u043F\u043E-\u043F\u0440\u0435\u0436\u043D\u0435\u043C\u0443 \u0432\u0438\u0434\u044F\u0442 \u0438 \u0441\u043B\u044B\u0448\u0430\u0442 \u0432\u0441\u0435.\n\u041E\u0431\u043B\u0438\u043A\u0438 \u0432\u043E\u0439\u0441\u043A \u0432 \u0438\u0433\u0440\u0435 \u2014 \u0442\u043E\u043B\u044C\u043A\u043E \u0441 \u0417\u043E\u043B\u043E\u0442\u043E\u043C: \u0431\u0435\u0437 \u043D\u0435\u0433\u043E \u0432\u043E\u0439\u0441\u043A\u0430 \u043D\u0430 \u043A\u0430\u0440\u0442\u0435 \u0432\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u044E\u0442\u0441\u044F \u043A \u043E\u0431\u044B\u0447\u043D\u043E\u043C\u0443 \u0432\u0438\u0434\u0443.\n\u041A\u0443\u0440\u0441\u043E\u0440\u044B: \u0432\u0441\u0435 42 \u043A\u0443\u0440\u0441\u043E\u0440\u0430 \u0432 \u0440\u0430\u0437\u043C\u0435\u0440\u0430\u0445 32, 48 \u0438 64 \u2014 \u0441 \u043F\u043E\u0434\u043F\u0438\u0441\u043A\u0438 \u0411\u0440\u043E\u043D\u0437\u0430, \u0438\u0445 \u0434\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442 \u043B\u0430\u0443\u043D\u0447\u0435\u0440.\n\u0412 \u0441\u0430\u043C\u043E\u043C \u043C\u043E\u0434\u0435 \u043E\u0441\u0442\u0430\u043B\u0441\u044F \u0441\u0442\u0430\u043D\u0434\u0430\u0440\u0442\u043D\u044B\u0439 \u043A\u0443\u0440\u0441\u043E\u0440.\n\u0413\u043B\u0430\u0432\u043D\u043E\u0435 \u043C\u0435\u043D\u044E \u0438\u0433\u0440\u044B \u043F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0435\u0442 \u0437\u0430\u0441\u0442\u0430\u0432\u043A\u0443, \u0432\u044B\u0431\u0440\u0430\u043D\u043D\u0443\u044E \u0432 \u043B\u0430\u0443\u043D\u0447\u0435\u0440\u0435 (\u0441 \u0411\u0440\u043E\u043D\u0437\u044B).\n\u0416\u0443\u0440\u043D\u0430\u043B \u043F\u0430\u0440\u0442\u0438\u0438 \u0431\u043E\u043B\u044C\u0448\u0435 \u043D\u0435 \u0445\u0440\u0430\u043D\u0438\u0442\u0441\u044F \u0432\u043D\u0443\u0442\u0440\u0438 \u0441\u043E\u0445\u0440\u0430\u043D\u0435\u043D\u0438\u044F, \u0430 \u043F\u0438\u0448\u0435\u0442\u0441\u044F \u043E\u0442\u0434\u0435\u043B\u044C\u043D\u044B\u043C \u0444\u0430\u0439\u043B\u043E\u043C; \u0432 \u043A\u043E\u043D\u0446\u0435 \u043F\u0430\u0440\u0442\u0438\u0438\n\u0442\u0443\u0434\u0430 \u0437\u0430\u043F\u0438\u0441\u044B\u0432\u0430\u0435\u0442\u0441\u044F \u0438\u0442\u043E\u0433.\n\u041B\u0430\u0443\u043D\u0447\u0435\u0440 0.3.62: \u043D\u043E\u0432\u044B\u0439 \u0440\u0430\u0437\u0434\u0435\u043B \u00AB\u0421\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043A\u0430\u00BB. \u041F\u043E\u0441\u043B\u0435 \u0441\u0435\u0442\u0435\u0432\u043E\u0439 \u043F\u0430\u0440\u0442\u0438\u0438 \u043B\u0430\u0443\u043D\u0447\u0435\u0440 \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u044F\u0435\u0442 \u0436\u0443\u0440\u043D\u0430\u043B\n\u043F\u0430\u0440\u0442\u0438\u0438 \u043D\u0430 \u0441\u0435\u0440\u0432\u0435\u0440, \u043E\u0434\u0438\u043D\u043E\u0447\u043D\u044B\u0435 \u043F\u0430\u0440\u0442\u0438\u0438 \u043D\u0435 \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u044F\u044E\u0442\u0441\u044F; \u0447\u0442\u043E \u0443\u0445\u043E\u0434\u0438\u0442 \u0438 \u043A\u0430\u043A \u0432\u044B\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u2014 \u0432 \u0442\u043E\u043C \u0436\u0435\n\u0440\u0430\u0437\u0434\u0435\u043B\u0435. \u041E\u043F\u043B\u0430\u0442\u0430 \u043F\u043E\u0434\u043F\u0438\u0441\u043A\u0438: \u043E\u0434\u043D\u0430 \u043F\u043E\u043A\u0443\u043F\u043A\u0430 \u2014 \u043E\u0434\u0438\u043D \u0437\u0430\u043F\u0440\u043E\u0441, \u0430 \u0435\u0441\u043B\u0438 \u043F\u043B\u043E\u0449\u0430\u0434\u043A\u0430 \u043E\u0442\u043A\u0430\u0437\u0430\u043B\u0430, \u043B\u0430\u0443\u043D\u0447\u0435\u0440\n\u043F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0435\u0442 \u0435\u0451 \u043F\u0440\u0438\u0447\u0438\u043D\u0443. \u0417\u0430\u0441\u0442\u0430\u0432\u043A\u0430 \u0438 \u043F\u0440\u043E\u0444\u0438\u043B\u044C \u0432 \u0442\u0430\u0431\u043B\u0438\u0446\u0435 \u043F\u043E\u0434\u043F\u0438\u0441\u043A\u0438 \u0431\u043E\u043B\u044C\u0448\u0435 \u043D\u0435 \u00AB\u0441\u043A\u043E\u0440\u043E\u00BB.",
+        "tag": "\u041E\u0411\u041D\u041E\u0412\u041B\u0415\u041D\u0418\u0415",
+        "HasUsableUrl": false,
+        "IsUsable": true
+      },
       {
         "date": "2026-09-15T00:00:00+00:00",
         "title": "Nova 1.5.105 \u2014 \u043A\u043E\u0440\u0430\u0431\u043B\u0438 \u0432\u0438\u0434\u043D\u044B, \u0438\u043A\u043E\u043D\u043A\u0438 \u0437\u0434\u0430\u043D\u0438\u0439, \u0448\u0440\u0438\u0444\u0442 \u043D\u0438\u043A\u0430",

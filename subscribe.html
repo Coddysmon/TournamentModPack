@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Подписка и поддержка — Nova</title>
-<meta name="description" content="Подписка Nova открывает только косметику — курсоры мыши. Сам модпак бесплатный и остаётся бесплатным.">
+<meta name="description" content="Подписка Nova меняет только внешний вид: курсоры, оформление ника, эмблему уровня и обводку значка юнита. Сам модпак бесплатный и остаётся бесплатным.">
 <meta name="theme-color" content="#0D131A">
 <link rel="stylesheet" href="assets/site.css">
 </head>
@@ -49,7 +49,7 @@
     </div>
     <div class="hero-title">
       <h1>Подписка</h1>
-      <p class="sub">Уровни, цены и пожертвования. Модпак бесплатный — подписка открывает только курсоры мыши и ни одной игровой возможности.</p>
+      <p class="sub">Уровни, цены и пожертвования. Модпак бесплатный — подписка меняет только внешний вид и не открывает ни одной игровой возможности.</p>
     </div>
   </header>
 
@@ -59,17 +59,24 @@
 <div class="note good">
   <b>Сам модпак бесплатный и таким останется.</b> Подписка не открывает ни одной игровой
   возможности: ни юнита, ни здания, ни бонуса, ни доступа к партиям. Всё, что она даёт, —
-  <b>курсоры мыши</b>. Игрок без подписки не проигрывает подписчику ничего, кроме внешнего вида
-  указателя на своём же экране.
+  <b>оформление</b>: выбор курсора мыши (все курсоры набора, с бронзы), шрифт, цвет, значок и
+  стиль ника, эмблему уровня в лаунчере, металлическую обводку значка юнита, а на золоте — облики
+  войск. Без подписки стоит стандартный курсор игры; темы лаунчера и аватар — бесплатно для всех. Характеристики войск облик не меняет: игрок без
+  подписки не проигрывает подписчику ничего, кроме внешнего вида.
 </div>
 
 <div class="note stop" id="status" hidden></div>
 
-<h2>Уровни</h2>
-<p class="small dim">Состав и цены берутся из того же файла, по которому работает служба
-подписок, — так на сайте не может оказаться цены, которой нет на самом деле.</p>
-<div class="tiers" id="tiers"><p class="dim">Загружаю…</p></div>
-<p class="small dim">Уровни накопительные: серебро включает бронзу, золото — серебро.
+<h2>Что даёт подписка</h2>
+<p class="small dim">Цены и состав курсоров берутся из того же файла, по которому работает
+служба подписок, — так на сайте не может оказаться цены, которой нет на самом деле.</p>
+
+<p class="cmp-hint">Таблица листается вбок →</p>
+<div class="cmp-wrap"><div class="cmp-scroll" id="tiers"><p class="dim" style="padding:14px 18px;margin:0">Загружаю…</p></div></div>
+<ul class="cmp-foot" id="tiers-foot"></ul>
+<p class="small dim cmp-soon-note" id="soon-note"><span class="badge-soon">скоро</span> <span id="soon-text">— функции в разработке.
+Они не входят в то, за что берётся оплата сейчас; появятся — об этом будет в новостях.</span></p>
+<p class="small dim"><span id="cumulative-text">Уровни накопительные: серебро включает бронзу, золото — серебро.</span>
 Срок каждого — 30 дней. Всего курсоров по подписке:
 <b data-nova="cursor-count">…</b>.</p>
 
@@ -84,8 +91,12 @@
   лаунчер убирает только эти файлы, ничего своего вы не потеряете.</li>
   <li><b>Платёжных данных у нас нет.</b> Карту вы вводите на стороне платёжной площадки;
   ни номера, ни токены к нам не попадают и нигде не хранятся.</li>
-  <li><b>Автопродление</b> означает, что площадка списывает следующий месяц сама.
-  Отменяется там же, где оформлялась.</li>
+  <li><b>Автопродление включено по умолчанию.</b> При оформлении отметка «Продлевать автоматически» уже
+  стоит — тогда следующий месяц списывается сам. Чтобы купить разово на 30 дней, снимите
+  отметку до оплаты: такая покупка сама не продлевается, продлить можно новой покупкой.</li>
+  <li><b>Отказ от автопродления — письмом</b> на <a href="mailto:nssmain@mail.ru">nssmain@mail.ru</a>
+  с кодом доступа или почтой, указанной при оплате. Отмену выполняем вручную; доступ сохраняется
+  до конца оплаченного периода.</li>
   <li><b>Оплата — это согласие с условиями.</b> Что именно вы покупаете, на какой срок,
   как отказаться и как вернуть деньги — в <a href="oferta.html">оферте</a>.</li>
 </ul>
@@ -128,31 +139,131 @@ NOVA.site().then(s => {
   box.hidden = false;
 });
 
-/* ---- уровни ---- */
-NOVA.tiers().then(data => {
+/* ---- сравнение уровней ----
+   Строки таблицы — из subscription-features.json: ТОТ ЖЕ файл показывает лаунчер
+   в разделе «Подписки». Готова функция из «скоро» — меняется флаг soon в нём, а не
+   эта страница. Цены, сроки и число платных курсоров — из cursor-tiers.json.
+   Добавлять строку можно только про то, что реально сделано, либо с soon: true
+   (страница о платной услуге, есть оферта). */
+const featuresJson = fetch('subscription-features.json', { cache: 'no-cache' })
+  .then(r => { if (!r.ok) throw new Error('subscription-features.json: HTTP ' + r.status); return r.json(); })
+  .catch(e => { console.warn(e); return null; });
+
+Promise.all([NOVA.tiers(), featuresJson]).then(([data, spec]) => {
   const box = document.getElementById('tiers');
+  const foot = document.getElementById('tiers-foot');
   const esc = NOVA.esc;
   const list = (data && Array.isArray(data.tiers)) ? data.tiers.slice() : [];
-  if (!list.length) {
-    box.innerHTML = '<p class="dim">Состав уровней получить не удалось. '
-      + 'Он всегда виден в лаунчере, раздел «Подписки».</p>';
-    return;
-  }
   list.sort((a, b) => (a.order || 0) - (b.order || 0));
 
+  if (!spec || !Array.isArray(spec.groups)) {
+    box.innerHTML = '<p class="dim" style="padding:14px 18px;margin:0">Таблицу сейчас получить не удалось — '
+      + 'полный состав уровней всегда виден в лаунчере, раздел «Подписки».</p>';
+    return;
+  }
+  if (spec.soonNote) document.getElementById('soon-text').textContent = spec.soonNote;
+  if (spec.cumulativeNote) document.getElementById('cumulative-text').textContent = spec.cumulativeNote;
+
+  const SLUG = ['none', 'bronze', 'silver', 'gold'];
+  const DEF_TITLE = ['Без подписки', 'Бронза', 'Серебро', 'Золото'];
+  const METAL = ['', 'бронза', 'серебро', 'золото'];
+  const HL = Number.isInteger(spec.highlightTier) ? spec.highlightTier : 3;
+
+  const plural = (n, one, few, many) => {
+    const a = n % 100, b = n % 10;
+    return (a > 10 && a < 20) ? many : b === 1 ? one : (b > 1 && b < 5) ? few : many;
+  };
+
+  // колонки: 0 — без подписки, дальше уровни по order (накопительно)
+  const cols = [{ k: 0, title: 'Бесплатно', price: null }];
   let running = 0;
-  box.innerHTML = list.map(t => {
-    const own = (t.cursors || []).length;
-    running += own;
-    return '<div class="tier">'
-      + '<h3>' + esc(t.title || t.id) + '</h3>'
-      + '<div class="price">' + esc(t.price) + ' ₽ <span>/ '
-      + esc(t.days || 30) + ' дней</span></div>'
-      + (t.note ? '<p class="what">' + esc(t.note) + '</p>' : '')
-      + '<ul><li>своих курсоров: ' + own + '</li>'
-      + '<li>открывает всего: ' + running + '</li></ul>'
-      + '</div>';
-  }).join('');
+  for (let k = 1; k <= 3; k++) {
+    const t = list.find(x => (x.order || 0) === k);
+    const own = t && Array.isArray(t.cursors) ? t.cursors.length : null;
+    if (own != null) running += own;
+    cols.push({ k, id: t ? t.id : SLUG[k], title: t ? (t.title || DEF_TITLE[k]) : DEF_TITLE[k],
+      price: t ? t.price : null, days: t ? (t.days || 30) : null,
+      own, total: own != null ? running : null, note: t ? t.note : '' });
+  }
+
+  // Пути вставлены прямо в ячейку, а не через <use>: внутрь <use> стили .cmp .yes circle не доходят.
+  const YES_SVG = '<circle cx="12" cy="12" r="10.4"/><path d="M7.4,12.4 L10.6,15.5 L16.8,8.9"/></svg>';
+  const yes = () => '<svg class="i yes" viewBox="0 0 24 24" role="img" aria-label="есть">' + YES_SVG;
+  const no = sub => '<svg class="i no" viewBox="0 0 24 24" role="img" aria-label="нет"><path d="M9,9 L15,15 M15,9 L9,15"/></svg>'
+    + (sub ? '<span class="vs">' + esc(sub) + '</span>' : '');
+  const val = (v, unit, sub) => '<span class="v">' + esc(v)
+    + (unit ? ' <small>' + esc(unit) + '</small>' : '') + '</span>'
+    + (sub ? '<span class="vs">' + esc(sub) + '</span>' : '');
+
+  // «скоро»: в разработке, в оплачиваемое сейчас не входит — ячейки приглушены
+  const soonYes = () => '<svg class="i yes soon" viewBox="0 0 24 24" role="img" aria-label="будет, в разработке">' + YES_SVG;
+
+  const unitFor = (row, n) => Array.isArray(row.unit)
+    ? (row.unit.length === 3 ? plural(n, row.unit[0], row.unit[1], row.unit[2]) : (row.unit[0] || ''))
+    : (row.unit || '');
+  const subFor = (row, k, own) => Array.isArray(row.sub) && row.sub.length === 4
+    ? String(row.sub[k] || '').replace('{own}', own) : '';
+
+  // Ячейка — те же правила, что FeatureTable.Cell в лаунчере.
+  const cellOf = row => c => {
+    const v = Array.isArray(row.values) ? row.values[c.k] : null;
+    if (row.display === 'emblem') return v === true
+      ? '<img class="cemb" src="assets/emblems/' + SLUG[c.k] + '.png" alt="'
+        + esc(DEF_TITLE[c.k]) + '" width="26" height="26">' : no();
+    if (row.display === 'metal') {
+      const text = typeof v === 'string' && v ? v : v === true ? METAL[c.k] : '';
+      return text ? '<span class="metal"><i></i>' + esc(text) + '</span>' : no();
+    }
+    if (row.source === 'cursor-tiers' && c.k > 0 && list.length) {
+      if (!c.total) return no();
+      return val(c.total, unitFor(row, c.total), subFor(row, c.k, c.own || 0));
+    }
+    if (v === true) return row.soon ? soonYes() : yes();
+    if (typeof v === 'number') {
+      const prev = c.k > 0 && typeof row.values[c.k - 1] === 'number' ? row.values[c.k - 1] : 0;
+      return val(v, unitFor(row, v), subFor(row, c.k, v - prev));
+    }
+    if (typeof v === 'string' && v) return val(v, '', subFor(row, c.k, 0));
+    // подпись бывает и под крестиком: «стандартный» у курсора без подписки
+    return no(subFor(row, c.k, 0));
+  };
+
+  // Обычные строки — по своим группам (пустые пропускаем), все «скоро» — одной группой в конце:
+  // снятый флаг soon сам возвращает строку в её группу.
+  const groups = [];
+  spec.groups.forEach(g => {
+    const rows = (g.rows || []).filter(r => !r.soon);
+    if (rows.length) groups.push([g.title, rows]);
+  });
+  const soonRows = spec.groups.flatMap(g => (g.rows || []).filter(r => r.soon));
+  if (soonRows.length) groups.push([spec.soonGroup || 'Скоро', soonRows]);
+
+  const head = '<thead><tr><th class="fh" scope="col">' + esc(spec.featureHeader || 'Возможность') + '</th>' + cols.map(c =>
+    '<th scope="col" class="t' + c.k + '">'
+    + '<img class="emb" src="assets/emblems/' + SLUG[c.k] + '.png" alt="" width="46" height="46">'
+    + '<span class="tn">' + esc(c.title) + '</span>'
+    + (c.k === 0 ? '<span class="tp">0 ₽</span>'
+      : c.price != null ? '<span class="tp">' + esc(c.price) + ' ₽ <small>/ ' + esc(c.days) + ' дн.</small></span>' : '')
+    + (c.k === HL && spec.highlightLabel ? '<span class="pill">' + esc(spec.highlightLabel) + '</span>' : '')
+    + '</th>').join('') + '</tr></thead>';
+
+  const badge = esc(spec.soonBadge || 'скоро');
+  const body = '<tbody>' + groups.map(([name, rows]) =>
+    '<tr class="grp"><th colspan="' + (cols.length + 1) + '" scope="colgroup"><span>' + esc(name) + '</span></th></tr>'
+    + rows.map(row => '<tr' + (row.soon ? ' class="soon"' : '') + '><td class="f">' + esc(row.title)
+      + (row.soon ? ' <span class="badge-soon">' + badge + '</span>' : '')
+      + (row.hint ? '<small>' + esc(row.hint) + '</small>' : '') + '</td>'
+      + cols.map(c => '<td class="t' + c.k + '">' + cellOf(row)(c) + '</td>').join('') + '</tr>').join('')
+  ).join('') + '</tbody>';
+
+  box.innerHTML = '<table class="cmp"><caption class="skip">Сравнение уровней подписки</caption>'
+    + '<colgroup><col class="f">' + cols.map(() => '<col>').join('') + '</colgroup>'
+    + head + body + '</table>';
+
+  foot.innerHTML = list.length
+    ? cols.filter(c => c.k && c.note).map(c => '<li class="t' + c.k + '"><b style="color:'
+      + ['', '#C98A55', '#C9D1DA', '#E2B544'][c.k] + '">' + esc(c.title) + ':</b> ' + esc(c.note) + '</li>').join('')
+    : '<li>Цены и состав курсоров сейчас получить не удалось — они всегда видны в лаунчере, раздел «Подписки».</li>';
 });
 
 /* ---- пожертвования ---- */
