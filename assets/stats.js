@@ -16,6 +16,22 @@
    службе не нужно заводить под сайт отдельные «агрегаты», а правила подсчёта
    видны здесь, а не спрятаны на сервере.
 
+   «ДОИГРАНА» СТРАНИЦА НЕ ВЫЧИСЛЯЕТ. Берётся поле finished из ответа службы — там
+   единое правило MatchLog.IsFinished (тип победы или победитель, не сворачивание),
+   общее с лаунчером. «Конец игры» без победителя (досрочный выход единственного
+   человека) и свёрнутая голосованием партия — не доиграны. Недоигранная партия
+   показывается с пометкой «не доиграна», но не идёт в победы, винрейты, типы побед,
+   длительность и среднее место (место в ней — порядок по очкам, а не итог).
+   Нет поля (срез старой службы) — считаем не доигранной: не знаем — не засчитываем.
+
+   НАЗВАНИЯ ПОКАЗАТЕЛЕЙ — ОДИН СЛОВАРЬ С ЛАУНЧЕРОМ: data/replay-datasets.json, копия
+   Client\src\Civ5Launcher.Rating\Data\replay-datasets.json (кладёт сборка Client;
+   ключи сверяет Client\tools\check-replay-datasets.py). Своих подписей рядов на сайте
+   нет. title — название, unit — единицы, group — группа, main — номер в «Главном»,
+   scale — делитель (*_TIMES100), hint — пояснение, hidden — игра ряд не заполняет.
+   Словарь не доехал — страница работает, ряды подписаны по ключу.
+   stats-names.js — только цивилизации и победы.
+
    Правила сайта (site.js) действуют и здесь: текст из сети — только через
    esc()/textContent (ники вводят игроки), не доехало — так и сказать.
    Адресация — hash: #Tab:Player/Player:<ник>/Dataset:<ключ ряда>.
@@ -45,12 +61,14 @@
 
   /* ------------------------------------------------------------- подписи */
 
-  const DS = new Map(N.datasets.map(d => [d.k, d]));
+  /* Словарь рядов заполняется в dictionary() до первой отрисовки. */
+  const DICT = { groups: [], datasets: [] };
+  const DS = new Map();
   const pretty = k => {
     const s = String(k || '').replace(/^REPLAYDATASET_|^CIVILIZATION_|^VICTORY_/, '').replace(/_/g, ' ').toLowerCase();
     return s ? s[0].toUpperCase() + s.slice(1) : '—';
   };
-  const dsTitle = k => (DS.get(k) || {}).t || pretty(k);
+  const dsTitle = k => (DS.get(k) || {}).title || pretty(k);
   const civName = k => N.civs[k] || pretty(k);
   const victoryName = k => !k ? 'Без итога' : (N.victories[k] || pretty(k));
   const nf1 = new Intl.NumberFormat('ru-RU', { maximumFractionDigits: 1 });
@@ -95,6 +113,28 @@
     if (r.status === 404) return { missing: true };
     if (!r.ok) throw new Error(url + ': HTTP ' + r.status);
     return r.json();
+  }
+
+  /* Общий словарь рядов. Берём только то, что похоже на ряд; строки из файла идут
+     в разметку через esc(), как и всё остальное. */
+  const str = v => typeof v === 'string' ? v.trim() : '';
+  let dictP = null;
+  function dictionary() {
+    if (!dictP) dictP = getJson('data/replay-datasets.json')
+      .then(j => {
+        if (!j || j.missing || !Array.isArray(j.datasets)) throw new Error('data/replay-datasets.json: нет списка рядов');
+        DICT.groups = (Array.isArray(j.groups) ? j.groups : [])
+          .filter(g => g && str(g.id)).map(g => ({ id: str(g.id), title: str(g.title) || str(g.id) }));
+        DICT.datasets = j.datasets.filter(d => d && DS_RE.test(d.key || '')).map(d => ({
+          key: d.key, title: str(d.title), unit: str(d.unit), group: str(d.group), hint: str(d.hint),
+          main: Number.isInteger(d.main) && d.main > 0 ? d.main : 0,
+          scale: Number.isInteger(d.scale) && d.scale > 1 ? d.scale : 1,
+          hidden: d.hidden === true,
+        }));
+        DICT.datasets.forEach(d => DS.set(d.key, d));
+      })
+      .catch(e => console.warn(e));   // без словаря — подписи по ключу, страница работает
+    return dictP;
   }
 
   let indexP = null;
@@ -177,8 +217,10 @@
     + esc(text || matchTitle(m)) + '</a>';
   const matchTitle = m => m.no ? 'Партия №' + m.no : 'Партия ' + m.key.slice(0, 8);
   const humans = m => m.players.filter(p => p.isHuman);
-  const decisive = m => m.players.some(p => p.won);
-  const winnerOf = m => m.players.filter(p => p.won);
+  /* Доиграна — только по полю службы (см. шапку), без своих догадок. */
+  const done = m => m.finished === true;
+  const winnerOf = m => done(m) ? m.players.filter(p => p.won) : [];
+  const UNFINISHED = '<span class="tag st-unfinished" title="Партия не доиграна: победителя нет, места — порядок по очкам на момент выхода">не доиграна</span>';
 
   /* ---------------------------------------------------------- агрегаты */
 
@@ -192,8 +234,12 @@
         let r = map.get(name);
         if (!r) map.set(name, r = { name, matches: 0, wins: 0, decisive: 0, placeSum: 0, placeN: 0, civs: new Map(), list: [] });
         r.matches++;
-        if (decisive(m)) { r.decisive++; if (p.won) r.wins++; }
-        if (p.place > 0) { r.placeSum += p.place; r.placeN++; }
+        // Победы, доля побед и среднее место — только по доигранным партиям.
+        if (done(m)) {
+          r.decisive++;
+          if (p.won) r.wins++;
+          if (p.place > 0) { r.placeSum += p.place; r.placeN++; }
+        }
         r.civs.set(p.civ, (r.civs.get(p.civ) || 0) + 1);
         r.list.push({ m, p, total });
       }
@@ -204,7 +250,7 @@
   function civStats(matches) {
     const map = new Map();
     for (const m of matches) {
-      if (!decisive(m)) continue;          // без итога побед нет ни у кого — не размываем винрейт
+      if (!done(m)) continue;              // не доиграна — побед нет ни у кого, не размываем винрейт
       for (const p of humans(m)) {
         let r = map.get(p.civ);
         if (!r) map.set(p.civ, r = { civ: p.civ, n: 0, wins: 0, placeSum: 0 });
@@ -233,7 +279,7 @@
         const w = winnerOf(m);
         return '<tr><td>' + linkMatch(m) + '</td><td>' + esc(shortDate(m.at)) + '</td>'
           + '<td class="num">' + humans(m).length + '</td>'
-          + '<td>' + (w.length ? w.map(p => p.isHuman ? linkPlayer(p.name) : esc(p.name) + ' <span class="tag">ИИ</span>').join(', ')
+          + '<td>' + (!done(m) ? UNFINISHED : w.length ? w.map(p => p.isHuman ? linkPlayer(p.name) : esc(p.name) + ' <span class="tag">ИИ</span>').join(', ')
             + ' <span class="dim">· ' + esc(victoryName(m.victoryType)) + '</span>'
             : '<span class="dim">' + esc(victoryName(m.victoryType)) + '</span>') + '</td>'
           + '<td class="num">' + num(m.turns) + '</td></tr>';
@@ -242,22 +288,33 @@
 
   function datasetSelect(id, current, available) {
     const avail = available && available.length ? new Set(available) : null;
-    const groups = Object.keys(N.groups).map(g => {
-      const opts = N.datasets.filter(d => d.g === g && (!avail || avail.has(d.k)));
-      if (!opts.length) return '';
-      return '<optgroup label="' + esc(N.groups[g]) + '">' + opts.map(d =>
-        '<option value="' + esc(d.k) + '"' + (d.k === current ? ' selected' : '') + '>' + esc(d.t) + '</option>').join('') + '</optgroup>';
-    }).join('');
-    // Ряды, которых нет в подписях (новая версия мода), — отдельной группой, по ключу.
+    const shown = DICT.datasets.filter(d => !d.hidden && (!avail || avail.has(d.key)));
+    const option = d => '<option value="' + esc(d.key) + '"' + (d.key === current ? ' selected' : '') + '>'
+      + esc(d.title || pretty(d.key)) + '</option>';
+    const optgroup = (label, opts) => opts.length ? '<optgroup label="' + esc(label) + '">' + opts.map(option).join('') + '</optgroup>' : '';
+    // «Главное» — по номеру main (тот же короткий список, что в лаунчере); дальше группы
+    // в порядке словаря, внутри — как в словаре. Главные в своей группе не повторяются.
+    const groups = optgroup('Главное', shown.filter(d => d.main).sort((a, b) => a.main - b.main))
+      + DICT.groups.map(g => optgroup(g.title, shown.filter(d => !d.main && d.group === g.id))).join('')
+      + optgroup('Прочее', shown.filter(d => !d.main && !DICT.groups.some(g => g.id === d.group)));
+    // Ряды, которых нет в словаре (новая версия мода), — отдельной группой, по ключу.
     const extra = avail ? [...avail].filter(k => !DS.has(k)).sort() : [];
     const tail = extra.length ? '<optgroup label="Новые ряды">' + extra.map(k =>
       '<option value="' + esc(k) + '"' + (k === current ? ' selected' : '') + '>' + esc(pretty(k)) + '</option>').join('') + '</optgroup>' : '';
     return '<label>Показатель<select id="' + id + '">' + groups + tail + '</select></label>';
   }
 
-  const unitOf = k => (DS.get(k) || {}).u || '';
-  const unitNote = k => { const u = unitOf(k); return !u || (u === 'в ход' && /за ход/.test(dsTitle(k))) ? '' : ' · ' + u; };
-  const divOf = k => (DS.get(k) || {}).div || 1;
+  const unitOf = k => (DS.get(k) || {}).unit || '';
+  /* Единицы под графиком — только если что-то добавляют: «Наука за ход · науки за ход» — нет,
+     «Содержание зданий · золота за ход» — да. «ед.» ничего не объясняет. */
+  const unitNote = k => {
+    const u = unitOf(k), t = dsTitle(k).toLowerCase();
+    if (!u || u === 'ед.' || t.includes(u.toLowerCase())) return '';
+    if (/за ход$/.test(u) && /за ход/.test(t)) return '';
+    return ' · ' + u;
+  };
+  const hintNote = k => { const h = (DS.get(k) || {}).hint; return h ? ' — ' + h : ''; };
+  const divOf = k => (DS.get(k) || {}).scale || 1;
 
   /* ------------------------------------------------------------ график */
 
@@ -439,7 +496,10 @@
     const ver = versions.includes(st.Version) ? st.Version : '';
     const ms = ver ? all.filter(m => m.modVersion === ver) : all;
     const ps = players(ms);
-    const turns = ms.map(m => m.turns).filter(t => t > 0).sort((a, b) => a - b);
+    const fin = ms.filter(done);
+    const unfinished = ms.length - fin.length;
+    // Длительность — только доигранных: выход на восьмом ходу не «короткая партия».
+    const turns = fin.map(m => m.turns).filter(t => t > 0).sort((a, b) => a - b);
     const median = turns.length ? turns[Math.floor((turns.length - 1) / 2)] : null;
     const avg = turns.length ? turns.reduce((a, b) => a + b, 0) / turns.length : null;
 
@@ -447,16 +507,21 @@
       + versions.map(v => '<option' + (v === ver ? ' selected' : '') + '>' + esc(v) + '</option>').join('')
       + '</select></label><span class="dim small skin-count">' + (idx.generated ? 'Данные на ' + esc(shortDate(idx.generated)) : '') + '</span></div>';
 
-    h += '<div class="badges"><div><b>' + ms.length + '</b><span>' + plural(ms.length, 'партия', 'партии', 'партий') + '</span></div>'
+    h += '<div class="badges"><div><b>' + ms.length + '</b><span>' + plural(ms.length, 'партия', 'партии', 'партий')
+      + (unfinished ? ' · не доиграно ' + unfinished : '') + '</span></div>'
       + '<div><b>' + ps.length + '</b><span>' + plural(ps.length, 'игрок', 'игрока', 'игроков') + '</span></div>'
       + '<div><b>' + (median != null ? median : '—') + '</b><span>ходов, медиана</span></div>'
       + '<div><b>' + (avg != null ? num(avg) : '—') + '</b><span>ходов в среднем</span></div></div>';
 
     // Типы побед
+    // Только доигранные; не доигранные — отдельной строкой, без доли.
     const vt = new Map();
-    ms.forEach(m => vt.set(m.victoryType || '', (vt.get(m.victoryType || '') || 0) + 1));
+    fin.forEach(m => vt.set(m.victoryType || '', (vt.get(m.victoryType || '') || 0) + 1));
     const vRows = [...vt.entries()].map(([k, n]) => ({ label: victoryName(k), n })).sort((a, b) => b.n - a.n);
-    h += '<div class="st-two"><section><h2>Типы побед</h2>' + bars(vRows, ms.length) + '</section>';
+    h += '<div class="st-two"><section><h2>Типы побед</h2>'
+      + (fin.length ? bars(vRows, fin.length) : '<p class="dim">Доигранных партий пока нет.</p>')
+      + (unfinished ? '<p class="small dim">Не доиграно (без победителя или свёрнуто): ' + unfinished + ' — в типы побед не входят.</p>' : '')
+      + '</section>';
 
     // Длительность
     const edges = [0, 100, 150, 200, 250, 300, Infinity];
@@ -468,8 +533,8 @@
 
     // Цивилизации
     const cs = civStats(ms);
-    h += '<h2>Цивилизации</h2><p class="small dim">Винрейт — доля побед среди партий с итогом, где цивилизацию взял человек. '
-      + 'Партии без победителя и цивилизации ИИ в подсчёт не входят. Меньше ' + SMALL_SAMPLE
+    h += '<h2>Цивилизации</h2><p class="small dim">Винрейт — доля побед среди доигранных партий, где цивилизацию взял человек. '
+      + 'Не доигранные партии (без победителя или свёрнутые) и цивилизации ИИ в подсчёт не входят. Меньше ' + SMALL_SAMPLE
       + ' партий — это случайность, а не сила цивилизации: такие строки помечены.</p>';
     h += cs.length ? tableWrap('<table class="st"><thead><tr><th scope="col">Цивилизация</th><th scope="col" class="num">Партий</th>'
       + '<th scope="col" class="num">Побед</th><th scope="col">Винрейт</th><th scope="col" class="num">Ср. место</th></tr></thead><tbody>'
@@ -480,7 +545,7 @@
           + '<td class="num">' + c.wins + '</td><td class="wr"><span class="wr-bar"><i style="width:' + (100 * w).toFixed(1) + '%"></i></span>'
           + '<span class="wr-v">' + pct(c.wins, c.n) + '</span>' + (small ? ' <span class="tag st-small">мало данных</span>' : '') + '</td>'
           + '<td class="num">' + num(c.placeSum / c.n) + '</td></tr>';
-      }).join('') + '</tbody></table>') : '<p class="dim">Партий с итогом пока нет.</p>';
+      }).join('') + '</tbody></table>') : '<p class="dim">Доигранных партий пока нет.</p>';
 
     // Игроки
     h += '<h2>Игроки</h2>' + tableWrap('<table class="st"><thead><tr><th scope="col">Игрок</th><th scope="col" class="num">Партий</th>'
@@ -516,9 +581,11 @@
 
     const ds = DS_RE.test(st.Dataset || '') ? st.Dataset : DEFAULT_DATASET;
     const list = me.list.slice().sort((a, b) => String(b.m.at).localeCompare(String(a.m.at)));
-    const turnsAvg = list.reduce((a, x) => a + (x.m.turns || 0), 0) / list.length;
+    const finList = list.filter(x => done(x.m));
+    const turnsAvg = finList.length ? finList.reduce((a, x) => a + (x.m.turns || 0), 0) / finList.length : null;
     h += '<div class="badges"><div><b>' + me.matches + '</b><span>' + plural(me.matches, 'партия', 'партии', 'партий') + '</span></div>'
-      + '<div><b>' + me.wins + '</b><span>побед · ' + pct(me.wins, me.decisive) + '</span></div>'
+      + '<div><b>' + me.wins + '</b><span>побед · ' + pct(me.wins, me.decisive)
+      + (me.matches > me.decisive ? ' · не доиграно ' + (me.matches - me.decisive) : '') + '</span></div>'
       + '<div><b>' + (me.placeN ? num(me.placeSum / me.placeN) : '—') + '</b><span>среднее место</span></div>'
       + '<div><b>' + num(turnsAvg) + '</b><span>ходов в среднем</span></div></div>';
 
@@ -527,13 +594,13 @@
     h += '<h2>По ходам</h2><div class="skin-controls st-controls">' + datasetSelect('st-ds', ds, keys)
       + '<span class="dim small skin-count">линия — одна партия' + (list.length > PLAYER_CHART_LIMIT ? ', последние ' + PLAYER_CHART_LIMIT : '')
       + (Math.min(list.length, PLAYER_CHART_LIMIT) > PALETTE.length ? '; светлые — победы' : '') + '</span></div>'
-      + '<p class="small dim st-unit">' + esc(dsTitle(ds)) + esc(unitNote(ds)) + '</p>'
+      + '<p class="small dim st-unit">' + esc(dsTitle(ds)) + esc(unitNote(ds)) + esc(hintNote(ds)) + '</p>'
       + '<div id="st-chart" class="st-chart"><p class="dim">Загружаю ряды…</p></div>';
 
     h += '<h2>Партии</h2>' + tableWrap('<table class="st"><thead><tr><th scope="col">Партия</th><th scope="col">Дата</th><th scope="col">Цивилизация</th>'
       + '<th scope="col" class="num">Место</th><th scope="col" class="num">Очки</th><th scope="col">Итог</th><th scope="col" class="num">Ходов</th></tr></thead><tbody>'
       + list.map(x => '<tr><td>' + linkMatch(x.m) + '</td><td>' + esc(shortDate(x.m.at)) + '</td><td>' + esc(civName(x.p.civ)) + '</td>'
-        + '<td class="num">' + (x.p.place ? x.p.place + ' <small class="dim">из ' + x.total + '</small>' : '—') + '</td>'
+        + '<td class="num">' + placeCell(x.p, x.m, x.total) + '</td>'
         + '<td class="num">' + num(x.p.score) + '</td><td>' + outcome(x.p, x.m) + '</td><td class="num">' + num(x.m.turns) + '</td></tr>').join('')
       + '</tbody></table>');
 
@@ -552,8 +619,9 @@
       const s = (got[i] || []).find(z => z.playerId === x.p.playerId) || (got[i] || []).find(z => z.name === me.name);
       if (!s) return;
       lines.push({
-        label: matchTitle(x.m), sub: shortDate(x.m.at) + ' · ' + civName(x.p.civ) + ' · ' + (x.p.won ? 'победа' : x.p.place + ' место'),
-        color: many ? (x.p.won ? WIN : MUTED) : PALETTE[i], turns: s.turns, values: scaled(s, ds),
+        label: matchTitle(x.m), sub: shortDate(x.m.at) + ' · ' + civName(x.p.civ) + ' · '
+          + (!done(x.m) ? 'не доиграна' : x.p.won ? 'победа' : x.p.place + ' место'),
+        color: many ? (done(x.m) && x.p.won ? WIN : MUTED) : PALETTE[i], turns: s.turns, values: scaled(s, ds),
       });
     });
     lineChart(host, { lines, title: dsTitle(ds) + ' — ' + me.name });
@@ -568,9 +636,16 @@
   }
 
   function outcome(p, m) {
-    if (p.won) return '<span class="st-win">победа</span>';
+    if (done(m) && p.won) return '<span class="st-win">победа</span>';
     if (!p.isAlive && p.lastTurn > 0 && p.lastTurn < (m.turns || Infinity)) return 'выбыл на ходу ' + p.lastTurn;
-    return decisive(m) ? 'дожил до конца' : '<span class="dim">без итога</span>';
+    return done(m) ? 'дожил до конца' : UNFINISHED;
+  }
+
+  /* Место в не доигранной партии — порядок по очкам на момент выхода, а не итог: приглушённо и с подсказкой. */
+  function placeCell(p, m, total) {
+    if (!p.place) return '—';
+    const text = p.place + (total ? ' <small class="dim">из ' + total + '</small>' : '');
+    return done(m) ? text : '<span class="dim" title="Партия не доиграна: место — порядок по очкам, а не итог">' + text + '</span>';
   }
 
   async function renderMatch(st, idx) {
@@ -583,18 +658,18 @@
     const ds = DS_RE.test(st.Dataset || '') ? st.Dataset : DEFAULT_DATASET;
     const ps = m.players.slice().sort((a, b) => (a.place || 99) - (b.place || 99));
     let h = tabs(st) + '<div class="st-head"><h2>' + esc(matchTitle(m)) + '</h2><p class="dim">' + esc(shortDate(m.at))
-      + ' · ' + num(m.turns) + ' ' + plural(m.turns || 0, 'ход', 'хода', 'ходов') + ' · ' + esc(victoryName(m.victoryType))
+      + ' · ' + num(m.turns) + ' ' + plural(m.turns || 0, 'ход', 'хода', 'ходов') + ' · ' + (done(m) ? esc(victoryName(m.victoryType)) : 'не доиграна')
       + (m.modVersion ? ' · мод ' + esc(m.modVersion) : '') + '</p></div>';
 
     h += tableWrap('<table class="st"><thead><tr><th scope="col" class="num">Место</th><th scope="col">Участник</th><th scope="col">Цивилизация</th>'
       + '<th scope="col" class="num">Очки</th><th scope="col">Итог</th></tr></thead><tbody>'
-      + ps.map((p, i) => '<tr><td class="num">' + (p.place || '—') + '</td><td><i class="sw" style="background:' + colorFor(i, ps.length) + '"></i>'
+      + ps.map((p, i) => '<tr><td class="num">' + placeCell(p, m, 0) + '</td><td><i class="sw" style="background:' + colorFor(i, ps.length) + '"></i>'
         + (p.isHuman ? linkPlayer(p.name) : esc(p.name) + ' <span class="tag">ИИ</span>') + '</td>'
         + '<td>' + esc(civName(p.civ)) + '</td><td class="num">' + num(p.score) + '</td><td>' + outcome(p, m) + '</td></tr>').join('')
       + '</tbody></table>');
 
     h += '<h2>По ходам</h2><div class="skin-controls st-controls">' + datasetSelect('st-ds', ds, m.keys) + '</div>'
-      + '<p class="small dim st-unit">' + esc(dsTitle(ds)) + esc(unitNote(ds)) + '</p>'
+      + '<p class="small dim st-unit">' + esc(dsTitle(ds)) + esc(unitNote(ds)) + esc(hintNote(ds)) + '</p>'
       + '<div id="st-chart" class="st-chart"><p class="dim">Загружаю ряды…</p></div>';
     app().innerHTML = h;
     $('#st-ds').addEventListener('change', e => replace(Object.assign({}, st, { Dataset: e.target.value })));
@@ -623,7 +698,7 @@
   async function render() {
     const token = ++renderToken;
     const st = readHash();
-    const idx = await index();
+    const [idx] = await Promise.all([index(), dictionary()]);
     if (token !== renderToken) return;
     if (!idx.ok) { app().innerHTML = failState(idx.why); return; }
     if (!idx.matches.length) { app().innerHTML = emptyState(); return; }
