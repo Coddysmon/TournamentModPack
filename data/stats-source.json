@@ -1,0 +1,5 @@
+{
+  "_note": "Откуда страница stats.html берёт статистику. mode: static — срезы JSON (base + index.json, base + m/<ключ>/<ряд>.json); live — служба nova-rating (base + stats/matches, base + stats/match). Сейчас: срезы в репозитории Coddysmon/nova-stats (GitHub Pages, тот же источник, что сайт), их пишет выгрузка nova-stats-export на VPS раз в 10 минут. base по http со страницы https браузер заблокирует. Разбор: manager/reports/2026-09-16-STATS-nova-stats-repo-i-sajt.md",
+  "mode": "static",
+  "base": "../nova-stats/"
+}
