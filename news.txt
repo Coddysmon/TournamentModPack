@@ -12,6 +12,9 @@ https://coddysmon.github.io/TournamentModPack/changes.html
 Правила турнира: https://coddysmon.github.io/TournamentModPack/tournament-rules.html
 Discord — сбор на партии и помощь: https://discord.gg/THsFbmC34
 
-Номер сборки в лаунчере остаётся прежним (1.5.x): он технический, по нему лаунчер сверяет файлы.
+Мелочь заодно: в списке партий столбец «Карта» показывает «Nova», а не имя файла скрипта.
+
+Имя выпуска теперь видно везде: в лаунчере — «Nova 1.0 · сборка 0.3.66», в главном меню игры —
+«Nova 1.0 (сборка 1.5.113)». Номер сборки остаётся прежним (1.5.x): он технический, по нему лаунчер сверяет файлы.
 Для сетевой игры всем участникам нужна одна версия мода — обновитесь все.
 url: https://coddysmon.github.io/TournamentModPack/changes.html
