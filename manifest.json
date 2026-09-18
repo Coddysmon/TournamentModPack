@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.116",
+  "packageVersion": "1.5.117",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-09-18T22:21:47.8429504+00:00",
+  "createdUtc": "2026-09-18T22:56:56.6643644+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -16470,8 +16470,8 @@
         },
         {
           "path": "CHANGELOG.md",
-          "size": 159914,
-          "hash": "7cfa22e3f38a1b80a67d3c3f8f35f6856987c4916aea8535048c78ea08086614"
+          "size": 160165,
+          "hash": "ffd44fae3d0bc1b2e5f28c1de17e534c87842ba5f8351637cea7db77ca4ba58c"
         },
         {
           "path": "CvGameCore_Expansion2.dll",
@@ -19156,7 +19156,7 @@
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xml",
           "size": 889924,
-          "hash": "155a3f6e5748ff021726531e87d3374fa55a49d81ce41bcef74919110f069eb8"
+          "hash": "41aa9ef904f4fcc4786fc6f206aa1563ac862c0dc13f356a03c2579f248fab2a"
         },
         {
           "path": "Override/CIV5Trades.xml",
@@ -19341,7 +19341,7 @@
         {
           "path": "Override/CIV5Units_Mongol.xml",
           "size": 9864791,
-          "hash": "54a3099d06588479bcb1f87cb2e6c8170321246e1ab6a0496f692693bff8d9d7"
+          "hash": "52653f00a668aa881d5007c7824521f19a05023c3ee7196935bcf2a6cb87a8d6"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
@@ -19666,7 +19666,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "7ce8338e79f467c8a44c33be0d5048abcdcd0be2f6d930746d426071323d39c2"
+          "hash": "89f2105c9ace15ac5d51c5106bcae99620f9820a4a7651b97a0df6a468cb0abd"
         },
         {
           "path": "skins.json",
@@ -23530,8 +23530,8 @@
         },
         {
           "path": "tmp/ui/MainMenu.lua",
-          "size": 27463,
-          "hash": "59a5a672e7cd2282ad2220a817c1385a611a61aa240ca670761a7381805bd513"
+          "size": 29097,
+          "hash": "5f0a0cb96694b442d3791fc058132483d6018113947cbcd46cff9f5f8539dd99"
         },
         {
           "path": "tmp/ui/MainMenu.xml",
