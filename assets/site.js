@@ -21,7 +21,6 @@
      cursor-tiers.json  уровни подписки: цены и состав
      donate.json        способы пожертвования
      news.txt           лента новостей (тот же файл, что читает лаунчер)
-     data/changelog.md  история версий (кладётся при выкладке из Nova/CHANGELOG.md)
      data/skins.json    опись обликов войск (кладётся при выкладке из Nova/skins.json),
                         картинки к ней — assets/skins/ из Nova/SkinShots/
      data/site.json     то, что знает только владелец: Discord, авторы, галерея
@@ -101,7 +100,6 @@ const NOVA = (() => {
   const tiers = () => once('tiers', () => grab('cursor-tiers.json', 'json'));
   const donate = () => once('donate', () => grab('donate.json', 'json'));
   const news = () => once('news', () => grab('news.txt', 'text'));
-  const changelog = () => once('changelog', () => grab('data/changelog.md', 'text'));
   const site = () => once('site', () => grab('data/site.json', 'json'));
   /* Опись обликов войск: та же, что читает лаунчер (Nova\skins.json), кладётся
      при выкладке. 57 КБ — качаем только на тех страницах, где она нужна. */
@@ -253,41 +251,6 @@ const NOVA = (() => {
       para.push(t);
     }
     flushPara(); closeList();
-    return html;
-  }
-
-  /* CHANGELOG режется по «## [версия] — дата» на раскрывающиеся блоки:
-     784 строки одним полотном никто читать не станет. */
-  function changelogHtml(text) {
-    const lines = String(text).replace(/\r\n/g, '\n').split('\n');
-    const intro = [];
-    const versions = [];
-    let cur = null;
-    for (const line of lines) {
-      const m = line.match(/^##\s+(?!#)(.*)$/);
-      if (m) {
-        const head = m[1].trim();
-        const parts = head.split(/\s+[—-]\s+/);
-        cur = {
-          title: parts[0].replace(/^\[|\]$/g, '').replace(/\]$/, ''),
-          date: parts[1] || '',
-          body: [],
-        };
-        versions.push(cur);
-        continue;
-      }
-      if (line.startsWith('# ')) continue;
-      (cur ? cur.body : intro).push(line);
-    }
-    let html = '';
-    const introHtml = mdBlocks(intro).trim();
-    if (introHtml) html += '<div class="lead">' + introHtml + '</div>';
-    versions.forEach((v, i) => {
-      html += '<details class="ver"' + (i === 0 ? ' open' : '') + '>'
-        + '<summary><span>' + esc(v.title) + '</span>'
-        + (v.date ? '<span class="date">' + esc(v.date) + '</span>' : '')
-        + '</summary><div class="body">' + mdBlocks(v.body) + '</div></details>';
-    });
     return html;
   }
 
@@ -495,8 +458,8 @@ const NOVA = (() => {
 
   return {
     esc, $, $$, mb, ruDate, FALLBACK,
-    release, tiers, donate, news, changelog, site, skins,
-    parseNews, newsHtml, changelogHtml, fillCommon,
+    release, tiers, donate, news, site, skins,
+    parseNews, newsHtml, fillCommon,
     lazyImages, lazyNow: loadNearViewport,
   };
 })();
