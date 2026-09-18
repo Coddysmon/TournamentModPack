@@ -299,6 +299,51 @@ const NOVA = (() => {
     el.classList.add('dim');
   }
 
+  /* Имя файла из адреса: «…/nova-client-0.3.64.zip» -> «nova-client-0.3.64.zip». */
+  function fileNameOf(url) {
+    const clean = String(url).split('?')[0].split('#')[0];
+    const parts = clean.split('/');
+    return parts[parts.length - 1] || '';
+  }
+
+  /* ----------------------------------------------------- запасное скачивание
+
+     ЗАЧЕМ. Единственная точка входа в продукт — кнопка «Скачать лаунчер», и она
+     ведёт на релизы GitHub (файл отдаёт objects.githubusercontent.com). У части
+     российских провайдеров этот хост не открывается: 29.08.2026 на нём встали
+     двое игроков, и файл пришлось передавать руками. Зеркало лаунчера при этом
+     давно существует, но адрес его знал только уже работающий лаунчер — из
+     манифеста. Тому, у кого лаунчера ещё нет, он не помогал никак.
+
+     ОТКУДА БЕРЁТСЯ АДРЕС. Имя файла — из manifest.json (client.url), то есть
+     обновляется вместе с версией само. Основание адреса — clientMirror из
+     data/site.json (его правит владелец). Так же, как выкладывает зеркало сам
+     выпуск: publish-mirror.py кладёт архив в /client/<имя файла из client.url>.
+     Запасные адреса вида relay://… мы намеренно пропускаем — это не схема
+     браузера, а способ ходить через узел связи, доступный только лаунчеру.
+
+     ПРО http. Зеркало отдаёт файл по http (порт 80, nginx), TLS на нём нет:
+     443 занят узлом связи. Страница живёт на https, а Chrome с 2020 года
+     блокирует скачивание по http, начатое со страницы https («Insecure download
+     blocked», архивы блокируются с версии 84). Поэтому рядом со ссылкой на
+     странице ОБЯЗАН стоять сам адрес текстом и подсказка открыть его в новой
+     вкладке — иначе часть игроков нажмёт и не получит ничего, даже сообщения.
+     Правка ссылки на https здесь ничего не даст: сертификата у зеркала нет. */
+  function clientMirrorUrl(client, siteData) {
+    const base = siteData && siteData.clientMirror ? String(siteData.clientMirror).trim() : '';
+    const name = client && client.url ? fileNameOf(client.url) : '';
+    if (base && /^https?:\/\//i.test(base)) {
+      if (/\.zip$/i.test(base)) return base;
+      if (!name) return '';
+      return base.replace(/\/+$/, '') + '/' + name;
+    }
+    // Запасной путь: прямой http(s)-адрес в списке зеркал манифеста, если он там
+    // когда-нибудь появится. relay://… пропускаем — см. выше.
+    const list = client && Array.isArray(client.mirrors) ? client.mirrors : [];
+    const direct = list.find(m => /^https?:\/\//i.test(String(m || '')));
+    return direct ? String(direct) : '';
+  }
+
   /* Заполняет всё, что помечено data-nova="…" на любой странице. */
   async function fillCommon() {
     const r = await release();
@@ -345,8 +390,27 @@ const NOVA = (() => {
       }
     });
 
+    // Контрольная сумма архива — из манифеста, чтобы игрок мог сверить скачанное
+    // (страница «Windows ругается на лаунчер» этим и пользуется). Руками её не
+    // вписываем никогда: на следующем выпуске она станет ложью.
+    $$('[data-nova="client-sha256"]').forEach(el => { el.textContent = c.sha256 || '—'; });
+    $$('[data-nova="client-file"]').forEach(el => {
+      el.textContent = c.url ? fileNameOf(c.url) : '—';
+    });
+
     // Discord: ссылку знает только владелец, она лежит в data/site.json.
     const s = await site();
+
+    // Запасной адрес скачивания. См. clientMirrorUrl — почему он вообще нужен и
+    // почему рядом с ним обязательна подпись про http.
+    const mirror = clientMirrorUrl(c, s);
+    $$('[data-nova="download-mirror"]').forEach(el => {
+      if (!mirror) return;
+      el.href = mirror;
+      el.removeAttribute('aria-disabled');
+    });
+    $$('[data-nova="download-mirror-url"]').forEach(el => { el.textContent = mirror || ''; });
+    $$('[data-nova="download-mirror-box"]').forEach(el => { el.hidden = !mirror; });
     const invite = s && s.discordInvite ? String(s.discordInvite).trim() : '';
     $$('[data-nova="discord"]').forEach(el => {
       if (/^https:\/\/(discord\.gg|discord\.com)\//i.test(invite)) {
