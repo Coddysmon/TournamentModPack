@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.114",
+  "packageVersion": "1.5.115",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-09-18T18:14:23.1041267+00:00",
+  "createdUtc": "2026-09-18T20:39:26.0077664+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -16470,8 +16470,8 @@
         },
         {
           "path": "CHANGELOG.md",
-          "size": 158340,
-          "hash": "0bd20e6ec11561bd0062ab7136ae26b08e3f5bd79eea7fe3871226adfbe137f3"
+          "size": 158462,
+          "hash": "150c1b79bc57499e35178ddb9a1b603b1644c6317deddb41b776706ef19ed475"
         },
         {
           "path": "CvGameCore_Expansion2.dll",
@@ -16939,9 +16939,9 @@
           "hash": "4a0b417d0a7c4bf40a58ed1ecbd16e6f67d409d58421630ddca3e15c42abee05"
         },
         {
-          "path": "Maps/LekmapTournamentPangaea.lua",
-          "size": 926159,
-          "hash": "355e5cdfe65f43fe4bed88d8955320a370ded36244bfd9c1776dd72ac1ba4249"
+          "path": "Maps/NovaTournamentPangaea.lua",
+          "size": 926144,
+          "hash": "cec31e0285d6dc2ec59629d3ee8117e7c1f872ccac26141759b5f146a748070c"
         },
         {
           "path": "MarshalAtlas128.dds",
@@ -19156,7 +19156,7 @@
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xml",
           "size": 889924,
-          "hash": "173d390dcfa318a81e8b999ffc88a1419ceae67a1cc1b71bb4cc6bf912d4bc51"
+          "hash": "44a7ce400cefc0100b55fb350b7936253462d09da93d735ed6a2856a780fce10"
         },
         {
           "path": "Override/CIV5Trades.xml",
@@ -19341,7 +19341,7 @@
         {
           "path": "Override/CIV5Units_Mongol.xml",
           "size": 9864791,
-          "hash": "6ccdb70680823b4590c8a78aa81b109a642de569729548961d0f5e91663d7cbe"
+          "hash": "43b49b6eb6c3be67a720331243c22231fe836d0c91961ba3d21981cc5abcc7bc"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
@@ -19666,7 +19666,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "e2449fa5a59d4e73e87d600a2b40f9f2e40f82d57197ebe7719904ff2ac5bd60"
+          "hash": "9aace4243cdf61699e0d54ac01fe87419e6a33a0af5c33e0823e81f5601db32c"
         },
         {
           "path": "skins.json",
@@ -23830,8 +23830,8 @@
         },
         {
           "path": "tmp/ui/StagingRoom.lua",
-          "size": 160737,
-          "hash": "1e75dc9171cb4efd57756bd050b9eefe26ad5b3f4b866a3b8e0d1fe5164fae84"
+          "size": 160735,
+          "hash": "2cd0ccca0034813ee3a2a09d4a16636287f115b5be191db1f7d235e329a6c805"
         },
         {
           "path": "tmp/ui/StagingRoom.xml",
@@ -23974,9 +23974,9 @@
       "exclusive": true,
       "files": [
         {
-          "path": "LekmapTournamentPangaea.lua",
-          "size": 926159,
-          "hash": "355e5cdfe65f43fe4bed88d8955320a370ded36244bfd9c1776dd72ac1ba4249"
+          "path": "NovaTournamentPangaea.lua",
+          "size": 926144,
+          "hash": "cec31e0285d6dc2ec59629d3ee8117e7c1f872ccac26141759b5f146a748070c"
         }
       ]
     },
@@ -25464,6 +25464,14 @@
     "entries": [
       {
         "date": "2026-09-18T00:00:00+00:00",
+        "title": "\u0421\u0431\u043E\u0440\u043A\u0430 1.5.115",
+        "body": "\u041A\u0430\u0440\u0442\u0430 \u043F\u0435\u0440\u0435\u0438\u043C\u0435\u043D\u043E\u0432\u0430\u043D\u0430 \u0432 Nova Tournament Pangaea.",
+        "tag": "\u0412\u0415\u0420\u0421\u0418\u042F",
+        "HasUsableUrl": false,
+        "IsUsable": true
+      },
+      {
+        "date": "2026-09-18T00:00:00+00:00",
         "title": "\u0421\u0431\u043E\u0440\u043A\u0430 1.5.114",
         "body": "\u0423\u0431\u0440\u0430\u043D\u043E \u043E\u043A\u043D\u043E \u0441\u043F\u0438\u0441\u043A\u0430 \u0438\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u0439 \u0432 \u0433\u043B\u0430\u0432\u043D\u043E\u043C \u043C\u0435\u043D\u044E \u2014 \u0442\u0435\u043F\u0435\u0440\u044C \u0441\u043F\u0438\u0441\u043E\u043A \u043E\u0442\u043A\u0440\u044B\u0432\u0430\u0435\u0442\u0441\u044F \u0432 \u0431\u0440\u0430\u0443\u0437\u0435\u0440\u0435:\n\u043F\u0443\u043D\u043A\u0442 \u00AB\u0421\u043F\u0438\u0441\u043E\u043A \u0438\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u0439\u00BB \u0432 \u0431\u043E\u043A\u043E\u0432\u043E\u043C \u043C\u0435\u043D\u044E \u0438\u043B\u0438 \u043D\u0430\u0436\u0430\u0442\u0438\u0435 \u043D\u0430 \u0441\u0442\u0440\u043E\u043A\u0443 \u0441 \u0432\u0435\u0440\u0441\u0438\u0435\u0439 \u0432\u043D\u0438\u0437\u0443.",
         "tag": "\u0412\u0415\u0420\u0421\u0418\u042F",
@@ -25481,6 +25489,14 @@
       }
     ],
     "Usable": [
+      {
+        "date": "2026-09-18T00:00:00+00:00",
+        "title": "\u0421\u0431\u043E\u0440\u043A\u0430 1.5.115",
+        "body": "\u041A\u0430\u0440\u0442\u0430 \u043F\u0435\u0440\u0435\u0438\u043C\u0435\u043D\u043E\u0432\u0430\u043D\u0430 \u0432 Nova Tournament Pangaea.",
+        "tag": "\u0412\u0415\u0420\u0421\u0418\u042F",
+        "HasUsableUrl": false,
+        "IsUsable": true
+      },
       {
         "date": "2026-09-18T00:00:00+00:00",
         "title": "\u0421\u0431\u043E\u0440\u043A\u0430 1.5.114",
