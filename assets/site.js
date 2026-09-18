@@ -35,9 +35,9 @@ const NOVA = (() => {
      живые данные не доехали, и всегда с пометкой. Дата обязательна: без неё
      число выглядит свежим. */
   const FALLBACK = {
-    asOf: '2026-09-05',
-    modVersion: '1.5.55',
-    clientVersion: '0.3.37',
+    asOf: '2026-09-18',
+    modVersion: '1.5.113',
+    clientVersion: '0.3.66',
     clientUrl: 'https://github.com/Coddysmon/TournamentModPack/releases',
     clientSize: 61578668,
   };

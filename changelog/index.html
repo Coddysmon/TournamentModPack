@@ -4,12 +4,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#0D131A">
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#0D131A">
 <title>Nova против Tournament Mod</title>
 <meta name="description" content="Что изменилось в модпаке Nova по сравнению с Tournament Mod 12.2a: было и стало по каждому люксу, политике, зданию, юниту и нации.">
 <style>
@@ -49,6 +43,9 @@ button,input{font:inherit;color:inherit}
   radial-gradient(900px 260px at 18% 0%,rgba(47,169,160,.10),transparent 70%)}
 .eyebrow{font:600 11px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--acc)}
 h1{font:400 44px/1.08 var(--serif);margin:12px 0 12px;text-wrap:balance;max-width:24ch}
+/* Технический номер сборки рядом с витринным именем выпуска: мелко и приглушённо. */
+h1 .build{font:400 13px/1 var(--sans);letter-spacing:.02em;color:var(--dim);
+  white-space:nowrap;vertical-align:.7em;margin-left:.4em}
 .lead{max-width:68ch;color:var(--dim);margin:0}
 .totals{display:flex;flex-wrap:wrap;gap:28px;margin-top:24px}
 .total b{display:block;font:400 34px/1 var(--serif);font-variant-numeric:tabular-nums}
@@ -154,18 +151,16 @@ h1{font:400 44px/1.08 var(--serif);margin:12px 0 12px;text-wrap:balance;max-widt
 </style>
 </head>
 <body>
-</head>
-<body>
 <div class="shell">
   <aside class="side" aria-label="Разделы">
     <a class="mark" href="#top"><span class="mark-name">NOVA</span><span class="mark-rule">PATCH</span></a>
     <nav class="nav" id="nav"></nav>
-    <p class="side-note"><a href="../changes.html">← на сайт Nova</a><br><br><a href="../changes.html">← на сайт Nova</a><br><br>«Было» — Tournament Mod 12.2a. «Стало» — Nova 1.5.112. Числа взяты из данных игры; где описание в игре расходится с ними, это отмечено. Цены в производстве, вере и золоте — для быстрой скорости.</p>
+    <p class="side-note"><a href="../changes.html">← на сайт Nova</a><br><br>«Было» — Tournament Mod 12.2a. «Стало» — Nova 1.0 (сборка 1.5.113). Числа взяты из данных игры; где описание в игре расходится с ними, это отмечено. Цены в производстве, вере и золоте — для быстрой скорости.</p>
   </aside>
   <div class="main" id="top">
     <header class="hero">
-      <div class="eyebrow">Tournament Mod 12.2a → Nova 1.5.112</div>
-      <h1>Что изменилось в Nova</h1>
+      <div class="eyebrow">Tournament Mod 12.2a → Nova 1.0</div>
+      <h1>Nova 1.0 — что изменилось <span class="build">сборка 1.5.113</span></h1>
       <p class="lead">Каждая карточка — одна вещь из игры: люкс, политика, здание, юнит или нация. Слева как было в Tournament Mod 12.2a, справа как стало в Nova. У веток политик — дерево до и после.</p>
       <div class="totals" id="totals"></div>
     </header>
@@ -379,7 +374,5 @@ document.querySelectorAll('.sec').forEach(s => io.observe(s));
 apply();
 })();
 </script>
-</body>
-</html>
 </body>
 </html>

@@ -163,6 +163,10 @@ a:hover{color:var(--acc)}
 
 .hero h1{margin:0;font:400 clamp(25px,4.6vw,31px)/1.18 var(--serif);
   color:var(--acc-br);letter-spacing:.01em}
+/* Технический номер сборки рядом с витринным заголовком «Nova 1.0».
+   Мелко и приглушённо: заголовок несёт имя выпуска, номер — справка. */
+.hero h1 .build{margin-left:.5em;color:var(--dim);font-family:var(--sans);
+  font-size:13px;letter-spacing:.02em;white-space:nowrap;vertical-align:.18em}
 .hero .sub{margin:6px 0 0;color:var(--dim);font-size:14px;max-width:74ch}
 .hero .sub b{color:var(--text);font-weight:600}
 
