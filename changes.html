@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Что меняет Nova</title>
-<meta name="description" content="Полный список изменений модпака Nova: чем он отличается от Tournament Mod 12.2a и что менялось от версии к версии.">
+<meta name="description" content="Чем модпак Nova отличается от Tournament Mod 12.2a: нации, ветки политик, религия, ресурсы, здания, чудеса, юниты, движок и интерфейс.">
 <meta name="theme-color" content="#0D131A">
 <link rel="stylesheet" href="assets/site.css">
 </head>
@@ -50,7 +50,7 @@
     </div>
     <div class="hero-title">
       <h1>Что меняет Nova</h1>
-      <p class="sub">Две разные вещи, и путать их не стоит. Первая — <b>чем мод отличается от Tournament Mod 12.2a</b>, то есть что вы получаете, поставив его. Вторая — <b>история версий</b>: что менялось внутри самого мода от выпуска к выпуску.</p>
+      <p class="sub"><b>Чем мод отличается от Tournament Mod 12.2a</b> — то есть что вы получаете, поставив его.</p>
     </div>
   </header>
 
@@ -99,10 +99,6 @@
 </table>
 
 
-<p class="small dim">Ниже — файл <code>CHANGELOG.md</code> из самого мода. Он же лежит
-в исходниках: сайт его показывает, а не пересказывает.</p>
-<div id="changelog"><p class="dim">Загружаю…</p></div>
-
 </main>
 
 <footer>
@@ -122,15 +118,6 @@
 <script src="assets/site.js"></script>
 <script>
 NOVA.fillCommon();
-NOVA.changelog().then(text => {
-  const box = document.getElementById('changelog');
-  if (!text) {
-    box.innerHTML = '<p class="dim">Историю версий получить не удалось. '
-      + 'Она есть внутри лаунчера, раздел «Новости».</p>';
-    return;
-  }
-  box.innerHTML = NOVA.changelogHtml(text);
-});
 </script>
 </body>
 </html>
