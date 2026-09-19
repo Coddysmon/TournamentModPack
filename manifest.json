@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.117",
+  "packageVersion": "1.5.118",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-09-18T22:56:56.6643644+00:00",
+  "createdUtc": "2026-09-19T00:37:24.8829729+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -16470,13 +16470,13 @@
         },
         {
           "path": "CHANGELOG.md",
-          "size": 160165,
-          "hash": "ffd44fae3d0bc1b2e5f28c1de17e534c87842ba5f8351637cea7db77ca4ba58c"
+          "size": 162289,
+          "hash": "4130d0d46462c2a043de74b8ddb41bd2963bc0c501edb534be2ffaf1f8039ad2"
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4478976,
-          "hash": "3bc1b6d4edb019c1b9c05899a39add2b348f3750410c70e96ccff5bc91ffe8db"
+          "size": 4478464,
+          "hash": "11a9907b6aa67b3dfc77d702e0246b5f7f44f7b4ec3c8833037d851b53c9bced"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -19156,7 +19156,7 @@
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xml",
           "size": 889924,
-          "hash": "41aa9ef904f4fcc4786fc6f206aa1563ac862c0dc13f356a03c2579f248fab2a"
+          "hash": "099afbfe4d1eb646159a3462db7bc97f8240ed852f1fe36ac116310540f04cff"
         },
         {
           "path": "Override/CIV5Trades.xml",
@@ -19341,7 +19341,7 @@
         {
           "path": "Override/CIV5Units_Mongol.xml",
           "size": 9864791,
-          "hash": "52653f00a668aa881d5007c7824521f19a05023c3ee7196935bcf2a6cb87a8d6"
+          "hash": "8d954e3d6745dac955267dd68c340fad455e034a91c33ebf1c1e82e6e3f17dcc"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
@@ -19666,7 +19666,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "89f2105c9ace15ac5d51c5106bcae99620f9820a4a7651b97a0df6a468cb0abd"
+          "hash": "538f5779204f2be10c28e06f204ecb02c3c891621bff27a07c6c1a9663be8234"
         },
         {
           "path": "skins.json",
@@ -23150,8 +23150,8 @@
         },
         {
           "path": "tmp/eui/UnitFlagManager.lua",
-          "size": 57302,
-          "hash": "ae828708bb96ab07697212e1a06fec1b1e12379e823f0e065888faa063e5fc62"
+          "size": 57481,
+          "hash": "75616413c888e2ef42f27925168ca4a4c70d0a26047b654364a549f19d3506c0"
         },
         {
           "path": "tmp/eui/UnitFlagManager.xml",
@@ -23631,62 +23631,62 @@
         {
           "path": "tmp/ui/NovaTierRingBaseBronze.dds",
           "size": 16512,
-          "hash": "e54702e959675f353e1d06129bb65ddd45c546ae1d092bca33cff6c7ded8dfea"
+          "hash": "7dd9f22c7b7dfc9330acd9dab9d35ec1ca885470e9c7c8e8d83ff76a22c782dc"
         },
         {
           "path": "tmp/ui/NovaTierRingBaseGold.dds",
           "size": 16512,
-          "hash": "f157b4f89fa02ef70a732e362c90597f6f4d7c59235130a13cc35103d9558100"
+          "hash": "09353d14d55cf6aa528de859f68ed653b7cd549db5109aa3a3d0e3999e0be354"
         },
         {
           "path": "tmp/ui/NovaTierRingBaseSilver.dds",
           "size": 16512,
-          "hash": "b852674189254a358170e2f7e84efdfa0160cfca194c883dcaf084e20e653fc4"
+          "hash": "2e778e71cd1dce0009752093ae33520a5afbe3ff6893fd8c13d4bfe5662ed57a"
         },
         {
           "path": "tmp/ui/NovaTierRingCivBronze.dds",
           "size": 16512,
-          "hash": "62583273a11988d6d788edb2334cffb2695a99f4915b6c0f8e2562330bfe99e0"
+          "hash": "be6b7a15892516a3fac055371a55c9d45e79fcf314fd03ad9fd229a40a74f34a"
         },
         {
           "path": "tmp/ui/NovaTierRingCivGold.dds",
           "size": 16512,
-          "hash": "a9b717374b3ed9e84140228cc2282c3f9f4179f6bbd343af54911d45edb89b64"
+          "hash": "1fb94fbf80a6db1dd68b9633cd9fa766330cda5768cb15b16b0fdc780d8ae5c7"
         },
         {
           "path": "tmp/ui/NovaTierRingCivSilver.dds",
           "size": 16512,
-          "hash": "fa49bcb33177a541489044cd0cbe7e6b2959cc63e5242c661f2f375bb93026b6"
+          "hash": "4fafe6d4b7fa094584a7e0cd8fe984334ce80f965a97bce2d45d89566dc78769"
         },
         {
           "path": "tmp/ui/NovaTierRingEmbarkBronze.dds",
           "size": 16512,
-          "hash": "adb94cb396b8eb906ddd1a02559f622bd7587aa8ff23f4fdd1b706f37e432f7a"
+          "hash": "bc8366946022f5b8b936079b4b0a5c8b929083ac5fc4b01a022005225afdd078"
         },
         {
           "path": "tmp/ui/NovaTierRingEmbarkGold.dds",
           "size": 16512,
-          "hash": "0b63a953d483ee35c7405555626d9950bcb610fdbbcea88f53d010085dc2eb2d"
+          "hash": "4fd1c9ac98c6a4a72043e2cdc47fa1909b5e11776717346f2af632d935a1c7c1"
         },
         {
           "path": "tmp/ui/NovaTierRingEmbarkSilver.dds",
           "size": 16512,
-          "hash": "9fc9de33270885c1f04b11d191f5efafe91e55cdb9c142b6b3213a373a3854cf"
+          "hash": "7a85205ade9a6a1a3110afb4777d7d20bfff1ea8e3a767430b34f3d630066e78"
         },
         {
           "path": "tmp/ui/NovaTierRingFortifyBronze.dds",
           "size": 16512,
-          "hash": "fb734e3b369bba9d97fc08192f4b73eed597005dc20ccb2db94cc64a2376c7d1"
+          "hash": "e512282e6338587ca201beb8e354d217cb51a1fee17bbe64346f16ebf27067e8"
         },
         {
           "path": "tmp/ui/NovaTierRingFortifyGold.dds",
           "size": 16512,
-          "hash": "8784dd68b94f4df5fa2c58fb81a2e1803fe3d4723aca745096c20ddd50f762e0"
+          "hash": "cdff3ca837a58ca73b5f3681ea62e1b9641dd94bf9412568ce977e39a900d3d5"
         },
         {
           "path": "tmp/ui/NovaTierRingFortifySilver.dds",
           "size": 16512,
-          "hash": "87089ae7d6d3be59bdd99077a665ef9904ee068e94b84bb06df3a335ce82c25e"
+          "hash": "ce2948874cf13a8ecdd7fb7411af2bfb42d2c714779b28d980645e577bbd5bc2"
         },
         {
           "path": "tmp/ui/OptionsMenu.lua.ignore",
@@ -23900,13 +23900,13 @@
         },
         {
           "path": "tmp/ui/UnitFlagManager.lua",
-          "size": 82970,
-          "hash": "5a024df1cb0e9c1e6d47cc279c94e9c981c7057c25ffa52f4b77231fc4447c3c"
+          "size": 83363,
+          "hash": "c6024687663575f15ff6d23041803bb09d078ec516bd52717195773601d6e40c"
         },
         {
           "path": "tmp/ui/UnitFlagManager.xml",
-          "size": 10954,
-          "hash": "577bf42bbdf118c5aedc6adebd0583647584403a16411ed7e85f8f3187d8827c"
+          "size": 11639,
+          "hash": "05b28021f94cdce657d2269fea8e51e21d0e18486e0f7c8e8573033d7c3990fc"
         },
         {
           "path": "tmp/ui/UnitList.lua",
@@ -25486,14 +25486,14 @@
     "Any": true
   },
   "client": {
-    "version": "0.3.69",
-    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas8/nova-client-0.3.69.zip",
-    "sha256": "d624f5c3c2736614558469b2d23eda84704b4fa7fc9476e1c206f6cf49b62540",
-    "size": 64036419,
-    "notes": "\u041A\u043D\u043E\u043F\u043A\u0438 \u00AB\u0421\u043F\u0438\u0441\u043E\u043A \u0438\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u0439\u00BB, \u00AB\u041D\u0430\u0448 \u0441\u0430\u0439\u0442\u00BB, \u00AB\u0414\u043E\u043D\u0430\u0442\u00BB \u0438 Discord \u0432 \u0433\u043B\u0430\u0432\u043D\u043E\u043C \u043C\u0435\u043D\u044E \u0438\u0433\u0440\u044B \u0441\u043D\u043E\u0432\u0430 \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0442. \u0420\u0430\u043D\u044C\u0448\u0435 \u043E\u043D\u0438 \u043E\u0442\u043A\u0440\u044B\u0432\u0430\u043B\u0438 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0443 \u043E\u0432\u0435\u0440\u043B\u0435\u0435\u043C Steam, \u0430 \u0443 \u043A\u043E\u0433\u043E \u043E\u0432\u0435\u0440\u043B\u0435\u0439 Steam \u0432\u044B\u043A\u043B\u044E\u0447\u0435\u043D, \u043D\u0430\u0436\u0430\u0442\u0438\u0435 \u043D\u0435 \u0434\u0435\u043B\u0430\u043B\u043E \u0440\u043E\u0432\u043D\u043E \u043D\u0438\u0447\u0435\u0433\u043E. \u0422\u0435\u043F\u0435\u0440\u044C \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0443 \u043E\u0442\u043A\u0440\u044B\u0432\u0430\u0435\u0442 \u043B\u0430\u0443\u043D\u0447\u0435\u0440: \u0434\u0435\u0440\u0436\u0438\u0442\u0435 \u0435\u0433\u043E \u0437\u0430\u043F\u0443\u0449\u0435\u043D\u043D\u044B\u043C, \u043F\u043E\u043A\u0430 \u0438\u0433\u0440\u0430\u0435\u0442\u0435. \u0418\u0433\u0440\u0430 \u043F\u0440\u0438 \u043D\u0430\u0436\u0430\u0442\u0438\u0438 \u043F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0435\u0442 \u0430\u0434\u0440\u0435\u0441 \u043E\u043A\u043D\u043E\u043C \u2014 \u0435\u0441\u043B\u0438 \u0431\u0440\u0430\u0443\u0437\u0435\u0440 \u043D\u0435 \u043E\u0442\u043A\u0440\u044B\u043B\u0441\u044F, \u0430\u0434\u0440\u0435\u0441 \u043C\u043E\u0436\u043D\u043E \u043D\u0430\u0431\u0440\u0430\u0442\u044C \u0432\u0440\u0443\u0447\u043D\u0443\u044E.",
+    "version": "0.3.70",
+    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas8/nova-client-0.3.70.zip",
+    "sha256": "d4109126f1bbfc49041861fd13c9b0c0d4311f04d0150e228bfedb7bf7b5c148",
+    "size": 64042816,
+    "notes": "\u041B\u0430\u0443\u043D\u0447\u0435\u0440 \u0443\u0431\u0438\u0440\u0430\u0435\u0442 \u0438\u0437 \u0432\u0430\u0448\u0435\u0439 \u043F\u0430\u043F\u043A\u0438 \u0441 \u0438\u0433\u0440\u043E\u0439 \u0447\u0443\u0436\u0438\u0435 \u043A\u0430\u0440\u0442\u044B \u0438 \u043C\u043E\u0434\u044B, \u043E\u0441\u0442\u0430\u0432\u0448\u0438\u0435\u0441\u044F \u043E\u0442 \u043F\u0440\u043E\u0448\u043B\u044B\u0445 \u0441\u0431\u043E\u0440\u043E\u043A. \u0418\u0433\u0440\u0430 \u0432\u044B\u043F\u043E\u043B\u043D\u044F\u0435\u0442 \u0432\u0441\u0435 \u0441\u043A\u0440\u0438\u043F\u0442\u044B \u043A\u0430\u0440\u0442 \u043F\u043E\u0434\u0440\u044F\u0434, \u0438 \u0447\u0443\u0436\u0438\u0435 \u043F\u043E\u0434\u043F\u0430\u043F\u043A\u0438 \u0441\u044B\u043F\u0430\u043B\u0438 \u043E\u0448\u0438\u0431\u043A\u0430\u043C\u0438 \u043F\u0440\u0438 \u043A\u0430\u0436\u0434\u043E\u043C \u0437\u0430\u043F\u0443\u0441\u043A\u0435. \u041D\u0438\u0447\u0435\u0433\u043E \u043D\u0435 \u0443\u0434\u0430\u043B\u044F\u0435\u0442\u0441\u044F \u2014 \u0447\u0443\u0436\u043E\u0435 \u043F\u0435\u0440\u0435\u043D\u043E\u0441\u0438\u0442\u0441\u044F \u0440\u044F\u0434\u043E\u043C, \u0432 \u043F\u0430\u043F\u043A\u0443 \u00ABMaps (\u043E\u0442\u043A\u043B\u044E\u0447\u0435\u043D\u043E Nova)\u00BB \u0441 \u0434\u0430\u0442\u043E\u0439; \u043D\u0430\u0448\u0438 \u043A\u0430\u0440\u0442\u044B \u0438 \u043C\u043E\u0434\u044B \u043D\u0435 \u0442\u0440\u043E\u0433\u0430\u044E\u0442\u0441\u044F. \u0423\u0431\u043E\u0440\u043A\u0430 \u0438\u0434\u0451\u0442 \u043F\u043E\u0441\u043B\u0435 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u044F \u0438 \u043F\u0435\u0440\u0435\u0434 \u0437\u0430\u043F\u0443\u0441\u043A\u043E\u043C \u0438\u0433\u0440\u044B, \u043E\u0442\u043A\u043B\u044E\u0447\u0430\u0435\u0442\u0441\u044F \u0444\u043B\u0430\u0436\u043A\u043E\u043C \u00AB\u0423\u0431\u0438\u0440\u0430\u0442\u044C \u0447\u0443\u0436\u0438\u0435 \u043A\u0430\u0440\u0442\u044B \u0438 \u043C\u043E\u0434\u044B\u00BB \u0432 \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0430\u0445.",
     "mirrors": [
-      "relay://109.73.196.175:443/client/nova-client-0.3.69.zip",
-      "http://109.73.196.175/client/nova-client-0.3.69.zip"
+      "relay://109.73.196.175:443/client/nova-client-0.3.70.zip",
+      "http://109.73.196.175/client/nova-client-0.3.70.zip"
     ],
     "IsUsable": true
   },
