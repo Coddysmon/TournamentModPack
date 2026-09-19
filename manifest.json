@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.121",
+  "packageVersion": "1.5.119",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-09-19T20:20:47.7502829+00:00",
+  "createdUtc": "2026-09-19T17:50:34.4669152+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -16475,8 +16475,8 @@
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4480512,
-          "hash": "e8d0399cf1d2586e044c75653dd9a03f0961b74fd27275c60d7077e48a6d0d67"
+          "size": 4480000,
+          "hash": "bf2bed023da8a8ef93b8e47ab050e8d0c29c2b2582104e2ee264b27a8f979881"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -19156,7 +19156,7 @@
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xml",
           "size": 889934,
-          "hash": "927e121bfa60a1424e9bc738644c90dceb87adba9c0a86baa642d830fa806d98"
+          "hash": "f34632cadf4f7d694701d6f8510f09c4c6a82fdd3639879624cbf77ad26d17cb"
         },
         {
           "path": "Override/CIV5Trades.xml",
@@ -19341,7 +19341,7 @@
         {
           "path": "Override/CIV5Units_Mongol.xml",
           "size": 9864728,
-          "hash": "46c707f1ab64c0c15862b5a8df3b830ead38ab87126f9540fe26dbf93094a646"
+          "hash": "b8e63f7a202b2673bd8e9eacf481d29205a5ac0115fa73e735bf16d931678335"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
@@ -19666,7 +19666,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "ddd9e47cc02fac185b163b6099134010d4d31d86fdbe42b716f1e7400017f9eb"
+          "hash": "b560b59d1550d7f426d3e47f4cd7ddef75d62193ba0efdcccd473f8e72f2fd21"
         },
         {
           "path": "skins.json",
@@ -23400,8 +23400,8 @@
         },
         {
           "path": "tmp/ui/EraBonuses.lua",
-          "size": 17998,
-          "hash": "9768f2c8ab213afa3f0bb7fbbf73e8f68d5ed85d0a72b4a20109ae656c9ab9f8"
+          "size": 17309,
+          "hash": "f1cbcdabed2384acfcac6d5afb9ca2bcaf9556c4cf6a3a1ed7776ed786c8024c"
         },
         {
           "path": "tmp/ui/EspionageOverview.lua",
