@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "packageVersion": "1.5.119",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-09-19T16:14:15.616613+00:00",
+  "createdUtc": "2026-09-19T17:50:34.4669152+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -19155,8 +19155,8 @@
         },
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xml",
-          "size": 889995,
-          "hash": "3d483451bc340b41b4db20596930a38bf94c35ac84983ddb42ce8004c2c301bb"
+          "size": 889934,
+          "hash": "f34632cadf4f7d694701d6f8510f09c4c6a82fdd3639879624cbf77ad26d17cb"
         },
         {
           "path": "Override/CIV5Trades.xml",
@@ -19340,8 +19340,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 9864819,
-          "hash": "9bf905c8f3a8b5c7c069bf02c6e0b9640d70f0d8b28eae8afb9622508f598817"
+          "size": 9864728,
+          "hash": "b8e63f7a202b2673bd8e9eacf481d29205a5ac0115fa73e735bf16d931678335"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
