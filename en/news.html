@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" data-base="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nova news</title>
+<meta name="description" content="Release announcements for the Nova mod pack, development progress, launcher updates.">
+<meta name="theme-color" content="#0D131A">
+<link rel="stylesheet" href="../assets/site.css">
+<link rel="alternate" hreflang="ru" href="../news.html">
+<link rel="alternate" hreflang="en" href="news.html">
+<link rel="alternate" hreflang="x-default" href="../news.html">
+<script src="../assets/lang.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="shell">
+<aside class="side" id="side" aria-label="Site sections">
+  <a class="mark" href="index.html">
+    <span class="mark-name">NOVA</span>
+    <span class="mark-rule"><b>PATCH</b></span>
+  </a>
+  <nav class="menu">
+      <a href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5,8.5 H17.5 A4.5,4.5 0 0 1 17.5,17.5 H6.5 A4.5,4.5 0 0 1 6.5,8.5 Z M9,11 V15 M7,13 H11 M13.9,12.4 A0.85,0.85 0 1 0 15.6,12.4 A0.85,0.85 0 1 0 13.9,12.4 Z M15.4,14.9 A0.85,0.85 0 1 0 17.1,14.9 A0.85,0.85 0 1 0 15.4,14.9 Z"/></svg>Mod</a>
+      <a href="changes.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5,20 H20.5 M6,20 V12.5 M11,20 V7 M16,20 V14.5 M20,20 V9.5"/></svg>What's changed</a>
+      <a href="news.html" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5,5 H15 L18.5,8.5 V19.5 H5.5 Z M15,5 V8.5 H18.5 M8.2,11.5 H15.8 M8.2,14.5 H15.8 M8.2,17.5 H13"/></svg>News</a>
+      <a href="stats.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4,4.5 V19.5 H20 M7,15.5 L10.5,11 L13.5,13.5 L19,7"/></svg>Stats</a>
+      <a href="tournament-rules.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.4,4.5 H15.6 V9.3 A3.6,3.6 0 0 1 8.4,9.3 Z M8.4,6 H5.7 A2.2,2.2 0 0 0 8.6,10.3 M15.6,6 H18.3 A2.2,2.2 0 0 1 15.4,10.3 M12,12.8 V15.9 M9,19.5 H15 M9.7,19.5 C9.7,17.4 10.7,15.9 12,15.9 C13.3,15.9 14.3,17.4 14.3,19.5"/></svg>Tournament rules</a>
+      <a href="media.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5,6 H19.5 V18 H4.5 Z M4.5,15 L9,10.5 L12.5,14 L15.5,11.5 L19.5,15.5 M15.6,9 A1,1 0 1 0 17.6,9 A1,1 0 1 0 15.6,9 Z"/></svg>Gallery</a>
+      <a href="subscribe.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12,4.4 L14.2,9.5 L19.7,10.1 L15.6,13.8 L16.8,19.3 L12,16.4 L7.2,19.3 L8.4,13.8 L4.3,10.1 L9.8,9.5 Z"/></svg>Subscription</a>
+      <a href="faq.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12,3.6 A8.4,8.4 0 1 1 12,20.4 A8.4,8.4 0 1 1 12,3.6 Z M9.6,9.7 A2.5,2.5 0 0 1 14.4,10.5 C14.4,12.3 12,12.5 12,14.3 M12,17.1 V17.2"/></svg>Help</a>
+  </nav>
+  <div class="langsw" role="group" aria-label="Язык сайта / Site language">
+    <a href="../news.html" data-lang="ru" hreflang="ru" lang="ru">RU</a>
+    <a href="news.html" data-lang="en" hreflang="en" aria-current="true">EN</a>
+  </div>
+  <div class="side-foot">
+    <p>mod <span data-nova="mod-version">…</span></p>
+    <p>launcher <span data-nova="client-version">…</span></p>
+    <p data-nova="domain-box" hidden><span data-nova="domain"></span></p>
+  </div>
+</aside>
+<div class="scrim" id="scrim"></div>
+
+<div class="col">
+  <div class="topbar">
+    <button class="burger" id="burger" type="button" aria-expanded="false"
+            aria-controls="side" aria-label="Site sections">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4,7 H20 M4,12 H20 M4,17 H20"/></svg>
+    </button>
+    <a class="topbrand" href="index.html">NOVA</a>
+    <div class="langsw" role="group" aria-label="Язык сайта / Site language">
+      <a href="../news.html" data-lang="ru" hreflang="ru" lang="ru">RU</a>
+      <a href="news.html" data-lang="en" hreflang="en" aria-current="true">EN</a>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="hero-emblem" aria-hidden="true">
+      <svg viewBox="1 2 30 19"><path d="M2,20 L16,3 L30,20 M8.5,20 L16,11 L23.5,20"/></svg>
+      <span class="n">NOVA</span><span class="r"></span><span class="p">PATCH</span>
+    </div>
+    <div class="hero-title">
+      <h1>News</h1>
+      <p class="sub">Release announcements, notes on changes and how development is going. The same feed the launcher shows: a post is written once and appears in both places. <b>Posts are published in Russian</b> — they are shown here as written.</p>
+    </div>
+  </header>
+
+  <main class="wrap" id="main">
+
+<div class="note">The news feed is written in Russian and is shown here exactly as published — we do
+not machine-translate it. The controls and dates on this page are in English.</div>
+
+<div class="filters" id="filters"></div>
+<p class="small dim" id="count"></p>
+
+<div id="news"><p class="dim">Loading…</p></div>
+
+</main>
+
+<footer>
+  <div class="cols">
+    <div><p>Nova <span data-nova="mod-version">…</span> · launcher <span data-nova="client-version">…</span></p></div>
+    <div><p><a href="index.html">Home</a> · <a href="changes.html">Changes</a> ·
+      <a href="faq.html">Help</a> ·
+      <a href="../oferta.html" hreflang="ru" lang="ru">Terms (in Russian)</a></p></div>
+  </div>
+  <p class="small">An unofficial fan project.</p>
+</footer>
+
+</div><!-- /col -->
+</div><!-- /shell -->
+
+<script src="../assets/site.js"></script>
+<script>
+NOVA.fillCommon();
+
+NOVA.news().then(text => {
+  const box = document.getElementById('news');
+  const filters = document.getElementById('filters');
+  const count = document.getElementById('count');
+
+  if (!text) {
+    box.innerHTML = '<p class="dim">Could not load the news feed. '
+      + 'Try reloading the page.</p>';
+    return;
+  }
+
+  const all = NOVA.parseNews(text);
+  if (!all.length) { box.innerHTML = '<p class="dim">No news yet.</p>'; return; }
+
+  const tags = Array.from(new Set(all.map(e => e.tag).filter(Boolean))).sort();
+  let active = '';
+
+  function draw() {
+    const list = active ? all.filter(e => e.tag === active) : all;
+    box.innerHTML = list.map(NOVA.newsHtml).join('');
+    count.textContent = 'posts: ' + list.length + ' of ' + all.length
+      + ', latest from ' + NOVA.ruDate(all[0].date);
+    Array.from(filters.children).forEach(b =>
+      b.setAttribute('aria-pressed', String(b.dataset.tag === active)));
+  }
+
+  // Метки новостей приходят из самого файла ленты и остаются русскими: это
+  // данные владельца, а не подпись интерфейса. Переведена только кнопка «все».
+  const mk = (label, tag) => {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.textContent = label;
+    b.dataset.tag = tag;
+    b.addEventListener('click', () => { active = tag; draw(); });
+    filters.appendChild(b);
+  };
+  mk('all', '');
+  tags.forEach(t => mk(t.toLowerCase(), t));
+  draw();
+});
+</script>
+</body>
+</html>

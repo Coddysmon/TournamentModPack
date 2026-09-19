@@ -30,6 +30,22 @@
 
 const NOVA = (() => {
 
+  /* ------------------------------------------------------------ язык и путь
+
+     Английские страницы — те же файлы, переведённые, в подкаталоге /en/.
+     Разметка сообщает скрипту две вещи атрибутами <html>:
+       lang="en"        — какой язык показывать в подписях, которые рисует JS;
+       data-base="../"  — сколько подняться до корня сайта, где лежат данные
+                          (manifest.json, news.txt, data/…). Без этого страница
+                          из /en/ полезла бы за /en/manifest.json и получила 404.
+
+     Всё, что приходит из данных (новости, названия обликов, цены), на обоих
+     языках одинаковое: это данные, а не интерфейс. Переводятся подписи. */
+  const LANG = String(document.documentElement.lang || 'ru').slice(0, 2).toLowerCase() === 'en' ? 'en' : 'ru';
+  const BASE = document.documentElement.getAttribute('data-base') || '';
+  const EN = LANG === 'en';
+  const t = (ru, en) => (EN ? en : ru);
+
   /* Последнее известное на момент сборки страницы. Показывается ТОЛЬКО когда
      живые данные не доехали, и всегда с пометкой. Дата обязательна: без неё
      число выглядит свежим. */
@@ -48,20 +64,27 @@ const NOVA = (() => {
   const $ = (sel, root) => (root || document).querySelector(sel);
   const $$ = (sel, root) => Array.from((root || document).querySelectorAll(sel));
 
-  const mb = bytes => (bytes / 1048576).toFixed(1).replace('.', ',') + ' МБ';
+  const mb = bytes => EN
+    ? (bytes / 1048576).toFixed(1) + ' MB'
+    : (bytes / 1048576).toFixed(1).replace('.', ',') + ' МБ';
 
   const RU_MONTH = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня',
     'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'];
+  const EN_MONTH = ['January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'August', 'September', 'October', 'November', 'December'];
+  /* Имя ruDate осталось прежним: его зовут страницы. На английской странице
+     та же функция даёт «19 September 2026» — день-месяц-год, без запятой,
+     как принято в британском наборе и как короче читается рядом с версиями. */
   function ruDate(iso) {
     const d = new Date(iso);
     if (isNaN(d)) return String(iso);
-    return d.getUTCDate() + ' ' + RU_MONTH[d.getUTCMonth()] + ' ' + d.getUTCFullYear();
+    return d.getUTCDate() + ' ' + (EN ? EN_MONTH : RU_MONTH)[d.getUTCMonth()] + ' ' + d.getUTCFullYear();
   }
 
   /* --------------------------------------------------------------- загрузка */
 
   async function grab(path, kind) {
-    const r = await fetch(path, { cache: 'no-cache' });
+    const r = await fetch(BASE + path, { cache: 'no-cache' });
     if (!r.ok) throw new Error(path + ': HTTP ' + r.status);
     // Response.text() по спецификации декодирует как UTF-8 независимо от
     // Content-Type — поэтому русский текст из .txt приходит целым.
@@ -206,7 +229,7 @@ const NOVA = (() => {
       + '<h3>' + esc(e.title) + '</h3>'
       + e.paras.map(p => '<p>' + esc(p) + '</p>').join('')
       + (e.url && /^https?:\/\//i.test(e.url)
-        ? '<p><a href="' + esc(e.url) + '" rel="noopener">Подробнее</a></p>' : '')
+        ? '<p><a href="' + esc(e.url) + '" rel="noopener">' + t('Подробнее', 'Read more') + '</a></p>' : '')
       + '</article>';
   }
 
@@ -257,7 +280,8 @@ const NOVA = (() => {
   /* ------------------------------------------------- общие куски страницы */
 
   function markStale(el) {
-    el.title = 'Свежие данные получить не удалось, показано последнее известное на '
+    el.title = t('Свежие данные получить не удалось, показано последнее известное на ',
+      'Could not fetch current data; showing the last known value as of ')
       + FALLBACK.asOf;
     el.classList.add('dim');
   }
@@ -346,7 +370,7 @@ const NOVA = (() => {
         el.href = c.url;
         el.removeAttribute('aria-disabled');
         const v = $('[data-nova="download-label"]', el);
-        if (v) v.textContent = 'Скачать лаунчер' + (c.version ? ' ' + c.version : '');
+        if (v) v.textContent = t('Скачать лаунчер', 'Download the launcher') + (c.version ? ' ' + c.version : '');
       } else {
         el.href = FALLBACK.clientUrl;
         el.removeAttribute('aria-disabled');
@@ -382,7 +406,8 @@ const NOVA = (() => {
       } else {
         el.href = '#';
         el.setAttribute('aria-disabled', 'true');
-        el.title = 'Ссылка-приглашение ещё не получена от владельца';
+        el.title = t('Ссылка-приглашение ещё не получена от владельца',
+          'The owner has not provided an invite link yet');
       }
     });
     $$('[data-nova="discord-missing"]').forEach(el => {
@@ -457,7 +482,7 @@ const NOVA = (() => {
   document.addEventListener('DOMContentLoaded', () => { menu(); nav(); });
 
   return {
-    esc, $, $$, mb, ruDate, FALLBACK,
+    esc, $, $$, mb, ruDate, FALLBACK, LANG, BASE, t,
     release, tiers, donate, news, site, skins,
     parseNews, newsHtml, fillCommon,
     lazyImages, lazyNow: loadNearViewport,

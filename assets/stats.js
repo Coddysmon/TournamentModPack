@@ -39,7 +39,13 @@
 'use strict';
 
 (() => {
-  const N = NOVA_STATS_NAMES;
+  /* Язык страницы. Английские подписи цивилизаций и побед лежат в отдельном
+     файле, который подключает только английская страница; нет файла —
+     показываем русские названия, а не пустоту. */
+  const EN = NOVA.LANG === 'en';
+  const L = (ru, en) => (EN ? en : ru);
+  const EN_NAMES = EN && typeof NOVA_STATS_NAMES_EN !== 'undefined' ? NOVA_STATS_NAMES_EN : null;
+  const N = EN_NAMES || NOVA_STATS_NAMES;
   const esc = NOVA.esc;
   const $ = NOVA.$;
 
@@ -70,20 +76,27 @@
   };
   const dsTitle = k => (DS.get(k) || {}).title || pretty(k);
   const civName = k => N.civs[k] || pretty(k);
-  const victoryName = k => !k ? 'Без итога' : (N.victories[k] || pretty(k));
-  const nf1 = new Intl.NumberFormat('ru-RU', { maximumFractionDigits: 1 });
-  const nf0 = new Intl.NumberFormat('ru-RU', { maximumFractionDigits: 0 });
+  const victoryName = k => !k ? L('Без итога', 'No result') : (N.victories[k] || pretty(k));
+  const nf1 = new Intl.NumberFormat(EN ? 'en-US' : 'ru-RU', { maximumFractionDigits: 1 });
+  const nf0 = new Intl.NumberFormat(EN ? 'en-US' : 'ru-RU', { maximumFractionDigits: 0 });
   const num = v => v == null || isNaN(v) ? '—' : (Math.abs(v) >= 100 ? nf0 : nf1).format(v);
   const pct = (a, b) => b ? Math.round(100 * a / b) + '%' : '—';
   const RU_MONTH_SHORT = ['янв', 'фев', 'мар', 'апр', 'мая', 'июн', 'июл', 'авг', 'сен', 'окт', 'ноя', 'дек'];
+  const EN_MONTH_SHORT = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   const shortDate = iso => {
     const d = new Date(iso);
-    return isNaN(d) ? '—' : d.getDate() + ' ' + RU_MONTH_SHORT[d.getMonth()] + ' ' + d.getFullYear();
+    if (isNaN(d)) return '—';
+    return EN ? d.getDate() + ' ' + EN_MONTH_SHORT[d.getMonth()] + ' ' + d.getFullYear()
+      : d.getDate() + ' ' + RU_MONTH_SHORT[d.getMonth()] + ' ' + d.getFullYear();
   };
   const plural = (n, one, few, many) => {
     const a = n % 100, b = n % 10;
     return (a > 10 && a < 20) ? many : b === 1 ? one : (b > 1 && b < 5) ? few : many;
   };
+  /* Русские склонения и английская пара «одно/много» — разные вещи, поэтому
+     на месте вызова стоит одна функция: три русские формы и две английские. */
+  const word = (n, one, few, many, enOne, enMany) =>
+    EN ? (n === 1 ? enOne : enMany) : plural(n, one, few, many);
 
   /* -------------------------------------------------------------- данные */
 
@@ -92,13 +105,17 @@
 
   let sourceP = null;
   function source() {
-    if (!sourceP) sourceP = fetch('data/stats-source.json', { cache: 'no-cache' })
+    if (!sourceP) sourceP = fetch(NOVA.BASE + 'data/stats-source.json', { cache: 'no-cache' })
       .then(r => r.ok ? r.json() : null)
       .catch(() => null)
       .then(s => {
         const mode = s && (s.mode === 'live' || s.mode === 'static') ? s.mode : 'static';
         let base = s && typeof s.base === 'string' && s.base.trim() ? s.base.trim() : 'data/stats/';
         if (!base.endsWith('/')) base += '/';
+        // Английская страница лежит в /en/, а адрес источника в файле записан от
+        // КОРНЯ сайта («../nova-stats/»). Без этой поправки запрос со страницы
+        // /en/stats.html ушёл бы на уровень выше, чем нужно.
+        if (!/^(https?:)?\/\//i.test(base)) base = NOVA.BASE + base;
         // http с https-страницы браузер молча заблокирует (mixed content) — лучше
         // сказать об этом прямо, чем показывать «данных нет».
         const insecure = /^http:\/\//i.test(base) && location.protocol === 'https:';
@@ -120,7 +137,7 @@
   const str = v => typeof v === 'string' ? v.trim() : '';
   let dictP = null;
   function dictionary() {
-    if (!dictP) dictP = getJson('data/replay-datasets.json')
+    if (!dictP) dictP = getJson(NOVA.BASE + 'data/replay-datasets.json')
       .then(j => {
         if (!j || j.missing || !Array.isArray(j.datasets)) throw new Error('data/replay-datasets.json: нет списка рядов');
         DICT.groups = (Array.isArray(j.groups) ? j.groups : [])
@@ -131,6 +148,23 @@
           scale: Number.isInteger(d.scale) && d.scale > 1 ? d.scale : 1,
           hidden: d.hidden === true,
         }));
+        /* Английские названия рядов — накладка сайта поверх общего словаря
+           лаунчера (его переводить у источника нельзя: по нему работает
+           программа). Ключа нет в накладке — берём название из ключа, оно и
+           так английское: REPLAYDATASET_TOTALGOLD → «Totalgold» хуже, чем
+           русское, поэтому падаем обратно на русское только если и накладки
+           нет вовсе. */
+        if (EN && typeof NOVA_STATS_DATASETS_EN !== 'undefined') {
+          const over = NOVA_STATS_DATASETS_EN;
+          DICT.groups.forEach(g => { if (over.groups && over.groups[g.id]) g.title = over.groups[g.id]; });
+          DICT.datasets.forEach(d => {
+            const o = over.datasets && over.datasets[d.key];
+            if (!o) return;
+            if (o.title) d.title = o.title;
+            d.unit = o.unit || '';
+            d.hint = o.hint || '';
+          });
+        }
         DICT.datasets.forEach(d => DS.set(d.key, d));
       })
       .catch(e => console.warn(e));   // без словаря — подписи по ключу, страница работает
@@ -215,12 +249,15 @@
   const linkPlayer = name => '<a href="' + esc(hashOf({ Tab: 'Player', Player: name })) + '">' + esc(name) + '</a>';
   const linkMatch = (m, text) => '<a href="' + esc(hashOf({ Tab: 'Match', Match: m.key })) + '">'
     + esc(text || matchTitle(m)) + '</a>';
-  const matchTitle = m => m.no ? 'Партия №' + m.no : 'Партия ' + m.key.slice(0, 8);
+  const matchTitle = m => m.no ? L('Партия №', 'Match #') + m.no : L('Партия ', 'Match ') + m.key.slice(0, 8);
   const humans = m => m.players.filter(p => p.isHuman);
   /* Доиграна — только по полю службы (см. шапку), без своих догадок. */
   const done = m => m.finished === true;
   const winnerOf = m => done(m) ? m.players.filter(p => p.won) : [];
-  const UNFINISHED = '<span class="tag st-unfinished" title="Партия не доиграна: победителя нет, места — порядок по очкам на момент выхода">не доиграна</span>';
+  const UNFINISHED = '<span class="tag st-unfinished" title="'
+    + L('Партия не доиграна: победителя нет, места — порядок по очкам на момент выхода',
+      'The match was not played out: there is no winner, and places are the score order at the moment people left')
+    + '">' + L('не доиграна', 'not played out') + '</span>';
 
   /* ---------------------------------------------------------- агрегаты */
 
@@ -273,13 +310,14 @@
   }
 
   function matchRows(list) {
-    return tableWrap('<table class="st"><thead><tr><th scope="col">Партия</th><th scope="col">Дата</th>'
-      + '<th scope="col" class="num">Игроков</th><th scope="col">Победа</th><th scope="col" class="num">Ходов</th></tr></thead><tbody>'
+    return tableWrap('<table class="st"><thead><tr><th scope="col">' + L('Партия', 'Match') + '</th><th scope="col">' + L('Дата', 'Date') + '</th>'
+      + '<th scope="col" class="num">' + L('Игроков', 'Players') + '</th><th scope="col">' + L('Победа', 'Won by') + '</th>'
+      + '<th scope="col" class="num">' + L('Ходов', 'Turns') + '</th></tr></thead><tbody>'
       + list.map(m => {
         const w = winnerOf(m);
         return '<tr><td>' + linkMatch(m) + '</td><td>' + esc(shortDate(m.at)) + '</td>'
           + '<td class="num">' + humans(m).length + '</td>'
-          + '<td>' + (!done(m) ? UNFINISHED : w.length ? w.map(p => p.isHuman ? linkPlayer(p.name) : esc(p.name) + ' <span class="tag">ИИ</span>').join(', ')
+          + '<td>' + (!done(m) ? UNFINISHED : w.length ? w.map(p => p.isHuman ? linkPlayer(p.name) : esc(p.name) + ' <span class="tag">' + L('ИИ', 'AI') + '</span>').join(', ')
             + ' <span class="dim">· ' + esc(victoryName(m.victoryType)) + '</span>'
             : '<span class="dim">' + esc(victoryName(m.victoryType)) + '</span>') + '</td>'
           + '<td class="num">' + num(m.turns) + '</td></tr>';
@@ -294,14 +332,14 @@
     const optgroup = (label, opts) => opts.length ? '<optgroup label="' + esc(label) + '">' + opts.map(option).join('') + '</optgroup>' : '';
     // «Главное» — по номеру main (тот же короткий список, что в лаунчере); дальше группы
     // в порядке словаря, внутри — как в словаре. Главные в своей группе не повторяются.
-    const groups = optgroup('Главное', shown.filter(d => d.main).sort((a, b) => a.main - b.main))
+    const groups = optgroup(L('Главное', 'Main'), shown.filter(d => d.main).sort((a, b) => a.main - b.main))
       + DICT.groups.map(g => optgroup(g.title, shown.filter(d => !d.main && d.group === g.id))).join('')
-      + optgroup('Прочее', shown.filter(d => !d.main && !DICT.groups.some(g => g.id === d.group)));
+      + optgroup(L('Прочее', 'Other'), shown.filter(d => !d.main && !DICT.groups.some(g => g.id === d.group)));
     // Ряды, которых нет в словаре (новая версия мода), — отдельной группой, по ключу.
     const extra = avail ? [...avail].filter(k => !DS.has(k)).sort() : [];
-    const tail = extra.length ? '<optgroup label="Новые ряды">' + extra.map(k =>
+    const tail = extra.length ? '<optgroup label="' + esc(L('Новые ряды', 'New data sets')) + '">' + extra.map(k =>
       '<option value="' + esc(k) + '"' + (k === current ? ' selected' : '') + '>' + esc(pretty(k)) + '</option>').join('') + '</optgroup>' : '';
-    return '<label>Показатель<select id="' + id + '">' + groups + tail + '</select></label>';
+    return '<label>' + L('Показатель', 'Data set') + '<select id="' + id + '">' + groups + tail + '</select></label>';
   }
 
   const unitOf = k => (DS.get(k) || {}).unit || '';
@@ -309,8 +347,8 @@
      «Содержание зданий · золота за ход» — да. «ед.» ничего не объясняет. */
   const unitNote = k => {
     const u = unitOf(k), t = dsTitle(k).toLowerCase();
-    if (!u || u === 'ед.' || t.includes(u.toLowerCase())) return '';
-    if (/за ход$/.test(u) && /за ход/.test(t)) return '';
+    if (!u || u === L('ед.', 'units') || t.includes(u.toLowerCase())) return '';
+    if (EN ? (/per turn$/.test(u) && /per turn/.test(t)) : (/за ход$/.test(u) && /за ход/.test(t))) return '';
     return ' · ' + u;
   };
   const hintNote = k => { const h = (DS.get(k) || {}).hint; return h ? ' — ' + h : ''; };
@@ -335,7 +373,7 @@
     const lines = cfg.lines.filter(l => l.turns.length);
     host.innerHTML = '';
     if (!lines.length) {
-      host.innerHTML = '<p class="dim st-empty-chart">Этого показателя в партиях нет.</p>';
+      host.innerHTML = '<p class="dim st-empty-chart">' + L('Этого показателя в партиях нет.', 'These matches have no data for this set.') + '</p>';
       return;
     }
     const wrap = document.createElement('div');
@@ -368,7 +406,7 @@
       const xT = niceTicks(xMin, xMax, W < 520 ? 4 : 8).filter(t => t >= xMin && t <= xMax);
 
       let s = '<svg xmlns="' + svgNS + '" viewBox="0 0 ' + W + ' ' + H + '" width="' + W + '" height="' + H
-        + '" role="img" aria-label="' + esc(cfg.title || 'График по ходам') + '">';
+        + '" role="img" aria-label="' + esc(cfg.title || L('График по ходам', 'Chart by turn')) + '">';
       s += yT.map(v => '<line class="grid" x1="' + padL + '" x2="' + (W - padR) + '" y1="' + Y(v) + '" y2="' + Y(v) + '"/>'
         + '<text class="ax" x="' + (padL - 6) + '" y="' + (Y(v) + 4) + '" text-anchor="end">' + esc(num(v)) + '</text>').join('');
       s += xT.map(t => '<text class="ax" x="' + X(t) + '" y="' + (H - 10) + '" text-anchor="middle">' + t + '</text>').join('');
@@ -407,11 +445,11 @@
         cross.setAttribute('visibility', 'visible');
         rows.sort((a, b) => b.v - a.v);
         const shown = rows.slice(0, 8);
-        tip.innerHTML = '<b>Ход ' + t + '</b>' + (rows.length ? shown.map(r2 =>
+        tip.innerHTML = '<b>' + L('Ход ', 'Turn ') + t + '</b>' + (rows.length ? shown.map(r2 =>
           '<div><i style="background:' + (r2.l.color === MUTED ? WIN : r2.l.color) + '"></i><span>' + esc(r2.l.label)
           + '</span><em>' + esc(num(r2.v)) + '</em></div>').join('')
-          + (rows.length > shown.length ? '<div class="more">и ещё ' + (rows.length - shown.length) + '</div>' : '')
-          : '<div class="more">нет данных на этом ходу</div>');
+          + (rows.length > shown.length ? '<div class="more">' + L('и ещё ', 'and ') + (rows.length - shown.length) + L('', ' more') + '</div>' : '')
+          : '<div class="more">' + L('нет данных на этом ходу', 'no data on this turn') + '</div>');
         tip.hidden = false;
         const wx = X(t) * (r.width / W);
         const tw = tip.offsetWidth;
@@ -450,7 +488,8 @@
     if (turns[turns.length - 1] !== xMax) turns.push(xMax);
     const det = document.createElement('details');
     det.className = 'st-values';
-    det.innerHTML = '<summary>Таблица значений</summary>' + tableWrap('<table class="st"><thead><tr><th scope="col">Ход</th>'
+    det.innerHTML = '<summary>' + L('Таблица значений', 'Table of values') + '</summary>'
+      + tableWrap('<table class="st"><thead><tr><th scope="col">' + L('Ход', 'Turn') + '</th>'
       + lines.map(l => '<th scope="col" class="num">' + esc(l.label) + '</th>').join('') + '</tr></thead><tbody>'
       + turns.map(t => '<tr><td>' + t + '</td>' + lines.map((l, i) => '<td class="num">' + esc(num(lookup[i].get(t))) + '</td>').join('') + '</tr>').join('')
       + '</tbody></table>');
@@ -464,24 +503,33 @@
   const app = () => $('#stats-app');
 
   function tabs(st) {
-    const t = [['Overview', 'Обзор'], ['Player', 'Игрок'], ['Match', 'Партия']];
-    return '<nav class="filters st-tabs" aria-label="Вкладки статистики">' + t.map(([k, title]) =>
+    const t = [['Overview', L('Обзор', 'Overview')], ['Player', L('Игрок', 'Player')], ['Match', L('Партия', 'Match')]];
+    return '<nav class="filters st-tabs" aria-label="' + esc(L('Вкладки статистики', 'Statistics tabs')) + '">' + t.map(([k, title]) =>
       '<a href="' + esc(hashOf({ Tab: k })) + '"' + (st.Tab === k ? ' aria-current="page"' : '') + '>' + title + '</a>').join('') + '</nav>';
   }
 
   function emptyState() {
-    return '<div class="todo st-nodata"><p><b>Партий пока нет.</b> Здесь появятся сетевые партии, сыгранные через '
-      + 'лаунчер Nova: после выхода из игры лаунчер сам отправляет журнал партии, и партия попадает в статистику, '
-      + 'когда журналы прислали хотя бы два её участника.</p>'
-      + '<ul><li>Одиночные партии, «горячее кресло» и игры по переписке не публикуются.</li>'
-      + '<li>Показываются ники из партии, цивилизации, места и ряды по ходам. Номер Steam не публикуется никогда.</li></ul></div>';
+    return EN
+      ? '<div class="todo st-nodata"><p><b>No matches yet.</b> Multiplayer matches played through the Nova launcher '
+        + 'will show up here: when you leave the game the launcher sends the match log by itself, and a match enters '
+        + 'the statistics once at least two of its participants have sent theirs.</p>'
+        + '<ul><li>Single-player, hotseat and play-by-e-mail games are never published.</li>'
+        + '<li>What is shown: the names used in the match, civilizations, places and per-turn data. Steam IDs are never published.</li></ul></div>'
+      : '<div class="todo st-nodata"><p><b>Партий пока нет.</b> Здесь появятся сетевые партии, сыгранные через '
+        + 'лаунчер Nova: после выхода из игры лаунчер сам отправляет журнал партии, и партия попадает в статистику, '
+        + 'когда журналы прислали хотя бы два её участника.</p>'
+        + '<ul><li>Одиночные партии, «горячее кресло» и игры по переписке не публикуются.</li>'
+        + '<li>Показываются ники из партии, цивилизации, места и ряды по ходам. Номер Steam не публикуется никогда.</li></ul></div>';
   }
 
   function failState(why) {
     const text = why === 'mixed'
-      ? 'Источник статистики настроен на адрес по http, а сайт открыт по https — браузер такие запросы запрещает. Нужен https-адрес или срезы рядом с сайтом.'
-      : why === 'bad' ? 'Источник статистики настроен неверно (data/stats-source.json).'
-        : 'Статистику сейчас получить не удалось. Попробуйте обновить страницу позже — сами партии никуда не деваются.';
+      ? L('Источник статистики настроен на адрес по http, а сайт открыт по https — браузер такие запросы запрещает. Нужен https-адрес или срезы рядом с сайтом.',
+        'The statistics source points at an http address while the site is served over https — the browser forbids such requests. It needs an https address, or the data next to the site.')
+      : why === 'bad' ? L('Источник статистики настроен неверно (data/stats-source.json).',
+        'The statistics source is misconfigured (data/stats-source.json).')
+        : L('Статистику сейчас получить не удалось. Попробуйте обновить страницу позже — сами партии никуда не деваются.',
+          'The statistics could not be loaded right now. Try again later — the matches themselves are not going anywhere.');
     return '<div class="note stop">' + esc(text) + '</div>';
   }
 
@@ -503,53 +551,66 @@
     const median = turns.length ? turns[Math.floor((turns.length - 1) / 2)] : null;
     const avg = turns.length ? turns.reduce((a, b) => a + b, 0) / turns.length : null;
 
-    let h = '<div class="skin-controls st-controls"><label>Версия мода<select id="st-ver"><option value="">Все версии</option>'
+    let h = '<div class="skin-controls st-controls"><label>' + L('Версия мода', 'Mod version')
+      + '<select id="st-ver"><option value="">' + L('Все версии', 'All versions') + '</option>'
       + versions.map(v => '<option' + (v === ver ? ' selected' : '') + '>' + esc(v) + '</option>').join('')
-      + '</select></label><span class="dim small skin-count">' + (idx.generated ? 'Данные на ' + esc(shortDate(idx.generated)) : '') + '</span></div>';
+      + '</select></label><span class="dim small skin-count">'
+      + (idx.generated ? L('Данные на ', 'Data as of ') + esc(shortDate(idx.generated)) : '') + '</span></div>';
 
-    h += '<div class="badges"><div><b>' + ms.length + '</b><span>' + plural(ms.length, 'партия', 'партии', 'партий')
-      + (unfinished ? ' · не доиграно ' + unfinished : '') + '</span></div>'
-      + '<div><b>' + ps.length + '</b><span>' + plural(ps.length, 'игрок', 'игрока', 'игроков') + '</span></div>'
-      + '<div><b>' + (median != null ? median : '—') + '</b><span>ходов, медиана</span></div>'
-      + '<div><b>' + (avg != null ? num(avg) : '—') + '</b><span>ходов в среднем</span></div></div>';
+    h += '<div class="badges"><div><b>' + ms.length + '</b><span>' + word(ms.length, 'партия', 'партии', 'партий', 'match', 'matches')
+      + (unfinished ? L(' · не доиграно ', ' · not played out: ') + unfinished : '') + '</span></div>'
+      + '<div><b>' + ps.length + '</b><span>' + word(ps.length, 'игрок', 'игрока', 'игроков', 'player', 'players') + '</span></div>'
+      + '<div><b>' + (median != null ? median : '—') + '</b><span>' + L('ходов, медиана', 'turns, median') + '</span></div>'
+      + '<div><b>' + (avg != null ? num(avg) : '—') + '</b><span>' + L('ходов в среднем', 'turns on average') + '</span></div></div>';
 
     // Типы побед
     // Только доигранные; не доигранные — отдельной строкой, без доли.
     const vt = new Map();
     fin.forEach(m => vt.set(m.victoryType || '', (vt.get(m.victoryType || '') || 0) + 1));
     const vRows = [...vt.entries()].map(([k, n]) => ({ label: victoryName(k), n })).sort((a, b) => b.n - a.n);
-    h += '<div class="st-two"><section><h2>Типы побед</h2>'
-      + (fin.length ? bars(vRows, fin.length) : '<p class="dim">Доигранных партий пока нет.</p>')
-      + (unfinished ? '<p class="small dim">Не доиграно (без победителя или свёрнуто): ' + unfinished + ' — в типы побед не входят.</p>' : '')
+    h += '<div class="st-two"><section><h2>' + L('Типы побед', 'Victory types') + '</h2>'
+      + (fin.length ? bars(vRows, fin.length) : '<p class="dim">' + L('Доигранных партий пока нет.', 'No matches have been played out yet.') + '</p>')
+      + (unfinished ? '<p class="small dim">'
+        + L('Не доиграно (без победителя или свёрнуто): ', 'Not played out (no winner, or scrapped): ') + unfinished
+        + L(' — в типы побед не входят.', ' — these are left out of the victory types.') + '</p>' : '')
       + '</section>';
 
     // Длительность
     const edges = [0, 100, 150, 200, 250, 300, Infinity];
     const dRows = edges.slice(0, -1).map((lo, i) => {
       const hi = edges[i + 1];
-      return { label: hi === Infinity ? lo + ' и больше' : lo === 0 ? 'до ' + hi : lo + '–' + (hi - 1), n: turns.filter(t => t >= lo && t < hi).length };
+      return { label: hi === Infinity ? lo + L(' и больше', ' and up') : lo === 0 ? L('до ', 'under ') + hi : lo + '–' + (hi - 1), n: turns.filter(t => t >= lo && t < hi).length };
     });
-    h += '<section><h2>Длительность партий, ходов</h2>' + bars(dRows, turns.length) + '</section></div>';
+    h += '<section><h2>' + L('Длительность партий, ходов', 'Match length, turns') + '</h2>' + bars(dRows, turns.length) + '</section></div>';
 
     // Цивилизации
     const cs = civStats(ms);
-    h += '<h2>Цивилизации</h2><p class="small dim">Винрейт — доля побед среди доигранных партий, где цивилизацию взял человек. '
-      + 'Не доигранные партии (без победителя или свёрнутые) и цивилизации ИИ в подсчёт не входят. Меньше ' + SMALL_SAMPLE
-      + ' партий — это случайность, а не сила цивилизации: такие строки помечены.</p>';
-    h += cs.length ? tableWrap('<table class="st"><thead><tr><th scope="col">Цивилизация</th><th scope="col" class="num">Партий</th>'
-      + '<th scope="col" class="num">Побед</th><th scope="col">Винрейт</th><th scope="col" class="num">Ср. место</th></tr></thead><tbody>'
+    h += '<h2>' + L('Цивилизации', 'Civilizations') + '</h2><p class="small dim">'
+      + L('Винрейт — доля побед среди доигранных партий, где цивилизацию взял человек. '
+        + 'Не доигранные партии (без победителя или свёрнутые) и цивилизации ИИ в подсчёт не входят. Меньше ' + SMALL_SAMPLE
+        + ' партий — это случайность, а не сила цивилизации: такие строки помечены.',
+        'The win rate counts wins among matches that were played out and where a human took the civilization. '
+        + 'Matches that were not played out (no winner, or scrapped) and AI civilizations are left out. Fewer than ' + SMALL_SAMPLE
+        + ' matches is chance, not civilization strength: those rows are marked.') + '</p>';
+    h += cs.length ? tableWrap('<table class="st"><thead><tr><th scope="col">' + L('Цивилизация', 'Civilization') + '</th>'
+      + '<th scope="col" class="num">' + L('Партий', 'Matches') + '</th>'
+      + '<th scope="col" class="num">' + L('Побед', 'Wins') + '</th><th scope="col">' + L('Винрейт', 'Win rate') + '</th>'
+      + '<th scope="col" class="num">' + L('Ср. место', 'Avg. place') + '</th></tr></thead><tbody>'
       + cs.map(c => {
         const small = c.n < SMALL_SAMPLE;
         const w = c.wins / c.n;
         return '<tr' + (small ? ' class="small-n"' : '') + '><td><b>' + esc(civName(c.civ)) + '</b></td><td class="num">' + c.n + '</td>'
           + '<td class="num">' + c.wins + '</td><td class="wr"><span class="wr-bar"><i style="width:' + (100 * w).toFixed(1) + '%"></i></span>'
-          + '<span class="wr-v">' + pct(c.wins, c.n) + '</span>' + (small ? ' <span class="tag st-small">мало данных</span>' : '') + '</td>'
+          + '<span class="wr-v">' + pct(c.wins, c.n) + '</span>'
+          + (small ? ' <span class="tag st-small">' + L('мало данных', 'small sample') + '</span>' : '') + '</td>'
           + '<td class="num">' + num(c.placeSum / c.n) + '</td></tr>';
-      }).join('') + '</tbody></table>') : '<p class="dim">Доигранных партий пока нет.</p>';
+      }).join('') + '</tbody></table>') : '<p class="dim">' + L('Доигранных партий пока нет.', 'No matches have been played out yet.') + '</p>';
 
     // Игроки
-    h += '<h2>Игроки</h2>' + tableWrap('<table class="st"><thead><tr><th scope="col">Игрок</th><th scope="col" class="num">Партий</th>'
-      + '<th scope="col" class="num">Побед</th><th scope="col" class="num">Винрейт</th><th scope="col" class="num">Ср. место</th><th scope="col">Чаще всего</th></tr></thead><tbody>'
+    h += '<h2>' + L('Игроки', 'Players') + '</h2>' + tableWrap('<table class="st"><thead><tr>'
+      + '<th scope="col">' + L('Игрок', 'Player') + '</th><th scope="col" class="num">' + L('Партий', 'Matches') + '</th>'
+      + '<th scope="col" class="num">' + L('Побед', 'Wins') + '</th><th scope="col" class="num">' + L('Винрейт', 'Win rate') + '</th>'
+      + '<th scope="col" class="num">' + L('Ср. место', 'Avg. place') + '</th><th scope="col">' + L('Чаще всего', 'Most played') + '</th></tr></thead><tbody>'
       + ps.map(p => {
         const fav = [...p.civs.entries()].sort((a, b) => b[1] - a[1])[0];
         return '<tr><td>' + linkPlayer(p.name) + '</td><td class="num">' + p.matches + '</td><td class="num">' + p.wins + '</td>'
@@ -557,7 +618,7 @@
           + '<td>' + (fav ? esc(civName(fav[0])) : '—') + '</td></tr>';
       }).join('') + '</tbody></table>');
 
-    h += '<h2>Последние партии</h2>' + matchRows(ms.slice(0, 15));
+    h += '<h2>' + L('Последние партии', 'Latest matches') + '</h2>' + matchRows(ms.slice(0, 15));
     app().innerHTML = tabs(st) + h;
     $('#st-ver').addEventListener('change', e => replace(Object.assign({}, st, { Version: e.target.value || undefined })));
   }
@@ -566,14 +627,19 @@
     const ps = players(idx.matches);
     const name = st.Player || '';
     const me = ps.find(p => p.name === name) || ps.find(p => p.name.toLowerCase() === name.toLowerCase());
-    let h = tabs(st) + '<form class="skin-controls st-controls" id="st-pick"><label>Игрок<input id="st-player" list="st-players" autocomplete="off" value="'
-      + esc(me ? me.name : name) + '" placeholder="ник из партии"></label><datalist id="st-players">'
-      + ps.map(p => '<option value="' + esc(p.name) + '">').join('') + '</datalist><button class="btn" type="submit">Показать</button></form>';
+    let h = tabs(st) + '<form class="skin-controls st-controls" id="st-pick"><label>' + L('Игрок', 'Player')
+      + '<input id="st-player" list="st-players" autocomplete="off" value="'
+      + esc(me ? me.name : name) + '" placeholder="' + esc(L('ник из партии', 'name used in the match')) + '"></label><datalist id="st-players">'
+      + ps.map(p => '<option value="' + esc(p.name) + '">').join('') + '</datalist><button class="btn" type="submit">'
+      + L('Показать', 'Show') + '</button></form>';
 
     if (!me) {
-      h += (name ? '<div class="note">Партий с игроком «' + esc(name) + '» в статистике нет. Ник сравнивается с тем, под которым человек сидел в партии.</div>' : '')
-        + '<h2>Все игроки</h2><div class="st-people">' + ps.map(p => '<a class="card link" href="' + esc(hashOf({ Tab: 'Player', Player: p.name }))
-          + '"><h3>' + esc(p.name) + '</h3><p>' + p.matches + ' ' + plural(p.matches, 'партия', 'партии', 'партий') + ' · побед ' + p.wins + '</p></a>').join('') + '</div>';
+      h += (name ? '<div class="note">' + L('Партий с игроком «', 'No matches with the player “') + esc(name)
+        + L('» в статистике нет. Ник сравнивается с тем, под которым человек сидел в партии.',
+          '” are in the statistics. The name is matched against the one the person used in the match.') + '</div>' : '')
+        + '<h2>' + L('Все игроки', 'All players') + '</h2><div class="st-people">' + ps.map(p => '<a class="card link" href="' + esc(hashOf({ Tab: 'Player', Player: p.name }))
+          + '"><h3>' + esc(p.name) + '</h3><p>' + p.matches + ' ' + word(p.matches, 'партия', 'партии', 'партий', 'match', 'matches')
+          + L(' · побед ', ' · wins: ') + p.wins + '</p></a>').join('') + '</div>';
       app().innerHTML = h;
       bindPick(st);
       return;
@@ -583,22 +649,26 @@
     const list = me.list.slice().sort((a, b) => String(b.m.at).localeCompare(String(a.m.at)));
     const finList = list.filter(x => done(x.m));
     const turnsAvg = finList.length ? finList.reduce((a, x) => a + (x.m.turns || 0), 0) / finList.length : null;
-    h += '<div class="badges"><div><b>' + me.matches + '</b><span>' + plural(me.matches, 'партия', 'партии', 'партий') + '</span></div>'
-      + '<div><b>' + me.wins + '</b><span>побед · ' + pct(me.wins, me.decisive)
-      + (me.matches > me.decisive ? ' · не доиграно ' + (me.matches - me.decisive) : '') + '</span></div>'
-      + '<div><b>' + (me.placeN ? num(me.placeSum / me.placeN) : '—') + '</b><span>среднее место</span></div>'
-      + '<div><b>' + num(turnsAvg) + '</b><span>ходов в среднем</span></div></div>';
+    h += '<div class="badges"><div><b>' + me.matches + '</b><span>' + word(me.matches, 'партия', 'партии', 'партий', 'match', 'matches') + '</span></div>'
+      + '<div><b>' + me.wins + '</b><span>' + word(me.wins, 'побед', 'побед', 'побед', 'win', 'wins') + ' · ' + pct(me.wins, me.decisive)
+      + (me.matches > me.decisive ? L(' · не доиграно ', ' · not played out: ') + (me.matches - me.decisive) : '') + '</span></div>'
+      + '<div><b>' + (me.placeN ? num(me.placeSum / me.placeN) : '—') + '</b><span>' + L('среднее место', 'average place') + '</span></div>'
+      + '<div><b>' + num(turnsAvg) + '</b><span>' + L('ходов в среднем', 'turns on average') + '</span></div></div>';
 
     const chartList = list.slice(0, PLAYER_CHART_LIMIT);
     const keys = [...new Set(chartList.flatMap(x => Array.isArray(x.m.keys) ? x.m.keys : []))];
-    h += '<h2>По ходам</h2><div class="skin-controls st-controls">' + datasetSelect('st-ds', ds, keys)
-      + '<span class="dim small skin-count">линия — одна партия' + (list.length > PLAYER_CHART_LIMIT ? ', последние ' + PLAYER_CHART_LIMIT : '')
-      + (Math.min(list.length, PLAYER_CHART_LIMIT) > PALETTE.length ? '; светлые — победы' : '') + '</span></div>'
+    h += '<h2>' + L('По ходам', 'By turn') + '</h2><div class="skin-controls st-controls">' + datasetSelect('st-ds', ds, keys)
+      + '<span class="dim small skin-count">' + L('линия — одна партия', 'one line is one match')
+      + (list.length > PLAYER_CHART_LIMIT ? L(', последние ', ', the latest ') + PLAYER_CHART_LIMIT : '')
+      + (Math.min(list.length, PLAYER_CHART_LIMIT) > PALETTE.length ? L('; светлые — победы', '; the light ones are wins') : '') + '</span></div>'
       + '<p class="small dim st-unit">' + esc(dsTitle(ds)) + esc(unitNote(ds)) + esc(hintNote(ds)) + '</p>'
-      + '<div id="st-chart" class="st-chart"><p class="dim">Загружаю ряды…</p></div>';
+      + '<div id="st-chart" class="st-chart"><p class="dim">' + L('Загружаю ряды…', 'Loading the data…') + '</p></div>';
 
-    h += '<h2>Партии</h2>' + tableWrap('<table class="st"><thead><tr><th scope="col">Партия</th><th scope="col">Дата</th><th scope="col">Цивилизация</th>'
-      + '<th scope="col" class="num">Место</th><th scope="col" class="num">Очки</th><th scope="col">Итог</th><th scope="col" class="num">Ходов</th></tr></thead><tbody>'
+    h += '<h2>' + L('Партии', 'Matches') + '</h2>' + tableWrap('<table class="st"><thead><tr>'
+      + '<th scope="col">' + L('Партия', 'Match') + '</th><th scope="col">' + L('Дата', 'Date') + '</th>'
+      + '<th scope="col">' + L('Цивилизация', 'Civilization') + '</th>'
+      + '<th scope="col" class="num">' + L('Место', 'Place') + '</th><th scope="col" class="num">' + L('Очки', 'Score') + '</th>'
+      + '<th scope="col">' + L('Итог', 'Outcome') + '</th><th scope="col" class="num">' + L('Ходов', 'Turns') + '</th></tr></thead><tbody>'
       + list.map(x => '<tr><td>' + linkMatch(x.m) + '</td><td>' + esc(shortDate(x.m.at)) + '</td><td>' + esc(civName(x.p.civ)) + '</td>'
         + '<td class="num">' + placeCell(x.p, x.m, x.total) + '</td>'
         + '<td class="num">' + num(x.p.score) + '</td><td>' + outcome(x.p, x.m) + '</td><td class="num">' + num(x.m.turns) + '</td></tr>').join('')
@@ -620,7 +690,8 @@
       if (!s) return;
       lines.push({
         label: matchTitle(x.m), sub: shortDate(x.m.at) + ' · ' + civName(x.p.civ) + ' · '
-          + (!done(x.m) ? 'не доиграна' : x.p.won ? 'победа' : x.p.place + ' место'),
+          + (!done(x.m) ? L('не доиграна', 'not played out') : x.p.won ? L('победа', 'win')
+            : L(x.p.place + ' место', 'place ' + x.p.place)),
         color: many ? (done(x.m) && x.p.won ? WIN : MUTED) : PALETTE[i], turns: s.turns, values: scaled(s, ds),
       });
     });
@@ -636,41 +707,46 @@
   }
 
   function outcome(p, m) {
-    if (done(m) && p.won) return '<span class="st-win">победа</span>';
-    if (!p.isAlive && p.lastTurn > 0 && p.lastTurn < (m.turns || Infinity)) return 'выбыл на ходу ' + p.lastTurn;
-    return done(m) ? 'дожил до конца' : UNFINISHED;
+    if (done(m) && p.won) return '<span class="st-win">' + L('победа', 'win') + '</span>';
+    if (!p.isAlive && p.lastTurn > 0 && p.lastTurn < (m.turns || Infinity)) return L('выбыл на ходу ', 'knocked out on turn ') + p.lastTurn;
+    return done(m) ? L('дожил до конца', 'survived to the end') : UNFINISHED;
   }
 
   /* Место в не доигранной партии — порядок по очкам на момент выхода, а не итог: приглушённо и с подсказкой. */
   function placeCell(p, m, total) {
     if (!p.place) return '—';
-    const text = p.place + (total ? ' <small class="dim">из ' + total + '</small>' : '');
-    return done(m) ? text : '<span class="dim" title="Партия не доиграна: место — порядок по очкам, а не итог">' + text + '</span>';
+    const text = p.place + (total ? ' <small class="dim">' + L('из ', 'of ') + total + '</small>' : '');
+    return done(m) ? text : '<span class="dim" title="'
+      + L('Партия не доиграна: место — порядок по очкам, а не итог',
+        'The match was not played out: the place is the score order, not a final result') + '">' + text + '</span>';
   }
 
   async function renderMatch(st, idx) {
     const m = idx.matches.find(x => x.key === st.Match);
     if (!m) {
-      app().innerHTML = tabs(st) + (st.Match ? '<div class="note">Такой партии в статистике нет.</div>' : '')
-        + '<h2>Выберите партию</h2>' + matchRows(idx.matches.slice(0, 60));
+      app().innerHTML = tabs(st) + (st.Match ? '<div class="note">'
+        + L('Такой партии в статистике нет.', 'There is no such match in the statistics.') + '</div>' : '')
+        + '<h2>' + L('Выберите партию', 'Pick a match') + '</h2>' + matchRows(idx.matches.slice(0, 60));
       return;
     }
     const ds = DS_RE.test(st.Dataset || '') ? st.Dataset : DEFAULT_DATASET;
     const ps = m.players.slice().sort((a, b) => (a.place || 99) - (b.place || 99));
     let h = tabs(st) + '<div class="st-head"><h2>' + esc(matchTitle(m)) + '</h2><p class="dim">' + esc(shortDate(m.at))
-      + ' · ' + num(m.turns) + ' ' + plural(m.turns || 0, 'ход', 'хода', 'ходов') + ' · ' + (done(m) ? esc(victoryName(m.victoryType)) : 'не доиграна')
-      + (m.modVersion ? ' · мод ' + esc(m.modVersion) : '') + '</p></div>';
+      + ' · ' + num(m.turns) + ' ' + word(m.turns || 0, 'ход', 'хода', 'ходов', 'turn', 'turns')
+      + ' · ' + (done(m) ? esc(victoryName(m.victoryType)) : L('не доиграна', 'not played out'))
+      + (m.modVersion ? L(' · мод ', ' · mod ') + esc(m.modVersion) : '') + '</p></div>';
 
-    h += tableWrap('<table class="st"><thead><tr><th scope="col" class="num">Место</th><th scope="col">Участник</th><th scope="col">Цивилизация</th>'
-      + '<th scope="col" class="num">Очки</th><th scope="col">Итог</th></tr></thead><tbody>'
+    h += tableWrap('<table class="st"><thead><tr><th scope="col" class="num">' + L('Место', 'Place') + '</th>'
+      + '<th scope="col">' + L('Участник', 'Participant') + '</th><th scope="col">' + L('Цивилизация', 'Civilization') + '</th>'
+      + '<th scope="col" class="num">' + L('Очки', 'Score') + '</th><th scope="col">' + L('Итог', 'Outcome') + '</th></tr></thead><tbody>'
       + ps.map((p, i) => '<tr><td class="num">' + placeCell(p, m, 0) + '</td><td><i class="sw" style="background:' + colorFor(i, ps.length) + '"></i>'
-        + (p.isHuman ? linkPlayer(p.name) : esc(p.name) + ' <span class="tag">ИИ</span>') + '</td>'
+        + (p.isHuman ? linkPlayer(p.name) : esc(p.name) + ' <span class="tag">' + L('ИИ', 'AI') + '</span>') + '</td>'
         + '<td>' + esc(civName(p.civ)) + '</td><td class="num">' + num(p.score) + '</td><td>' + outcome(p, m) + '</td></tr>').join('')
       + '</tbody></table>');
 
-    h += '<h2>По ходам</h2><div class="skin-controls st-controls">' + datasetSelect('st-ds', ds, m.keys) + '</div>'
+    h += '<h2>' + L('По ходам', 'By turn') + '</h2><div class="skin-controls st-controls">' + datasetSelect('st-ds', ds, m.keys) + '</div>'
       + '<p class="small dim st-unit">' + esc(dsTitle(ds)) + esc(unitNote(ds)) + esc(hintNote(ds)) + '</p>'
-      + '<div id="st-chart" class="st-chart"><p class="dim">Загружаю ряды…</p></div>';
+      + '<div id="st-chart" class="st-chart"><p class="dim">' + L('Загружаю ряды…', 'Loading the data…') + '</p></div>';
     app().innerHTML = h;
     $('#st-ds').addEventListener('change', e => replace(Object.assign({}, st, { Dataset: e.target.value })));
 
@@ -683,7 +759,7 @@
     ps.forEach((p, i) => {
       const s = series.find(z => z.playerId === p.playerId);
       if (!s) return;
-      lines.push({ label: p.name, sub: civName(p.civ) + (p.isHuman ? '' : ' · ИИ'), color: colorFor(i, ps.length),
+      lines.push({ label: p.name, sub: civName(p.civ) + (p.isHuman ? '' : L(' · ИИ', ' · AI')), color: colorFor(i, ps.length),
         turns: s.turns, values: scaled(s, ds) });
     });
     lineChart(host, { lines, title: dsTitle(ds) + ' — ' + matchTitle(m) });
