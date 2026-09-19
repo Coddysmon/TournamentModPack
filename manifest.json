@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.118",
+  "packageVersion": "1.5.119",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-09-19T00:37:24.8829729+00:00",
+  "createdUtc": "2026-09-19T16:14:15.616613+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -16475,8 +16475,8 @@
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4478464,
-          "hash": "11a9907b6aa67b3dfc77d702e0246b5f7f44f7b4ec3c8833037d851b53c9bced"
+          "size": 4480000,
+          "hash": "bf2bed023da8a8ef93b8e47ab050e8d0c29c2b2582104e2ee264b27a8f979881"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -19155,8 +19155,8 @@
         },
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xml",
-          "size": 889924,
-          "hash": "099afbfe4d1eb646159a3462db7bc97f8240ed852f1fe36ac116310540f04cff"
+          "size": 889995,
+          "hash": "3d483451bc340b41b4db20596930a38bf94c35ac84983ddb42ce8004c2c301bb"
         },
         {
           "path": "Override/CIV5Trades.xml",
@@ -19340,8 +19340,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 9864791,
-          "hash": "8d954e3d6745dac955267dd68c340fad455e034a91c33ebf1c1e82e6e3f17dcc"
+          "size": 9864819,
+          "hash": "9bf905c8f3a8b5c7c069bf02c6e0b9640d70f0d8b28eae8afb9622508f598817"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
@@ -19666,7 +19666,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "538f5779204f2be10c28e06f204ecb02c3c891621bff27a07c6c1a9663be8234"
+          "hash": "b560b59d1550d7f426d3e47f4cd7ddef75d62193ba0efdcccd473f8e72f2fd21"
         },
         {
           "path": "skins.json",
@@ -23400,8 +23400,8 @@
         },
         {
           "path": "tmp/ui/EraBonuses.lua",
-          "size": 17868,
-          "hash": "d5661730a26521993f31af02c2ac34ea7ea7b2b90c7509e871a0f70641f8c950"
+          "size": 17309,
+          "hash": "f1cbcdabed2384acfcac6d5afb9ca2bcaf9556c4cf6a3a1ed7776ed786c8024c"
         },
         {
           "path": "tmp/ui/EspionageOverview.lua",
@@ -23905,8 +23905,8 @@
         },
         {
           "path": "tmp/ui/UnitFlagManager.xml",
-          "size": 11639,
-          "hash": "05b28021f94cdce657d2269fea8e51e21d0e18486e0f7c8e8573033d7c3990fc"
+          "size": 12157,
+          "hash": "c5e4ec26afd2db03182c52f296653cfb6f8aa30f96998200ce48ed14df626e2d"
         },
         {
           "path": "tmp/ui/UnitList.lua",
