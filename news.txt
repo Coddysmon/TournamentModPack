@@ -6,6 +6,14 @@
 Обновитесь до 1.5.122 — в уже идущих партиях это тоже чинится.
 Для сетевой игры версия мода нужна одна у всех.
 
+--- en | The era bonus bug is fixed
+The era bonus misbehaved: the «era bonus available» badge stayed up after you took one,
+and policy branches could get stuck closed — if you saved culture without taking a policy,
+the new branch would not open even after the right era arrived.
+
+Update to 1.5.122 — games already in progress are fixed too.
+Multiplayer needs the same mod version for everyone.
+
 === 2026-09-18 | ВЕРСИЯ | Nova 1.0 — выходим из беты
 Nova перестаёт быть бетой. Модпак собран, проверен на партиях и переходит на стабильные выпуски.
 
@@ -25,4 +33,25 @@ Discord — сбор на партии и помощь: https://discord.gg/THsFb
 Имя выпуска теперь видно везде: в лаунчере — «Nova 1.0 · сборка 0.3.66», в главном меню игры —
 «Nova 1.0 (сборка 1.5.113)». Номер сборки остаётся прежним (1.5.x): он технический, по нему лаунчер сверяет файлы.
 Для сетевой игры всем участникам нужна одна версия мода — обновитесь все.
+
+--- en | Nova 1.0 — out of beta
+Nova is no longer a beta. The mod pack is assembled, tested in real games and moves to stable releases.
+
+What this means for you:
+— updates arrive finished rather than «to try»: the launcher rolls them out and checks every file;
+— game statistics: participants, places and per-turn charts;
+— a player rating and tournament sign-up right in the launcher;
+— subscriptions are looks only: cursors, the name font, unit skins. The mod pack was and stays free.
+
+What Nova changes in the game is on the «What Nova changes» page:
+https://coddysmon.github.io/TournamentModPack/changes.html
+Tournament rules: https://coddysmon.github.io/TournamentModPack/tournament-rules.html
+Discord — finding games and getting help: https://discord.gg/THsFbmC34
+
+One small thing: the game list shows «Nova» in the Map column instead of the script file name.
+
+The release name is now visible everywhere: «Nova 1.0 · build 0.3.66» in the launcher and
+«Nova 1.0 (build 1.5.113)» in the game’s main menu. The build number stays as it was (1.5.x):
+it is technical, and the launcher checks files by it. Multiplayer needs the same mod version for everyone.
+
 url: https://coddysmon.github.io/TournamentModPack/changes.html

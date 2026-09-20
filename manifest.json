@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "packageVersion": "1.5.122",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-09-20T19:13:46.2037529+00:00",
+  "createdUtc": "2026-09-20T20:29:10.498077+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -25502,10 +25502,10 @@
     "Any": true
   },
   "client": {
-    "version": "0.3.72",
-    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas8/nova-client-0.3.72.zip",
-    "sha256": "7cad90142e1df88be1fd66db01001c5a46afa13bc8a1486257b4e0bdbc5d49bf",
-    "size": 64123032,
+    "version": "0.3.73",
+    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas8/nova-client-0.3.73.zip",
+    "sha256": "46cfb97156faa0ef8eb5271a6c57b9b227a852c811cc99bfd74ba7703df4f079",
+    "size": 64124852,
     "IsUsable": true
   },
   "relay": {
