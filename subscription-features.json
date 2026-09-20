@@ -80,6 +80,12 @@
             "cursor",
             "cursors",
             "cursors"
+          ],
+          "subEn": [
+            "standard",
+            "all, 32/48/64",
+            "all, 32/48/64",
+            "all, 32/48/64"
           ]
         }
       ],
@@ -164,7 +170,13 @@
             "золото"
           ],
           "titleEn": "Metal rim on the unit icon",
-          "hintEn": "in game, the metal matches the tier"
+          "hintEn": "in game, the metal matches the tier",
+          "valuesEn": [
+            false,
+            "bronze",
+            "silver",
+            "gold"
+          ]
         }
       ],
       "titleEn": "Name and styling"
