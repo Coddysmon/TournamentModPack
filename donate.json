@@ -1,10 +1,12 @@
 {
-  "note": "Модпак делается бесплатно и остаётся бесплатным. Деньги идут на сервер, домен и авторам моделей, которые разрешили их использовать. Ничего в игре пожертвование не открывает — это просто спасибо.",
-  "methods": [
-    {
-      "title": "DonationAlerts",
-      "url": "https://www.donationalerts.com/r/jaguarrr",
-      "note": "карты и СБП, оплата на стороне площадки"
-    }
-  ]
+ "note": "Модпак делается бесплатно и остаётся бесплатным. Деньги идут на сервер, домен и авторам моделей, которые разрешили их использовать. Ничего в игре пожертвование не открывает — это просто спасибо.",
+ "methods": [
+  {
+   "title": "DonationAlerts",
+   "url": "https://www.donationalerts.com/r/jaguarrr",
+   "note": "карты и СБП, оплата на стороне площадки",
+   "noteEn": "cards and SBP, payment happens on the platform's side"
+  }
+ ],
+ "noteEn": "The mod pack is made for free and stays free. The money goes to the server, the domain and the authors of the models who allowed us to use them. A donation unlocks nothing in the game — it is simply a thank you."
 }
