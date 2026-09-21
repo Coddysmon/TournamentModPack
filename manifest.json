@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.123",
+  "packageVersion": "1.5.124",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-09-21T15:27:12.8453741+00:00",
+  "createdUtc": "2026-09-21T16:09:08.930209+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -16471,8 +16471,8 @@
         },
         {
           "path": "CHANGELOG.md",
-          "size": 164685,
-          "hash": "6f38696fafbb3e64c2f391e1d9f6bfd7cdf6e4060e36132767bf124ea0e21bac"
+          "size": 165439,
+          "hash": "22baafda3445b43b5e8ff1e41be8e19783679daf54402d1c92b784b85a2b51dd"
         },
         {
           "path": "CvGameCore_Expansion2.dll",
@@ -19157,7 +19157,7 @@
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xml",
           "size": 889954,
-          "hash": "8c4676e167012845ec1a8c0d094f8947bfa9fe7fe8480b9a844f9ce197a3ab17"
+          "hash": "8ef699519c273d22870ee06919e18b235c66ebe82851f23ccaaf58de098739a0"
         },
         {
           "path": "Override/CIV5Trades.xml",
@@ -19301,8 +19301,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 13642766,
-          "hash": "25de1a6fef562182f29ce9dc9f113887bf6de98d96d27d45b668600e0262a627"
+          "size": 13643316,
+          "hash": "8756f52240ae29fd54e4b85f92baba106486357ea92da0876b424983fa46d429"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -19342,7 +19342,7 @@
         {
           "path": "Override/CIV5Units_Mongol.xml",
           "size": 9864838,
-          "hash": "a63f507db684e4ff77b84a10765b587c4790e4028b66aea99068abbfdb284c6d"
+          "hash": "73b76d7ba6cadf85a6ca5b207a68ef32b7941fd00f7a5afae35c1a9929b7f388"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
@@ -19667,7 +19667,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "fe265b146e0f2fa2f9ead43f29bbe0aef86757dbcc249584ae5540349d6a56c4"
+          "hash": "e220c5279c6caa1c4ac75a6cdec95999d18d0228c7b6383dd783099796b3bc6f"
         },
         {
           "path": "skins.json",
