@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.124",
+  "packageVersion": "1.5.125",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-09-21T17:44:30.5552768+00:00",
+  "createdUtc": "2026-09-21T17:51:53.5508032+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -16471,13 +16471,13 @@
         },
         {
           "path": "CHANGELOG.md",
-          "size": 165439,
-          "hash": "22baafda3445b43b5e8ff1e41be8e19783679daf54402d1c92b784b85a2b51dd"
+          "size": 166668,
+          "hash": "8a3260997396d804fb68fee6ecb3afb320b0eb77647fa1a13659d4d1706bd67c"
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4485120,
-          "hash": "3184506457a3e5975ef5e0f61a6a2b31ae3a0c2cbba9a701232b9c14a08e77af"
+          "size": 4480512,
+          "hash": "e8d0399cf1d2586e044c75653dd9a03f0961b74fd27275c60d7077e48a6d0d67"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -19157,7 +19157,7 @@
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xml",
           "size": 889954,
-          "hash": "8ef699519c273d22870ee06919e18b235c66ebe82851f23ccaaf58de098739a0"
+          "hash": "b76e6ebc083121b166f7b9429f3694048d867895436d556898e11e9cf6135d78"
         },
         {
           "path": "Override/CIV5Trades.xml",
@@ -19342,7 +19342,7 @@
         {
           "path": "Override/CIV5Units_Mongol.xml",
           "size": 9864838,
-          "hash": "73b76d7ba6cadf85a6ca5b207a68ef32b7941fd00f7a5afae35c1a9929b7f388"
+          "hash": "8927ea99f146b7a508598d94d8d96d9004c3d4f253122b743db2d9de4c78a00e"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
@@ -19667,7 +19667,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "e220c5279c6caa1c4ac75a6cdec95999d18d0228c7b6383dd783099796b3bc6f"
+          "hash": "e3d007e660178e7bedcbc75a8f8a96a640b21a821364da169f68620af465247e"
         },
         {
           "path": "skins.json",
