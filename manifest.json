@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.125",
+  "packageVersion": "1.5.126",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-09-21T17:51:53.5508032+00:00",
+  "createdUtc": "2026-09-22T23:34:05.6939451+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -16182,27 +16182,27 @@
         {
           "path": "Art/TM_QuartermasterAtlas128.dds",
           "size": 65664,
-          "hash": "7863d4c182a2398efda39f1afd4b0ccd1a414208bed631d8175cf6912ceffaa9"
+          "hash": "dda06c424cf114faa466cdafbd3d570eb67e043989a76f5484748a41ddd55396"
         },
         {
           "path": "Art/TM_QuartermasterAtlas256.dds",
           "size": 262272,
-          "hash": "79bd5c5a6676827cd2e8e9a520784592a642fafa45b2834bd1ca0625cefb5ab5"
+          "hash": "32b99fe0761c8aee5805c9e29037bf5857ec61c4ba8f9f5fb8d37a51d7fc8823"
         },
         {
           "path": "Art/TM_QuartermasterAtlas45.dds",
           "size": 8228,
-          "hash": "2f923212d2124326d31165b1141f0033df0cc8821561d4113b2b7fdc8516cb4b"
+          "hash": "58b655323ccf0e152db756c2827ad2dea746c90effe9866f8c20843bc3a3566a"
         },
         {
           "path": "Art/TM_QuartermasterAtlas64.dds",
           "size": 16512,
-          "hash": "1d3c9c45b6b83b025412d89c1a40492873ac7ba28e9d5238728908112b3cdedd"
+          "hash": "3f8b9be9ae77fe23bdf9a6f96ba1353fb143b46bb867e54b1a26e260383b91d0"
         },
         {
           "path": "Art/TM_QuartermasterAtlas80.dds",
           "size": 25728,
-          "hash": "35eea4fb52e0b4a0fdcfdb8f67d1ba74949693d653f7a3b13299c7f60608e3f0"
+          "hash": "b78a73298f07ee51b2e7456dc1784067f0cd153c1e1a303ff52b9794939315ca"
         },
         {
           "path": "Art/TM_ReligionBuildingAtlas128.dds",
@@ -16476,8 +16476,8 @@
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4480512,
-          "hash": "e8d0399cf1d2586e044c75653dd9a03f0961b74fd27275c60d7077e48a6d0d67"
+          "size": 4485120,
+          "hash": "3cf047889ad8ab0e571bf1757ada7cd086ed1b84d42ff818b56d509b326c866f"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -16941,38 +16941,38 @@
         },
         {
           "path": "Maps/NovaTournamentPangaea.lua",
-          "size": 926144,
-          "hash": "cec31e0285d6dc2ec59629d3ee8117e7c1f872ccac26141759b5f146a748070c"
+          "size": 927919,
+          "hash": "3b73855b58825560061ef430adf7d8adf2c617c425c6ccf89a939801140ce25f"
         },
         {
           "path": "MarshalAtlas128.dds",
           "size": 65664,
-          "hash": "ab01cd02f830978b78c72d56f48718150cdcb77297754f59aaf9ef27dfe40f12"
+          "hash": "cd00da4a969f2a1a89b665cbabaccdd2dfd24e54c3ccf028d2e20ba90d59e9d8"
         },
         {
           "path": "MarshalAtlas256.dds",
           "size": 262272,
-          "hash": "261a6d57ad51fd46c47161269323976374d305032ef427c089afe96f4b49d3e9"
+          "hash": "02ad94306d7e158fb9fdddd5d326cfbf4151ab2e26f98fa161df066c7a244179"
         },
         {
           "path": "MarshalAtlas32.dds",
           "size": 4224,
-          "hash": "efe4d6ff1e2d45786bab893cc3c776bc4f3acf72616f622c167cbae630d7cac7"
+          "hash": "4629e72e8ee3893a262390799cdc9f2bc3424c9ee945ba9ed4d59c12519cf1db"
         },
         {
           "path": "MarshalAtlas45.dds",
           "size": 8228,
-          "hash": "92a184b69d701dbeef2d0366fd58f33634eecfb7a7cd5f7df7818777f634c8dc"
+          "hash": "77152bdd725585028f55a895522c1d068e61b98eef7a6b06012bb42011b15d36"
         },
         {
           "path": "MarshalAtlas64.dds",
           "size": 16512,
-          "hash": "02722d449f107c9c6a8bff03a5ebe740d7e2cb0952bc59e40be3e83cf7ca2675"
+          "hash": "75bc0012041669ab3b4e55ac2790a03377dbe8099e940afa21ed251fddd4dd43"
         },
         {
           "path": "MarshalAtlas80.dds",
           "size": 25728,
-          "hash": "81b153a860530420bdb3bb43caaa4df62c4e406c70e04f72031ee92ffae1eb56"
+          "hash": "f8f78aec8d7ba26da8a6a335582728d69a40860a77745a18bf57dbf03491adc1"
         },
         {
           "path": "MarshalFlag32.dds",
@@ -19156,8 +19156,8 @@
         },
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xml",
-          "size": 889954,
-          "hash": "b76e6ebc083121b166f7b9429f3694048d867895436d556898e11e9cf6135d78"
+          "size": 894725,
+          "hash": "df977c94f77d73a49086952860364a17ac84a705f9af6b4daa8ac19c0c40c877"
         },
         {
           "path": "Override/CIV5Trades.xml",
@@ -19301,8 +19301,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 13643316,
-          "hash": "8756f52240ae29fd54e4b85f92baba106486357ea92da0876b424983fa46d429"
+          "size": 13639511,
+          "hash": "93b08e951c2686646136566a2045eb1ef6e091fa1c476b89488a0cf8e8becba6"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -19341,8 +19341,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 9864838,
-          "hash": "8927ea99f146b7a508598d94d8d96d9004c3d4f253122b743db2d9de4c78a00e"
+          "size": 9867348,
+          "hash": "199abd71148b13a2fee17de274d2d9e8d9b01ce8877333285215d3018ba69122"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
@@ -19667,7 +19667,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "e3d007e660178e7bedcbc75a8f8a96a640b21a821364da169f68620af465247e"
+          "hash": "25f48f881e1fc26bb9baee84e6f9053606fbe2cd0460154a8237f7c78f4dc54f"
         },
         {
           "path": "skins.json",
@@ -23976,8 +23976,8 @@
       "files": [
         {
           "path": "NovaTournamentPangaea.lua",
-          "size": 926144,
-          "hash": "cec31e0285d6dc2ec59629d3ee8117e7c1f872ccac26141759b5f146a748070c"
+          "size": 927919,
+          "hash": "3b73855b58825560061ef430adf7d8adf2c617c425c6ccf89a939801140ce25f"
         }
       ]
     },
