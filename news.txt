@@ -1,3 +1,32 @@
+=== 2026-09-23 | ИСПРАВЛЕНИЯ | Корабли, реформы и чудеса
+Флот быстрее: каравелла, фрегат, капер, броненосец и эсминец — на клетку, линкор — на две.
+
+«Священные места» работают как написано: только религиозные здания, а не любое здание
+за веру. Концертный тур можно провести на лесу, джунглях и болоте.
+
+Терракотовая армия: самолёты, караваны и рабочие лодки платили её надбавку и не
+получали копию — теперь не платят. Копия достаётся только сухопутным.
+
+Караван-сарай даёт +2 [ICON_GOLD] золота. Ветки политик новой эпохи открываются сразу.
+Люксы не уезжают на чужие острова.
+
+Обновитесь до 1.5.126 — версия нужна одна у всех.
+
+--- en | Ships, reformations and wonders
+Faster fleet: caravel, frigate, privateer, ironclad and destroyer gain a tile,
+battleship two.
+
+Sacred Sites does what it says: religious buildings only, not every building bought with
+Faith. The concert tour works on forest, jungle and marsh.
+
+Terracotta Army: air units, caravans and work boats paid its surcharge and got no free
+copy — they no longer pay. The copy goes to land units.
+
+The caravansary gives +2 [ICON_GOLD] gold. New-era policy branches open right away.
+Luxuries no longer land on someone else's island.
+
+Update to 1.5.126 — everyone needs the same version.
+
 === 2026-09-20 | ИСПРАВЛЕНИЕ | Починен баг с бонусом эпохи
 Бонус эпохи работал неправильно: значок «доступен бонус эпохи» висел и после выбора,
 а ветки политик могли залипнуть закрытыми — если копить культуру и не брать политику,
