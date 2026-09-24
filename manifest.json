@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.127",
+  "packageVersion": "1.5.128",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-09-23T20:30:02.1777744+00:00",
+  "createdUtc": "2026-09-24T06:38:39.9272813+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -19157,7 +19157,7 @@
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xml",
           "size": 894725,
-          "hash": "89ea87dfcbab8eee5a0478b9ca0df7fc41ba14bbb112f47f7e40d398ec729c69"
+          "hash": "4c858a2ce7648fc811439c12a9f4eb2a958adb7b05dd2c7f0a2c936bab3c765a"
         },
         {
           "path": "Override/CIV5Trades.xml",
@@ -19342,7 +19342,7 @@
         {
           "path": "Override/CIV5Units_Mongol.xml",
           "size": 9867348,
-          "hash": "aed4f9d27c060e2ffd5c6f895392e501012c6e3e2d787da7c128f01f4053d722"
+          "hash": "62c50081ebfb1f51e174b2bc1e380ea89b4a3323deca09749c4a1351c6bc0169"
         },
         {
           "path": "Override/CIV5Units_Polynesia.xml",
@@ -19667,12 +19667,12 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "0f4a363732519341183ed6d3c0239c72ef68558e09594dd0da261d1ea2cd2486"
+          "hash": "9fc7e06c0b7e9f97d73db25371d07d3ffdb539940194c903be2180860208aa66"
         },
         {
           "path": "skins.json",
-          "size": 144596,
-          "hash": "acb3d412755d12b5fb585aa29a9016f7073f148fa1112d805c6a3f452b928cf5"
+          "size": 169260,
+          "hash": "ff3818e95a59e634fa5a2584781751abe1f1e9d9cf391692648acecd8e209cc2"
         },
         {
           "path": "SkinShots/10TP.png",
