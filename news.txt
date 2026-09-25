@@ -7,7 +7,7 @@
 Терракотовая армия: самолёты, караваны и рабочие лодки платили её надбавку и не
 получали копию — теперь не платят. Копия достаётся только сухопутным.
 
-Караван-сарай даёт +2 [ICON_GOLD] золота. Ветки политик новой эпохи открываются сразу.
+Караван-сарай даёт +2 золота. Ветки политик новой эпохи открываются сразу.
 Люксы не уезжают на чужие острова.
 
 Обновитесь до 1.5.126 — версия нужна одна у всех.
@@ -22,7 +22,7 @@ Faith. The concert tour works on forest, jungle and marsh.
 Terracotta Army: air units, caravans and work boats paid its surcharge and got no free
 copy — they no longer pay. The copy goes to land units.
 
-The caravansary gives +2 [ICON_GOLD] gold. New-era policy branches open right away.
+The caravansary gives +2 gold. New-era policy branches open right away.
 Luxuries no longer land on someone else's island.
 
 Update to 1.5.126 — everyone needs the same version.

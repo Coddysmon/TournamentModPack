@@ -105,8 +105,20 @@ const NOVA = (() => {
      может рядом с манифестом класть маленький файл только с этими полями. */
   function release() {
     return once('release', async () => {
-      const cached = sessionStorage.getItem('nova-release');
-      if (cached) return JSON.parse(cached);
+      // Снимок живёт ЧЕТВЕРТЬ ЧАСА, а не всю жизнь вкладки.
+      //
+      // Раньше срока не было вовсе: прочитали один раз и показывали до закрытия
+      // вкладки. Вкладку держат открытой сутками, и версия застывала — 26.09.2026
+      // сайт показывал мод 1.5.118 и лаунчер 0.3.70 недельной давности, хотя
+      // манифест рядом уже отдавал 1.5.128 и 0.3.85. Хуже всего, что выглядело
+      // это свежим: пометка «устарело» ставится только когда живые данные не
+      // доехали совсем, а тут они доехали — просто неделю назад.
+      const TTL = 15 * 60 * 1000;
+      try {
+        const cached = JSON.parse(sessionStorage.getItem('nova-release') || 'null');
+        if (cached && cached.at && Date.now() - cached.at < TTL) return cached.data;
+      } catch (e) { /* испорченный снимок — просто перечитаем */ }
+
       const m = await grab('manifest.json', 'json');
       const small = {
         modVersion: m.packageVersion,
@@ -115,7 +127,9 @@ const NOVA = (() => {
         cursorCount: m.cursors && m.cursors.premium ? m.cursors.premium.length : 0,
         live: true,
       };
-      try { sessionStorage.setItem('nova-release', JSON.stringify(small)); } catch (e) { }
+      try {
+        sessionStorage.setItem('nova-release', JSON.stringify({ at: Date.now(), data: small }));
+      } catch (e) { }
       return small;
     });
   }
