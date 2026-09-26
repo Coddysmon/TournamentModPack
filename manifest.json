@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.131",
+  "packageVersion": "1.5.132",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-09-26T23:35:02.7816604+00:00",
+  "createdUtc": "2026-09-26T23:52:54.6953684+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -16502,7 +16502,7 @@
         {
           "path": "CvGameCore_Expansion2.dll",
           "size": 4487680,
-          "hash": "98611d4c2a98ab9d48f7ca471594780951bd32ad47f069262f2d6d184cbcc11b"
+          "hash": "6b539885abed53bcf4655fbc347b819b47ce545d2720744d31b14ecd2fdeed7c"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -19182,7 +19182,7 @@
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xml",
           "size": 895605,
-          "hash": "a7f8786a898aa93afc66fa94cd59968b8be7b3b2240d6dfa3f2a9cc768d37740"
+          "hash": "a332075775979094e5eb707bebbb253b4b7c8a69b84141d7383c30ec71ad3a54"
         },
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xmlmerchant_icon_fix",
@@ -19377,7 +19377,7 @@
         {
           "path": "Override/CIV5Units_Mongol.xml",
           "size": 9871419,
-          "hash": "3e5b4cfe0e3f9eee108a81855ab441a4226fa9581ded1d76d5da30ed2aa164ec"
+          "hash": "c45a8f31a646f1a4587652de8c80c86d0d62ffcadbbde1d281d3571d83b50688"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -19712,7 +19712,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "790ac0bfcf8224777939d50bcb5e8ba83036145d8778b6fa4e4b1749a1123161"
+          "hash": "b264f7ef0d62e5e543ee61c4632aa15d0db4d378834c70e7d0ba924dd4da1d53"
         },
         {
           "path": "skins.json",
