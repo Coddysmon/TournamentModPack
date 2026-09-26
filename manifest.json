@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.129",
+  "packageVersion": "1.5.130",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-09-25T22:46:24.8932112+00:00",
+  "createdUtc": "2026-09-26T08:10:41.5460526+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -2190,19 +2190,9 @@
           "hash": "9b30b7cbe881933eba933e14d419f2d0ce2709e37bd019eef64d26a07aef092c"
         },
         {
-          "path": "Art/nova_quartermaster_cache_256.dds.NEW_PREVIEW.png",
-          "size": 15405,
-          "hash": "e2eceaed6ffd9aa4fbecfff84659aeecc36f0c988e042e5cd4f7e37fe344729a"
-        },
-        {
           "path": "Art/nova_quartermaster_cache_32.dds",
           "size": 4224,
           "hash": "e0a75199d28b9973d57f856286b8853f767cc64c816b8233afc013f792d68b60"
-        },
-        {
-          "path": "Art/nova_quartermaster_cache_32.dds.NEW_PREVIEW.png",
-          "size": 1346,
-          "hash": "1568426b2f28ed325daa4d42abf4d02b2f0cd121594c5ffaed4fd391970dd5f9"
         },
         {
           "path": "Art/nova_quartermaster_cache_45.dds",
@@ -2210,19 +2200,9 @@
           "hash": "84de84dcbeba4afa1c72942f5dac659aa277a028599e38aa2a460ec40abe004d"
         },
         {
-          "path": "Art/nova_quartermaster_cache_45.dds.NEW_PREVIEW.png",
-          "size": 1979,
-          "hash": "e88cea0d32f32fd91ec32a8f6f9028093475a30feaab9273403ed4f9ef93982b"
-        },
-        {
           "path": "Art/nova_quartermaster_cache_64.dds",
           "size": 16512,
           "hash": "6a557596cefc10046e478681da5ed32f7b5c20ed860d6a285cb1d284cdaa596c"
-        },
-        {
-          "path": "Art/nova_quartermaster_cache_64.dds.NEW_PREVIEW.png",
-          "size": 2971,
-          "hash": "67abd0b750b5e66396db30daf6c4ee8168a2f13b819edc5d2457f7f9b1f94588"
         },
         {
           "path": "Art/nova_tipi_256.dds",
@@ -19202,7 +19182,7 @@
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xml",
           "size": 895239,
-          "hash": "9c67e7097651605c18806e520f7a258b6e065a2743073a75533bf8f1f83fbd3a"
+          "hash": "92bc89f56409c33949414f3ae891c00afb1a68b04728d27ec5e6e6290ce8b64b"
         },
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xmlmerchant_icon_fix",
@@ -19356,8 +19336,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 13649737,
-          "hash": "09bf345a1f5c7801477e31dcff96a1e3474886d2ca255964b26c8db845ffbeca"
+          "size": 13649654,
+          "hash": "b62f708c2925703f40d0ebce09757c9a4af6b8c7e68f389411053d44e7ded40d"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -19397,7 +19377,7 @@
         {
           "path": "Override/CIV5Units_Mongol.xml",
           "size": 9869282,
-          "hash": "628d6bf304b0caa17d2db9a3119f7c350b60466d6bdc1f3e3b0b88296fedfebe"
+          "hash": "8c81bef0a81a3a57bc0358af7c1731cb2cb138c836d9bc4c28f5c8def03117b5"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -19732,7 +19712,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "5be7fdbb0b44ce7cbfe86f6fe51f9e7a483faaa2b45db2a71dde3d3231806768"
+          "hash": "2f22c8a03cb001d35950bc3a26b7923cacc5ac78cba060e15f936b32ff447821"
         },
         {
           "path": "skins.json",
