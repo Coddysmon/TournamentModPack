@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.132",
+  "packageVersion": "1.5.133",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-09-26T23:52:54.6953684+00:00",
+  "createdUtc": "2026-09-27T14:12:13.2936166+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -16502,7 +16502,7 @@
         {
           "path": "CvGameCore_Expansion2.dll",
           "size": 4487680,
-          "hash": "6b539885abed53bcf4655fbc347b819b47ce545d2720744d31b14ecd2fdeed7c"
+          "hash": "576805b37d0733f85f617dc740b84d6e58b81759177a09ffe202767d29a3379e"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -19181,8 +19181,8 @@
         },
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xml",
-          "size": 895605,
-          "hash": "a332075775979094e5eb707bebbb253b4b7c8a69b84141d7383c30ec71ad3a54"
+          "size": 895678,
+          "hash": "4ba094a6c1e78b40fc653f12007f86be521d2e49b1a53e6e9aadd6986d518644"
         },
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xmlmerchant_icon_fix",
@@ -19376,8 +19376,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 9871419,
-          "hash": "c45a8f31a646f1a4587652de8c80c86d0d62ffcadbbde1d281d3571d83b50688"
+          "size": 9872067,
+          "hash": "2ed977231555c7ea9c7456ab6a23d7d8123f3b3481f9d6830954719062311dde"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -19712,7 +19712,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "b264f7ef0d62e5e543ee61c4632aa15d0db4d378834c70e7d0ba924dd4da1d53"
+          "hash": "25a96b648e706698754f20ad8d421b48427ecefe7bc25c333a3d8bdf135ce458"
         },
         {
           "path": "skins.json",
@@ -23177,7 +23177,7 @@
         {
           "path": "tmp/eui/TechButtonInclude.lua",
           "size": 43850,
-          "hash": "8cc3e6d9e116ae19e39c7a047e12576297fca299ec449bf38016b07cc130eb77"
+          "hash": "7402b56aad7d09e845493d23342849bad9b7400855dafdcf1628ddf064bc2adb"
         },
         {
           "path": "tmp/eui/TechTree.lua",
@@ -23891,8 +23891,8 @@
         },
         {
           "path": "tmp/ui/TechButtonInclude.lua",
-          "size": 45575,
-          "hash": "09dcbc3fa52131c6a041a1a558a524894b381947ee25811acdea3f35e6747182"
+          "size": 46300,
+          "hash": "d26810d06ea85454a3b7652c51cb3cc42c9ea308316f696ac18b4afb8489b29b"
         },
         {
           "path": "tmp/ui/TechHelpInclude.lua",
