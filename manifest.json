@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.133",
+  "packageVersion": "1.5.134",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-09-27T14:12:13.2936166+00:00",
+  "createdUtc": "2026-09-28T01:15:44.3218893+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -11742,7 +11742,7 @@
         {
           "path": "Art/Skins/Nova_Druzhinnik.dds",
           "size": 699216,
-          "hash": "6d07955b877a42b1a9ad921f355451628a62100e277ba180d098cfa63139c4cf"
+          "hash": "be05bdb6f731610fdc155165933424f19753af8af54af73e8fc8713d34e2bccc"
         },
         {
           "path": "Art/Skins/Nova_Druzhinnik.fxsxml",
@@ -11757,7 +11757,7 @@
         {
           "path": "Art/Skins/Nova_Druzhinnik_gloss.dds",
           "size": 699216,
-          "hash": "67b06e7d35265dfd5effc233cd39b9c16147fa1c7a84fc9a3cc3494434912126"
+          "hash": "17a39d9ac29d8fdc4904722577b19929c0f9bac0e947652372d13d07aa9aaf83"
         },
         {
           "path": "Art/Skins/no_gloss.dds",
@@ -19182,7 +19182,7 @@
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xml",
           "size": 895678,
-          "hash": "4ba094a6c1e78b40fc653f12007f86be521d2e49b1a53e6e9aadd6986d518644"
+          "hash": "bcda274391a21e16a423c2eed15966aa78e5de543ccdf753e995ad744dc8d697"
         },
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xmlmerchant_icon_fix",
@@ -19377,7 +19377,7 @@
         {
           "path": "Override/CIV5Units_Mongol.xml",
           "size": 9872067,
-          "hash": "2ed977231555c7ea9c7456ab6a23d7d8123f3b3481f9d6830954719062311dde"
+          "hash": "7cba6795f85818728bf5f884c2964dea70d0068222971520a6c54ca4dc4319e8"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -19712,7 +19712,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "25a96b648e706698754f20ad8d421b48427ecefe7bc25c333a3d8bdf135ce458"
+          "hash": "2ec19ee1eb505b09207c993759a1ded723dc1902437f88d13ba55a5b993dd633"
         },
         {
           "path": "skins.json",
@@ -23181,8 +23181,8 @@
         },
         {
           "path": "tmp/eui/TechTree.lua",
-          "size": 22459,
-          "hash": "b228b56c42503e168c480bb7a991ee8ce8a225f422546369cdaf9120035adaa7"
+          "size": 22617,
+          "hash": "ed4424ad49a857e304b4327018a04d55e08a26aa5105c4935539fc6f9c78550b"
         },
         {
           "path": "tmp/eui/TopPanel.lua",
@@ -23201,8 +23201,8 @@
         },
         {
           "path": "tmp/eui/UnitFlagManager.lua",
-          "size": 57481,
-          "hash": "75616413c888e2ef42f27925168ca4a4c70d0a26047b654364a549f19d3506c0"
+          "size": 57708,
+          "hash": "eb5ac61682775f738e317f6fc9145fffee2395b8f329e91acbe936b8d9d3a10b"
         },
         {
           "path": "tmp/eui/UnitFlagManager.xml",
@@ -23906,8 +23906,8 @@
         },
         {
           "path": "tmp/ui/TechTree.lua",
-          "size": 36925,
-          "hash": "9f5853ce00a5b562ee4e845b210993a2c84b624c65dbbf4a487e17e9030892dd"
+          "size": 37351,
+          "hash": "3b9aa9d3d0d43d88cee3dfd63a52f9fba354bd6b741b1b9821ed59ccc41f5dcc"
         },
         {
           "path": "tmp/ui/TechTree.xml",
@@ -23951,8 +23951,8 @@
         },
         {
           "path": "tmp/ui/UnitFlagManager.lua",
-          "size": 83363,
-          "hash": "c6024687663575f15ff6d23041803bb09d078ec516bd52717195773601d6e40c"
+          "size": 83902,
+          "hash": "de7e4dce718e655f03f7494b2045fbfe92560e6c8e134f274258c1ac10d89da3"
         },
         {
           "path": "tmp/ui/UnitFlagManager.xml",
