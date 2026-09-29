@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.135",
+  "packageVersion": "1.5.136",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-09-29T09:15:10.7363041+00:00",
+  "createdUtc": "2026-09-29T21:49:53.6780009+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
@@ -16516,13 +16516,13 @@
         },
         {
           "path": "CHANGELOG.md",
-          "size": 173704,
-          "hash": "4f03a3232cd274664f7f7844ff7014dfd2da05c11b68daeb9c28977c63f81b13"
+          "size": 177477,
+          "hash": "c2595a76c466bc77546972cd064de1e93f8ffa159cd714f77355f5fce5aa452a"
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4490240,
-          "hash": "8600e0a3ff18ce2d53772b0516830d135440faa7b0edf505e97b94abbf306494"
+          "size": 4492288,
+          "hash": "51257dd8be2189476bed9d56fbb07d4b38d53e0fb8fbd2d8362ec74e44cfeff5"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -16986,8 +16986,8 @@
         },
         {
           "path": "Maps/NovaTournamentPangaea.lua",
-          "size": 929642,
-          "hash": "b8c6a02a9b47661af975f3451b459a383750504cb14616961e10edcfb0f76906"
+          "size": 935012,
+          "hash": "bea1f1ed1d87fbae4d69630c26a0f3c2ead7da39eaeae119061837441f25ed22"
         },
         {
           "path": "MarshalAtlas128.dds",
@@ -19201,8 +19201,8 @@
         },
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xml",
-          "size": 895984,
-          "hash": "2d84982c10cd759249eab5369367ba1b01fedcbd46ed0cdfffd88baff9192916"
+          "size": 898222,
+          "hash": "c70bbf82c14cb8e1615057f1e6db725cba5a457a78467d182f9d1ab1bd80cf6a"
         },
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xmlmerchant_icon_fix",
@@ -19356,8 +19356,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 13667505,
-          "hash": "27f7b48e1c6d30c81d663990d7bf070bd2a589cd51d9f1b302acd79930c19d8b"
+          "size": 13669861,
+          "hash": "98b286a4d3f205447f65a662b51c79c65aa60225db68b29b5e1949fdea58b71e"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -19396,8 +19396,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 9875370,
-          "hash": "ae813f14d556d58492b5615224d565f1722371dc3a4bebb42a49f7a1dbb4ce8c"
+          "size": 9878619,
+          "hash": "f3aeb272853ed6ba323234654acd3cd33dff3da412e44b1d4ef198f4feeff6e0"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -19732,7 +19732,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "4b09d6940f2ff4779520b303adadfe2747a1263796056ca9c6b850d6d8bc4e80"
+          "hash": "a78fe548942180c0b37c13a146a1f0d8bfcee933ec118cd79a35e432a3e2ab19"
         },
         {
           "path": "skins.json",
@@ -23106,23 +23106,23 @@
         },
         {
           "path": "tmp/eui/CityBannerManager_1.lua",
-          "size": 60896,
-          "hash": "8d765de6cab0884d755dd2214ad9eb50683df607fea641c074fb9f9e264e2653"
+          "size": 64536,
+          "hash": "54c4e1fb9bd53ebcffae8d31162eaf9481b40eef600254af95e2496ac1144ef8"
         },
         {
           "path": "tmp/eui/CityBannerManager_1.xml",
-          "size": 15353,
-          "hash": "be7a5edaf2139a2e58f1450f178c64a24d633b41c7f67325acf0bf76e45ff41c"
+          "size": 15518,
+          "hash": "6371bcd9c84bd90a46ae2466cb39f807d2e773fa8ef4d9e8ff16385cbc9db297"
         },
         {
           "path": "tmp/eui/CityBannerManager_2.lua",
-          "size": 61982,
-          "hash": "ee90a5a70f73daeb379fd80069f15db900022b42f1df762fef392df173add35b"
+          "size": 65622,
+          "hash": "f2a2706923b4e15e6c253cee69fd6f6b7a5cba76f7dfdd415d72da9b89e32a08"
         },
         {
           "path": "tmp/eui/CityBannerManager_2.xml",
-          "size": 14994,
-          "hash": "372d2ba6e3a3d11403c3eb1b352416b7e24a860b9e031f031a934842ec2eb6e2"
+          "size": 15159,
+          "hash": "9788c8b69ec560bfe563f4d24b7dda8814e4c6875b0be78cad36d93cf8171988"
         },
         {
           "path": "tmp/eui/CityStateDiploPopup.lua",
@@ -23196,8 +23196,8 @@
         },
         {
           "path": "tmp/eui/TechButtonInclude.lua",
-          "size": 43850,
-          "hash": "7402b56aad7d09e845493d23342849bad9b7400855dafdcf1628ddf064bc2adb"
+          "size": 47609,
+          "hash": "b3a5b99abf47bb4fae2a575b48fe92c494bb77c3d2224c91ce203acbe1f6c8df"
         },
         {
           "path": "tmp/eui/TechTree.lua",
@@ -23341,13 +23341,13 @@
         },
         {
           "path": "tmp/ui/CityBannerManager.lua",
-          "size": 52142,
-          "hash": "4ef301db4cb45e8e6b9d1639efafd726b4c4251b2805c9f4fe4749afde20a8a2"
+          "size": 55790,
+          "hash": "1602ad121362fb676113efeda0b71c891c02185932f047b58d8a68e5b0de4682"
         },
         {
           "path": "tmp/ui/CityBannerManager.xml",
-          "size": 17831,
-          "hash": "e1abb6be533df0ed896447439d2758ad01f2f8d5ed73d4fd8e857c2e24da78a4"
+          "size": 18022,
+          "hash": "4ba497144feff4734efe4b66ba956188b926f43c74ca3e90e98d529f59a51b2e"
         },
         {
           "path": "tmp/ui/CityList.lua",
@@ -23911,8 +23911,8 @@
         },
         {
           "path": "tmp/ui/TechButtonInclude.lua",
-          "size": 46300,
-          "hash": "d26810d06ea85454a3b7652c51cb3cc42c9ea308316f696ac18b4afb8489b29b"
+          "size": 50059,
+          "hash": "c8d70e0ed03a1c944cb439c1ba18505afdeb31507107b781f6413a824829933c"
         },
         {
           "path": "tmp/ui/TechHelpInclude.lua",
@@ -23931,8 +23931,8 @@
         },
         {
           "path": "tmp/ui/TechTree.xml",
-          "size": 23292,
-          "hash": "bb40c5f3143a2780a973dcc138cd774866314938e3357ac7098fbc506b6101c3"
+          "size": 24670,
+          "hash": "d3ff94a4ca386759b20485723720a92716d43e4c554e635ede4f0988e17db662"
         },
         {
           "path": "tmp/ui/TopPanel.lua",
@@ -24046,8 +24046,8 @@
       "files": [
         {
           "path": "NovaTournamentPangaea.lua",
-          "size": 929642,
-          "hash": "b8c6a02a9b47661af975f3451b459a383750504cb14616961e10edcfb0f76906"
+          "size": 935012,
+          "hash": "bea1f1ed1d87fbae4d69630c26a0f3c2ead7da39eaeae119061837441f25ed22"
         }
       ]
     },
@@ -25641,13 +25641,6 @@
       }
     ],
     "Any": true
-  },
-  "client": {
-    "version": "0.3.87",
-    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas9/nova-client-0.3.87.zip",
-    "sha256": "6b3b95705688681ecbc3543177ad0223e9451435fa7326abae70b735147d579e",
-    "size": 64292683,
-    "IsUsable": true
   },
   "relay": {
     "host": "109.73.196.175",
