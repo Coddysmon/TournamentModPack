@@ -1,3 +1,56 @@
+=== 2026-09-29 | ОБНОВЛЕНИЕ | Политики, здания и цены
+Ветка путей переработана: караваны неуязвимы для разграбления уже с первой
+политики, странствующие учёные дают караван, торговый путь и +5 золота за каждый
+путь в свой город, закрытие ветки даёт торговый путь за каждую прошедшую эпоху
+вместо еды с клеток, охранная грамота — +2 культуры за внешний путь.
+
+Наёмная армия переехала в середину ветки торговли: без неё не взять
+предпринимательство и обозы. Закрытие торговли даёт двух торговцев.
+
+Суд подешевел и сам даёт +3 к еде, производству и золоту. Колизей и Висячие сады
+дают очко инженера.
+
+Великие за веру по закрытой ветке стоят 675, 1000, 1675, 2350, 3250; маршала и
+интенданта тоже можно купить. Исправлено: покупка по Благочестию сбивала эту
+цену, и она начиналась не с первой ступени.
+
+Города-государства снова дарят юнитов с Объединённым фронтом — свойство
+потерялось при правке в августе, и полтора месяца политика не работала вовсе.
+
+Региональные редкости больше не попадают на острова.
+
+Юниты и технологии поздних эпох дороже на 10 процентов. Форт строится 5 ходов и
+открывается в физике. Полный список — в журнале изменений.
+
+Обновитесь до 1.5.135 — версия нужна одна у всех.
+
+--- en | Policies, buildings and costs
+The Wayfaring tree is reworked: Caravans are immune to plunder from the opening
+policy, Travelling Scholars grant a Caravan, a Trade Route and +5 Gold for every
+route to your own city, finishing the tree grants a Trade Route for every era
+passed instead of feeding tiles, and Safe Conduct pays +2 Culture per foreign
+route.
+
+Mercenary Army now sits in the middle of the Commerce tree: Entrepreneurship and
+Wagon Trains need it. Finishing Commerce grants two Merchants.
+
+The Courthouse is cheaper and gives +3 Food, Production and Gold on its own. The
+Colosseum and the Hanging Gardens give an Engineer point.
+
+Great People bought with Faith through a finished tree cost 675, 1000, 1675,
+2350, 3250; Marshals and Quartermasters can be bought too. Fixed: a purchase
+through Piety consumed a step of that ladder.
+
+City-States gift units again with United Front — the property was lost in an
+August edit and the policy did nothing for six weeks.
+
+Regional luxuries no longer appear on islands.
+
+Late-era units and technologies cost 10 percent more. The Fort takes 5 turns and
+unlocks at Physics. Full list in the changelog.
+
+Update to 1.5.135 — everyone needs the same version.
+
 === 2026-09-27 | ИСПРАВЛЕНИЯ | Реформации, цитадель и метро
 Реформации работают на всю паству, а не только на того, кто основал религию:
 Священные места, Пророчество, Иезуитское образование, Труд во имя веры и
