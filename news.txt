@@ -1,3 +1,55 @@
+=== 2026-09-30 | ОБНОВЛЕНИЕ | Нации и связь по дорогам
+Переработаны четырнадцать наций. Вавилон даёт стены в первые три города.
+У Китая вместо библиотеки уникальная казарма, эра-бонус переехал в классику.
+Рим больше не требует дорог до столицы. Ват Сиама даёт +3 культуры и +15% еды
+в городе от избытка. Голландия, оттоманы, шошоны, зулусы, Испания, инки,
+Персия, Индонезия и Карфаген — подробности в журнале изменений. У Швеции
+починено описание черты.
+
+Исправлено: связь города со столицей по дороге даётся сразу при открытии ветки
+путей, а не после «Колеса». Без этого не работала и Королевская дорога.
+
+Мобилизация 15% вместо 25, Биг-Бен 10 вместо 15, Тотальная война 25 вместо 30.
+Оксфорд больше не даёт бесплатную технологию: вместо неё +5 науки у себя и +2
+науки каждому городу империи. Эра-бонус информационной эпохи даёт шпиона
+третьего уровня.
+
+Странствующие учёные дают +3 золота за путь в свой город вместо +5. Закрытие
+ветки путей считает торговые пути за эпоху начиная со средневековья.
+
+Алюминия на карте 16 гарантированных плюс 6 в случайной точке своего региона.
+
+В дереве технологий появилась кнопка прокрутки значков. Очки золотого века
+видны под городом.
+
+Обновитесь до 1.5.137 — версия нужна одна у всех.
+
+--- en | Nations and road connections
+Fourteen nations reworked. Babylon grants Walls in its first three Cities.
+China's unique Library is replaced by a unique Barracks, and its era bonus moves
+to the Classical era. Rome no longer needs roads to the Capital. Siam's Wat gives
++3 Culture and +15% Food in the City from its surplus. The Netherlands, the
+Ottomans, the Shoshone, the Zulu, Spain, the Inca, Persia, Indonesia and Carthage
+— see the changelog. Sweden's trait description is fixed.
+
+Fixed: a City is connected to the Capital by road as soon as the Wayfaring tree is
+opened, instead of waiting for The Wheel. Without this the King's Road did nothing.
+
+Mobilization 15% instead of 25, Big Ben 10 instead of 15, Total War 25 instead of
+30. Oxford University no longer grants a free Technology: instead +5 Science in its
+own City and +2 Science in every City of the empire. The Information era bonus
+grants a tier three Spy.
+
+Travelling Scholars give +3 Gold per route to your own City instead of +5. The
+Wayfaring finisher counts Trade Routes per era starting from the Medieval era.
+
+Aluminium on the map: 16 guaranteed plus 6 at a random spot in your own region.
+
+The technology screen now has a scroll button for the icon row. Golden Age points
+are shown under the City.
+
+Update to 1.5.137 — everyone needs the same version.
+
 === 2026-09-29 | ОБНОВЛЕНИЕ | Политики, здания и цены
 Ветка путей переработана: караваны неуязвимы для разграбления уже с первой
 политики, странствующие учёные дают караван, торговый путь и +5 золота за каждый
