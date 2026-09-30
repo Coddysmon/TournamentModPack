@@ -1,13 +1,15 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.136",
+  "packageVersion": "1.5.137",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-09-29T21:49:53.6780009+00:00",
+  "createdUtc": "2026-09-30T00:41:46.9343536+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
-    "baseUrl": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
+    "baseUrl": "http://109.73.196.175/blobs/",
     "layout": "Flat",
     "mirrors": [
+      "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
+      "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/",
       "https://github.com/Coddysmon/TournamentModPack/releases/download/cas2/",
       "https://github.com/Coddysmon/TournamentModPack/releases/download/cas3/",
       "https://github.com/Coddysmon/TournamentModPack/releases/download/cas4/",
@@ -16516,13 +16518,13 @@
         },
         {
           "path": "CHANGELOG.md",
-          "size": 177477,
-          "hash": "c2595a76c466bc77546972cd064de1e93f8ffa159cd714f77355f5fce5aa452a"
+          "size": 180612,
+          "hash": "7075aacbdc852ffa535915970685957eda4328201400f4953efb4360a52d19a2"
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4492288,
-          "hash": "51257dd8be2189476bed9d56fbb07d4b38d53e0fb8fbd2d8362ec74e44cfeff5"
+          "size": 4496896,
+          "hash": "4416431b30f4466cfc531c979bead7a5f2dfacea739f8169073ae48852ef03b6"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -19201,8 +19203,8 @@
         },
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xml",
-          "size": 898222,
-          "hash": "c70bbf82c14cb8e1615057f1e6db725cba5a457a78467d182f9d1ab1bd80cf6a"
+          "size": 898285,
+          "hash": "899c6fd165a8babd2047417a55e36500e9c585031ce11fb85a0f39fe4b3303f8"
         },
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xmlmerchant_icon_fix",
@@ -19356,8 +19358,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 13669861,
-          "hash": "98b286a4d3f205447f65a662b51c79c65aa60225db68b29b5e1949fdea58b71e"
+          "size": 13669490,
+          "hash": "f6f65a1eb0bcb4d476b744230daecbf80156ba9cb5016bb1e164a5ada13266d4"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -19396,8 +19398,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 9878619,
-          "hash": "f3aeb272853ed6ba323234654acd3cd33dff3da412e44b1d4ef198f4feeff6e0"
+          "size": 9879227,
+          "hash": "51a617db3c0ce3605a3a9513d9d99a7b548b9c6c0382fef0f7838f6995e42717"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -19732,7 +19734,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "a78fe548942180c0b37c13a146a1f0d8bfcee933ec118cd79a35e432a3e2ab19"
+          "hash": "a9741dce70c441e8a9b564442725d4b5827f402b9bb2ed17d2448c940eb44574"
         },
         {
           "path": "skins.json",
