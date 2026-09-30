@@ -1,54 +1,90 @@
-=== 2026-09-30 | ОБНОВЛЕНИЕ | Нации и связь по дорогам
-Переработаны четырнадцать наций. Вавилон даёт стены в первые три города.
-У Китая вместо библиотеки уникальная казарма, эра-бонус переехал в классику.
-Рим больше не требует дорог до столицы. Ват Сиама даёт +3 культуры и +15% еды
-в городе от избытка. Голландия, оттоманы, шошоны, зулусы, Испания, инки,
-Персия, Индонезия и Карфаген — подробности в журнале изменений. У Швеции
-починено описание черты.
+=== 2026-09-30 | ОБНОВЛЕНИЕ | Нации: было и стало
+Вавилон: стены в первом городе -> в первых трёх.
+Китай: уникальная библиотека -> уникальная казарма (+1 еда, +1 культура,
++1 монета). Эра-бонус: +50% золота по империи -> +1 науки и +1 монеты
+с казарм, и переехал в классику.
+Рим: бонус требовал дорогу до столицы -> работает без дорог.
+Сиам: Ват +2 культуры -> +3 культуры и +15% еды в городе от избытка.
+Индонезия: Канди 25% -> 35% великих людей.
+Испания: миссия +4 монеты -> +2 монеты, производство без изменений.
+Зулусы: лечение +5 -> +10. Иканда: +1 довольство.
+Шошоны: прежний эра-бонус -> +1 золота с типи.
+Оттоманы: с казарм, арсенала и академии убрано производство, вера осталась.
+Голландия: каждая выдача эра-бонуса поднята на единицу.
+Карфаген: +1 слот каравана.
+Инки: эра-бонус -> классика. Персия: эра-бонус -> средневековье.
+Швеция: у черты оставалось название «Нобелевская премия» от способности,
+которой давно нет -> починено.
 
-Исправлено: связь города со столицей по дороге даётся сразу при открытии ветки
-путей, а не после «Колеса». Без этого не работала и Королевская дорога.
+Обновитесь до 1.5.138 — версия нужна одна у всех.
 
-Мобилизация 15% вместо 25, Биг-Бен 10 вместо 15, Тотальная война 25 вместо 30.
-Оксфорд больше не даёт бесплатную технологию: вместо неё +5 науки у себя и +2
-науки каждому городу империи. Эра-бонус информационной эпохи даёт шпиона
-третьего уровня.
+--- en | Nations: before and after
+Babylon: Walls in the first City -> in the first three.
+China: unique Library -> unique Barracks (+1 Food, +1 Culture, +1 Gold).
+Era bonus: +50% Gold empire-wide -> +1 Science and +1 Gold from Barracks,
+and moved to the Classical era.
+Rome: the bonus required a road to the Capital -> works without roads.
+Siam: Wat +2 Culture -> +3 Culture and +15% Food in the City from its surplus.
+Indonesia: Candi 25% -> 35% Great People rate.
+Spain: Mission +4 Gold -> +2 Gold, Production unchanged.
+Zulu: healing +5 -> +10. Ikanda: +1 Happiness.
+Shoshone: previous era bonus -> +1 Gold from Tipi.
+Ottomans: Production removed from Barracks, Armory and Military Academy,
+Faith stays.
+The Netherlands: every era-bonus yield raised by one.
+Carthage: +1 Caravan slot.
+Inca: era bonus -> Classical. Persia: era bonus -> Medieval.
+Sweden: the trait still carried the name "Nobel Prize" from an ability that
+is long gone -> fixed.
 
-Странствующие учёные дают +3 золота за путь в свой город вместо +5. Закрытие
-ветки путей считает торговые пути за эпоху начиная со средневековья.
+Update to 1.5.138 — everyone needs the same version.
 
-Алюминия на карте 16 гарантированных плюс 6 в случайной точке своего региона.
+=== 2026-09-30 | ОБНОВЛЕНИЕ | Цены, карта и интерфейс
+ЦЕНЫ И ПОЛИТИКИ
+Мобилизация: скидка на покупку юнитов 25% -> 15%.
+Биг-Бен: 15% -> 10%. Тотальная война: 30% -> 25%.
+Оксфорд: бесплатная технология -> +5 науки у себя и +2 науки каждому
+городу империи.
+Странствующие учёные: +5 -> +3 золота за торговый путь в свой город.
+Долгие дороги: пути за эпоху считались с древней -> считаются со
+средневековья.
+Эра-бонус информационной эпохи: шпион 2 тира -> 3 тира.
 
-В дереве технологий появилась кнопка прокрутки значков. Очки золотого века
-видны под городом.
+КАРТА
+Алюминий: 24 гарантированных -> 16 гарантированных плюс 6 в случайной
+точке своего региона.
 
-Обновитесь до 1.5.137 — версия нужна одна у всех.
+ИНТЕРФЕЙС
+Дерево технологий: прокрутка правой кнопкой по значку -> кнопка со
+стрелками, её видно.
+Очки золотого века теперь видны под городом.
 
---- en | Nations and road connections
-Fourteen nations reworked. Babylon grants Walls in its first three Cities.
-China's unique Library is replaced by a unique Barracks, and its era bonus moves
-to the Classical era. Rome no longer needs roads to the Capital. Siam's Wat gives
-+3 Culture and +15% Food in the City from its surplus. The Netherlands, the
-Ottomans, the Shoshone, the Zulu, Spain, the Inca, Persia, Indonesia and Carthage
-— see the changelog. Sweden's trait description is fixed.
+ИСПРАВЛЕНО
+Связь города со столицей по дороге не давалась до «Колеса». Из-за этого
+не работала и Королевская дорога.
 
-Fixed: a City is connected to the Capital by road as soon as the Wayfaring tree is
-opened, instead of waiting for The Wheel. Without this the King's Road did nothing.
+--- en | Costs, map and interface
+COSTS AND POLICIES
+Mobilization: unit purchase discount 25% -> 15%.
+Big Ben: 15% -> 10%. Total War: 30% -> 25%.
+Oxford University: free Technology -> +5 Science in its own City and
++2 Science in every City of the empire.
+Travelling Scholars: +5 -> +3 Gold per trade route to your own City.
+The Long Roads: Trade Routes per era counted from the Ancient era ->
+counted from the Medieval era.
+Information era bonus: tier 2 Spy -> tier 3 Spy.
 
-Mobilization 15% instead of 25, Big Ben 10 instead of 15, Total War 25 instead of
-30. Oxford University no longer grants a free Technology: instead +5 Science in its
-own City and +2 Science in every City of the empire. The Information era bonus
-grants a tier three Spy.
+MAP
+Aluminium: 24 guaranteed -> 16 guaranteed plus 6 at a random spot in your
+own region.
 
-Travelling Scholars give +3 Gold per route to your own City instead of +5. The
-Wayfaring finisher counts Trade Routes per era starting from the Medieval era.
+INTERFACE
+Technology tree: right-click scrolling on an icon -> a visible arrow button.
+Golden Age points are now shown under the City.
 
-Aluminium on the map: 16 guaranteed plus 6 at a random spot in your own region.
-
-The technology screen now has a scroll button for the icon row. Golden Age points
-are shown under the City.
-
-Update to 1.5.137 — everyone needs the same version.
+FIXED
+A City was not connected to the Capital by road until The Wheel. Because of
+that the King's Road did nothing either.
 
 === 2026-09-29 | ОБНОВЛЕНИЕ | Политики, здания и цены
 Ветка путей переработана: караваны неуязвимы для разграбления уже с первой
