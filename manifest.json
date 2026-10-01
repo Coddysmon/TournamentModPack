@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.140",
+  "packageVersion": "1.5.141",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-09-30T19:04:11.9114646+00:00",
+  "createdUtc": "2026-10-01T14:27:11.5923482+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "http://109.73.196.175/blobs/",
@@ -9234,7 +9234,7 @@
         {
           "path": "Art/Skins/IS-3.dds",
           "size": 349680,
-          "hash": "c7680111928a0d125985e1397f3486b4d06fa404b49d86f2af8b4ebdad782a85"
+          "hash": "4d2b00aeda8602b268329d55b7f226fdb135393c4d824cd3adbb6035d889f50c"
         },
         {
           "path": "Art/Skins/IS-3.fxsxml",
@@ -9243,13 +9243,13 @@
         },
         {
           "path": "Art/Skins/IS-3.gr2",
-          "size": 38592,
-          "hash": "8689ae725c020e5ca9ab697a5a87fac46fd1053bc1423921e4f04605e9ad5f7d"
+          "size": 130364,
+          "hash": "5044fdeb1f22088f189be89515ebec662036e37f2d51d14918f76f831e18eb2b"
         },
         {
           "path": "Art/Skins/IS-3_sref.dds",
           "size": 349680,
-          "hash": "68016668188c714a5621590a6f58a7507d999bd740198283ab7867f17e00fbfd"
+          "hash": "af3ec227637c220b20f7ebbd92b7dbe5fbe89ca2ed708a6ed98077ad1686524a"
         },
         {
           "path": "Art/Skins/ISU-152.dds",
@@ -16523,8 +16523,8 @@
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4495872,
-          "hash": "56deaa4700f37c2a750b30f02c8e250cbb0002c1483aa1ebaabe5c4dc2f798bb"
+          "size": 4501504,
+          "hash": "37628000779faa6ff91f6cb38a44cc6151059b23cf8e352207e9d7d7819722b2"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -19203,8 +19203,8 @@
         },
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xml",
-          "size": 898285,
-          "hash": "c4aea9c8ef99ee716ad1ac965676f890b32af2861b031d8499d1bf56617e5c13"
+          "size": 899120,
+          "hash": "31fe896b87b0dfd6b7d83dae0660e2ae1756cad59c0b9d3e1606191c075d8bc5"
         },
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xmlmerchant_icon_fix",
@@ -19358,8 +19358,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 13669514,
-          "hash": "19c14e75e040580c6a48415b82dba284b113f120dbb9c444610ebcefc5557180"
+          "size": 13672620,
+          "hash": "479f8ca220d4f63fd00005bc02e6e513358b910b22ef7e18fc3865b122f95e67"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -19398,8 +19398,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 9879227,
-          "hash": "4bf00925b215ec068ff2e3366fb20a113eb597741ca081bcbdae5749a88811ff"
+          "size": 9880714,
+          "hash": "623c24292e5783e0529c989ce1cb6938d9985693779e63991e8c2216c3014916"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -19734,7 +19734,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "e1eb2fa3612bce885d778fcb7199ddd26429232bfdb6645312fb71698d263b22"
+          "hash": "3b8ded47ccf9d97e98b3b231077bba98cebf66a2c911560401c7baeebd03b22c"
         },
         {
           "path": "skins.json",
@@ -21370,6 +21370,11 @@
           "path": "SkinShots/IroncladCA.png",
           "size": 157384,
           "hash": "7c44cae9859ccc33764059572cf9c4eef2f44864e8fc17bb5513f998ab9f179f"
+        },
+        {
+          "path": "SkinShots/IS-3.png",
+          "size": 146565,
+          "hash": "8a52302bee6d2b90700ad1948884d3bc491d235386d12e91ed0db19cd9942923"
         },
         {
           "path": "SkinShots/ISU-152.png",
@@ -25683,18 +25688,6 @@
       }
     ],
     "Any": true
-  },
-  "client": {
-    "version": "0.3.89",
-    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.89.zip",
-    "sha256": "731bc8083d783bd692f19ba3bed26aac9a70bc826ba6b825a145f9b2993597d3",
-    "size": 64337783,
-    "notes": "\u0421\u043C\u0435\u043D\u0430 \u0443\u0437\u043B\u0430 \u043F\u0440\u0438 \u043E\u0431\u0440\u044B\u0432\u0435 \u0441\u0432\u044F\u0437\u0438, \u043E\u0442\u0441\u0435\u0447\u043A\u0430 \u0432\u0435\u0440\u0441\u0438\u0439 \u043C\u043E\u0434\u0430 \u043D\u0430 \u0432\u0445\u043E\u0434\u0435 \u0432 \u043A\u043E\u043C\u043D\u0430\u0442\u0443, \u043E\u043A\u043D\u043E \u0441\u043E\u0433\u043B\u0430\u0441\u0438\u044F \u043D\u0430 \u043B\u043E\u0433\u0438 \u0443\u0431\u0440\u0430\u043D\u043E \u0432 \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438.",
-    "mirrors": [
-      "relay://109.73.196.175:443/client/nova-client-0.3.89.zip",
-      "http://109.73.196.175/client/nova-client-0.3.89.zip"
-    ],
-    "IsUsable": true
   },
   "relay": {
     "host": "109.73.196.175",
