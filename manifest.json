@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.156",
+  "packageVersion": "1.5.157",
   "packageFolderName": "Nova",
   "createdUtc": "2026-10-01T14:27:11.5923482+00:00",
   "hashAlgorithm": "SHA256",
@@ -19229,7 +19229,7 @@
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xml",
           "size": 899624,
-          "hash": "42ae7e9204a15acaaeb340b5c69fb70467d503f28ae1602d0982233e065c1a79"
+          "hash": "e73c6fccbbd525bfb7406c30ce73abf193185a88aaf6aa15de53ee9368295774"
         },
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xmlmerchant_icon_fix",
@@ -19423,8 +19423,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 9879754,
-          "hash": "019336b0bdedbac46fc3d86c6c0f0a1fe7401064aafae2c6b65632672ad23649"
+          "size": 9879762,
+          "hash": "e2b21cd2eec8fb35756c6eebba294960c5a1d9a99a62dad2967a9fd44a343ec0"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -19759,7 +19759,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "177cf11f2d610152ebfb740622a20f69dbaf0711ff7e840845a440a1adb419a4"
+          "hash": "cb3b53a31d1be12b1ad91c8ecae7d0d14bd417eeb9a302825c0089f8e41b2ecb"
         },
         {
           "path": "skins.json",
