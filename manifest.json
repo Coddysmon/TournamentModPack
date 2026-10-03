@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.146",
+  "packageVersion": "1.5.156",
   "packageFolderName": "Nova",
   "createdUtc": "2026-10-01T14:27:11.5923482+00:00",
   "hashAlgorithm": "SHA256",
@@ -31,6 +31,31 @@
       "sourceSubPath": "",
       "exclusive": true,
       "files": [
+        {
+          "path": "Art/TM_JaguarAtlas45.dds",
+          "size": 8228,
+          "hash": "bddaab0c1dc4f57c3efe27e4bf62a48e112efa4438864d0362de8eeceb546190"
+        },
+        {
+          "path": "Art/TM_JaguarAtlas64.dds",
+          "size": 16512,
+          "hash": "ef79df8695a542566fb475809203ef56e5a0bdf9043796d18caf58c325dcea1b"
+        },
+        {
+          "path": "Art/TM_JaguarAtlas128.dds",
+          "size": 65664,
+          "hash": "53f1ea163718d6fb89b918665c08f47851f5a4b434a7122204cbe6cfba4ea92d"
+        },
+        {
+          "path": "Art/TM_JaguarAtlas256.dds",
+          "size": 262272,
+          "hash": "1a394c6a5c4a25225b4ecb5d8f91ac034f1349a9493abed66181f705768db4e4"
+        },
+        {
+          "path": "Art/TM_JaguarAtlas80.dds",
+          "size": 25728,
+          "hash": "e9aad255af710bc5fda9e2a53b6e2c730a36920a32370ffb332e9e4e78f92d62"
+        },
         {
           "path": "Art/althing_big.dds",
           "size": 2208512,
@@ -16523,8 +16548,8 @@
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4522496,
-          "hash": "80a9b8bb2fbf102c514ec7e9b28a1eb34c5a1866f63daeb7eee4276d583f6a54"
+          "size": 4523520,
+          "hash": "405ef824526fbb785c52a442914d1475fd23c78b3d1502b903009e05ff012310"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -19203,8 +19228,8 @@
         },
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xml",
-          "size": 899120,
-          "hash": "9f03db3710b95b0ede9e8011c2da62ed578a55ca8eedbdeae47969c6ed9b820b"
+          "size": 899624,
+          "hash": "42ae7e9204a15acaaeb340b5c69fb70467d503f28ae1602d0982233e065c1a79"
         },
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xmlmerchant_icon_fix",
@@ -19358,8 +19383,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 13672620,
-          "hash": "479f8ca220d4f63fd00005bc02e6e513358b910b22ef7e18fc3865b122f95e67"
+          "size": 13673926,
+          "hash": "989276471e9d1116ffbf9cd6f6606d227f8a9db6442eb3b6284984918f5cd664"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -19398,8 +19423,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 9880714,
-          "hash": "7cf1faa2985867bb28188ac74ad24005eedd1f5e9a5063638a6584cb7ff2cf54"
+          "size": 9879754,
+          "hash": "019336b0bdedbac46fc3d86c6c0f0a1fe7401064aafae2c6b65632672ad23649"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -19734,7 +19759,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "6f83e72f3c4d96789f60a64f40be689cd614942bc534881aab087ae99a19d135"
+          "hash": "177cf11f2d610152ebfb740622a20f69dbaf0711ff7e840845a440a1adb419a4"
         },
         {
           "path": "skins.json",
