@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.152",
+  "packageVersion": "1.5.153",
   "packageFolderName": "Nova",
   "createdUtc": "2026-10-01T14:27:11.5923482+00:00",
   "hashAlgorithm": "SHA256",
@@ -16523,8 +16523,8 @@
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4527616,
-          "hash": "c9fe16e1a9030fd16f61f8dd7884c0b76e1595a4f3d5359fbe27e6b0224091b7"
+          "size": 4531712,
+          "hash": "7c312003b6cf2a91bd6bcb8829a2bdaff0d46ebac724a90914d94c5734383c48"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -19204,7 +19204,7 @@
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xml",
           "size": 899120,
-          "hash": "bd6155b48ef7c61a1f0af09a814347d2f7fb8333c68383a42ee8d4a82de1aa39"
+          "hash": "b667d647da2db4a17317b160c308165450e2c6d8370713d7cfd34db05366eadc"
         },
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xmlmerchant_icon_fix",
@@ -19399,7 +19399,7 @@
         {
           "path": "Override/CIV5Units_Mongol.xml",
           "size": 9880714,
-          "hash": "c8d2a5300907a75ef5d13101595a96af071ed4d1c99eb2d36d93c305220b26fa"
+          "hash": "5cb413b44af0a52b292dd6b929aa68316644ebb99bc694363ca31fec19257588"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -19734,7 +19734,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "ec17aef9242f526e7f8b9c62cf7f4a033572645e94d404f4d2a255ce0f29d1dc"
+          "hash": "2f1a5e56f782425be54aafef14b62ca7235c0275c5612a227e248e37b216a108"
         },
         {
           "path": "skins.json",
