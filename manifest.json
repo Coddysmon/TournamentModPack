@@ -25715,15 +25715,15 @@
     "Any": true
   },
   "client": {
-    "version": "0.3.98",
-    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.98.zip",
-    "sha256": "32bc6b07824a43519cf2f96e64d43fb4fbcbf825749ae7e609c8c2db620ea5c7",
-    "size": 64413104,
-    "notes": "Защита Windows: метка «скачано из интернета» снимается сама, отказ Smart App Control объясняется словами. Цвет рамки в таблице — кольцом, его путали с признаком «в сети».",
+    "version": "0.3.99",
+    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.99.zip",
+    "sha256": "fbd74b264539e84ba1478cbbd5ea1e27709300542f8bb7773fc46258c0a6221b",
+    "size": 64414860,
+    "notes": "В таблице рейтинга видно, кто сейчас в сети. Цвет рамки профиля — кольцом, чтобы не путать с этим.",
     "IsUsable": true,
     "mirrors": [
-      "relay://109.73.196.175:443/client/nova-client-0.3.98.zip",
-      "http://109.73.196.175/client/nova-client-0.3.98.zip"
+      "relay://109.73.196.175:443/client/nova-client-0.3.99.zip",
+      "http://109.73.196.175/client/nova-client-0.3.99.zip"
     ]
   },
   "relay": {
