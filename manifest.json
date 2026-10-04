@@ -25715,15 +25715,15 @@
     "Any": true
   },
   "client": {
-    "version": "0.3.99",
-    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.99.zip",
-    "sha256": "fbd74b264539e84ba1478cbbd5ea1e27709300542f8bb7773fc46258c0a6221b",
-    "size": 64414860,
-    "notes": "В таблице рейтинга видно, кто сейчас в сети. Цвет рамки профиля — кольцом, чтобы не путать с этим.",
+    "version": "0.3.100",
+    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.100.zip",
+    "sha256": "cc7e71596190755a2fe6abfcbd9b2fbde5744b758b489ab06d459dcc10ac1148",
+    "size": 64415723,
+    "notes": "Комнаты другого модпака больше не видны даже тогда, когда их хост на старом лаунчере: такую комнату опознаём по версии мода.",
     "IsUsable": true,
     "mirrors": [
-      "relay://109.73.196.175:443/client/nova-client-0.3.99.zip",
-      "http://109.73.196.175/client/nova-client-0.3.99.zip"
+      "relay://109.73.196.175:443/client/nova-client-0.3.100.zip",
+      "http://109.73.196.175/client/nova-client-0.3.100.zip"
     ]
   },
   "relay": {
