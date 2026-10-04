@@ -25715,15 +25715,15 @@
     "Any": true
   },
   "client": {
-    "version": "0.3.97",
-    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.97.zip",
-    "sha256": "0b9cba4793029332d684dcb547349f9f9439938352cc7661ac1cf2d9428e9f83",
-    "size": 64411530,
-    "notes": "Комнаты теперь отбираются по моду: в списке Nova не видно комнат Lekmod и наоборот. Ответ переключателя мода переведён на английский.",
+    "version": "0.3.98",
+    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.98.zip",
+    "sha256": "32bc6b07824a43519cf2f96e64d43fb4fbcbf825749ae7e609c8c2db620ea5c7",
+    "size": 64413104,
+    "notes": "Защита Windows: метка «скачано из интернета» снимается сама, отказ Smart App Control объясняется словами. Цвет рамки в таблице — кольцом, его путали с признаком «в сети».",
     "IsUsable": true,
     "mirrors": [
-      "relay://109.73.196.175:443/client/nova-client-0.3.97.zip",
-      "http://109.73.196.175/client/nova-client-0.3.97.zip"
+      "relay://109.73.196.175:443/client/nova-client-0.3.98.zip",
+      "http://109.73.196.175/client/nova-client-0.3.98.zip"
     ]
   },
   "relay": {
