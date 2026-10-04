@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.157",
+  "packageVersion": "1.5.158",
   "packageFolderName": "Nova",
   "createdUtc": "2026-10-01T14:27:11.5923482+00:00",
   "hashAlgorithm": "SHA256",
@@ -164,7 +164,7 @@
         {
           "path": "Art/EmoteIcons_Patch.dds",
           "size": 262272,
-          "hash": "727344ffda6aeba5ee2f5178c5ca786ce86b5af5ed2db9a217a275c1b79dfbf2"
+          "hash": "386aa838cf396e2a2fcb2afc5053681ac913eacd08ebceac5400871ac8f8e0ef"
         },
         {
           "path": "Art/FontIcons_Patch.dds",
@@ -19229,7 +19229,7 @@
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xml",
           "size": 899624,
-          "hash": "e73c6fccbbd525bfb7406c30ce73abf193185a88aaf6aa15de53ee9368295774"
+          "hash": "e931192c997652bc79fe1f79139143fc32c29e1b72d026a1587647ac15132fbc"
         },
         {
           "path": "Override/CIV5Text_Nova_RU_RU.xmlmerchant_icon_fix",
@@ -19383,8 +19383,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 13673926,
-          "hash": "989276471e9d1116ffbf9cd6f6606d227f8a9db6442eb3b6284984918f5cd664"
+          "size": 13673923,
+          "hash": "c3979e6a5080efbc8a60782dd23ce4c55b543f2fc13299f015798eaad35fde42"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -19424,7 +19424,7 @@
         {
           "path": "Override/CIV5Units_Mongol.xml",
           "size": 9879762,
-          "hash": "e2b21cd2eec8fb35756c6eebba294960c5a1d9a99a62dad2967a9fd44a343ec0"
+          "hash": "af3e176f916403cf9d2248b3439b0cb7bc046fa861f2ed8be39a471bc7beded6"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -19759,7 +19759,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "cb3b53a31d1be12b1ad91c8ecae7d0d14bd417eeb9a302825c0089f8e41b2ecb"
+          "hash": "efc5a21e1af6e6187a99c2881ed9f47de4b3ab251cc54f9e617c3e6fe0da8fe2"
         },
         {
           "path": "skins.json",
