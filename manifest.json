@@ -25715,15 +25715,15 @@
     "Any": true
   },
   "client": {
-    "version": "0.3.96",
-    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.96.zip",
-    "sha256": "1bb72c90107016849cf8a25b899fbc50ad2ff7a0b40a2ea37cfe9f4000d4e6af",
-    "size": 64409168,
-    "notes": "Рассылка приказов одним кадром: меньше дубликатов в канале и ровнее отклик. Лаунчер Lekmod теперь виден всем. Значки у ника.",
+    "version": "0.3.97",
+    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.97.zip",
+    "sha256": "0b9cba4793029332d684dcb547349f9f9439938352cc7661ac1cf2d9428e9f83",
+    "size": 64411530,
+    "notes": "Комнаты теперь отбираются по моду: в списке Nova не видно комнат Lekmod и наоборот. Ответ переключателя мода переведён на английский.",
     "IsUsable": true,
     "mirrors": [
-      "relay://109.73.196.175:443/client/nova-client-0.3.96.zip",
-      "http://109.73.196.175/client/nova-client-0.3.96.zip"
+      "relay://109.73.196.175:443/client/nova-client-0.3.97.zip",
+      "http://109.73.196.175/client/nova-client-0.3.97.zip"
     ]
   },
   "relay": {
