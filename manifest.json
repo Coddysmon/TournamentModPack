@@ -25715,15 +25715,15 @@
     "Any": true
   },
   "client": {
-    "version": "0.3.100",
-    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.100.zip",
-    "sha256": "cc7e71596190755a2fe6abfcbd9b2fbde5744b758b489ab06d459dcc10ac1148",
-    "size": 64415723,
-    "notes": "Комнаты другого модпака больше не видны даже тогда, когда их хост на старом лаунчере: такую комнату опознаём по версии мода.",
+    "version": "0.3.101",
+    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.101.zip",
+    "sha256": "1c14fffaf14276be926cc5b91a344c0d743f4463cff852ebdf49686ba90a27dd",
+    "size": 64418015,
+    "notes": "Комната другого модпака не показывается и тогда, когда этого модпака на машине никогда не было: его версия берётся из манифеста.",
     "IsUsable": true,
     "mirrors": [
-      "relay://109.73.196.175:443/client/nova-client-0.3.100.zip",
-      "http://109.73.196.175/client/nova-client-0.3.100.zip"
+      "relay://109.73.196.175:443/client/nova-client-0.3.101.zip",
+      "http://109.73.196.175/client/nova-client-0.3.101.zip"
     ]
   },
   "relay": {
