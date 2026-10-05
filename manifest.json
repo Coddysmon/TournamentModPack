@@ -25715,15 +25715,15 @@
     "Any": true
   },
   "client": {
-    "version": "0.3.102",
-    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.102.zip",
-    "sha256": "79bd6c0a7206c2feac826d4913798312dab7d80b18d6a6a535406032e91a2a18",
-    "size": 64419809,
-    "notes": "Комната другого модпака не показывается и тогда, когда её отдаёт сам Steam (друг внутри, публичный список). Ссылка на Discord в боковом меню.",
+    "version": "0.3.103",
+    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.103.zip",
+    "sha256": "1b4445e96d1e134bdf6d47753a98a56fdd2579fafc09aea61bdb37694d902337",
+    "size": 64420085,
+    "notes": "Значок Discord крупнее. В журнал пишется, чего не хватило отбору комнат по моду.",
     "IsUsable": true,
     "mirrors": [
-      "relay://109.73.196.175:443/client/nova-client-0.3.102.zip",
-      "http://109.73.196.175/client/nova-client-0.3.102.zip"
+      "relay://109.73.196.175:443/client/nova-client-0.3.103.zip",
+      "http://109.73.196.175/client/nova-client-0.3.103.zip"
     ]
   },
   "relay": {
