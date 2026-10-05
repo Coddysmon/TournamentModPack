@@ -25715,15 +25715,15 @@
     "Any": true
   },
   "client": {
-    "version": "0.3.103",
-    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.103.zip",
-    "sha256": "1b4445e96d1e134bdf6d47753a98a56fdd2579fafc09aea61bdb37694d902337",
-    "size": 64420085,
-    "notes": "Значок Discord крупнее. В журнал пишется, чего не хватило отбору комнат по моду.",
+    "version": "0.3.104",
+    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.104.zip",
+    "sha256": "e16e3726aa4bf88f705693eee20ae03927ccb0bd190d6b5f55cfee17b587246a",
+    "size": 64420378,
+    "notes": "Отбор комнат по моду: манифест чужого модпака принимается только от того модпака, у которого спрашивали, и переспрашивается сразу после смены профиля.",
     "IsUsable": true,
     "mirrors": [
-      "relay://109.73.196.175:443/client/nova-client-0.3.103.zip",
-      "http://109.73.196.175/client/nova-client-0.3.103.zip"
+      "relay://109.73.196.175:443/client/nova-client-0.3.104.zip",
+      "http://109.73.196.175/client/nova-client-0.3.104.zip"
     ]
   },
   "relay": {
