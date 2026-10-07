@@ -25715,15 +25715,15 @@
     "Any": true
   },
   "client": {
-    "version": "0.3.106",
-    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.106.zip",
-    "sha256": "e3edd35074bf2740b12c4122119c7db71b7f467e3a8e18da11b7bb442218e406",
-    "size": 64425433,
-    "notes": "Сверка больше не требует файл, который кладёт сам лаунчер: из-за него установка вечно показывала «не сходится: 1 файл». Папка карт чужого модпака известна и без сети.",
+    "version": "0.3.107",
+    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.107.zip",
+    "sha256": "2a4ad6b36d899d1a92b43d6441b00a078157537b55e89c597442f7a1b3386dc7",
+    "size": 64425976,
+    "notes": "Базовый курсор возвращается, если его нет: без файла игра рисует курсор Windows. Выбранный игроком курсор сверка больше не перезаписывает.",
     "IsUsable": true,
     "mirrors": [
-      "relay://109.73.196.175:443/client/nova-client-0.3.106.zip",
-      "http://109.73.196.175/client/nova-client-0.3.106.zip"
+      "relay://109.73.196.175:443/client/nova-client-0.3.107.zip",
+      "http://109.73.196.175/client/nova-client-0.3.107.zip"
     ]
   },
   "relay": {
