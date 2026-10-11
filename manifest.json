@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.158",
+  "packageVersion": "1.5.159",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-10-01T14:27:11.5923482+00:00",
+  "createdUtc": "2026-10-10T17:01:09.6441812+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "http://109.73.196.175/blobs/",
@@ -31,31 +31,6 @@
       "sourceSubPath": "",
       "exclusive": true,
       "files": [
-        {
-          "path": "Art/TM_JaguarAtlas45.dds",
-          "size": 8228,
-          "hash": "bddaab0c1dc4f57c3efe27e4bf62a48e112efa4438864d0362de8eeceb546190"
-        },
-        {
-          "path": "Art/TM_JaguarAtlas64.dds",
-          "size": 16512,
-          "hash": "ef79df8695a542566fb475809203ef56e5a0bdf9043796d18caf58c325dcea1b"
-        },
-        {
-          "path": "Art/TM_JaguarAtlas128.dds",
-          "size": 65664,
-          "hash": "53f1ea163718d6fb89b918665c08f47851f5a4b434a7122204cbe6cfba4ea92d"
-        },
-        {
-          "path": "Art/TM_JaguarAtlas256.dds",
-          "size": 262272,
-          "hash": "1a394c6a5c4a25225b4ecb5d8f91ac034f1349a9493abed66181f705768db4e4"
-        },
-        {
-          "path": "Art/TM_JaguarAtlas80.dds",
-          "size": 25728,
-          "hash": "e9aad255af710bc5fda9e2a53b6e2c730a36920a32370ffb332e9e4e78f92d62"
-        },
         {
           "path": "Art/althing_big.dds",
           "size": 2208512,
@@ -9259,7 +9234,7 @@
         {
           "path": "Art/Skins/IS-3.dds",
           "size": 349680,
-          "hash": "4d2b00aeda8602b268329d55b7f226fdb135393c4d824cd3adbb6035d889f50c"
+          "hash": "9ce58577d5f82bcca62955b059ee1658b897104b18a74eda052ea98c81d0952d"
         },
         {
           "path": "Art/Skins/IS-3.fxsxml",
@@ -9268,13 +9243,13 @@
         },
         {
           "path": "Art/Skins/IS-3.gr2",
-          "size": 130364,
-          "hash": "5044fdeb1f22088f189be89515ebec662036e37f2d51d14918f76f831e18eb2b"
+          "size": 127528,
+          "hash": "0460899c00c29dad7da5149b01a7f60c7219d8de12571ee6ee613d1b06606641"
         },
         {
           "path": "Art/Skins/IS-3_sref.dds",
           "size": 349680,
-          "hash": "af3ec227637c220b20f7ebbd92b7dbe5fbe89ca2ed708a6ed98077ad1686524a"
+          "hash": "ee3f72db8674c63873a3b77936cd1038f8b302bb4180ec23e9c792741348ac68"
         },
         {
           "path": "Art/Skins/ISU-152.dds",
@@ -16132,6 +16107,31 @@
           "hash": "eeefb4329e9c31e1c428c7dcf824ff4af795a987a7ab5e9c6b6e9ce8e2bebd1f"
         },
         {
+          "path": "Art/TM_JaguarAtlas128.dds",
+          "size": 65664,
+          "hash": "53f1ea163718d6fb89b918665c08f47851f5a4b434a7122204cbe6cfba4ea92d"
+        },
+        {
+          "path": "Art/TM_JaguarAtlas256.dds",
+          "size": 262272,
+          "hash": "1a394c6a5c4a25225b4ecb5d8f91ac034f1349a9493abed66181f705768db4e4"
+        },
+        {
+          "path": "Art/TM_JaguarAtlas45.dds",
+          "size": 8228,
+          "hash": "bddaab0c1dc4f57c3efe27e4bf62a48e112efa4438864d0362de8eeceb546190"
+        },
+        {
+          "path": "Art/TM_JaguarAtlas64.dds",
+          "size": 16512,
+          "hash": "ef79df8695a542566fb475809203ef56e5a0bdf9043796d18caf58c325dcea1b"
+        },
+        {
+          "path": "Art/TM_JaguarAtlas80.dds",
+          "size": 25728,
+          "hash": "e9aad255af710bc5fda9e2a53b6e2c730a36920a32370ffb332e9e4e78f92d62"
+        },
+        {
           "path": "Art/TM_LegacyEraBackground.dds",
           "size": 3113008,
           "hash": "48100693a9786c55ce5c1f0610748371602aa1a6f53a09b59e9cb9e1b374e785"
@@ -16354,27 +16354,27 @@
         {
           "path": "Art/TM_UniqueBuildings4Atlas128.dds",
           "size": 262272,
-          "hash": "c8e3479c1978eea4952e2e023a0483319b1ad37c0a886497462730b78ef24212"
+          "hash": "3910f670721cba9c9927c4d45b1d1710f0b2eae0513c0e03f33fb9286ccb52ad"
         },
         {
           "path": "Art/TM_UniqueBuildings4Atlas256.dds",
           "size": 1048704,
-          "hash": "e024de3cb9e246eda91791faead2996d6d2b8420a0213f250f9c4644b1fc45cd"
+          "hash": "db920634e6e633049d9c37beb2ddccd9119c3714a7b34d8390b531ac994efc3a"
         },
         {
           "path": "Art/TM_UniqueBuildings4Atlas45.dds",
           "size": 32528,
-          "hash": "a1016a7981abe1083cffb76eca657f8d9022136d9c63395bfcf1c4d59cfcfd70"
+          "hash": "21c7485bef28112be3364af4f680a98151544e86d6ab6dae593f8fba77dddb3f"
         },
         {
           "path": "Art/TM_UniqueBuildings4Atlas64.dds",
           "size": 65664,
-          "hash": "c4c20fd7eef474503ca460beb16e87244ed836a9fb6a1263e5ad665430479f27"
+          "hash": "85346072e61e4beef50063af541178e6447408449f9f07fa1fa9c53acb8bda67"
         },
         {
           "path": "Art/TM_UniqueBuildings4Atlas80.dds",
           "size": 102528,
-          "hash": "74c0e91c49ff6ca30d93fe7d4527eebc5a13b09fed327c1f706e6c85d524b08a"
+          "hash": "04d0d28e10111038087807c09f75044c2910578508d2ddc01261e3b1cadeeb80"
         },
         {
           "path": "Art/TM_UniqueBuildingsAtlas128.dds",
@@ -16548,8 +16548,8 @@
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4523520,
-          "hash": "405ef824526fbb785c52a442914d1475fd23c78b3d1502b903009e05ff012310"
+          "size": 4533248,
+          "hash": "c9257a352aa8b65c37d1b5c5f5ad3d17f50ee1888f027963f1ec789d75b8e201"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -17013,8 +17013,8 @@
         },
         {
           "path": "Maps/NovaTournamentPangaea.lua",
-          "size": 935012,
-          "hash": "bea1f1ed1d87fbae4d69630c26a0f3c2ead7da39eaeae119061837441f25ed22"
+          "size": 944046,
+          "hash": "6400164772e52825f9ca783ec1d0d7685032d5c47d082c16c3602e6184358855"
         },
         {
           "path": "MarshalAtlas128.dds",
@@ -19227,21 +19227,6 @@
           "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
-          "path": "Override/CIV5Text_Nova_RU_RU.xml",
-          "size": 899624,
-          "hash": "e931192c997652bc79fe1f79139143fc32c29e1b72d026a1587647ac15132fbc"
-        },
-        {
-          "path": "Override/CIV5Text_Nova_RU_RU.xmlmerchant_icon_fix",
-          "size": 895227,
-          "hash": "6a54444c79ac49e519f9932d946e0227920b7a72ff36dc7b6bc5176e907cbb1b"
-        },
-        {
-          "path": "Override/CIV5Text_Nova_RU_RU.xmlsynagogue_slot",
-          "size": 895116,
-          "hash": "4ea8476ed73afb2e40ab7f457466798763b818feb909015d9f7a4e8c4f241419"
-        },
-        {
           "path": "Override/CIV5Trades.xml",
           "size": 0,
           "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -19383,8 +19368,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 13673923,
-          "hash": "c3979e6a5080efbc8a60782dd23ce4c55b543f2fc13299f015798eaad35fde42"
+          "size": 13676986,
+          "hash": "4520474acc0e8dbd2a55fd67617c8b86596a6cf4fcd2c66be8d174491566e0da"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -19423,8 +19408,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 9879762,
-          "hash": "af3e176f916403cf9d2248b3439b0cb7bc046fa861f2ed8be39a471bc7beded6"
+          "size": 9973854,
+          "hash": "4ececff7c1ab4c942d03ce3272800bf8c8b924bac87f07462942bf67d5251536"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -19759,7 +19744,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "efc5a21e1af6e6187a99c2881ed9f47de4b3ab251cc54f9e617c3e6fe0da8fe2"
+          "hash": "967e21ad75d02dccde19c9e1125b8fb0d87c64fd6c3d671fa719b005081d91eb"
         },
         {
           "path": "skins.json",
@@ -23233,8 +23218,8 @@
         },
         {
           "path": "tmp/eui/TechTree.lua",
-          "size": 22617,
-          "hash": "ed4424ad49a857e304b4327018a04d55e08a26aa5105c4935539fc6f9c78550b"
+          "size": 25914,
+          "hash": "b12c3cda12b00bde590689778c3fa879c98f881470c00eeea115df6bea01b167"
         },
         {
           "path": "tmp/eui/TopPanel.lua",
@@ -23428,8 +23413,8 @@
         },
         {
           "path": "tmp/ui/CivilopediaScreen.lua",
-          "size": 305205,
-          "hash": "32d1ed8dd47e9752e443f178824b3ec6caf9041b8f5d5cbbf101a2000df542cc"
+          "size": 305207,
+          "hash": "172fc8d0a353bcb5cf7262a40ef07153268315f2744c12ca6cdc336f47ef33b8"
         },
         {
           "path": "tmp/ui/ConfirmCommandPopup.lua",
@@ -23643,8 +23628,8 @@
         },
         {
           "path": "tmp/ui/MatchOutcomeRecorder.lua",
-          "size": 21198,
-          "hash": "ac2db725d850b3fb5f5bcca453965444d06b09250842b87eba2bcb72c169ec64"
+          "size": 23576,
+          "hash": "d870f49493c7befafb77ed14520a5185577c0c96eb956180c8be3787447a4a77"
         },
         {
           "path": "tmp/ui/MiniMapPanel.lua",
@@ -23958,8 +23943,8 @@
         },
         {
           "path": "tmp/ui/TechTree.lua",
-          "size": 37351,
-          "hash": "3b9aa9d3d0d43d88cee3dfd63a52f9fba354bd6b741b1b9821ed59ccc41f5dcc"
+          "size": 39396,
+          "hash": "a3e795c88ab208d9a375ac972c014e571b3ee432b5617ccc5a71a45957c4998c"
         },
         {
           "path": "tmp/ui/TechTree.xml",
@@ -23993,8 +23978,8 @@
         },
         {
           "path": "tmp/ui/TurnProfiler.lua",
-          "size": 22884,
-          "hash": "438f28473d9cfa028f77e9d85067138ebcfb33ed8059ebd8391261e5e6807b7d"
+          "size": 30049,
+          "hash": "588c152a1a8dfa3c1ebd43e080f5c0a0f166eaf5e4298fb0357b97bddece958b"
         },
         {
           "path": "tmp/ui/TurnProfiler.xml",
@@ -24078,8 +24063,8 @@
       "files": [
         {
           "path": "NovaTournamentPangaea.lua",
-          "size": 935012,
-          "hash": "bea1f1ed1d87fbae4d69630c26a0f3c2ead7da39eaeae119061837441f25ed22"
+          "size": 944046,
+          "hash": "6400164772e52825f9ca783ec1d0d7685032d5c47d082c16c3602e6184358855"
         }
       ]
     },
@@ -25462,8 +25447,8 @@
     ]
   },
   "donate": {
-    "note": "\u041C\u043E\u0434\u043F\u0430\u043A \u0434\u0435\u043B\u0430\u0435\u0442\u0441\u044F \u0431\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u043E \u0438 \u043E\u0441\u0442\u0430\u0451\u0442\u0441\u044F \u0431\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u044B\u043C. \u0414\u0435\u043D\u044C\u0433\u0438 \u0438\u0434\u0443\u0442 \u043D\u0430 \u0441\u0435\u0440\u0432\u0435\u0440, \u0434\u043E\u043C\u0435\u043D \u0438 \u0430\u0432\u0442\u043E\u0440\u0430\u043C \u043C\u043E\u0434\u0435\u043B\u0435\u0439, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u0440\u0430\u0437\u0440\u0435\u0448\u0438\u043B\u0438 \u0438\u0445 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C. \u041D\u0438\u0447\u0435\u0433\u043E \u0432 \u0438\u0433\u0440\u0435 \u043F\u043E\u0436\u0435\u0440\u0442\u0432\u043E\u0432\u0430\u043D\u0438\u0435 \u043D\u0435 \u043E\u0442\u043A\u0440\u044B\u0432\u0430\u0435\u0442 \u2014 \u044D\u0442\u043E \u043F\u0440\u043E\u0441\u0442\u043E \u0441\u043F\u0430\u0441\u0438\u0431\u043E.",
-    "noteEn": "The mod pack is made for free and stays free. The money goes to the server, the domain and the authors of the models who allowed us to use them. A donation unlocks nothing in the game \u2014 it is simply a thank you.",
+    "note": "\u041C\u043E\u0434\u043F\u0430\u043A \u0434\u0435\u043B\u0430\u0435\u0442\u0441\u044F \u0431\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u043E \u0438 \u043E\u0441\u0442\u0430\u0451\u0442\u0441\u044F \u0431\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u044B\u043C. \u0414\u0435\u043D\u044C\u0433\u0438 \u0438\u0434\u0443\u0442 \u043D\u0430 \u0441\u0435\u0440\u0432\u0435\u0440 \u0438 \u0434\u043E\u043C\u0435\u043D. \u041D\u0438\u0447\u0435\u0433\u043E \u0432 \u0438\u0433\u0440\u0435 \u043F\u043E\u0436\u0435\u0440\u0442\u0432\u043E\u0432\u0430\u043D\u0438\u0435 \u043D\u0435 \u043E\u0442\u043A\u0440\u044B\u0432\u0430\u0435\u0442 \u2014 \u044D\u0442\u043E \u043F\u0440\u043E\u0441\u0442\u043E \u0441\u043F\u0430\u0441\u0438\u0431\u043E.",
+    "noteEn": "The mod pack is made for free and stays free. The money goes to the server and the domain. A donation unlocks nothing in the game \u2014 it is simply a thank you.",
     "methods": [
       {
         "title": "DonationAlerts",
@@ -25630,10 +25615,10 @@
       {
         "date": "2026-09-18T00:00:00+00:00",
         "title": "Nova 1.0 \u2014 \u0432\u044B\u0445\u043E\u0434\u0438\u043C \u0438\u0437 \u0431\u0435\u0442\u044B",
-        "body": "Nova \u043F\u0435\u0440\u0435\u0441\u0442\u0430\u0451\u0442 \u0431\u044B\u0442\u044C \u0431\u0435\u0442\u043E\u0439. \u041C\u043E\u0434\u043F\u0430\u043A \u0441\u043E\u0431\u0440\u0430\u043D, \u043F\u0440\u043E\u0432\u0435\u0440\u0435\u043D \u043D\u0430 \u043F\u0430\u0440\u0442\u0438\u044F\u0445 \u0438 \u043F\u0435\u0440\u0435\u0445\u043E\u0434\u0438\u0442 \u043D\u0430 \u0441\u0442\u0430\u0431\u0438\u043B\u044C\u043D\u044B\u0435 \u0432\u044B\u043F\u0443\u0441\u043A\u0438.\n\n\u0427\u0442\u043E \u044D\u0442\u043E \u0437\u043D\u0430\u0447\u0438\u0442 \u0434\u043B\u044F \u0432\u0430\u0441:\n\u2014 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u044F \u0432\u044B\u0445\u043E\u0434\u044F\u0442 \u0433\u043E\u0442\u043E\u0432\u044B\u043C\u0438, \u0430 \u043D\u0435 \u00AB\u043D\u0430 \u043F\u0440\u043E\u0431\u0443\u00BB: \u043B\u0430\u0443\u043D\u0447\u0435\u0440 \u0434\u043E\u043A\u0430\u0442\u044B\u0432\u0430\u0435\u0442 \u0438\u0445 \u0441\u0430\u043C \u0438 \u0441\u0432\u0435\u0440\u044F\u0435\u0442 \u043A\u0430\u0436\u0434\u044B\u0439 \u0444\u0430\u0439\u043B;\n\u2014 \u0441\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043A\u0430 \u043F\u0430\u0440\u0442\u0438\u0439: \u0443\u0447\u0430\u0441\u0442\u043D\u0438\u043A\u0438, \u043C\u0435\u0441\u0442\u0430 \u0438 \u0433\u0440\u0430\u0444\u0438\u043A\u0438 \u043F\u043E\u043A\u0430\u0437\u0430\u0442\u0435\u043B\u0435\u0439 \u043F\u043E \u0445\u043E\u0434\u0430\u043C;\n\u2014 \u0440\u0435\u0439\u0442\u0438\u043D\u0433 \u0438\u0433\u0440\u043E\u043A\u043E\u0432 \u0438 \u0437\u0430\u043F\u0438\u0441\u044C \u043D\u0430 \u0442\u0443\u0440\u043D\u0438\u0440\u044B \u043F\u0440\u044F\u043C\u043E \u0432 \u043B\u0430\u0443\u043D\u0447\u0435\u0440\u0435;\n\u2014 \u043F\u043E\u0434\u043F\u0438\u0441\u043A\u0438 \u2014 \u044D\u0442\u043E \u0442\u043E\u043B\u044C\u043A\u043E \u043E\u0444\u043E\u0440\u043C\u043B\u0435\u043D\u0438\u0435: \u043A\u0443\u0440\u0441\u043E\u0440\u044B, \u0448\u0440\u0438\u0444\u0442 \u043D\u0438\u043A\u0430, \u043E\u0431\u043B\u0438\u043A\u0438 \u0432\u043E\u0439\u0441\u043A. \u0421\u0430\u043C \u043C\u043E\u0434\u043F\u0430\u043A \u0431\u044B\u043B \u0438 \u043E\u0441\u0442\u0430\u0451\u0442\u0441\u044F \u0431\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u044B\u043C.\n\n\u0427\u0442\u043E Nova \u043C\u0435\u043D\u044F\u0435\u0442 \u0432 \u0438\u0433\u0440\u0435 \u2014 \u043D\u0430 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0435 \u00AB\u0427\u0442\u043E \u043C\u0435\u043D\u044F\u0435\u0442 Nova\u00BB:\nhttps://coddysmon.github.io/TournamentModPack/changes.html\n\u041F\u0440\u0430\u0432\u0438\u043B\u0430 \u0442\u0443\u0440\u043D\u0438\u0440\u0430: https://coddysmon.github.io/TournamentModPack/tournament-rules.html\nDiscord \u2014 \u0441\u0431\u043E\u0440 \u043D\u0430 \u043F\u0430\u0440\u0442\u0438\u0438 \u0438 \u043F\u043E\u043C\u043E\u0449\u044C: https://discord.gg/EXP2MyGeK2\n\n\u041C\u0435\u043B\u043E\u0447\u044C \u0437\u0430\u043E\u0434\u043D\u043E: \u0432 \u0441\u043F\u0438\u0441\u043A\u0435 \u043F\u0430\u0440\u0442\u0438\u0439 \u0441\u0442\u043E\u043B\u0431\u0435\u0446 \u00AB\u041A\u0430\u0440\u0442\u0430\u00BB \u043F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0435\u0442 \u00ABNova\u00BB, \u0430 \u043D\u0435 \u0438\u043C\u044F \u0444\u0430\u0439\u043B\u0430 \u0441\u043A\u0440\u0438\u043F\u0442\u0430.\n\n\u0418\u043C\u044F \u0432\u044B\u043F\u0443\u0441\u043A\u0430 \u0442\u0435\u043F\u0435\u0440\u044C \u0432\u0438\u0434\u043D\u043E \u0432\u0435\u0437\u0434\u0435: \u0432 \u043B\u0430\u0443\u043D\u0447\u0435\u0440\u0435 \u2014 \u00ABNova 1.0 \u00B7 \u0441\u0431\u043E\u0440\u043A\u0430 0.3.66\u00BB, \u0432 \u0433\u043B\u0430\u0432\u043D\u043E\u043C \u043C\u0435\u043D\u044E \u0438\u0433\u0440\u044B \u2014\n\u00ABNova 1.0 (\u0441\u0431\u043E\u0440\u043A\u0430 1.5.113)\u00BB. \u041D\u043E\u043C\u0435\u0440 \u0441\u0431\u043E\u0440\u043A\u0438 \u043E\u0441\u0442\u0430\u0451\u0442\u0441\u044F \u043F\u0440\u0435\u0436\u043D\u0438\u043C (1.5.x): \u043E\u043D \u0442\u0435\u0445\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0439, \u043F\u043E \u043D\u0435\u043C\u0443 \u043B\u0430\u0443\u043D\u0447\u0435\u0440 \u0441\u0432\u0435\u0440\u044F\u0435\u0442 \u0444\u0430\u0439\u043B\u044B.\n\u0414\u043B\u044F \u0441\u0435\u0442\u0435\u0432\u043E\u0439 \u0438\u0433\u0440\u044B \u0432\u0441\u0435\u043C \u0443\u0447\u0430\u0441\u0442\u043D\u0438\u043A\u0430\u043C \u043D\u0443\u0436\u043D\u0430 \u043E\u0434\u043D\u0430 \u0432\u0435\u0440\u0441\u0438\u044F \u043C\u043E\u0434\u0430 \u2014 \u043E\u0431\u043D\u043E\u0432\u0438\u0442\u0435\u0441\u044C \u0432\u0441\u0435.",
+        "body": "Nova \u043F\u0435\u0440\u0435\u0441\u0442\u0430\u0451\u0442 \u0431\u044B\u0442\u044C \u0431\u0435\u0442\u043E\u0439. \u041C\u043E\u0434\u043F\u0430\u043A \u0441\u043E\u0431\u0440\u0430\u043D, \u043F\u0440\u043E\u0432\u0435\u0440\u0435\u043D \u043D\u0430 \u043F\u0430\u0440\u0442\u0438\u044F\u0445 \u0438 \u043F\u0435\u0440\u0435\u0445\u043E\u0434\u0438\u0442 \u043D\u0430 \u0441\u0442\u0430\u0431\u0438\u043B\u044C\u043D\u044B\u0435 \u0432\u044B\u043F\u0443\u0441\u043A\u0438.\n\n\u0427\u0442\u043E \u044D\u0442\u043E \u0437\u043D\u0430\u0447\u0438\u0442 \u0434\u043B\u044F \u0432\u0430\u0441:\n\u2014 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u044F \u0432\u044B\u0445\u043E\u0434\u044F\u0442 \u0433\u043E\u0442\u043E\u0432\u044B\u043C\u0438, \u0430 \u043D\u0435 \u00AB\u043D\u0430 \u043F\u0440\u043E\u0431\u0443\u00BB: \u043B\u0430\u0443\u043D\u0447\u0435\u0440 \u0434\u043E\u043A\u0430\u0442\u044B\u0432\u0430\u0435\u0442 \u0438\u0445 \u0441\u0430\u043C \u0438 \u0441\u0432\u0435\u0440\u044F\u0435\u0442 \u043A\u0430\u0436\u0434\u044B\u0439 \u0444\u0430\u0439\u043B;\n\u2014 \u0441\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043A\u0430 \u043F\u0430\u0440\u0442\u0438\u0439: \u0443\u0447\u0430\u0441\u0442\u043D\u0438\u043A\u0438, \u043C\u0435\u0441\u0442\u0430 \u0438 \u0433\u0440\u0430\u0444\u0438\u043A\u0438 \u043F\u043E\u043A\u0430\u0437\u0430\u0442\u0435\u043B\u0435\u0439 \u043F\u043E \u0445\u043E\u0434\u0430\u043C;\n\u2014 \u0440\u0435\u0439\u0442\u0438\u043D\u0433 \u0438\u0433\u0440\u043E\u043A\u043E\u0432 \u0438 \u0437\u0430\u043F\u0438\u0441\u044C \u043D\u0430 \u0442\u0443\u0440\u043D\u0438\u0440\u044B \u043F\u0440\u044F\u043C\u043E \u0432 \u043B\u0430\u0443\u043D\u0447\u0435\u0440\u0435;\n\u2014 \u043F\u043E\u0434\u043F\u0438\u0441\u043A\u0438 \u2014 \u044D\u0442\u043E \u0442\u043E\u043B\u044C\u043A\u043E \u043E\u0444\u043E\u0440\u043C\u043B\u0435\u043D\u0438\u0435: \u043A\u0443\u0440\u0441\u043E\u0440\u044B, \u0448\u0440\u0438\u0444\u0442 \u043D\u0438\u043A\u0430, \u043E\u0431\u043B\u0438\u043A\u0438 \u0432\u043E\u0439\u0441\u043A. \u0421\u0430\u043C \u043C\u043E\u0434\u043F\u0430\u043A \u0431\u044B\u043B \u0438 \u043E\u0441\u0442\u0430\u0451\u0442\u0441\u044F \u0431\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u044B\u043C.\n\n\u0427\u0442\u043E Nova \u043C\u0435\u043D\u044F\u0435\u0442 \u0432 \u0438\u0433\u0440\u0435 \u2014 \u043D\u0430 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0435 \u00AB\u0427\u0442\u043E \u043C\u0435\u043D\u044F\u0435\u0442 Nova\u00BB:\nhttps://coddysmon.github.io/TournamentModPack/changes.html\n\u041F\u0440\u0430\u0432\u0438\u043B\u0430 \u0442\u0443\u0440\u043D\u0438\u0440\u0430: https://coddysmon.github.io/TournamentModPack/tournament-rules.html\nDiscord \u2014 \u0441\u0431\u043E\u0440 \u043D\u0430 \u043F\u0430\u0440\u0442\u0438\u0438 \u0438 \u043F\u043E\u043C\u043E\u0449\u044C: https://discord.gg/THsFbmC34\n\n\u041C\u0435\u043B\u043E\u0447\u044C \u0437\u0430\u043E\u0434\u043D\u043E: \u0432 \u0441\u043F\u0438\u0441\u043A\u0435 \u043F\u0430\u0440\u0442\u0438\u0439 \u0441\u0442\u043E\u043B\u0431\u0435\u0446 \u00AB\u041A\u0430\u0440\u0442\u0430\u00BB \u043F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0435\u0442 \u00ABNova\u00BB, \u0430 \u043D\u0435 \u0438\u043C\u044F \u0444\u0430\u0439\u043B\u0430 \u0441\u043A\u0440\u0438\u043F\u0442\u0430.\n\n\u0418\u043C\u044F \u0432\u044B\u043F\u0443\u0441\u043A\u0430 \u0442\u0435\u043F\u0435\u0440\u044C \u0432\u0438\u0434\u043D\u043E \u0432\u0435\u0437\u0434\u0435: \u0432 \u043B\u0430\u0443\u043D\u0447\u0435\u0440\u0435 \u2014 \u00ABNova 1.0 \u00B7 \u0441\u0431\u043E\u0440\u043A\u0430 0.3.66\u00BB, \u0432 \u0433\u043B\u0430\u0432\u043D\u043E\u043C \u043C\u0435\u043D\u044E \u0438\u0433\u0440\u044B \u2014\n\u00ABNova 1.0 (\u0441\u0431\u043E\u0440\u043A\u0430 1.5.113)\u00BB. \u041D\u043E\u043C\u0435\u0440 \u0441\u0431\u043E\u0440\u043A\u0438 \u043E\u0441\u0442\u0430\u0451\u0442\u0441\u044F \u043F\u0440\u0435\u0436\u043D\u0438\u043C (1.5.x): \u043E\u043D \u0442\u0435\u0445\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0439, \u043F\u043E \u043D\u0435\u043C\u0443 \u043B\u0430\u0443\u043D\u0447\u0435\u0440 \u0441\u0432\u0435\u0440\u044F\u0435\u0442 \u0444\u0430\u0439\u043B\u044B.\n\u0414\u043B\u044F \u0441\u0435\u0442\u0435\u0432\u043E\u0439 \u0438\u0433\u0440\u044B \u0432\u0441\u0435\u043C \u0443\u0447\u0430\u0441\u0442\u043D\u0438\u043A\u0430\u043C \u043D\u0443\u0436\u043D\u0430 \u043E\u0434\u043D\u0430 \u0432\u0435\u0440\u0441\u0438\u044F \u043C\u043E\u0434\u0430 \u2014 \u043E\u0431\u043D\u043E\u0432\u0438\u0442\u0435\u0441\u044C \u0432\u0441\u0435.",
         "tag": "\u0412\u0415\u0420\u0421\u0418\u042F",
         "titleEn": "Nova 1.0 \u2014 out of beta",
-        "bodyEn": "Nova is no longer a beta. The mod pack is assembled, tested in real games and moves to stable releases.\n\nWhat this means for you:\n\u2014 updates arrive finished rather than \u00ABto try\u00BB: the launcher rolls them out and checks every file;\n\u2014 game statistics: participants, places and per-turn charts;\n\u2014 a player rating and tournament sign-up right in the launcher;\n\u2014 subscriptions are looks only: cursors, the name font, unit skins. The mod pack was and stays free.\n\nWhat Nova changes in the game is on the \u00ABWhat Nova changes\u00BB page:\nhttps://coddysmon.github.io/TournamentModPack/changes.html\nTournament rules: https://coddysmon.github.io/TournamentModPack/tournament-rules.html\nDiscord \u2014 finding games and getting help: https://discord.gg/EXP2MyGeK2\n\nOne small thing: the game list shows \u00ABNova\u00BB in the Map column instead of the script file name.\n\nThe release name is now visible everywhere: \u00ABNova 1.0 \u00B7 build 0.3.66\u00BB in the launcher and\n\u00ABNova 1.0 (build 1.5.113)\u00BB in the game\u2019s main menu. The build number stays as it was (1.5.x):\nit is technical, and the launcher checks files by it. Multiplayer needs the same mod version for everyone.",
+        "bodyEn": "Nova is no longer a beta. The mod pack is assembled, tested in real games and moves to stable releases.\n\nWhat this means for you:\n\u2014 updates arrive finished rather than \u00ABto try\u00BB: the launcher rolls them out and checks every file;\n\u2014 game statistics: participants, places and per-turn charts;\n\u2014 a player rating and tournament sign-up right in the launcher;\n\u2014 subscriptions are looks only: cursors, the name font, unit skins. The mod pack was and stays free.\n\nWhat Nova changes in the game is on the \u00ABWhat Nova changes\u00BB page:\nhttps://coddysmon.github.io/TournamentModPack/changes.html\nTournament rules: https://coddysmon.github.io/TournamentModPack/tournament-rules.html\nDiscord \u2014 finding games and getting help: https://discord.gg/THsFbmC34\n\nOne small thing: the game list shows \u00ABNova\u00BB in the Map column instead of the script file name.\n\nThe release name is now visible everywhere: \u00ABNova 1.0 \u00B7 build 0.3.66\u00BB in the launcher and\n\u00ABNova 1.0 (build 1.5.113)\u00BB in the game\u2019s main menu. The build number stays as it was (1.5.x):\nit is technical, and the launcher checks files by it. Multiplayer needs the same mod version for everyone.",
         "url": "https://coddysmon.github.io/TournamentModPack/changes.html",
         "HasUsableUrl": true,
         "IsUsable": true
@@ -25703,28 +25688,16 @@
       {
         "date": "2026-09-18T00:00:00+00:00",
         "title": "Nova 1.0 \u2014 \u0432\u044B\u0445\u043E\u0434\u0438\u043C \u0438\u0437 \u0431\u0435\u0442\u044B",
-        "body": "Nova \u043F\u0435\u0440\u0435\u0441\u0442\u0430\u0451\u0442 \u0431\u044B\u0442\u044C \u0431\u0435\u0442\u043E\u0439. \u041C\u043E\u0434\u043F\u0430\u043A \u0441\u043E\u0431\u0440\u0430\u043D, \u043F\u0440\u043E\u0432\u0435\u0440\u0435\u043D \u043D\u0430 \u043F\u0430\u0440\u0442\u0438\u044F\u0445 \u0438 \u043F\u0435\u0440\u0435\u0445\u043E\u0434\u0438\u0442 \u043D\u0430 \u0441\u0442\u0430\u0431\u0438\u043B\u044C\u043D\u044B\u0435 \u0432\u044B\u043F\u0443\u0441\u043A\u0438.\n\n\u0427\u0442\u043E \u044D\u0442\u043E \u0437\u043D\u0430\u0447\u0438\u0442 \u0434\u043B\u044F \u0432\u0430\u0441:\n\u2014 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u044F \u0432\u044B\u0445\u043E\u0434\u044F\u0442 \u0433\u043E\u0442\u043E\u0432\u044B\u043C\u0438, \u0430 \u043D\u0435 \u00AB\u043D\u0430 \u043F\u0440\u043E\u0431\u0443\u00BB: \u043B\u0430\u0443\u043D\u0447\u0435\u0440 \u0434\u043E\u043A\u0430\u0442\u044B\u0432\u0430\u0435\u0442 \u0438\u0445 \u0441\u0430\u043C \u0438 \u0441\u0432\u0435\u0440\u044F\u0435\u0442 \u043A\u0430\u0436\u0434\u044B\u0439 \u0444\u0430\u0439\u043B;\n\u2014 \u0441\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043A\u0430 \u043F\u0430\u0440\u0442\u0438\u0439: \u0443\u0447\u0430\u0441\u0442\u043D\u0438\u043A\u0438, \u043C\u0435\u0441\u0442\u0430 \u0438 \u0433\u0440\u0430\u0444\u0438\u043A\u0438 \u043F\u043E\u043A\u0430\u0437\u0430\u0442\u0435\u043B\u0435\u0439 \u043F\u043E \u0445\u043E\u0434\u0430\u043C;\n\u2014 \u0440\u0435\u0439\u0442\u0438\u043D\u0433 \u0438\u0433\u0440\u043E\u043A\u043E\u0432 \u0438 \u0437\u0430\u043F\u0438\u0441\u044C \u043D\u0430 \u0442\u0443\u0440\u043D\u0438\u0440\u044B \u043F\u0440\u044F\u043C\u043E \u0432 \u043B\u0430\u0443\u043D\u0447\u0435\u0440\u0435;\n\u2014 \u043F\u043E\u0434\u043F\u0438\u0441\u043A\u0438 \u2014 \u044D\u0442\u043E \u0442\u043E\u043B\u044C\u043A\u043E \u043E\u0444\u043E\u0440\u043C\u043B\u0435\u043D\u0438\u0435: \u043A\u0443\u0440\u0441\u043E\u0440\u044B, \u0448\u0440\u0438\u0444\u0442 \u043D\u0438\u043A\u0430, \u043E\u0431\u043B\u0438\u043A\u0438 \u0432\u043E\u0439\u0441\u043A. \u0421\u0430\u043C \u043C\u043E\u0434\u043F\u0430\u043A \u0431\u044B\u043B \u0438 \u043E\u0441\u0442\u0430\u0451\u0442\u0441\u044F \u0431\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u044B\u043C.\n\n\u0427\u0442\u043E Nova \u043C\u0435\u043D\u044F\u0435\u0442 \u0432 \u0438\u0433\u0440\u0435 \u2014 \u043D\u0430 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0435 \u00AB\u0427\u0442\u043E \u043C\u0435\u043D\u044F\u0435\u0442 Nova\u00BB:\nhttps://coddysmon.github.io/TournamentModPack/changes.html\n\u041F\u0440\u0430\u0432\u0438\u043B\u0430 \u0442\u0443\u0440\u043D\u0438\u0440\u0430: https://coddysmon.github.io/TournamentModPack/tournament-rules.html\nDiscord \u2014 \u0441\u0431\u043E\u0440 \u043D\u0430 \u043F\u0430\u0440\u0442\u0438\u0438 \u0438 \u043F\u043E\u043C\u043E\u0449\u044C: https://discord.gg/EXP2MyGeK2\n\n\u041C\u0435\u043B\u043E\u0447\u044C \u0437\u0430\u043E\u0434\u043D\u043E: \u0432 \u0441\u043F\u0438\u0441\u043A\u0435 \u043F\u0430\u0440\u0442\u0438\u0439 \u0441\u0442\u043E\u043B\u0431\u0435\u0446 \u00AB\u041A\u0430\u0440\u0442\u0430\u00BB \u043F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0435\u0442 \u00ABNova\u00BB, \u0430 \u043D\u0435 \u0438\u043C\u044F \u0444\u0430\u0439\u043B\u0430 \u0441\u043A\u0440\u0438\u043F\u0442\u0430.\n\n\u0418\u043C\u044F \u0432\u044B\u043F\u0443\u0441\u043A\u0430 \u0442\u0435\u043F\u0435\u0440\u044C \u0432\u0438\u0434\u043D\u043E \u0432\u0435\u0437\u0434\u0435: \u0432 \u043B\u0430\u0443\u043D\u0447\u0435\u0440\u0435 \u2014 \u00ABNova 1.0 \u00B7 \u0441\u0431\u043E\u0440\u043A\u0430 0.3.66\u00BB, \u0432 \u0433\u043B\u0430\u0432\u043D\u043E\u043C \u043C\u0435\u043D\u044E \u0438\u0433\u0440\u044B \u2014\n\u00ABNova 1.0 (\u0441\u0431\u043E\u0440\u043A\u0430 1.5.113)\u00BB. \u041D\u043E\u043C\u0435\u0440 \u0441\u0431\u043E\u0440\u043A\u0438 \u043E\u0441\u0442\u0430\u0451\u0442\u0441\u044F \u043F\u0440\u0435\u0436\u043D\u0438\u043C (1.5.x): \u043E\u043D \u0442\u0435\u0445\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0439, \u043F\u043E \u043D\u0435\u043C\u0443 \u043B\u0430\u0443\u043D\u0447\u0435\u0440 \u0441\u0432\u0435\u0440\u044F\u0435\u0442 \u0444\u0430\u0439\u043B\u044B.\n\u0414\u043B\u044F \u0441\u0435\u0442\u0435\u0432\u043E\u0439 \u0438\u0433\u0440\u044B \u0432\u0441\u0435\u043C \u0443\u0447\u0430\u0441\u0442\u043D\u0438\u043A\u0430\u043C \u043D\u0443\u0436\u043D\u0430 \u043E\u0434\u043D\u0430 \u0432\u0435\u0440\u0441\u0438\u044F \u043C\u043E\u0434\u0430 \u2014 \u043E\u0431\u043D\u043E\u0432\u0438\u0442\u0435\u0441\u044C \u0432\u0441\u0435.",
+        "body": "Nova \u043F\u0435\u0440\u0435\u0441\u0442\u0430\u0451\u0442 \u0431\u044B\u0442\u044C \u0431\u0435\u0442\u043E\u0439. \u041C\u043E\u0434\u043F\u0430\u043A \u0441\u043E\u0431\u0440\u0430\u043D, \u043F\u0440\u043E\u0432\u0435\u0440\u0435\u043D \u043D\u0430 \u043F\u0430\u0440\u0442\u0438\u044F\u0445 \u0438 \u043F\u0435\u0440\u0435\u0445\u043E\u0434\u0438\u0442 \u043D\u0430 \u0441\u0442\u0430\u0431\u0438\u043B\u044C\u043D\u044B\u0435 \u0432\u044B\u043F\u0443\u0441\u043A\u0438.\n\n\u0427\u0442\u043E \u044D\u0442\u043E \u0437\u043D\u0430\u0447\u0438\u0442 \u0434\u043B\u044F \u0432\u0430\u0441:\n\u2014 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u044F \u0432\u044B\u0445\u043E\u0434\u044F\u0442 \u0433\u043E\u0442\u043E\u0432\u044B\u043C\u0438, \u0430 \u043D\u0435 \u00AB\u043D\u0430 \u043F\u0440\u043E\u0431\u0443\u00BB: \u043B\u0430\u0443\u043D\u0447\u0435\u0440 \u0434\u043E\u043A\u0430\u0442\u044B\u0432\u0430\u0435\u0442 \u0438\u0445 \u0441\u0430\u043C \u0438 \u0441\u0432\u0435\u0440\u044F\u0435\u0442 \u043A\u0430\u0436\u0434\u044B\u0439 \u0444\u0430\u0439\u043B;\n\u2014 \u0441\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043A\u0430 \u043F\u0430\u0440\u0442\u0438\u0439: \u0443\u0447\u0430\u0441\u0442\u043D\u0438\u043A\u0438, \u043C\u0435\u0441\u0442\u0430 \u0438 \u0433\u0440\u0430\u0444\u0438\u043A\u0438 \u043F\u043E\u043A\u0430\u0437\u0430\u0442\u0435\u043B\u0435\u0439 \u043F\u043E \u0445\u043E\u0434\u0430\u043C;\n\u2014 \u0440\u0435\u0439\u0442\u0438\u043D\u0433 \u0438\u0433\u0440\u043E\u043A\u043E\u0432 \u0438 \u0437\u0430\u043F\u0438\u0441\u044C \u043D\u0430 \u0442\u0443\u0440\u043D\u0438\u0440\u044B \u043F\u0440\u044F\u043C\u043E \u0432 \u043B\u0430\u0443\u043D\u0447\u0435\u0440\u0435;\n\u2014 \u043F\u043E\u0434\u043F\u0438\u0441\u043A\u0438 \u2014 \u044D\u0442\u043E \u0442\u043E\u043B\u044C\u043A\u043E \u043E\u0444\u043E\u0440\u043C\u043B\u0435\u043D\u0438\u0435: \u043A\u0443\u0440\u0441\u043E\u0440\u044B, \u0448\u0440\u0438\u0444\u0442 \u043D\u0438\u043A\u0430, \u043E\u0431\u043B\u0438\u043A\u0438 \u0432\u043E\u0439\u0441\u043A. \u0421\u0430\u043C \u043C\u043E\u0434\u043F\u0430\u043A \u0431\u044B\u043B \u0438 \u043E\u0441\u0442\u0430\u0451\u0442\u0441\u044F \u0431\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u044B\u043C.\n\n\u0427\u0442\u043E Nova \u043C\u0435\u043D\u044F\u0435\u0442 \u0432 \u0438\u0433\u0440\u0435 \u2014 \u043D\u0430 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0435 \u00AB\u0427\u0442\u043E \u043C\u0435\u043D\u044F\u0435\u0442 Nova\u00BB:\nhttps://coddysmon.github.io/TournamentModPack/changes.html\n\u041F\u0440\u0430\u0432\u0438\u043B\u0430 \u0442\u0443\u0440\u043D\u0438\u0440\u0430: https://coddysmon.github.io/TournamentModPack/tournament-rules.html\nDiscord \u2014 \u0441\u0431\u043E\u0440 \u043D\u0430 \u043F\u0430\u0440\u0442\u0438\u0438 \u0438 \u043F\u043E\u043C\u043E\u0449\u044C: https://discord.gg/THsFbmC34\n\n\u041C\u0435\u043B\u043E\u0447\u044C \u0437\u0430\u043E\u0434\u043D\u043E: \u0432 \u0441\u043F\u0438\u0441\u043A\u0435 \u043F\u0430\u0440\u0442\u0438\u0439 \u0441\u0442\u043E\u043B\u0431\u0435\u0446 \u00AB\u041A\u0430\u0440\u0442\u0430\u00BB \u043F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0435\u0442 \u00ABNova\u00BB, \u0430 \u043D\u0435 \u0438\u043C\u044F \u0444\u0430\u0439\u043B\u0430 \u0441\u043A\u0440\u0438\u043F\u0442\u0430.\n\n\u0418\u043C\u044F \u0432\u044B\u043F\u0443\u0441\u043A\u0430 \u0442\u0435\u043F\u0435\u0440\u044C \u0432\u0438\u0434\u043D\u043E \u0432\u0435\u0437\u0434\u0435: \u0432 \u043B\u0430\u0443\u043D\u0447\u0435\u0440\u0435 \u2014 \u00ABNova 1.0 \u00B7 \u0441\u0431\u043E\u0440\u043A\u0430 0.3.66\u00BB, \u0432 \u0433\u043B\u0430\u0432\u043D\u043E\u043C \u043C\u0435\u043D\u044E \u0438\u0433\u0440\u044B \u2014\n\u00ABNova 1.0 (\u0441\u0431\u043E\u0440\u043A\u0430 1.5.113)\u00BB. \u041D\u043E\u043C\u0435\u0440 \u0441\u0431\u043E\u0440\u043A\u0438 \u043E\u0441\u0442\u0430\u0451\u0442\u0441\u044F \u043F\u0440\u0435\u0436\u043D\u0438\u043C (1.5.x): \u043E\u043D \u0442\u0435\u0445\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0439, \u043F\u043E \u043D\u0435\u043C\u0443 \u043B\u0430\u0443\u043D\u0447\u0435\u0440 \u0441\u0432\u0435\u0440\u044F\u0435\u0442 \u0444\u0430\u0439\u043B\u044B.\n\u0414\u043B\u044F \u0441\u0435\u0442\u0435\u0432\u043E\u0439 \u0438\u0433\u0440\u044B \u0432\u0441\u0435\u043C \u0443\u0447\u0430\u0441\u0442\u043D\u0438\u043A\u0430\u043C \u043D\u0443\u0436\u043D\u0430 \u043E\u0434\u043D\u0430 \u0432\u0435\u0440\u0441\u0438\u044F \u043C\u043E\u0434\u0430 \u2014 \u043E\u0431\u043D\u043E\u0432\u0438\u0442\u0435\u0441\u044C \u0432\u0441\u0435.",
         "tag": "\u0412\u0415\u0420\u0421\u0418\u042F",
         "titleEn": "Nova 1.0 \u2014 out of beta",
-        "bodyEn": "Nova is no longer a beta. The mod pack is assembled, tested in real games and moves to stable releases.\n\nWhat this means for you:\n\u2014 updates arrive finished rather than \u00ABto try\u00BB: the launcher rolls them out and checks every file;\n\u2014 game statistics: participants, places and per-turn charts;\n\u2014 a player rating and tournament sign-up right in the launcher;\n\u2014 subscriptions are looks only: cursors, the name font, unit skins. The mod pack was and stays free.\n\nWhat Nova changes in the game is on the \u00ABWhat Nova changes\u00BB page:\nhttps://coddysmon.github.io/TournamentModPack/changes.html\nTournament rules: https://coddysmon.github.io/TournamentModPack/tournament-rules.html\nDiscord \u2014 finding games and getting help: https://discord.gg/EXP2MyGeK2\n\nOne small thing: the game list shows \u00ABNova\u00BB in the Map column instead of the script file name.\n\nThe release name is now visible everywhere: \u00ABNova 1.0 \u00B7 build 0.3.66\u00BB in the launcher and\n\u00ABNova 1.0 (build 1.5.113)\u00BB in the game\u2019s main menu. The build number stays as it was (1.5.x):\nit is technical, and the launcher checks files by it. Multiplayer needs the same mod version for everyone.",
+        "bodyEn": "Nova is no longer a beta. The mod pack is assembled, tested in real games and moves to stable releases.\n\nWhat this means for you:\n\u2014 updates arrive finished rather than \u00ABto try\u00BB: the launcher rolls them out and checks every file;\n\u2014 game statistics: participants, places and per-turn charts;\n\u2014 a player rating and tournament sign-up right in the launcher;\n\u2014 subscriptions are looks only: cursors, the name font, unit skins. The mod pack was and stays free.\n\nWhat Nova changes in the game is on the \u00ABWhat Nova changes\u00BB page:\nhttps://coddysmon.github.io/TournamentModPack/changes.html\nTournament rules: https://coddysmon.github.io/TournamentModPack/tournament-rules.html\nDiscord \u2014 finding games and getting help: https://discord.gg/THsFbmC34\n\nOne small thing: the game list shows \u00ABNova\u00BB in the Map column instead of the script file name.\n\nThe release name is now visible everywhere: \u00ABNova 1.0 \u00B7 build 0.3.66\u00BB in the launcher and\n\u00ABNova 1.0 (build 1.5.113)\u00BB in the game\u2019s main menu. The build number stays as it was (1.5.x):\nit is technical, and the launcher checks files by it. Multiplayer needs the same mod version for everyone.",
         "url": "https://coddysmon.github.io/TournamentModPack/changes.html",
         "HasUsableUrl": true,
         "IsUsable": true
       }
     ],
     "Any": true
-  },
-  "client": {
-    "version": "0.3.107",
-    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.107.zip",
-    "sha256": "2a4ad6b36d899d1a92b43d6441b00a078157537b55e89c597442f7a1b3386dc7",
-    "size": 64425976,
-    "notes": "Базовый курсор возвращается, если его нет: без файла игра рисует курсор Windows. Выбранный игроком курсор сверка больше не перезаписывает.",
-    "IsUsable": true,
-    "mirrors": [
-      "relay://109.73.196.175:443/client/nova-client-0.3.107.zip",
-      "http://109.73.196.175/client/nova-client-0.3.107.zip"
-    ]
   },
   "relay": {
     "host": "109.73.196.175",
@@ -25744,9 +25717,6 @@
       }
     ],
     "IsUsable": true
-  },
-  "community": {
-    "discord": "https://discord.gg/EXP2MyGeK2"
   },
   "rating": {
     "url": "relay://109.73.196.175:443",
