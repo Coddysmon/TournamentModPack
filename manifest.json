@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.162",
+  "packageVersion": "1.5.163",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-10-12T09:27:55.5504742+00:00",
+  "createdUtc": "2026-10-12T09:42:35.6484427+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "http://109.73.196.175/blobs/",
@@ -19408,8 +19408,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 9989456,
-          "hash": "738c2481b1b732427281a4d305af81147bfe7a02668b08ae25f0d99aad780eb8"
+          "size": 9989884,
+          "hash": "7910e4b01f3018c80ed6db5ad8be24587be0926f1db829f3ae047509b04e7fcd"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -19744,7 +19744,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "bf5620df061a1e085f935f3810d0994282680d3e8cbb9900424226779b56af21"
+          "hash": "153dcbaf9fb585e5fda3509eccbe21494db8a33e3981bdebccee64fc60cf624e"
         },
         {
           "path": "skins.json",
