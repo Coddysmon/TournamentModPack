@@ -25770,15 +25770,15 @@
     "discord": "https://discord.gg/SxzjCCcQMJ"
   },
   "client": {
-    "version": "0.3.109",
-    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.109.zip",
-    "sha256": "27add266f385244426a74fd3514a0e41a106ffe84f5f53f6332cdb029652553d",
-    "size": 64449632,
-    "notes": "Подписка больше не слетает: лаунчер не стирает сохранённый код при переключении мода и не принимает «не знаю» за «подписки нет». Если подписка пропала раньше — код вводится заново в разделе «Подписки».",
+    "version": "0.3.110",
+    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.110.zip",
+    "sha256": "feb3fc12846c91915e6a480564b0bea39dd89b000c8a85d89a0a2acfb53b2800",
+    "size": 64452483,
+    "notes": "Форматы сборов подписаны коротко: FFA 6, FFA 4, 3v3, 1v1 — одинаково в лаунчере и в Discord. Сбор, объявленный в Discord, виден в лаунчере, а запись и отметка «Готов» работают с обеих сторон.",
     "IsUsable": true,
     "mirrors": [
-      "relay://109.73.196.175:443/client/nova-client-0.3.109.zip",
-      "http://109.73.196.175/client/nova-client-0.3.109.zip"
+      "relay://109.73.196.175:443/client/nova-client-0.3.110.zip",
+      "http://109.73.196.175/client/nova-client-0.3.110.zip"
     ]
   }
 }
