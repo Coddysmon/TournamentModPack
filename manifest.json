@@ -25768,5 +25768,17 @@
   },
   "community": {
     "discord": "https://discord.gg/SxzjCCcQMJ"
+  },
+  "client": {
+    "version": "0.3.108",
+    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.108.zip",
+    "sha256": "bd7f81a171c27878bc2e287e0468ebc60a6adfea19116b696cc405d1042a0e0b",
+    "size": 64439285,
+    "notes": "Убран смайл-ягуар. В статистике видно, сколько рейтинга дала победа. Установка интерфейса EUI из лаунчера и откат к ванильному. Удаление программы больше не запускает командную оболочку — из-за неё антивирусы считали лаунчер подозрительным. Обновление теперь проверяет версию внутри архива и не ставит чужую.",
+    "IsUsable": true,
+    "mirrors": [
+      "relay://109.73.196.175:443/client/nova-client-0.3.108.zip",
+      "http://109.73.196.175/client/nova-client-0.3.108.zip"
+    ]
   }
 }
