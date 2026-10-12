@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.160",
+  "packageVersion": "1.5.161",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-10-11T08:39:18.5390147+00:00",
+  "createdUtc": "2026-10-12T08:38:09.5731913+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "http://109.73.196.175/blobs/",
@@ -16548,8 +16548,8 @@
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4533248,
-          "hash": "c9257a352aa8b65c37d1b5c5f5ad3d17f50ee1888f027963f1ec789d75b8e201"
+          "size": 4535808,
+          "hash": "ee7bd1e1b5ca883310b91e3bc54c00520f8a46bbd6c1b90f10bda19d29bd154d"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -19368,8 +19368,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 13677305,
-          "hash": "b0e6994c666d05cd6ed210168a7c348a5516172a8e961b62793bd335720b6d94"
+          "size": 13686919,
+          "hash": "12d6c1556004f7a79b5b9649663349ccd8045b41f495bfb0265dff26fe915f70"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -19408,8 +19408,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 9973854,
-          "hash": "feaabe6e1158d51b11e854f04cdd1d7e02ba1ae620fbe0165971e367c47dfeaa"
+          "size": 9983043,
+          "hash": "20a9f56a3060180d7fb2b5687b106cbd3b095b6540550bc45a219e33d120fae1"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -19744,7 +19744,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "41dc75bb478839fae36cfda0c6b8ff09cc5b6d759f5cfca07917dfbda86009e2"
+          "hash": "1303ad22636115fa005b35c1e75a12e8d0f252f3ab8d6a1bf8978e0370d850fd"
         },
         {
           "path": "skins.json",
@@ -23218,8 +23218,8 @@
         },
         {
           "path": "tmp/eui/TechTree.lua",
-          "size": 25914,
-          "hash": "b12c3cda12b00bde590689778c3fa879c98f881470c00eeea115df6bea01b167"
+          "size": 28174,
+          "hash": "79b03c80708fdb98b350b48e6fb3f7c901fe6d3416417eec8a1061144a26dd0a"
         },
         {
           "path": "tmp/eui/TopPanel.lua",
@@ -23238,8 +23238,8 @@
         },
         {
           "path": "tmp/eui/UnitFlagManager.lua",
-          "size": 57708,
-          "hash": "eb5ac61682775f738e317f6fc9145fffee2395b8f329e91acbe936b8d9d3a10b"
+          "size": 58857,
+          "hash": "c17d539813f05f39dbbc82dd9fd7dc9c77cc409c96b37f4e4d30b20fee6f2800"
         },
         {
           "path": "tmp/eui/UnitFlagManager.xml",
@@ -23248,8 +23248,8 @@
         },
         {
           "path": "tmp/eui/UnitPanel.lua",
-          "size": 92733,
-          "hash": "bcd69fbe93894c5e45d3e6066590b4a904e7fd0b20faaaacfbcc9221ab2b5254"
+          "size": 93201,
+          "hash": "3338b584e50c8e899a75add9ba48782bde14bd621b0dfb27f3c3589b6529d696"
         },
         {
           "path": "tmp/eui/UnitPanel.xml",
@@ -23263,8 +23263,8 @@
         },
         {
           "path": "tmp/eui/WorldView.lua",
-          "size": 37946,
-          "hash": "86aa309d23da44941c6629f02c013bef73287c8071c880dc23e483dd4b188168"
+          "size": 37340,
+          "hash": "0fd2ad6c54e1ecf9272dd6d9e0a48fc7ea069fc2b164e7378e8ccb9e882bbb03"
         },
         {
           "path": "tmp/eui/YieldIconManager.lua",
@@ -23588,8 +23588,8 @@
         },
         {
           "path": "tmp/ui/InGame.lua",
-          "size": 52300,
-          "hash": "8dafebc1cfe64f3e4389a765156364fe72fc8aae8138d3311e40565b81a63513"
+          "size": 52918,
+          "hash": "d2a7aa01deeacdef8acfa3651265694e4ba35180914855df6db2c31bcc38699b"
         },
         {
           "path": "tmp/ui/JoiningRoom.lua",
@@ -23803,8 +23803,8 @@
         },
         {
           "path": "tmp/ui/PopulateUniques.lua",
-          "size": 8302,
-          "hash": "b156b9d36c07402d222674b1e49d9ac20bd102d59c83ce968ba2ad185cceebe5"
+          "size": 10387,
+          "hash": "d2d9f3d523073cea4b8027076ec118feeb7f27259c4009b76389708cff265a88"
         },
         {
           "path": "tmp/ui/ProductionPopup.lua",
@@ -23943,8 +23943,8 @@
         },
         {
           "path": "tmp/ui/TechTree.lua",
-          "size": 39396,
-          "hash": "a3e795c88ab208d9a375ac972c014e571b3ee432b5617ccc5a71a45957c4998c"
+          "size": 39850,
+          "hash": "a2401c84548bc9d394a70575e796d09f451f5889400e7a2f34191c825f94a7ef"
         },
         {
           "path": "tmp/ui/TechTree.xml",
@@ -23988,8 +23988,8 @@
         },
         {
           "path": "tmp/ui/UnitFlagManager.lua",
-          "size": 83902,
-          "hash": "de7e4dce718e655f03f7494b2045fbfe92560e6c8e134f274258c1ac10d89da3"
+          "size": 85108,
+          "hash": "3892199e698057d60a5a8bc7dbbdb7d60b9f19d7418d6ff666984eccc0788929"
         },
         {
           "path": "tmp/ui/UnitFlagManager.xml",
@@ -23998,8 +23998,8 @@
         },
         {
           "path": "tmp/ui/UnitList.lua",
-          "size": 18219,
-          "hash": "9991790faa51aecd0096144608d94bfdaf337a2cc68d30a13144792f034adbee"
+          "size": 19371,
+          "hash": "d54d82d35bc55ac6d466762da1613a05b46f64debd6dcf65281ced6fa7e52da5"
         },
         {
           "path": "tmp/ui/UnitList.xml",
@@ -24038,8 +24038,8 @@
         },
         {
           "path": "tmp/ui/WorldView.lua",
-          "size": 37848,
-          "hash": "1baa17fed217c42a5c98ee4a549629d8dffdac53a960b98b6d47cd847d1f41a8"
+          "size": 38466,
+          "hash": "916cb0b74f4d51b6433f20e0e372ceec0aa3d0dfa472bb578ffa1a09363c7566"
         },
         {
           "path": "tmp/ui/YieldIconManager.lua",
@@ -25552,6 +25552,14 @@
   },
   "news": {
     "entries": [
+      {
+        "date": "2026-10-12T00:00:00+00:00",
+        "tag": "ОБНОВЛЕНИЕ",
+        "title": "1.5.161: верования, политики и починка вылетов",
+        "body": "ПОЧИНЕНО\n\n1. Вылеты в поздней игре. Падала ванильная русская строка подсказки специалистов: она просила движок просклонять число, чего для русского он сделать не может. У одного игрока за вечер — 15 208 таких ошибок и шесть падений подряд. Цена починки: в подсказке города будет «3 Инженер...» вместо «3 Инженера...».\n2. Падение списка юнитов, когда у юнита в этот миг нет клетки. Та же незащищённая проверка закрыта ещё в шести файлах интерфейса.\n3. Подёргивание экрана технологий. При открытом дереве игра перестраивала его на каждое изменение исследований — в партии на шестерых и на чужие тоже. Перестройка занимала 130–350 мс и шла каждые несколько секунд.\n\nВЕРОВАНИЯ\n\n4. Благословение мореходов: маяки давали +2 золота, +2 производства, +1 счастья → счастья нет, золота +3.\n5. Звёздная навигация: маяки давали +2 культуры, +1 науки, +1 счастья → счастья нет, науки +2.\n6. Дары недр: +1 культуры и +1 веры за ресурс → по +2. Золото осталось +1.\n7. Благословенное ремесло: в список зданий добавлены цирк и каменная мастерская — каждое даёт +3 веры, +1 культуры, +1 еды.\n8. Твердыня веры: со стен убрано счастье, замкам добавлено +2 культуры.\n9. Воинское братство: с казарм убрано счастье, веры +3.\n10. Мечети: +3 веры → +6 веры.\n11. Монастыри: +2 еды → +1 еды, добавлено +10% еды, сохраняемой при росте города.\n12. Покровители труда: кузницы давали +1 производства и +1 золота → по +2. Конюшни без изменений.\n13. Синагоги: добавлено +10% золота в городе.\n14. Ступы: добавлено +1 счастья.\n15. Священные места: здания давали +1 еды, +2 золота, +1 культуры → теперь +1 ко всем шести видам дохода у десяти классов зданий.\n16. Символизм: обещание +10% боевой мощи убрано из описания — этот бонус не работал никогда, в данных он стоял нулём. Остаётся разовый золотой век на 250 ходов, и теперь он приходит всем: раньше взявший «Далай-ламу» не получал его вовсе.\n17. Религиозное сообщество: Великий храм давал +3 производства → убрано.\n18. Мечи на орала: город давал +3 еды → +2.\n19. Литургическая драма удалена.\n20. Фанатичные проповедники удалены.\n\nПОЛИТИКИ\n\n21. Честь, открытие: культура за убийство врага убрана отсюда. Теперь такие выдачи получают все игроки с начала партии, а открытие Чести добавляет к ним варваров.\n22. Честь, закрытие: наука за убийства убрана. +10% к росту городов осталось.\n23. Военная традиция: суды и арена убраны целиком. Теперь юнит, появившийся в городе, приносит науку, равную своей боевой силе, но не больше 30 за юнита — и построенный, и купленный за золото или веру.\n24. Военная традиция теперь требует Профессиональную армию, а не Кодекс воина.\n25. Резерв ветеранов: вместо дешёвого содержания — +5 к боевой и дальней силе всем юнитам, и тем, что уже стоят на карте, и будущим. Гражданских не касается.\n26. Регулярные полки: +5% к производству боевых юнитов → +7%.\n27. Великая столица: Дворец давал +5 еды и +5 производства → по +6.\n28. Национальный дворец: Дворец давал +8 культуры → +10.\n29. Военные облигации: 1750 золота → 2000.\n30. Глобальные торговые сети: добавлен бесплатный великий купец.\n31. Культурное возрождение: добавлены бесплатные великий художник и великий музыкант.\n32. Секуляризм: +2 науки с каждого специалиста → +1.\n33. Гуманизм: прежний бонус убран. Оксфордский университет даёт +4 науки, +4 культуры, +4 производства и +4 счастья.\n34. Пути, закрытие: торговые пути можно покупать за веру — сразу при взятии политики, без ожидания индустриализации. Цена по той же лестнице, что у великих людей, общая на караваны и грузовые суда.\n\nНОВОЕ ПРАВИЛО ДЛЯ ВСЕХ, С НАЧАЛА ПАРТИИ\n\n35. За убийство юнита другого игрока или города-государства убийца получает культуру, золото и науку — каждая равна боевой силе убитого, но не больше 30. На варваров правило не распространяется: за них те же выдачи даёт открытие Чести.\n\nПРОЧЕЕ\n\n36. Объявление войны больше не выталкивает ваши войска с земель города-государства.\n37. Цена великих людей за веру растёт раздельно у писателей, художников и музыкантов: покупка одного больше не удорожает остальных.\n38. Бомбардировщик и двухмоторный больше не могут взять уклонение. B-17 и стелс не затронуты. Уже взятое уклонение в старых партиях остаётся — запрет действует на новый выбор.\n39. Статуя Зевса даёт очко великого инженера.\n40. Швеция: из списка уникальных зданий при выборе державы убраны девять национальных чудес. Сами бонусы остались на месте.\n41. Китай: описание эра-бонуса говорило про казармы, хотя у Китая этот класс занимают Шёлковые казармы.\n\nВАЖНО\n\n42. Версия сохранений поднимается. Старые сейвы с новой версией не откроются — начатые партии придётся доигрывать на старой или начинать заново.\n\nОбновитесь до 1.5.161 — версия нужна одна у всех.",
+        "titleEn": "1.5.161: beliefs, policies and crash fixes",
+        "bodyEn": "FIXED\n\n1. Late-game crashes. The culprit was a stock Russian specialist tooltip string: it asked the engine to decline a number, which it cannot do for Russian. One player logged 15,208 such errors and six crashes in a single evening.\n2. The unit list crashed when a unit had no plot at that moment. The same unguarded call was closed in six more interface files.\n3. Tech screen stutter. With the tree open, the game rebuilt it on every research change — in a six-player game, other players' research too. Each rebuild took 130–350 ms and ran every few seconds.\n\nBELIEFS\n\n4. Mariner's Blessing: lighthouses gave +2 gold, +2 production, +1 happiness → no happiness, gold +3.\n5. Star Navigation: lighthouses gave +2 culture, +1 science, +1 happiness → no happiness, science +2.\n6. Gifts of the Earth: +1 culture and +1 faith per resource → +2 each. Gold stays +1.\n7. Blessed Craft: circus and stone works added to the building list — each gives +3 faith, +1 culture, +1 food.\n8. Fortress of Faith: happiness removed from walls, castles gain +2 culture.\n9. Brotherhood of Arms: happiness removed from barracks, faith +3.\n10. Mosques: +3 faith → +6 faith.\n11. Monasteries: +2 food → +1 food, plus 10% of food kept on city growth.\n12. Patrons of Labor: forges gave +1 production and +1 gold → +2 each. Stables unchanged.\n13. Synagogues: +10% gold in the city.\n14. Stupas: +1 happiness.\n15. Sacred Sites: buildings gave +1 food, +2 gold, +1 culture → now +1 to all six yields across ten building classes.\n16. Symbolism: the promised +10% combat strength is gone from the description — it never worked, the value was zero in the data. The one-off 250-turn golden age remains, and now everyone gets it: previously anyone who took the Dalai Lama never did.\n17. Religious Community: the Grand Temple gave +3 production → removed.\n18. Swords into Plowshares: the city gave +3 food → +2.\n19. Liturgical Drama removed.\n20. Missionary Zeal removed.\n\nPOLICIES\n\n21. Honor, opener: culture for killing an enemy is no longer here. Those yields now go to every player from the start of the game, and the Honor opener adds barbarians on top.\n22. Honor, finisher: science for kills removed. +10% city growth stays.\n23. Military Tradition: courthouses and arenas removed entirely. A unit appearing in a city now yields science equal to its combat strength, capped at 30 per unit — whether built or bought with gold or faith.\n24. Military Tradition now requires Professional Army instead of Warrior Code.\n25. Veteran Reserve: instead of cheaper upkeep — +5 to melee and ranged strength for all units, both those already on the map and future ones. Civilians are not affected.\n26. Regular Regiments: +5% combat unit production → +7%.\n27. Great Capital: the Palace gave +5 food and +5 production → +6 each.\n28. National Palace: the Palace gave +8 culture → +10.\n29. War Bonds: 1750 gold → 2000.\n30. Global Trade Networks: a free Great Merchant added.\n31. Cultural Revival: a free Great Artist and Great Musician added.\n32. Secularism: +2 science per specialist → +1.\n33. Humanism: the old bonus is gone. Oxford University gives +4 science, +4 culture, +4 production and +4 happiness.\n34. Wayfaring, finisher: trade routes can be bought with faith — right away, without waiting for Industrialisation. The price follows the same ladder as great people, shared between caravans and cargo ships.\n\nNEW RULE FOR EVERYONE, FROM TURN ONE\n\n35. Killing a unit of another player or a city-state grants the killer culture, gold and science — each equal to the victim's combat strength, capped at 30. Barbarians are excluded: the Honor opener covers those.\n\nOTHER\n\n36. Declaring war no longer ejects your troops from city-state territory.\n37. The faith price of great people now rises separately for writers, artists and musicians: buying one no longer makes the others more expensive.\n38. The Bomber and the WWI Bomber can no longer take Evasion. The B-17 and the Stealth Bomber are untouched. Evasion already taken in older games stays — the block applies to new choices.\n39. The Statue of Zeus grants a Great Engineer point.\n40. Sweden: the nine national wonders are no longer listed among its unique buildings on the civilization screen. The bonuses themselves are unchanged.\n41. China: the era bonus description said barracks, while that slot in China is held by Silk Barracks.\n\nIMPORTANT\n\n42. The save version goes up. Old saves will not open with the new version — games in progress must be finished on the old one or started over.\n\nUpdate to 1.5.161 — everyone needs the same version."
+      },
       {
         "date": "2026-10-11T00:00:00+00:00",
         "tag": "ОБНОВЛЕНИЕ",
