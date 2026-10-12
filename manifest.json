@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.163",
+  "packageVersion": "1.5.164",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-10-12T09:42:35.6484427+00:00",
+  "createdUtc": "2026-10-12T14:05:36.8023626+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "http://109.73.196.175/blobs/",
@@ -16549,7 +16549,7 @@
         {
           "path": "CvGameCore_Expansion2.dll",
           "size": 4535808,
-          "hash": "69db3ead2d1a8a56bc55516abc4eef58ee348dc4f186779643247c65727d8ad8"
+          "hash": "8993d3ae16a7577392f4aaeb18ac4a35e325b5190ec0af18ba222e8969d99ba8"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -19408,8 +19408,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 9989884,
-          "hash": "7910e4b01f3018c80ed6db5ad8be24587be0926f1db829f3ae047509b04e7fcd"
+          "size": 9992509,
+          "hash": "f88f9d8ec19ab77926da2aba538097df56acc13dd2344b37e2695cc483b5233a"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -19744,7 +19744,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "153dcbaf9fb585e5fda3509eccbe21494db8a33e3981bdebccee64fc60cf624e"
+          "hash": "0ed9e3ae1eaf90174ae46524b054ecf1424071b8834d4e974409a5237d047249"
         },
         {
           "path": "skins.json",
