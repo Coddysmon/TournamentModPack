@@ -25770,15 +25770,15 @@
     "discord": "https://discord.gg/SxzjCCcQMJ"
   },
   "client": {
-    "version": "0.3.110",
-    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.110.zip",
-    "sha256": "feb3fc12846c91915e6a480564b0bea39dd89b000c8a85d89a0a2acfb53b2800",
-    "size": 64452483,
-    "notes": "Форматы сборов подписаны коротко: FFA 6, FFA 4, 3v3, 1v1 — одинаково в лаунчере и в Discord. Сбор, объявленный в Discord, виден в лаунчере, а запись и отметка «Готов» работают с обеих сторон.",
+    "version": "0.3.111",
+    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.111.zip",
+    "sha256": "b2e3ce93faacf24686bfa03792f860e20eca781a6b4c25350b4bde4b728c4bbb",
+    "size": 64466942,
+    "notes": "Прослойка связи возвращена к той, что работала 11 октября, — пока ищем причину высоких задержек. Всё остальное новое: подписка не теряется, форматы сборов подписаны коротко, статистика открыта без подписки.",
     "IsUsable": true,
     "mirrors": [
-      "relay://109.73.196.175:443/client/nova-client-0.3.110.zip",
-      "http://109.73.196.175/client/nova-client-0.3.110.zip"
+      "relay://109.73.196.175:443/client/nova-client-0.3.111.zip",
+      "http://109.73.196.175/client/nova-client-0.3.111.zip"
     ]
   }
 }
