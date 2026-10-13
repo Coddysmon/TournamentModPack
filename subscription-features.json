@@ -214,17 +214,6 @@
           "titleEn": "Changing the background image"
         },
         {
-          "title": "Расширенная статистика",
-          "soon": true,
-          "values": [
-            false,
-            true,
-            true,
-            true
-          ],
-          "titleEn": "Extended statistics"
-        },
-        {
           "title": "Уникальный профиль в клиенте",
           "soon": false,
           "values": [
