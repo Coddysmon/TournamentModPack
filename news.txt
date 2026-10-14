@@ -1,3 +1,157 @@
+=== 2026-10-12 | ОБНОВЛЕНИЕ | 1.5.161: починено и ускорено
+1. Вылеты в поздней игре. Падала ванильная русская строка подсказки специалистов: она просила движок просклонять число, чего для русского он сделать не может. У одного игрока за вечер — 15 208 таких ошибок и шесть падений подряд. Цена починки: в подсказке города будет «3 Инженер...» вместо «3 Инженера...».
+2. Падение списка юнитов, когда у юнита в этот миг нет клетки. Та же незащищённая проверка закрыта ещё в шести файлах интерфейса.
+3. Подёргивание экрана технологий. При открытом дереве игра перестраивала его на каждое изменение исследований — в партии на шестерых и на чужие тоже. Перестройка занимала 130–350 мс и шла каждые несколько секунд.
+
+--- en | 1.5.161: fixes and speed-ups
+1. Late-game crashes. A stock Russian specialist tooltip asked the engine to decline a number, which it cannot do for Russian. One player logged 15,208 such errors and six crashes in one evening.
+2. The unit list crashed when a unit had no plot at that moment. The same unguarded call was closed in six more interface files.
+3. Tech screen stutter. With the tree open the game rebuilt it on every research change — other players' research too. Each rebuild took 130–350 ms, every few seconds.
+
+=== 2026-10-12 | ОБНОВЛЕНИЕ | 1.5.161: верования
+4. Благословение мореходов: у маяков убрано счастье, золото +2 → +3.
+5. Звёздная навигация: у маяков убрано счастье, наука +1 → +2.
+6. Дары недр: +1 культуры и +1 веры за ресурс → по +2. Золото осталось +1.
+7. Благословенное ремесло: добавлены цирк и каменная мастерская — каждое +3 веры, +1 культуры, +1 еды.
+8. Твердыня веры: со стен убрано счастье, замкам +2 культуры.
+9. Воинское братство: с казарм убрано счастье, вера +2 → +3.
+10. Мечети: +3 веры → +6.
+11. Монастыри: еда +2 → +1, добавлено +10% еды, сохраняемой при росте города.
+12. Покровители труда: кузницы +1 → +2 производства и золота. Конюшни без изменений.
+13. Синагоги: +10% золота в городе.
+14. Ступы: +1 счастья.
+15. Священные места: вместо +1 еды, +2 золота и +1 культуры — +1 ко всем шести видам дохода у десяти классов зданий.
+16. Символизм: обещание +10% боевой мощи убрано — оно не работало никогда, в данных стоял ноль. Золотой век на 250 ходов теперь приходит всем: раньше взявший «Далай-ламу» не получал его вовсе.
+17. Религиозное сообщество: с Великого храма убраны +3 производства.
+18. Мечи на орала: город +3 еды → +2.
+19. Литургическая драма удалена.
+20. Фанатичные проповедники удалены.
+
+--- en | 1.5.161: beliefs
+4. Mariner's Blessing: happiness removed from lighthouses, gold +2 → +3.
+5. Star Navigation: happiness removed from lighthouses, science +1 → +2.
+6. Gifts of the Earth: +1 culture and +1 faith per resource → +2 each. Gold stays +1.
+7. Blessed Craft: circus and stone works added — each +3 faith, +1 culture, +1 food.
+8. Fortress of Faith: happiness removed from walls, castles +2 culture.
+9. Brotherhood of Arms: happiness removed from barracks, faith +2 → +3.
+10. Mosques: +3 faith → +6.
+11. Monasteries: food +2 → +1, plus 10% of food kept on growth.
+12. Patrons of Labor: forges +1 → +2 production and gold. Stables unchanged.
+13. Synagogues: +10% gold in the city.
+14. Stupas: +1 happiness.
+15. Sacred Sites: instead of +1 food, +2 gold, +1 culture — +1 to all six yields across ten building classes.
+16. Symbolism: the promised +10% combat strength is gone — it never worked, the data had zero. The 250-turn golden age now reaches everyone.
+17. Religious Community: +3 production removed from the Grand Temple.
+18. Swords into Plowshares: city food +3 → +2.
+19. Liturgical Drama removed.
+20. Missionary Zeal removed.
+
+=== 2026-10-12 | ОБНОВЛЕНИЕ | 1.5.161: политики
+21. Честь, открытие: культура за убийство врага убрана отсюда — теперь такие выдачи получают все с начала партии, а открытие Чести добавляет варваров.
+22. Честь, закрытие: наука за убийства убрана, +10% к росту городов осталось.
+23. Военная традиция: суды и арена убраны целиком. Юнит, появившийся в городе, приносит науку, равную своей боевой силе, но не больше 30 — и построенный, и купленный.
+24. Военная традиция требует Профессиональную армию, а не Кодекс воина.
+25. Резерв ветеранов: вместо дешёвого содержания — +5 к боевой и дальней силе всем юнитам, и тем, что уже на карте. Гражданских не касается.
+26. Регулярные полки: +5% → +7%.
+27. Великая столица: Дворец +5 → +6 еды и производства.
+28. Национальный дворец: Дворец +8 → +10 культуры.
+29. Военные облигации: 1750 → 2000 золота.
+30. Глобальные торговые сети: бесплатный великий купец.
+31. Культурное возрождение: бесплатные великий художник и музыкант.
+32. Секуляризм: +2 → +1 науки с каждого специалиста.
+33. Гуманизм: прежний бонус убран, Оксфорд даёт +4 науки, культуры, производства и счастья.
+34. Пути, закрытие: торговые пути покупаются за веру сразу, без индустриализации, по общей лестнице цен.
+
+--- en | 1.5.161: policies
+21. Honor opener: culture for kills moved out — everyone now gets those yields from turn one, and the opener adds barbarians.
+22. Honor finisher: science for kills removed, +10% city growth stays.
+23. Military Tradition: courthouses and arenas removed. A unit appearing in a city yields science equal to its combat strength, capped at 30 — built or bought.
+24. Military Tradition requires Professional Army instead of Warrior Code.
+25. Veteran Reserve: instead of cheap upkeep — +5 melee and ranged strength for all units, including those already on the map. Civilians excluded.
+26. Regular Regiments: +5% → +7%.
+27. Great Capital: Palace +5 → +6 food and production.
+28. National Palace: Palace +8 → +10 culture.
+29. War Bonds: 1750 → 2000 gold.
+30. Global Trade Networks: a free Great Merchant.
+31. Cultural Revival: a free Great Artist and Great Musician.
+32. Secularism: +2 → +1 science per specialist.
+33. Humanism: old bonus removed, Oxford gives +4 science, culture, production, happiness.
+34. Wayfaring finisher: trade routes can be bought with faith at once, on a shared ladder.
+
+=== 2026-10-12 | ОБНОВЛЕНИЕ | 1.5.161: новое правило и прочее
+35. Новое правило для всех с начала партии: за убийство юнита другого игрока или города-государства убийца получает культуру, золото и науку — каждая равна боевой силе убитого, но не больше 30. На варваров не действует: за них платит открытие Чести.
+36. Объявление войны больше не выталкивает войска с земель города-государства.
+37. Цена великих за веру растёт раздельно у писателей, художников и музыкантов.
+38. Бомбардировщик и двухмоторный больше не могут взять уклонение. B-17 и стелс не затронуты; уже взятое в старых партиях остаётся.
+39. Статуя Зевса даёт очко великого инженера.
+40. Швеция: из списка уникальных зданий при выборе державы убраны девять национальных чудес. Бонусы остались.
+41. Китай: описание эра-бонуса теперь называет Шёлковые казармы.
+42. ВАЖНО: версия сохранений поднялась. Старые сейвы с новой версией не откроются.
+
+Обновитесь до 1.5.161 — версия нужна одна у всех.
+
+--- en | 1.5.161: new rule and the rest
+35. New rule for everyone from turn one: killing a unit of another player or a city-state grants culture, gold and science — each equal to the victim's combat strength, capped at 30. Barbarians excluded: the Honor opener covers those.
+36. Declaring war no longer ejects your troops from city-state territory.
+37. Faith prices of great people rise separately for writers, artists and musicians.
+38. The Bomber and the WWI Bomber can no longer take Evasion. The B-17 and Stealth Bomber are untouched; evasion already taken stays.
+39. The Statue of Zeus grants a Great Engineer point.
+40. Sweden: nine national wonders removed from its unique building list on the civ screen. The bonuses stay.
+41. China: the era bonus description now names Silk Barracks.
+42. IMPORTANT: the save version went up. Old saves will not open with the new version.
+
+Update to 1.5.161 — everyone needs the same version.
+
+=== 2026-10-11 | ОБНОВЛЕНИЕ | 1.5.160: обещания, которые наконец выполняются
+Эра-бонус Китая «Срединное государство» заработал: казармы дают +1 науки и
++1 монеты. В описании это стояло с 30 сентября, а в игре не работало ни дня.
+
+Шёлковые казармы Китая: вернулся опыт (+15 ОО всем юнитам), теперь они
+разрушаются при захвате города — как обычные казармы, и убрана мёртвая
+цена за веру.
+Конюшни Монголии и Польши: возвращены +2 лошади.
+Шведский Оксфорд больше не даёт бесплатную технологию.
+Бастион закрывает требование постройки на улучшенный ресурс для камня,
+известняка, овец, коров, оленей и бизонов.
+Тематический бонус: эпоха больше не важна — достаточно заполнить слоты
+шедеврами одной державы, как и написано в описании.
+Морские торговые пути с веткой «Пути» больше не разграбить, как и наземные.
+Пулемёт и Базука получили двойной выстрел.
+Реформация «Пророчество»: +1 ко всем шести елдам за каждое чудо света.
+Пантеон «Бог дорог»: к 3 монетам добавлена +1 культуры за связь со столицей.
+Варварские триремы появляются с 51-го хода, а не с 31-го.
+
+Тексты: Колизей, 110 потерянных иконок в описаниях, «настроение» вместо
+старого «довольства», верные цены за веру.
+
+Обновитесь до 1.5.160 — версия нужна одна у всех.
+
+--- en | 1.5.160: promises the game finally keeps
+China's era bonus "Middle Kingdom" now works: barracks give +1 science and
++1 gold. The description has said so since September 30; the game never did it.
+
+China's Silk Barracks: experience is back (+15 XP for all units), they are now
+destroyed when the city falls — like ordinary barracks — and the dead faith
+price is gone.
+Mongolian and Polish stables: +2 horses restored.
+The Swedish Oxford University no longer grants a free technology.
+The Bastion now satisfies the improved-resource requirement for stone,
+limestone, sheep, cattle, deer and bison.
+The theming bonus no longer cares about eras: just fill the slots with works of
+one civilization, exactly as the description says.
+Sea trade routes under the Wayfaring branch can no longer be plundered, same as
+land ones.
+Machine Gun and Bazooka gained the second attack.
+The Prophecy reformation: +1 to all six yields for every world wonder.
+The God of the Open Road pantheon: +1 culture for a connection to the capital,
+on top of the 3 gold.
+Barbarian boats now appear from turn 51 instead of turn 31.
+
+Text: the Colosseum, 110 missing icons in descriptions, the current wording for
+mood, and correct faith prices.
+
+Update to 1.5.160 — everyone needs the same version.
+
 === 2026-09-30 | ОБНОВЛЕНИЕ | Нации: было и стало
 Вавилон: стены в первом городе -> в первых трёх.
 Китай: уникальная библиотека -> уникальная казарма (+1 еда, +1 культура,
@@ -259,5 +413,3 @@ One small thing: the game list shows «Nova» in the Map column instead of the s
 The release name is now visible everywhere: «Nova 1.0 · build 0.3.66» in the launcher and
 «Nova 1.0 (build 1.5.113)» in the game’s main menu. The build number stays as it was (1.5.x):
 it is technical, and the launcher checks files by it. Multiplayer needs the same mod version for everyone.
-
-url: https://coddysmon.github.io/TournamentModPack/changes.html
