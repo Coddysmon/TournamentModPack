@@ -25769,15 +25769,15 @@
     "discord": "https://discord.gg/SxzjCCcQMJ"
   },
   "client": {
-    "version": "0.3.111",
-    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.111.zip",
-    "sha256": "b2e3ce93faacf24686bfa03792f860e20eca781a6b4c25350b4bde4b728c4bbb",
-    "size": 64466942,
+    "version": "0.3.112",
+    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.112.zip",
+    "sha256": "a86ed2ca99eb0ee987d4b97c7949b0c0e350a88f8b21123094d14eed6350b695",
+    "size": 64474731,
     "notes": "Прослойка связи возвращена к той, что работала 11 октября, — пока ищем причину высоких задержек. Всё остальное новое: подписка не теряется, форматы сборов подписаны коротко, статистика открыта без подписки.",
     "IsUsable": true,
     "mirrors": [
-      "relay://109.73.196.175:443/client/nova-client-0.3.111.zip",
-      "http://109.73.196.175/client/nova-client-0.3.111.zip"
+      "relay://109.73.196.175:443/client/nova-client-0.3.112.zip",
+      "http://109.73.196.175/client/nova-client-0.3.112.zip"
     ]
   }
 }
