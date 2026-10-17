@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.166",
+  "packageVersion": "1.5.165",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-10-17T11:33:09.2757782+00:00",
+  "createdUtc": "2026-10-12T14:15:40.9807128+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "relay://109.73.196.175:443/blobs/",
@@ -16547,8 +16547,8 @@
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4544000,
-          "hash": "4a24a2b3b5b3fc1eb99103066b7c823b1a7f155cab1cee94ead2cfe7b53163f7"
+          "size": 4535808,
+          "hash": "8993d3ae16a7577392f4aaeb18ac4a35e325b5190ec0af18ba222e8969d99ba8"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -19408,7 +19408,7 @@
         {
           "path": "Override/CIV5Units_Mongol.xml",
           "size": 9995641,
-          "hash": "b16b6125f9bf8b1b899ba6c7678e710d5339a084a068729726905eaac375076a"
+          "hash": "94123da7646469ac721859b91ab750b162368b62668a491b4e250ec3400051ae"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -19743,7 +19743,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "007498d74c7d631bf2884294e7ec36c9bacd51ca3c775c06ed3a972e042cad6d"
+          "hash": "7c4098a3d75517ecf940dc8dad586508c1103cc4dac2e69a7f4325a1e013787a"
         },
         {
           "path": "skins.json",
@@ -25796,18 +25796,6 @@
     ],
     "Any": true
   },
-  "client": {
-    "version": "0.3.112",
-    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.112.zip",
-    "sha256": "a86ed2ca99eb0ee987d4b97c7949b0c0e350a88f8b21123094d14eed6350b695",
-    "size": 64474731,
-    "notes": "Прослойка связи возвращена к той, что работала 11 октября, — пока ищем причину высоких задержек. Всё остальное новое: подписка не теряется, форматы сборов подписаны коротко, статистика открыта без подписки.",
-    "mirrors": [
-      "relay://109.73.196.175:443/client/nova-client-0.3.112.zip",
-      "http://109.73.196.175/client/nova-client-0.3.112.zip"
-    ],
-    "IsUsable": true
-  },
   "relay": {
     "host": "109.73.196.175",
     "port": 443,
@@ -25837,5 +25825,17 @@
   },
   "community": {
     "discord": "https://discord.gg/SxzjCCcQMJ"
+  },
+  "client": {
+    "version": "0.3.112",
+    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.112.zip",
+    "sha256": "a86ed2ca99eb0ee987d4b97c7949b0c0e350a88f8b21123094d14eed6350b695",
+    "size": 64474731,
+    "notes": "Прослойка связи возвращена к той, что работала 11 октября, — пока ищем причину высоких задержек. Всё остальное новое: подписка не теряется, форматы сборов подписаны коротко, статистика открыта без подписки.",
+    "IsUsable": true,
+    "mirrors": [
+      "relay://109.73.196.175:443/client/nova-client-0.3.112.zip",
+      "http://109.73.196.175/client/nova-client-0.3.112.zip"
+    ]
   }
 }
