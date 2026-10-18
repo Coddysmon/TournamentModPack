@@ -586,6 +586,15 @@ tr.small-n .wr-v{color:var(--dim)}
 .st-people{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px}
 .st-people .card{padding:12px 14px}
 .st-people .card h3{overflow-wrap:anywhere}
+/* Вкладки «Выборы» и «Зал славы» (stats-choices.js) */
+.st-sub{margin:-6px 0 16px}
+.st-sub a{font-size:12.5px;padding:5px 11px}
+details.st-group{margin:0 0 10px}
+details.st-group>summary{cursor:pointer;padding:6px 0;color:var(--text)}
+details.st-group>summary:hover{color:var(--acc-br)}
+details.st-group[open]>summary{margin-bottom:6px}
+.st-hand .card p,.st-awards .card p{margin:2px 0}
+.st-awards .card h3{color:var(--acc-br)}
 
 .st-chart{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 12px 6px;margin:0 0 18px}
 .chart{position:relative;width:100%}

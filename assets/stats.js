@@ -35,6 +35,10 @@
    Правила сайта (site.js) действуют и здесь: текст из сети — только через
    esc()/textContent (ники вводят игроки), не доехало — так и сказать.
    Адресация — hash: #Tab:Player/Player:<ник>/Dataset:<ключ ряда>.
+
+   ДОПОЛНИТЕЛЬНЫЕ ВКЛАДКИ («Выборы», «Зал славы») живут в stats-choices.js и
+   подключаются через NOVA_STATS (см. «наружу» внизу): этот файл отдаёт им свои
+   помощники и рисует их вкладки в общем ряду, сам про выборы ничего не зная.
    --------------------------------------------------------------------------- */
 'use strict';
 
@@ -236,11 +240,11 @@
       try { v = decodeURIComponent(v); } catch (e) { return; }
       st[part.slice(0, i)] = v;
     });
-    if (!['Overview', 'Player', 'Match'].includes(st.Tab)) st.Tab = 'Overview';
+    if (!['Overview', 'Player', 'Match'].concat(EXTRA.map(t => t.id)).includes(st.Tab)) st.Tab = 'Overview';
     return st;
   }
   function hashOf(st) {
-    const order = ['Tab', 'Player', 'Match', 'Dataset', 'Version'];
+    const order = ['Tab', 'Player', 'Match', 'Section', 'Dataset', 'Version', 'Since'];
     return '#' + order.filter(k => st[k]).map(k => k + ':' + encodeURIComponent(st[k])).join('/');
   }
   const go = st => { location.hash = hashOf(st); };
@@ -503,7 +507,8 @@
   const app = () => $('#stats-app');
 
   function tabs(st) {
-    const t = [['Overview', L('Обзор', 'Overview')], ['Player', L('Игрок', 'Player')], ['Match', L('Партия', 'Match')]];
+    const t = [['Overview', L('Обзор', 'Overview')]].concat(EXTRA.map(x => [x.id, x.title]),
+      [['Player', L('Игрок', 'Player')], ['Match', L('Партия', 'Match')]]);
     return '<nav class="filters st-tabs" aria-label="' + esc(L('Вкладки статистики', 'Statistics tabs')) + '">' + t.map(([k, title]) =>
       '<a href="' + esc(hashOf({ Tab: k })) + '"' + (st.Tab === k ? ' aria-current="page"' : '') + '>' + title + '</a>').join('') + '</nav>';
   }
@@ -654,6 +659,8 @@
       + (me.matches > me.decisive ? L(' · не доиграно ', ' · not played out: ') + (me.matches - me.decisive) : '') + '</span></div>'
       + '<div><b>' + (me.placeN ? num(me.placeSum / me.placeN) : '—') + '</b><span>' + L('среднее место', 'average place') + '</span></div>'
       + '<div><b>' + num(turnsAvg) + '</b><span>' + L('ходов в среднем', 'turns on average') + '</span></div></div>';
+    // Место для дополнений (почерк игрока из stats-choices.js): заполняют сами.
+    if (PLAYER_HOOKS.length) h += '<div id="st-player-extra"></div>';
 
     const chartList = list.slice(0, PLAYER_CHART_LIMIT);
     const keys = [...new Set(chartList.flatMap(x => Array.isArray(x.m.keys) ? x.m.keys : []))];
@@ -677,6 +684,7 @@
     app().innerHTML = h;
     bindPick(st);
     $('#st-ds').addEventListener('change', e => replace(Object.assign({}, st, { Player: me.name, Dataset: e.target.value })));
+    PLAYER_HOOKS.forEach(fn => { try { fn(me, idx, $('#st-player-extra'), renderToken); } catch (e) { console.warn(e); } });
 
     const token = renderToken;
     const got = await pool(chartList, x => matchSeries(x.m.key, ds));
@@ -780,9 +788,32 @@
     if (!idx.matches.length) { app().innerHTML = emptyState(); return; }
     if (st.Tab === 'Player') return renderPlayer(st, idx);
     if (st.Tab === 'Match') return renderMatch(st, idx);
+    const extra = EXTRA.find(t => t.id === st.Tab);
+    if (extra) return extra.render(st, idx, token);
     return renderOverview(st, idx);
   }
 
+  /* -------------------------------------------------------------- наружу */
+
+  /* Дополнительные вкладки и дополнения к вкладке «Игрок» регистрируются здесь
+     (stats-choices.js). Отдаём помощники как есть, а не копии: подписи, цвета,
+     правило «доиграна» и график должны быть одни на всю страницу. */
+  const EXTRA = [];
+  const PLAYER_HOOKS = [];
+  window.NOVA_STATS = {
+    EN, L, esc, $, num, pct, word, plural, shortDate, pretty, civName, victoryName, dsTitle, divOf, unitOf,
+    hashOf, go, replace, linkPlayer, linkMatch, matchTitle, humans, done, tableWrap, bars, lineChart,
+    datasetSelect, tabs, failState, versionsOf, source, getJson, dictionary, PALETTE, MUTED, WIN, SMALL_SAMPLE,
+    DS, DICT,
+    current: () => renderToken,
+    addTab(tab) { EXTRA.push(tab); },
+    addPlayerHook(fn) { PLAYER_HOOKS.push(fn); },
+    rerender: () => render(),
+  };
+
   window.addEventListener('hashchange', render);
-  render();
+  // Первая отрисовка — после всех скриптов страницы: вкладки из stats-choices.js
+  // должны успеть зарегистрироваться.
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', render);
+  else setTimeout(render);
 })();
