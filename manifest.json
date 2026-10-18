@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.165",
+  "packageVersion": "1.5.167",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-10-12T14:15:40.9807128+00:00",
+  "createdUtc": "2026-10-18T09:10:33.1644065+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "relay://109.73.196.175:443/blobs/",
@@ -16547,8 +16547,8 @@
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4535808,
-          "hash": "8993d3ae16a7577392f4aaeb18ac4a35e325b5190ec0af18ba222e8969d99ba8"
+          "size": 4538368,
+          "hash": "5c41860cfcb44b208d02bd8a58f8dd0a5d622858d86d441897bfe1b96c23c4ce"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -19367,8 +19367,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 13686919,
-          "hash": "931287c8b4a371d030d714b2a02cec7df99eacdcdf90699e91cd86df0f544f29"
+          "size": 13690028,
+          "hash": "75f7c194c618950473a0ab23f457292357fed162b2f18af1054de05dcb46cdc5"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -19407,8 +19407,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 9995641,
-          "hash": "94123da7646469ac721859b91ab750b162368b62668a491b4e250ec3400051ae"
+          "size": 10001853,
+          "hash": "b4f91083207b4ba42babf169311f8f1be828cd14f913e323370ac5c9af459cdb"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -19743,7 +19743,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "7c4098a3d75517ecf940dc8dad586508c1103cc4dac2e69a7f4325a1e013787a"
+          "hash": "9688b27e91fd3d9199a3cf6f96b8b913e3c95caead9a43717b597d7e35557f79"
         },
         {
           "path": "skins.json",
@@ -23157,18 +23157,18 @@
         },
         {
           "path": "tmp/eui/CityView.lua",
-          "size": 105408,
-          "hash": "e58a2800e8857007b381945426f247a61ed0163a5bc2e86928fd552122b75e16"
+          "size": 108428,
+          "hash": "82820b948fcf89a84816150efee0d3487f26469ed1859d8dfbd595dedf6468c9"
         },
         {
           "path": "tmp/eui/CityView.xml",
-          "size": 31629,
-          "hash": "a5676e4e56c116d1c20496bc08811ec32cb1d0af4c90f57629a2483a0a53c521"
+          "size": 32005,
+          "hash": "5eb5bd1cc1754f1a8d63b1c52703a30fbc1663fb4eb4209111493b312f6ab3e7"
         },
         {
           "path": "tmp/eui/CityView_small.xml",
-          "size": 31039,
-          "hash": "eebc74bb35cc05122226b0dbe6b8f6850c649362ab00f182de0678481a455a6d"
+          "size": 31416,
+          "hash": "065c4efa734f58dd3395570aab718f83754f27ff4f761260beb25f3633095005"
         },
         {
           "path": "tmp/eui/ConfirmCommandPopup.lua",
@@ -23392,23 +23392,23 @@
         },
         {
           "path": "tmp/ui/CityView.xml",
-          "size": 44275,
-          "hash": "e021465cadc818dbe3165a5b2b718b0293322d755b742cc844c258c35ab3cf84"
+          "size": 44654,
+          "hash": "8023039d41e5e72d81c00744bbc3e673c85988ad2b9c9f490b7ef7d2e8016980"
         },
         {
           "path": "tmp/ui/CityView_1.lua",
-          "size": 114192,
-          "hash": "509cb6975b30094d5d521c46292a74065867c4dd398f0ea5d3a3e50d44eaaa8f"
+          "size": 117204,
+          "hash": "a78ce2cbe1b3d4d80ed6169a873714a3e93524c8a99b5e6a203e9a705250620c"
         },
         {
           "path": "tmp/ui/CityView_2.lua",
-          "size": 116753,
-          "hash": "93283052348fcb3a37edea01ac6409bda83bb92711f4a63d1c37ed38782188e2"
+          "size": 119765,
+          "hash": "271286e4977e54bb4f3322437483393d1bdd26f7f161712ee9d2b9aa7acdfddf"
         },
         {
           "path": "tmp/ui/CityView_small.xml",
-          "size": 44641,
-          "hash": "d53732529b3c6e098e5a5bd901862f47f2b9ed9e2dc095f921fe1877d2d0eb21"
+          "size": 45038,
+          "hash": "f08811f0b0bdc4a5faebe9666b70e24fa0cf82d4f9408d318f3aaaadb0afd37b"
         },
         {
           "path": "tmp/ui/CivilopediaScreen.lua",
@@ -25552,6 +25552,16 @@
   "news": {
     "entries": [
       {
+        "date": "2026-10-18T00:00:00+00:00",
+        "title": "1.5.167: баланс и быстрые переходы",
+        "body": "1. Смена хода после выхода игрока. Когда за ушедшего играл ИИ, переход растягивался до минуты-полутора. Теперь ИИ не ждёт впустую.\n2. «Пути»: после закрытия ветки за веру покупается +1 торговый путь (кнопка в окне города), а не караван.\n3. Флот: капер улучшается в броненосец; авианосцы — 7 ходов; самолёты на авианосце можно улучшать на своей территории; линкоры и ракетные крейсеры убивают рабочих выстрелом, как РСЗО; флотоводец — аура 3 клетки и ходы от политик Исследования.\n4. Арбалетчики и их замены — 3 хода.\n5. Оксфорд больше не пропадает в атомную эру.\n6. Франция: шато +1 еда; разграбленный люкс не даёт культуру.\n7. Гунны: дворец больше не даёт +1 веры со старта.",
+        "tag": "ОБНОВЛЕНИЕ",
+        "titleEn": "1.5.167: balance and faster turns",
+        "bodyEn": "1. Turn change after a player leaves. When the AI took over a departed player, the turn change could stretch to a minute and a half. The AI no longer waits idly.\n2. Wayfaring: after finishing the branch, Faith buys +1 trade route slot (button in the city screen) instead of a caravan.\n3. Navy: Privateer upgrades to Ironclad; Carriers have 7 moves; aircraft on a Carrier can be upgraded in your territory; Battleships and Missile Cruisers kill workers with a ranged attack, like Rocket Artillery; Great Admiral aura reaches 3 tiles and gets the Exploration policy moves.\n4. Crossbowmen and their replacements have 3 moves.\n5. Oxford no longer disappears in the Atomic Era.\n6. France: Chateau +1 food; a pillaged luxury gives no culture.\n7. Huns: the palace no longer gives +1 faith from the start.",
+        "HasUsableUrl": false,
+        "IsUsable": true
+      },
+      {
         "date": "2026-10-12T00:00:00+00:00",
         "title": "1.5.161: починено и ускорено",
         "body": "1. Вылеты в поздней игре. Падала ванильная русская строка подсказки специалистов: она просила движок просклонять число, чего для русского он сделать не может. У одного игрока за вечер — 15 208 таких ошибок и шесть падений подряд. Цена починки: в подсказке города будет «3 Инженер...» вместо «3 Инженера...».\n2. Падение списка юнитов, когда у юнита в этот миг нет клетки. Та же незащищённая проверка закрыта ещё в шести файлах интерфейса.\n3. Подёргивание экрана технологий. При открытом дереве игра перестраивала его на каждое изменение исследований — в партии на шестерых и на чужие тоже. Перестройка занимала 130–350 мс и шла каждые несколько секунд.",
@@ -25673,6 +25683,16 @@
       }
     ],
     "Usable": [
+      {
+        "date": "2026-10-18T00:00:00+00:00",
+        "title": "1.5.167: баланс и быстрые переходы",
+        "body": "1. Смена хода после выхода игрока. Когда за ушедшего играл ИИ, переход растягивался до минуты-полутора. Теперь ИИ не ждёт впустую.\n2. «Пути»: после закрытия ветки за веру покупается +1 торговый путь (кнопка в окне города), а не караван.\n3. Флот: капер улучшается в броненосец; авианосцы — 7 ходов; самолёты на авианосце можно улучшать на своей территории; линкоры и ракетные крейсеры убивают рабочих выстрелом, как РСЗО; флотоводец — аура 3 клетки и ходы от политик Исследования.\n4. Арбалетчики и их замены — 3 хода.\n5. Оксфорд больше не пропадает в атомную эру.\n6. Франция: шато +1 еда; разграбленный люкс не даёт культуру.\n7. Гунны: дворец больше не даёт +1 веры со старта.",
+        "tag": "ОБНОВЛЕНИЕ",
+        "titleEn": "1.5.167: balance and faster turns",
+        "bodyEn": "1. Turn change after a player leaves. When the AI took over a departed player, the turn change could stretch to a minute and a half. The AI no longer waits idly.\n2. Wayfaring: after finishing the branch, Faith buys +1 trade route slot (button in the city screen) instead of a caravan.\n3. Navy: Privateer upgrades to Ironclad; Carriers have 7 moves; aircraft on a Carrier can be upgraded in your territory; Battleships and Missile Cruisers kill workers with a ranged attack, like Rocket Artillery; Great Admiral aura reaches 3 tiles and gets the Exploration policy moves.\n4. Crossbowmen and their replacements have 3 moves.\n5. Oxford no longer disappears in the Atomic Era.\n6. France: Chateau +1 food; a pillaged luxury gives no culture.\n7. Huns: the palace no longer gives +1 faith from the start.",
+        "HasUsableUrl": false,
+        "IsUsable": true
+      },
       {
         "date": "2026-10-12T00:00:00+00:00",
         "title": "1.5.161: починено и ускорено",
@@ -25832,10 +25852,10 @@
     "sha256": "a86ed2ca99eb0ee987d4b97c7949b0c0e350a88f8b21123094d14eed6350b695",
     "size": 64474731,
     "notes": "Прослойка связи возвращена к той, что работала 11 октября, — пока ищем причину высоких задержек. Всё остальное новое: подписка не теряется, форматы сборов подписаны коротко, статистика открыта без подписки.",
-    "IsUsable": true,
     "mirrors": [
       "relay://109.73.196.175:443/client/nova-client-0.3.112.zip",
       "http://109.73.196.175/client/nova-client-0.3.112.zip"
-    ]
+    ],
+    "IsUsable": true
   }
 }

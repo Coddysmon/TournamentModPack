@@ -1,3 +1,21 @@
+=== 2026-10-18 | ОБНОВЛЕНИЕ | 1.5.167: баланс и быстрые переходы
+1. Смена хода после выхода игрока. Когда за ушедшего играл ИИ, переход растягивался до минуты-полутора. Теперь ИИ не ждёт впустую.
+2. «Пути»: после закрытия ветки за веру покупается +1 торговый путь (кнопка в окне города), а не караван.
+3. Флот: капер улучшается в броненосец; авианосцы — 7 ходов; самолёты на авианосце можно улучшать на своей территории; линкоры и ракетные крейсеры убивают рабочих выстрелом, как РСЗО; флотоводец — аура 3 клетки и ходы от политик Исследования.
+4. Арбалетчики и их замены — 3 хода.
+5. Оксфорд больше не пропадает в атомную эру.
+6. Франция: шато +1 еда; разграбленный люкс не даёт культуру.
+7. Гунны: дворец больше не даёт +1 веры со старта.
+
+--- en | 1.5.167: balance and faster turns
+1. Turn change after a player leaves. When the AI took over a departed player, the turn change could stretch to a minute and a half. The AI no longer waits idly.
+2. Wayfaring: after finishing the branch, Faith buys +1 trade route slot (button in the city screen) instead of a caravan.
+3. Navy: Privateer upgrades to Ironclad; Carriers have 7 moves; aircraft on a Carrier can be upgraded in your territory; Battleships and Missile Cruisers kill workers with a ranged attack, like Rocket Artillery; Great Admiral aura reaches 3 tiles and gets the Exploration policy moves.
+4. Crossbowmen and their replacements have 3 moves.
+5. Oxford no longer disappears in the Atomic Era.
+6. France: Chateau +1 food; a pillaged luxury gives no culture.
+7. Huns: the palace no longer gives +1 faith from the start.
+
 === 2026-10-12 | ОБНОВЛЕНИЕ | 1.5.161: починено и ускорено
 1. Вылеты в поздней игре. Падала ванильная русская строка подсказки специалистов: она просила движок просклонять число, чего для русского он сделать не может. У одного игрока за вечер — 15 208 таких ошибок и шесть падений подряд. Цена починки: в подсказке города будет «3 Инженер...» вместо «3 Инженера...».
 2. Падение списка юнитов, когда у юнита в этот миг нет клетки. Та же незащищённая проверка закрыта ещё в шести файлах интерфейса.
