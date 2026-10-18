@@ -1,3 +1,31 @@
+=== 2026-10-18 | ОБНОВЛЕНИЕ | 1.5.168: культура, энциклопедия и карта партии
+1. Музей теперь действительно даёт +10% культуры, стадион Бразилии — +5% (раньше процент был только в описании).
+2. Шведский Оксфорд даёт +2 науки всем городам, как обычный.
+3. Символизм: убраны +2 хода золотого века за великого человека; разовый золотой век остался.
+4. Энциклопедия показывает туризм зданий и цены для скорости партии; цены в вере в подсказках тоже.
+5. Исправлены тексты: польдер, Рим, Оксфорд, значок военной академии и лишние значки в русских описаниях.
+6. Мод записывает выдачу городов по ходам — для карты партии на сайте.
+Лаунчер:
+• в профиле у каждой партии видно, сколько рейтинга она дала;
+• кнопка «Карта партии» — повтор по ходам на сайте;
+• в чате видна дата сообщений;
+• убрана таблица сезона.
+На сайте: вкладки «Выборы» и «Зал славы» в статистике.
+
+--- en | 1.5.168: culture, Civilopedia and match map
+1. The Museum now really gives +10% culture, Brazil's stadium +5% (before, the percentage existed only in the description).
+2. The Swedish Oxford gives +2 science to all cities, like the regular one.
+3. Symbolism: the +2 Golden Age turns per Great Person are removed; the one-time Golden Age stays.
+4. The Civilopedia shows building tourism and prices for the game speed; faith prices in tooltips too.
+5. Text fixes: polder, Rome, Oxford, the Military Academy icon and stray icons in Russian descriptions.
+6. The mod records city yields per turn — for the match map on the website.
+Launcher:
+• the profile shows how much rating each match gave;
+• "Match map" button — a turn-by-turn replay on the website;
+• chat shows message dates;
+• the season table is removed.
+On the website: "Choices" and "Hall of Fame" tabs in the statistics.
+
 === 2026-10-18 | ОБНОВЛЕНИЕ | 1.5.167: баланс и быстрые переходы
 1. Смена хода после выхода игрока. Когда за ушедшего играл ИИ, переход растягивался до минуты-полутора. Теперь ИИ не ждёт впустую.
 2. «Пути»: после закрытия ветки за веру покупается +1 торговый путь (кнопка в окне города), а не караван.

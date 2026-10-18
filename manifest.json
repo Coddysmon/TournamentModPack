@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.167",
+  "packageVersion": "1.5.168",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-10-18T09:10:33.1644065+00:00",
+  "createdUtc": "2026-10-18T18:24:50.697324+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "relay://109.73.196.175:443/blobs/",
@@ -183,7 +183,7 @@
         {
           "path": "Art/FontIcons_TM_NewLux4.ggxml",
           "size": 13172,
-          "hash": "e1a3ff33eb10402031bdc06219a80a59c415ece3c0dd8cf19c8ba2699bc7189b"
+          "hash": "4ecff967dc9c5e3052b33126d73a6b3a69a7b8e7ca6915f6bc8a078c96a6530a"
         },
         {
           "path": "Art/fonticons_tm_newlux5.dds",
@@ -16547,8 +16547,8 @@
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4538368,
-          "hash": "5c41860cfcb44b208d02bd8a58f8dd0a5d622858d86d441897bfe1b96c23c4ce"
+          "size": 4541952,
+          "hash": "e4a0da27201f0e62b9baf777b96bd4232606702632e1a9c02841bffb87c15939"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -19367,8 +19367,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 13690028,
-          "hash": "75f7c194c618950473a0ab23f457292357fed162b2f18af1054de05dcb46cdc5"
+          "size": 13690620,
+          "hash": "aa30429df2af3b842e22ccdd3ad6238e639782c1464edfab0fd8ef7c7415964d"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -19407,8 +19407,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 10001853,
-          "hash": "b4f91083207b4ba42babf169311f8f1be828cd14f913e323370ac5c9af459cdb"
+          "size": 10000605,
+          "hash": "afce4f96f5f22ce181a353588d48184649b62451decb4ba0083355b0567b86e7"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -19743,7 +19743,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "9688b27e91fd3d9199a3cf6f96b8b913e3c95caead9a43717b597d7e35557f79"
+          "hash": "792a84cdbddad2862cd7f36cc59d70ebb8b3c29b61bea63eefd35ac76977fd28"
         },
         {
           "path": "skins.json",
@@ -23212,8 +23212,8 @@
         },
         {
           "path": "tmp/eui/TechButtonInclude.lua",
-          "size": 47609,
-          "hash": "b3a5b99abf47bb4fae2a575b48fe92c494bb77c3d2224c91ce203acbe1f6c8df"
+          "size": 47651,
+          "hash": "4efaf44c2f3ead177ffd98c35d5412ddc1fc9bafd2c72e950515f39b28d1b446"
         },
         {
           "path": "tmp/eui/TechTree.lua",
@@ -23412,8 +23412,13 @@
         },
         {
           "path": "tmp/ui/CivilopediaScreen.lua",
-          "size": 305207,
-          "hash": "172fc8d0a353bcb5cf7262a40ef07153268315f2744c12ca6cdc336f47ef33b8"
+          "size": 315681,
+          "hash": "ed71909f9296dcc477754e1affa5818871f0351261f4a7222921d37bfa787c96"
+        },
+        {
+          "path": "tmp/ui/CivilopediaScreen.xml",
+          "size": 101991,
+          "hash": "40ec5906f2213bad6e14db8b6a4457a929bb2f6e4285e0051919514ef6c76ccc"
         },
         {
           "path": "tmp/ui/ConfirmCommandPopup.lua",
@@ -23522,8 +23527,8 @@
         },
         {
           "path": "tmp/ui/EUI_tooltip_library.lua",
-          "size": 168758,
-          "hash": "3c4dac7076d491a9f747c7208117db5d6bf3d642a23dfc5b4fcf8231a729336a"
+          "size": 172297,
+          "hash": "8cd7dba1d82b2079bd681cc67a79fec9eef5501ee608a90a4fbce763fa103f24"
         },
         {
           "path": "tmp/ui/EUI_unit_include.lua",
@@ -23927,8 +23932,8 @@
         },
         {
           "path": "tmp/ui/TechButtonInclude.lua",
-          "size": 50059,
-          "hash": "c8d70e0ed03a1c944cb439c1ba18505afdeb31507107b781f6413a824829933c"
+          "size": 50101,
+          "hash": "10755387e7908afe1c4799beede015aa9063d4921f6b2370635719e459296195"
         },
         {
           "path": "tmp/ui/TechHelpInclude.lua",
@@ -24047,8 +24052,8 @@
         },
         {
           "path": "ui_check.bat",
-          "size": 40573,
-          "hash": "d09aa895f0b40fd3ecd30a566fb7bc7fb8230704a1d172f36d7330bf9492603e"
+          "size": 41036,
+          "hash": "420e14b1a44ef5b511b84010415a70ea7be7853927f8eb40d5b41877d1792f3f"
         }
       ]
     },
@@ -24295,6 +24300,11 @@
       {
         "from": "tmp/ui/CivilopediaScreen.lua",
         "to": "UI/Civilopedia/CivilopediaScreen.lua",
+        "when": []
+      },
+      {
+        "from": "tmp/ui/CivilopediaScreen.xml",
+        "to": "UI/Civilopedia/CivilopediaScreen.xml",
         "when": []
       },
       {
@@ -25553,6 +25563,16 @@
     "entries": [
       {
         "date": "2026-10-18T00:00:00+00:00",
+        "title": "1.5.168: культура, энциклопедия и карта партии",
+        "body": "1. Музей теперь действительно даёт +10% культуры, стадион Бразилии — +5% (раньше процент был только в описании).\n2. Шведский Оксфорд даёт +2 науки всем городам, как обычный.\n3. Символизм: убраны +2 хода золотого века за великого человека; разовый золотой век остался.\n4. Энциклопедия показывает туризм зданий и цены для скорости партии; цены в вере в подсказках тоже.\n5. Исправлены тексты: польдер, Рим, Оксфорд, значок военной академии и лишние значки в русских описаниях.\n6. Мод записывает выдачу городов по ходам — для карты партии на сайте.\nЛаунчер:\n• в профиле у каждой партии видно, сколько рейтинга она дала;\n• кнопка «Карта партии» — повтор по ходам на сайте;\n• в чате видна дата сообщений;\n• убрана таблица сезона.\nНа сайте: вкладки «Выборы» и «Зал славы» в статистике.",
+        "tag": "ОБНОВЛЕНИЕ",
+        "titleEn": "1.5.168: culture, Civilopedia and match map",
+        "bodyEn": "1. The Museum now really gives +10% culture, Brazil's stadium +5% (before, the percentage existed only in the description).\n2. The Swedish Oxford gives +2 science to all cities, like the regular one.\n3. Symbolism: the +2 Golden Age turns per Great Person are removed; the one-time Golden Age stays.\n4. The Civilopedia shows building tourism and prices for the game speed; faith prices in tooltips too.\n5. Text fixes: polder, Rome, Oxford, the Military Academy icon and stray icons in Russian descriptions.\n6. The mod records city yields per turn — for the match map on the website.\nLauncher:\n• the profile shows how much rating each match gave;\n• \"Match map\" button — a turn-by-turn replay on the website;\n• chat shows message dates;\n• the season table is removed.\nOn the website: \"Choices\" and \"Hall of Fame\" tabs in the statistics.",
+        "HasUsableUrl": false,
+        "IsUsable": true
+      },
+      {
+        "date": "2026-10-18T00:00:00+00:00",
         "title": "1.5.167: баланс и быстрые переходы",
         "body": "1. Смена хода после выхода игрока. Когда за ушедшего играл ИИ, переход растягивался до минуты-полутора. Теперь ИИ не ждёт впустую.\n2. «Пути»: после закрытия ветки за веру покупается +1 торговый путь (кнопка в окне города), а не караван.\n3. Флот: капер улучшается в броненосец; авианосцы — 7 ходов; самолёты на авианосце можно улучшать на своей территории; линкоры и ракетные крейсеры убивают рабочих выстрелом, как РСЗО; флотоводец — аура 3 клетки и ходы от политик Исследования.\n4. Арбалетчики и их замены — 3 хода.\n5. Оксфорд больше не пропадает в атомную эру.\n6. Франция: шато +1 еда; разграбленный люкс не даёт культуру.\n7. Гунны: дворец больше не даёт +1 веры со старта.",
         "tag": "ОБНОВЛЕНИЕ",
@@ -25683,6 +25703,16 @@
       }
     ],
     "Usable": [
+      {
+        "date": "2026-10-18T00:00:00+00:00",
+        "title": "1.5.168: культура, энциклопедия и карта партии",
+        "body": "1. Музей теперь действительно даёт +10% культуры, стадион Бразилии — +5% (раньше процент был только в описании).\n2. Шведский Оксфорд даёт +2 науки всем городам, как обычный.\n3. Символизм: убраны +2 хода золотого века за великого человека; разовый золотой век остался.\n4. Энциклопедия показывает туризм зданий и цены для скорости партии; цены в вере в подсказках тоже.\n5. Исправлены тексты: польдер, Рим, Оксфорд, значок военной академии и лишние значки в русских описаниях.\n6. Мод записывает выдачу городов по ходам — для карты партии на сайте.\nЛаунчер:\n• в профиле у каждой партии видно, сколько рейтинга она дала;\n• кнопка «Карта партии» — повтор по ходам на сайте;\n• в чате видна дата сообщений;\n• убрана таблица сезона.\nНа сайте: вкладки «Выборы» и «Зал славы» в статистике.",
+        "tag": "ОБНОВЛЕНИЕ",
+        "titleEn": "1.5.168: culture, Civilopedia and match map",
+        "bodyEn": "1. The Museum now really gives +10% culture, Brazil's stadium +5% (before, the percentage existed only in the description).\n2. The Swedish Oxford gives +2 science to all cities, like the regular one.\n3. Symbolism: the +2 Golden Age turns per Great Person are removed; the one-time Golden Age stays.\n4. The Civilopedia shows building tourism and prices for the game speed; faith prices in tooltips too.\n5. Text fixes: polder, Rome, Oxford, the Military Academy icon and stray icons in Russian descriptions.\n6. The mod records city yields per turn — for the match map on the website.\nLauncher:\n• the profile shows how much rating each match gave;\n• \"Match map\" button — a turn-by-turn replay on the website;\n• chat shows message dates;\n• the season table is removed.\nOn the website: \"Choices\" and \"Hall of Fame\" tabs in the statistics.",
+        "HasUsableUrl": false,
+        "IsUsable": true
+      },
       {
         "date": "2026-10-18T00:00:00+00:00",
         "title": "1.5.167: баланс и быстрые переходы",
@@ -25847,14 +25877,14 @@
     "discord": "https://discord.gg/SxzjCCcQMJ"
   },
   "client": {
-    "version": "0.3.112",
-    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.112.zip",
-    "sha256": "a86ed2ca99eb0ee987d4b97c7949b0c0e350a88f8b21123094d14eed6350b695",
-    "size": 64474731,
-    "notes": "Прослойка связи возвращена к той, что работала 11 октября, — пока ищем причину высоких задержек. Всё остальное новое: подписка не теряется, форматы сборов подписаны коротко, статистика открыта без подписки.",
+    "version": "0.3.113",
+    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.113.zip",
+    "sha256": "c143d86392505cf0454581159d605f695232367d036a6487052bf9fa0fef4840",
+    "size": 64480614,
+    "notes": "Профиль: рейтинг за каждую партию; кнопка «Карта партии»; дата в чате; убрана таблица сезона",
     "mirrors": [
-      "relay://109.73.196.175:443/client/nova-client-0.3.112.zip",
-      "http://109.73.196.175/client/nova-client-0.3.112.zip"
+      "relay://109.73.196.175:443/client/nova-client-0.3.113.zip",
+      "http://109.73.196.175/client/nova-client-0.3.113.zip"
     ],
     "IsUsable": true
   }
