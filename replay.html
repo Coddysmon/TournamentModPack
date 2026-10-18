@@ -23,7 +23,8 @@
       <a href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5,8.5 H17.5 A4.5,4.5 0 0 1 17.5,17.5 H6.5 A4.5,4.5 0 0 1 6.5,8.5 Z M9,11 V15 M7,13 H11 M13.9,12.4 A0.85,0.85 0 1 0 15.6,12.4 A0.85,0.85 0 1 0 13.9,12.4 Z M15.4,14.9 A0.85,0.85 0 1 0 17.1,14.9 A0.85,0.85 0 1 0 15.4,14.9 Z"/></svg>Мод</a>
       <a href="changes.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5,20 H20.5 M6,20 V12.5 M11,20 V7 M16,20 V14.5 M20,20 V9.5"/></svg>Что меняет</a>
       <a href="news.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5,5 H15 L18.5,8.5 V19.5 H5.5 Z M15,5 V8.5 H18.5 M8.2,11.5 H15.8 M8.2,14.5 H15.8 M8.2,17.5 H13"/></svg>Новости</a>
-      <a href="stats.html" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4,4.5 V19.5 H20 M7,15.5 L10.5,11 L13.5,13.5 L19,7"/></svg>Статистика</a>
+      <a href="stats.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4,4.5 V19.5 H20 M7,15.5 L10.5,11 L13.5,13.5 L19,7"/></svg>Статистика</a>
+      <a href="replay.html" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5,6.5 L9,4.5 L15,6.5 L20.5,4.5 V17.5 L15,19.5 L9,17.5 L3.5,19.5 Z M9,4.5 V17.5 M15,6.5 V19.5"/></svg>Повторы</a>
       <a href="tournament-rules.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.4,4.5 H15.6 V9.3 A3.6,3.6 0 0 1 8.4,9.3 Z M8.4,6 H5.7 A2.2,2.2 0 0 0 8.6,10.3 M15.6,6 H18.3 A2.2,2.2 0 0 1 15.4,10.3 M12,12.8 V15.9 M9,19.5 H15 M9.7,19.5 C9.7,17.4 10.7,15.9 12,15.9 C13.3,15.9 14.3,17.4 14.3,19.5"/></svg>Правила турнира</a>
       <a href="media.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5,6 H19.5 V18 H4.5 Z M4.5,15 L9,10.5 L12.5,14 L15.5,11.5 L19.5,15.5 M15.6,9 A1,1 0 1 0 17.6,9 A1,1 0 1 0 15.6,9 Z"/></svg>Галерея</a>
       <a href="subscribe.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12,4.4 L14.2,9.5 L19.7,10.1 L15.6,13.8 L16.8,19.3 L12,16.4 L7.2,19.3 L8.4,13.8 L4.3,10.1 L9.8,9.5 Z"/></svg>Подписка</a>
@@ -60,6 +61,9 @@
   <div class="rp-bar">
     <h1 class="rp-brand">Карта партии</h1>
     <select id="matchPick" class="rp-match" aria-label="Партия"></select>
+    <button class="rp-btn rp-allbtn" id="allBtn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="allPop" title="Список всех партий с картой">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6 H20 M8 12 H20 M8 18 H20 M4 6 H4.5 M4 12 H4.5 M4 18 H4.5"/></svg><span>Все партии</span>
+    </button>
     <div class="rp-play">
       <button class="rp-btn primary" id="play" type="button" aria-label="Смотреть" title="Смотреть по ходам (пробел)">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path id="playIco" d="M7 5 L19 12 L7 19 Z"/></svg>
@@ -102,6 +106,12 @@
         <label class="rp-layer"><input type="checkbox" data-layer="res" checked><span>Ресурсы<small id="resNote"></small></span></label>
         <label class="rp-layer"><input type="checkbox" data-layer="yield"><span>Выдача клеток<small id="yieldNote"></small></span></label>
         <label class="rp-layer"><input type="checkbox" data-layer="trail"><span>След клеток<small id="trailNote">где жители стояли раньше</small></span></label>
+      </div>
+
+      <div class="rp-pop all" id="allPop" hidden role="dialog" aria-label="Все партии">
+        <div class="rp-head"><h2>Все партии с картой</h2><button class="rp-x" type="button" data-close aria-label="Закрыть">×</button></div>
+        <p class="rp-meta">Нажмите на партию — откроется её карта. Новые — сверху.</p>
+        <div class="rp-all" id="allList"></div>
       </div>
 
       <div class="rp-pop help" id="helpPop" hidden role="dialog" aria-label="Обозначения">

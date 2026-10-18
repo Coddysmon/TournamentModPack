@@ -1417,7 +1417,7 @@ function togglePop(id, btnId) {
   if (open) { el.hidden = false; $(btnId).setAttribute("aria-expanded", "true"); }
 }
 function closePops() {
-  for (const [id, b] of [["layersPop", "layersBtn"], ["helpPop", "helpBtn"]]) {
+  for (const [id, b] of [["layersPop", "layersBtn"], ["helpPop", "helpBtn"], ["allPop", "allBtn"]]) {
     $(id).hidden = true; $(b).setAttribute("aria-expanded", "false");
   }
 }
@@ -1542,7 +1542,7 @@ function layerBadge() {
 $("matchPick").addEventListener("change", e => openMatch(+e.target.value, NaN));
 // Нажатие мимо меню закрывает его.
 document.addEventListener("pointerdown", ev => {
-  if (ev.target.closest(".rp-pop") || ev.target.closest("#layersBtn") || ev.target.closest("#helpBtn")) return;
+  if (ev.target.closest(".rp-pop") || ev.target.closest("#layersBtn") || ev.target.closest("#helpBtn") || ev.target.closest("#allBtn")) return;
   closePops();
 });
 addEventListener("keydown", ev => {
@@ -1551,7 +1551,7 @@ addEventListener("keydown", ev => {
   if (tag === "input" && ev.target.type !== "range" && ev.target.type !== "checkbox") return;
   if (tag === "select" || tag === "textarea") return;
   const k = ev.key;
-  if (k === "Escape") { if (!$("layersPop").hidden || !$("helpPop").hidden) closePops(); else if (card) closeCard(); else if (!side.hidden && narrow()) showSide(false); return; }
+  if (k === "Escape") { if (!$("layersPop").hidden || !$("helpPop").hidden || !$("allPop").hidden) closePops(); else if (card) closeCard(); else if (!side.hidden && narrow()) showSide(false); return; }
   if (tag === "input" && ev.target.type === "range") return;   // у ползунка свои стрелки
   if (k === " " && tag !== "button") { ev.preventDefault(); play(); }
   else if (k === "ArrowRight") { ev.preventDefault(); stop(); setTurn(turn + 1); }
@@ -1600,11 +1600,39 @@ function summaryOf(m, i) {
   return { id, when: m.when, turns: m.finalTurn, humans, marks,
            score: (m.work || []).length + (m.imps || []).length + (m.picks || []).length * 10, data: m };
 }
+const shortWhen = w => String(w).replace(/^(\d\d\.\d\d)\.\d{4}/, "$1");
 function fillPicker() {
   $("matchPick").innerHTML = LIST.map((m, i) =>
     '<option value="' + i + '" title="' + esc(m.marks.length ? "в записи: " + m.marks.join(", ") : "") + '">' +
-    esc(String(m.when).replace(/^(\d\d\.\d\d)\.\d{4}/, "$1")) + " · " + m.turns + " ход. · " + m.humans + " держ.</option>").join("");
+    (m.no ? "№" + m.no + " · " : "") + esc(shortWhen(m.when)) + " · " + m.turns + " ход. · " + m.humans + " держ.</option>").join("");
 }
+// Список всех партий: номер, дата, игроки (победитель отмечен), итог, ходы. Номер, игроки
+// и итог — из списка статистики (тот же index.json, что у stats.html); без него —
+// то, что есть в записи карты.
+const VICTORY_RU = { VICTORY_TIME: "общая", VICTORY_SPACE_RACE: "научная", VICTORY_DOMINATION: "территориальная",
+  VICTORY_CULTURAL: "культурная", VICTORY_DIPLOMATIC: "дипломатическая", VICTORY_SCRAP: "отказ от партии" };
+function fillAll() {
+  const rows = LIST.map((m, i) => {
+    const ppl = m.players && m.players.length
+      ? m.players.map(p => p.won ? '<b class="win" title="победа">★ ' + esc(p.name) + "</b>" : esc(p.name)).join(", ")
+      : m.humans + " держав";
+    const res = m.finished === false ? "не доиграна"
+      : m.victory ? (VICTORY_RU[m.victory] || m.victory.replace(/^VICTORY_/, "").toLowerCase()) + " победа" : "";
+    return '<tr class="go' + (i === cur ? " cur" : "") + '" data-i="' + i + '" tabindex="0"><td><b>' + (m.no ? "№" + m.no : "—") +
+      "</b></td><td>" + esc(m.when) + "</td><td>" + ppl + "</td><td>" + esc(res) + '</td><td class="num">' + m.turns + "</td></tr>";
+  });
+  $("allList").innerHTML = '<table><thead><tr><th>Партия</th><th>Дата</th><th>Игроки</th><th>Итог</th><th class="num">Ходов</th></tr></thead><tbody>' +
+    rows.join("") + "</tbody></table>";
+}
+$("allBtn").addEventListener("click", () => { fillAll(); togglePop("allPop", "allBtn"); });
+$("allList").addEventListener("click", ev => {
+  const tr = ev.target.closest("tr.go"); if (!tr) return;
+  closePops(); openMatch(+tr.dataset.i, NaN);
+});
+$("allList").addEventListener("keydown", ev => {
+  const tr = ev.target.closest("tr.go");
+  if (tr && (ev.key === "Enter" || ev.key === " ")) { ev.preventDefault(); closePops(); openMatch(+tr.dataset.i, NaN); }
+});
 
 let src = null, loadToken = 0;
 async function getJson(url) {
@@ -1667,11 +1695,20 @@ async function boot() {
       const base = safeBase(cfg.base), dictUrl = cfg.dict ? String(cfg.dict) : (base ? base + "dict.json" : "");
       if (!base) throw new Error("data/replay-source.json: base не годится");
       src = { base };
-      const [idx, dict] = await Promise.all([getJson(base + "index.json"), getJson(dictUrl)]);
+      // Список статистики — номера партий, игроки, итог. Не отдался — список партий без них.
+      const statsP = cfg.stats ? getJson(String(cfg.stats)).catch(e => { console.warn(e); return null; }) : Promise.resolve(null);
+      const [idx, dict, stats] = await Promise.all([getJson(base + "index.json"), getJson(dictUrl), statsP]);
+      const ST = new Map();
+      for (const s of ((stats && stats.matches) || [])) if (s && s.key) ST.set(s.key, s);
       initDict(dict.names, dict.icons, new URL(dictUrl, location.href).href);
       LIST = (idx.matches || []).filter(m => m && m.id).map(m => ({
         id: String(m.id), when: m.when || "", turns: m.turns || 0, humans: m.humans || 0,
-        marks: Array.isArray(m.marks) ? m.marks : [], score: 0, data: null }));
+        marks: Array.isArray(m.marks) ? m.marks : [], score: 0, data: null,
+        no: ST.has(m.id) ? ST.get(m.id).no || 0 : 0,
+        victory: ST.has(m.id) ? ST.get(m.id).victoryType || "" : "",
+        finished: ST.has(m.id) ? ST.get(m.id).finished : undefined,
+        players: ST.has(m.id) ? (ST.get(m.id).players || []).filter(p => p && p.isHuman)
+          .sort((a, b) => (a.place || 99) - (b.place || 99)).map(p => ({ name: String(p.name || ""), won: !!p.won })) : null }));
     }
   } catch (e) {
     console.warn(e);

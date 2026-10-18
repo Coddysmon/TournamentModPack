@@ -1,5 +1,6 @@
 {
   "_note": "Откуда replay.html берёт партии. base — папка с index.json и m/<ключ>.json (их пишет экспорт на VPS в репозиторий nova-stats рядом со статистикой); dict — словарь названий и иконок (лежит в этом репозитории, собирается у владельца). base по http со страницы https браузер заблокирует.",
   "base": "../nova-stats/replay/",
-  "dict": "data/replay-dict.json"
+  "dict": "data/replay-dict.json",
+  "stats": "../nova-stats/index.json"
 }

@@ -100,6 +100,19 @@
   max-height:calc(100% - 24px)}
 .rp-pop{top:10px;right:10px;width:300px;padding:10px 12px;z-index:9}   /* меню — над карточкой */
 .rp-pop.help{width:min(560px,calc(100% - 20px))}
+/* список всех партий — по центру, крупно */
+.rp-pop.all{width:min(820px,calc(100% - 20px));left:50%;right:auto;transform:translateX(-50%)}
+.rp-allbtn{border-color:var(--acc-dim);color:var(--acc-br)}
+.rp-all table{width:100%;border-collapse:collapse;font-size:13px}
+.rp-all th{text-align:left;font:600 11px/1.3 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--faint);
+  padding:6px 8px;border-bottom:1px solid var(--line-soft);background:none}
+.rp-all td{padding:7px 8px;border-bottom:1px solid var(--line-soft);color:var(--dim);vertical-align:top}
+.rp-all td b{color:var(--text);font-weight:600}
+.rp-all tr.go{cursor:pointer}
+.rp-all tr.go:hover td,.rp-all tr.go:focus-visible td{background:var(--nav-hover);color:var(--text)}
+.rp-all tr.cur td{background:var(--nav-active)}
+.rp-all .num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.rp-all .win{color:var(--good)}
 .rp-pop h3,.rp-card h3,.rp-side h3{font:600 11px/1.3 var(--sans);letter-spacing:.08em;text-transform:uppercase;
   color:var(--faint);margin:12px 0 6px}
 .rp-pop h3:first-child,.rp-pop .rp-head+h3{margin-top:2px}
@@ -226,6 +239,7 @@
 }
 @media (max-width:980px){
   .rp-lbl{display:none}            /* у кнопок остаются значки */
+  .rp-allbtn span{display:none}
   .rp-side{position:absolute;top:0;right:0;bottom:0;z-index:12;width:min(360px,100%);
     box-shadow:-12px 0 32px rgba(0,0,0,.5)}
 }

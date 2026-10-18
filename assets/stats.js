@@ -219,9 +219,12 @@
   const mapSvg = size => '<svg viewBox="0 0 24 24" width="' + size + '" height="' + size + '" aria-hidden="true"'
     + ' style="stroke:currentColor;fill:none;stroke-width:1.6;stroke-linejoin:round;vertical-align:-3px">'
     + '<path d="M3.5 6.5 L9 4.5 L15 6.5 L20.5 4.5 V17.5 L15 19.5 L9 17.5 L3.5 19.5 Z M9 4.5 V17.5 M15 6.5 V19.5"/></svg>';
+  /* Кнопка «Карта» в строке партии: значок + подпись, чтобы переход был виден сразу. */
+  const MAPBTN_STYLE = 'display:inline-flex;align-items:center;gap:5px;margin-left:8px;padding:2px 9px;border:1px solid var(--acc-dim);'
+    + 'border-radius:999px;font-size:12px;line-height:1.5;text-decoration:none;white-space:nowrap;color:var(--acc-br);background:var(--acc-faint)';
   const mapIcon = m => REPLAY_IDS.has(m.key)
-    ? ' <a class="st-maplink" href="' + esc(mapUrl(m.key)) + '" title="' + esc(L('Карта партии по ходам', 'Match map by turn (in Russian)'))
-      + '" aria-label="' + esc(L('Карта партии', 'Match map')) + '">' + mapSvg(15) + '</a>'
+    ? ' <a class="st-maplink" href="' + esc(mapUrl(m.key)) + '" style="' + MAPBTN_STYLE + '" title="'
+      + esc(L('Карта партии по ходам', 'Match map by turn (in Russian)')) + '">' + mapSvg(14) + L('Карта', 'Map') + '</a>'
     : '';
 
   const seriesCache = new Map();
@@ -703,7 +706,7 @@
       + '<th scope="col">' + L('Цивилизация', 'Civilization') + '</th>'
       + '<th scope="col" class="num">' + L('Место', 'Place') + '</th><th scope="col" class="num">' + L('Очки', 'Score') + '</th>'
       + '<th scope="col">' + L('Итог', 'Outcome') + '</th><th scope="col" class="num">' + L('Ходов', 'Turns') + '</th></tr></thead><tbody>'
-      + list.map(x => '<tr><td>' + linkMatch(x.m) + '</td><td>' + esc(shortDate(x.m.at)) + '</td><td>' + esc(civName(x.p.civ)) + '</td>'
+      + list.map(x => '<tr><td>' + linkMatch(x.m) + mapIcon(x.m) + '</td><td>' + esc(shortDate(x.m.at)) + '</td><td>' + esc(civName(x.p.civ)) + '</td>'
         + '<td class="num">' + placeCell(x.p, x.m, x.total) + '</td>'
         + '<td class="num">' + num(x.p.score) + '</td><td>' + outcome(x.p, x.m) + '</td><td class="num">' + num(x.m.turns) + '</td></tr>').join('')
       + '</tbody></table>');
@@ -770,8 +773,9 @@
       + ' · ' + num(m.turns) + ' ' + word(m.turns || 0, 'ход', 'хода', 'ходов', 'turn', 'turns')
       + ' · ' + (done(m) ? esc(victoryName(m.victoryType)) : L('не доиграна', 'not played out'))
       + (m.modVersion ? L(' · мод ', ' · mod ') + esc(m.modVersion) : '') + '</p>'
-      + (REPLAY_IDS.has(m.key) ? '<p class="st-map"><a class="btn" href="' + esc(mapUrl(m.key)) + '">' + mapSvg(18)
-        + L('Карта партии', 'Match map (in Russian)') + '</a></p>' : '')
+      + (REPLAY_IDS.has(m.key) ? '<p class="st-map" style="margin:4px 0 18px"><a class="btn primary" href="' + esc(mapUrl(m.key))
+        + '" style="font-size:15px;padding:12px 22px">' + mapSvg(20)
+        + L('Карта партии — смотреть по ходам', 'Match map — watch turn by turn (in Russian)') + '</a></p>' : '')
       + '</div>';
 
     h += tableWrap('<table class="st"><thead><tr><th scope="col" class="num">' + L('Место', 'Place') + '</th>'
