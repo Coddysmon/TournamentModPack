@@ -197,6 +197,33 @@
     return indexP;
   }
 
+  /* Карты партий (replay.html, с 18.10.2026): список тех, у кого карта есть, лежит рядом
+     со статистикой — <base>replay/index.json (его пишет та же выгрузка на VPS). Нет
+     списка (режим live, сбой) — ссылок на карту просто нет, статистика работает. */
+  let REPLAY_IDS = new Set();
+  let replayP = null;
+  function replayIds() {
+    if (!replayP) replayP = (async () => {
+      const src = await source();
+      if (src.problem || src.mode !== 'static') return REPLAY_IDS;
+      try {
+        const j = await getJson(src.base + 'replay/index.json');
+        if (j && Array.isArray(j.matches)) REPLAY_IDS = new Set(j.matches.map(x => x && x.id).filter(id => KEY_RE.test(id || '')));
+      } catch (e) { console.warn(e); }
+      return REPLAY_IDS;
+    })();
+    return replayP;
+  }
+  const mapUrl = key => NOVA.BASE + 'replay.html#m=' + encodeURIComponent(key);
+  /* Значок карты: оформление — в атрибутах, общий site.css не трогаем. */
+  const mapSvg = size => '<svg viewBox="0 0 24 24" width="' + size + '" height="' + size + '" aria-hidden="true"'
+    + ' style="stroke:currentColor;fill:none;stroke-width:1.6;stroke-linejoin:round;vertical-align:-3px">'
+    + '<path d="M3.5 6.5 L9 4.5 L15 6.5 L20.5 4.5 V17.5 L15 19.5 L9 17.5 L3.5 19.5 Z M9 4.5 V17.5 M15 6.5 V19.5"/></svg>';
+  const mapIcon = m => REPLAY_IDS.has(m.key)
+    ? ' <a class="st-maplink" href="' + esc(mapUrl(m.key)) + '" title="' + esc(L('Карта партии по ходам', 'Match map by turn (in Russian)'))
+      + '" aria-label="' + esc(L('Карта партии', 'Match map')) + '">' + mapSvg(15) + '</a>'
+    : '';
+
   const seriesCache = new Map();
   function matchSeries(key, ds) {
     if (!KEY_RE.test(key) || !DS_RE.test(ds)) return Promise.resolve(null);
@@ -319,7 +346,7 @@
       + '<th scope="col" class="num">' + L('Ходов', 'Turns') + '</th></tr></thead><tbody>'
       + list.map(m => {
         const w = winnerOf(m);
-        return '<tr><td>' + linkMatch(m) + '</td><td>' + esc(shortDate(m.at)) + '</td>'
+        return '<tr><td>' + linkMatch(m) + mapIcon(m) + '</td><td>' + esc(shortDate(m.at)) + '</td>'
           + '<td class="num">' + humans(m).length + '</td>'
           + '<td>' + (!done(m) ? UNFINISHED : w.length ? w.map(p => p.isHuman ? linkPlayer(p.name) : esc(p.name) + ' <span class="tag">' + L('ИИ', 'AI') + '</span>').join(', ')
             + ' <span class="dim">· ' + esc(victoryName(m.victoryType)) + '</span>'
@@ -742,7 +769,10 @@
     let h = tabs(st) + '<div class="st-head"><h2>' + esc(matchTitle(m)) + '</h2><p class="dim">' + esc(shortDate(m.at))
       + ' · ' + num(m.turns) + ' ' + word(m.turns || 0, 'ход', 'хода', 'ходов', 'turn', 'turns')
       + ' · ' + (done(m) ? esc(victoryName(m.victoryType)) : L('не доиграна', 'not played out'))
-      + (m.modVersion ? L(' · мод ', ' · mod ') + esc(m.modVersion) : '') + '</p></div>';
+      + (m.modVersion ? L(' · мод ', ' · mod ') + esc(m.modVersion) : '') + '</p>'
+      + (REPLAY_IDS.has(m.key) ? '<p class="st-map"><a class="btn" href="' + esc(mapUrl(m.key)) + '">' + mapSvg(18)
+        + L('Карта партии', 'Match map (in Russian)') + '</a></p>' : '')
+      + '</div>';
 
     h += tableWrap('<table class="st"><thead><tr><th scope="col" class="num">' + L('Место', 'Place') + '</th>'
       + '<th scope="col">' + L('Участник', 'Participant') + '</th><th scope="col">' + L('Цивилизация', 'Civilization') + '</th>'
@@ -782,7 +812,7 @@
   async function render() {
     const token = ++renderToken;
     const st = readHash();
-    const [idx] = await Promise.all([index(), dictionary()]);
+    const [idx] = await Promise.all([index(), dictionary(), replayIds()]);
     if (token !== renderToken) return;
     if (!idx.ok) { app().innerHTML = failState(idx.why); return; }
     if (!idx.matches.length) { app().innerHTML = emptyState(); return; }
