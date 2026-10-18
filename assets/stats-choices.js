@@ -384,7 +384,7 @@
     h += '<h2>' + L('Города-государства по игрокам', 'City-states by player') + '</h2>'
       + intro(L('Суммы по всем партиям игрока в выборке; «в среднем» — на одну партию. Переворот — попытка шпиона; удался — если игрок на том же ходу стал союзником этого города-государства (признак успеха в событии Nova не заполняет). '
         + 'Освобождения — городов-государств (в скобках — всего, с державами).',
-        'Totals over all of the player\'s matches in the selection; “per match” is an average. A coup is a spy\'s attempt; it succeeded if the player became that city-state's ally on the same turn (Nova does not fill in the event's success flag). '
+        'Totals over all of the player\'s matches in the selection; “per match” is an average. A coup is a spy\'s attempt; it succeeded if the player became that city-state\'s ally on the same turn (Nova does not fill in the event\'s success flag). '
         + 'Liberations — of city-states (all liberations in brackets).'));
     h += table([th(L('Игрок', 'Player')), th(L('Партий', 'Matches'), true), th(L('Перевороты', 'Coups'), true), th(L('Успех', 'Success'), true),
       th(L('Освобождения', 'Liberations'), true), th(L('Дань золотом', 'Gold tribute'), true), th(L('Дань юнитами', 'Unit tribute'), true),
