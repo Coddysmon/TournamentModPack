@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.168",
+  "packageVersion": "1.5.169",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-10-18T18:24:50.697324+00:00",
+  "createdUtc": "2026-10-21T10:51:23.7566874+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "relay://109.73.196.175:443/blobs/",
@@ -2131,6 +2131,36 @@
           "hash": "e272d03ad5b6c7e400b58939cf7b737a40443789e1960dbbf7ec6979e552da76"
         },
         {
+          "path": "Art/nova_admiralty_portrait_128.dds",
+          "size": 65664,
+          "hash": "d45f6b362e749a80ac395f6617a705aecdd425bb8259f352cf30fe9c76f91618"
+        },
+        {
+          "path": "Art/nova_admiralty_portrait_256.dds",
+          "size": 262272,
+          "hash": "0b3b45fb91970c947b15a5ae32603c50739f1ba93cde1a90b1defbb7b834bca4"
+        },
+        {
+          "path": "Art/nova_admiralty_portrait_32.dds",
+          "size": 4224,
+          "hash": "b8c93d97a23b8ddb0281fa09c59dfc423f9c56aff52fcced3fa8fe1c5509fe67"
+        },
+        {
+          "path": "Art/nova_admiralty_portrait_45.dds",
+          "size": 8228,
+          "hash": "e47bd702b8b231507063fcef6d391dfd6928dfea00abc546c70a31821bdd3d68"
+        },
+        {
+          "path": "Art/nova_admiralty_portrait_64.dds",
+          "size": 16512,
+          "hash": "7493db902ec0c1f3192fac6aae6b7e45c152467720c3ab7220516be7c4601320"
+        },
+        {
+          "path": "Art/nova_admiralty_portrait_80.dds",
+          "size": 25728,
+          "hash": "54d16b9fa382d38319f38273dd78df89703c87ba8bf20c1d760d85cbaef7a315"
+        },
+        {
           "path": "Art/nova_burg_eltz_128.dds",
           "size": 65664,
           "hash": "45b9fb3350dcdea4af9da500da69a3b8abfd4789fc0e00067f790200d07c0f4f"
@@ -2186,6 +2216,36 @@
           "hash": "148f1263f69b0c8eec70e4f827f45311d2226d1b6344272ee33ee995d92d0072"
         },
         {
+          "path": "Art/nova_concert_portrait_128.dds",
+          "size": 65664,
+          "hash": "4a59612727e83fc65c1aff1defd2ba781c67dca93152a108a79b6215c8a9c576"
+        },
+        {
+          "path": "Art/nova_concert_portrait_256.dds",
+          "size": 262272,
+          "hash": "a09530fecc431aa1a81e97cbc546d93edc7842e881637b0304162505ab68c95d"
+        },
+        {
+          "path": "Art/nova_concert_portrait_32.dds",
+          "size": 4224,
+          "hash": "a77755a93c4961c6ae6c59f6f5052f3c3d8b49584ac7ea783b4399423ac83574"
+        },
+        {
+          "path": "Art/nova_concert_portrait_45.dds",
+          "size": 8228,
+          "hash": "0d506c572af2279a768a8ca9ae15287ae7e30457356f77a593ba1fe1631e19a7"
+        },
+        {
+          "path": "Art/nova_concert_portrait_64.dds",
+          "size": 16512,
+          "hash": "6782931c9153d646e92fcd8d39bdec659f94bb73ceeea71a26b5c65dedd9cfbf"
+        },
+        {
+          "path": "Art/nova_concert_portrait_80.dds",
+          "size": 25728,
+          "hash": "e56b86bc040eee4a2a8933a9b730286a5929b367348919ba8963336ebfe651a3"
+        },
+        {
           "path": "Art/nova_quartermaster_cache_256.dds",
           "size": 262272,
           "hash": "9b30b7cbe881933eba933e14d419f2d0ce2709e37bd019eef64d26a07aef092c"
@@ -2204,6 +2264,36 @@
           "path": "Art/nova_quartermaster_cache_64.dds",
           "size": 16512,
           "hash": "6a557596cefc10046e478681da5ed32f7b5c20ed860d6a285cb1d284cdaa596c"
+        },
+        {
+          "path": "Art/nova_quartermaster_cache_portrait_128.dds",
+          "size": 65664,
+          "hash": "2246309b31bc9a03e12207572a5b0e10dfe79830160d0c16df1188d4a5d6ed9f"
+        },
+        {
+          "path": "Art/nova_quartermaster_cache_portrait_256.dds",
+          "size": 262272,
+          "hash": "ea550cc8929153a11143c7370a63cc0a8d8c8ec411f28c9b386d3ab258bb1dae"
+        },
+        {
+          "path": "Art/nova_quartermaster_cache_portrait_32.dds",
+          "size": 4224,
+          "hash": "870a5e4af33a0ea97340bafaa89270625d2c7a8bc9ed6fb3d2dbad1d022f7dc3"
+        },
+        {
+          "path": "Art/nova_quartermaster_cache_portrait_45.dds",
+          "size": 8228,
+          "hash": "c237e696dd20ffe815b42e791348d42e1570d7fb73e20aeb25571f6d97d53502"
+        },
+        {
+          "path": "Art/nova_quartermaster_cache_portrait_64.dds",
+          "size": 16512,
+          "hash": "e1b7895565749f3b9f2f2df099444fd91485f852fd77a3a3e2d49a3d8c7c9c15"
+        },
+        {
+          "path": "Art/nova_quartermaster_cache_portrait_80.dds",
+          "size": 25728,
+          "hash": "1b55e120bcc679c1db37a5d5b3615e90b3955e7df7edafebb864d715ed9143e7"
         },
         {
           "path": "Art/nova_tipi_256.dds",
@@ -16547,8 +16637,8 @@
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4541952,
-          "hash": "e4a0da27201f0e62b9baf777b96bd4232606702632e1a9c02841bffb87c15939"
+          "size": 4520960,
+          "hash": "c2accc95f9bee08fffac946534af4f8cab0422e83bda749dc898e261abe26558"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -19367,8 +19457,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 13690620,
-          "hash": "aa30429df2af3b842e22ccdd3ad6238e639782c1464edfab0fd8ef7c7415964d"
+          "size": 13696408,
+          "hash": "d1655aadae3397f16cdac7c9dde0997224270510ea2afadd31156a581d00f708"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -19407,8 +19497,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 10000605,
-          "hash": "afce4f96f5f22ce181a353588d48184649b62451decb4ba0083355b0567b86e7"
+          "size": 10003448,
+          "hash": "6b405be2f43affa834e4e05e35db7b33cdca620e466c97b2e5622a7d8c2d56b0"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -19743,7 +19833,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "792a84cdbddad2862cd7f36cc59d70ebb8b3c29b61bea63eefd35ac76977fd28"
+          "hash": "3d0359a3c00d3ff3f1bc94087ed037f7b02ab8b9037a5f99b6a31d56cce35ca9"
         },
         {
           "path": "skins.json",
@@ -23222,8 +23312,8 @@
         },
         {
           "path": "tmp/eui/TopPanel.lua",
-          "size": 133731,
-          "hash": "c3c1ea267c194427078daf8e3da37c57e34a001af2a5d2440519855b68bbdd45"
+          "size": 134112,
+          "hash": "d4cac6498ef9c90a60105f32b52394f513a8bab9f3ef219ae099f774adb40dce"
         },
         {
           "path": "tmp/eui/TopPanel.xml",
@@ -23412,8 +23502,8 @@
         },
         {
           "path": "tmp/ui/CivilopediaScreen.lua",
-          "size": 315681,
-          "hash": "ed71909f9296dcc477754e1affa5818871f0351261f4a7222921d37bfa787c96"
+          "size": 317205,
+          "hash": "ce8ca3d6828de7453716328de30650ba136b30be87fb5c6dfb38f398cdf0c02c"
         },
         {
           "path": "tmp/ui/CivilopediaScreen.xml",
@@ -23566,6 +23656,11 @@
           "hash": "11e0f962af82c7587d7012f2853d8e8e7badc2b2cdbc214ecd149da69b3bb144"
         },
         {
+          "path": "tmp/ui/GoodyHutPopup.lua",
+          "size": 3105,
+          "hash": "01b7b6fb1adaad797e9e6e3f6193d742db09e15c7f3ef6a10e0141af4697e82c"
+        },
+        {
           "path": "tmp/ui/GPList.lua",
           "size": 24776,
           "hash": "af54efe24955ceac146316c51ca0b70873c2172889276ce514781e2d627aac47"
@@ -23622,13 +23717,13 @@
         },
         {
           "path": "tmp/ui/MainMenu.lua",
-          "size": 29097,
-          "hash": "5f0a0cb96694b442d3791fc058132483d6018113947cbcd46cff9f5f8539dd99"
+          "size": 37048,
+          "hash": "0a03f9f5cd968cdc3c0f00b4b6af63b49a592c341a6f01cba25fe8be61166f86"
         },
         {
           "path": "tmp/ui/MainMenu.xml",
-          "size": 16230,
-          "hash": "ec5818bc2753e9189c383f55d71a01bda4ba75d9f5b665097bb0c13ec212947b"
+          "size": 18847,
+          "hash": "b954dd7efc932292ea3da75fb47b47e621e6fb672acfb7ab3447cc3aa77afbe3"
         },
         {
           "path": "tmp/ui/MatchOutcomeRecorder.lua",
@@ -23702,8 +23797,8 @@
         },
         {
           "path": "tmp/ui/NovaLobbyNick.lua",
-          "size": 16696,
-          "hash": "fb1f49187815a487080b5ccee75ad9527c66c988934552293f69c962f2ea624a"
+          "size": 29875,
+          "hash": "a6658fe8861e555a701e0a4ba35ef6e8c65568ae7935c88834ab055a1f349141"
         },
         {
           "path": "tmp/ui/NovaNick.lua",
@@ -23712,8 +23807,8 @@
         },
         {
           "path": "tmp/ui/NovaNickStyles.lua",
-          "size": 10218,
-          "hash": "143c1d3e14da28238a5b1358c54a4fb7b03d20cd8d895a740f6eba85ac1b06ee"
+          "size": 10424,
+          "hash": "bb748294a2513276c208e375762c66f4012fb7dce5a42caa7a138c6a7a13a065"
         },
         {
           "path": "tmp/ui/NovaSkins.lua",
@@ -23922,8 +24017,8 @@
         },
         {
           "path": "tmp/ui/StagingRoom.lua",
-          "size": 160735,
-          "hash": "2cd0ccca0034813ee3a2a09d4a16636287f115b5be191db1f7d235e329a6c805"
+          "size": 161452,
+          "hash": "00f142ada0cda0e94c66c19b2e114adf7fcee9c91a4cc44c02a9eb8441d0c492"
         },
         {
           "path": "tmp/ui/StagingRoom.xml",
@@ -23957,8 +24052,8 @@
         },
         {
           "path": "tmp/ui/TopPanel.lua",
-          "size": 56673,
-          "hash": "b4ffa239a6740d7a62b7c5721e2b3265b78a5d1e85bcbeb53e81b9d2a901082e"
+          "size": 57147,
+          "hash": "86564979d80fe98dc79d011c3b654742f5ae04351b0b4354f3e7531ac042aa3d"
         },
         {
           "path": "tmp/ui/TradeLogic.lua",
@@ -24052,8 +24147,8 @@
         },
         {
           "path": "ui_check.bat",
-          "size": 41036,
-          "hash": "420e14b1a44ef5b511b84010415a70ea7be7853927f8eb40d5b41877d1792f3f"
+          "size": 41396,
+          "hash": "be9252a516a9c1be5a803bcb236d1c3887ff867e32a6db0f52c3e673745b9dea"
         }
       ]
     },
@@ -24335,6 +24430,11 @@
       {
         "from": "tmp/ui/ChoosePantheonPopup.xml",
         "to": "UI/ChoosePantheonPopup.xml",
+        "when": []
+      },
+      {
+        "from": "tmp/ui/GoodyHutPopup.lua",
+        "to": "UI/GoodyHutPopup.lua",
         "when": []
       },
       {
@@ -25562,6 +25662,16 @@
   "news": {
     "entries": [
       {
+        "date": "2026-10-21T00:00:00+00:00",
+        "title": "1.5.169: руины, апостолы и меньше вылетов",
+        "body": "1. Новое верование основателя «Апостольская миссия»: миссионеры на 50% дешевле за веру и распространяют религию 3 раза вместо 2 — пока основатель владеет святым городом.\n2. Руины: окно больше не пустое — видно, сколько науки и еды дали; счастье от руин в подсказке своей строкой, а не «от Всемирного конгресса». Недостижимые «Древние мастерские» убраны.\n3. Свои портреты у Интендантского схрона, Адмиралтейства и Концерта; в энциклопедии у улучшений великих людей — «Ставится на ресурсы».\n4. Десант и переброска: юнит, который в этот ход не ходил, больше не считается походившим (было «Перемещение 2/3» у десантников).\n5. Исправлены три причины вылетов игры.\n6. Если у вас или у кого-то в лобби старая версия мода — игра предупредит.\nЛаунчер:\n• мод обновляется сам, не дожидаясь «Играть»;\n• автосохранения сетевых партий после игры уходят на сервер для разбора рассинхронов и повторов (в них вся партия, ники и чат) — отключается в настройках;\n• в отчёте о логах — видеокарта и настройки графики.",
+        "tag": "ОБНОВЛЕНИЕ",
+        "titleEn": "1.5.169: ruins, apostles and fewer crashes",
+        "bodyEn": "1. New founder belief \"Apostolic Mission\": Missionaries cost 50% less Faith and spread the religion 3 times instead of 2, while the founder holds the Holy City.\n2. Ruins: the popup is no longer empty — it shows how much science and food you got; happiness from ruins has its own line in the tooltip instead of \"from the World Congress\". The unreachable \"Ancient workshops\" ruin is removed.\n3. The Quartermaster Cache, Admiralty and Concert have their own portraits; in the Civilopedia, Great Person improvements show \"Can Be Built on Resources\".\n4. Paradrop and airlift: a unit that has not moved this turn no longer counts as moved (paratroopers used to show \"Movement 2/3\").\n5. Fixed three causes of game crashes.\n6. The game warns you if you or someone in the lobby has an old version of the mod.\nLauncher:\n• the mod updates itself without waiting for \"Play\";\n• autosaves of multiplayer games are sent to the server after the game to investigate desyncs and for replays (they contain the whole game, nicknames and chat) — can be turned off in the settings;\n• the log report includes the graphics card and graphics settings.",
+        "HasUsableUrl": false,
+        "IsUsable": true
+      },
+      {
         "date": "2026-10-18T00:00:00+00:00",
         "title": "1.5.168: культура, энциклопедия и карта партии",
         "body": "1. Музей теперь действительно даёт +10% культуры, стадион Бразилии — +5% (раньше процент был только в описании).\n2. Шведский Оксфорд даёт +2 науки всем городам, как обычный.\n3. Символизм: убраны +2 хода золотого века за великого человека; разовый золотой век остался.\n4. Энциклопедия показывает туризм зданий и цены для скорости партии; цены в вере в подсказках тоже.\n5. Исправлены тексты: польдер, Рим, Оксфорд, значок военной академии и лишние значки в русских описаниях.\n6. Мод записывает выдачу городов по ходам — для карты партии на сайте.\nЛаунчер:\n• в профиле у каждой партии видно, сколько рейтинга она дала;\n• кнопка «Карта партии» — повтор по ходам на сайте;\n• в чате видна дата сообщений;\n• убрана таблица сезона.\nНа сайте: вкладки «Выборы» и «Зал славы» в статистике.",
@@ -25703,6 +25813,16 @@
       }
     ],
     "Usable": [
+      {
+        "date": "2026-10-21T00:00:00+00:00",
+        "title": "1.5.169: руины, апостолы и меньше вылетов",
+        "body": "1. Новое верование основателя «Апостольская миссия»: миссионеры на 50% дешевле за веру и распространяют религию 3 раза вместо 2 — пока основатель владеет святым городом.\n2. Руины: окно больше не пустое — видно, сколько науки и еды дали; счастье от руин в подсказке своей строкой, а не «от Всемирного конгресса». Недостижимые «Древние мастерские» убраны.\n3. Свои портреты у Интендантского схрона, Адмиралтейства и Концерта; в энциклопедии у улучшений великих людей — «Ставится на ресурсы».\n4. Десант и переброска: юнит, который в этот ход не ходил, больше не считается походившим (было «Перемещение 2/3» у десантников).\n5. Исправлены три причины вылетов игры.\n6. Если у вас или у кого-то в лобби старая версия мода — игра предупредит.\nЛаунчер:\n• мод обновляется сам, не дожидаясь «Играть»;\n• автосохранения сетевых партий после игры уходят на сервер для разбора рассинхронов и повторов (в них вся партия, ники и чат) — отключается в настройках;\n• в отчёте о логах — видеокарта и настройки графики.",
+        "tag": "ОБНОВЛЕНИЕ",
+        "titleEn": "1.5.169: ruins, apostles and fewer crashes",
+        "bodyEn": "1. New founder belief \"Apostolic Mission\": Missionaries cost 50% less Faith and spread the religion 3 times instead of 2, while the founder holds the Holy City.\n2. Ruins: the popup is no longer empty — it shows how much science and food you got; happiness from ruins has its own line in the tooltip instead of \"from the World Congress\". The unreachable \"Ancient workshops\" ruin is removed.\n3. The Quartermaster Cache, Admiralty and Concert have their own portraits; in the Civilopedia, Great Person improvements show \"Can Be Built on Resources\".\n4. Paradrop and airlift: a unit that has not moved this turn no longer counts as moved (paratroopers used to show \"Movement 2/3\").\n5. Fixed three causes of game crashes.\n6. The game warns you if you or someone in the lobby has an old version of the mod.\nLauncher:\n• the mod updates itself without waiting for \"Play\";\n• autosaves of multiplayer games are sent to the server after the game to investigate desyncs and for replays (they contain the whole game, nicknames and chat) — can be turned off in the settings;\n• the log report includes the graphics card and graphics settings.",
+        "HasUsableUrl": false,
+        "IsUsable": true
+      },
       {
         "date": "2026-10-18T00:00:00+00:00",
         "title": "1.5.168: культура, энциклопедия и карта партии",
@@ -25877,14 +25997,14 @@
     "discord": "https://discord.gg/SxzjCCcQMJ"
   },
   "client": {
-    "version": "0.3.113",
-    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.113.zip",
-    "sha256": "c143d86392505cf0454581159d605f695232367d036a6487052bf9fa0fef4840",
-    "size": 64480614,
-    "notes": "Профиль: рейтинг за каждую партию; кнопка «Карта партии»; дата в чате; убрана таблица сезона",
+    "version": "0.3.114",
+    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.114.zip",
+    "sha256": "d8fa580531b670693f9fdb9e63e4d2538d7070805ead1ae9e5c32a014487c475",
+    "size": 64537127,
+    "notes": "Мод обновляется сам, не дожидаясь «Играть»; автосохранения сетевых партий отправляются для разбора (выключается в настройках); в отчёте о логах — видеокарта и настройки графики",
     "mirrors": [
-      "relay://109.73.196.175:443/client/nova-client-0.3.113.zip",
-      "http://109.73.196.175/client/nova-client-0.3.113.zip"
+      "relay://109.73.196.175:443/client/nova-client-0.3.114.zip",
+      "http://109.73.196.175/client/nova-client-0.3.114.zip"
     ],
     "IsUsable": true
   }

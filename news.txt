@@ -1,3 +1,27 @@
+=== 2026-10-21 | ОБНОВЛЕНИЕ | 1.5.169: руины, апостолы и меньше вылетов
+1. Новое верование основателя «Апостольская миссия»: миссионеры на 50% дешевле за веру и распространяют религию 3 раза вместо 2 — пока основатель владеет святым городом.
+2. Руины: окно больше не пустое — видно, сколько науки и еды дали; счастье от руин в подсказке своей строкой, а не «от Всемирного конгресса». Недостижимые «Древние мастерские» убраны.
+3. Свои портреты у Интендантского схрона, Адмиралтейства и Концерта; в энциклопедии у улучшений великих людей — «Ставится на ресурсы».
+4. Десант и переброска: юнит, который в этот ход не ходил, больше не считается походившим (было «Перемещение 2/3» у десантников).
+5. Исправлены три причины вылетов игры.
+6. Если у вас или у кого-то в лобби старая версия мода — игра предупредит.
+Лаунчер:
+• мод обновляется сам, не дожидаясь «Играть»;
+• автосохранения сетевых партий после игры уходят на сервер для разбора рассинхронов и повторов (в них вся партия, ники и чат) — отключается в настройках;
+• в отчёте о логах — видеокарта и настройки графики.
+
+--- en | 1.5.169: ruins, apostles and fewer crashes
+1. New founder belief "Apostolic Mission": Missionaries cost 50% less Faith and spread the religion 3 times instead of 2, while the founder holds the Holy City.
+2. Ruins: the popup is no longer empty — it shows how much science and food you got; happiness from ruins has its own line in the tooltip instead of "from the World Congress". The unreachable "Ancient workshops" ruin is removed.
+3. The Quartermaster Cache, Admiralty and Concert have their own portraits; in the Civilopedia, Great Person improvements show "Can Be Built on Resources".
+4. Paradrop and airlift: a unit that has not moved this turn no longer counts as moved (paratroopers used to show "Movement 2/3").
+5. Fixed three causes of game crashes.
+6. The game warns you if you or someone in the lobby has an old version of the mod.
+Launcher:
+• the mod updates itself without waiting for "Play";
+• autosaves of multiplayer games are sent to the server after the game to investigate desyncs and for replays (they contain the whole game, nicknames and chat) — can be turned off in the settings;
+• the log report includes the graphics card and graphics settings.
+
 === 2026-10-18 | ОБНОВЛЕНИЕ | 1.5.168: культура, энциклопедия и карта партии
 1. Музей теперь действительно даёт +10% культуры, стадион Бразилии — +5% (раньше процент был только в описании).
 2. Шведский Оксфорд даёт +2 науки всем городам, как обычный.
