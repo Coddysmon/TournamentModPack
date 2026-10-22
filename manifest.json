@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.169",
+  "packageVersion": "1.5.170",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-10-21T10:51:23.7566874+00:00",
+  "createdUtc": "2026-10-22T09:34:04.3987858+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "relay://109.73.196.175:443/blobs/",
@@ -16638,7 +16638,7 @@
         {
           "path": "CvGameCore_Expansion2.dll",
           "size": 4520960,
-          "hash": "c2accc95f9bee08fffac946534af4f8cab0422e83bda749dc898e261abe26558"
+          "hash": "ae7f6abe897b4554280cc3d4975cf9bca23214b0e768962477208ee2cc2f0a47"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -17102,8 +17102,8 @@
         },
         {
           "path": "Maps/NovaTournamentPangaea.lua",
-          "size": 944046,
-          "hash": "6400164772e52825f9ca783ec1d0d7685032d5c47d082c16c3602e6184358855"
+          "size": 983623,
+          "hash": "81b8b9433de03c12155ffdffc0de0ffc03da668efbfdfcb1fba55e07601327e9"
         },
         {
           "path": "MarshalAtlas128.dds",
@@ -19497,8 +19497,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 10003448,
-          "hash": "6b405be2f43affa834e4e05e35db7b33cdca620e466c97b2e5622a7d8c2d56b0"
+          "size": 10010577,
+          "hash": "0dc7fb849a083f82653294f7bdfce5dd96d6c36e44479732002b5e302557b4e2"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -19833,7 +19833,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "3d0359a3c00d3ff3f1bc94087ed037f7b02ab8b9037a5f99b6a31d56cce35ca9"
+          "hash": "4ad7bfcedce054b9ede96697f51e5e5d9c7aa2537e85376cc7241e0bc32d893f"
         },
         {
           "path": "skins.json",
@@ -24162,8 +24162,8 @@
       "files": [
         {
           "path": "NovaTournamentPangaea.lua",
-          "size": 944046,
-          "hash": "6400164772e52825f9ca783ec1d0d7685032d5c47d082c16c3602e6184358855"
+          "size": 983623,
+          "hash": "81b8b9433de03c12155ffdffc0de0ffc03da668efbfdfcb1fba55e07601327e9"
         }
       ]
     },
