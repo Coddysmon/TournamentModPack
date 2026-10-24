@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.170",
+  "packageVersion": "1.5.171",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-10-22T09:34:04.3987858+00:00",
+  "createdUtc": "2026-10-24T11:15:43.6909163+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "relay://109.73.196.175:443/blobs/",
@@ -16136,6 +16136,36 @@
           "hash": "61fcd6b79d4aa672d07b7af4312ea21ade2aad2b569d7e5717c126d308a8fc50"
         },
         {
+          "path": "Art/TEMPLO_icon128.dds",
+          "size": 87508,
+          "hash": "16f16dd6ce955612c717ffc85a9246373818ead16c62bac2df50ca6a8ba880d6"
+        },
+        {
+          "path": "Art/TEMPLO_icon256.dds",
+          "size": 349652,
+          "hash": "814d4adb8fc3a77e09f816b39404f44160dc0df6acec1618537c3cdd9ced4ea8"
+        },
+        {
+          "path": "Art/TEMPLO_icon45.dds",
+          "size": 10768,
+          "hash": "4b903bcad99dd35dd661df09fe0740669906063fdbbe027551bfb7e11eaab87b"
+        },
+        {
+          "path": "Art/TEMPLO_icon64.dds",
+          "size": 21972,
+          "hash": "99534e71c2c741ae2fe09e8453e8a08bc7f3ea0d8d338273bcc95afd64d1b011"
+        },
+        {
+          "path": "Art/TEMPLO_icon80.dds",
+          "size": 34248,
+          "hash": "620e920e0db74d6581c00c811b0334a8b81d0f54de413abaa6746ae84302e08a"
+        },
+        {
+          "path": "Art/TEMPLO_splash.dds",
+          "size": 552224,
+          "hash": "287e9b3b4755989445d659688e148a199adfb1253eb010e926e5002cc89ba1ae"
+        },
+        {
           "path": "Art/TM_AntiTankRifleAtlas128.dds",
           "size": 65664,
           "hash": "0b2e47b55c21adb8250083fa1a5e3b9f6eda29aa9924ae82f621f3928892b857"
@@ -16591,6 +16621,31 @@
           "hash": "03d04b7ace363b65e7cbe70939cdd0043e122944c27c7b686f8d5799ad654e17"
         },
         {
+          "path": "Art/Wonders/Civ5ArtDefines_Nova_Wonders.xml",
+          "size": 920,
+          "hash": "0cc9db217b8faf4303b7bc6929541f77bdeaaa8154547ef5f293bb980cd07f7c"
+        },
+        {
+          "path": "Art/Wonders/nova_great_colosseum.fxsxml",
+          "size": 457,
+          "hash": "9c91b0e90f6658a83a5fd961ef61a60975ab62430ea034ed9f213cffe9d6bd3c"
+        },
+        {
+          "path": "Art/Wonders/nova_great_colosseum.gr2",
+          "size": 37144,
+          "hash": "9fd960bf0ff435f851bf698b2ba26c34619fdec9509b5f00536eec0f0a055b28"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_great_colosseum_diff.dds",
+          "size": 174904,
+          "hash": "9fcb608f760b6b3cbec8f350f6edf15a5bb1dc2e491f79a9719b4c4dfc87da59"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_great_colosseum_sref.dds",
+          "size": 349680,
+          "hash": "07dc9e912ca185eb80772badb624612f902a2d37a37d6163f24703506d716528"
+        },
+        {
           "path": "Art/WonderVenetianArsenal.dds",
           "size": 2208512,
           "hash": "d2f18a47b4663edf8b8c4d3ef3603b2a3ef6542dda49978d141588133731dc16"
@@ -16637,8 +16692,8 @@
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4520960,
-          "hash": "ae7f6abe897b4554280cc3d4975cf9bca23214b0e768962477208ee2cc2f0a47"
+          "size": 4527104,
+          "hash": "520bb4a983fcbf6d844469ab479a281fddf9784fb83688a8162efc07939ef58b"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -17142,8 +17197,8 @@
         },
         {
           "path": "MPModsPack.Civ5Pkg",
-          "size": 2625,
-          "hash": "befb0eccadb9dde7dca12b7d6ee2e6a318de9fc489f50e517690bdf3a00c02f9"
+          "size": 2835,
+          "hash": "75d900787d880919b3a6e4dc4d1b8b75c9fa218ee17a7b56390f383a836a8df0"
         },
         {
           "path": "NovaMetroAtlas128.dds",
@@ -19457,8 +19512,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 13696408,
-          "hash": "d1655aadae3397f16cdac7c9dde0997224270510ea2afadd31156a581d00f708"
+          "size": 13700448,
+          "hash": "47ee49e9974e635124aff17f98fd611fa489a1b40770a3e86596889160c98d9d"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -19497,8 +19552,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 10010577,
-          "hash": "0dc7fb849a083f82653294f7bdfce5dd96d6c36e44479732002b5e302557b4e2"
+          "size": 10022740,
+          "hash": "ce87eb70367d8c95260f4865feb7f6ea9bf807a0697edc1e61de1b1b38e56e6c"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -19833,7 +19888,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "4ad7bfcedce054b9ede96697f51e5e5d9c7aa2537e85376cc7241e0bc32d893f"
+          "hash": "1f28956c880109c5c6204db8ec13df2515cb1adc3d10685493a40ed48e6573f3"
         },
         {
           "path": "skins.json",
@@ -23337,8 +23392,8 @@
         },
         {
           "path": "tmp/eui/UnitPanel.lua",
-          "size": 93201,
-          "hash": "3338b584e50c8e899a75add9ba48782bde14bd621b0dfb27f3c3589b6529d696"
+          "size": 93504,
+          "hash": "cc9e7784ad40947e5b9ca9ac36a2ac9f1ecf389c58ce8538eaa3f7b03d338c3f"
         },
         {
           "path": "tmp/eui/UnitPanel.xml",
@@ -23797,8 +23852,8 @@
         },
         {
           "path": "tmp/ui/NovaLobbyNick.lua",
-          "size": 29875,
-          "hash": "a6658fe8861e555a701e0a4ba35ef6e8c65568ae7935c88834ab055a1f349141"
+          "size": 30781,
+          "hash": "a94ab5c0381054aae42ce8a1fe416cae0086deba0905b5863948b565e991d2f2"
         },
         {
           "path": "tmp/ui/NovaNick.lua",
@@ -24107,8 +24162,8 @@
         },
         {
           "path": "tmp/ui/UnitPanel.lua",
-          "size": 72246,
-          "hash": "39f3fc1a801f9cdfac3aaf71bdabd6a534f0e80e7544c1ddddf6b29e8f67bcfd"
+          "size": 72551,
+          "hash": "41428c730aca761a847f5adfb64af6404eefb45710cc7b9faabce972e4ef6a82"
         },
         {
           "path": "tmp/ui/UnitPanel.xml",
