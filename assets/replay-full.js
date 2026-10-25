@@ -293,13 +293,13 @@ function resize() {
   if (drawn()) {
     // Пиксель-арт чёткий только при целом увеличении: клетка (тайл 28 точек в высоту) = 14·k точек экрана
     // на радиус. k = 1…4 (больше — крупные «кубики»); ниже k = 1 — обзор всей карты, там тайлы уменьшаются.
+    // Ступени: «вся карта» и ×1 — стратегический вид (без пиксель-арта); ×2, ×3, ×4 — рисованный, тайл
+    // увеличен ровно в целое число раз (клетка = 14·k точек экрана на радиус).
     const rd = r * D;
-    if (zoom > 1.0001 && rd >= 11) {                      // 100% — вся карта в окне (тайлы со сглаживанием), дальше ступени
-      const k = Math.max(1, Math.min(6, Math.round(rd / 14)));
-      r = 14 * k / D;
-    }
+    if (zoom > 1.0001 && rd >= 21) r = 14 * Math.max(2, Math.min(4, Math.round(rd / 14))) / D;
+    else if (zoom > 1.0001 && rd >= 11) r = 14 / D;
   }
-  R = Math.max(4, Math.min(drawn() ? 84 / D : 48, r));
+  R = Math.max(4, Math.min(drawn() ? 56 / D : 48, r));
   W = Math.sqrt(3) * R; H = 1.5 * R;
   // карта целиком — это только размер «stage» (по нему идёт прокрутка); холст карты — размером с окно,
   // рисуется видимая часть (viewSize, drawMap)
@@ -308,8 +308,9 @@ function resize() {
   cv._cw = cw; cv._ch = ch;
   viewSize();
   $("zoomLabel").textContent = Math.round(R / Math.max(1e-6, fitR()) * 100) + "%";   // фактический масштаб (рисованный — ступенями)
-  $("iconsNote").textContent = drawn() ? (lod() < 2 ? "видно при увеличении (+)" : "") : (R < ICON_R ? "видно при увеличении (+)" : "");
-  const yn = $("yieldsNote"); if (yn) yn.textContent = !PK.yields ? "в этой записи нет" : lod() < 2 ? "видно при увеличении (+)" : "";
+  $("iconsNote").textContent = drawn() ? (lod() < 1 ? "видно при увеличении ×2 (+)" : "") : (R < ICON_R ? "видно при увеличении (+)" : "");
+  const yn = $("yieldsNote"); if (yn) yn.textContent = !PK.yields ? "в этой записи нет" : lod() < 2 ? "видно при увеличении ×3 (+)" : "";
+  lodHint(); debugInfo();
 }
 // Холсты карты и юнитов — размером с окно карты, неподвижны (вне прокрутки) и стоят на целых точках
 // экрана: при дробном DPR (125%) их место выравнивается сдвигом на долю точки один раз, а не при каждой
@@ -349,15 +350,16 @@ function mapTransform() {
   ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.clearRect(0, 0, cv.width, cv.height);
   ctx.setTransform(D, 0, 0, D, Math.round(O[0] * D), Math.round(O[1] * D));
 }
-// Детализация рисованного вида: 0 — обзор (местность, границы, города, флажки армий), 1 — отряды,
-// 2 — близко (ресурсы, значки улучшений, выход клеток). В плоском виде — всё как раньше.
+// Детализация рисованного вида: 0 — стратегический (ровные гексы, границы, города, щитки армий);
+// 1 — ×2 пиксель-арт (значки юнитов, ресурсы, улучшения приглушённо); 2 — ×3 и ×4 (отряды фигурками,
+// выход клеток). В плоском виде — всё как раньше.
 function lod() { if (!drawn()) return 9; const rd = R * DPR(); return rd < 21 ? 0 : rd < 35 ? 1 : 2; }
-function setZoom(z, ax, ay) {
+function setZoom(z, ax, ay, exact) {
   if (!PK) return;
-  if (drawn()) {
+  if (drawn() && !exact) {
     // ступени рисованного вида: 100% (вся карта) и k = 1…4 (см. resize); кнопка/колесо — соседняя ступень
     const D = DPR(), f = fitR() * D, dir = Math.sign(z - zoom);
-    const lv = [1].concat([1, 2, 3, 4, 5, 6].map(k => 14 * k / f).filter(v => v > 1.0001));
+    const lv = [1].concat([1, 2, 3, 4].map(k => 14 * k / f).filter(v => v > 1.0001));
     let i = 0, best = 1e9; lv.forEach((v, j) => { const d = Math.abs(Math.log(v / zoom)); if (d < best) { best = d; i = j; } });
     if (dir) z = lv[Math.max(0, Math.min(lv.length - 1, i + dir))];
   }
@@ -367,7 +369,7 @@ function setZoom(z, ax, ay) {
   if (ax == null) { ax = vw / 2; ay = vh / 2; }
   const r0 = stage.getBoundingClientRect(), s0 = sc.getBoundingClientRect();
   const fxp = (s0.left + ax - r0.left) / r0.width, fyp = (s0.top + ay - r0.top) / r0.height;
-  zoom = z; resize(); drawMap();
+  zoom = z; resize(); drawMap(); fitUi();
   const r1 = stage.getBoundingClientRect();
   sc.scrollLeft += (r1.left + fxp * r1.width) - (s0.left + ax);
   sc.scrollTop += (r1.top + fyp * r1.height) - (s0.top + ay);
@@ -474,7 +476,9 @@ function drawMap() {
   if (!PK) return;
   mapDirty = false;
   viewDirty = false;
-  if (drawn()) { drawMapArt(); return; }
+  lodHint();
+  if (drawn() && lod() >= 1) { drawMapArt(); return; }
+  const STRAT = drawn();                                     // рисованный вид на мелком масштабе: стратегический стиль
   mapTransform();
   ctx.imageSmoothingEnabled = true;
   const st = S[si], n = PK.w * PK.h, V = new Array(n);
@@ -489,7 +493,7 @@ function drawMap() {
     ctx.fillStyle = tileFill(st, k, f);
     ctx.fill();
     if (v.own >= 0) { hexPath(cx, cy); ctx.fillStyle = (colorOf.get(v.own) || "#889") + "66"; ctx.fill(); }
-    if (R >= 5) glyph(st.P.pt[k], f, cx, cy, 0.62);
+    if (R >= 5) glyph(st.P.pt[k], f, cx, cy, STRAT ? 0.3 : 0.62);
   }
   // 1б. реки (флаги NW / W / NE ребра)
   for (let k = 0; k < n; k++) { if (!IV[k]) continue;
@@ -506,8 +510,8 @@ function drawMap() {
       ctx.stroke();
     }
   }
-  // 1в. дороги: линия к соседям с дорогой
-  if (R >= 7) {
+  // 1в. дороги: линия к соседям с дорогой (в стратегическом стиле — нет)
+  if (R >= 7 && !STRAT) {
     ctx.lineCap = "round";
     for (let k = 0; k < n; k++) { if (!IV[k]) continue;
       if (V[k].rt < 0 || !V[k].rev) continue;
@@ -537,15 +541,15 @@ function drawMap() {
       const a0 = Math.PI / 180 * (-30 - 60 * dir);
       const x0 = cx + R * Math.cos(a0), y0 = cy + R * Math.sin(a0);
       const x1 = cx + R * Math.cos(a0 + Math.PI / 3), y1 = cy + R * Math.sin(a0 + Math.PI / 3);
-      ctx.strokeStyle = "#0b1119"; ctx.lineWidth = Math.max(2.6, R * 0.34);
+      ctx.strokeStyle = "#0b1119"; ctx.lineWidth = STRAT ? Math.max(3.4, R * 0.44) : Math.max(2.6, R * 0.34);
       ctx.beginPath(); ctx.moveTo(x0, y0); ctx.lineTo(x1, y1); ctx.stroke();
-      ctx.strokeStyle = colorOf.get(own) || "#889"; ctx.lineWidth = Math.max(1.6, R * 0.2);
+      ctx.strokeStyle = colorOf.get(own) || "#889"; ctx.lineWidth = STRAT ? Math.max(2.4, R * 0.28) : Math.max(1.6, R * 0.2);
       ctx.beginPath(); ctx.moveTo(x0, y0); ctx.lineTo(x1, y1); ctx.stroke();
     }
   }
   // 4. ресурсы и улучшения игровыми иконками — при увеличении
   const cities = citiesFor(si);
-  if (show.icons && R >= ICON_R) {
+  if (show.icons && R >= ICON_R && !STRAT) {
     ctx.globalAlpha = show.units ? 0.5 : 1;
     const ring = (cx, cy, s) => { ctx.beginPath(); ctx.arc(cx, cy, s / 2 + 0.6, 0, 7); ctx.lineWidth = Math.max(1.2, R * 0.07); ctx.strokeStyle = "#0b1119"; ctx.stroke(); };
     for (let k = 0; k < n; k++) { if (!IV[k]) continue;
@@ -774,11 +778,14 @@ function drawMapArt() {
   ctx.imageSmoothingEnabled = artScale() < 1; ctx.lineJoin = "round";
   const LOD = lod();
   // 1. основа клетки (готовая комбинация с улучшением — тоже основа)
-  const cities = citiesFor(si), LAY = new Array(n);
+  const cities = citiesFor(si), LAY = new Array(n), IMPL = new Array(n);
   for (let k = 0; k < n; k++) { if (!IV[k]) continue;
     const v = V[k];
     if (!v.rev) continue;
-    const c = centerOf(kx(k), ky(k)), L = LAY[k] = cellLayers(st, k, v, cities.has(k));
+    const c = centerOf(kx(k), ky(k));
+    // ×2: местность без улучшения; улучшение — отдельным приглушённым слоем (IMPL) поверх
+    const L = LAY[k] = cellLayers(st, k, v, cities.has(k) || LOD < 2);
+    if (LOD < 2 && !cities.has(k) && v.imp >= 0) IMPL[k] = cellLayers(st, k, v, false);
     hexPath(c[0], c[1], ctx, R + 0.4); ctx.fillStyle = tileFill(st, k, T("feat", v.feat)); ctx.fill();
     putTile(L.base, c[0], c[1], false);
   }
@@ -837,21 +844,24 @@ function drawMapArt() {
         const ic = LOD >= 2 && iconRect("imp", o.icon), s2 = R * 0.5;   // нет рисунка — игровой значок улучшения (только близко)
         if (ic) { ctx.imageSmoothingEnabled = true; ctx.drawImage(SHEETS.imp, ic.x, 0, ic.w, ic.h, c[0] - s2 / 2, c[1] - s2 / 2, s2, s2); ctx.imageSmoothingEnabled = false; }
       }
-      if (st.P.ip && st.P.ip[k] && L.imp) {                       // разграблено — красный крестик
-        ctx.strokeStyle = "#d9534f"; ctx.lineWidth = Math.max(1.5, R * 0.1);
-        ctx.beginPath(); ctx.moveTo(c[0] - R * .25, c[1] - R * .25); ctx.lineTo(c[0] + R * .25, c[1] + R * .25);
-        ctx.moveTo(c[0] + R * .25, c[1] - R * .25); ctx.lineTo(c[0] - R * .25, c[1] + R * .25); ctx.stroke();
+      const IL = IMPL[k];
+      if (IL) {                                                    // ×2: улучшение приглушённо
+        ctx.globalAlpha = 0.45;
+        putTile(IL.base, c[0], c[1], true);
+        for (const o of IL.over) if (typeof o === "string") putTile(o, c[0], c[1], true);
+        ctx.globalAlpha = 1;
       }
+      // «разграблено» на карте не рисуется (было красным крестиком) — это в подсказке клетки
     }
   }
   // 5. ресурсы — игровые значки в кружке, в нижнем левом углу клетки (как у ffaciv)
-  if (show.icons && LOD >= 2) {
+  if (show.icons && LOD >= 1) {
     for (let k = 0; k < n; k++) { if (!IV[k]) continue;
       const v = V[k];
       if (!v.rev || cities.has(k)) continue;
       const rs = T("res", v.res); if (!rs) continue;
       const ic = iconRect("res", rs); if (!ic) continue;
-      const c = centerOf(kx(k), ky(k)), s = R * 0.34, px = c[0] + R * 0.46, py = c[1] - R * 0.4;
+      const c = centerOf(kx(k), ky(k)), s = Math.max(9, R * 0.4), px = c[0] + R * 0.44, py = c[1] - R * 0.38;
       ctx.imageSmoothingEnabled = true;
       ctx.beginPath(); ctx.arc(px, py, s / 2 + 1.2, 0, 7); ctx.fillStyle = "#f3efe4"; ctx.fill();
       ctx.lineWidth = 1; ctx.strokeStyle = "#2a2a22"; ctx.stroke();
@@ -1070,7 +1080,7 @@ function setStyle(v) {
   style = v === "flat" ? "flat" : "drawn";
   try { localStorage.setItem("rf-style", style); } catch (e) { /* без хранилища */ }
   if (style === "drawn") loadArt();
-  sprites.clear(); FRAME = null;
+  sprites.clear(); shields.clear(); FRAME = null;
   styleUi();
   if (PK) { resize(); drawMap(); unitsDraw(); }
 }
@@ -1329,7 +1339,28 @@ function shapePath(g, sh, s) {
   }
 }
 const lum = hex => { const v = parseInt(String(hex).slice(1, 7), 16); return (0.299 * (v >> 16) + 0.587 * ((v >> 8) & 255) + 0.114 * (v & 255)) / 255; };
-function flagSize() { return drawn() ? (lod() === 0 ? Math.round(Math.max(8, Math.min(22, R * 0.95))) : Math.round(Math.max(8, Math.min(40, R * 0.62)))) : Math.round(Math.max(9, Math.min(36, R * 1.15))); }
+function flagSize() {
+  if (!drawn()) return Math.round(Math.max(9, Math.min(36, R * 1.15)));
+  const l = lod();                                   // ×2 — крупный значок типа по центру клетки; ×3+ — у отряда
+  return l === 1 ? Math.round(Math.max(14, Math.min(46, R * 0.92))) : l === 2 ? Math.round(Math.max(10, Math.min(40, R * 0.56))) : Math.round(Math.max(10, Math.min(22, R * 1.05)));
+}
+// Стратегический вид: щиток цвета державы с числом юнитов на клетке.
+const shields = new Map();
+function shieldSprite(p, n) {
+  const S2 = Math.round(Math.max(13, Math.min(24, R * 1.25))), dpr = DPR(), kk = p + "|" + n + "|" + S2 + "|" + dpr;
+  if (shields.has(kk)) return shields.get(kk);
+  const pad = 3, w = Math.ceil((S2 + pad * 2) * dpr), c = document.createElement("canvas"); c.width = c.height = w;
+  const g = c.getContext("2d"); g.setTransform(dpr, 0, 0, dpr, (S2 / 2 + pad) * dpr, (S2 / 2 + pad) * dpr);
+  const col = colorOf.get(p) || "#8899aa", h = S2 / 2;
+  g.beginPath(); g.moveTo(-h * 0.9, -h * 0.9); g.lineTo(h * 0.9, -h * 0.9); g.lineTo(h * 0.9, h * 0.1);
+  g.quadraticCurveTo(h * 0.8, h * 0.8, 0, h * 1.02); g.quadraticCurveTo(-h * 0.8, h * 0.8, -h * 0.9, h * 0.1); g.closePath();
+  g.shadowColor = "rgba(0,0,0,.7)"; g.shadowBlur = 3; g.fillStyle = col; g.fill(); g.shadowBlur = 0;
+  g.lineWidth = Math.max(1.4, S2 * 0.1); g.strokeStyle = "#0b1119"; g.stroke();
+  g.fillStyle = lum(col) > 0.62 ? "#0b1119" : "#ffffff"; g.font = "800 " + Math.round(S2 * 0.62) + "px system-ui,sans-serif";
+  g.textAlign = "center"; g.textBaseline = "middle"; g.fillText(String(n), 0, -h * 0.05);
+  c._half = S2 / 2 + pad; shields.set(kk, c);
+  return c;
+}
 function sprite(p, type, fl) {
   const S2 = flagSize(), dpr = Math.min(2, devicePixelRatio || 1);
   if (spriteR !== S2 * 10 + dpr) { sprites.clear(); spriteR = S2 * 10 + dpr; }
@@ -1384,7 +1415,8 @@ function stackOffsets(list, cities) {
     for (const [k, us] of by) {
       us.sort((a, b) => ((a.fl & (UF.CIV | UF.GP)) ? 1 : 0) - ((b.fl & (UF.CIV | UF.GP)) ? 1 : 0) || (a.kk < b.kk ? -1 : 1));
       const city = cities.has(k), n = us.length;
-      us.forEach((u, i) => { u.ox = 0; u.oy = (city ? -0.12 : 0) * R; u.hide = i >= 1; u.stack = i === 0 && n > 1 ? n - 1 : 0; });
+      const mil = us.filter(u => !(u.fl & (UF.CIV | UF.GP))).length;
+      us.forEach((u, i) => { u.ox = 0; u.oy = (city ? -0.12 : 0) * R; u.hide = i >= 1; u.stack = i === 0 && n > 1 ? n - 1 : 0; u.mil = mil; });
     }
     return;
   }
@@ -1436,7 +1468,8 @@ function unitsFrame(now) {
   uctx.setTransform(1, 0, 0, 1, 0, 0);
   uctx.clearRect(0, 0, uv.width, uv.height);
   unHits = [];
-  const banners = () => { if (!drawn() || !PK) return; const sr0 = sc.getBoundingClientRect(), cr0 = stage.getBoundingClientRect();
+  // в стратегическом виде (мельче ×2) плашки рисует сама карта
+  const banners = () => { if (!drawn() || !PK || lod() === 0) return; const sr0 = sc.getBoundingClientRect(), cr0 = stage.getBoundingClientRect();
     uctx.save(); uctx.translate(cr0.left - sr0.left, cr0.top - sr0.top); drawBanners(citiesFor(si), uctx); uctx.restore(); };
   if (!PK || !show.units) { anim = null; if (mapDirty) drawMap(); if (PK) { uctx.setTransform(DPR(), 0, 0, DPR(), 0, 0); banners(); } return; }
   const sr = sc.getBoundingClientRect(), cr = stage.getBoundingClientRect();
@@ -1456,7 +1489,7 @@ function unitsFrame(now) {
       const sp = sprite(u.p, u.type, u.fl), hh = sp._half;
       uctx.globalAlpha = alpha;
       const dl = drawn() ? lod() : 9;
-      const ua = dl >= 1 && dl < 9 ? unitArt(u.p, u.type, u.fl, u.hp) : null;
+      const ua = dl === 2 ? unitArt(u.p, u.type, u.fl, u.hp) : null;   // фигурки отряда — с ×3
       let fx = sx, fy = sy;
       if (ua) {
         const D = DPR();
@@ -1471,8 +1504,12 @@ function unitsFrame(now) {
           uctx.fillStyle = u.hp > 66 ? "#58C08A" : u.hp > 33 ? "#E0A82E" : "#D9534F";
           uctx.fillRect(fx - bw / 2, by, bw * Math.max(0.04, u.hp / 100), bh);
         }
-      } else if (dl === 0) {                         // обзор: только флажок армии
-        uctx.drawImage(sp, sx - hh, sy - hh, hh * 2, hh * 2);
+      } else if (dl === 0) {                         // стратегический: щиток армии (только военные) с числом военных юнитов
+        if (!u.mil) continue;
+        const sh = shieldSprite(u.p, u.mil);
+        uctx.drawImage(sh, sx - sh._half, sy - sh._half, sh._half * 2, sh._half * 2);
+        if (alpha > 0.5 && dx === 0) unHits.push({ x: sx, y: sy, r: sh._half, kk: u.kk });
+        continue;
       } else uctx.drawImage(sp, sx - hh, sy - hh, hh * 2, hh * 2);
       if (!ua && u.hp < 100 && SZ >= 10) {
         const bw = SZ * 0.9, bh = Math.max(2, SZ * 0.13), by = sy + SZ * 0.5 + 1.5;
@@ -2026,6 +2063,8 @@ $("zoomIn").addEventListener("click", () => setZoom(zoom * 1.35));
 $("zoomOut").addEventListener("click", () => setZoom(zoom / 1.35));
 $("layersBtn").addEventListener("click", () => togglePop("layersPop", "layersBtn"));
 $("moreBtn").addEventListener("click", () => togglePop("morePop", "moreBtn"));
+$("fitBtn").addEventListener("click", () => { if (zoom > 1.0001) { setZoom(1, null, null, true); fitUi(); } else closeUp(); });
+$("lodHint").addEventListener("click", () => setZoom(zoom * 2));
 $("helpBtn").addEventListener("click", () => togglePop("helpPop", "helpBtn"));
 $("speedBtn").addEventListener("click", () => togglePop("speedPop", "speedBtn"));
 $("sideBtn").addEventListener("click", () => showSide(side.hidden));
@@ -2162,6 +2201,51 @@ async function openMatch(i, t, v) {
   if (v >= 0 && playerBy.has(v)) setView(v); else { $("viewPick").value = "-1"; $("viewPick").parentElement.classList.remove("on"); }
   setStep(si);
   sc.scrollLeft = (sc.scrollWidth - sc.clientWidth) / 2; sc.scrollTop = 0;
+  if (drawn()) closeUp();                                   // рисованный вид открывается крупно (×2), как у ffaciv
+}
+// Куда смотреть крупно: столица выбранного игрока; иначе город крупного события этого хода; иначе самый
+// большой город державы-человека.
+function focusCell() {
+  const cs = S[si].C;
+  if (view >= 0) for (const [k, c] of cs) if (c.o === view && (c.fl & 1)) return k;
+  const T0 = turnOf(si);
+  for (const e of PK.ev) if (e.t === T0 && e.c != null && ["capt", "raze", "wonder", "found"].includes(e.k)) return e.c;
+  let best = -1, bp = -1;
+  for (const [k, c] of cs) { const pp = playerBy.get(c.o); if (pp && pp.kind === "major" && c.pop > bp) { bp = c.pop; best = k; } }
+  return best;
+}
+function closeUp() {
+  const z = 28 / (fitR() * DPR());
+  if (z > 1.0001) setZoom(z, null, null, true);
+  const k = focusCell();
+  if (k >= 0) { const c = centerOf(kx(k), ky(k)), r = stage.getBoundingClientRect(), q = sc.getBoundingClientRect(); sc.scrollLeft += r.left + c[0] - (q.left + q.width / 2); sc.scrollTop += r.top + c[1] - (q.top + q.height / 2); }
+  fitUi();
+}
+function fitUi() { const b = $("fitBtn"); if (b) { const all = zoom <= 1.0001; b.querySelector(".rp-lbl").textContent = all ? "Крупно" : "Вся карта"; b.title = all ? "Крупно: столица или место события хода" : "Показать всю карту"; } }
+// Подсказка: слой включён, но на этом масштабе пока не рисуется — увеличьте.
+function lodHint() {
+  const el = $("lodHint"); if (!el || !PK) return;
+  const l = lod(), miss = [];
+  if (drawn()) {
+    if (l < 1) miss.push("местность", "значки юнитов");
+    if (l < 1 && show.icons) miss.push("ресурсы");
+    if (l < 2 && show.units) miss.push("отряды фигурками");
+    if (l < 2 && show.yields && PK.yields) miss.push("выход клеток");
+  }
+  el.hidden = !miss.length;
+  if (miss.length) el.textContent = "＋ Увеличьте карту, чтобы увидеть: " + miss.join(", ");
+}
+// Отладка у зрителя: #…&debug или ?debug — в углу DPR, размеры холста, масштаб тайла.
+const DEBUG = /(^|[#&?])debug\b/.test(location.hash + "&" + location.search);
+function debugInfo() {
+  if (!DEBUG) return;
+  let el = $("rfDebug");
+  if (!el) { el = document.createElement("div"); el.id = "rfDebug"; el.className = "rf-debug"; $("mapArea").appendChild(el); }
+  const r = cv.getBoundingClientRect(), D = DPR();
+  el.textContent = "devicePixelRatio " + devicePixelRatio + " (берётся " + D + ") · окно " + innerWidth + "×" + innerHeight +
+    " · холст " + cv.width + "×" + cv.height + " точек, CSS " + cv.style.width + "×" + cv.style.height +
+    " · место " + (r.left * D).toFixed(2) + "," + (r.top * D).toFixed(2) + " точек · R " + R.toFixed(2) + " · тайл ×" + (R * D / 14).toFixed(3) +
+    " · уровень " + lod() + " · " + (drawn() ? "рисованный" : "плоский");
 }
 $("matchPick").addEventListener("change", e => openMatch(+e.target.value, NaN, -1));
 function safeBase(b) {

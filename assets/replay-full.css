@@ -125,3 +125,10 @@
 .rp-hp{height:6px;border-radius:3px;background:var(--line-soft);overflow:hidden;margin:4px 0 6px}
 .rp-hp i{display:block;height:100%}
 @media (max-width:980px){.rp-speed span{display:none}}
+
+/* редизайн уровней детализации 25.10 */
+.rf-lodhint{position:absolute;right:10px;bottom:44px;z-index:6;max-width:min(460px,calc(100% - 20px));padding:6px 10px;border:1px solid rgba(231,184,79,.5);
+  border-radius:6px;background:rgba(14,16,20,.9);color:#f2d06b;font:600 12px/1.35 var(--sans);text-align:left;cursor:pointer}
+.rf-lodhint[hidden]{display:none}
+.rf-debug{position:absolute;right:10px;top:10px;z-index:20;max-width:60%;padding:6px 8px;background:rgba(0,0,0,.85);color:#9ef;font:11px/1.4 ui-monospace,monospace;border-radius:4px;pointer-events:none}
+@media (max-width:980px){.rf-lodhint{bottom:40px;font-size:11px}}

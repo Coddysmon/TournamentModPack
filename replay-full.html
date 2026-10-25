@@ -75,6 +75,9 @@
       <select id="viewPick" aria-label="Смотреть как"></select>
     </label>
     <div class="rp-tools">
+      <button class="rp-btn" id="fitBtn" type="button" title="Показать всю карту">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9 V4 H9 M15 4 H20 V9 M20 15 V20 H15 M9 20 H4 V15"/></svg><span class="rp-lbl">Вся карта</span>
+      </button>
       <button class="rp-btn" id="moreBtn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="morePop" title="Вид, масштаб, скорость, слои, обозначения, панель">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7 H20 M4 12 H20 M4 17 H20"/></svg><span class="rp-lbl">Меню</span>
       </button>
@@ -91,6 +94,7 @@
           <button type="button" class="rf-log-min" id="logMin" aria-expanded="true" title="Свернуть / развернуть журнал">▾</button></div>
         <div class="rf-log-list" id="logList" aria-live="off"></div>
       </div>
+      <button type="button" class="rf-lodhint" id="lodHint" hidden></button>
       <div class="rf-tl" id="tl" aria-label="Шкала событий партии"><div class="rf-tl-in" id="tlIn"></div></div>
       <div class="rp-focus" id="viewPill" hidden></div>
 
@@ -171,7 +175,7 @@
           <div><i class="rf-k yl"><b style="background:#7ccf4a"></b><b style="background:#e0873a"></b><b style="background:#f0cf45"></b></i>квадратики внизу клетки — выход: еда, производство, золото, наука, культура, вера (вблизи; до 4 видов, все — в подсказке). Выход — как его хранит игра в сейве; у части открытого океана там 0, и точек нет</div>
           <div><i class="rf-k j">ж</i>у номера хода: сейва нет — юниты по журналу игроков, остальное с прошлого сейва</div>
         </div>
-        <p class="rp-meta">Детализация зависит от масштаба: издалека — местность, границы, города и флажки армий; ближе — отряды фигурками; совсем близко — ресурсы, значки улучшений и выход клеток.</p>
+        <p class="rp-meta">Детализация зависит от масштаба. Мельче ×2 — стратегическая карта: ровные гексы, границы, города и щитки армий с числом юнитов. ×2 — рисованная карта: значок типа юнита, ресурсы, улучшения приглушённо. ×3 и ×4 — отряды фигурками и выход клеток. Рисунок увеличивается только в целое число раз, чтобы пиксели были чёткими.</p>
         <h3>Шкала событий</h3>
         <div class="key" id="evKey"></div>
         <h3>Плоская карта</h3>
