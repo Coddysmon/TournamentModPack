@@ -110,7 +110,7 @@ let view = -1;            // слот игрока, чьими глазами с
 let MEM = null;           // память команды по шагам: [{own, imp, rt, feat, res, C:Map}]
 let colorOf = new Map(), playerBy = new Map(), teamOf = new Map(), lakeAt = null;
 let timer = null, card = null;
-const show = { units: true, names: true, icons: true, heat: false, log: true, yields: true, borders: true };
+const show = { units: true, names: true, icons: true, heat: false, log: true, yields: true, borders: true, worked: true };
 try { const v = JSON.parse(localStorage.getItem("rf-layers") || "{}"); for (const k in show) if (typeof v[k] === "boolean") show[k] = v[k]; } catch (e) { /* по умолчанию */ }
 // devicePixelRatio бывает float32 (1.100000023…) — округляем, иначе «целое число точек» не находится
 const DPR = () => Math.min(3, Math.max(0.5, Math.round((devicePixelRatio || 1) * 10000) / 10000));   // и меньше 1 (масштаб браузера 80–90%)
@@ -496,12 +496,16 @@ function hiddenRes(i) {
   HR_CACHE.set(kk, out);
   return out;
 }
+let JM = null;                                              // журнал партии (nova-stats/replay/m): work, clicks, cyields, techs
 async function loadJournalTechs(key) {
-  if (hasRv() || !src.journal) { JTECH_STATE = hasRv() ? "rv" : "none"; return; }
-  JTECH_STATE = "loading"; HR_CACHE.clear();
+  JM = null; WORKC.clear();
+  if (!src.journal) { JTECH_STATE = hasRv() ? "rv" : "none"; return; }
+  JTECH_STATE = hasRv() ? "rv" : "loading"; HR_CACHE.clear();
   try {
     const m = await getJson(src.journal + "replay/m/" + encodeURIComponent(key) + ".json");
     if (!PK || PK.key !== key) return;
+    JM = m; WORKC.clear(); LOGC.clear();
+    if (hasRv()) { drawMap(); renderLog(); if (card) renderCard(); return; }
     const tn = (NAMES.tech || {}), byTeam = new Map();
     for (const e of (m.techs || [])) {
       if (e.k !== "a" || !playerBy.has(e.p)) continue;
@@ -511,8 +515,8 @@ async function loadJournalTechs(key) {
       const mm = byTeam.get(team); if (!mm.has(nm) || mm.get(nm) > e.turn) mm.set(nm, e.turn);
     }
     JTECH = byTeam; JTECH_STATE = "ok";
-  } catch (e) { JTECH_STATE = "none"; }
-  HR_CACHE.clear(); if (MEM && view >= 0) MEM = buildMemory(playerBy.get(view).team);
+  } catch (e) { if (JTECH_STATE === "loading") JTECH_STATE = "none"; }
+  HR_CACHE.clear(); WORKC.clear(); LOGC.clear(); renderLog(); if (MEM && view >= 0) MEM = buildMemory(playerBy.get(view).team);
   drawMap(); unitsDraw(); if (card) renderCard();
 }
 function citiesFor(i) {
@@ -527,6 +531,7 @@ function drawMap() {
   mapDirty = false;
   viewDirty = false;
   lodHint();
+  if (style === "sv") { drawMapSV(); return; }
   if (drawn() && lod() >= 1) { drawMapArt(); return; }
   const STRAT = drawn();                                     // рисованный вид на мелком масштабе: стратегический стиль
   mapTransform();
@@ -628,6 +633,8 @@ function drawMap() {
       const c = centerOf(kx(k), ky(k)); hexPath(c[0], c[1], ctx, R + 0.5); ctx.fill();
     }
   }
+  // 5а. обрабатываемые клетки городов
+  if (R >= ICON_R && !STRAT) drawWorked(V);
   // 6. рабочие клетки выбранного города
   if (card && card.kind === "city") {
     const c = cities.get(card.k);
@@ -685,7 +692,7 @@ function drawCities(cities) {
 // поэтому основа клетки масштабируется с запасом (×1,155) и обрезается по шестиугольнику клетки,
 // а то, что выступает над клеткой (горы, лес, улучшения, отряды), рисуется без обрезки.
 let style = "drawn";
-try { const v = localStorage.getItem("rf-style"); if (v === "flat" || v === "drawn") style = v; } catch (e) { /* без хранилища — по умолчанию */ }
+try { const v = localStorage.getItem("rf-style"); if (v === "flat" || v === "drawn" || v === "sv") style = v; } catch (e) { /* без хранилища — по умолчанию */ }
 const ART = { img: null, map: null, lc: null, ready: false, failed: false, tiles: new Map(), tilesR: 0, tint: new Map(), miss: new Set() };
 const drawn = () => style === "drawn" && ART.ready;
 function loadArt() {
@@ -906,7 +913,8 @@ function drawMapArt() {
     }
   }
   // 5. ресурсы — игровые значки в кружке, в нижнем левом углу клетки (как у ffaciv)
-  if (show.icons && LOD >= 1) {
+  const yRow = show.yields && PK.yields && LOD >= 2;
+  if (show.icons && LOD >= 1 && !yRow) {
     for (let k = 0; k < n; k++) { if (!IV[k]) continue;
       const v = V[k];
       if (!v.rev || cities.has(k)) continue;
@@ -941,12 +949,14 @@ function drawMapArt() {
     }
   }
   // 7а. выход клеток (из сейва): точки цвета выхода внизу клетки, только близко и только на видимых клетках
-  if (show.yields && PK.yields && LOD >= 2) drawYields(V, cities);
+  if (yRow) drawYields(V, cities, show.icons);
   // 8. туман
   if (viewTeam() >= 0) {
     ctx.fillStyle = "rgba(4,7,11,.5)";
     for (let k = 0; k < n; k++) { if (!IV[k]) continue; if (!V[k].rev || V[k].vis) continue; const c = centerOf(kx(k), ky(k)); hexPath(c[0], c[1], ctx, R + 0.5); ctx.fill(); }
   }
+  // 8а. обрабатываемые клетки городов
+  if (LOD >= 1) drawWorked(V);
   // 9. рабочие клетки выбранного города
   if (card && card.kind === "city") {
     const c = cities.get(card.k);
@@ -1023,36 +1033,48 @@ YIMG.src = "assets/replay/yields.png";
 const yieldIconHtml = yk => '<i class="rf-yi" style="background-position:' + (YK.indexOf(yk) * 20) + '% 0"></i>';
 // Как в Civ5: значки в ряд внизу клетки; один вид до 3 — повтор значка, больше — значок и цифра.
 // Вида больше 4 — первые 4 (все — в подсказке). Под туманом выбранного игрока нет; на клетке города нет.
-function drawYields(V, cities) {
+// Как в Civ5: внизу клетки ровный ряд без наложения — значок ресурса первым, затем выход: до 3 одинаковых
+// значков подряд, больше — значок и число; до 4 видов. Размер подбирается, чтобы ряд влез в клетку.
+// withRes — рисовать ресурс в этом ряду (тогда отдельный значок ресурса в углу не рисуется).
+function drawYields(V, cities, withRes) {
   if (!YIMG.complete || !YIMG.naturalWidth) return;
   const st = S[si], t = viewTeam(), f = t >= 0 ? st.F[String(t)] : null, n = PK.w * PK.h;
-  const sz = Math.max(10, Math.round(R * 0.5)), step = Math.round(sz * 0.55), gap = Math.round(sz * 0.22);
+  const szMax = Math.max(10, R * 0.44), wMax = W * 0.86;
   ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = "high";
-  ctx.font = "800 " + Math.round(sz * 0.62) + "px system-ui,sans-serif"; ctx.textBaseline = "middle"; ctx.textAlign = "left";
+  ctx.textBaseline = "middle"; ctx.textAlign = "left";
   for (let k = 0; k < n; k++) { if (!IV[k]) continue;
     if (!V[k].rev || (f && !f.vis[k]) || cities.has(k)) continue;
     const parts = [];
     for (const yk of YK) { const v = st.P[yk][k]; if (v > 0) parts.push([yk, v]); if (parts.length === 4) break; }
-    if (!parts.length) continue;
-    let wsum = 0;
-    for (const [, v] of parts) wsum += (v > 3 ? sz + Math.round(sz * 0.5) : sz + (v - 1) * step) + gap;
-    wsum -= gap;
+    const rs = withRes ? T("res", V[k].res) : null, ric = rs && iconRect("res", rs);
+    if (!parts.length && !ric) continue;
+    let slots = ric ? 1.15 : 0;                                // ширина ряда в «значках»
+    for (const [, v] of parts) slots += v > 3 ? 1.75 : v;
+    slots += Math.max(0, parts.length - 1 + (ric && parts.length ? 1 : 0)) * 0.18;
+    const sz = Math.max(7, Math.min(szMax, wMax / Math.max(1, slots))), g = sz * 0.18;
     const c = centerOf(kx(k), ky(k));
-    let x = Math.round(c[0] - wsum / 2), y = Math.round(c[1] + R * 0.78 - sz);
+    let x = c[0] - slots * sz / 2, y = c[1] + R * 0.74 - sz;
+    if (ric) {
+      const rr = sz * 1.15;
+      ctx.beginPath(); ctx.arc(x + rr / 2, y + sz / 2, rr / 2, 0, 7); ctx.fillStyle = "#f3efe4"; ctx.fill();
+      ctx.lineWidth = 1; ctx.strokeStyle = "#2a2a22"; ctx.stroke();
+      ctx.drawImage(SHEETS.res, ric.x, 0, ric.w, ric.h, x + rr * 0.08, y + sz / 2 - rr * 0.42, rr * 0.84, rr * 0.84);
+      x += rr + g;
+    }
+    ctx.font = "800 " + Math.round(sz * 0.72) + "px system-ui,sans-serif";
     for (const [yk, v] of parts) {
       const sx = YK.indexOf(yk) * 48, m = v > 3 ? 1 : v;
-      for (let i = 0; i < m; i++) ctx.drawImage(YIMG, sx, 0, 48, 48, x + i * step, y, sz, sz);
-      x += sz + (m - 1) * step;
+      for (let q = 0; q < m; q++) { ctx.drawImage(YIMG, sx, 0, 48, 48, x, y, sz, sz); x += sz; }
       if (v > 3) {
-        const tx = x - Math.round(sz * 0.12), ty = y + sz * 0.62;
-        ctx.lineWidth = Math.max(2, sz * 0.18); ctx.strokeStyle = "#0b1119"; ctx.strokeText(String(v), tx, ty);
-        ctx.fillStyle = "#ffffff"; ctx.fillText(String(v), tx, ty);
-        x += Math.round(sz * 0.5);
+        const ty = y + sz * 0.55;
+        ctx.lineWidth = Math.max(2, sz * 0.2); ctx.strokeStyle = "#0b1119"; ctx.strokeText(String(v), x + 1, ty);
+        ctx.fillStyle = "#ffffff"; ctx.fillText(String(v), x + 1, ty);
+        x += sz * 0.75;
       }
-      x += gap;
+      x += g;
     }
   }
-  ctx.imageSmoothingEnabled = artScale() < 1;
+  ctx.imageSmoothingEnabled = drawn() ? artScale() < 1 : true;
 }
 const A_CIVV = { MAYA: "The Maya", HUNS: "The Huns", OTTOMAN: "The Ottomans", AZTEC: "Aztecs", MONGOL: "Mongolia" };
 const civShort = p => String((playerBy.get(p) || {}).civ || "").replace(/^CIVILIZATION_/, "");
@@ -1136,9 +1158,10 @@ function styleUi() {
   const note = $("styleNote"); if (note) note.textContent = style === "drawn" && ART.failed ? "рисованные тайлы не загрузились — показан плоский вид" : "";
 }
 function setStyle(v) {
-  style = v === "flat" ? "flat" : "drawn";
+  style = v === "flat" || v === "sv" ? v : "drawn";
   try { localStorage.setItem("rf-style", style); } catch (e) { /* без хранилища */ }
   if (style === "drawn") loadArt();
+  if (style === "sv") loadSV();
   sprites.clear(); shields.clear(); FRAME = null;
   styleUi();
   if (PK) { resize(); drawMap(); unitsDraw(); }
@@ -1212,6 +1235,25 @@ function logOf(i) {
       if (p) add("emp", -1, p.i, who(p.i) + ": " + pl(r1.tech - r0.tech, ["новая технология", "новые технологии", "новых технологий"]) + " (всего " + r1.tech + ")");
     }
   }
+  // жители: движок переставил (work), игрок нажал клетку вручную (clicks)
+  if (JM) {
+    const cityName = (cx, cy) => { const c = b.C.get(key(cx, cy)) || a.C.get(key(cx, cy)); return c ? esc(c.n) : "город " + cx + "," + cy; };
+    for (const e of (JM.work || [])) {
+      if (e.turn !== T0) continue;
+      const ad = e.add || [], rm = e.rem || [], ck = key(e.cx, e.cy), pp = (b.C.get(ck) || a.C.get(ck) || {}).o;
+      if (pp == null) continue;
+      const cells = arr => arr.slice(0, 3).map(q => q[0] + "," + q[1]).join(", ") + (arr.length > 3 ? " и ещё " + (arr.length - 3) : "");
+      const txt = ad.length === 1 && rm.length === 1 ? "житель с " + cells(rm) + " на " + cells(ad)
+        : (ad.length ? "житель на " + cells(ad) : "") + (ad.length && rm.length ? "; " : "") + (rm.length ? "снят с " + cells(rm) : "");
+      if (txt) add("city", ad.length ? key(ad[0][0], ad[0][1]) : ck, pp, who(pp) + ": " + cityName(e.cx, e.cy) + " — " + txt);
+    }
+    const seen = new Set();
+    for (const e of (JM.clicks || [])) {
+      if (e.turn !== T0) continue;
+      const k = key(e.x, e.y), sk = e.p + "|" + k; if (seen.has(sk)) continue; seen.add(sk);
+      add("city", k, e.p, who(e.p) + ": " + cityName(e.cx, e.cy) + " — вручную переключил клетку" + at(k));
+    }
+  }
   // события шкалы этого хода
   for (const e of PK.ev) {
     if (e.t !== T0 || stepOfTurn(e.t) !== i) continue;
@@ -1255,6 +1297,191 @@ function renderLog() {
     '</span><span class="li">' + (TI[r.tab] || "·") + "</span><span>" + r.html + "</span></div>").join("") : '<div class="lr empty">На этих ходах ничего.</div>';
 }
 
+// ---------------------------------------------------------------- вид «Стратегический» (как F10 в Civ5)
+// Атлас: assets/replay/sv-art.png + data/sv-art.json. Договорённость о json (готовит агент ассетов):
+//   { "v": 1, "image": "sv-art.png",
+//     "hex": 64,                       // ширина одной клетки (острый верх) в точках атласа: рисунок клетки
+//                                      // масштабируется так, чтобы hex точек атласа = ширине клетки на экране
+//     "regions": { "<ключ>": [x, y, w, h] | [x, y, w, h, ox, oy], … } }   // ox, oy — сдвиг центра, точки атласа
+// Ключи (любой можно не давать — тогда заглушка):
+//   terr/<GRASS|PLAINS|DESERT|TUNDRA|SNOW|COAST|OCEAN|LAKE>, terr/<…>#<n> — варианты (берётся по номеру клетки);
+//   mtn, hill — рельеф поверх местности; feat/<FOREST|JUNGLE|MARSH|ICE|OASIS|FLOOD_PLAINS|…>;
+//   res/<IRON|…> — значок ресурса; imp/<FARM|MINE|…> — улучшение; route/ROAD, route/RAILROAD — кусок дороги
+//   (горизонтальный, от центра вправо, поворачивается); unit/<WARRIOR|…> — значок юнита во флажке; flag — рамка
+//   флажка юнита; city — значок города.
+// Слои: местность → рельеф и особенности → реки → дороги → улучшения → ресурсы → границы → туман → города;
+// юниты-флажки и плашки — слой юнитов (как в плоском виде).
+const SV = { img: null, map: null, hex: 64, ready: false, failed: false };
+function loadSV() {
+  if (SV.img || SV.failed) return;
+  fetch("data/sv-art.json").then(r => { if (!r.ok) throw new Error("sv-art.json → " + r.status); return r.json(); }).then(js => {
+    SV.map = js.regions || {}; SV.hex = js.hex || 64; SV.colors = js.colors || {};
+    const img = new Image();
+    img.onload = () => { SV.img = img; SV.ready = true; sprites.clear(); if (PK) { drawMap(); unitsDraw(); } };
+    img.onerror = () => { SV.failed = true; if (PK) drawMap(); };
+    img.src = "assets/replay/" + (js.image || "sv-art.png");
+  }).catch(() => { SV.failed = true; if (PK) drawMap(); });
+}
+const svR = key => (SV.ready && SV.map[key]) || null;
+// рисунок атласа по центру клетки, масштаб: hex точек атласа = ширина клетки
+function svPut(key, cx, cy, k = 1) {
+  const r = svR(key);
+  if (!r) return false;
+  const s = W / SV.hex * k, w = r[2] * s, h = r[3] * s, ox = (r[4] || 0) * s, oy = (r[5] || 0) * s;
+  ctx.drawImage(SV.img, r[0], r[1], r[2], r[3], cx - w / 2 + ox, cy - h / 2 + oy, w, h);
+  return true;
+}
+const svVar = (base, k) => {                              // варианты base#1…#n: выбор по номеру клетки (стабильно)
+  if (!SV.ready) return base; let n = 0; while (SV.map[base + "#" + (n + 1)]) n++;
+  if (!n) return base; const v = (Math.imul(k + 1, 2654435761) >>> 0) % (n + 1); return v ? base + "#" + v : base;
+};
+// заглушка: приглушённые цвета местности «как F10»
+const SVC = { GRASS: "#7d9a55", PLAINS: "#a99a5c", DESERT: "#d2bd84", TUNDRA: "#8f8d79", SNOW: "#dfe4e6", COAST: "#6aa6b8", OCEAN: "#3f6f8e", LAKE: "#5d9cc0", MTN: "#8a8580" };
+function drawMapSV() {
+  const st = S[si], n = PK.w * PK.h, V = new Array(n);
+  for (let k = 0; k < n; k++) V[k] = cellView(si, k);
+  mapTransform();
+  ctx.fillStyle = "#0a0d12"; ctx.fillRect(0, 0, cv._cw, cv._ch);
+  ctx.imageSmoothingEnabled = true; ctx.lineJoin = "round";
+  const cities = citiesFor(si);
+  // 1. местность
+  for (let k = 0; k < n; k++) { if (!IV[k] || !V[k].rev) continue;
+    const c = centerOf(kx(k), ky(k)), pt = st.P.pt[k], tr = lakeAt && lakeAt[k] ? "LAKE" : T("terr", st.P.terr[k]) || "OCEAN";
+    hexPath(c[0], c[1], ctx, R + 0.5); ctx.fillStyle = SVC[tr] || SVC.OCEAN; ctx.fill();
+    if (svR("terr/" + tr)) { ctx.save(); hexPath(c[0], c[1], ctx, R + 0.6); ctx.clip(); svPut(svVar("terr/" + tr, k), c[0], c[1]); ctx.restore(); }
+  }
+  // 1б. горы (снежные — на снегу), с отдельного прохода сверху вниз: выступают вверх
+  for (let row = PK.h - 1; row >= 0; row--) for (let x = 0; x < PK.w; x++) {
+    const k = key(x, row); if (!IV[k] || !V[k].rev || st.P.pt[k] !== 0) continue;
+    const c = centerOf(x, row), tr = T("terr", st.P.terr[k]);
+    if (!svPut(tr === "SNOW" && svR("mtn/SNOW") ? "mtn/SNOW" : "mtn", c[0], c[1])) { hexPath(c[0], c[1], ctx, R * 0.62); ctx.fillStyle = SVC.MTN; ctx.fill(); }
+  }
+  // 2. рельеф и особенности
+  for (let k = 0; k < n; k++) { if (!IV[k] || !V[k].rev) continue;
+    const c = centerOf(kx(k), ky(k)), f = T("feat", V[k].feat);
+    const tr = T("terr", st.P.terr[k]);
+    if (st.P.pt[k] === 1) svPut(svR("hill/" + tr) ? "hill/" + tr : "hill", c[0], c[1]) || glyph(1, null, c[0], c[1], 0.35);
+    if (f) svPut(svR("feat/" + f + "/" + tr) ? "feat/" + f + "/" + tr : "feat/" + f, c[0], c[1]) || glyph(st.P.pt[k], f, c[0], c[1], 0.4);
+  }
+  // 3. реки
+  for (let k = 0; k < n; k++) { if (!IV[k]) continue;
+    const rv = PK.riv[k]; if (!rv || !V[k].rev) continue;
+    const c = centerOf(kx(k), ky(k));
+    for (const pair of [[1, 2], [2, 3], [4, 1]]) {
+      if (!(rv & pair[0])) continue;
+      const a0 = Math.PI / 180 * (-30 - 60 * pair[1]);
+      ctx.beginPath(); ctx.moveTo(c[0] + R * Math.cos(a0), c[1] + R * Math.sin(a0));
+      ctx.lineTo(c[0] + R * Math.cos(a0 + Math.PI / 3), c[1] + R * Math.sin(a0 + Math.PI / 3));
+      ctx.strokeStyle = (SV.colors && SV.colors.riverEdge) || "#28606e"; ctx.lineWidth = Math.max(2.4, R * 0.2); ctx.stroke();
+      ctx.strokeStyle = (SV.colors && SV.colors.riverFill) || "#76ccd0"; ctx.lineWidth = Math.max(1.4, R * 0.11); ctx.stroke();
+    }
+  }
+  // 4. дороги (заглушка — линии; кусок атласа route/<тип> поворачивается к соседу)
+  ctx.lineCap = "round";
+  for (let k = 0; k < n; k++) { if (!IV[k] || V[k].rt < 0 || !V[k].rev) continue;
+    const x = kx(k), y = ky(k), c = centerOf(x, y), rt = T("route", V[k].rt);
+    for (let dir = 0; dir < 6; dir++) {
+      const nk = neighbor(x, y, dir); if (nk < 0 || V[nk].rt < 0 || !V[nk].rev) continue;
+      const d = centerOf(kx(nk), ky(nk)); if (Math.abs(d[0] - c[0]) > W * 2) continue;
+      const r = svR("route/" + rt);
+      if (r) { const ang = Math.atan2(d[1] - c[1], d[0] - c[0]), s = W / SV.hex; ctx.save(); ctx.translate(c[0], c[1]); ctx.rotate(ang); ctx.drawImage(SV.img, r[0], r[1], r[2], r[3], 0, -r[3] * s / 2, r[2] * s, r[3] * s); ctx.restore(); }
+      else { ctx.beginPath(); ctx.moveTo(c[0], c[1]); ctx.lineTo((c[0] + d[0]) / 2, (c[1] + d[1]) / 2); ctx.strokeStyle = rt === "RAILROAD" ? "#3a3d44" : "#8a6a48"; ctx.lineWidth = Math.max(1.2, R * 0.1); ctx.stroke(); }
+    }
+  }
+  for (let k = 0; k < n; k++) { if (!IV[k] || V[k].rt < 0 || !V[k].rev || cities.has(k)) continue;   // узел дороги — без щелей
+    const c = centerOf(kx(k), ky(k)); svPut("route/" + T("route", V[k].rt) + "/hub", c[0], c[1]); }
+  ctx.lineCap = "butt";
+  // 5. улучшения и ресурсы. Иерархия: юниты главнее всего; ресурс — малый медальон в углу; улучшение — ещё
+  //    мельче и приглушённо, на обзоре (клетка < 30 точек экрана) не рисуется.
+  const svNear = R * DPR() >= 30, svYRow = show.yields && PK.yields && R * DPR() >= 56;
+  if (show.icons) for (let k = 0; k < n; k++) { if (!IV[k] || !V[k].rev || cities.has(k)) continue;
+    const c = centerOf(kx(k), ky(k)), im = T("imp", V[k].imp), rs = T("res", V[k].res);
+    if (im && svNear) { ctx.globalAlpha = 0.6;
+      if (!svPut("imp/" + im, c[0] - R * 0.36, c[1] + R * 0.4, 0.3)) { const ic = iconRect("imp", im), s2 = R * 0.34; if (ic) ctx.drawImage(SHEETS.imp, ic.x, 0, ic.w, ic.h, c[0] - R * 0.36 - s2 / 2, c[1] + R * 0.4 - s2 / 2, s2, s2); }
+      ctx.globalAlpha = 1; }
+    if (rs && !svYRow && !svPut("res/" + rs, c[0] + R * 0.38, c[1] - R * 0.36, svNear ? 0.38 : 0.3)) {
+      const ic = iconRect("res", rs), s2 = Math.max(9, R * 0.46);
+      if (ic) { ctx.beginPath(); ctx.arc(c[0] + R * 0.38, c[1] - R * 0.36, s2 / 2 + 1, 0, 7); ctx.fillStyle = "#f3efe4"; ctx.fill(); ctx.drawImage(SHEETS.res, ic.x, 0, ic.w, ic.h, c[0] + R * 0.38 - s2 / 2, c[1] - R * 0.36 - s2 / 2, s2, s2); }
+    }
+  }
+  // 6. выход клеток (значки игры) — близко
+  if (svYRow) drawYields(V, cities, show.icons);   // только совсем близко — не забивать карту
+  // 7. земля держав и границы
+  if (show.borders) {
+    for (let k = 0; k < n; k++) { if (!IV[k] || !V[k].rev || V[k].own < 0) continue;
+      const c = centerOf(kx(k), ky(k)); hexPath(c[0], c[1]); ctx.fillStyle = (colorOf.get(V[k].own) || "#889") + "40"; ctx.fill(); }
+    for (let k = 0; k < n; k++) { if (!IV[k]) continue;
+      const own = V[k].own; if (own < 0 || !V[k].rev) continue;
+      const x = kx(k), y = ky(k), c = centerOf(x, y), ri = R * 0.92;
+      for (let dir = 0; dir < 6; dir++) {
+        const nk = neighbor(x, y, dir); if (nk >= 0 && V[nk].own === own && V[nk].rev) continue;
+        const a0 = Math.PI / 180 * (-30 - 60 * dir);
+        ctx.beginPath(); ctx.moveTo(c[0] + ri * Math.cos(a0), c[1] + ri * Math.sin(a0)); ctx.lineTo(c[0] + ri * Math.cos(a0 + Math.PI / 3), c[1] + ri * Math.sin(a0 + Math.PI / 3));
+        ctx.strokeStyle = "rgba(10,12,16,.6)"; ctx.lineWidth = Math.max(3, R * 0.24); ctx.stroke();
+        ctx.strokeStyle = colorOf.get(own) || "#889"; ctx.lineWidth = Math.max(2, R * 0.14); ctx.stroke();
+      }
+    }
+  }
+  // 8. туман
+  if (viewTeam() >= 0) { ctx.fillStyle = "rgba(4,7,11,.5)";
+    for (let k = 0; k < n; k++) { if (!IV[k] || !V[k].rev || V[k].vis) continue; const c = centerOf(kx(k), ky(k)); hexPath(c[0], c[1], ctx, R + 0.5); ctx.fill(); } }
+  // 8а. обрабатываемые клетки городов
+  if (R * DPR() >= 30) drawWorked(V);
+  // 9. города: значок и плашка
+  for (const [k, c] of cities) { if (!IV[k]) continue;
+    const p = centerOf(kx(k), ky(k));
+    if (!svPut("city", p[0], p[1])) { ctx.beginPath(); ctx.arc(p[0], p[1], Math.max(3, R * 0.42), 0, 7); ctx.fillStyle = colorOf.get(c.o) || "#99a"; ctx.fill(); ctx.lineWidth = 2; ctx.strokeStyle = "#0b1119"; ctx.stroke(); }
+  }
+  drawBanners(cities, ctx);
+}
+// ---------------------------------------------------------------- обрабатываемые клетки и переключения жителей
+// Источник на ходу: журнал 116 (выдача города: cyields.work — клетки, которые обрабатывает город в конце хода;
+// пишется у участников с журналом, свои города), иначе — сейв (город.w; на шагах «по журналу» — с прошлого сейва).
+// Переключения: журнал work (движок переставил жителя: add/rem) и clicks (игрок вручную нажал клетку в городе).
+// Смена фокуса города в журнале не пишется.
+const WORKC = new Map();
+function cyIndex() {
+  const cy = PK.cyields || (JM && JM.cyields);
+  if (!cy || !Array.isArray(cy.cols)) return null;
+  if (WORKC.has("idx")) return WORKC.get("idx");
+  const it = cy.cols.indexOf("turn"), ic = cy.cols.indexOf("c"), iw = cy.cols.indexOf("work"), m = new Map();
+  for (const r of (cy.rows || [])) { const t = r[it]; if (!m.has(t)) m.set(t, new Map()); if (Array.isArray(r[iw])) m.get(t).set(r[ic], r[iw]); }
+  WORKC.set("idx", m);
+  return m;
+}
+// Клетка -> город (номер клетки города), который её обрабатывает, на шаге i; только города, видимые зрителю.
+function workedAt(i) {
+  const vt = viewTeam(), kk = i + "|" + vt;
+  if (WORKC.has(kk)) return WORKC.get(kk);
+  const out = new Map(), cyi = cyIndex(), byT = cyi && cyi.get(turnOf(i));
+  for (const [k, c] of S[i].C) {
+    if (vt >= 0 && teamOf.get(c.o) !== vt) continue;          // чужие рабочие клетки игрок в игре не видит
+    const w = (byT && byT.get(k)) || c.w || [];
+    for (const p of w) if (p !== k) out.set(p, k);
+  }
+  WORKC.set(kk, out);
+  return out;
+}
+const WIMG = new Image(); WIMG.src = "assets/replay/worked.png"; WIMG.onload = () => { if (PK) drawMap(); };
+const visPlayer = p => { const vt = viewTeam(); return vt < 0 || teamOf.get(p) === vt; };
+// Значок «житель на клетке» (как в окне города Civ5) вверху клетки; клетки, переключённые на этом ходу, — в кольце.
+function drawWorked(V) {
+  if (!show.worked || !WIMG.complete || !WIMG.naturalWidth) return;
+  const wk = workedAt(si), sz = Math.max(10, Math.min(30, R * 0.5));
+  ctx.imageSmoothingEnabled = true;
+  for (const [k] of wk) { if (!IV[k] || !V[k].rev) continue;
+    const c = centerOf(kx(k), ky(k));
+    ctx.drawImage(WIMG, c[0] - sz / 2, c[1] - R * 0.62 - sz / 2, sz, sz);
+  }
+  const T0 = turnOf(si);
+  if (JM && Array.isArray(JM.clicks)) for (const e of JM.clicks) {
+    if (e.turn !== T0 || !visPlayer(e.p)) continue;
+    const k = key(e.x, e.y); if (!IV[k]) continue;
+    const c = centerOf(e.x, e.y);
+    hexPath(c[0], c[1], ctx, R * 0.86); ctx.lineWidth = Math.max(2, R * 0.08); ctx.strokeStyle = "#f2d06b"; ctx.stroke();
+  }
+  ctx.imageSmoothingEnabled = drawn() ? artScale() < 1 : true;
+}
 // ---------------------------------------------------------------- тепловая карта боёв
 // По сейвам: потеря здоровья юнита между соседними ходами (там, где он стоит теперь) и гибель
 // военного юнита (исчез, и это не улучшение и не основание города) — в его последней клетке.
@@ -1399,6 +1626,7 @@ function shapePath(g, sh, s) {
 }
 const lum = hex => { const v = parseInt(String(hex).slice(1, 7), 16); return (0.299 * (v >> 16) + 0.587 * ((v >> 8) & 255) + 0.114 * (v & 255)) / 255; };
 function flagSize() {
+  if (style === "sv") return Math.round(Math.max(15, Math.min(44, R * 1.05)));     // юниты главнее всего
   if (!drawn()) return Math.round(Math.max(9, Math.min(36, R * 1.15)));
   const l = lod();                                   // ×2 — крупный значок типа по центру клетки; ×3+ — у отряда
   return l === 1 ? Math.round(Math.max(14, Math.min(46, R * 0.92))) : l === 2 ? Math.round(Math.max(10, Math.min(40, R * 0.56))) : Math.round(Math.max(10, Math.min(22, R * 1.05)));
@@ -1420,7 +1648,36 @@ function shieldSprite(p, n) {
   c._half = S2 / 2 + pad; shields.set(kk, c);
   return c;
 }
+// Флажок юнита стратегического вида из атласа: тело (flag…) цветом державы, кайма (…/rim) и силуэт unit/<ТИП> —
+// вторым цветом (у нас нет второго цвета держав — светлый или тёмный по яркости первого).
+function svFlag(p, type, fl) {
+  const S2 = flagSize(), dpr = DPR(), nm = String(T("unit", type) || "");
+  const shape = (fl & UF.EMB) ? "/EMBARK" : /CARAVAN|CARGO_SHIP/.test(nm) ? "/TRADE" : (fl & (UF.CIV | UF.GP)) ? "/CIVIL" : (fl & UF.FORT) ? "/FORTIFY" : "";
+  const body = svR("flag" + shape) ? "flag" + shape : "flag", rim = svR(body + "/rim") ? body + "/rim" : "flag/rim";
+  const kk = "sv|" + p + "|" + type + "|" + body + "|" + S2 + "|" + dpr;
+  let c = sprites.get(kk); if (c) return c;
+  const rr = svR(rim) || svR(body), sc = S2 * dpr / rr[2], w = Math.ceil(rr[2] * sc) + 4;
+  c = document.createElement("canvas"); c.width = c.height = w;
+  const g = c.getContext("2d"), col = colorOf.get(p) || "#8899aa", sec = lum(col) > 0.62 ? "#1a1f27" : "#f3efe4";
+  const layer = (key, color, k2 = 1) => {
+    const r = svR(key); if (!r) return;
+    const t = document.createElement("canvas"); t.width = t.height = w; const tg = t.getContext("2d");
+    const dw = r[2] * sc * k2, dh = r[3] * sc * k2;
+    tg.drawImage(SV.img, r[0], r[1], r[2], r[3], w / 2 - dw / 2 + (r[4] || 0) * sc, w / 2 - dh / 2 + (r[5] || 0) * sc, dw, dh);
+    tg.globalCompositeOperation = "source-in"; tg.fillStyle = color; tg.fillRect(0, 0, w, h0);
+    g.drawImage(t, 0, 0);
+  };
+  const h0 = w;
+  g.shadowColor = "rgba(0,0,0,.6)"; g.shadowBlur = 3 * dpr;
+  layer(body, col); g.shadowBlur = 0;
+  layer(rim, sec);
+  const base = nm.replace(/_SKIN\d+$/, "");
+  layer(svR("unit/" + nm) ? "unit/" + nm : "unit/" + base, sec, shape === "/CIVIL" ? 0.62 : 0.72);
+  c._half = w / dpr / 2; sprites.set(kk, c);
+  return c;
+}
 function sprite(p, type, fl) {
+  if (style === "sv" && SV.ready && svR("flag")) return svFlag(p, type, fl);
   const S2 = flagSize(), dpr = Math.min(2, devicePixelRatio || 1);
   if (spriteR !== S2 * 10 + dpr) { sprites.clear(); spriteR = S2 * 10 + dpr; }
   const sh = flagShape(fl), gp = (fl & UF.GP) ? 1 : 0, kk = p + "|" + type + "|" + sh + "|" + gp;
@@ -2360,6 +2617,7 @@ $("logTabs").addEventListener("click", ev => {
 });
 styleUi();
 if (style === "drawn") loadArt();
+if (style === "sv") loadSV();
 window.__rf = { get PK() { return PK; }, get S() { return S; }, get si() { return si; }, setStep: i => setStep(i), setView: p => setView(p), play: () => play(), stop: () => stop(),
   get view() { return view; }, perf: UPERF, unitsOf: i => unitsOf(i), setStyle: v => setStyle(v), get artMiss() { return [...ART.miss]; },
   setZoom: (z, x, y) => setZoom(z, x, y), cell: (i, k) => cellView(i, k), get jtech() { return JTECH_STATE; },
