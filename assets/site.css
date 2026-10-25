@@ -595,6 +595,49 @@ details.st-group>summary:hover{color:var(--acc-br)}
 details.st-group[open]>summary{margin-bottom:6px}
 .st-hand .card p,.st-awards .card p{margin:2px 0}
 .st-awards .card h3{color:var(--acc-br)}
+.st-awards .card h3 small{display:block;margin-top:2px;font:400 11.5px/1.35 var(--sans);color:var(--warn);letter-spacing:0}
+.st-awards .st-nom-v{color:var(--text)}
+.st-awards .st-nom-rec{border-top:1px solid var(--line-soft);padding-top:6px;margin-top:8px !important;color:var(--dim)}
+/* Рекорды за партию, личные рекорды, сравнение игроков (stats-choices.js) */
+.st-recs{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:12px;margin:0 0 22px}
+.st-recs .card{padding:12px 14px;min-width:0}
+.st-recs .card h3{color:var(--acc-br);margin:0 0 4px}
+.st-recs .card>p.small{margin:0 0 6px}
+.st-rec{list-style:none;padding:0;margin:0;max-width:none}
+.st-rec li{display:grid;grid-template-columns:16px minmax(0,1fr) auto;gap:0 10px;align-items:baseline;
+  margin:0;padding:6px 0;border-top:1px solid var(--line-soft);font-size:13.5px}
+.st-rec li:first-child{border-top:0}
+.st-rec .n{color:var(--faint);font-variant-numeric:tabular-nums}
+.st-rec .w{overflow-wrap:anywhere}
+.st-rec .w small{display:block;color:var(--dim);font-size:12px;line-height:1.45}
+.st-rec .v{font-weight:600;color:var(--text);font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+.st-rec li:first-child .v{color:var(--acc-br)}
+.st-map-s{white-space:nowrap}
+.st-top{font-size:9.5px;color:var(--acc-br);border-color:var(--acc-dim);background:var(--acc-faint)}
+.st-cmp-go{margin:14px 0 0}
+table.st td.st-best{color:var(--acc-br);font-weight:600}
+table.st tr.st-grp th{background:var(--bg-deep);color:var(--acc);font-size:10.5px;letter-spacing:.1em;
+  text-transform:uppercase;padding:7px 14px}
+.st-vs .btn{align-self:flex-end}
+table.st-cmp td,table.st-cmp th{white-space:normal;vertical-align:top}
+table.st-cmp td:first-child{min-width:120px}
+table.st-cmp thead th{overflow-wrap:anywhere}
+table.st-cmp td small{display:block}
+@media (max-width:520px){
+  table.st-cmp td,table.st-cmp th{padding:7px 8px}
+  table.st-cmp td:first-child{min-width:104px}
+}
+@media (max-width:900px){
+  .st-vs label{width:calc(50% - 6px)}
+  .st-vs .btn{width:100%;justify-content:center}
+}
+.st-h2h{display:flex;align-items:center;justify-content:center;gap:10px 16px;flex-wrap:wrap;margin:6px 0 4px}
+.st-h2h b{font:600 28px/1.1 var(--sans);color:var(--dim);font-variant-numeric:tabular-nums}
+.st-h2h b.lead{color:var(--acc-br)}
+.st-h2h i{font-style:normal;color:var(--faint);font-size:22px}
+.st-h2h-n{font-size:15px;overflow-wrap:anywhere}
+.st-h2h-sub{text-align:center;margin:0 0 10px}
+details.st-pair{border:1px solid var(--line-soft);border-radius:10px;padding:4px 12px 2px;background:var(--panel)}
 
 .st-chart{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 12px 6px;margin:0 0 18px}
 .chart{position:relative;width:100%}
