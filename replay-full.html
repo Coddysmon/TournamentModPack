@@ -9,7 +9,7 @@
 <meta name="theme-color" content="#0D131A">
 <link rel="stylesheet" href="assets/site.css">
 <link rel="stylesheet" href="assets/replay.css">
-<link rel="stylesheet" href="assets/replay-full.css">
+<link rel="stylesheet" href="assets/replay-full.css?v=af7fa3ac12">
 <link rel="alternate" hreflang="ru" href="replay-full.html">
 <script src="assets/lang.js"></script>
 </head>
@@ -136,6 +136,7 @@
       <div class="rp-pop" id="layersPop" hidden role="dialog" aria-label="Слои карты">
         <div class="rp-head"><h2>Слои</h2><button class="rp-x" type="button" data-close aria-label="Закрыть">×</button></div>
         <label class="rp-layer"><input type="checkbox" data-layer="units" checked><span>Юниты<small>один флажок на клетку (+N — ещё юниты там же); вблизи — отряд фигурками</small></span></label>
+        <label class="rp-layer"><input type="checkbox" data-layer="borders" checked><span>Границы держав<small>земля державы залита её цветом, по краю — обводка</small></span></label>
         <label class="rp-layer"><input type="checkbox" data-layer="names" checked><span>Флажки городов<small>имя, жители, владелец</small></span></label>
         <label class="rp-layer"><input type="checkbox" data-layer="icons" checked><span>Значки ресурсов<small>маленький кружок в углу клетки <b id="iconsNote"></b></small></span></label>
         <label class="rp-layer"><input type="checkbox" data-layer="log" checked><span>Журнал событий<small>под картой: ходы юнитов, бои, стройка, города, дипломатия — с вкладками</small></span></label>
@@ -242,7 +243,7 @@
 </div><!-- /shell -->
 
 <script src="assets/site.js"></script>
-<script src="assets/replay-full.js"></script>
+<script src="assets/replay-full.js?v=11b414343a"></script>
 <script>NOVA.fillCommon();</script>
 </body>
 </html>

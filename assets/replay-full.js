@@ -110,7 +110,7 @@ let view = -1;            // слот игрока, чьими глазами с
 let MEM = null;           // память команды по шагам: [{own, imp, rt, feat, res, C:Map}]
 let colorOf = new Map(), playerBy = new Map(), teamOf = new Map(), lakeAt = null;
 let timer = null, card = null;
-const show = { units: true, names: true, icons: true, heat: false, log: true, yields: true };
+const show = { units: true, names: true, icons: true, heat: false, log: true, yields: true, borders: true };
 try { const v = JSON.parse(localStorage.getItem("rf-layers") || "{}"); for (const k in show) if (typeof v[k] === "boolean") show[k] = v[k]; } catch (e) { /* по умолчанию */ }
 // devicePixelRatio бывает float32 (1.100000023…) — округляем, иначе «целое число точек» не находится
 const DPR = () => Math.min(3, Math.max(0.5, Math.round((devicePixelRatio || 1) * 10000) / 10000));   // и меньше 1 (масштаб браузера 80–90%)
@@ -492,7 +492,7 @@ function drawMap() {
     hexPath(cx, cy);
     ctx.fillStyle = tileFill(st, k, f);
     ctx.fill();
-    if (v.own >= 0) { hexPath(cx, cy); ctx.fillStyle = (colorOf.get(v.own) || "#889") + "66"; ctx.fill(); }
+    if (v.own >= 0 && show.borders) { hexPath(cx, cy); ctx.fillStyle = (colorOf.get(v.own) || "#889") + "66"; ctx.fill(); }
     if (R >= 5) glyph(st.P.pt[k], f, cx, cy, STRAT ? 0.3 : 0.62);
   }
   // 1б. реки (флаги NW / W / NE ребра)
@@ -533,7 +533,7 @@ function drawMap() {
   // 3. границы — где владелец меняется
   for (let k = 0; k < n; k++) { if (!IV[k]) continue;
     const own = V[k].own;
-    if (own < 0 || !V[k].rev) continue;
+    if (own < 0 || !V[k].rev || !show.borders) continue;
     const x = kx(k), y = ky(k), c = centerOf(x, y), cx = c[0], cy = c[1];
     for (let dir = 0; dir < 6; dir++) {
       const nk = neighbor(x, y, dir);
@@ -792,9 +792,10 @@ function drawMapArt() {
   // 1а. лёгкая заливка земли владельца (как у ffaciv — оттенок внутри границы)
   for (let k = 0; k < n; k++) { if (!IV[k]) continue;
     const v = V[k];
-    if (!v.rev || v.own < 0) continue;
+    if (!v.rev || v.own < 0 || !show.borders) continue;
     const c = centerOf(kx(k), ky(k));
-    hexPath(c[0], c[1]); ctx.fillStyle = (colorOf.get(v.own) || "#889") + "2e"; ctx.fill();
+    // земля державы — полупрозрачно её цветом (как на «Карте партии»); вблизи легче, чтобы не терялась местность
+    hexPath(c[0], c[1]); ctx.fillStyle = (colorOf.get(v.own) || "#889") + (LOD >= 2 ? "2e" : "45"); ctx.fill();
   }
   // 1б. сетка — тонкие края клеток
   ctx.strokeStyle = "rgba(20,24,18,.28)"; ctx.lineWidth = Math.max(0.6, R * 0.03);
@@ -874,7 +875,7 @@ function drawMapArt() {
   // 7. границы: толстая линия цвета державы, сдвинутая внутрь клетки, с тёмной подложкой
   for (let k = 0; k < n; k++) { if (!IV[k]) continue;
     const own = V[k].own;
-    if (own < 0 || !V[k].rev) continue;
+    if (own < 0 || !V[k].rev || !show.borders) continue;
     const x = kx(k), y = ky(k), c = centerOf(x, y), col = colorOf.get(own) || "#889", ri = R * 0.9;
     for (let dir = 0; dir < 6; dir++) {
       const nk = neighbor(x, y, dir);
@@ -883,9 +884,9 @@ function drawMapArt() {
       const x0 = c[0] + ri * Math.cos(a0), y0 = c[1] + ri * Math.sin(a0);
       const x1 = c[0] + ri * Math.cos(a0 + Math.PI / 3), y1 = c[1] + ri * Math.sin(a0 + Math.PI / 3);
       ctx.lineCap = "round";
-      ctx.strokeStyle = "rgba(10,12,16,.55)"; ctx.lineWidth = Math.max(2.4, R * 0.2);
+      ctx.strokeStyle = "rgba(10,12,16,.6)"; ctx.lineWidth = Math.max(3.2, R * 0.26);
       ctx.beginPath(); ctx.moveTo(x0, y0); ctx.lineTo(x1, y1); ctx.stroke();
-      ctx.strokeStyle = col; ctx.lineWidth = Math.max(1.6, R * 0.12); ctx.stroke();
+      ctx.strokeStyle = col; ctx.lineWidth = Math.max(2.2, R * 0.16); ctx.stroke();
       ctx.lineCap = "butt";
     }
   }
