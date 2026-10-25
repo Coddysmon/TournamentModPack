@@ -1,3 +1,39 @@
+=== 2026-10-25 | ОБНОВЛЕНИЕ | 1.5.171: Уэй-Теокалли, галеас и Пути
+1. Новое чудо Уэй-Теокалли: строится в городе у озера (Гражданская служба), +2 еды и +2 культуры с каждой обрабатываемой озёрной клетки, +4 веры.
+2. Галеас и великий галеас после выстрела могут двигаться дальше (атака — по-прежнему раз за ход).
+3. Пути: открытие ветки — +50% к производству караванов и грузовых судов (было +100%); «Охранная грамота» больше не даёт счастья за торговые пути.
+4. Научная теория теперь требует Экономику.
+5. Замок Эльц даёт свою культуру и веру с клеток и без политики Оплота.
+6. Апостольская миссия: скидка 50% теперь и на инквизиторов.
+7. У Колизея своя 3D-модель в городе.
+8. Авианосец и ракетный крейсер: самолёты и ракеты в грузе больше не висят на воде, «лишний истребитель» после улучшения пропал; бомбардировщик на авианосце нельзя улучшить в стелс.
+9. Новый график «Наука за постройку юнитов (Честь)».
+10. Исправлен вылет при сожжении города; убраны служебные сообщения о версиях в чате лобби.
+11. Сохранения 1.5.171 не открываются в старых версиях.
+
+--- en | 1.5.171: Huey Teocalli, Galleass and Wayfaring
+1. New wonder Huey Teocalli: built in a city next to a lake (Civil Service), +2 Food and +2 Culture from each worked lake tile, +4 Faith.
+2. The Galleass and the Great Galleass can keep moving after a ranged attack (still one attack per turn).
+3. Wayfaring: the opener gives +50% Production towards Caravans and Cargo Ships (was +100%); Safe Conduct no longer gives Happiness per trade route.
+4. Scientific Theory now requires Economics.
+5. Eltz Castle gives its culture and faith from tiles even without the Bulwark policy.
+6. Apostolic Mission: the 50% discount now also applies to Inquisitors.
+7. The Colosseum has its own 3D model in the city.
+8. Carriers and missile cruisers: aircraft and missiles in cargo no longer hang on the water, the "extra fighter" after an upgrade is gone; a bomber on a carrier can't be upgraded to a stealth bomber.
+9. New chart "Science from building units (Honor)".
+10. Fixed a crash when a city is razed; removed service version messages from the lobby chat.
+11. 1.5.171 saves don't open in older versions.
+
+=== 2026-10-25 | ОБНОВЛЕНИЕ | Лаунчер 0.3.115, форма континента и рекорды на сайте
+Лаунчер 0.3.115: повтор партии доходит до сайта, даже если после победы вы остались в игре; пропавшие повторы последних партий дошлются сами.
+Карта (с 1.5.170): в настройках есть «Форма континента» — случайная форма даёт каждый раз новый силуэт, но это по-прежнему один цельный континент.
+Сайт, статистика: рекорды за одну партию, понятные номинации («в среднем за партию»), вкладка «Сравнение» — сравните себя с другими игроками и счёт очных встреч, личные рекорды в профиле.
+
+--- en | Launcher 0.3.115, continent shape and records on the site
+Launcher 0.3.115: the game replay reaches the site even if you stay in the game after victory; missing replays of recent games are re-sent automatically.
+Map (since 1.5.170): the settings have "Continent shape" — a random shape gives a new silhouette every game, still one continent.
+Site, statistics: single-game records, clearer awards ("average per game"), a "Compare" tab with head-to-head scores, personal records in the profile.
+
 === 2026-10-21 | ОБНОВЛЕНИЕ | 1.5.169: руины, апостолы и меньше вылетов
 1. Новое верование основателя «Апостольская миссия»: миссионеры на 50% дешевле за веру и распространяют религию 3 раза вместо 2 — пока основатель владеет святым городом.
 2. Руины: окно больше не пустое — видно, сколько науки и еды дали; счастье от руин в подсказке своей строкой, а не «от Всемирного конгресса». Недостижимые «Древние мастерские» убраны.
