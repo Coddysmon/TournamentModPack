@@ -110,7 +110,7 @@ let view = -1;            // слот игрока, чьими глазами с
 let MEM = null;           // память команды по шагам: [{own, imp, rt, feat, res, C:Map}]
 let colorOf = new Map(), playerBy = new Map(), teamOf = new Map(), lakeAt = null;
 let timer = null, card = null;
-const show = { units: true, names: true, icons: true, heat: false, log: true, yields: true, borders: true, worked: true };
+const show = { units: true, names: true, icons: true, heat: false, log: true, yields: true, borders: true, worked: true, lines: false };
 try { const v = JSON.parse(localStorage.getItem("rf-layers") || "{}"); for (const k in show) if (typeof v[k] === "boolean") show[k] = v[k]; } catch (e) { /* по умолчанию */ }
 // devicePixelRatio бывает float32 (1.100000023…) — округляем, иначе «целое число точек» не находится
 const DPR = () => Math.min(3, Math.max(0.5, Math.round((devicePixelRatio || 1) * 10000) / 10000));   // и меньше 1 (масштаб браузера 80–90%)
@@ -496,7 +496,7 @@ function hiddenRes(i) {
   HR_CACHE.set(kk, out);
   return out;
 }
-let JM = null;                                              // журнал партии (nova-stats/replay/m): work, clicks, cyields, techs
+let JM = null, LOGB = [];                                              // журнал партии (nova-stats/replay/m): work, clicks, cyields, techs
 async function loadJournalTechs(key) {
   JM = null; WORKC.clear();
   if (!src.journal) { JTECH_STATE = hasRv() ? "rv" : "none"; return; }
@@ -1226,7 +1226,7 @@ function logOf(i) {
     const bk = e.dx >= 0 ? e.dx : e.ax;
     add("war", bk, e.ap, combatText(i, e));
     out[out.length - 1].tm = [teamOf.get(e.ap), teamOf.get(e.dp)];
-    out[out.length - 1].cmb = 1;
+    out[out.length - 1].cmb = 1; out[out.length - 1].b = e;
     if (e.k & 256) out[out.length - 1].major = true;
   }
   // улучшения и дороги (только на шагах-сейвах: карта есть только там)
@@ -1309,7 +1309,8 @@ function renderLog() {
   rows.reverse();
   const hm = ms => { if (ms == null || ms < 0) return ""; const m = Math.floor(ms / 60000); return Math.floor(m / 60) + ":" + String(m % 60).padStart(2, "0"); };
   const TI = { war: "⚔", exp: "◉", bld: "⚒", city: "▣", emp: "✦", dip: "⚑" };
-  $("logList").innerHTML = rows.length ? rows.map(r => '<div class="lr' + (r.step === si ? " now" : "") + (r.k >= 0 ? " go" : "") + '" data-k="' + (r.k >= 0 ? r.k : "") + '" data-st="' + r.step + '"><span class="lt">' + hm(r.ms) +
+  LOGB = [];
+  $("logList").innerHTML = rows.length ? rows.map(r => '<div class="lr' + (r.step === si ? " now" : "") + (r.k >= 0 ? " go" : "") + (r.b && CURB.has(r.b) ? " cur" : "") + '" data-k="' + (r.k >= 0 ? r.k : "") + '" data-st="' + r.step + '" data-ci="' + (r.b ? LOGB.push(r.b) - 1 : "") + '"><span class="lt">' + hm(r.ms) +
     '</span><span class="li">' + (TI[r.tab] || "·") + "</span><span>" + r.html + "</span></div>").join("") : '<div class="lr empty">На этих ходах ничего.</div>';
 }
 
@@ -1555,7 +1556,7 @@ let CMB = new Map();
 function parseCombats() {
   CMB = new Map();
   const cm = PK.cmb; if (!cm || !Array.isArray(cm.cols)) return;
-  const NMS = ["turn", "n", "k", "ap", "au", "at", "ax", "ahb", "aha", "am", "dp", "du", "dt", "dx", "dhb", "dha", "dm"];
+  const NMS = ["turn", "n", "k", "ap", "au", "at", "ax", "ahb", "aha", "am", "dp", "du", "dt", "dx", "dhb", "dha", "dm", "ms"];
   const CI = {}; for (const nm of NMS) CI[nm] = cm.cols.indexOf(nm);
   if (CI.turn < 0 || CI.dx < 0) return;
   for (const r of (cm.rows || [])) {
@@ -1606,7 +1607,69 @@ function combatText(i, b) {
 // ---------------------------------------------------------------- юниты
 const UF = { EMB: 1, FORT: 2, CIV: 4, GP: 8, CARGO: 16, GARR: 32 };
 const uv = $("uv"), uctx = uv.getContext("2d");
-let anim = null, unFrameReq = 0, unHits = [], CMBHITS = [], FOCUSK = null;
+let anim = null, unFrameReq = 0, unHits = [], CMBHITS = [], FOCUSK = null, CSEL = null, CHOVER = null;
+// Скорость боёв: длительность одного удара (слот), с. «обычно» — темп по просьбе владельца 25.10.
+const CSPEEDS = { slow: 1.15, normal: 0.75, fast: 0.4 };
+let cspeed = "normal";
+try { const v = localStorage.getItem("rf-cspeed"); if (CSPEEDS[v]) cspeed = v; } catch (e) { /* по умолчанию */ }
+let CSEQ = null, CURB = new Set(), CURG = -1;
+// План ударов шага i: группы «откуда → куда» (по порядку боёв в журнале), старт и конец каждой (мс от начала).
+function cseqPlan(i, mode) {
+  const slot = CSPEEDS[mode || cspeed] * 1000, by = new Map();
+  for (const b of combatsView(i)) { const tk = b.dx >= 0 ? b.dx : b.ax; if (tk < 0) continue; const kk = b.ax + ">" + tk; if (!by.has(kk)) by.set(kk, { tk, ax: b.ax, list: [], n: b.n }); by.get(kk).list.push(b); }
+  const groups = [...by.values()].sort((p, q) => p.n - q.n), waves = groups.length > 20 ? 3 : 1;
+  groups.forEach((g, j) => { g.start = Math.floor(j / waves) * slot; g.end = g.start + slot; });
+  return { groups, total: groups.length ? Math.ceil(groups.length / waves) * slot : 0, slot };
+}
+function cseqStart(i, delay, rp) {
+  if (!COMBAT || !show.units) { CSEQ = null; return 0; }
+  const p = cseqPlan(i);
+  if (rp && p.groups.length) {                               // реальное время: удар — в момент боя (сжатое время ÷ rtX)
+    for (const g of p.groups) { const t = Math.min(...g.list.map(b => (b.ms >= 0 ? b.ms : rp.L * 0.5))); g.start = rp.toV(t) / rtX; g.end = g.start + Math.max(p.slot, 700); }
+    p.total = Math.max(...p.groups.map(g => g.end));
+  }
+  if (!p.groups.length) { CSEQ = null; return 0; }
+  CSEQ = Object.assign(p, { i, t0: performance.now() + delay, paused: false, el: 0 });
+  unitsDraw();
+  return p.total;
+}
+// ---- реальное время хода
+let rtMode = true, rtX = 4;
+try { const v = localStorage.getItem("rf-rt"); if (v === "0") rtMode = false; const x = +localStorage.getItem("rf-rtx"); if ([1, 2, 4, 8, 16].includes(x)) rtX = x; } catch (e) { /* по умолчанию */ }
+const hasRT = () => !!(PK && PK.rt && PK.rt.turnMs);
+const nameNorm = nm => String(nm || "").replace(/^UNIT_/, "").replace(/_SKIN\d+$/, "");
+// План шага i: время (мс игры от начала хода) движения каждого юнита и каждого боя; сжатие пауз; итоговая длина.
+function rtPlan(i) {
+  const TT = turnOf(i), L = (PK.rt.turnMs || {})[TT];
+  if (!L || i <= 0) return null;
+  const orders = (PK.rt.orders || {})[TT] || [], used = new Set(), unitT = new Map();
+  const a = S[i - 1], b = S[i];
+  for (const [kk, u] of b.U) {
+    const o = a.U.get(kk); if (!o || (o[3] === u[3] && o[4] === u[4])) continue;
+    const nm = nameNorm(T("unit", u[2]));
+    let best = -1, bt = -1;
+    orders.forEach((r, j) => {                            // приказ: [мс, игрок, строка Units, миссия, x, y]
+      if (r[1] !== u[0] || used.has(j)) return;
+      const on = nameNorm((NAMES.unit && NAMES.unit[r[2]] || {}).k);
+      if (on !== nm) return;
+      const hitEnd = r[4] === u[3] && r[5] === u[4];
+      if (hitEnd && (bt < 2 || r[0] > orders[best][0])) { best = j; bt = 2; }
+      else if (bt < 1) { best = j; bt = 1; }
+    });
+    if (best >= 0) { used.add(best); unitT.set(kk, orders[best][0]); } else unitT.set(kk, 0);   // без приказа (ИИ, авто) — в начале хода
+  }
+  const cmbT = combatsView(i).map(x => (x.ms >= 0 ? x.ms : L * 0.5));
+  // сжатие: промежуток > 10 с без событий -> 3 с
+  const ts = [0, ...unitT.values(), ...cmbT, L].sort((p, q) => p - q), bp = [[0, 0]];
+  let v = 0;
+  for (let j = 1; j < ts.length; j++) { const g = ts[j] - ts[j - 1]; v += g > 10000 ? 3000 : g; bp.push([ts[j], v]); }
+  const toV = t => { for (let j = 1; j < bp.length; j++) if (t <= bp[j][0]) { const [g0, v0] = bp[j - 1], [g1, v1] = bp[j]; return g1 > g0 ? v0 + (t - g0) * (v1 - v0) / (g1 - g0) : v1; } return v; };
+  const toG = vv => { for (let j = 1; j < bp.length; j++) if (vv <= bp[j][1]) { const [g0, v0] = bp[j - 1], [g1, v1] = bp[j]; return v1 > v0 ? g0 + (vv - v0) * (g1 - g0) / (v1 - v0) : g1; } return L; };
+  return { T: TT, L, unitT, toV, toG, V: v };
+}
+const rtFmt = ms => { const s0 = Math.max(0, Math.round(ms / 1000)); return Math.floor(s0 / 60) + ":" + String(s0 % 60).padStart(2, "0"); };
+const animNow = () => anim && anim.paused != null ? anim.paused : performance.now();
+const cseqEl = () => !CSEQ ? -1 : CSEQ.paused ? CSEQ.el : performance.now() - CSEQ.t0;
 let speed = 2, smooth = true;
 const SPEEDS = [0, 1, 2, 4, 7];
 const UPERF = { frames: 0, drawMs: 0, maxDraw: 0, gaps: [], last: 0, units: 0 };
@@ -1860,7 +1923,11 @@ function unitsFrame(now) {
   uctx.save();
   uctx.beginPath(); uctx.rect(Math.max(0, ox), Math.max(0, oy), Math.min(cr.width, sr.width), Math.min(cr.height, sr.height)); uctx.clip();
   let s = 1, a = anim;
-  if (a) { s = Math.max(0, Math.min(1, (now - a.t0) / a.dur)); if (s >= 1) { anim = null; a = null; } }   // метка кадра бывает раньше начала перехода
+  if (a) { const nn = a.paused != null ? a.paused : now; s = Math.max(0, Math.min(1, (nn - a.t0) / a.dur)); if (s >= 1) { anim = null; a = null; } }
+  // реальное время: игровое время сейчас (мс от начала хода) и фаза движения каждого юнита (0,7 с от его приказа)
+  const rtNowReal = a && a.rt ? ((a.paused != null ? a.paused : now) - a.t0) : -1;
+  const rtPhase = kk => { const tg = a.rt.unitT.get(kk); if (tg == null) return 1; return ease(Math.max(0, Math.min(1, (rtNowReal - a.rt.toV(tg) / rtX) / 700))); };
+  if (a && a.rt) { const el2 = $("rtClock"); if (el2) { el2.hidden = false; el2.textContent = rtFmt(a.rt.toG(Math.min(a.rt.V, rtNowReal * rtX))) + " / " + rtFmt(a.rt.L); } }   // метка кадра бывает раньше начала перехода
   const e = ease(s), FR = frameLists();
   const vw = sr.width, vh = sr.height, SZ = flagSize();
   const sel = card && card.kind === "unit" ? card.kk : null;
@@ -1931,89 +1998,133 @@ function unitsFrame(now) {
     const c = centerOf(kx(u.k), ky(u.k));
     let x = c[0] + u.ox, y = c[1] + u.oy, alpha = 1, ring = null;
     if (a) {
-      const p = FR.prevBy.get(u.kk);
-      if (!p) alpha = e;
+      const p = FR.prevBy.get(u.kk), eu = a.rt ? rtPhase(u.kk) : e;
+      if (!p) alpha = a.rt ? Math.min(1, s * 4) : e;
       else {
-        if (u.path) { const q = along(u.path, e); x = q[0] + p.ox + (u.ox - p.ox) * e; y = q[1] + p.oy + (u.oy - p.oy) * e; }
-        else { x = c[0] + p.ox + (u.ox - p.ox) * e; y = c[1] + p.oy + (u.oy - p.oy) * e; }
-        if (!CMB.size && p.hp - u.hp >= 10) ring = { s: e };
+        if (u.path) { const q = along(u.path, eu); x = q[0] + p.ox + (u.ox - p.ox) * eu; y = q[1] + p.oy + (u.oy - p.oy) * eu; }
+        else { x = c[0] + p.ox + (u.ox - p.ox) * eu; y = c[1] + p.oy + (u.oy - p.oy) * eu; }
+        if (!CMB.size && p.hp - u.hp >= 10) ring = { s: eu };
       }
     }
     draw(u, x, y, alpha, ring); n++;
   }
   // самолёты на базах: «✈×N» цвета державы
   if (show.units) for (const [k, ai] of airAt(si)) {
-    const c = centerOf(kx(k), ky(k)), bx = ox + c[0] - R * 0.62, by = oy + c[1] - R * 0.55;
+    const c = centerOf(kx(k), ky(k)), bx = ox + c[0] - R * 0.5, by = oy + c[1] - R * 0.8;   // угол клетки, над плашкой города
     if (bx < -40 || bx > vw + 40 || by < -40 || by > vh + 40) continue;
-    const col = colorOf.get(ai.p) || "#8899aa", fs = Math.max(10, Math.min(16, R * 0.34)), txt = "✈" + (ai.list.length > 1 ? "×" + ai.list.length : "");
-    uctx.font = "800 " + Math.round(fs) + "px system-ui,sans-serif"; const tw = uctx.measureText(txt).width + 8, th = fs + 6;
+    const col = colorOf.get(ai.p) || "#8899aa", fs = Math.max(9, Math.min(12, R * 0.26)), txt = "✈" + (ai.list.length > 1 ? ai.list.length : "");
+    uctx.font = "800 " + Math.round(fs) + "px system-ui,sans-serif"; const tw = uctx.measureText(txt).width + 6, th = fs + 4;
     uctx.globalAlpha = 1; uctx.fillStyle = "#0b1119e6"; uctx.beginPath(); uctx.roundRect ? uctx.roundRect(bx - tw / 2, by - th / 2, tw, th, th / 2) : uctx.rect(bx - tw / 2, by - th / 2, tw, th); uctx.fill();
     uctx.lineWidth = 2; uctx.strokeStyle = col; uctx.stroke();
     uctx.fillStyle = "#f3f7fb"; uctx.textAlign = "center"; uctx.textBaseline = "middle"; uctx.fillText(txt, bx, by + 0.5);
     unHits.push({ x: bx, y: by, r: th, air: k });
   }
-  // бои журнала (118). Пауза — все бои хода сразу; проигрывание — по одному в порядке номера боя.
-  // Ближний бой — стрелка; дальний, обстрел — пунктир; авиаудар — пунктирная дуга от базы; ядерный — круг.
-  // Несколько одинаковых ударов «откуда → куда» за ход — одна стрелка «×N»; разные — разведены в стороны.
+  // бои журнала (118). Пауза — у цели только маркер (вид, ×N, урон, итог); линии — по запросу (наведение/клик на
+  // маркер, атакующий или база, строка журнала), в анимации — по очереди, не больше трёх сразу; или слой «всегда».
   if (show.units && COMBAT) {
-    const cm = combatsView(si), groups = new Map();
-    for (const b of cm) { const kk = b.ax + ">" + b.dx + ">" + (b.air ? 1 : b.k & 1 ? 2 : 0); if (!groups.has(kk)) groups.set(kk, []); groups.get(kk).push(b); }
-    const pairs = new Map();                                  // сколько разных групп на одной паре клеток — для разведения
-    let gi = 0;
-    const N = groups.size;
+    const cm = combatsView(si), byT = new Map();
+    for (const b of cm) { const tk = b.dx >= 0 ? b.dx : b.ax; if (tk < 0) continue; if (!byT.has(tk)) byT.set(tk, []); byT.get(tk).push(b); }
+    const sel = CHOVER || CSEL, inSel = b => !sel ? false : sel.kind === "target" ? (b.dx >= 0 ? b.dx : b.ax) === sel.k : sel.kind === "src" ? b.ax === sel.k : sel.list.indexOf(b) >= 0;
+    const G = byT.size, spacing = 0.8 / Math.max(1, G), win = Math.min(0.35, 3 * spacing);
     CMBHITS = [];
-    for (const [kk, list] of groups) {
-      const b = list[0], idx = gi++;
-      const ph = a ? Math.max(0, Math.min(1, (s - 0.25 - 0.6 * idx / Math.max(1, N)) / 0.25)) : 1;
-      if (ph <= 0) continue;
-      const tk = b.dx >= 0 ? b.dx : b.ax; if (tk < 0) continue;
-      const B = centerOf(kx(tk), ky(tk)), A = b.ax >= 0 ? centerOf(kx(b.ax), ky(b.ax)) : B;
-      const pk = Math.min(b.ax, b.dx) + "|" + Math.max(b.ax, b.dx), lane = pairs.get(pk) || 0; pairs.set(pk, lane + 1);
-      let x1 = ox + A[0], y1 = oy + A[1], x2 = ox + B[0], y2 = oy + B[1];
-      if (Math.abs(x2 - x1) > W * PK.w / 2) x1 += x2 > x1 ? W * PK.w : -W * PK.w;   // через шов карты
-      if (Math.max(x1, x2) < -60 || Math.min(x1, x2) > vw + 60 || Math.max(y1, y2) < -60 || Math.min(y1, y2) > vh + 60) continue;
-      const dxv = x2 - x1, dyv = y2 - y1, len = Math.hypot(dxv, dyv) || 1, nx = -dyv / len, ny = dxv / len, off = (lane - 0) * R * 0.22;
-      x1 += nx * off; y1 += ny * off; x2 += nx * off; y2 += ny * off;
-      const col = colorOf.get(b.ap) || "#f2d06b", nuke = list.some(q => q.k & 8);
-      uctx.globalAlpha = ph;
-      uctx.lineCap = "round";
-      // путь
-      const bend = b.air ? Math.min(R * 1.6, len * 0.35) : 0, mx = (x1 + x2) / 2 + nx * bend, my = (y1 + y2) / 2 + ny * bend;
-      const trace = () => { uctx.beginPath(); uctx.moveTo(x1, y1); if (bend) uctx.quadraticCurveTo(mx, my, x2, y2); else uctx.lineTo(x2, y2); };
-      uctx.setLineDash(b.air || (b.k & 1) ? [Math.max(4, R * 0.18), Math.max(3, R * 0.12)] : []);
-      trace(); uctx.lineWidth = Math.max(3, R * 0.14); uctx.strokeStyle = "rgba(11,17,25,.85)"; uctx.stroke();
-      trace(); uctx.lineWidth = Math.max(1.6, R * 0.08); uctx.strokeStyle = col; uctx.stroke();
-      uctx.setLineDash([]);
-      // наконечник
-      const ex = bend ? x2 - mx : dxv, ey = bend ? y2 - my : dyv, el = Math.hypot(ex, ey) || 1, ux = ex / el, uy = ey / el, ah = Math.max(7, R * 0.3);
-      uctx.beginPath(); uctx.moveTo(x2 - ux * R * 0.25, y2 - uy * R * 0.25);
-      uctx.lineTo(x2 - ux * (R * 0.25 + ah) - uy * ah * 0.55, y2 - uy * (R * 0.25 + ah) + ux * ah * 0.55);
-      uctx.lineTo(x2 - ux * (R * 0.25 + ah) + uy * ah * 0.55, y2 - uy * (R * 0.25 + ah) - ux * ah * 0.55); uctx.closePath();
-      uctx.fillStyle = col; uctx.fill(); uctx.lineWidth = 1.2; uctx.strokeStyle = "#0b1119"; uctx.stroke();
-      // значок вида в середине: ✈ авиаудар, ⚔ ближний, ➶ выстрел, ☢ ядерный; «×N»
-      const gl = nuke ? "☢" : b.k & 4 ? "✈⚔" : b.air ? "✈" : b.k & 1 ? "➶" : "⚔";
-      const lx = bend ? (x1 + 2 * mx + x2) / 4 : (x1 + x2) / 2, ly = bend ? (y1 + 2 * my + y2) / 4 : (y1 + y2) / 2, fs = Math.max(10, Math.min(17, R * 0.36));
-      const lab = gl + (list.length > 1 ? "×" + list.length : "");
-      uctx.font = "800 " + Math.round(fs) + "px system-ui,sans-serif"; const lw = uctx.measureText(lab).width + 8, lh = fs + 6;
-      uctx.fillStyle = "#0b1119e6"; uctx.beginPath(); uctx.roundRect ? uctx.roundRect(lx - lw / 2, ly - lh / 2, lw, lh, 5) : uctx.rect(lx - lw / 2, ly - lh / 2, lw, lh); uctx.fill();
-      uctx.lineWidth = 1.5; uctx.strokeStyle = col; uctx.stroke();
-      uctx.fillStyle = nuke ? "#ffd84a" : "#f3f7fb"; uctx.textAlign = "center"; uctx.textBaseline = "middle"; uctx.fillText(lab, lx, ly + 0.5);
-      // урон у обеих сторон (сумма по группе)
-      const dd = list.reduce((q, e) => q + Math.max(0, e.dd), 0), ad = list.reduce((q, e) => q + Math.max(0, e.ad), 0);
-      const dmg = (v, x, y, c2) => { if (v <= 0) return; const t2 = "−" + v; uctx.font = "800 " + Math.round(fs * 0.95) + "px system-ui,sans-serif"; uctx.lineWidth = 3; uctx.strokeStyle = "#0b1119"; uctx.strokeText(t2, x, y); uctx.fillStyle = c2; uctx.fillText(t2, x, y); };
-      dmg(dd, x2 + R * 0.55, y2 - R * 0.62, "#ff6b5e");
-      if (b.ax !== b.dx) dmg(ad, x1 + R * 0.5, y1 - R * 0.62, "#ffb36b");
-      // итоги
-      const cross = (x, y, c2) => { const m = Math.max(5, R * 0.28); uctx.lineWidth = Math.max(3, R * 0.14); uctx.strokeStyle = "#0b1119"; uctx.beginPath(); uctx.moveTo(x - m, y - m); uctx.lineTo(x + m, y + m); uctx.moveTo(x + m, y - m); uctx.lineTo(x - m, y + m); uctx.stroke(); uctx.lineWidth = Math.max(1.6, R * 0.08); uctx.strokeStyle = c2; uctx.stroke(); };
-      if (list.some(e => (e.k & 64) && !(e.k & 32))) cross(x2, y2 + R * 0.05, "#ff4d3d");
-      if (list.some(e => e.k & 128)) cross(x1, y1 + R * 0.05, "#ff9a3d");
-      if (list.some(e => e.k & 256)) { uctx.font = "800 " + Math.round(fs * 1.8) + "px system-ui,sans-serif"; uctx.lineWidth = 4; uctx.strokeStyle = "#0b1119"; uctx.strokeText("⚑", x2, y2 - R * 0.95); uctx.fillStyle = col; uctx.fillText("⚑", x2, y2 - R * 0.95); }
-      if (nuke) { uctx.beginPath(); uctx.arc(x2, y2, R * 2.6, 0, 7); uctx.fillStyle = "rgba(255,170,40,.18)"; uctx.fill(); uctx.lineWidth = 3; uctx.strokeStyle = "rgba(255,200,60,.9)"; uctx.stroke(); }
-      if (a && ph < 1) { uctx.beginPath(); uctx.arc(x2, y2, R * (0.3 + 1.2 * ph), 0, 7); uctx.lineWidth = 2.5; uctx.strokeStyle = "rgba(255,140,60," + (1 - ph).toFixed(3) + ")"; uctx.stroke(); }
-      CMBHITS.push({ x: lx, y: ly, r: Math.max(lw, lh) / 2 + 4, list });
+    const kindOf = list => list.some(b => b.k & 8) ? "nuke" : list.some(b => b.k & 4) ? "sweep" : list.some(b => b.air) ? "air" : list.some(b => b.k & 1) ? "ranged" : "melee";
+    const GL = { nuke: "☢", sweep: "✈⚔", air: "✈", ranged: "➶", melee: "⚔" };
+    const fs = Math.max(10, Math.min(15, R * 0.32));
+    const wrapX = (x1, x2) => Math.abs(x2 - x1) > W * PK.w / 2 ? x1 + (x2 > x1 ? W * PK.w : -W * PK.w) : x1;
+    // линии ударов в клетку tk (по одной на «откуда»), alpha — прозрачность
+    const lines = (tk, list, alpha) => {
+      const B = centerOf(kx(tk), ky(tk)), from = new Map();
+      for (const b of list) { if (b.ax < 0 || b.ax === tk) continue; if (!from.has(b.ax)) from.set(b.ax, []); from.get(b.ax).push(b); }
+      let lane = 0;
+      for (const [ak, fl] of from) {
+        const b = fl[0], A = centerOf(kx(ak), ky(ak));
+        let x1 = ox + A[0], y1 = oy + A[1]; const x2 = ox + B[0], y2 = oy + B[1]; x1 = wrapX(x1, x2);
+        const dxv = x2 - x1, dyv = y2 - y1, len = Math.hypot(dxv, dyv) || 1, nx = -dyv / len, ny = dxv / len, off = (lane++ % 3 - 1) * R * 0.18;
+        const col = colorOf.get(b.ap) || "#f2d06b", bend = b.air ? Math.min(R * 1.6, len * 0.3) : 0;
+        const sx = x1 + nx * off, sy = y1 + ny * off, ex = x2 + nx * off, ey = y2 + ny * off, mx = (sx + ex) / 2 + nx * bend, my = (sy + ey) / 2 + ny * bend;
+        const trace = () => { uctx.beginPath(); uctx.moveTo(sx, sy); if (bend) uctx.quadraticCurveTo(mx, my, ex, ey); else uctx.lineTo(ex, ey); };
+        uctx.globalAlpha = alpha; uctx.lineCap = "round";
+        uctx.setLineDash(b.air || (b.k & 1) ? [Math.max(4, R * 0.18), Math.max(3, R * 0.12)] : []);
+        trace(); uctx.lineWidth = Math.max(3, R * 0.13); uctx.strokeStyle = "rgba(11,17,25,.85)"; uctx.stroke();
+        trace(); uctx.lineWidth = Math.max(1.6, R * 0.075); uctx.strokeStyle = col; uctx.stroke(); uctx.setLineDash([]);
+        const ux0 = bend ? ex - mx : dxv, uy0 = bend ? ey - my : dyv, el = Math.hypot(ux0, uy0) || 1, ux = ux0 / el, uy = uy0 / el, ah = Math.max(7, R * 0.28), tx = ex - ux * R * 0.3, ty = ey - uy * R * 0.3;
+        uctx.beginPath(); uctx.moveTo(tx, ty); uctx.lineTo(tx - ux * ah - uy * ah * 0.55, ty - uy * ah + ux * ah * 0.55); uctx.lineTo(tx - ux * ah + uy * ah * 0.55, ty - uy * ah - ux * ah * 0.55); uctx.closePath();
+        uctx.fillStyle = col; uctx.fill(); uctx.lineWidth = 1.2; uctx.strokeStyle = "#0b1119"; uctx.stroke();
+        // подпись у начала линии: кто, ×N, урон
+        const dd = fl.reduce((q, e) => q + Math.max(0, e.dd), 0), lab = GL[kindOf(fl)] + (fl.length > 1 ? "×" + fl.length : "") + (dd > 0 ? " −" + dd : "");
+        const lx = bend ? (sx + 2 * mx + ex) / 4 : sx + dxv * 0.3, ly = bend ? (sy + 2 * my + ey) / 4 : sy + dyv * 0.3;
+        uctx.font = "800 " + Math.round(fs * 0.9) + "px system-ui,sans-serif"; const lw = uctx.measureText(lab).width + 8, lh = fs + 4;
+        uctx.fillStyle = "#0b1119e6"; uctx.beginPath(); uctx.roundRect ? uctx.roundRect(lx - lw / 2, ly - lh / 2, lw, lh, 5) : uctx.rect(lx - lw / 2, ly - lh / 2, lw, lh); uctx.fill();
+        uctx.lineWidth = 1.5; uctx.strokeStyle = col; uctx.stroke();
+        uctx.fillStyle = "#f3f7fb"; uctx.textAlign = "center"; uctx.textBaseline = "middle"; uctx.fillText(lab, lx, ly + 0.5);
+      }
+      if (list.some(b => b.k & 8)) { uctx.globalAlpha = alpha; uctx.beginPath(); uctx.arc(ox + B[0], oy + B[1], R * 2.6, 0, 7); uctx.fillStyle = "rgba(255,170,40,.16)"; uctx.fill(); uctx.lineWidth = 3; uctx.strokeStyle = "rgba(255,200,60,.9)"; uctx.stroke(); }
       uctx.globalAlpha = 1;
+    };
+    let gi = 0; const MPLACED = [];
+    // сначала цели с большим числом ударов — им достаются лучшие места
+    const order = [...byT].sort((p, q) => q[1].length - p[1].length);
+    const firstIdx = new Map([...byT.keys()].map((k, i) => [k, i]));
+    const seq = CSEQ && CSEQ.i === si ? CSEQ : null, el = seq ? cseqEl() : -1, seqOn = seq && el < seq.total;
+    if (a && !seqOn && timer && speed > 0) { /* переход юнитов — удары ещё впереди */ }
+    const started = new Map(), liveG = [];
+    if (seqOn) {
+      const cur = new Set(); let cg = -1;
+      seq.groups.forEach((g, j) => { if (el >= g.start) { const arr = started.get(g.tk) || []; started.set(g.tk, arr.concat(g.list)); if (el < g.end) { liveG.push(g); for (const b of g.list) cur.add(b); cg = j; } } });
+      if (cg !== CURG) { CURG = cg; CURB = cur; renderLog(); }
+      if (!seq.paused) unitsDraw();
+    } else if (CURG !== -1) { CURG = -1; CURB = new Set(); renderLog(); }
+    for (const [tk, list0] of order) {
+      gi++;
+      if (seqOn && el < 0) continue;
+      const list = seqOn ? started.get(tk) : (a && timer && speed > 0 && COMBAT ? null : list0);
+      if (!list || !list.length) continue;                     // удар ещё не настал
+      const live = false, fade = 0;
+      const B = centerOf(kx(tk), ky(tk)), city = citiesFor(si).has(tk);
+      // место маркера: правый верх клетки (у города — выше), иначе другие углы — чтобы маркеры не наезжали друг на друга
+      const dd0 = list.reduce((q, e) => q + Math.max(0, e.dd), 0), lab0 = GL[kindOf(list)] + (list.length > 1 ? "×" + list.length : "") + (dd0 > 0 ? " −" + dd0 : "");
+      uctx.font = "800 " + Math.round(fs) + "px system-ui,sans-serif"; const lw0 = uctx.measureText(lab0).width + 10 + fs, lh0 = fs + 6;
+      const cand = (city ? [[0.5, -1.0], [-0.5, -1.0], [0, -1.35], [0.95, -0.5], [-0.95, -0.5]] : [[0.5, -0.62], [-0.5, -0.62], [0.55, 0.2], [-0.55, 0.2], [0, -1.0], [0, 0.62]])
+        .map(([fx, fy]) => [ox + B[0] + fx * R, oy + B[1] + fy * R]);
+      const hit = (x, y) => MPLACED.some(q => Math.abs(q[0] - x) * 2 < q[2] + lw0 && Math.abs(q[1] - y) * 2 < q[3] + lh0);
+      const pos = cand.find(([x, y]) => !hit(x, y)) || cand[0];
+      MPLACED.push([pos[0], pos[1], lw0, lh0]);
+      const cx = pos[0], cy = pos[1];
+      if (cx < -60 || cx > vw + 60 || cy < -60 || cy > vh + 60) { if (!live && !(sel && list.some(inSel)) && !show.lines) continue; }
+      const picked = sel && list.some(inSel);
+      if (live) lines(tk, list, Math.max(0.15, fade));
+      else if (show.lines || picked) lines(tk, sel && sel.kind !== "target" ? list.filter(inSel) : list, 1);
+      // маркер цели
+      const dd = list.reduce((q, e) => q + Math.max(0, e.dd), 0), kind = kindOf(list);
+      const lab = GL[kind] + (list.length > 1 ? "×" + list.length : "") + (dd > 0 ? " −" + dd : "");
+      uctx.globalAlpha = sel && !picked ? 0.35 : 1;
+      uctx.font = "800 " + Math.round(fs) + "px system-ui,sans-serif"; const lw = uctx.measureText(lab).width + 10, lh = fs + 6;
+      uctx.fillStyle = kind === "nuke" ? "#3a2a08ee" : "#0b1119e6"; uctx.beginPath(); uctx.roundRect ? uctx.roundRect(cx - lw / 2, cy - lh / 2, lw, lh, lh / 2) : uctx.rect(cx - lw / 2, cy - lh / 2, lw, lh); uctx.fill();
+      uctx.lineWidth = picked ? 2.5 : 1.5; uctx.strokeStyle = picked ? "#f2d06b" : (colorOf.get(list[0].ap) || "#f2d06b"); uctx.stroke();
+      uctx.fillStyle = kind === "nuke" ? "#ffd84a" : "#f3f7fb"; uctx.textAlign = "center"; uctx.textBaseline = "middle"; uctx.fillText(lab, cx, cy + 0.5);
+      // итог: взят город — флаг; погиб защитник — крест (у маркера)
+      const ex = cx + lw / 2 + fs * 0.55;
+      if (list.some(e => e.k & 256)) { uctx.font = "800 " + Math.round(fs * 1.25) + "px system-ui,sans-serif"; uctx.lineWidth = 3; uctx.strokeStyle = "#0b1119"; uctx.strokeText("⚑", ex, cy); uctx.fillStyle = colorOf.get(list.find(e => e.k & 256).ap) || "#f2d06b"; uctx.fillText("⚑", ex, cy); }
+      else if (list.some(e => (e.k & 64) && !(e.k & 32))) { const m = fs * 0.38; uctx.lineWidth = 3.5; uctx.strokeStyle = "#0b1119"; uctx.beginPath(); uctx.moveTo(ex - m, cy - m); uctx.lineTo(ex + m, cy + m); uctx.moveTo(ex + m, cy - m); uctx.lineTo(ex - m, cy + m); uctx.stroke(); uctx.lineWidth = 2; uctx.strokeStyle = "#ff4d3d"; uctx.stroke(); }
+      if (live) { uctx.globalAlpha = fade; uctx.beginPath(); uctx.arc(ox + B[0], oy + B[1], R * (0.3 + 1.1 * (1 - fade)), 0, 7); uctx.lineWidth = 2.5; uctx.strokeStyle = "rgba(255,140,60,1)"; uctx.stroke(); }
+      uctx.globalAlpha = 1;
+      CMBHITS.push({ x: cx, y: cy, r: Math.max(lw, lh) / 2 + 4, list, tk });
     }
-    UPERF.combats = cm.length; UPERF.combatGroups = N;
+    if (seqOn) for (const g of liveG) {
+      const ph = Math.max(0, Math.min(1, (el - g.start) / (g.end - g.start)));
+      const grow = Math.min(1, ph / 0.3), fadeA = ph < 0.62 ? 1 : Math.max(0, 1 - (ph - 0.62) / 0.38);
+      // линия «растёт» от атакующего: рисуем полную с прозрачностью роста (проще и без рывков)
+      lines(g.tk, g.list, Math.max(0.05, Math.min(grow, fadeA)));
+      if (ph >= 0.3) {
+        const B = centerOf(kx(g.tk), ky(g.tk)), bx = ox + B[0], by = oy + B[1], q = Math.min(1, (ph - 0.3) / 0.4);
+        uctx.globalAlpha = 1 - q; uctx.beginPath(); uctx.arc(bx, by, R * (0.3 + 1.0 * q), 0, 7); uctx.lineWidth = 3; uctx.strokeStyle = "rgb(255,140,60)"; uctx.stroke();
+        const dd = g.list.reduce((t, e) => t + Math.max(0, e.dd), 0);
+        if (dd > 0) { uctx.globalAlpha = fadeA; uctx.font = "800 " + Math.round(fs * 1.3) + "px system-ui,sans-serif"; uctx.textAlign = "center"; uctx.textBaseline = "middle";
+          const ty = by - R * 0.35 - R * 0.5 * q; uctx.lineWidth = 4; uctx.strokeStyle = "#0b1119"; uctx.strokeText("−" + dd, bx, ty); uctx.fillStyle = "#ff6b5e"; uctx.fillText("−" + dd, bx, ty); }
+        uctx.globalAlpha = 1;
+      }
+    }
+    UPERF.combats = cm.length; UPERF.combatGroups = G;
   }
   // подсветка клетки, выбранной в журнале
   if (FOCUSK && performance.now() - FOCUSK.t < 2500) {
@@ -2038,7 +2149,10 @@ function unitsFrame(now) {
 function unitsOnTurn(prev) {
   if (!show.units) { anim = null; unitsDraw(); return false; }
   const live = timer ? speed > 0 : true;
-  if (Math.abs(si - prev) === 1 && smooth && live) {
+  const rp = timer && rtMode && hasRT() && si === prev + 1 ? rtPlan(si) : null;
+  if (rp) {                                                   // реальное время: ход длится, сколько шёл (÷ rtX)
+    anim = { from: prev, to: si, t0: performance.now(), dur: rp.V / rtX + 900, rt: rp };
+  } else if (Math.abs(si - prev) === 1 && smooth && live) {
     const dur = timer ? Math.min(speed * 1000 * 0.72, 3200) : 520;
     anim = { from: prev, to: si, t0: performance.now(), dur };
   } else anim = null;
@@ -2059,6 +2173,8 @@ function unitAt(ev) {
 // ---------------------------------------------------------------- шаг (ход)
 function setStep(i) {
   const prev = si;
+  { const el2 = $("rtClock"); if (el2) { el2.hidden = true; } }
+  if (i !== si) { CSEL = null; CSEQ = null; CURB = new Set(); CURG = -1; }
   si = Math.max(0, Math.min(S.length - 1, i | 0));
   const defer = unitsOnTurn(prev);
   const gapTxt = si > 0 && turnOf(si) - turnOf(si - 1) > 1 ? "между ходами " + turnOf(si - 1) + " и " + turnOf(si) + ": сейвов нет, движение — прямой от сейва к сейву" : "";
@@ -2078,6 +2194,8 @@ const PLAY = "M7 5 L19 12 L7 19 Z", PAUSE = "M7 5 H10.5 V19 H7 Z M13.5 5 H17 V19
 function stop() {
   if (!timer) return;
   clearTimeout(timer); timer = null;
+  if (CSEQ && !CSEQ.paused) { CSEQ.el = Math.max(0, performance.now() - CSEQ.t0); CSEQ.paused = true; unitsDraw(); }
+  if (anim && anim.rt && anim.paused == null) { anim.paused = performance.now(); unitsDraw(); }
   $("playIco").setAttribute("d", PLAY);
   playBtn.setAttribute("aria-label", "Смотреть"); playBtn.title = "Смотреть по ходам (пробел)";
   saveHash();
@@ -2089,11 +2207,23 @@ function play() {
   playBtn.setAttribute("aria-label", "Пауза"); playBtn.title = "Пауза (пробел)";
   const per = () => speed > 0 ? speed * 1000 : 200;
   let due = performance.now() + 200;
+  // продолжение после паузы посреди ударов: досмотреть оставшиеся
+  let rest = 0;
+  if (anim && anim.rt && anim.paused != null) { const done = anim.paused - anim.t0; anim.t0 = performance.now() - done; anim.paused = null; rest = Math.max(rest, anim.dur - done + 500); }
+  if (CSEQ && CSEQ.paused && CSEQ.i === si) { CSEQ.t0 = performance.now() - CSEQ.el; CSEQ.paused = false; rest = Math.max(rest, CSEQ.total - CSEQ.el + 400); }
+  if (rest) { due = performance.now() + rest; unitsDraw(); }
   const tick = () => {
     if (!timer) return;
     if (si >= S.length - 1) { stop(); return; }
     setStep(si + 1);
-    due = Math.max(due + per(), performance.now() + 10);
+    if (anim && anim.rt) {                                    // реальное время: удары в свои секунды, ход — сколько шёл
+      const fight = cseqStart(si, 0, anim.rt);
+      due = performance.now() + Math.max(anim.dur, fight) + 500;
+    } else {
+      // удары хода — после перехода юнитов; ход не обрезается общим таймером
+      const mv = anim ? anim.dur : 0, fight = speed > 0 ? cseqStart(si, mv + 150) : 0;
+      due = Math.max(due + per(), performance.now() + (fight ? mv + 150 + fight + 450 : 10));
+    }
     timer = setTimeout(tick, due - performance.now());
   };
   timer = setTimeout(tick, due - performance.now());
@@ -2451,6 +2581,10 @@ sc.addEventListener("scroll", () => { tip.hidden = true; viewDirty = true; units
 sc.addEventListener("click", ev => {
   if (dragged) { dragged = false; return; }
   if (!PK) return;
+  { const sr1 = sc.getBoundingClientRect(), mx1 = ev.clientX - sr1.left, my1 = ev.clientY - sr1.top;
+    const h1 = CMBHITS.find(h => (h.x - mx1) ** 2 + (h.y - my1) ** 2 <= h.r * h.r);
+    if (h1) { CSEL = CSEL && CSEL.kind === "target" && CSEL.k === h1.tk ? null : { kind: "target", k: h1.tk }; unitsDraw(); return; }
+    if (CSEL) { CSEL = null; unitsDraw(); } }
   const ukk = unitAt(ev);
   if (ukk) {
     // во время перехода хода по уходящему юниту тоже можно попасть — его нет на текущем шаге
@@ -2476,7 +2610,12 @@ sc.addEventListener("mousemove", ev => {
     if (y + th > innerHeight - 6) y = Math.max(6, ev.clientY - th - 10);
     tip.style.left = x + "px"; tip.style.top = y + "px";
   };
-  if (hitC) { sc.style.cursor = "pointer"; tip.innerHTML = hitC.list.slice(0, 8).map(b => combatText(si, b)).join("<br>") + (hitC.list.length > 8 ? "<br><span class='l'>и ещё " + (hitC.list.length - 8) + "</span>" : ""); place(); return; }
+  const want = hitC ? { kind: "target", k: hitC.tk } : (() => { if (!COMBAT || !show.units) return null; const k0 = tileAt(ev); return k0 >= 0 && combatsView(si).some(b => b.ax === k0 && b.dx !== k0) ? { kind: "src", k: k0 } : null; })();
+  if (JSON.stringify(want) !== JSON.stringify(CHOVER)) { CHOVER = want; unitsDraw(); }
+  if (hitC) {
+    const bases = new Map(); for (const b of hitC.list) if (b.air && b.ax >= 0) { const c0 = cityAtPlot(si, b.ax), nm = c0 ? c0.n : b.ax % PK.w + "," + Math.floor(b.ax / PK.w); bases.set(nm, (bases.get(nm) || 0) + 1); }
+    const head = [...bases].map(([nm, n]) => "✈ из " + esc(nm) + (n > 1 ? " ×" + n : "")).join(" · ");
+    sc.style.cursor = "pointer"; tip.innerHTML = (head ? "<b>" + head + "</b><br>" : "") + hitC.list.slice(0, 8).map(b => combatText(si, b)).join("<br>") + (hitC.list.length > 8 ? "<br><span class='l'>и ещё " + (hitC.list.length - 8) + "</span>" : ""); place(); return; }
   if (hitA) {
     const ai = airAt(si).get(hitA.air), cnt = new Map(); for (const nm of ai.list) cnt.set(nm, (cnt.get(nm) || 0) + 1);
     const c = cityAtPlot(si, hitA.air);
@@ -2496,7 +2635,7 @@ sc.addEventListener("mousemove", ev => {
     (viewTeam() >= 0 && v.rev && !v.vis ? "<br><span class='l'>в тумане: как видели в последний раз</span>" : "") + yieldTip(k, v);
   place();
 });
-sc.addEventListener("mouseleave", () => { tip.hidden = true; });
+sc.addEventListener("mouseleave", () => { tip.hidden = true; if (CHOVER) { CHOVER = null; unitsDraw(); } });
 
 function togglePop(id, btnId) {
   const el = $(id), open = el.hidden;
@@ -2518,6 +2657,17 @@ $("zoomIn").addEventListener("click", () => setZoom(zoom * 1.35));
 $("zoomOut").addEventListener("click", () => setZoom(zoom / 1.35));
 $("layersBtn").addEventListener("click", () => togglePop("layersPop", "layersBtn"));
 $("moreBtn").addEventListener("click", () => togglePop("morePop", "moreBtn"));
+const rtUi = () => {
+  const nt = $("rtNote"); if (nt) nt.textContent = PK && !hasRT() ? "Для этой партии пока нет времени событий — ход идёт по обычному таймеру (секунд на ход)." : "";
+  for (const b of document.querySelectorAll("[data-rtx]")) b.setAttribute("aria-checked", rtMode && +b.dataset.rtx === rtX ? "true" : "false");
+  const f = document.querySelector("[data-rtoff]"); if (f) f.setAttribute("aria-checked", rtMode ? "false" : "true");
+};
+for (const b of document.querySelectorAll("[data-rtx]")) b.addEventListener("click", () => { rtMode = true; rtX = +b.dataset.rtx; try { localStorage.setItem("rf-rt", "1"); localStorage.setItem("rf-rtx", String(rtX)); } catch (e) { /* не страшно */ } rtUi(); });
+{ const f = document.querySelector("[data-rtoff]"); if (f) f.addEventListener("click", () => { rtMode = false; try { localStorage.setItem("rf-rt", "0"); } catch (e) { /* не страшно */ } rtUi(); }); }
+rtUi();
+const cspeedUi = () => { for (const b of document.querySelectorAll("[data-cspeed]")) b.setAttribute("aria-checked", b.dataset.cspeed === cspeed ? "true" : "false"); };
+for (const b of document.querySelectorAll("[data-cspeed]")) b.addEventListener("click", () => { cspeed = b.dataset.cspeed; try { localStorage.setItem("rf-cspeed", cspeed); } catch (e) { /* не страшно */ } cspeedUi(); });
+cspeedUi();
 $("fitBtn").addEventListener("click", () => { if (zoom > 1.0001) { setZoom(1, null, null, true); fitUi(); } else closeUp(); });
 $("lodHint").addEventListener("click", () => setZoom(zoom * 2));
 $("helpBtn").addEventListener("click", () => togglePop("helpPop", "helpBtn"));
@@ -2647,7 +2797,7 @@ async function openMatch(i, t, v) {
   setupPlayers(); findLakes(); parseCombats(); sprites.clear(); LOGC.clear(); HR_CACHE.clear(); JTECH = null;
   loadJournalTechs(PK.key);
   slider.max = S.length - 1;
-  fillView(); metaText(); buildTimeline();
+  fillView(); metaText(); buildTimeline(); rtUi();
   zoom = 1; resize();
   if (sc.clientWidth < 700 && sc.clientHeight > sc.clientWidth) {
     const byH = (sc.clientHeight - 8) / (1.5 * (PK.h - 1) + 2);
@@ -2746,8 +2896,10 @@ $("logMin").addEventListener("click", () => {
 $("logList").addEventListener("click", ev => {
   const row = ev.target.closest(".lr.go"); if (!row || !PK) return;
   const k = +row.dataset.k, st = +row.dataset.st;
+  const b = row.dataset.ci !== "" ? LOGB[+row.dataset.ci] : null;
   if (st !== si) setStep(st);
   if (drawn() && zoom <= 1.0001) setZoom(1e9);
+  CSEL = b ? { kind: "one", list: [b] } : null;
   centerOn(k); FOCUSK = { k, t: performance.now() }; unitsDraw();
 });
 $("logTabs").addEventListener("click", ev => {
@@ -2760,7 +2912,7 @@ if (style === "drawn") loadArt();
 if (style === "sv") loadSV();
 window.__rf = { get PK() { return PK; }, get S() { return S; }, get si() { return si; }, setStep: i => setStep(i), setView: p => setView(p), play: () => play(), stop: () => stop(),
   get view() { return view; }, perf: UPERF, unitsOf: i => unitsOf(i), setStyle: v => setStyle(v), get artMiss() { return [...ART.miss]; },
-  setZoom: (z, x, y) => setZoom(z, x, y), combats: i => combatsView(i == null ? si : i), air: i => [...airAt(i == null ? si : i)], cell: (i, k) => cellView(i, k), get jtech() { return JTECH_STATE; },
+  setZoom: (z, x, y) => setZoom(z, x, y), rtPlan: i => { const p = rtPlan(i == null ? si : i); return p ? { L: p.L, V: p.V, moved: p.unitT.size, timed: [...p.unitT.values()].filter(v => v > 0).length, realMs: Math.round(p.V / rtX + 900) } : null; }, setRT: (on, x) => { rtMode = !!on; if (x) rtX = x; rtUi(); }, cseq: (i, m) => { const p = cseqPlan(i == null ? si : i, m); return { groups: p.groups.length, total: p.total }; }, get cseqState() { return CSEQ ? { el: Math.round(cseqEl()), total: CSEQ.total, paused: CSEQ.paused, cur: CURG } : null; }, selectTarget: k => { CSEL = k == null ? null : { kind: "target", k }; unitsDraw(); }, cmbHits: () => CMBHITS.map(h => [h.tk, h.list.length, Math.round(h.x), Math.round(h.y)]), combats: i => combatsView(i == null ? si : i), air: i => [...airAt(i == null ? si : i)], cell: (i, k) => cellView(i, k), get jtech() { return JTECH_STATE; },
   focus: (x, y) => { const c = centerOf(x, y), r = stage.getBoundingClientRect(), q = sc.getBoundingClientRect(); sc.scrollLeft += r.left + c[0] - (q.left + q.width / 2); sc.scrollTop += r.top + c[1] - (q.top + q.height / 2); unitsDraw(); },
   openCity: k => openCard({ kind: "city", k }),
   openUnit: kk => openCard({ kind: "unit", kk, last: S[si].U.get(kk) || (si > 0 && S[si - 1].U.get(kk)) }) };

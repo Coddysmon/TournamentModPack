@@ -139,3 +139,7 @@
 .rf-ylegend span{display:inline-flex;align-items:center;gap:4px}
 .rf-log-list .lr.go{cursor:pointer}
 .rf-log-list .lr.go:hover{background:rgba(255,255,255,.06)}
+.rf-log-list .lr.cur{opacity:1;background:rgba(242,208,107,.18);box-shadow:inset 3px 0 0 #f2d06b}
+.rp:not([data-flags~="combat"]) [data-flag="combat"]{display:none}
+.rf-rtclock{flex:none;font:700 13px/1 var(--sans);font-variant-numeric:tabular-nums;color:#f2d06b;padding:0 6px}
+.rf-rtclock[hidden]{display:none}

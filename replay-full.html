@@ -9,7 +9,7 @@
 <meta name="theme-color" content="#0D131A">
 <link rel="stylesheet" href="assets/site.css">
 <link rel="stylesheet" href="assets/replay.css">
-<link rel="stylesheet" href="assets/replay-full.css?v=2bcec973c5">
+<link rel="stylesheet" href="assets/replay-full.css?v=a011013ae7">
 <link rel="alternate" hreflang="ru" href="replay-full.html">
 <script src="assets/lang.js"></script>
 </head>
@@ -59,7 +59,7 @@
     </div>
   </div>
 
-<div class="rp rf" id="rp" data-flags="">
+<div class="rp rf" id="rp" data-flags="combat">
   <div class="rp-bar">
     <h1 class="rp-brand">Повтор партии</h1>
     <select id="matchPick" class="rp-match" aria-label="Партия"></select>
@@ -68,6 +68,7 @@
         <svg viewBox="0 0 24 24" aria-hidden="true"><path id="playIco" d="M7 5 L19 12 L7 19 Z"/></svg>
       </button>
       <span class="rp-turn" id="turnLabel">ход 0</span>
+      <span class="rf-rtclock" id="rtClock" hidden title="Время хода, как шёл таймер в игре: прошло / длился"></span>
       <input type="range" id="slider" min="0" value="0" step="1" aria-label="Ход партии">
     </div>
     <label class="rf-view" title="Туман войны глазами игрока: что его команда разведала и что видит на этом ходу">
@@ -119,6 +120,27 @@
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6 L14 12 L6 18 Z M17 6 V18"/></svg>
       </button>
         </div>
+        <div class="rf-rt" data-flag="combat">
+        <h3>Ход — в реальном времени</h3>
+        <div class="rp-seg" role="radiogroup" aria-label="Скорость реального времени">
+          <button type="button" role="radio" data-rtx="1" aria-checked="false" title="как в игре, по секундам">×1</button>
+          <button type="button" role="radio" data-rtx="2" aria-checked="false">×2</button>
+          <button type="button" role="radio" data-rtx="4" aria-checked="true">×4</button>
+          <button type="button" role="radio" data-rtx="8" aria-checked="false">×8</button>
+          <button type="button" role="radio" data-rtx="16" aria-checked="false">×16</button>
+          <button type="button" role="radio" data-rtoff aria-checked="false" title="ход за фиксированное время (секунд на ход выше)">выкл.</button>
+        </div>
+        <p class="rp-meta">Юниты едут в ту секунду хода, когда игрок отдал приказ, бои — в свою секунду. Паузы больше 10 с без действий сжимаются до 3 с. Часы рядом с номером хода — прошло / сколько шёл ход.</p>
+        <p class="rp-meta" id="rtNote" style="color:#f2d06b"></p>
+        </div>
+        <div class="rf-cspeed" data-flag="combat">
+        <h3>Скорость боёв</h3>
+        <div class="rp-seg" role="radiogroup" aria-label="Скорость боёв при проигрывании">
+          <button type="button" role="radio" data-cspeed="slow" aria-checked="false" title="≈1,2 с на удар">медленно</button>
+          <button type="button" role="radio" data-cspeed="normal" aria-checked="true" title="≈0,75 с на удар">обычно</button>
+          <button type="button" role="radio" data-cspeed="fast" aria-checked="false" title="≈0,4 с на удар">быстро</button>
+        </div>
+        </div>
         <h3>Карта и панель</h3>
         <div class="rf-more-row">
       <button class="rp-btn" id="layersBtn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="layersPop" title="Что рисовать на карте">
@@ -142,6 +164,7 @@
         <label class="rp-layer"><input type="checkbox" data-layer="log" checked><span>Журнал событий<small>под картой: ходы юнитов, бои, стройка, города, дипломатия — с вкладками</small></span></label>
         <label class="rp-layer"><input type="checkbox" data-layer="worked" checked><span>Обрабатываемые клетки<small>зелёная шестерня — на клетке работает житель города (как в окне города Civ5); жёлтая рамка — игрок переключил клетку на этом ходу. «Смотреть как» — только его города. По журналу игроков, иначе по сейву</small></span></label>
         <label class="rp-layer"><input type="checkbox" data-layer="yields" checked><span>Выход клеток<small>значки внизу клетки: еда, производство, золото, наука, культура, вера — как в сейве игры <b id="yieldsNote"></b></small></span></label>
+        <label class="rp-layer"><input type="checkbox" data-layer="lines"><span>Линии ударов всегда<small>выключено — на клетке-цели только маркер боя; линии видны при наведении или нажатии на маркер, на атакующем, по строке журнала и при проигрывании</small></span></label>
         <label class="rp-layer"><input type="checkbox" data-layer="heat"><span>Тепловая карта боёв<small id="heatNote">где юниты теряли здоровье и гибли — с начала записи по этот ход</small></span></label>
       </div>
 
@@ -246,7 +269,7 @@
 </div><!-- /shell -->
 
 <script src="assets/site.js"></script>
-<script src="assets/replay-full.js?v=7a9f996518"></script>
+<script src="assets/replay-full.js?v=93f668feab"></script>
 <script>NOVA.fillCommon();</script>
 </body>
 </html>
