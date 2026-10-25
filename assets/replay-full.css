@@ -137,3 +137,5 @@
 .rf-yi{display:inline-block;width:16px;height:16px;vertical-align:-3px;background:url(../assets/replay/yields.png) 0 0/600% 100% no-repeat}
 .rf-ylegend{display:flex;flex-wrap:wrap;gap:4px 12px;grid-column:1/-1}
 .rf-ylegend span{display:inline-flex;align-items:center;gap:4px}
+.rf-log-list .lr.go{cursor:pointer}
+.rf-log-list .lr.go:hover{background:rgba(255,255,255,.06)}

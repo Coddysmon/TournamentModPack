@@ -695,12 +695,20 @@ let style = "drawn";
 try { const v = localStorage.getItem("rf-style"); if (v === "flat" || v === "drawn" || v === "sv") style = v; } catch (e) { /* без хранилища — по умолчанию */ }
 const ART = { img: null, map: null, lc: null, ready: false, failed: false, tiles: new Map(), tilesR: 0, tint: new Map(), miss: new Set() };
 const drawn = () => style === "drawn" && ART.ready;
+// Атлас: исходник (пиксель-арт 1×) или заранее увеличенный в 4× (art/upscale.py: xbr, epx…) — тогда рисуется
+// со сглаживанием на любом масштабе. Выбор: ?art=<вариант> (для сравнения), по умолчанию ART_DEFAULT.
+const ART_DEFAULT = "xbr_soft";                            // решение владельца 25.10: «делай как будет лучше» — xBR + мягкий контур
+const ART_VAR = (() => { const m = /[?&#]art=([a-z_]+)/.exec(location.search + "&" + location.hash); return m ? (m[1] === "src" ? "" : m[1]) : ART_DEFAULT; })();
+const ART_FILE = ART_VAR ? "unciv-art-" + ART_VAR + ".webp" : "unciv-art.png";
+const ARTK = ART_VAR ? 4 : 1;                                // во сколько раз атлас больше координат в unciv-art.json
+const ARTS = r => [r[0] * ARTK, r[1] * ARTK, r[2] * ARTK, r[3] * ARTK];
+const SMOOTH = ARTK > 1;                                     // увеличенный атлас — со сглаживанием
 function loadArt() {
   if (ART.img || ART.failed) return;
   const img = new Image();
   ART.img = img;
   Promise.all([
-    new Promise((ok, bad) => { img.onload = ok; img.onerror = () => bad(new Error("unciv-art.png")); img.src = "assets/replay/unciv-art.png"; }),
+    new Promise((ok, bad) => { img.onload = ok; img.onerror = () => bad(new Error("unciv-art")); img.src = "assets/replay/" + ART_FILE; }),
     fetch("data/unciv-art.json").then(r => { if (!r.ok) throw new Error("unciv-art.json → " + r.status); return r.json(); }),
   ]).then(([, map]) => {
     ART.map = map; ART.lc = new Map();
@@ -793,14 +801,14 @@ function artTile(key, cap) {
   const s = artScale(), dw = Math.round(r[2] * s), dh = Math.round(r[3] * s), extra = Math.max(0, dh - Math.round(28 * s));
   const Wd = W * D, w = Math.ceil(Wd) + 2, h = Math.ceil(2 * Rd + extra) + 2, cx = Math.round(w / 2), cy = h - Math.round(Rd) - 1;
   c = document.createElement("canvas"); c.width = w; c.height = h;
-  const g = c.getContext("2d"); g.imageSmoothingEnabled = s < 1;            // целое увеличение — без сглаживания
+  const g = c.getContext("2d"); g.imageSmoothingEnabled = SMOOTH || s < 1; g.imageSmoothingQuality = "high";   // 1×-атлас при целом увеличении — без сглаживания
   g.beginPath();
   for (let i = 0; i < 6; i++) { const a = Math.PI / 180 * (60 * i - 90), x = cx + (Rd + 0.7) * Math.cos(a), y = cy + (Rd + 0.7) * Math.sin(a); i ? g.lineTo(x, y) : g.moveTo(x, y); }
   g.closePath();
   if (cap && extra > 0) g.rect(cx - Wd / 2, 0, Wd, cy - Rd / 2 + 1);
   g.clip("nonzero");
   g.filter = "saturate(0.72) brightness(0.96)";            // местность приглушена (ближе к образцу ffaciv)
-  g.drawImage(ART.img, r[0], r[1], r[2], r[3], cx - Math.round(dw / 2), cy + Math.round(14 * s) - dh, dw, dh);
+  g.drawImage(ART.img, ...ARTS(r), cx - Math.round(dw / 2), cy + Math.round(14 * s) - dh, dw, dh);
   g.filter = "none";
   c._cx = cx; c._cy = cy;
   ART.tiles.set(ck, c);
@@ -818,7 +826,7 @@ function artOver(g, key, cx, cy, k = 1, alpha = 1) {
   if (!r) return false;
   const D = DPR(), s = artScale() * k, dw = Math.round(r[2] * s), dh = Math.round(r[3] * s);
   g.globalAlpha = alpha;
-  g.drawImage(ART.img, r[0], r[1], r[2], r[3], Math.round(cx * D - dw / 2) / D, Math.round(cy * D + 14 * s - dh) / D, dw / D, dh / D);
+  g.drawImage(ART.img, ...ARTS(r), Math.round(cx * D - dw / 2) / D, Math.round(cy * D + 14 * s - dh) / D, dw / D, dh / D);
   g.globalAlpha = 1;
   return true;
 }
@@ -832,7 +840,7 @@ function drawMapArt() {
   for (let k = 0; k < n; k++) V[k] = cellView(si, k);
   mapTransform();                                           // рисуем в точках CSS карты, холст — в точках экрана
   ctx.fillStyle = "#05080c"; ctx.fillRect(0, 0, cv._cw, cv._ch);
-  ctx.imageSmoothingEnabled = artScale() < 1; ctx.lineJoin = "round";
+  ctx.imageSmoothingEnabled = SMOOTH || artScale() < 1; ctx.imageSmoothingQuality = "high"; ctx.lineJoin = "round";
   const LOD = lod();
   // 1. основа клетки (готовая комбинация с улучшением — тоже основа)
   const cities = citiesFor(si), LAY = new Array(n), IMPL = new Array(n);
@@ -900,7 +908,7 @@ function drawMapArt() {
       for (const o of L.over) {
         if (typeof o === "string") { putTile(o, c[0], c[1], true); continue; }
         const ic = LOD >= 2 && iconRect("imp", o.icon), s2 = R * 0.5;   // нет рисунка — игровой значок улучшения (только близко)
-        if (ic) { ctx.imageSmoothingEnabled = true; ctx.drawImage(SHEETS.imp, ic.x, 0, ic.w, ic.h, c[0] - s2 / 2, c[1] - s2 / 2, s2, s2); ctx.imageSmoothingEnabled = false; }
+        if (ic) { ctx.imageSmoothingEnabled = true; ctx.drawImage(SHEETS.imp, ic.x, 0, ic.w, ic.h, c[0] - s2 / 2, c[1] - s2 / 2, s2, s2); ctx.imageSmoothingEnabled = SMOOTH; }
       }
       const IL = IMPL[k];
       if (IL) {                                                    // ×2: улучшение приглушённо
@@ -925,7 +933,7 @@ function drawMapArt() {
       ctx.beginPath(); ctx.arc(px, py, s / 2 + 1.2, 0, 7); ctx.fillStyle = "#f3efe4"; ctx.fill();
       ctx.lineWidth = 1; ctx.strokeStyle = "#2a2a22"; ctx.stroke();
       ctx.drawImage(SHEETS.res, ic.x, 0, ic.w, ic.h, px - s / 2, py - s / 2, s, s);
-      ctx.imageSmoothingEnabled = false;
+      ctx.imageSmoothingEnabled = SMOOTH;
     }
   }
   // 6. тепловая карта
@@ -1099,16 +1107,16 @@ function tintedFigure(key, p, w, h, smooth) {
   const r = artRect(key);
   const c = document.createElement("canvas"); c.width = w; c.height = h;
   const g = c.getContext("2d"); g.imageSmoothingEnabled = !!smooth;
-  g.drawImage(ART.img, r[0], r[1], r[2], r[3], 0, 0, w, h);
+  g.drawImage(ART.img, ...ARTS(r), 0, 0, w, h);
   const col = colorOf.get(p) || "#8899aa";
   for (const [suf, cc] of [["-1", col], ["-2", "#efe9da"]]) {
     const lk = ART.lc.get((key + suf).toLowerCase());
     const lr = lk && artRect(lk); if (!lr) continue;
     const t = document.createElement("canvas"); t.width = w; t.height = h;
     const tg = t.getContext("2d"); tg.imageSmoothingEnabled = !!smooth;
-    tg.drawImage(ART.img, lr[0], lr[1], lr[2], lr[3], 0, 0, w, h);
+    tg.drawImage(ART.img, ...ARTS(lr), 0, 0, w, h);
     tg.globalCompositeOperation = "multiply"; tg.fillStyle = cc; tg.fillRect(0, 0, w, h);
-    tg.globalCompositeOperation = "destination-in"; tg.drawImage(ART.img, lr[0], lr[1], lr[2], lr[3], 0, 0, w, h);
+    tg.globalCompositeOperation = "destination-in"; tg.drawImage(ART.img, ...ARTS(lr), 0, 0, w, h);
     g.drawImage(t, 0, 0);
   }
   return c;
@@ -1137,12 +1145,12 @@ function unitArt(p, type, fl, hp) {
   // одиночки (гражданские, корабли) — крупнее; фигурки Fantasy Hex (32×28) — по масштабу тайла
   // в точках экрана; увеличение ≥ 1 — целое (чётко), меньше 1 — уменьшение со сглаживанием
   let px = fromA ? Rd * 0.72 / 45 * (M === 1 ? (naval ? 1.15 : 1.25) : M === 2 ? 1.1 : 1) : artScale() * 0.8;
-  if (px >= 0.85) px = Math.max(1, Math.round(px));
+  if (!SMOOTH && px >= 0.85) px = Math.max(1, Math.round(px));
   const fw = Math.max(1, Math.round(r[2] * px)), fh = Math.max(1, Math.round(r[3] * px));
   const w = Math.ceil(W * D * 1.25), h = Math.ceil(fh + Rd * 0.7) + 2;
-  const fig = tintedFigure(key, p, fw, fh, px < 1);
+  const fig = tintedFigure(key, p, fw, fh, SMOOTH || px < 1);
   const c = document.createElement("canvas"); c.width = w; c.height = h;
-  const g = c.getContext("2d"); g.imageSmoothingEnabled = false;
+  const g = c.getContext("2d"); g.imageSmoothingEnabled = SMOOTH;
   const pts = (FORM[M] || FORM[1]).slice(0, n).map(q => q.slice()).sort((a, b) => a[1] - b[1]);
   for (const q of pts) g.drawImage(fig, Math.round(w / 2 + q[0] * Rd - fig.width / 2), Math.round(h - Rd * 0.32 + q[1] * Rd - fig.height), fig.width, fig.height);
   c._w = w / D; c._h = h / D; c._by = (h - Rd * 0.32) / D;     // в точках CSS; _by — «земля» строя от верха картинки
@@ -1205,13 +1213,13 @@ function logOf(i) {
     if (/SETTLER/.test(ty) && cb.has(k) && !ca.has(k)) continue;                  // основал город — это строка «Расширение»
     if (!(o[6] & (UF.CIV | UF.GP))) add("war", k, o[0], who(o[0]) + ": потеря — " + name + at(k));
   }
-  // бои 118
+  // бои 118 (стороны — обе державы: фильтр «смотреть как» по любой из них или по видимой клетке)
   for (const e of combatsAt(i)) {
     const bk = e.dx >= 0 ? e.dx : e.ax;
-    const an = e.at >= 0 ? esc(typeName("unit", T("unit", e.at)) || "") : "";
-    const verb = (e.k & 64) ? "уничтожил" : (e.k & 1) ? "обстрелял" : "атаковал";
-    add("war", bk, e.ap, (e.ap >= 0 ? who(e.ap) : "?") + (an ? " (" + an + ")" : "") + " " + verb + " " + (e.dp >= 0 ? who(e.dp) : "?") +
-      ((e.k & 32) ? " — город" : "") + (e.dd > 0 ? " <span class='l'>−" + e.dd + "</span>" : "") + (bk >= 0 ? at(bk) : ""));
+    add("war", bk, e.ap, combatText(i, e));
+    out[out.length - 1].tm = [teamOf.get(e.ap), teamOf.get(e.dp)];
+    out[out.length - 1].cmb = 1;
+    if (e.k & 256) out[out.length - 1].major = true;
   }
   // улучшения и дороги (только на шагах-сейвах: карта есть только там)
   if (isSaveStep(i)) {
@@ -1293,7 +1301,7 @@ function renderLog() {
   rows.reverse();
   const hm = ms => { if (ms == null || ms < 0) return ""; const m = Math.floor(ms / 60000); return Math.floor(m / 60) + ":" + String(m % 60).padStart(2, "0"); };
   const TI = { war: "⚔", exp: "◉", bld: "⚒", city: "▣", emp: "✦", dip: "⚑" };
-  $("logList").innerHTML = rows.length ? rows.map(r => '<div class="lr' + (r.step === si ? " now" : "") + '"><span class="lt">' + hm(r.ms) +
+  $("logList").innerHTML = rows.length ? rows.map(r => '<div class="lr' + (r.step === si ? " now" : "") + (r.k >= 0 ? " go" : "") + '" data-k="' + (r.k >= 0 ? r.k : "") + '" data-st="' + r.step + '"><span class="lt">' + hm(r.ms) +
     '</span><span class="li">' + (TI[r.tab] || "·") + "</span><span>" + r.html + "</span></div>").join("") : '<div class="lr empty">На этих ходах ничего.</div>';
 }
 
@@ -1545,16 +1553,52 @@ function parseCombats() {
   for (const r of (cm.rows || [])) {
     const e = {}; for (const nm of NMS) e[nm] = CI[nm] >= 0 ? r[CI[nm]] : -1;
     e.ad = e.ahb >= 0 && e.aha >= 0 ? e.ahb - e.aha : -1; e.dd = e.dhb >= 0 && e.dha >= 0 ? e.dhb - e.dha : -1;
+    // at/dt — номер строки таблицы Units игры (не таблица пакета): имя — из словаря сайта
+    const un = id => id >= 0 && NAMES.unit && NAMES.unit[id] ? String(NAMES.unit[id].k).replace(/^UNIT_/, "") : null;
+    e.an = un(e.at); e.dn = un(e.dt);
+    e.air = !!(e.k & (2 | 4 | 8)) || isAir(e.an);
     if (!CMB.has(e.turn)) CMB.set(e.turn, []);
     CMB.get(e.turn).push(e);
   }
 }
 const combatsAt = i => CMB.get(turnOf(i)) || [];
+// Самолёты и ракеты (базируются в городе/на авианосце): по имени типа.
+const AIR_RE = /(^|_)(FIGHTER|JET_FIGHTER|BOMBER|STEALTH_BOMBER|TRIPLANE|ZERO|B17|GUIDED_MISSILE|NUCLEAR_MISSILE|ATOMIC_BOMB|AIRSHIP|FLYING_FORTRESS)($|_)/;
+// Флаги возможностей страницы (data-flags у #rp): «combat» — бои и авиация (пока только стенд).
+const FLAGS = new Set(String((document.getElementById("rp") || { dataset: {} }).dataset.flags || "").split(/\s+/).filter(Boolean));
+const COMBAT = FLAGS.has("combat");
+const isAir = nm => !!nm && AIR_RE.test(String(nm).replace(/_SKIN\d+$/, ""));
+// Бои шага, которые зритель мог видеть: свой юнит/город в бою или клетка боя видна его команде.
+function combatsView(i) {
+  const vt = viewTeam(), f = vt >= 0 ? S[i].F[String(vt)] : null, all = combatsAt(i);
+  if (!f) return all;
+  return all.filter(b => teamOf.get(b.ap) === vt || teamOf.get(b.dp) === vt || (b.dx >= 0 && f.vis[b.dx]) || (b.ax >= 0 && f.vis[b.ax]));
+}
+const cityAtPlot = (i, k) => (k >= 0 && S[i].C.get(k)) || null;
+function sideName(i, p, tn, k, isCity) {
+  if (isCity) { const c = cityAtPlot(i, k) || cityAtPlot(Math.max(0, i - 1), k); return c ? c.n : "город"; }
+  return tn ? typeName("unit", tn) : "?";
+}
+function combatText(i, b) {
+  const A = sideName(i, b.ap, b.an, b.ax, b.k & 16 ? false : false), D = sideName(i, b.dp, b.dn, b.dx, !!(b.k & 32));
+  const base = b.air && b.ax >= 0 && cityAtPlot(i, b.ax) ? " (из " + esc(cityAtPlot(i, b.ax).n) + ")" : "";
+  const kind = b.k & 8 ? "☢ ядерный удар" : b.k & 4 ? "воздушный бой" : b.k & 2 ? "авиаудар" : b.k & 1 ? "выстрел" : "атака";
+  const res = [];
+  if (b.dd > 0) res.push("−" + b.dd + ((b.k & 32) ? " городу" : " ему"));
+  if (b.ad >= 0) res.push("−" + Math.max(0, b.ad) + " себе");
+  const out = [];
+  if (b.k & 256) out.push("<b>город взят</b>"); else if (b.k & 64) out.push("<b>" + ((b.k & 32) ? "город" : "цель") + " уничтожен" + ((b.k & 32) ? "" : "а") + "</b>");
+  if (b.k & 128) out.push("<b>атакующий погиб</b>");
+  if (b.k & 4096) out.push("был перехват");
+  if (b.k & 512) out.push("занял клетку");
+  return (b.ap >= 0 ? who(b.ap) : "?") + ": " + esc(A) + base + " → " + esc(D) + (b.dp >= 0 && !(b.k & 32) ? " " + who(b.dp) : (b.dp >= 0 ? " (" + who(b.dp) + ")" : "")) +
+    (b.dx >= 0 ? " <span class='l'>" + kx(b.dx) + "," + ky(b.dx) + "</span>" : "") + " · " + kind + (res.length ? ": " + res.join(", ") : "") + (out.length ? " · " + out.join(", ") : "");
+}
 
 // ---------------------------------------------------------------- юниты
 const UF = { EMB: 1, FORT: 2, CIV: 4, GP: 8, CARGO: 16, GARR: 32 };
 const uv = $("uv"), uctx = uv.getContext("2d");
-let anim = null, unFrameReq = 0, unHits = [];
+let anim = null, unFrameReq = 0, unHits = [], CMBHITS = [], FOCUSK = null;
 let speed = 2, smooth = true;
 const SPEEDS = [0, 1, 2, 4, 7];
 const UPERF = { frames: 0, drawMs: 0, maxDraw: 0, gaps: [], last: 0, units: 0 };
@@ -1713,10 +1757,24 @@ function sprite(p, type, fl) {
   return c;
 }
 // Юниты шага i, которые видит выбранная команда (свои — всегда, чужие — на видимых клетках).
+// Самолёты и ракеты на клетке (город, авианосец — в грузе): Map клетка -> {p, list:[тип…]}; отдельно от стопки юнитов.
+function airAt(i) {
+  const t = viewTeam(), st = S[i], f = t >= 0 ? st.F[String(t)] : null, out = new Map();
+  if (!COMBAT) return out;
+  for (const [, u] of st.U) {
+    const nm = T("unit", u[2]); if (!isAir(nm)) continue;
+    const k = key(u[3], u[4]);
+    if (f && teamOf.get(u[0]) !== t && !f.vis[k]) continue;
+    if (!out.has(k)) out.set(k, { p: u[0], list: [] });
+    out.get(k).list.push(nm);
+  }
+  return out;
+}
 function unitsOf(i) {
   const t = viewTeam(), st = S[i], f = t >= 0 ? st.F[String(t)] : null, out = [];
   for (const [kk, u] of st.U) {
     if (u[6] & UF.CARGO) continue;                           // в трюме — не рисуем отдельно
+    if (COMBAT && isAir(T("unit", u[2]))) continue;          // самолёты — значком «✈×N» на базе (airAt)
     const k = key(u[3], u[4]);
     if (f && teamOf.get(u[0]) !== t && !f.vis[k]) continue;
     out.push({ kk, u, p: u[0], type: u[2], k, hp: u[5], fl: u[6] });
@@ -1809,7 +1867,7 @@ function unitsFrame(now) {
       let fx = sx, fy = sy;
       if (ua) {
         const D = DPR();
-        uctx.imageSmoothingEnabled = false;
+        uctx.imageSmoothingEnabled = SMOOTH; uctx.imageSmoothingQuality = "high";
         uctx.drawImage(ua, Math.round((sx - ua._w / 2) * D) / D, Math.round((sy + R * 0.4 - ua._by) * D) / D, ua._w, ua._h);
         uctx.imageSmoothingEnabled = true;
         fx = sx - R * 0.46; fy = sy - R * 0.46;
@@ -1875,28 +1933,85 @@ function unitsFrame(now) {
     }
     draw(u, x, y, alpha, ring); n++;
   }
-  // бои журнала (118): вспышка у защитника и линия от атакующего
-  const cm = combatsAt(si);
-  for (const b of cm) {
-    const ph = a ? Math.max(0, (s - 0.35) / 0.65) : 1;
-    if (a && s < 0.35) continue;
-    const bk = b.dx >= 0 ? b.dx : b.ax;
-    if (bk < 0) continue;
-    const B = centerOf(kx(bk), ky(bk)), A = b.ax >= 0 ? centerOf(kx(b.ax), ky(b.ax)) : B;
-    const bx = ox + B[0], by = oy + B[1];
+  // самолёты на базах: «✈×N» цвета державы
+  if (show.units) for (const [k, ai] of airAt(si)) {
+    const c = centerOf(kx(k), ky(k)), bx = ox + c[0] - R * 0.62, by = oy + c[1] - R * 0.55;
     if (bx < -40 || bx > vw + 40 || by < -40 || by > vh + 40) continue;
-    uctx.globalAlpha = 1;
-    if (ph < 1) {
-      uctx.beginPath(); uctx.moveTo(ox + A[0], oy + A[1]); uctx.lineTo(bx, by);
-      uctx.lineWidth = 2; uctx.strokeStyle = "rgba(242,208,107," + (1 - ph).toFixed(3) + ")"; uctx.stroke();
-      const rr = R * (0.4 + 1.5 * ph);
-      uctx.beginPath(); uctx.arc(bx, by, rr, 0, 7); uctx.lineWidth = 2.5; uctx.strokeStyle = "rgba(255,140,60," + (1 - ph).toFixed(3) + ")"; uctx.stroke();
+    const col = colorOf.get(ai.p) || "#8899aa", fs = Math.max(10, Math.min(16, R * 0.34)), txt = "✈" + (ai.list.length > 1 ? "×" + ai.list.length : "");
+    uctx.font = "800 " + Math.round(fs) + "px system-ui,sans-serif"; const tw = uctx.measureText(txt).width + 8, th = fs + 6;
+    uctx.globalAlpha = 1; uctx.fillStyle = "#0b1119e6"; uctx.beginPath(); uctx.roundRect ? uctx.roundRect(bx - tw / 2, by - th / 2, tw, th, th / 2) : uctx.rect(bx - tw / 2, by - th / 2, tw, th); uctx.fill();
+    uctx.lineWidth = 2; uctx.strokeStyle = col; uctx.stroke();
+    uctx.fillStyle = "#f3f7fb"; uctx.textAlign = "center"; uctx.textBaseline = "middle"; uctx.fillText(txt, bx, by + 0.5);
+    unHits.push({ x: bx, y: by, r: th, air: k });
+  }
+  // бои журнала (118). Пауза — все бои хода сразу; проигрывание — по одному в порядке номера боя.
+  // Ближний бой — стрелка; дальний, обстрел — пунктир; авиаудар — пунктирная дуга от базы; ядерный — круг.
+  // Несколько одинаковых ударов «откуда → куда» за ход — одна стрелка «×N»; разные — разведены в стороны.
+  if (show.units && COMBAT) {
+    const cm = combatsView(si), groups = new Map();
+    for (const b of cm) { const kk = b.ax + ">" + b.dx + ">" + (b.air ? 1 : b.k & 1 ? 2 : 0); if (!groups.has(kk)) groups.set(kk, []); groups.get(kk).push(b); }
+    const pairs = new Map();                                  // сколько разных групп на одной паре клеток — для разведения
+    let gi = 0;
+    const N = groups.size;
+    CMBHITS = [];
+    for (const [kk, list] of groups) {
+      const b = list[0], idx = gi++;
+      const ph = a ? Math.max(0, Math.min(1, (s - 0.25 - 0.6 * idx / Math.max(1, N)) / 0.25)) : 1;
+      if (ph <= 0) continue;
+      const tk = b.dx >= 0 ? b.dx : b.ax; if (tk < 0) continue;
+      const B = centerOf(kx(tk), ky(tk)), A = b.ax >= 0 ? centerOf(kx(b.ax), ky(b.ax)) : B;
+      const pk = Math.min(b.ax, b.dx) + "|" + Math.max(b.ax, b.dx), lane = pairs.get(pk) || 0; pairs.set(pk, lane + 1);
+      let x1 = ox + A[0], y1 = oy + A[1], x2 = ox + B[0], y2 = oy + B[1];
+      if (Math.abs(x2 - x1) > W * PK.w / 2) x1 += x2 > x1 ? W * PK.w : -W * PK.w;   // через шов карты
+      if (Math.max(x1, x2) < -60 || Math.min(x1, x2) > vw + 60 || Math.max(y1, y2) < -60 || Math.min(y1, y2) > vh + 60) continue;
+      const dxv = x2 - x1, dyv = y2 - y1, len = Math.hypot(dxv, dyv) || 1, nx = -dyv / len, ny = dxv / len, off = (lane - 0) * R * 0.22;
+      x1 += nx * off; y1 += ny * off; x2 += nx * off; y2 += ny * off;
+      const col = colorOf.get(b.ap) || "#f2d06b", nuke = list.some(q => q.k & 8);
+      uctx.globalAlpha = ph;
+      uctx.lineCap = "round";
+      // путь
+      const bend = b.air ? Math.min(R * 1.6, len * 0.35) : 0, mx = (x1 + x2) / 2 + nx * bend, my = (y1 + y2) / 2 + ny * bend;
+      const trace = () => { uctx.beginPath(); uctx.moveTo(x1, y1); if (bend) uctx.quadraticCurveTo(mx, my, x2, y2); else uctx.lineTo(x2, y2); };
+      uctx.setLineDash(b.air || (b.k & 1) ? [Math.max(4, R * 0.18), Math.max(3, R * 0.12)] : []);
+      trace(); uctx.lineWidth = Math.max(3, R * 0.14); uctx.strokeStyle = "rgba(11,17,25,.85)"; uctx.stroke();
+      trace(); uctx.lineWidth = Math.max(1.6, R * 0.08); uctx.strokeStyle = col; uctx.stroke();
+      uctx.setLineDash([]);
+      // наконечник
+      const ex = bend ? x2 - mx : dxv, ey = bend ? y2 - my : dyv, el = Math.hypot(ex, ey) || 1, ux = ex / el, uy = ey / el, ah = Math.max(7, R * 0.3);
+      uctx.beginPath(); uctx.moveTo(x2 - ux * R * 0.25, y2 - uy * R * 0.25);
+      uctx.lineTo(x2 - ux * (R * 0.25 + ah) - uy * ah * 0.55, y2 - uy * (R * 0.25 + ah) + ux * ah * 0.55);
+      uctx.lineTo(x2 - ux * (R * 0.25 + ah) + uy * ah * 0.55, y2 - uy * (R * 0.25 + ah) - ux * ah * 0.55); uctx.closePath();
+      uctx.fillStyle = col; uctx.fill(); uctx.lineWidth = 1.2; uctx.strokeStyle = "#0b1119"; uctx.stroke();
+      // значок вида в середине: ✈ авиаудар, ⚔ ближний, ➶ выстрел, ☢ ядерный; «×N»
+      const gl = nuke ? "☢" : b.k & 4 ? "✈⚔" : b.air ? "✈" : b.k & 1 ? "➶" : "⚔";
+      const lx = bend ? (x1 + 2 * mx + x2) / 4 : (x1 + x2) / 2, ly = bend ? (y1 + 2 * my + y2) / 4 : (y1 + y2) / 2, fs = Math.max(10, Math.min(17, R * 0.36));
+      const lab = gl + (list.length > 1 ? "×" + list.length : "");
+      uctx.font = "800 " + Math.round(fs) + "px system-ui,sans-serif"; const lw = uctx.measureText(lab).width + 8, lh = fs + 6;
+      uctx.fillStyle = "#0b1119e6"; uctx.beginPath(); uctx.roundRect ? uctx.roundRect(lx - lw / 2, ly - lh / 2, lw, lh, 5) : uctx.rect(lx - lw / 2, ly - lh / 2, lw, lh); uctx.fill();
+      uctx.lineWidth = 1.5; uctx.strokeStyle = col; uctx.stroke();
+      uctx.fillStyle = nuke ? "#ffd84a" : "#f3f7fb"; uctx.textAlign = "center"; uctx.textBaseline = "middle"; uctx.fillText(lab, lx, ly + 0.5);
+      // урон у обеих сторон (сумма по группе)
+      const dd = list.reduce((q, e) => q + Math.max(0, e.dd), 0), ad = list.reduce((q, e) => q + Math.max(0, e.ad), 0);
+      const dmg = (v, x, y, c2) => { if (v <= 0) return; const t2 = "−" + v; uctx.font = "800 " + Math.round(fs * 0.95) + "px system-ui,sans-serif"; uctx.lineWidth = 3; uctx.strokeStyle = "#0b1119"; uctx.strokeText(t2, x, y); uctx.fillStyle = c2; uctx.fillText(t2, x, y); };
+      dmg(dd, x2 + R * 0.55, y2 - R * 0.62, "#ff6b5e");
+      if (b.ax !== b.dx) dmg(ad, x1 + R * 0.5, y1 - R * 0.62, "#ffb36b");
+      // итоги
+      const cross = (x, y, c2) => { const m = Math.max(5, R * 0.28); uctx.lineWidth = Math.max(3, R * 0.14); uctx.strokeStyle = "#0b1119"; uctx.beginPath(); uctx.moveTo(x - m, y - m); uctx.lineTo(x + m, y + m); uctx.moveTo(x + m, y - m); uctx.lineTo(x - m, y + m); uctx.stroke(); uctx.lineWidth = Math.max(1.6, R * 0.08); uctx.strokeStyle = c2; uctx.stroke(); };
+      if (list.some(e => (e.k & 64) && !(e.k & 32))) cross(x2, y2 + R * 0.05, "#ff4d3d");
+      if (list.some(e => e.k & 128)) cross(x1, y1 + R * 0.05, "#ff9a3d");
+      if (list.some(e => e.k & 256)) { uctx.font = "800 " + Math.round(fs * 1.8) + "px system-ui,sans-serif"; uctx.lineWidth = 4; uctx.strokeStyle = "#0b1119"; uctx.strokeText("⚑", x2, y2 - R * 0.95); uctx.fillStyle = col; uctx.fillText("⚑", x2, y2 - R * 0.95); }
+      if (nuke) { uctx.beginPath(); uctx.arc(x2, y2, R * 2.6, 0, 7); uctx.fillStyle = "rgba(255,170,40,.18)"; uctx.fill(); uctx.lineWidth = 3; uctx.strokeStyle = "rgba(255,200,60,.9)"; uctx.stroke(); }
+      if (a && ph < 1) { uctx.beginPath(); uctx.arc(x2, y2, R * (0.3 + 1.2 * ph), 0, 7); uctx.lineWidth = 2.5; uctx.strokeStyle = "rgba(255,140,60," + (1 - ph).toFixed(3) + ")"; uctx.stroke(); }
+      CMBHITS.push({ x: lx, y: ly, r: Math.max(lw, lh) / 2 + 4, list });
+      uctx.globalAlpha = 1;
     }
-    const m = Math.max(4, R * 0.26), mx = bx + R * 0.52, my = by - R * 0.5;
-    uctx.globalAlpha = ph < 1 ? ph : 1;
-    uctx.lineWidth = Math.max(2, R * 0.12); uctx.strokeStyle = "#0b1119";
-    uctx.beginPath(); uctx.moveTo(mx - m, my - m); uctx.lineTo(mx + m, my + m); uctx.moveTo(mx + m, my - m); uctx.lineTo(mx - m, my + m); uctx.stroke();
-    uctx.lineWidth = Math.max(1.2, R * 0.07); uctx.strokeStyle = (b.k & (64 | 128)) ? "#ff6b5e" : "#f2d06b"; uctx.stroke();
+    UPERF.combats = cm.length; UPERF.combatGroups = N;
+  }
+  // подсветка клетки, выбранной в журнале
+  if (FOCUSK && performance.now() - FOCUSK.t < 2500) {
+    const c = centerOf(kx(FOCUSK.k), ky(FOCUSK.k)), q = 1 - (performance.now() - FOCUSK.t) / 2500;
+    uctx.globalAlpha = q; uctx.beginPath(); uctx.arc(ox + c[0], oy + c[1], R * 1.1, 0, 7); uctx.lineWidth = 4; uctx.strokeStyle = "#f2d06b"; uctx.stroke(); uctx.globalAlpha = 1;
+    unitsDraw();
   }
   uctx.globalAlpha = 1;
   banners();
@@ -2341,7 +2456,10 @@ sc.addEventListener("click", ev => {
 });
 sc.addEventListener("mousemove", ev => {
   if (!PK || drag) return;
-  const ukk = unitAt(ev), place = () => {
+  const sr0 = sc.getBoundingClientRect(), mx0 = ev.clientX - sr0.left, my0 = ev.clientY - sr0.top;
+  const hitC = CMBHITS.find(h => (h.x - mx0) ** 2 + (h.y - my0) ** 2 <= h.r * h.r);
+  const hitA = !hitC && unHits.find(h => h.air != null && (h.x - mx0) ** 2 + (h.y - my0) ** 2 <= h.r * h.r);
+  const ukk = hitC || hitA ? null : unitAt(ev), place = () => {
     tip.hidden = false;
     // не вылезать за край окна: не влезает справа — слева от курсора, не влезает снизу — выше
     const tw = tip.offsetWidth, th = tip.offsetHeight;
@@ -2350,6 +2468,13 @@ sc.addEventListener("mousemove", ev => {
     if (y + th > innerHeight - 6) y = Math.max(6, ev.clientY - th - 10);
     tip.style.left = x + "px"; tip.style.top = y + "px";
   };
+  if (hitC) { sc.style.cursor = "pointer"; tip.innerHTML = hitC.list.slice(0, 8).map(b => combatText(si, b)).join("<br>") + (hitC.list.length > 8 ? "<br><span class='l'>и ещё " + (hitC.list.length - 8) + "</span>" : ""); place(); return; }
+  if (hitA) {
+    const ai = airAt(si).get(hitA.air), cnt = new Map(); for (const nm of ai.list) cnt.set(nm, (cnt.get(nm) || 0) + 1);
+    const c = cityAtPlot(si, hitA.air);
+    tip.innerHTML = "<b>Авиация</b> · " + esc(nameOf(ai.p)) + (c ? " · " + esc(c.n) : " · на авианосце / в поле") + "<br>" + [...cnt].map(([nm, n]) => esc(typeName("unit", nm)) + (n > 1 ? " ×" + n : "")).join("<br>");
+    place(); return;
+  }
   if (ukk) {
     const u = S[si].U.get(ukk);
     if (u) { sc.style.cursor = "pointer"; tip.innerHTML = "<b>" + esc(typeName("unit", T("unit", u[2]))) + "</b><br>" + esc(nameOf(u[0])) + " · здоровье " + u[5]; place(); return; }
@@ -2610,6 +2735,13 @@ $("logMin").addEventListener("click", () => {
   logMin = !logMin; try { localStorage.setItem("rf-logmin", logMin ? "1" : "0"); } catch (e) { /* без хранилища */ }
   renderLog();
 });
+$("logList").addEventListener("click", ev => {
+  const row = ev.target.closest(".lr.go"); if (!row || !PK) return;
+  const k = +row.dataset.k, st = +row.dataset.st;
+  if (st !== si) setStep(st);
+  if (drawn() && zoom <= 1.0001) setZoom(1e9);
+  centerOn(k); FOCUSK = { k, t: performance.now() }; unitsDraw();
+});
 $("logTabs").addEventListener("click", ev => {
   const b = ev.target.closest("[data-ltab]"); if (!b) return;
   logTab = b.dataset.ltab; try { localStorage.setItem("rf-logtab", logTab); } catch (e) { /* без хранилища */ }
@@ -2620,7 +2752,7 @@ if (style === "drawn") loadArt();
 if (style === "sv") loadSV();
 window.__rf = { get PK() { return PK; }, get S() { return S; }, get si() { return si; }, setStep: i => setStep(i), setView: p => setView(p), play: () => play(), stop: () => stop(),
   get view() { return view; }, perf: UPERF, unitsOf: i => unitsOf(i), setStyle: v => setStyle(v), get artMiss() { return [...ART.miss]; },
-  setZoom: (z, x, y) => setZoom(z, x, y), cell: (i, k) => cellView(i, k), get jtech() { return JTECH_STATE; },
+  setZoom: (z, x, y) => setZoom(z, x, y), combats: i => combatsView(i == null ? si : i), air: i => [...airAt(i == null ? si : i)], cell: (i, k) => cellView(i, k), get jtech() { return JTECH_STATE; },
   focus: (x, y) => { const c = centerOf(x, y), r = stage.getBoundingClientRect(), q = sc.getBoundingClientRect(); sc.scrollLeft += r.left + c[0] - (q.left + q.width / 2); sc.scrollTop += r.top + c[1] - (q.top + q.height / 2); unitsDraw(); },
   openCity: k => openCard({ kind: "city", k }),
   openUnit: kk => openCard({ kind: "unit", kk, last: S[si].U.get(kk) || (si > 0 && S[si - 1].U.get(kk)) }) };
