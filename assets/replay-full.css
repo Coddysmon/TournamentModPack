@@ -51,6 +51,21 @@
 .rf .rp-card .blist span{background:var(--panel-soft);border:1px solid var(--line-soft);border-radius:4px;padding:0 5px}
 .rf .rp-card .blist span.w{border-color:var(--rp-gold-dim);color:var(--rp-gold)}
 .rf .rp-card ol{margin:2px 0 0 18px;padding:0;font-size:12.5px;color:var(--dim)}
+.rf .rp-card h3.bhead{display:flex;align-items:center;justify-content:space-between;gap:6px}
+.rf .rp-card .bsort{display:inline-flex;border:1px solid var(--line-soft);border-radius:5px;overflow:hidden;font-weight:400}
+.rf .rp-card .bsort button{background:none;border:0;color:var(--faint);font:inherit;font-size:11px;padding:1px 7px;cursor:pointer;text-transform:none;letter-spacing:0}
+.rf .rp-card .bsort button+button{border-left:1px solid var(--line-soft)}
+.rf .rp-card .bsort button.on{background:var(--panel-soft);color:var(--text,#e6edf3)}
+.rf .rp-card .bsort button:hover{color:var(--dim)}
+.rf .rp-card ol.blist2{list-style:none;margin:2px 0 0;padding:0 2px 0 0;max-height:min(340px,42vh);overflow-y:auto;font-size:12px;color:var(--dim)}
+.rf .rp-card ol.blist2 li{display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:1px 0;border-bottom:1px solid var(--line-soft)}
+.rf .rp-card ol.blist2 li:last-child{border-bottom:0}
+.rf .rp-card ol.blist2 li.w .bn{color:var(--rp-gold)}
+.rf .rp-card ol.blist2 .t{flex:none;white-space:nowrap}
+.rf .rp-card .bt{font-style:normal;font-size:10.5px;border-radius:3px;padding:0 4px;margin-left:3px;border:1px solid var(--line-soft);color:var(--faint);white-space:nowrap}
+.rf .rp-card .bt.cap{border-color:#7a3030;color:#e08a86}
+.rf .rp-card .bt.free{border-color:#2f6a4a;color:#7cc79c}
+.rf .rp-card .bt.buy{border-color:var(--rp-gold-dim);color:var(--rp-gold)}
 
 @media (max-width:980px){
   .rf-view select{max-width:120px}

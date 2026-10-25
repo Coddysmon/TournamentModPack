@@ -2476,6 +2476,81 @@ function cellDesc(k) {
   if (v.imp >= 0) parts.push(typeName("imp", T("imp", v.imp)).toLowerCase());
   return parts.join(", ");
 }
+// История зданий города на клетке k к шагу i: когда каждое здание появилось, досталось ли при захвате,
+// даровое ли, куплено ли. Источники: сейвы (здания нет на прошлом сейве, есть на этом) и журнал DLL
+// (JM.blds: «достроено» b / «куплено» p, клетка города, номер строки Buildings). Если между сейвами
+// дыра больше хода и журнал молчит — ход неизвестен, пишем «до хода N» (первый сейв, где здание есть).
+// Номер хода в журнале совпадает с ходом сейва, где здание появилось впервые (№79: 860 из 860 при
+// сейве каждый ход), так что поправки нет.
+const JB_OFF = { b: 0, p: 0 };
+let BH_CACHE = new Map(), bldSort = (() => { try { return localStorage.getItem("rf-bldsort") || "order"; } catch (e) { return "order"; } })();
+const prevSave = j => { j--; while (j > 0 && !isSaveStep(j)) j--; return j; };
+function bldHistory(i, k) {
+  const ck = i + "|" + k + "|" + (JM ? 1 : 0);
+  if (BH_CACHE.has(ck)) return BH_CACHE.get(ck);
+  const cur = S[i].C.get(k), out = new Map();
+  if (!cur) return out;
+  const chain = [];                                            // шаги-сейвы от i назад, пока на клетке есть город
+  for (let j = i; j >= 0; j = j > 0 ? prevSave(j) : -1) {
+    const c = S[j].C.get(k); if (!c) break;
+    chain.push(j); if (j === 0) break;
+  }
+  // захват: самый ранний шаг, с которого город непрерывно у нынешнего владельца
+  let acq = -1, acqT = null;
+  for (let n = 0; n < chain.length; n++) {
+    if (S[chain[n]].C.get(k).o !== cur.o) { acq = chain[n - 1]; acqT = turnOf(acq); break; }
+  }
+  const before = acq >= 0 ? new Set(S[prevSave(acq)].C.get(k).b || []) : null;
+  const atAcq = acq >= 0 ? new Set(S[acq].C.get(k).b || []) : null;
+  // журнал: тип здания → строки по этой клетке
+  const jb = new Map();
+  if (JM && Array.isArray(JM.blds)) for (const e of JM.blds) {
+    if (e.c !== k || (e.k !== "b" && e.k !== "p")) continue;
+    const ty = String((NAMES.bld && NAMES.bld[e.b] || {}).k || "").replace(/^BUILDING_/, "");
+    if (!ty) continue;
+    if (!jb.has(ty)) jb.set(ty, []);
+    jb.get(ty).push({ t: e.turn + JB_OFF[e.k], k: e.k, y: e.y, s: e.s || 0 });
+  }
+  const fb = new Set(cur.fb || []);
+  for (const b of new Set(cur.b || [])) {
+    let first = chain[0];
+    for (const j of chain) { if ((S[j].C.get(k).b || []).includes(b)) first = j; else break; }
+    const tFirst = turnOf(first), isOld = first === chain[chain.length - 1];
+    const pj = isOld ? -1 : prevSave(first), lo = pj >= 0 ? turnOf(pj) : (cur.f != null ? cur.f - 1 : -99);
+    const ty = T("bld", b), rows = (jb.get(ty) || []).filter(r => r.t > lo && r.t <= tFirst);
+    const r = rows.length ? rows[rows.length - 1] : null;
+    let t = tFirst, exact = false;
+    if (r) { t = r.t; exact = true; }
+    else if (!isOld && tFirst - lo <= 1) exact = true;
+    else if (isOld && cur.f != null && tFirst - cur.f <= 1) { t = cur.f; exact = true; }   // есть с основания (дворец, даровые)
+    out.set(b, { t, exact, cap: !!(before && atAcq && before.has(b) && atAcq.has(b) && first < acq), capT: acqT,
+      free: fb.has(b), buy: r && r.k === "p" ? (r.y === 5 ? "веру" : "золото") : null, s: r ? r.s : 0 });
+  }
+  BH_CACHE.set(ck, out);
+  return out;
+}
+function bldListHtml(c, i, k) {
+  const h = bldHistory(i, k), wn = new Set((PK.wonders || []).map(b => T("bld", b)));
+  const rows = [...new Set(c.b || [])].map(b => ({ b, ty: T("bld", b), nm: typeName("bld", T("bld", b)), h: h.get(b) })).filter(x => x.ty);
+  const tk = x => x.h ? x.h.t - (x.h.exact ? 0 : 0.5) : 1e9;
+  if (bldSort === "abc") rows.sort((a, b) => a.nm.localeCompare(b.nm, "ru"));
+  else rows.sort((a, b) => tk(a) - tk(b) || (a.h && b.h ? a.h.s - b.h.s : 0) || a.nm.localeCompare(b.nm, "ru"));
+  const tg = (cls, txt, tip) => ' <i class="bt ' + cls + '"' + (tip ? ' title="' + esc(tip) + '"' : "") + ">" + txt + "</i>";
+  const li = rows.map(x => {
+    const hh = x.h;
+    const when = !hh ? "" : hh.exact ? "ход " + hh.t : "до хода " + hh.t;
+    const tags = (hh && hh.cap ? tg("cap", "захвачено", "было в городе, когда его взяли на ходу " + hh.capT) : "") +
+      (hh && hh.free ? tg("free", "даром", "даровое здание (политика, чудо или черта державы)") : "") +
+      (hh && hh.buy ? tg("buy", "куплено", "куплено за " + hh.buy) : "");
+    return "<li" + (wn.has(x.ty) ? ' class="w"' : "") + "><span class='bn'>" + esc(x.nm) + tags + "</span><span class='t'" +
+      (hh && !hh.exact ? " title='точный ход неизвестен: до этого хода нет сейва и записи журнала'" : "") + ">" + when + "</span></li>";
+  }).join("");
+  const sw = '<span class="bsort" role="group" aria-label="Порядок зданий">' +
+    '<button type="button" data-bsort="order"' + (bldSort !== "abc" ? ' class="on" aria-pressed="true"' : ' aria-pressed="false"') + ">по порядку</button>" +
+    '<button type="button" data-bsort="abc"' + (bldSort === "abc" ? ' class="on" aria-pressed="true"' : ' aria-pressed="false"') + ">по алфавиту</button></span>";
+  return "<h3 class='bhead'><span>Здания · " + rows.length + "</span>" + (rows.length > 1 ? sw : "") + "</h3>" +
+    (rows.length ? '<ol class="blist2">' + li + "</ol>" : "<p class='rp-note'>нет</p>");
+}
 function renderCard() {
   if (!card) return;
   let head = "", body = "";
@@ -2493,10 +2568,7 @@ function renderCard() {
       line("жителей:", "<b>" + c.pop + "</b>" + (c.sp ? " (специалистов " + c.sp + ")" : "") + (c.f != null ? " · основан на ходу " + c.f : ""));
       if (c.orig != null && c.orig !== c.o) line("основал:", chip(c.orig));
       if (c.dmg > 0) line("повреждён:", String(c.dmg));
-      const bl = (c.b || []).map(b => T("bld", b)).filter(Boolean);
-      const wn = new Set((PK.wonders || []).map(b => T("bld", b)));
-      body += "<h3>Здания · " + bl.length + "</h3>" + (bl.length ? '<div class="blist">' + bl.map(b => '<span' + (wn.has(b) ? ' class="w"' : "") + ">" +
-        esc(typeName("bld", b)) + "</span>").sort().join("") + "</div>" : "<p class='rp-note'>нет</p>");
+      body += bldListHtml(c, si, card.k);
       if (!hidden) {
         const q = (c.q || []).map(o => o[0] === 0 ? "юнит «" + typeName("unit", T("unit", o[1])) + "»" : o[0] === 1 ? typeName("bld", T("bld", o[1])) :
           o[0] === 2 ? "проект " + prettify(String(o[2]).replace(/^PROJECT_/, "")) : o[0] === 4 ? "процесс " + prettify(String(o[2]).replace(/^PROCESS_/, "")) : "заказ");
@@ -2794,7 +2866,7 @@ async function openMatch(i, t, v) {
   message("");
   PK = pk; card = null; cardEl.hidden = true; HEAT = null; WARS = null; MEM = null; view = -1; FRAME = null; anim = null;
   S = decode(PK);
-  setupPlayers(); findLakes(); parseCombats(); sprites.clear(); LOGC.clear(); HR_CACHE.clear(); JTECH = null;
+  setupPlayers(); findLakes(); parseCombats(); sprites.clear(); LOGC.clear(); HR_CACHE.clear(); BH_CACHE.clear(); JTECH = null;
   loadJournalTechs(PK.key);
   slider.max = S.length - 1;
   fillView(); metaText(); buildTimeline(); rtUi();
@@ -2902,6 +2974,11 @@ $("logList").addEventListener("click", ev => {
   CSEL = b ? { kind: "one", list: [b] } : null;
   centerOn(k); FOCUSK = { k, t: performance.now() }; unitsDraw();
 });
+$("cardBody").addEventListener("click", ev => {
+  const b = ev.target.closest("[data-bsort]"); if (!b) return;
+  bldSort = b.dataset.bsort === "abc" ? "abc" : "order"; try { localStorage.setItem("rf-bldsort", bldSort); } catch (e) { /* без хранилища */ }
+  renderCard();
+});
 $("logTabs").addEventListener("click", ev => {
   const b = ev.target.closest("[data-ltab]"); if (!b) return;
   logTab = b.dataset.ltab; try { localStorage.setItem("rf-logtab", logTab); } catch (e) { /* без хранилища */ }
@@ -2914,7 +2991,8 @@ window.__rf = { get PK() { return PK; }, get S() { return S; }, get si() { retur
   get view() { return view; }, perf: UPERF, unitsOf: i => unitsOf(i), setStyle: v => setStyle(v), get artMiss() { return [...ART.miss]; },
   setZoom: (z, x, y) => setZoom(z, x, y), rtPlan: i => { const p = rtPlan(i == null ? si : i); return p ? { L: p.L, V: p.V, moved: p.unitT.size, timed: [...p.unitT.values()].filter(v => v > 0).length, realMs: Math.round(p.V / rtX + 900) } : null; }, setRT: (on, x) => { rtMode = !!on; if (x) rtX = x; rtUi(); }, cseq: (i, m) => { const p = cseqPlan(i == null ? si : i, m); return { groups: p.groups.length, total: p.total }; }, get cseqState() { return CSEQ ? { el: Math.round(cseqEl()), total: CSEQ.total, paused: CSEQ.paused, cur: CURG } : null; }, selectTarget: k => { CSEL = k == null ? null : { kind: "target", k }; unitsDraw(); }, cmbHits: () => CMBHITS.map(h => [h.tk, h.list.length, Math.round(h.x), Math.round(h.y)]), combats: i => combatsView(i == null ? si : i), air: i => [...airAt(i == null ? si : i)], cell: (i, k) => cellView(i, k), get jtech() { return JTECH_STATE; },
   focus: (x, y) => { const c = centerOf(x, y), r = stage.getBoundingClientRect(), q = sc.getBoundingClientRect(); sc.scrollLeft += r.left + c[0] - (q.left + q.width / 2); sc.scrollTop += r.top + c[1] - (q.top + q.height / 2); unitsDraw(); },
-  openCity: k => openCard({ kind: "city", k }),
+  openCity: k => openCard({ kind: "city", k }), bldHistory: (i, k) => [...bldHistory(i, k)].map(([b, h]) => Object.assign({ ty: T("bld", b) }, h)),
+  get JM() { return JM; }, get NAMES() { return NAMES; }, T: (a, b) => T(a, b), isSaveStep: i => isSaveStep(i), eraOf: p => eraOf(p),
   openUnit: kk => openCard({ kind: "unit", kk, last: S[si].U.get(kk) || (si > 0 && S[si - 1].U.get(kk)) }) };
 boot();
 })();
