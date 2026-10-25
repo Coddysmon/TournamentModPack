@@ -9,7 +9,7 @@
 <meta name="theme-color" content="#0D131A">
 <link rel="stylesheet" href="assets/site.css">
 <link rel="stylesheet" href="assets/replay.css">
-<link rel="stylesheet" href="assets/replay-full.css?v=af7fa3ac12">
+<link rel="stylesheet" href="assets/replay-full.css?v=2b39ad8a17">
 <link rel="alternate" hreflang="ru" href="replay-full.html">
 <script src="assets/lang.js"></script>
 </head>
@@ -140,7 +140,7 @@
         <label class="rp-layer"><input type="checkbox" data-layer="names" checked><span>Флажки городов<small>имя, жители, владелец</small></span></label>
         <label class="rp-layer"><input type="checkbox" data-layer="icons" checked><span>Значки ресурсов<small>маленький кружок в углу клетки <b id="iconsNote"></b></small></span></label>
         <label class="rp-layer"><input type="checkbox" data-layer="log" checked><span>Журнал событий<small>под картой: ходы юнитов, бои, стройка, города, дипломатия — с вкладками</small></span></label>
-        <label class="rp-layer"><input type="checkbox" data-layer="yields" checked><span>Выход клеток<small>точки внизу клетки: еда, производство, золото, наука, культура, вера — как в сейве игры <b id="yieldsNote"></b></small></span></label>
+        <label class="rp-layer"><input type="checkbox" data-layer="yields" checked><span>Выход клеток<small>значки внизу клетки: еда, производство, золото, наука, культура, вера — как в сейве игры <b id="yieldsNote"></b></small></span></label>
         <label class="rp-layer"><input type="checkbox" data-layer="heat"><span>Тепловая карта боёв<small id="heatNote">где юниты теряли здоровье и гибли — с начала записи по этот ход</small></span></label>
       </div>
 
@@ -172,8 +172,9 @@
           <div><i class="rf-k hp"></i>полоска над флажком — здоровье (зелёная → красная)</div>
           <div><i class="rf-k city">12</i>плашка города: жители, имя, ★ — столица; над ней ⛊ — оборона (вблизи)</div>
           <div><i class="rf-k border"></i>граница державы — линия её цвета</div>
-          <div><i class="rf-k res"></i>кружок в правом верхнем углу клетки — ресурс (вблизи)</div>
-          <div><i class="rf-k yl"><b style="background:#7ccf4a"></b><b style="background:#e0873a"></b><b style="background:#f0cf45"></b></i>квадратики внизу клетки — выход: еда, производство, золото, наука, культура, вера (вблизи; до 4 видов, все — в подсказке). Выход — как его хранит игра в сейве; у части открытого океана там 0, и точек нет</div>
+          <div><i class="rf-k res"></i>кружок в правом верхнем углу клетки — ресурс (с ×2). Стратегические ресурсы (лошади, железо, уголь, нефть, алюминий, уран) и артефакты — как в игре: только после технологии, которая их открывает; «смотреть как» — по технологиям этого игрока, «Все» — как только открыл хоть кто-то</div>
+          <div class="rf-ylegend"><span><i class="rf-yi" style="background-position:0 0"></i>еда</span><span><i class="rf-yi" style="background-position:20% 0"></i>производство</span><span><i class="rf-yi" style="background-position:40% 0"></i>золото</span><span><i class="rf-yi" style="background-position:60% 0"></i>наука</span><span><i class="rf-yi" style="background-position:80% 0"></i>культура</span><span><i class="rf-yi" style="background-position:100% 0"></i>вера</span></div>
+          <div><i class="rf-k"></i>значки внизу клетки — её выход, как в игре: до 3 одинаковых значков подряд, больше — значок и число; до 4 видов (все — в подсказке). Видно с ×3. Выход — как его хранит игра в сейве; у части открытого океана там 0, и значков нет</div>
           <div><i class="rf-k j">ж</i>у номера хода: сейва нет — юниты по журналу игроков, остальное с прошлого сейва</div>
         </div>
         <p class="rp-meta">Детализация зависит от масштаба. Мельче ×2 — стратегическая карта: ровные гексы, границы, города и щитки армий с числом юнитов. ×2 — рисованная карта: значок типа юнита, ресурсы, улучшения приглушённо. ×3 и ×4 — отряды фигурками и выход клеток. Рисунок увеличивается только в целое число раз, чтобы пиксели были чёткими.</p>
@@ -243,7 +244,7 @@
 </div><!-- /shell -->
 
 <script src="assets/site.js"></script>
-<script src="assets/replay-full.js?v=d844ea86e7"></script>
+<script src="assets/replay-full.js?v=51c3634fe6"></script>
 <script>NOVA.fillCommon();</script>
 </body>
 </html>

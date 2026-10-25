@@ -458,12 +458,62 @@ function iconRect(slot, short) {
 }
 // Что команда видит на клетке: правда (видно или «смотреть как всех») или память под туманом.
 function cellView(i, k) {
-  const st = S[i], t = viewTeam();
-  if (t < 0) return { rev: 1, vis: 1, own: st.P.own[k], imp: st.P.imp[k], rt: st.P.rt[k], feat: st.P.feat[k], res: st.P.res[k] };
+  const st = S[i], t = viewTeam(), hr = hiddenRes(i);
+  const R0 = r => (r >= 0 && hr.has(r) ? -1 : r);          // ресурс, ещё не открытый технологией, не показываем
+  if (t < 0) return { rev: 1, vis: 1, own: st.P.own[k], imp: st.P.imp[k], rt: st.P.rt[k], feat: st.P.feat[k], res: R0(st.P.res[k]) };
   const f = st.F[String(t)];
-  if (!f) return { rev: 1, vis: 1, own: st.P.own[k], imp: st.P.imp[k], rt: st.P.rt[k], feat: st.P.feat[k], res: st.P.res[k] };
+  if (!f) return { rev: 1, vis: 1, own: st.P.own[k], imp: st.P.imp[k], rt: st.P.rt[k], feat: st.P.feat[k], res: R0(st.P.res[k]) };
   const m = MEM[i];
-  return { rev: f.rev[k], vis: f.vis[k], own: m.own[k], imp: m.imp[k], rt: m.rt[k], feat: m.feat[k], res: m.res[k] };
+  return { rev: f.rev[k], vis: f.vis[k], own: m.own[k], imp: m.imp[k], rt: m.rt[k], feat: m.feat[k], res: R0(m.res[k]) };
+}
+// ---------------------------------------------------------------- ресурсы, открываемые технологией
+// Как в игре: стратегический ресурс (и артефакты) виден только после технологии (Resources.TechReveal; у Nova
+// железо открывает Горное дело). «Смотреть как» — по технологиям команды игрока, «Все» — как только открыл хоть
+// кто-то. Технологии команды — из сейва (TM.rv в пакете); в старых пакетах — по журналу технологий
+// (../nova-stats/replay/m/<ключ>.json, событие «изучено»), а если по команде журнала нет — ресурс показывается.
+const RES_REVEAL0 = { IRON: "MINING", HORSE: "ANIMAL_HUSBANDRY", COAL: "INDUSTRIALIZATION", OIL: "BIOLOGY",
+  ALUMINUM: "ELECTRICITY", URANIUM: "ATOMIC_THEORY", ARTIFACTS: "ARCHAEOLOGY", HIDDEN_ARTIFACTS: "ARCHAEOLOGY" };
+let JTECH = null, JTECH_STATE = "none", HR_CACHE = new Map();
+const hasRv = () => { const tm = S[0] && S[0].TM; for (const t in (tm || {})) return Array.isArray(tm[t].rv); return false; };
+function knownTech(i, team, tech) {
+  const row = S[i].TM && S[i].TM[String(team)];
+  if (row && Array.isArray(row.rv)) return row.rv.indexOf(tech) >= 0;
+  if (JTECH_STATE === "loading") return false;                // пока журнал не пришёл — не подсказываем будущее
+  if (JTECH_STATE !== "ok") return true;                      // журнала нет — как раньше
+  const m = JTECH.get(team);
+  if (!m) return true;                                        // по этой команде событий нет — неизвестно, показываем
+  const tt = m.get(tech);
+  return tt != null && tt <= turnOf(i);
+}
+function hiddenRes(i) {
+  const vt = viewTeam(), kk = i + "|" + vt;
+  if (HR_CACHE.has(kk)) return HR_CACHE.get(kk);
+  const out = new Set(), RR = PK.resReveal || RES_REVEAL0, teams = vt >= 0 ? [vt] : PK.majorTeams || [];
+  (PK.T.res || []).forEach((nm, idx) => {
+    const tech = RR[nm];
+    if (tech && !teams.some(t => knownTech(i, t, tech))) out.add(idx);
+  });
+  HR_CACHE.set(kk, out);
+  return out;
+}
+async function loadJournalTechs(key) {
+  if (hasRv() || !src.journal) { JTECH_STATE = hasRv() ? "rv" : "none"; return; }
+  JTECH_STATE = "loading"; HR_CACHE.clear();
+  try {
+    const m = await getJson(src.journal + "replay/m/" + encodeURIComponent(key) + ".json");
+    if (!PK || PK.key !== key) return;
+    const tn = (NAMES.tech || {}), byTeam = new Map();
+    for (const e of (m.techs || [])) {
+      if (e.k !== "a" || !playerBy.has(e.p)) continue;
+      const nm = String((tn[e.t] || {}).k || "").replace(/^TECH_/, ""), team = playerBy.get(e.p).team;
+      if (!nm) continue;
+      if (!byTeam.has(team)) byTeam.set(team, new Map());
+      const mm = byTeam.get(team); if (!mm.has(nm) || mm.get(nm) > e.turn) mm.set(nm, e.turn);
+    }
+    JTECH = byTeam; JTECH_STATE = "ok";
+  } catch (e) { JTECH_STATE = "none"; }
+  HR_CACHE.clear(); if (MEM && view >= 0) MEM = buildMemory(playerBy.get(view).team);
+  drawMap(); unitsDraw(); if (card) renderCard();
 }
 function citiesFor(i) {
   const t = viewTeam();
@@ -965,36 +1015,44 @@ function drawBanners(cities, g) {
 // точка с числом. Под туманом выбранного игрока не показывается; на ходу «по журналу» — с прошлого сейва.
 const YCOL = { yf: "#7ccf4a", yp: "#e0873a", yg: "#f0cf45", ys: "#5aa8f0", yc: "#c07ae6", yr: "#f2f2f2" };
 const YRU = { yf: "еда", yp: "производство", yg: "золото", ys: "наука", yc: "культура", yr: "вера" };
+// Значки выхода — из игры: assets/replay/yields.png, 6 × 48 px (еда, производство, золото, наука, культура, вера).
+const YK = ["yf", "yp", "yg", "ys", "yc", "yr"];
+const YIMG = new Image();
+YIMG.onload = () => { if (PK) drawMap(); };
+YIMG.src = "assets/replay/yields.png";
+const yieldIconHtml = yk => '<i class="rf-yi" style="background-position:' + (YK.indexOf(yk) * 20) + '% 0"></i>';
+// Как в Civ5: значки в ряд внизу клетки; один вид до 3 — повтор значка, больше — значок и цифра.
+// Вида больше 4 — первые 4 (все — в подсказке). Под туманом выбранного игрока нет; на клетке города нет.
 function drawYields(V, cities) {
-  // Один путь на цвет (7 заливок на всю карту вместо тысяч) — перерисовка вблизи дешевле.
+  if (!YIMG.complete || !YIMG.naturalWidth) return;
   const st = S[si], t = viewTeam(), f = t >= 0 ? st.F[String(t)] : null, n = PK.w * PK.h;
-  const r = Math.max(1.8, R * 0.07), gap = r * 2.4, KEYS = ["yf", "yp", "yg", "ys", "yc", "yr"];
-  const bg = new Path2D(), path = {}, nums = [];
-  for (const yk of KEYS) path[yk] = new Path2D();
+  const sz = Math.max(10, Math.round(R * 0.5)), step = Math.round(sz * 0.55), gap = Math.round(sz * 0.22);
+  ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = "high";
+  ctx.font = "800 " + Math.round(sz * 0.62) + "px system-ui,sans-serif"; ctx.textBaseline = "middle"; ctx.textAlign = "left";
   for (let k = 0; k < n; k++) { if (!IV[k]) continue;
     if (!V[k].rev || (f && !f.vis[k]) || cities.has(k)) continue;
-    let cnt = 0, wsum = 0;
-    for (const yk of KEYS) { const v = st.P[yk][k]; if (v > 0 && cnt < 4) { cnt++; wsum += (v > 3 ? 2 : v) * gap + gap * 0.6; } }
-    if (!cnt) continue;
+    const parts = [];
+    for (const yk of YK) { const v = st.P[yk][k]; if (v > 0) parts.push([yk, v]); if (parts.length === 4) break; }
+    if (!parts.length) continue;
+    let wsum = 0;
+    for (const [, v] of parts) wsum += (v > 3 ? sz + Math.round(sz * 0.5) : sz + (v - 1) * step) + gap;
+    wsum -= gap;
     const c = centerOf(kx(k), ky(k));
-    let x = c[0] - wsum / 2 + gap / 2, y = c[1] + R * 0.7, m4 = 0;
-    bg.rect(c[0] - wsum / 2 - r * 0.6, y - r * 1.6, wsum + r * 1.2, r * 3.2);
-    for (const yk of KEYS) {
-      const v = st.P[yk][k];
-      if (v <= 0 || m4 === 4) continue;
-      m4++;
-      const m = v > 3 ? 1 : v;
-      for (let i = 0; i < m; i++) { path[yk].rect(x - r, y - r, r * 2, r * 2); x += gap; }
-      if (v > 3) { nums.push([yk, v, x, y]); x += gap; }
-      x += gap * 0.6;
+    let x = Math.round(c[0] - wsum / 2), y = Math.round(c[1] + R * 0.78 - sz);
+    for (const [yk, v] of parts) {
+      const sx = YK.indexOf(yk) * 48, m = v > 3 ? 1 : v;
+      for (let i = 0; i < m; i++) ctx.drawImage(YIMG, sx, 0, 48, 48, x + i * step, y, sz, sz);
+      x += sz + (m - 1) * step;
+      if (v > 3) {
+        const tx = x - Math.round(sz * 0.12), ty = y + sz * 0.62;
+        ctx.lineWidth = Math.max(2, sz * 0.18); ctx.strokeStyle = "#0b1119"; ctx.strokeText(String(v), tx, ty);
+        ctx.fillStyle = "#ffffff"; ctx.fillText(String(v), tx, ty);
+        x += Math.round(sz * 0.5);
+      }
+      x += gap;
     }
   }
-  ctx.fillStyle = "rgba(10,12,16,.6)"; ctx.fill(bg);
-  for (const yk of KEYS) { ctx.fillStyle = YCOL[yk]; ctx.fill(path[yk]); }
-  if (nums.length) {
-    ctx.font = "700 " + Math.round(r * 3.2) + "px system-ui,sans-serif"; ctx.textAlign = "center"; ctx.textBaseline = "middle";
-    for (const [yk, v, x, y] of nums) { ctx.fillStyle = YCOL[yk]; ctx.fillText(String(v), x, y + 0.5); }
-  }
+  ctx.imageSmoothingEnabled = artScale() < 1;
 }
 const A_CIVV = { MAYA: "The Maya", HUNS: "The Huns", OTTOMAN: "The Ottomans", AZTEC: "Aztecs", MONGOL: "Mongolia" };
 const civShort = p => String((playerBy.get(p) || {}).civ || "").replace(/^CIVILIZATION_/, "");
@@ -1892,7 +1950,7 @@ function closeCard() { card = null; cardEl.hidden = true; drawMap(); unitsDraw()
 function yieldTip(k, v) {
   if (!PK.yields || !v.rev || (viewTeam() >= 0 && !v.vis)) return "";
   const st = S[si], parts = [];
-  for (const yk of ["yf", "yp", "yg", "ys", "yc", "yr"]) if (st.P[yk][k] > 0) parts.push("<span style='color:" + YCOL[yk] + "'>●</span> " + YRU[yk] + " " + st.P[yk][k]);
+  for (const yk of YK) if (st.P[yk][k] > 0) parts.push(yieldIconHtml(yk) + " " + YRU[yk] + " " + st.P[yk][k]);
   if (!parts.length) return "";
   const ps = isSaveStep(si) ? -1 : prevSaveStep(si);
   return "<br>выход: " + parts.join(" · ") + (ps >= 0 ? "<br><span class='l'>выход — по сейву " + esc(stepLabel(ps)) + "</span>" : "");
@@ -2196,7 +2254,8 @@ async function openMatch(i, t, v) {
   message("");
   PK = pk; card = null; cardEl.hidden = true; HEAT = null; WARS = null; MEM = null; view = -1; FRAME = null; anim = null;
   S = decode(PK);
-  setupPlayers(); findLakes(); parseCombats(); sprites.clear(); LOGC.clear();
+  setupPlayers(); findLakes(); parseCombats(); sprites.clear(); LOGC.clear(); HR_CACHE.clear(); JTECH = null;
+  loadJournalTechs(PK.key);
   slider.max = S.length - 1;
   fillView(); metaText(); buildTimeline();
   zoom = 1; resize();
@@ -2273,6 +2332,7 @@ async function boot() {
     if (!base) throw new Error("replay-full-source.json: base не годится");
     src = { base };
     const statsP = cfg.stats ? getJson(String(cfg.stats)).catch(() => null) : Promise.resolve(null);
+    if (cfg.stats) src.journal = new URL(".", new URL(String(cfg.stats), location.href)).href;   // ../nova-stats/ — журнал технологий
     const [idx, dict, stats] = await Promise.all([getJson(base + "f/index.json"), getJson(String(cfg.dict)), statsP]);
     initDict(dict.names, dict.icons, new URL(String(cfg.dict), location.href).href);
     const ST = new Map(); for (const s of ((stats && stats.matches) || [])) if (s && s.key) ST.set(s.key, s);
@@ -2302,7 +2362,7 @@ styleUi();
 if (style === "drawn") loadArt();
 window.__rf = { get PK() { return PK; }, get S() { return S; }, get si() { return si; }, setStep: i => setStep(i), setView: p => setView(p), play: () => play(), stop: () => stop(),
   get view() { return view; }, perf: UPERF, unitsOf: i => unitsOf(i), setStyle: v => setStyle(v), get artMiss() { return [...ART.miss]; },
-  setZoom: (z, x, y) => setZoom(z, x, y),
+  setZoom: (z, x, y) => setZoom(z, x, y), cell: (i, k) => cellView(i, k), get jtech() { return JTECH_STATE; },
   focus: (x, y) => { const c = centerOf(x, y), r = stage.getBoundingClientRect(), q = sc.getBoundingClientRect(); sc.scrollLeft += r.left + c[0] - (q.left + q.width / 2); sc.scrollTop += r.top + c[1] - (q.top + q.height / 2); unitsDraw(); },
   openCity: k => openCard({ kind: "city", k }),
   openUnit: kk => openCard({ kind: "unit", kk, last: S[si].U.get(kk) || (si > 0 && S[si - 1].U.get(kk)) }) };

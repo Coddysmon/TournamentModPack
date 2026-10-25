@@ -132,3 +132,8 @@
 .rf-lodhint[hidden]{display:none}
 .rf-debug{position:absolute;right:10px;top:10px;z-index:20;max-width:60%;padding:6px 8px;background:rgba(0,0,0,.85);color:#9ef;font:11px/1.4 ui-monospace,monospace;border-radius:4px;pointer-events:none}
 @media (max-width:980px){.rf-lodhint{bottom:40px;font-size:11px}}
+
+/* значки выхода клеток (игра): assets/replay/yields.png, 6 в ряд */
+.rf-yi{display:inline-block;width:16px;height:16px;vertical-align:-3px;background:url(../assets/replay/yields.png) 0 0/600% 100% no-repeat}
+.rf-ylegend{display:flex;flex-wrap:wrap;gap:4px 12px;grid-column:1/-1}
+.rf-ylegend span{display:inline-flex;align-items:center;gap:4px}
