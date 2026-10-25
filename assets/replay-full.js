@@ -1675,6 +1675,12 @@ function setView(p) {
   FRAME = null; anim = null;
   drawMap(); unitsDraw(); renderSide(); viewPill(); saveHash(); renderLog();
   if (card) renderCard();
+  if (view >= 0 && drawn() && zoom > 1.0001) centerOn(focusCell());   // глазами игрока — сразу к его столице
+}
+function centerOn(k) {
+  if (k < 0) return;
+  const c = centerOf(kx(k), ky(k)), r = stage.getBoundingClientRect(), q = sc.getBoundingClientRect();
+  sc.scrollLeft += r.left + c[0] - (q.left + q.width / 2); sc.scrollTop += r.top + c[1] - (q.top + q.height / 2);
 }
 function viewPill() {
   const el = $("viewPill");
@@ -2218,8 +2224,7 @@ function focusCell() {
 function closeUp() {
   const z = 28 / (fitR() * DPR());
   if (z > 1.0001) setZoom(z, null, null, true);
-  const k = focusCell();
-  if (k >= 0) { const c = centerOf(kx(k), ky(k)), r = stage.getBoundingClientRect(), q = sc.getBoundingClientRect(); sc.scrollLeft += r.left + c[0] - (q.left + q.width / 2); sc.scrollTop += r.top + c[1] - (q.top + q.height / 2); }
+  centerOn(focusCell());
   fitUi();
 }
 function fitUi() { const b = $("fitBtn"); if (b) { const all = zoom <= 1.0001; b.querySelector(".rp-lbl").textContent = all ? "Крупно" : "Вся карта"; b.title = all ? "Крупно: столица или место события хода" : "Показать всю карту"; } }
