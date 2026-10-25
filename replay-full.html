@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru" data-lang-alt="none">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Повтор партии — Nova</title>
+<meta name="description" content="Повтор сетевой партии Nova по сейвам: все юниты, города, туман войны глазами любого игрока, войны, события и чат.">
+<meta name="theme-color" content="#0D131A">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/replay.css">
+<link rel="stylesheet" href="assets/replay-full.css">
+<link rel="alternate" hreflang="ru" href="replay-full.html">
+<script src="assets/lang.js"></script>
+</head>
+<body>
+<a class="skip" href="#rp">К карте</a>
+<div class="shell">
+<aside class="side" id="side" aria-label="Разделы сайта">
+  <a class="mark" href="index.html">
+    <span class="mark-name">NOVA</span>
+    <span class="mark-rule"><b>PATCH</b></span>
+  </a>
+  <nav class="menu">
+      <a href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5,8.5 H17.5 A4.5,4.5 0 0 1 17.5,17.5 H6.5 A4.5,4.5 0 0 1 6.5,8.5 Z M9,11 V15 M7,13 H11 M13.9,12.4 A0.85,0.85 0 1 0 15.6,12.4 A0.85,0.85 0 1 0 13.9,12.4 Z M15.4,14.9 A0.85,0.85 0 1 0 17.1,14.9 A0.85,0.85 0 1 0 15.4,14.9 Z"/></svg>Мод</a>
+      <a href="changes.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5,20 H20.5 M6,20 V12.5 M11,20 V7 M16,20 V14.5 M20,20 V9.5"/></svg>Что меняет</a>
+      <a href="news.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5,5 H15 L18.5,8.5 V19.5 H5.5 Z M15,5 V8.5 H18.5 M8.2,11.5 H15.8 M8.2,14.5 H15.8 M8.2,17.5 H13"/></svg>Новости</a>
+      <a href="stats.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4,4.5 V19.5 H20 M7,15.5 L10.5,11 L13.5,13.5 L19,7"/></svg>Статистика</a>
+      <a href="replay.html" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5,6.5 L9,4.5 L15,6.5 L20.5,4.5 V17.5 L15,19.5 L9,17.5 L3.5,19.5 Z M9,4.5 V17.5 M15,6.5 V19.5"/></svg>Повторы</a>
+      <a href="tournament-rules.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.4,4.5 H15.6 V9.3 A3.6,3.6 0 0 1 8.4,9.3 Z M8.4,6 H5.7 A2.2,2.2 0 0 0 8.6,10.3 M15.6,6 H18.3 A2.2,2.2 0 0 1 15.4,10.3 M12,12.8 V15.9 M9,19.5 H15 M9.7,19.5 C9.7,17.4 10.7,15.9 12,15.9 C13.3,15.9 14.3,17.4 14.3,19.5"/></svg>Правила турнира</a>
+      <a href="media.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5,6 H19.5 V18 H4.5 Z M4.5,15 L9,10.5 L12.5,14 L15.5,11.5 L19.5,15.5 M15.6,9 A1,1 0 1 0 17.6,9 A1,1 0 1 0 15.6,9 Z"/></svg>Галерея</a>
+      <a href="subscribe.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12,4.4 L14.2,9.5 L19.7,10.1 L15.6,13.8 L16.8,19.3 L12,16.4 L7.2,19.3 L8.4,13.8 L4.3,10.1 L9.8,9.5 Z"/></svg>Подписка</a>
+      <a href="faq.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12,3.6 A8.4,8.4 0 1 1 12,20.4 A8.4,8.4 0 1 1 12,3.6 Z M9.6,9.7 A2.5,2.5 0 0 1 14.4,10.5 C14.4,12.3 12,12.5 12,14.3 M12,17.1 V17.2"/></svg>Помощь</a>
+  </nav>
+  <!-- Английской версии карты пока нет: data-lang-alt="none" (как oferta.html) — lang.js
+       не перекидывает английский браузер на несуществующий en/replay.html; EN — без ссылки. -->
+  <div class="langsw" role="group" aria-label="Язык сайта / Site language">
+    <a href="replay-full.html" data-lang="ru" hreflang="ru" aria-current="true">RU</a>
+    <span lang="en" title="The match map exists in Russian only for now">EN</span>
+  </div>
+  <div class="side-foot">
+    <p><a href="stats.html">← к статистике</a></p>
+    <p>мод <span data-nova="mod-version">…</span></p>
+    <p>лаунчер <span data-nova="client-version">…</span></p>
+  </div>
+</aside>
+<div class="scrim" id="scrim"></div>
+
+<div class="col">
+  <div class="topbar">
+    <button class="burger" id="burger" type="button" aria-expanded="false"
+            aria-controls="side" aria-label="Разделы сайта">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4,7 H20 M4,12 H20 M4,17 H20"/></svg>
+    </button>
+    <a class="topbrand" href="index.html">NOVA</a>
+    <div class="langsw" role="group" aria-label="Язык сайта / Site language">
+      <a href="replay-full.html" data-lang="ru" hreflang="ru" aria-current="true">RU</a>
+      <span lang="en" title="The match map exists in Russian only for now">EN</span>
+    </div>
+  </div>
+
+<div class="rp rf" id="rp">
+  <div class="rp-bar">
+    <h1 class="rp-brand">Повтор партии</h1>
+    <select id="matchPick" class="rp-match" aria-label="Партия"></select>
+    <div class="rp-play">
+      <button class="rp-btn primary" id="play" type="button" aria-label="Смотреть" title="Смотреть по ходам (пробел)">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path id="playIco" d="M7 5 L19 12 L7 19 Z"/></svg>
+      </button>
+      <span class="rp-turn" id="turnLabel">ход 0</span>
+      <input type="range" id="slider" min="0" value="0" step="1" aria-label="Ход партии">
+    </div>
+    <label class="rf-view" title="Туман войны глазами игрока: что его команда разведала и что видит на этом ходу">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 12 C5 7 8.5 5 12 5 C15.5 5 19 7 21.5 12 C19 17 15.5 19 12 19 C8.5 19 5 17 2.5 12 Z M12 9 A3 3 0 1 0 12.01 9 Z"/></svg>
+      <select id="viewPick" aria-label="Смотреть как"></select>
+    </label>
+    <div class="rp-tools">
+      <button class="rp-btn" id="moreBtn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="morePop" title="Вид, масштаб, скорость, слои, обозначения, панель">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7 H20 M4 12 H20 M4 17 H20"/></svg><span class="rp-lbl">Меню</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="rp-body">
+    <div class="rp-map" id="mapArea">
+      <div class="rp-scroll" id="scroll"><div class="stage" id="stage"></div></div>
+      <canvas id="cv" class="rf-mapcv" aria-hidden="true"></canvas>
+      <canvas id="uv" class="rp-units" aria-hidden="true"></canvas>
+      <div class="rf-log" id="log" hidden aria-label="Журнал событий">
+        <div class="rf-log-head"><div class="rf-log-tabs" id="logTabs" role="toolbar" aria-label="Что показывать"></div>
+          <button type="button" class="rf-log-min" id="logMin" aria-expanded="true" title="Свернуть / развернуть журнал">▾</button></div>
+        <div class="rf-log-list" id="logList" aria-live="off"></div>
+      </div>
+      <div class="rf-tl" id="tl" aria-label="Шкала событий партии"><div class="rf-tl-in" id="tlIn"></div></div>
+      <div class="rp-focus" id="viewPill" hidden></div>
+
+      <div class="rp-pop rf-more" id="morePop" hidden role="dialog" aria-label="Меню">
+        <div class="rp-head"><h2>Меню</h2><button class="rp-x" type="button" data-close aria-label="Закрыть">×</button></div>
+        <h3>Вид карты</h3>
+      <div class="rp-seg rf-style" role="radiogroup" aria-label="Вид карты">
+        <button type="button" role="radio" data-style="drawn" aria-checked="true" title="Рисованная карта: тайлы Fantasy Hex и отряды AbsoluteUnits">Рисованный</button>
+        <button type="button" role="radio" data-style="flat" aria-checked="false" title="Плоская схема: заливка местности и значки">Плоский</button>
+      </div>
+        <h3>Масштаб и просмотр</h3>
+        <div class="rf-more-row">
+      <div class="rp-zoom" role="group" aria-label="Масштаб">
+        <button id="zoomOut" type="button" aria-label="Уменьшить" title="Уменьшить (−)">−</button>
+        <span id="zoomLabel">100%</span>
+        <button id="zoomIn" type="button" aria-label="Увеличить" title="Увеличить (+)">+</button>
+      </div>
+      <button class="rp-btn rp-speed" id="speedBtn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="speedPop" title="Автопросмотр: секунд на ход, плавное движение">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5.5 A7.5 7.5 0 1 1 11.99 5.5 Z M12 8.5 V13 L15 15"/></svg><span id="speedLbl">2 с</span>
+      </button>
+      <button class="rp-btn" id="toEnd" type="button" aria-label="В конец" title="В конец (End)">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6 L14 12 L6 18 Z M17 6 V18"/></svg>
+      </button>
+        </div>
+        <h3>Карта и панель</h3>
+        <div class="rf-more-row">
+      <button class="rp-btn" id="layersBtn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="layersPop" title="Что рисовать на карте">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4 L21 9 L12 14 L3 9 Z M3 13.5 L12 18.5 L21 13.5"/></svg><span class="rp-lbl">Слои</span>
+      </button>
+      <button class="rp-btn" id="helpBtn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="helpPop" aria-label="Обозначения" title="Обозначения и о записи (?)">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.6 A8.4 8.4 0 1 1 12 20.4 A8.4 8.4 0 1 1 12 3.6 Z M9.6 9.7 A2.5 2.5 0 0 1 14.4 10.5 C14.4 12.3 12 12.5 12 14.3 M12 17.1 V17.2"/></svg>
+      </button>
+      <button class="rp-btn" id="sideBtn" type="button" aria-expanded="false" aria-controls="rpSide" title="Державы, события, чат, войны">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5 H20 V19 H4 Z M14.5 5 V19"/></svg><span class="rp-lbl">Панель</span>
+      </button>
+        </div>
+      </div>
+
+      <div class="rp-pop" id="layersPop" hidden role="dialog" aria-label="Слои карты">
+        <div class="rp-head"><h2>Слои</h2><button class="rp-x" type="button" data-close aria-label="Закрыть">×</button></div>
+        <label class="rp-layer"><input type="checkbox" data-layer="units" checked><span>Юниты<small>один флажок на клетку (+N — ещё юниты там же); вблизи — отряд фигурками</small></span></label>
+        <label class="rp-layer"><input type="checkbox" data-layer="names" checked><span>Флажки городов<small>имя, жители, владелец</small></span></label>
+        <label class="rp-layer"><input type="checkbox" data-layer="icons" checked><span>Значки ресурсов<small>маленький кружок в углу клетки <b id="iconsNote"></b></small></span></label>
+        <label class="rp-layer"><input type="checkbox" data-layer="log" checked><span>Журнал событий<small>под картой: ходы юнитов, бои, стройка, города, дипломатия — с вкладками</small></span></label>
+        <label class="rp-layer"><input type="checkbox" data-layer="yields" checked><span>Выход клеток<small>точки внизу клетки: еда, производство, золото, наука, культура, вера — как в сейве игры <b id="yieldsNote"></b></small></span></label>
+        <label class="rp-layer"><input type="checkbox" data-layer="heat"><span>Тепловая карта боёв<small id="heatNote">где юниты теряли здоровье и гибли — с начала записи по этот ход</small></span></label>
+      </div>
+
+      <div class="rp-pop speed" id="speedPop" hidden role="dialog" aria-label="Автопросмотр">
+        <div class="rp-head"><h2>Автопросмотр</h2><button class="rp-x" type="button" data-close aria-label="Закрыть">×</button></div>
+        <h3>Секунд на ход</h3>
+        <div class="rp-seg" role="radiogroup" aria-label="Секунд на ход">
+          <button type="button" role="radio" data-speed="0" aria-checked="false" title="0,2 с на ход, юниты без движения">быстро</button>
+          <button type="button" role="radio" data-speed="1" aria-checked="false">1</button>
+          <button type="button" role="radio" data-speed="2" aria-checked="true">2</button>
+          <button type="button" role="radio" data-speed="4" aria-checked="false">4</button>
+          <button type="button" role="radio" data-speed="7" aria-checked="false">7</button>
+        </div>
+        <label class="rp-layer"><input type="checkbox" id="smooth" checked><span>Плавное движение<small>юниты идут по клеткам от старого места к новому; выключено — рывком</small></span></label>
+      </div>
+
+      <div class="rp-pop help" id="helpPop" hidden role="dialog" aria-label="Обозначения">
+        <div class="rp-head"><h2>Обозначения</h2><button class="rp-x" type="button" data-close aria-label="Закрыть">×</button></div>
+        <p class="rp-meta" id="meta"></p>
+        <p class="rp-meta rf-credits">Рисованный вид: тайлы <a href="https://cuddlyclover.itch.io/fantasy-hex-tiles" target="_blank" rel="noopener">Fantasy Hex</a>
+          — CuddlyClover и участники <a href="https://github.com/yairm210/Unciv" target="_blank" rel="noopener">Unciv</a>;
+          отряды <a href="https://github.com/letstalkaboutdune/AbsoluteUnits" target="_blank" rel="noopener">AbsoluteUnits</a> — letstalkaboutdune.
+          Лицензия обоих — <a href="https://creativecommons.org/licenses/by/4.0/deed.ru" target="_blank" rel="noopener">CC BY 4.0</a>;
+          изменения: вырезаны из атласа Unciv, масштабированы, цвета местности приглушены, отряды перекрашены в цвета держав. <span id="styleNote"></span></p>
+        <h3>Рисованная карта</h3>
+        <div class="key rf-key">
+          <div><i class="rf-k flag"></i>флажок юнита цвета державы; значок — тип юнита. Кружок — военный, треугольник — гражданский или великий человек, щит — укреплён, «лодка» — на воде, зубцы — гарнизон</div>
+          <div><i class="rf-k stack">+2</i>на клетке ещё юниты, кроме показанного</div>
+          <div><i class="rf-k hp"></i>полоска над флажком — здоровье (зелёная → красная)</div>
+          <div><i class="rf-k city">12</i>плашка города: жители, имя, ★ — столица; над ней ⛊ — оборона (вблизи)</div>
+          <div><i class="rf-k border"></i>граница державы — линия её цвета</div>
+          <div><i class="rf-k res"></i>кружок в правом верхнем углу клетки — ресурс (вблизи)</div>
+          <div><i class="rf-k yl"><b style="background:#7ccf4a"></b><b style="background:#e0873a"></b><b style="background:#f0cf45"></b></i>квадратики внизу клетки — выход: еда, производство, золото, наука, культура, вера (вблизи; до 4 видов, все — в подсказке). Выход — как его хранит игра в сейве; у части открытого океана там 0, и точек нет</div>
+          <div><i class="rf-k j">ж</i>у номера хода: сейва нет — юниты по журналу игроков, остальное с прошлого сейва</div>
+        </div>
+        <p class="rp-meta">Детализация зависит от масштаба: издалека — местность, границы, города и флажки армий; ближе — отряды фигурками; совсем близко — ресурсы, значки улучшений и выход клеток.</p>
+        <h3>Шкала событий</h3>
+        <div class="key" id="evKey"></div>
+        <h3>Плоская карта</h3>
+        <div class="key">
+          <div><svg class="uk" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8"/></svg>военный</div>
+          <div><svg class="uk" viewBox="0 0 20 20"><path d="M2 4 H18 L10 19 Z"/></svg>гражданский</div>
+          <div><svg class="uk gp" viewBox="0 0 20 20"><path d="M2 4 H18 L10 19 Z"/></svg>великий человек</div>
+          <div><svg class="uk" viewBox="0 0 20 20"><path d="M3 2 H17 V10 Q16 16 10 19 Q4 16 3 10 Z"/></svg>укреплён / спит</div>
+          <div><svg class="uk" viewBox="0 0 20 20"><path d="M2 3 H18 V13 L10 19 L2 13 Z"/></svg>на воде</div>
+          <div><svg class="uk" viewBox="0 0 20 20"><path d="M2 19 V2 H5 V5 H8 V2 H12 V5 H15 V2 H18 V19 Z"/></svg>гарнизон города</div>
+          <div><i class="rf-kflag"></i>флажок города: жители, имя, ★ столица</div>
+          <div><i style="background:#ff7a3c;border-radius:50%"></i>тепловая карта: потери здоровья и гибель юнитов</div>
+        </div>
+        <h3>Туман войны</h3>
+        <div class="key one">
+          <div><i style="background:#05080c"></i>не разведано командой игрока</div>
+          <div><i style="background:#3a4a5a;opacity:.7"></i>разведано, но не видно на этом ходу — как игрок запомнил</div>
+        </div>
+        <h3>Управление</h3>
+        <p class="rp-kbd"><kbd>пробел</kbd> смотреть / пауза · <kbd>←</kbd> <kbd>→</kbd> ход · <kbd>Home</kbd> <kbd>End</kbd> начало / конец ·
+          <kbd>+</kbd> <kbd>−</kbd> масштаб (или Ctrl + колесо) · карту можно тянуть мышью · нажмите на юнит или город — карточка · значок на шкале — переход на ход · <kbd>Esc</kbd> закрыть</p>
+        <details><summary>Откуда данные</summary><p id="about"></p></details>
+      </div>
+
+      <div class="rp-card" id="card" hidden role="dialog" aria-labelledby="cardHead">
+        <div class="rp-head"><h2 id="cardHead"></h2><button class="rp-x" type="button" id="cardClose" aria-label="Закрыть">×</button></div>
+        <div id="cardBody"></div>
+      </div>
+
+      <div class="rp-msg" id="msg" hidden></div>
+    </div>
+
+    <aside class="rp-side" id="rpSide" hidden aria-label="Подробности партии">
+      <div class="rp-tabs" role="tablist">
+        <button role="tab" type="button" data-tab="players" aria-selected="true">Державы</button>
+        <button role="tab" type="button" data-tab="events" aria-selected="false">События</button>
+        <button role="tab" type="button" data-tab="chat" aria-selected="false">Чат</button>
+        <button role="tab" type="button" data-tab="wars" aria-selected="false">Войны</button>
+        <button class="rp-x" type="button" id="sideClose" aria-label="Закрыть панель">×</button>
+      </div>
+      <div class="rp-pane" data-pane="players" role="tabpanel">
+        <p class="rp-hint">Нажмите на державу — карта покажется её глазами (туман войны её команды).</p>
+        <div id="players"></div>
+        <div class="rp-cs" id="csline"></div>
+      </div>
+      <div class="rp-pane" data-pane="events" role="tabpanel" hidden>
+        <div class="rp-feedbar"><label><input type="checkbox" id="evAll">и основание городов, пантеоны</label><span id="evCount"></span></div>
+        <div class="feed" id="events"></div>
+      </div>
+      <div class="rp-pane" data-pane="chat" role="tabpanel" hidden>
+        <p class="rp-hint">Только реплики «всем». Личные и командные в запись повтора не попадают.</p>
+        <div class="feed" id="chat"></div>
+      </div>
+      <div class="rp-pane" data-pane="wars" role="tabpanel" hidden>
+        <div class="picks" id="wars"></div>
+      </div>
+    </aside>
+  </div>
+  <div class="tip" id="tip" hidden></div>
+</div>
+
+  <noscript><div class="note">Карта строится в браузере — включите JavaScript.</div></noscript>
+</div><!-- /col -->
+</div><!-- /shell -->
+
+<script src="assets/site.js"></script>
+<script src="assets/replay-full.js"></script>
+<script>NOVA.fillCommon();</script>
+</body>
+</html>
