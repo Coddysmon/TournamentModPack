@@ -1041,48 +1041,56 @@ YIMG.src = "assets/replay/yields.png";
 const yieldIconHtml = yk => '<i class="rf-yi" style="background-position:' + (YK.indexOf(yk) * 20) + '% 0"></i>';
 // Как в Civ5: значки в ряд внизу клетки; один вид до 3 — повтор значка, больше — значок и цифра.
 // Вида больше 4 — первые 4 (все — в подсказке). Под туманом выбранного игрока нет; на клетке города нет.
-// Как в Civ5: внизу клетки ровный ряд без наложения — значок ресурса первым, затем выход: до 3 одинаковых
-// значков подряд, больше — значок и число; до 4 видов. Размер подбирается, чтобы ряд влез в клетку.
-// withRes — рисовать ресурс в этом ряду (тогда отдельный значок ресурса в углу не рисуется).
+// Раскладка — как в самой игре (у владельца и большинства игроков — EUI):
+//  • UI_bc1/Improvements/YieldIconManager.xml:12–17 — WorldAnchor в центре клетки, Stack Offset="0,-10", ряды
+//    (Stack1, Stack2) растут вправо с Padding="-40": ячейка 128, шаг 88 единиц атласа; ряды — вниз с тем же шагом;
+//  • YieldIconManager.lua:65–95 — порядок еда, производство, золото, наука, культура, вера (по YieldID); в ряду до 4
+//    видов (n<5 → m=4, иначе m=(n+1)/2 — второй ряд); один вид = ОДИН значок, количество — его форма:
+//    1 круг, 2 пара, 3 треугольник, 4 квадрат 2×2, 5+ крупный медальон; 6+ — цифра поверх медальона;
+//  • UI/InGame/ResourceIconManager.lua:10–11 — значок ресурса в стороне от выхода: смещение (−30, +15) мировых
+//    единиц от центра клетки (левее и выше); ResourceIconManager.xml — круг 64 с подложкой ResourcesBack64.
+// Пропорции к ширине клетки W сняты со скриншотов владельца (Steam, 8930, 2026-07-29 и 2026-10-01): одиночный
+// значок ≈0,10 W, шаг видов 0,205 W (= 88 ед. атласа), ресурс ≈0,23 W в центре (−0,45 W; −0,23 W).
+const YG = new Image(); YG.onload = () => { if (PK) drawMap(); }; YG.src = "assets/replay/yields-game.png";
+const YGC = 64;                                              // ячейка атласа yields-game.png (128 в игре)
+function drawResIcon(k, rs) {
+  const ic = iconRect("res", rs); if (!ic) return;
+  const c = centerOf(kx(k), ky(k)), d = Math.max(16, W * 0.23), px = c[0] - W * 0.36, py = c[1] - W * 0.2;
+  ctx.beginPath(); ctx.arc(px, py, d / 2, 0, 7); ctx.fillStyle = "#2a2f36"; ctx.fill();
+  ctx.lineWidth = Math.max(1, d * 0.06); ctx.strokeStyle = "#c9b98a"; ctx.stroke();
+  ctx.drawImage(SHEETS.res, ic.x, 0, ic.w, ic.h, px - d * 0.46, py - d * 0.46, d * 0.92, d * 0.92);
+}
 function drawYields(V, cities, withRes) {
-  if (!YIMG.complete || !YIMG.naturalWidth) return;
+  if (!YG.complete || !YG.naturalWidth) return;
   const st = S[si], t = viewTeam(), f = t >= 0 ? st.F[String(t)] : null, n = PK.w * PK.h;
-  const szMax = Math.max(10, R * 0.44), wMax = W * 0.86;
+  // В игре клетка на экране в 3–5 раз крупнее нашей: пропорция 0,10 W дала бы значки в 6–8 точек. Поэтому одиночный
+  // глиф не мельче 13 точек; шаг видов — игровой (88), но ряд ужимается, чтобы не вылезать за клетку.
+  const k128 = Math.max(W * 0.10, 13) / 43, cell = 128 * k128, up = 10 * k128;   // 43 — ширина одиночного глифа в атласе
   ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = "high";
-  ctx.textBaseline = "middle"; ctx.textAlign = "left";
   for (let k = 0; k < n; k++) { if (!IV[k]) continue;
     if (!V[k].rev || (f && !f.vis[k]) || cities.has(k)) continue;
+    const rs = withRes ? T("res", V[k].res) : null;
+    if (rs) drawResIcon(k, rs);
     const parts = [];
-    for (const yk of YK) { const v = st.P[yk][k]; if (v > 0) parts.push([yk, v]); if (parts.length === 4) break; }
-    const rs = withRes ? T("res", V[k].res) : null, ric = rs && iconRect("res", rs);
-    if (!parts.length && !ric) continue;
-    let slots = ric ? 1.15 : 0;                                // ширина ряда в «значках»
-    for (const [, v] of parts) slots += v > 3 ? 1.75 : v;
-    slots += Math.max(0, parts.length - 1 + (ric && parts.length ? 1 : 0)) * 0.18;
-    const sz = Math.max(7, Math.min(szMax, wMax / Math.max(1, slots))), g = sz * 0.18;
+    for (let yi = 0; yi < 6; yi++) { const v = st.P[YK[yi]][k]; if (v > 0) parts.push([yi, v]); }
+    if (!parts.length) continue;
+    const cnt = parts.length, m = cnt < 5 ? 4 : Math.ceil(cnt / 2), rows = cnt <= m ? [parts] : [parts.slice(0, m), parts.slice(m)];
     const c = centerOf(kx(k), ky(k));
-    let x = c[0] - slots * sz / 2, y = c[1] + R * 0.74 - sz;
-    if (ric) {
-      const rr = sz * 1.15;
-      ctx.beginPath(); ctx.arc(x + rr / 2, y + sz / 2, rr / 2, 0, 7); ctx.fillStyle = "#f3efe4"; ctx.fill();
-      ctx.lineWidth = 1; ctx.strokeStyle = "#2a2a22"; ctx.stroke();
-      ctx.drawImage(SHEETS.res, ric.x, 0, ric.w, ric.h, x + rr * 0.08, y + sz / 2 - rr * 0.42, rr * 0.84, rr * 0.84);
-      x += rr + g;
-    }
-    ctx.font = "800 " + Math.round(sz * 0.72) + "px system-ui,sans-serif";
-    for (const [yk, v] of parts) {
-      const sx = YK.indexOf(yk) * 48, m = v > 3 ? 1 : v;
-      for (let q = 0; q < m; q++) { ctx.drawImage(YIMG, sx, 0, 48, 48, x, y, sz, sz); x += sz; }
-      if (v > 3) {
-        const ty = y + sz * 0.55;
-        ctx.lineWidth = Math.max(2, sz * 0.2); ctx.strokeStyle = "#0b1119"; ctx.strokeText(String(v), x + 1, ty);
-        ctx.fillStyle = "#ffffff"; ctx.fillText(String(v), x + 1, ty);
-        x += sz * 0.75;
-      }
-      x += g;
-    }
+    rows.forEach((row, ri) => {
+      const y0 = c[1] - up + (ri - (rows.length - 1) / 2) * 88 * k128 * 0.8;
+      const step = row.length > 1 ? Math.min(88 * k128, (W * 0.94 - 88 * k128) / (row.length - 1)) : 0;
+      row.forEach(([yi, v], q) => {
+        const x0 = c[0] + (q - (row.length - 1) / 2) * step;
+        const r = Math.min(5, v) - 1;
+        ctx.drawImage(YG, yi * YGC, r * YGC, YGC, YGC, x0 - cell / 2, y0 - cell / 2, cell, cell);
+        if (v > 5) {
+          const nn = Math.min(12, v), sx = nn <= 10 ? 6 * YGC : (nn - 11) * YGC, sy = nn <= 10 ? (nn - 6) * YGC : 5 * YGC;
+          ctx.drawImage(YG, sx, sy, YGC, YGC, x0 - cell / 2, y0 - cell / 2, cell, cell);
+        }
+      });
+    });
   }
-  ctx.imageSmoothingEnabled = drawn() ? artScale() < 1 : true;
+  ctx.imageSmoothingEnabled = drawn() ? (SMOOTH || artScale() < 1) : true;
 }
 const A_CIVV = { MAYA: "The Maya", HUNS: "The Huns", OTTOMAN: "The Ottomans", AZTEC: "Aztecs", MONGOL: "Mongolia" };
 const civShort = p => String((playerBy.get(p) || {}).civ || "").replace(/^CIVILIZATION_/, "");
