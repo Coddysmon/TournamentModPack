@@ -109,3 +109,19 @@
 .rp-scroll{cursor:grab}
 .rp-map{overflow:hidden}
 .rp-scroll.drag{cursor:grabbing!important}
+
+/* Правила, которые просмотрщик брал из общего assets/replay.css стенда. На сайте replay.css старее и их нет:
+   слой юнитов стоял в потоке и ПОД холстом карты (z-index) — юниты и плашки городов не были видны (25.10). */
+.rp-units{position:absolute;left:0;top:0;pointer-events:none;z-index:2}
+.rp-speed{padding:0 7px;gap:4px}
+.rp-speed span{font-size:12px;font-variant-numeric:tabular-nums;min-width:30px;text-align:left}
+.rp-pop.speed{width:290px;left:10px;right:auto}
+.rp-seg{display:flex;border:1px solid var(--line);border-radius:7px;overflow:hidden;margin:0 0 8px}
+.rp-seg button{flex:1;height:30px;border:0;border-radius:0;border-left:1px solid var(--line-soft);font-variant-numeric:tabular-nums}
+.rp-seg button:first-child{border-left:0;flex:1.6}
+.rp-seg button[aria-checked="true"]{background:var(--acc);color:var(--on-acc);font-weight:600}
+.uk{width:14px;height:14px;flex:none;fill:#4f8fd9;stroke:#0b1119;stroke-width:1.6}
+.uk.gp{stroke:#f2d06b;stroke-width:2}
+.rp-hp{height:6px;border-radius:3px;background:var(--line-soft);overflow:hidden;margin:4px 0 6px}
+.rp-hp i{display:block;height:100%}
+@media (max-width:980px){.rp-speed span{display:none}}
