@@ -2518,7 +2518,7 @@ function bldHistory(i, k) {
     const tFirst = turnOf(first), isOld = first === chain[chain.length - 1];
     const pj = isOld ? -1 : prevSave(first), lo = pj >= 0 ? turnOf(pj) : (cur.f != null ? cur.f - 1 : -99);
     const ty = T("bld", b), rows = (jb.get(ty) || []).filter(r => r.t > lo && r.t <= tFirst);
-    const r = rows.length ? rows[rows.length - 1] : null;
+    const r = rows.length ? (rows.filter(x => x.k === "p").pop() || rows[rows.length - 1]) : null;   // покупка важнее
     let t = tFirst, exact = false;
     if (r) { t = r.t; exact = true; }
     else if (!isOld && tFirst - lo <= 1) exact = true;
@@ -2568,7 +2568,10 @@ function renderCard() {
       line("жителей:", "<b>" + c.pop + "</b>" + (c.sp ? " (специалистов " + c.sp + ")" : "") + (c.f != null ? " · основан на ходу " + c.f : ""));
       if (c.orig != null && c.orig !== c.o) line("основал:", chip(c.orig));
       if (c.dmg > 0) line("повреждён:", String(c.dmg));
-      body += bldListHtml(c, si, card.k);
+      // в тумане — история на ход, когда город видели последний раз (иначе «захвачено» выдало бы скрытый захват)
+      let hi = si;
+      if (hidden) { const tk = String(viewTeam()); while (hi > 0 && !(S[hi].F[tk] && S[hi].F[tk].vis[card.k])) hi--; }
+      body += bldListHtml(c, hi, card.k);
       if (!hidden) {
         const q = (c.q || []).map(o => o[0] === 0 ? "юнит «" + typeName("unit", T("unit", o[1])) + "»" : o[0] === 1 ? typeName("bld", T("bld", o[1])) :
           o[0] === 2 ? "проект " + prettify(String(o[2]).replace(/^PROJECT_/, "")) : o[0] === 4 ? "процесс " + prettify(String(o[2]).replace(/^PROCESS_/, "")) : "заказ");
