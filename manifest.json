@@ -26052,14 +26052,14 @@
     "discord": "https://discord.gg/SxzjCCcQMJ"
   },
   "client": {
-    "version": "0.3.114",
-    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.114.zip",
-    "sha256": "d8fa580531b670693f9fdb9e63e4d2538d7070805ead1ae9e5c32a014487c475",
-    "size": 64537127,
-    "notes": "Мод обновляется сам, не дожидаясь «Играть»; автосохранения сетевых партий отправляются для разбора (выключается в настройках); в отчёте о логах — видеокарта и настройки графики",
+    "version": "0.3.115",
+    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.115.zip",
+    "sha256": "7d4cf9929fc1802829490eb09c4cf74d600944ad2a106730dad229ca1a3b1273",
+    "size": 64545883,
+    "notes": "",
     "mirrors": [
-      "relay://109.73.196.175:443/client/nova-client-0.3.114.zip",
-      "http://109.73.196.175/client/nova-client-0.3.114.zip"
+      "relay://109.73.196.175:443/client/nova-client-0.3.115.zip",
+      "http://109.73.196.175/client/nova-client-0.3.115.zip"
     ],
     "IsUsable": true
   }
