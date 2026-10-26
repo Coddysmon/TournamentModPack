@@ -1,3 +1,13 @@
+=== 2026-10-26 | ОБНОВЛЕНИЕ | 1.5.173: ячейка торгового пути за веру и Оксфорд
+1. После завершения ветки «Пути» ячейку торгового пути можно поставить в автоматическую покупку за веру: она покупается каждый ход, пока хватает веры, и каждая следующая ячейка дороже.
+2. Оксфордский университет снова можно построить, если город с ним потерян. Национальное разведывательное управление по-прежнему строится один раз за партию.
+3. Исправлены описания ветки «Пути»: цифры приведены к фактическим, цивилопедия совпадает с подсказкой; исправлена опечатка «Легализм».
+
+--- en | 1.5.173: trade route slot for Faith and Oxford
+1. After completing the Wayfaring branch, a trade route slot can be set as an automatic Faith purchase: it is bought every turn while you have enough Faith, and each next slot costs more.
+2. Oxford University can be built again if the city with it is lost. The National Intelligence Agency can still be built only once per game.
+3. Fixed the Wayfaring branch descriptions: the numbers now match the actual effects, and the Civilopedia matches the tooltip.
+
 === 2026-10-26 | ОБНОВЛЕНИЕ | 1.5.172: модели чудес, освобождение городов-государств, журнал партии
 1. Восемь чудес Nova получили свои 3D-модели в городе: Уэй-Теокалли, Замок Эльц, Метрополитен, Чернобыльская АЭС, Пёрл-Харбор, Альтинг, Золотой щит и Венецианский Арсенал.
 2. Альтинг — новая модель: языческий тинг.

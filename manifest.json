@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.172",
+  "packageVersion": "1.5.173",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-10-26T01:27:06.8768797+00:00",
+  "createdUtc": "2026-10-26T12:32:29.2955656+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "relay://109.73.196.175:443/blobs/",
@@ -16943,7 +16943,7 @@
         {
           "path": "CvGameCore_Expansion2.dll",
           "size": 4533760,
-          "hash": "2dc2dcf8ff93c57306081024afd2c369da1a10692ed7a795e020498a1cbfb543"
+          "hash": "30d20a6d6d0da7ec1e2586b8db8d78e13e12832b986903866469f99f3737498b"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -19762,8 +19762,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 13700591,
-          "hash": "ac6b5f6feae4963d8afff8713df0909cb4e784ed3c1aced9abeffae5eb3874f8"
+          "size": 13700737,
+          "hash": "77a5317bedbf9e1ba6810f5ed274c130be1555d75bbfef9a8913f357857868c0"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -19802,8 +19802,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 10028035,
-          "hash": "19b83df71628cc79dcf98f3a1d6642df87ea9a94b714b5afa1efa1484084eca6"
+          "size": 10032980,
+          "hash": "65ccb594a478669411477d04f1bfaeed15f18ead555b63aa39fd0b22b7616305"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -20138,7 +20138,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "c2302483df0688f36744bec58619ffc3c6b1464147445e33b4f9d5447540f4e1"
+          "hash": "e7d97115e9b8af59591feeb7a760f27481e7a792b9244c0cf8f623b6f1c3bac3"
         },
         {
           "path": "skins.json",
@@ -23552,18 +23552,18 @@
         },
         {
           "path": "tmp/eui/CityView.lua",
-          "size": 108428,
-          "hash": "82820b948fcf89a84816150efee0d3487f26469ed1859d8dfbd595dedf6468c9"
+          "size": 109488,
+          "hash": "d27996cef8ee5cb2b2ee4f1b23006766552faecf0bfa8c23921a34b953312af7"
         },
         {
           "path": "tmp/eui/CityView.xml",
-          "size": 32005,
-          "hash": "5eb5bd1cc1754f1a8d63b1c52703a30fbc1663fb4eb4209111493b312f6ab3e7"
+          "size": 31629,
+          "hash": "a5676e4e56c116d1c20496bc08811ec32cb1d0af4c90f57629a2483a0a53c521"
         },
         {
           "path": "tmp/eui/CityView_small.xml",
-          "size": 31416,
-          "hash": "065c4efa734f58dd3395570aab718f83754f27ff4f761260beb25f3633095005"
+          "size": 31039,
+          "hash": "eebc74bb35cc05122226b0dbe6b8f6850c649362ab00f182de0678481a455a6d"
         },
         {
           "path": "tmp/eui/ConfirmCommandPopup.lua",
@@ -23617,8 +23617,8 @@
         },
         {
           "path": "tmp/eui/TopPanel.lua",
-          "size": 134112,
-          "hash": "d4cac6498ef9c90a60105f32b52394f513a8bab9f3ef219ae099f774adb40dce"
+          "size": 134582,
+          "hash": "c603fa8dc251540e7c637a3e937b89a4199515b558ac884819d739d10cb0eae2"
         },
         {
           "path": "tmp/eui/TopPanel.xml",
@@ -23787,23 +23787,23 @@
         },
         {
           "path": "tmp/ui/CityView.xml",
-          "size": 44654,
-          "hash": "8023039d41e5e72d81c00744bbc3e673c85988ad2b9c9f490b7ef7d2e8016980"
+          "size": 44275,
+          "hash": "e021465cadc818dbe3165a5b2b718b0293322d755b742cc844c258c35ab3cf84"
         },
         {
           "path": "tmp/ui/CityView_1.lua",
-          "size": 117204,
-          "hash": "a78ce2cbe1b3d4d80ed6169a873714a3e93524c8a99b5e6a203e9a705250620c"
+          "size": 114192,
+          "hash": "509cb6975b30094d5d521c46292a74065867c4dd398f0ea5d3a3e50d44eaaa8f"
         },
         {
           "path": "tmp/ui/CityView_2.lua",
-          "size": 119765,
-          "hash": "271286e4977e54bb4f3322437483393d1bdd26f7f161712ee9d2b9aa7acdfddf"
+          "size": 116753,
+          "hash": "93283052348fcb3a37edea01ac6409bda83bb92711f4a63d1c37ed38782188e2"
         },
         {
           "path": "tmp/ui/CityView_small.xml",
-          "size": 45038,
-          "hash": "f08811f0b0bdc4a5faebe9666b70e24fa0cf82d4f9408d318f3aaaadb0afd37b"
+          "size": 44641,
+          "hash": "d53732529b3c6e098e5a5bd901862f47f2b9ed9e2dc095f921fe1877d2d0eb21"
         },
         {
           "path": "tmp/ui/CivilopediaScreen.lua",
@@ -24212,8 +24212,8 @@
         },
         {
           "path": "tmp/ui/ProductionPopup.lua",
-          "size": 52522,
-          "hash": "1a538faa9e2bb199b99343b913d4cc4ce2b8ace1c13ade9bf0220a12f9424a1e"
+          "size": 57652,
+          "hash": "fcf9b7b0395df8e4a104ee37305569fed0a632cf93ebe59e59f1b0b91ed8dd7a"
         },
         {
           "path": "tmp/ui/ProposalChartPopup.lua",
@@ -24227,8 +24227,8 @@
         },
         {
           "path": "tmp/ui/ReligionOverview.lua",
-          "size": 28730,
-          "hash": "f9562164dbfb44607f66efaf1548018e35a518db42ac5d37425666c65612e953"
+          "size": 29904,
+          "hash": "7d6264c662e386bca53c5bd5611622d9b4f11d4819faddc33709dee320eb5bf3"
         },
         {
           "path": "tmp/ui/ReligionOverview.xml",
@@ -25968,6 +25968,16 @@
     "entries": [
       {
         "date": "2026-10-26T00:00:00+00:00",
+        "title": "1.5.173: ячейка торгового пути за веру и Оксфорд",
+        "body": "1. После завершения ветки «Пути» ячейку торгового пути можно поставить в автоматическую покупку за веру: она покупается каждый ход, пока хватает веры, и каждая следующая ячейка дороже.\n2. Оксфордский университет снова можно построить, если город с ним потерян. Национальное разведывательное управление по-прежнему строится один раз за партию.\n3. Исправлены описания ветки «Пути»: цифры приведены к фактическим, цивилопедия совпадает с подсказкой; исправлена опечатка «Легализм».",
+        "tag": "ОБНОВЛЕНИЕ",
+        "titleEn": "1.5.173: trade route slot for Faith and Oxford",
+        "bodyEn": "1. After completing the Wayfaring branch, a trade route slot can be set as an automatic Faith purchase: it is bought every turn while you have enough Faith, and each next slot costs more.\n2. Oxford University can be built again if the city with it is lost. The National Intelligence Agency can still be built only once per game.\n3. Fixed the Wayfaring branch descriptions: the numbers now match the actual effects, and the Civilopedia matches the tooltip.",
+        "HasUsableUrl": false,
+        "IsUsable": true
+      },
+      {
+        "date": "2026-10-26T00:00:00+00:00",
         "title": "1.5.172: модели чудес, освобождение городов-государств, журнал партии",
         "body": "1. Восемь чудес Nova получили свои 3D-модели в городе: Уэй-Теокалли, Замок Эльц, Метрополитен, Чернобыльская АЭС, Пёрл-Харбор, Альтинг, Золотой щит и Венецианский Арсенал.\n2. Альтинг — новая модель: языческий тинг.\n3. После того как любой игрок вступил в информационную эпоху, освобождать города-государства может только лидер Всемирного конгресса — игрок с наибольшим числом голосов (при равенстве — все равные). Исключение для «Военного блока» убрано.\n4. Поправлены описания галеаса, великого галеаса и Оксфордского университета.\n5. Игра пишет подробный журнал партии для повторов на сайте: шаги юнитов, бои и фокус городов.",
         "tag": "ОБНОВЛЕНИЕ",
@@ -26148,6 +26158,16 @@
       }
     ],
     "Usable": [
+      {
+        "date": "2026-10-26T00:00:00+00:00",
+        "title": "1.5.173: ячейка торгового пути за веру и Оксфорд",
+        "body": "1. После завершения ветки «Пути» ячейку торгового пути можно поставить в автоматическую покупку за веру: она покупается каждый ход, пока хватает веры, и каждая следующая ячейка дороже.\n2. Оксфордский университет снова можно построить, если город с ним потерян. Национальное разведывательное управление по-прежнему строится один раз за партию.\n3. Исправлены описания ветки «Пути»: цифры приведены к фактическим, цивилопедия совпадает с подсказкой; исправлена опечатка «Легализм».",
+        "tag": "ОБНОВЛЕНИЕ",
+        "titleEn": "1.5.173: trade route slot for Faith and Oxford",
+        "bodyEn": "1. After completing the Wayfaring branch, a trade route slot can be set as an automatic Faith purchase: it is bought every turn while you have enough Faith, and each next slot costs more.\n2. Oxford University can be built again if the city with it is lost. The National Intelligence Agency can still be built only once per game.\n3. Fixed the Wayfaring branch descriptions: the numbers now match the actual effects, and the Civilopedia matches the tooltip.",
+        "HasUsableUrl": false,
+        "IsUsable": true
+      },
       {
         "date": "2026-10-26T00:00:00+00:00",
         "title": "1.5.172: модели чудес, освобождение городов-государств, журнал партии",
