@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.173",
+  "packageVersion": "1.5.174",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-10-26T12:32:29.2955656+00:00",
+  "createdUtc": "2026-10-26T15:47:23.7659522+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "relay://109.73.196.175:443/blobs/",
@@ -16942,8 +16942,8 @@
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4533760,
-          "hash": "30d20a6d6d0da7ec1e2586b8db8d78e13e12832b986903866469f99f3737498b"
+          "size": 4536320,
+          "hash": "cbb690f443f0f67ae86301b22d0d46c66ef07685eade9070019806fc62a1b301"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -19803,7 +19803,7 @@
         {
           "path": "Override/CIV5Units_Mongol.xml",
           "size": 10032980,
-          "hash": "65ccb594a478669411477d04f1bfaeed15f18ead555b63aa39fd0b22b7616305"
+          "hash": "f1b3848191b460c74de27db617d283439c9e1b5a80da7be769e5a60a92410551"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -20138,7 +20138,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "e7d97115e9b8af59591feeb7a760f27481e7a792b9244c0cf8f623b6f1c3bac3"
+          "hash": "e5c2763db9fbe93f22162c99e2cacd7244431a426bc2a697118c95a82295b301"
         },
         {
           "path": "skins.json",
@@ -24317,8 +24317,8 @@
         },
         {
           "path": "tmp/ui/SocialPolicyPopup.xml",
-          "size": 57706,
-          "hash": "80ee595f975158d5175bf57afda20606b64bf0cc39a9ab0bd0f1e7456104c840"
+          "size": 58787,
+          "hash": "dc3f89af0e19a4662247305997114c12a5d8d3e4a3e7cc0c7b2f1062c0ce0e61"
         },
         {
           "path": "tmp/ui/StagingRoom.lua",
@@ -24347,8 +24347,8 @@
         },
         {
           "path": "tmp/ui/TechTree.lua",
-          "size": 39850,
-          "hash": "a2401c84548bc9d394a70575e796d09f451f5889400e7a2f34191c825f94a7ef"
+          "size": 40466,
+          "hash": "0708982a1bb499944d2ca77d12737952ad8f7535970643d02f89b7fbe64ea62b"
         },
         {
           "path": "tmp/ui/TechTree.xml",
@@ -24377,13 +24377,13 @@
         },
         {
           "path": "tmp/ui/TradeRouteOverview.xml",
-          "size": 18510,
-          "hash": "f2fd88de54340e0cdcb82ad9717a3fdd685f781184522d5df133f784e63ff4a7"
+          "size": 19058,
+          "hash": "8b79ab4b4a1fa0661c7fb261911258fe34b58f095f171f70544b2c4c438a9773"
         },
         {
           "path": "tmp/ui/TurnProfiler.lua",
-          "size": 30049,
-          "hash": "588c152a1a8dfa3c1ebd43e080f5c0a0f166eaf5e4298fb0357b97bddece958b"
+          "size": 34286,
+          "hash": "7d5150736be2ffea79006d9fc567a8ab55d50610c86de7c9a5a8673ea81b180e"
         },
         {
           "path": "tmp/ui/TurnProfiler.xml",
@@ -25968,6 +25968,16 @@
     "entries": [
       {
         "date": "2026-10-26T00:00:00+00:00",
+        "title": "1.5.174: «Федерация торговцев», окна институтов и торговли, данные о вылетах",
+        "body": "1. «Федерация торговцев» больше не даёт культуру с торговых путей в города-государства — только еду и производство, как в описании.\n2. Оплот и Эстетика поменялись местами в окне общественных институтов.\n3. В обзоре торговых путей полоса прокрутки больше не закрывает цифры.\n4. Во вкладке «Бонусы эпох» названия эпох помещаются целиком.\n5. В обычном (не EUI) дереве технологий полосы эпох стоят над своими технологиями.\n6. Игра собирает больше данных о вылетах (память процесса, открытые экраны), чтобы быстрее находить причины падений в поздней игре.",
+        "tag": "ОБНОВЛЕНИЕ",
+        "titleEn": "1.5.174: Merchant Confederacy, policy and trade windows, crash data",
+        "bodyEn": "1. Merchant Confederacy no longer gives Culture from trade routes to city-states — only Food and Production, as its description says.\n2. Bulwark and Aesthetics have swapped places in the social policies window.\n3. In the Trade Route Overview the scroll bar no longer covers the numbers.\n4. On the Era Bonuses tab the era names now fit in full.\n5. In the standard (non-EUI) tech tree the era bands now sit above their own technologies.\n6. The game collects more crash data (process memory, open screens) to find the causes of late-game crashes faster.",
+        "HasUsableUrl": false,
+        "IsUsable": true
+      },
+      {
+        "date": "2026-10-26T00:00:00+00:00",
         "title": "1.5.173: ячейка торгового пути за веру и Оксфорд",
         "body": "1. После завершения ветки «Пути» ячейку торгового пути можно поставить в автоматическую покупку за веру: она покупается каждый ход, пока хватает веры, и каждая следующая ячейка дороже.\n2. Оксфордский университет снова можно построить, если город с ним потерян. Национальное разведывательное управление по-прежнему строится один раз за партию.\n3. Исправлены описания ветки «Пути»: цифры приведены к фактическим, цивилопедия совпадает с подсказкой; исправлена опечатка «Легализм».",
         "tag": "ОБНОВЛЕНИЕ",
@@ -26158,6 +26168,16 @@
       }
     ],
     "Usable": [
+      {
+        "date": "2026-10-26T00:00:00+00:00",
+        "title": "1.5.174: «Федерация торговцев», окна институтов и торговли, данные о вылетах",
+        "body": "1. «Федерация торговцев» больше не даёт культуру с торговых путей в города-государства — только еду и производство, как в описании.\n2. Оплот и Эстетика поменялись местами в окне общественных институтов.\n3. В обзоре торговых путей полоса прокрутки больше не закрывает цифры.\n4. Во вкладке «Бонусы эпох» названия эпох помещаются целиком.\n5. В обычном (не EUI) дереве технологий полосы эпох стоят над своими технологиями.\n6. Игра собирает больше данных о вылетах (память процесса, открытые экраны), чтобы быстрее находить причины падений в поздней игре.",
+        "tag": "ОБНОВЛЕНИЕ",
+        "titleEn": "1.5.174: Merchant Confederacy, policy and trade windows, crash data",
+        "bodyEn": "1. Merchant Confederacy no longer gives Culture from trade routes to city-states — only Food and Production, as its description says.\n2. Bulwark and Aesthetics have swapped places in the social policies window.\n3. In the Trade Route Overview the scroll bar no longer covers the numbers.\n4. On the Era Bonuses tab the era names now fit in full.\n5. In the standard (non-EUI) tech tree the era bands now sit above their own technologies.\n6. The game collects more crash data (process memory, open screens) to find the causes of late-game crashes faster.",
+        "HasUsableUrl": false,
+        "IsUsable": true
+      },
       {
         "date": "2026-10-26T00:00:00+00:00",
         "title": "1.5.173: ячейка торгового пути за веру и Оксфорд",

@@ -1,3 +1,19 @@
+=== 2026-10-26 | ОБНОВЛЕНИЕ | 1.5.174: «Федерация торговцев», окна институтов и торговли, данные о вылетах
+1. «Федерация торговцев» больше не даёт культуру с торговых путей в города-государства — только еду и производство, как в описании.
+2. Оплот и Эстетика поменялись местами в окне общественных институтов.
+3. В обзоре торговых путей полоса прокрутки больше не закрывает цифры.
+4. Во вкладке «Бонусы эпох» названия эпох помещаются целиком.
+5. В обычном (не EUI) дереве технологий полосы эпох стоят над своими технологиями.
+6. Игра собирает больше данных о вылетах (память процесса, открытые экраны), чтобы быстрее находить причины падений в поздней игре.
+
+--- en | 1.5.174: Merchant Confederacy, policy and trade windows, crash data
+1. Merchant Confederacy no longer gives Culture from trade routes to city-states — only Food and Production, as its description says.
+2. Bulwark and Aesthetics have swapped places in the social policies window.
+3. In the Trade Route Overview the scroll bar no longer covers the numbers.
+4. On the Era Bonuses tab the era names now fit in full.
+5. In the standard (non-EUI) tech tree the era bands now sit above their own technologies.
+6. The game collects more crash data (process memory, open screens) to find the causes of late-game crashes faster.
+
 === 2026-10-26 | ОБНОВЛЕНИЕ | 1.5.173: ячейка торгового пути за веру и Оксфорд
 1. После завершения ветки «Пути» ячейку торгового пути можно поставить в автоматическую покупку за веру: она покупается каждый ход, пока хватает веры, и каждая следующая ячейка дороже.
 2. Оксфордский университет снова можно построить, если город с ним потерян. Национальное разведывательное управление по-прежнему строится один раз за партию.
