@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.171",
+  "packageVersion": "1.5.172",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-10-24T11:15:43.6909163+00:00",
+  "createdUtc": "2026-10-26T00:26:01.0324856+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "relay://109.73.196.175:443/blobs/",
@@ -16622,28 +16622,278 @@
         },
         {
           "path": "Art/Wonders/Civ5ArtDefines_Nova_Wonders.xml",
-          "size": 920,
-          "hash": "0cc9db217b8faf4303b7bc6929541f77bdeaaa8154547ef5f293bb980cd07f7c"
+          "size": 3045,
+          "hash": "0000fd363d7e7c48a11b72a94f4a41e9648456f0272ed4c347ad03282c5dd8f8"
+        },
+        {
+          "path": "Art/Wonders/nova_althing.fxsxml",
+          "size": 627,
+          "hash": "ad19493a46b0eb6d6f0825a19221e94a995f10bd7d40ca2dd21e7865e7d6ca36"
+        },
+        {
+          "path": "Art/Wonders/nova_althing.gr2",
+          "size": 34544,
+          "hash": "f38c79525a94b727447b3347295646240e2bc999e693e4e00b0e0e6a026a0dee"
+        },
+        {
+          "path": "Art/Wonders/nova_burg_eltz.fxsxml",
+          "size": 637,
+          "hash": "91d9a27b88955b2903bcfcda5e1b8ae4deb3eb425d801b07b940d26542f47110"
+        },
+        {
+          "path": "Art/Wonders/nova_burg_eltz.gr2",
+          "size": 40356,
+          "hash": "9b8a4b7716aac66e003097bd364212ceb78ad77da168836e02933083c28f8119"
+        },
+        {
+          "path": "Art/Wonders/nova_chernobyl.fxsxml",
+          "size": 637,
+          "hash": "e2d612c3f2ce4b321c2e99e323173557c84f80f4031d9dc1b2e47f62aeb9a619"
+        },
+        {
+          "path": "Art/Wonders/nova_chernobyl.gr2",
+          "size": 31064,
+          "hash": "c6c0d2bc9760c1d30ef11411a748294519309c58b808738d964be73db2ebcf73"
         },
         {
           "path": "Art/Wonders/nova_great_colosseum.fxsxml",
-          "size": 457,
-          "hash": "9c91b0e90f6658a83a5fd961ef61a60975ab62430ea034ed9f213cffe9d6bd3c"
+          "size": 667,
+          "hash": "78773b629a1caf8b683238b77d7bcd34e3a7b3f15ae8f6329a76c04c16faa2e9"
         },
         {
           "path": "Art/Wonders/nova_great_colosseum.gr2",
-          "size": 37144,
-          "hash": "9fd960bf0ff435f851bf698b2ba26c34619fdec9509b5f00536eec0f0a055b28"
+          "size": 84936,
+          "hash": "dd731d4567585840dde80959b38e61a1f517cefdcea32bd8c3ce0a53a2c5b2db"
+        },
+        {
+          "path": "Art/Wonders/nova_great_firewall.fxsxml",
+          "size": 662,
+          "hash": "7eb0b0b72d7711a979b1ab455f5b13043321e0275067aa697c836c3f22740667"
+        },
+        {
+          "path": "Art/Wonders/nova_great_firewall.gr2",
+          "size": 44148,
+          "hash": "b3af04c8df079e2c7db959dd5b1f11dac796a90f749d53b4152239c0a42af014"
+        },
+        {
+          "path": "Art/Wonders/nova_huey_teocalli.fxsxml",
+          "size": 657,
+          "hash": "06f46d1bb2c9f4cb7152f67dfc02ef208de9ce270b6ce9e57923dbf4c4849856"
+        },
+        {
+          "path": "Art/Wonders/nova_huey_teocalli.gr2",
+          "size": 20260,
+          "hash": "4720c627e52c0634013c947d2f851d3f9081d8b7599501989dbc00988b774585"
+        },
+        {
+          "path": "Art/Wonders/nova_metro.fxsxml",
+          "size": 617,
+          "hash": "83700646be8a151922c4053372db26bd2d5eaace86db6d9295dd5fa0a6c836d2"
+        },
+        {
+          "path": "Art/Wonders/nova_metro.gr2",
+          "size": 32576,
+          "hash": "069a39b5e551f723e2b788ee10037be176735530ecfc94311e4de5918c1b8787"
+        },
+        {
+          "path": "Art/Wonders/nova_pearl_harbor.fxsxml",
+          "size": 652,
+          "hash": "2c47ebd9f17692961e40c961c208235b124432cd8cb62fcc15bb9230fe61757a"
+        },
+        {
+          "path": "Art/Wonders/nova_pearl_harbor.gr2",
+          "size": 30764,
+          "hash": "6fa3a86a3a8aabba91a864bd2a5b1e5ddd4aaac8722f34b1170014385441a21a"
+        },
+        {
+          "path": "Art/Wonders/nova_venetian_arsenal.fxsxml",
+          "size": 672,
+          "hash": "64deb3685af3edec22b57dda03d0b1e117c4556952d0154906487c57c4896a5f"
+        },
+        {
+          "path": "Art/Wonders/nova_venetian_arsenal.gr2",
+          "size": 43028,
+          "hash": "3defe581911594839a2d25bacdde6548b24f8500c02bf3945f63f9f44617e71d"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_althing_diff.dds",
+          "size": 174904,
+          "hash": "1094855084efdf9000d58d1a1a423c1b5697321c830263086cf48b6c40c2daff"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_althing_hb_diff.dds",
+          "size": 174904,
+          "hash": "1094855084efdf9000d58d1a1a423c1b5697321c830263086cf48b6c40c2daff"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_althing_hb_sref.dds",
+          "size": 349680,
+          "hash": "5c2ca0f99de0e6474cd88227a3bad10ae46631519a30dbf0cb8a1a79c48264da"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_althing_sref.dds",
+          "size": 349680,
+          "hash": "5c2ca0f99de0e6474cd88227a3bad10ae46631519a30dbf0cb8a1a79c48264da"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_burg_eltz_diff.dds",
+          "size": 174904,
+          "hash": "8f4cfac4e5b3a325e4f54d9b77ed07a0b95449d5611062e4a0427d6cc15f78fc"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_burg_eltz_hb_diff.dds",
+          "size": 174904,
+          "hash": "8f4cfac4e5b3a325e4f54d9b77ed07a0b95449d5611062e4a0427d6cc15f78fc"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_burg_eltz_hb_sref.dds",
+          "size": 349680,
+          "hash": "d5cc46740f52a6ed737329ebd240d8be43f46a7320179f9bab37a7b8e2889bb4"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_burg_eltz_sref.dds",
+          "size": 349680,
+          "hash": "d5cc46740f52a6ed737329ebd240d8be43f46a7320179f9bab37a7b8e2889bb4"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_chernobyl_diff.dds",
+          "size": 174904,
+          "hash": "d47024e0c00f77a034e4a80c4bf4a26ae668db12f3cd96cb7b40a18156eec133"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_chernobyl_hb_diff.dds",
+          "size": 174904,
+          "hash": "d47024e0c00f77a034e4a80c4bf4a26ae668db12f3cd96cb7b40a18156eec133"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_chernobyl_hb_sref.dds",
+          "size": 349680,
+          "hash": "680f8714f07cc3c9e61b82ca68ff80ce269fb76fd94bb366dbac5df09a5382bc"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_chernobyl_sref.dds",
+          "size": 349680,
+          "hash": "680f8714f07cc3c9e61b82ca68ff80ce269fb76fd94bb366dbac5df09a5382bc"
         },
         {
           "path": "Art/Wonders/tm_nova_great_colosseum_diff.dds",
           "size": 174904,
-          "hash": "9fcb608f760b6b3cbec8f350f6edf15a5bb1dc2e491f79a9719b4c4dfc87da59"
+          "hash": "d32dfc104fb06f5800fbaab02ad05051bcf296567efd5359b0b90947f74a0d5c"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_great_colosseum_hb_diff.dds",
+          "size": 174904,
+          "hash": "d32dfc104fb06f5800fbaab02ad05051bcf296567efd5359b0b90947f74a0d5c"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_great_colosseum_hb_sref.dds",
+          "size": 349680,
+          "hash": "3d5319a55b74fc1483ceaa3d2907eb6670a1a4ecf135dd80750c597c6c9d8927"
         },
         {
           "path": "Art/Wonders/tm_nova_great_colosseum_sref.dds",
           "size": 349680,
-          "hash": "07dc9e912ca185eb80772badb624612f902a2d37a37d6163f24703506d716528"
+          "hash": "3d5319a55b74fc1483ceaa3d2907eb6670a1a4ecf135dd80750c597c6c9d8927"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_great_firewall_diff.dds",
+          "size": 174904,
+          "hash": "56123f4f164d830b7cbf80b4be8fda9bcbdc6e76d62877e5ff4a78f5d890c290"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_great_firewall_hb_diff.dds",
+          "size": 174904,
+          "hash": "56123f4f164d830b7cbf80b4be8fda9bcbdc6e76d62877e5ff4a78f5d890c290"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_great_firewall_hb_sref.dds",
+          "size": 349680,
+          "hash": "811e5dfc2b49e9b8db3dc99881219ff3b241a42f2469265b977ef6cd7a989bc1"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_great_firewall_sref.dds",
+          "size": 349680,
+          "hash": "811e5dfc2b49e9b8db3dc99881219ff3b241a42f2469265b977ef6cd7a989bc1"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_huey_teocalli_diff.dds",
+          "size": 174904,
+          "hash": "c228085fe3b156b089d54e20f27e7e96a140105ba9d97eaf286b9d371f1184d4"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_huey_teocalli_hb_diff.dds",
+          "size": 174904,
+          "hash": "c228085fe3b156b089d54e20f27e7e96a140105ba9d97eaf286b9d371f1184d4"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_huey_teocalli_hb_sref.dds",
+          "size": 349680,
+          "hash": "f762d4ed06dc468b67710c492de903b0d16877b347505d9fb3e0d0bfc13c58fe"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_huey_teocalli_sref.dds",
+          "size": 349680,
+          "hash": "f762d4ed06dc468b67710c492de903b0d16877b347505d9fb3e0d0bfc13c58fe"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_metro_diff.dds",
+          "size": 174904,
+          "hash": "3552b5602a7cc3f0a519243f3ce46e0ecd2fc01a1d6b599f3d21649ae1dfab7d"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_metro_hb_diff.dds",
+          "size": 174904,
+          "hash": "3552b5602a7cc3f0a519243f3ce46e0ecd2fc01a1d6b599f3d21649ae1dfab7d"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_metro_hb_sref.dds",
+          "size": 349680,
+          "hash": "a03484d8b9e7bbbec89b3eaea02a6f5e87e2cb5be4150143cd1dd5c0f92896c4"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_metro_sref.dds",
+          "size": 349680,
+          "hash": "a03484d8b9e7bbbec89b3eaea02a6f5e87e2cb5be4150143cd1dd5c0f92896c4"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_pearl_harbor_diff.dds",
+          "size": 174904,
+          "hash": "6d4d041eb97f0cb2ef136d38045074840c04e48ff4ec9b09f1e570e6686fe987"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_pearl_harbor_hb_diff.dds",
+          "size": 174904,
+          "hash": "6d4d041eb97f0cb2ef136d38045074840c04e48ff4ec9b09f1e570e6686fe987"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_pearl_harbor_hb_sref.dds",
+          "size": 349680,
+          "hash": "8f80b2c1823ff2a3a7578e7b03e1394bf2437db1baf5c903dfd24e07bbcff244"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_pearl_harbor_sref.dds",
+          "size": 349680,
+          "hash": "8f80b2c1823ff2a3a7578e7b03e1394bf2437db1baf5c903dfd24e07bbcff244"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_venetian_arsenal_diff.dds",
+          "size": 174904,
+          "hash": "ae15ad11628b835d1762df398841d2d6d1da143a1ea08c6fd44d85b11444c268"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_venetian_arsenal_hb_diff.dds",
+          "size": 174904,
+          "hash": "ae15ad11628b835d1762df398841d2d6d1da143a1ea08c6fd44d85b11444c268"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_venetian_arsenal_hb_sref.dds",
+          "size": 349680,
+          "hash": "2f168a10e673f728ffb781e6f9f3da4f01b32c95129094060aa82d80083a4f3b"
+        },
+        {
+          "path": "Art/Wonders/tm_nova_venetian_arsenal_sref.dds",
+          "size": 349680,
+          "hash": "2f168a10e673f728ffb781e6f9f3da4f01b32c95129094060aa82d80083a4f3b"
         },
         {
           "path": "Art/WonderVenetianArsenal.dds",
@@ -16692,8 +16942,8 @@
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4527104,
-          "hash": "520bb4a983fcbf6d844469ab479a281fddf9784fb83688a8162efc07939ef58b"
+          "size": 4533760,
+          "hash": "2dc2dcf8ff93c57306081024afd2c369da1a10692ed7a795e020498a1cbfb543"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -19512,8 +19762,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 13700448,
-          "hash": "47ee49e9974e635124aff17f98fd611fa489a1b40770a3e86596889160c98d9d"
+          "size": 13700591,
+          "hash": "ac6b5f6feae4963d8afff8713df0909cb4e784ed3c1aced9abeffae5eb3874f8"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -19552,8 +19802,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 10022740,
-          "hash": "ce87eb70367d8c95260f4865feb7f6ea9bf807a0697edc1e61de1b1b38e56e6c"
+          "size": 10028035,
+          "hash": "19b83df71628cc79dcf98f3a1d6642df87ea9a94b714b5afa1efa1484084eca6"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -19888,7 +20138,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "1f28956c880109c5c6204db8ec13df2515cb1adc3d10685493a40ed48e6573f3"
+          "hash": "c2302483df0688f36744bec58619ffc3c6b1464147445e33b4f9d5447540f4e1"
         },
         {
           "path": "skins.json",
