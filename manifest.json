@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "packageVersion": "1.5.172",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-10-26T00:26:01.0324856+00:00",
+  "createdUtc": "2026-10-26T01:27:06.8768797+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "relay://109.73.196.175:443/blobs/",
@@ -25967,6 +25967,16 @@
   "news": {
     "entries": [
       {
+        "date": "2026-10-26T00:00:00+00:00",
+        "title": "1.5.172: модели чудес, освобождение городов-государств, журнал партии",
+        "body": "1. Восемь чудес Nova получили свои 3D-модели в городе: Уэй-Теокалли, Замок Эльц, Метрополитен, Чернобыльская АЭС, Пёрл-Харбор, Альтинг, Золотой щит и Венецианский Арсенал.\n2. Альтинг — новая модель: языческий тинг.\n3. После того как любой игрок вступил в информационную эпоху, освобождать города-государства может только лидер Всемирного конгресса — игрок с наибольшим числом голосов (при равенстве — все равные). Исключение для «Военного блока» убрано.\n4. Поправлены описания галеаса, великого галеаса и Оксфордского университета.\n5. Игра пишет подробный журнал партии для повторов на сайте: шаги юнитов, бои и фокус городов.",
+        "tag": "ОБНОВЛЕНИЕ",
+        "titleEn": "1.5.172: wonder models, liberating city-states, match journal",
+        "bodyEn": "1. Eight Nova wonders got their own 3D models in the city: Huey Teocalli, Eltz Castle, Metropolitan, Chernobyl Nuclear Plant, Pearl Harbor, Althing, Great Firewall and Venetian Arsenal.\n2. The Althing has a new model: a pagan thing.\n3. Once any player has entered the Information Era, only the World Congress leader (the player with the most votes; on a tie, all tied players) can liberate city-states. The Treaty Organization exception is removed.\n4. Fixed the descriptions of the Galleass, the Great Galleass and Oxford University.\n5. The game writes a detailed match journal for replays on the site: unit moves, combats and city focus.",
+        "HasUsableUrl": false,
+        "IsUsable": true
+      },
+      {
         "date": "2026-10-25T00:00:00+00:00",
         "title": "1.5.171: Уэй-Теокалли, галеас и Пути",
         "body": "1. Новое чудо Уэй-Теокалли: строится в городе у озера (Гражданская служба), +2 еды и +2 культуры с каждой обрабатываемой озёрной клетки, +4 веры.\n2. Галеас и великий галеас после выстрела могут двигаться дальше (атака — по-прежнему раз за ход).\n3. Пути: открытие ветки — +50% к производству караванов и грузовых судов (было +100%); «Охранная грамота» больше не даёт счастья за торговые пути.\n4. Научная теория теперь требует Экономику.\n5. Замок Эльц даёт свою культуру и веру с клеток и без политики Оплота.\n6. Апостольская миссия: скидка 50% теперь и на инквизиторов.\n7. У Колизея своя 3D-модель в городе.\n8. Авианосец и ракетный крейсер: самолёты и ракеты в грузе больше не висят на воде, «лишний истребитель» после улучшения пропал; бомбардировщик на авианосце нельзя улучшить в стелс.\n9. Новый график «Наука за постройку юнитов (Честь)».\n10. Исправлен вылет при сожжении города; убраны служебные сообщения о версиях в чате лобби.\n11. Сохранения 1.5.171 не открываются в старых версиях.",
@@ -26138,6 +26148,16 @@
       }
     ],
     "Usable": [
+      {
+        "date": "2026-10-26T00:00:00+00:00",
+        "title": "1.5.172: модели чудес, освобождение городов-государств, журнал партии",
+        "body": "1. Восемь чудес Nova получили свои 3D-модели в городе: Уэй-Теокалли, Замок Эльц, Метрополитен, Чернобыльская АЭС, Пёрл-Харбор, Альтинг, Золотой щит и Венецианский Арсенал.\n2. Альтинг — новая модель: языческий тинг.\n3. После того как любой игрок вступил в информационную эпоху, освобождать города-государства может только лидер Всемирного конгресса — игрок с наибольшим числом голосов (при равенстве — все равные). Исключение для «Военного блока» убрано.\n4. Поправлены описания галеаса, великого галеаса и Оксфордского университета.\n5. Игра пишет подробный журнал партии для повторов на сайте: шаги юнитов, бои и фокус городов.",
+        "tag": "ОБНОВЛЕНИЕ",
+        "titleEn": "1.5.172: wonder models, liberating city-states, match journal",
+        "bodyEn": "1. Eight Nova wonders got their own 3D models in the city: Huey Teocalli, Eltz Castle, Metropolitan, Chernobyl Nuclear Plant, Pearl Harbor, Althing, Great Firewall and Venetian Arsenal.\n2. The Althing has a new model: a pagan thing.\n3. Once any player has entered the Information Era, only the World Congress leader (the player with the most votes; on a tie, all tied players) can liberate city-states. The Treaty Organization exception is removed.\n4. Fixed the descriptions of the Galleass, the Great Galleass and Oxford University.\n5. The game writes a detailed match journal for replays on the site: unit moves, combats and city focus.",
+        "HasUsableUrl": false,
+        "IsUsable": true
+      },
       {
         "date": "2026-10-25T00:00:00+00:00",
         "title": "1.5.171: Уэй-Теокалли, галеас и Пути",

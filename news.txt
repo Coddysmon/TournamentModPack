@@ -1,3 +1,17 @@
+=== 2026-10-26 | ОБНОВЛЕНИЕ | 1.5.172: модели чудес, освобождение городов-государств, журнал партии
+1. Восемь чудес Nova получили свои 3D-модели в городе: Уэй-Теокалли, Замок Эльц, Метрополитен, Чернобыльская АЭС, Пёрл-Харбор, Альтинг, Золотой щит и Венецианский Арсенал.
+2. Альтинг — новая модель: языческий тинг.
+3. После того как любой игрок вступил в информационную эпоху, освобождать города-государства может только лидер Всемирного конгресса — игрок с наибольшим числом голосов (при равенстве — все равные). Исключение для «Военного блока» убрано.
+4. Поправлены описания галеаса, великого галеаса и Оксфордского университета.
+5. Игра пишет подробный журнал партии для повторов на сайте: шаги юнитов, бои и фокус городов.
+
+--- en | 1.5.172: wonder models, liberating city-states, match journal
+1. Eight Nova wonders got their own 3D models in the city: Huey Teocalli, Eltz Castle, Metropolitan, Chernobyl Nuclear Plant, Pearl Harbor, Althing, Great Firewall and Venetian Arsenal.
+2. The Althing has a new model: a pagan thing.
+3. Once any player has entered the Information Era, only the World Congress leader (the player with the most votes; on a tie, all tied players) can liberate city-states. The Treaty Organization exception is removed.
+4. Fixed the descriptions of the Galleass, the Great Galleass and Oxford University.
+5. The game writes a detailed match journal for replays on the site: unit moves, combats and city focus.
+
 === 2026-10-25 | ОБНОВЛЕНИЕ | 1.5.171: Уэй-Теокалли, галеас и Пути
 1. Новое чудо Уэй-Теокалли: строится в городе у озера (Гражданская служба), +2 еды и +2 культуры с каждой обрабатываемой озёрной клетки, +4 веры.
 2. Галеас и великий галеас после выстрела могут двигаться дальше (атака — по-прежнему раз за ход).
