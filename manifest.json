@@ -26092,14 +26092,14 @@
     "discord": "https://discord.gg/SxzjCCcQMJ"
   },
   "client": {
-    "version": "0.3.115",
-    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.115.zip",
-    "sha256": "7d4cf9929fc1802829490eb09c4cf74d600944ad2a106730dad229ca1a3b1273",
-    "size": 64545883,
-    "notes": "Лаунчер 0.3.115: повтор партии доходит до сайта, даже если после победы вы остались в игре; пропавшие повторы последних партий дошлются сами.",
+    "version": "0.3.116",
+    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.116.zip",
+    "sha256": "d81e00642daa58527c6e09ff1dcfbf7af4fb42baee58671951c1ddccf4732bda",
+    "size": 64566926,
+    "notes": "Быстрее первая установка, если московский сервер недоступен. Логи уходят через Франкфурт. Журнал партии уходит, даже если игра открыта долго. В «Партиях Nova» не видно лобби чужих модов.",
     "mirrors": [
-      "relay://109.73.196.175:443/client/nova-client-0.3.115.zip",
-      "http://109.73.196.175/client/nova-client-0.3.115.zip"
+      "relay://109.73.196.175:443/client/nova-client-0.3.116.zip",
+      "http://109.73.196.175/client/nova-client-0.3.116.zip"
     ],
     "IsUsable": true
   }
