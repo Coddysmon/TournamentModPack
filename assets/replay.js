@@ -619,7 +619,7 @@ function totalYield(k) {
 const YG = new Image();
 YG.onload = () => { if (D) drawAll(); };
 YG.src = "assets/replay/yields-game.png";
-const YGC = 64, YG_W = [22, 22, 44, 44, 42];   // ширина глифа в ячейке атласа по форме (1, 2, 3, 4, 5+)
+const YGC = 64, YG_W = [22, 22, 44, 44, 44];   // ширина глифа в ячейке атласа по форме (1, 2, 3, 4, 5+)
 function yieldIcons(y, cx, cy) {
   if (!y || !YG.complete || !YG.naturalWidth) return;
   const items = [];
