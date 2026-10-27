@@ -612,28 +612,32 @@ function totalYield(k) {
   for (let i = 0; i < 3; i++) if (out[i] < 0) out[i] = 0;
   return out;
 }
-// Точки выдачи: зелёный кружок — еда, оранжевый квадрат — молотки, жёлтый ромб — золото.
-function pips(y, cx, cy) {
-  if (!y) return;
+// Значки выдачи — из игры, тот же атлас, что у повтора с юнитами (assets/replay/yields-game.png, ячейка 64):
+// столбец — вид (еда, молотки, золото, наука, культура, вера), строка — сколько. Как в Civ5
+// (YieldIconManager.lua): один вид — ОДИН значок, количество — его форма: 1 круг, 2 пара, 3 треугольник,
+// 4 квадрат, 5+ медальон; 6+ — цифра поверх медальона (столбец 6: 6…10, строка 5: 11 и «12+»).
+const YG = new Image();
+YG.onload = () => { if (D) drawAll(); };
+YG.src = "assets/replay/yields-game.png";
+const YGC = 64, YG_W = [22, 22, 44, 44, 42];   // ширина глифа в ячейке атласа по форме (1, 2, 3, 4, 5+)
+function yieldIcons(y, cx, cy) {
+  if (!y || !YG.complete || !YG.naturalWidth) return;
   const items = [];
-  for (let i = 0; i < Math.min(y[0], 5); i++) items.push(0);
-  for (let i = 0; i < Math.min(y[1], 5); i++) items.push(1);
-  for (let i = 0; i < Math.min(y[2], 5); i++) items.push(2);
+  for (let i = 0; i < 6; i++) if (y[i] > 0) items.push([i, y[i]]);
   if (!items.length) return;
-  const r = Math.max(1.5, R * 0.1), gap = r * 2.5;
-  let x = cx - (items.length - 1) * gap / 2;
-  for (const t of items) {
-    ctx.beginPath();
-    if (t === 0) { ctx.arc(x, cy, r, 0, 7); ctx.fillStyle = "#7fd37f"; }
-    else if (t === 1) { ctx.rect(x - r, cy - r, r * 2, r * 2); ctx.fillStyle = "#e0a040"; }
-    else {
-      ctx.moveTo(x, cy - r * 1.3); ctx.lineTo(x + r * 1.3, cy);
-      ctx.lineTo(x, cy + r * 1.3); ctx.lineTo(x - r * 1.3, cy);
-      ctx.closePath(); ctx.fillStyle = "#e8d060";
+  const gap = 4;                                 // между видами, в точках атласа
+  const wsum = items.reduce((a, it) => a + YG_W[Math.min(5, it[1]) - 1], 0) + gap * (items.length - 1);
+  // Ячейка — радиус клетки (одиночный значок ≈ треть радиуса, не мельче 6 точек), но ряд не шире клетки.
+  const s = Math.min(Math.max(R, 18) / YGC, W * 0.94 / wsum), d = YGC * s;
+  let x = cx - wsum * s / 2;
+  for (const [i, v] of items) {
+    const r = Math.min(5, v) - 1, w = YG_W[r] * s, x0 = x + w / 2 - d / 2;
+    ctx.drawImage(YG, i * YGC, r * YGC, YGC, YGC, x0, cy - d / 2, d, d);
+    if (v > 5) {
+      const n = Math.min(12, v);
+      ctx.drawImage(YG, n <= 10 ? 6 * YGC : (n - 11) * YGC, n <= 10 ? (n - 6) * YGC : 5 * YGC, YGC, YGC, x0, cy - d / 2, d, d);
     }
-    ctx.fill();
-    ctx.lineWidth = 1; ctx.strokeStyle = "#0b1119b0"; ctx.stroke();
-    x += gap;
+    x += w + gap * s;
   }
 }
 // Для чего в игре нет своей иконки улучшения — рисуем сами: руины, хижина, лагерь.
@@ -807,7 +811,7 @@ function drawAll() {
         if (owner[k] < 0 && worked[k] < 0) continue;
         if (focus >= 0 && owner[k] !== focus && worked[k] !== focus) continue;
         const c = centerOf(x, y);
-        pips(totalYield(k), c[0], c[1] - R * 0.52);
+        yieldIcons(cellYield(k).y, c[0], c[1] - R * 0.56);   // все 6 видов, как в подсказке клетки
       }
     }
   }
