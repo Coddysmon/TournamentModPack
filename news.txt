@@ -1,3 +1,87 @@
+=== 2026-11-02 | ОБНОВЛЕНИЕ | 1.5.175: юниты
+• Катапульта стреляет на 3 клетки; на третьей клетке действует штраф 75%.
+• Меткий лучник и мечник получают 3 хода, колесница с лучником — 5. Изменение обычных мечников и колесниц распространяется на их облики; уникальные замены сохраняют прежнюю скорость.
+• XCOM и десантник сразу получают +50% силы против бронетехники.
+• Обычный бомбардировщик получает дальность 11. Стелс-бомбардировщику доступна логистика после третьего повышения профильной ветки.
+• Панзер стоит столько же, сколько обычный танк: на быстрой скорости 331 производства или 600 веры. Описания уточнены.
+• У Аравии и Монголии всадник остаётся доступен после открытия рыцарства.
+• В описания триплана, истребителя и реактивного истребителя добавлены радиус перехвата и дальность разведки.
+Новые бесплатные повышения выдаются новым и улучшенным юнитам; существующие юниты старых сохранений автоматически их не получают.
+
+--- en | 1.5.175: units
+• Catapults gain range 3, with a 75% penalty at maximum range.
+• Composite Bowmen and Swordsmen have 3 moves; Chariot Archers have 5. Standard unit skins are included; unique Swordsman and Chariot replacements retain their movement.
+• XCOM Squads and Paratroopers receive a free +50% combat bonus against armored units.
+• Standard Bombers have range 11. Stealth Bombers can select Logistics after the third promotion in their combat line.
+• Panzers now match Tank production and Faith costs: 331 production or 600 Faith on Quick speed. Descriptions updated.
+• Arabia and Mongolia can still train Horsemen after Chivalry.
+• Triplane, Fighter and Jet Fighter descriptions now state interception and reconnaissance ranges.
+New free promotions apply to newly trained or upgraded units, not automatically to existing units in old saves.
+
+=== 2026-11-02 | ОБНОВЛЕНИЕ | 1.5.175: институты, идеологии и специалисты
+• «Культурные центры»: бонус строительства культурных зданий снижен со 100% до 50%.
+• «Морская инфраструктура»: +3 производства вместо +4.
+• В Оплоте специалисты-интенданты больше не накапливают очки рождения великого интенданта. Покупка за веру доступна после закрытия ветки. Бесплатные выдачи от политики и чуда сохранены.
+• Logistics сохраняет свои эффекты и получает прежний бонус Tolls: +2 еды, производства и науки тайникам интенданта; также +1 еда специалистам-интендантам.
+• Tolls теперь даёт специалистам-интендантам +1 еду, производство, науку и золото.
+• Freedom / Treaty Organization: специалистам добавлена +1 еда.
+• Universal Healthcare: наука снижена на 1; бонусы теперь распространяются также на акведуки и водяные мельницы.
+• Один слот учёного перенесён из университета в школу. Учтены соответствующие уникальные здания.
+
+--- en | 1.5.175: policies, ideologies and specialists
+• Cultural Centers: cultural building production bonus reduced from 100% to 50%.
+• Maritime Infrastructure: +3 Production instead of +4.
+• Bulwark Quartermaster specialists no longer generate Great Quartermaster points. Faith purchases require finishing the branch; free units granted by policies and wonders remain.
+• Logistics retains its effects and gains the former Tolls bonus: +2 Food, Production and Science from Quartermaster's Caches, plus +1 Food from Quartermaster specialists.
+• Tolls now gives Quartermaster specialists +1 Food, Production, Science and Gold.
+• Freedom / Treaty Organization gains +1 Food from specialists.
+• Universal Healthcare loses 1 Science; its bonuses also apply to Aqueducts and Water Mills.
+• One Scientist slot moves from Universities to Public Schools, including their relevant unique replacements.
+
+=== 2026-11-02 | ОБНОВЛЕНИЕ | 1.5.175: нации
+• Австрия: бонус кофейни к рождению великих людей — 10%.
+• Карфаген: убран бонус эпохи к производству караванов.
+• Кельты: ресурсные здания дают +2 еды и +2 производства вместо +1/+1.
+• Инки: террасная ферма получает +1 культуру за каждую соседнюю гору.
+• Персия: +10% силы в золотом веке; бонус эпохи увеличен с 2 до 3 очков золотого века. Значки этих очков показываются среди доходов клетки города.
+• Польша: скидка на стоимость институтов снижена до 5%; выгоны дают +1 культуру.
+• Португалия: бонус эпохи даёт всем морским юнитам +1 ход.
+• Сонгай: бонус эпохи даёт +2 золота каждому городу.
+• Nova Tournament Map: Аравии при включённой привязке подбирается пригодная стартовая площадка рядом с пустыней. Если такой площадки нет, сохраняется запасное назначение; пустыня искусственно не создаётся.
+
+--- en | 1.5.175: civilizations
+• Austria: Coffee House Great Person generation bonus is 10%.
+• Carthage: removed the era bonus to Caravan production.
+• Celts: resource buildings provide +2 Food and +2 Production instead of +1 each.
+• Inca: Terrace Farms gain +1 Culture per adjacent mountain.
+• Persia: +10% combat strength during Golden Ages; era bonus increased from 2 to 3 Golden Age points. These points appear among city-tile yield icons.
+• Poland: policy cost discount reduced to 5%; Pastures gain +1 Culture.
+• Portugal: era bonus grants +1 movement to all naval units.
+• Songhai: era bonus grants +2 Gold in every city.
+• Nova Tournament Map: Arabia's enabled start bias prioritizes eligible sites near desert. If none exists, normal fallback remains; no desert terrain is created artificially.
+
+=== 2026-11-02 | ОБНОВЛЕНИЕ | 1.5.175: религия, города и туризм
+• Тематические бонусы шедевров и артефактов больше не требуют совпадения или различия эпох и цивилизаций. Нужные слоты здания по-прежнему должны быть заполнены.
+• Настроено недовольство от идеологического давления туризмом.
+• Великий файрвол блокирует бонус интернета к туризму.
+• На индустриализации доступно здание для принятия идеологии: нужны фабрики во всех городах, кроме марионеток; стоимость — 1 производство на быстрой скорости. Прежнее условие трёх фабрик сохранено.
+• Prophecy: +15% к строительству чудес, без счастья. Основатель религии получает доступ к чудесам обычных институтов, но не к чудесам чужих идеологий.
+• Grand Temple's Glory: +5 счастья.
+• Исправлено отображение шведского Эрмитажа в культурном обзоре.
+• Фокус производства отдаёт приоритет молоткам с сохранением защиты от голодания.
+• 3D-модели Великой стены и Колизея временно отключены из-за ошибки отображения города. Сами чудеса, их бонусы и иконки сохранены.
+
+--- en | 1.5.175: religion, cities and tourism
+• Great Work and Artifact theming bonuses no longer require matching or different eras and civilizations. The required building slots must still be filled.
+• Adjusted unhappiness from tourism-driven ideological pressure.
+• The Great Firewall blocks the Internet tourism bonus.
+• An ideology-enabling building unlocks at Industrialization. It requires Factories in all non-puppet cities and costs 1 Production on Quick speed. The existing three-Factory route remains.
+• Prophecy gives +15% Wonder production and no Happiness. The religion's founder can access ordinary policy-branch Wonders, but cannot bypass other ideologies' Wonder restrictions.
+• Grand Temple's Glory gains +5 Happiness.
+• Fixed the Swedish Hermitage's visibility in the Culture Overview.
+• Production focus prioritizes Production while retaining starvation protection.
+• Great Wall and Colosseum 3D models are temporarily disabled due to a city rendering issue. The Wonders, their bonuses and icons remain available.
+
 === 2026-10-26 | ОБНОВЛЕНИЕ | 1.5.174: «Федерация торговцев», окна институтов и торговли, данные о вылетах
 1. «Федерация торговцев» больше не даёт культуру с торговых путей в города-государства — только еду и производство, как в описании.
 2. Оплот и Эстетика поменялись местами в окне общественных институтов.
