@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.176",
+  "packageVersion": "1.5.177",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-11-02T13:58:05.6353385+00:00",
+  "createdUtc": "2026-11-06T21:56:08.357468+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "relay://109.73.196.175:443/blobs/",
@@ -24,7 +24,7 @@
   "components": [
     {
       "id": "mod",
-      "title": "\u041C\u043E\u0434\u043F\u0430\u043A",
+      "title": "Модпак",
       "target": "ModDlc",
       "targetSubPath": "",
       "sourceSubPath": "",
@@ -33,7 +33,7 @@
         {
           "path": "Art/althing_big.dds",
           "size": 2208512,
-          "hash": "5dec1f197c7b98269294ea57f2e429275e9a79c38c20cc0cff542900b367fd7b"
+          "hash": "7961cea65dfc9a33f45ab69a13c13481837604ac3d038b6751acbeb2a4940012"
         },
         {
           "path": "Art/BuildingLS114Atlas128.dds",
@@ -16637,8 +16637,8 @@
         },
         {
           "path": "Art/Wonders/nova_althing.gr2",
-          "size": 34544,
-          "hash": "f38c79525a94b727447b3347295646240e2bc999e693e4e00b0e0e6a026a0dee"
+          "size": 35196,
+          "hash": "2b615625b4212188cb85195a21f50572ef1d0f8aedb9172c99f561f23a645adc"
         },
         {
           "path": "Art/Wonders/nova_burg_eltz.fxsxml",
@@ -16647,8 +16647,8 @@
         },
         {
           "path": "Art/Wonders/nova_burg_eltz.gr2",
-          "size": 40356,
-          "hash": "9b8a4b7716aac66e003097bd364212ceb78ad77da168836e02933083c28f8119"
+          "size": 41024,
+          "hash": "dd62788e5913cb6362f352ca33c02a2ebfa7156c82ea30abb232e0250df749ca"
         },
         {
           "path": "Art/Wonders/nova_chernobyl.fxsxml",
@@ -16657,8 +16657,8 @@
         },
         {
           "path": "Art/Wonders/nova_chernobyl.gr2",
-          "size": 31064,
-          "hash": "c6c0d2bc9760c1d30ef11411a748294519309c58b808738d964be73db2ebcf73"
+          "size": 31724,
+          "hash": "2dd2d970ba65e5e39a63a21f55cc8fd7df20c5f205d259dcca4d04ca3fec6ea3"
         },
         {
           "path": "Art/Wonders/nova_great_colosseum.fxsxml",
@@ -16667,8 +16667,8 @@
         },
         {
           "path": "Art/Wonders/nova_great_colosseum.gr2",
-          "size": 84936,
-          "hash": "dd731d4567585840dde80959b38e61a1f517cefdcea32bd8c3ce0a53a2c5b2db"
+          "size": 64992,
+          "hash": "5942b6408f5eda38cd0e162198b110f29e23737251901dd1de1859e3a0a5b2e7"
         },
         {
           "path": "Art/Wonders/nova_great_firewall.fxsxml",
@@ -16677,8 +16677,8 @@
         },
         {
           "path": "Art/Wonders/nova_great_firewall.gr2",
-          "size": 44148,
-          "hash": "b3af04c8df079e2c7db959dd5b1f11dac796a90f749d53b4152239c0a42af014"
+          "size": 44820,
+          "hash": "fa7c0208782de21ed618e61b03bca94ceecbe5f52e783d7b307a5f4debdbcb40"
         },
         {
           "path": "Art/Wonders/nova_great_wall.fxsxml",
@@ -16687,8 +16687,8 @@
         },
         {
           "path": "Art/Wonders/nova_great_wall.gr2",
-          "size": 31888,
-          "hash": "beab00e9277918f9381d9e41f454d4f36a23eacd6fcb4d2226449379f5ecf7c8"
+          "size": 32564,
+          "hash": "f4f1f4e0a5802f52378a9b5c94c869d6b10b9dd50935419281a1492ef2e9e8ff"
         },
         {
           "path": "Art/Wonders/nova_huey_teocalli.fxsxml",
@@ -16697,8 +16697,8 @@
         },
         {
           "path": "Art/Wonders/nova_huey_teocalli.gr2",
-          "size": 20260,
-          "hash": "4720c627e52c0634013c947d2f851d3f9081d8b7599501989dbc00988b774585"
+          "size": 20988,
+          "hash": "ced50fb5e0edc0fe40c1316113e69310a332d7efcb6f2951440c4b9d60c633d4"
         },
         {
           "path": "Art/Wonders/nova_metro.fxsxml",
@@ -16707,8 +16707,8 @@
         },
         {
           "path": "Art/Wonders/nova_metro.gr2",
-          "size": 32576,
-          "hash": "069a39b5e551f723e2b788ee10037be176735530ecfc94311e4de5918c1b8787"
+          "size": 33320,
+          "hash": "b73ea51aebbf02d800882be0ca28bce6492dd7d5afa4355f191224e7faaf9a4f"
         },
         {
           "path": "Art/Wonders/nova_pearl_harbor.fxsxml",
@@ -16717,8 +16717,8 @@
         },
         {
           "path": "Art/Wonders/nova_pearl_harbor.gr2",
-          "size": 30764,
-          "hash": "6fa3a86a3a8aabba91a864bd2a5b1e5ddd4aaac8722f34b1170014385441a21a"
+          "size": 31420,
+          "hash": "e00133b95dbd6a83028ffb9b440c3c6fa4122bd082c7ae26f64a8e84a1bf9ed8"
         },
         {
           "path": "Art/Wonders/nova_venetian_arsenal.fxsxml",
@@ -16727,8 +16727,8 @@
         },
         {
           "path": "Art/Wonders/nova_venetian_arsenal.gr2",
-          "size": 43028,
-          "hash": "3defe581911594839a2d25bacdde6548b24f8500c02bf3945f63f9f44617e71d"
+          "size": 43744,
+          "hash": "57eb417906266171dc45993079930ae3d592eb44ba4a29ff00cb81cf51683980"
         },
         {
           "path": "Art/Wonders/tm_nova_althing_diff.dds",
@@ -16978,7 +16978,7 @@
         {
           "path": "CvGameCore_Expansion2.dll",
           "size": 4544512,
-          "hash": "348e8805771a79b7415d1089be773990951e5a38476fbf3dc33ee1eff9ad7ff0"
+          "hash": "6a89ba75742d1a1dda22feb354d380b7d445e671a0236529cac0f443c72cbc15"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -17482,8 +17482,8 @@
         },
         {
           "path": "MPModsPack.Civ5Pkg",
-          "size": 2835,
-          "hash": "75d900787d880919b3a6e4dc4d1b8b75c9fa218ee17a7b56390f383a836a8df0"
+          "size": 2980,
+          "hash": "41cb471fd658af69ab4590ecaf221814f01df1c7a42d3efe893a659070c2acc3"
         },
         {
           "path": "NovaMetroAtlas128.dds",
@@ -19797,8 +19797,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 13700227,
-          "hash": "06b56ec1e93d21bfc2ce427abd04caa98dff06ecbb854ebf4e188988b517534b"
+          "size": 13700289,
+          "hash": "cb1f0b8fea6a17f8b0d7d6a05ce292dc3c8994e65c48c59c0bed0c45c6872a35"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -19838,7 +19838,7 @@
         {
           "path": "Override/CIV5Units_Mongol.xml",
           "size": 10067943,
-          "hash": "a67cfeb98549cc93d4722bba708e278f39ef857dcbf9f0556014c1f072e88667"
+          "hash": "904830b57e5c7c337dca54c82f30bb5a346c7446d99a70c0194588163f9de47b"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -20173,7 +20173,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "cf0ca34aca420622b0034676a16a22521eeebb0ec534c8469b32de8254ba4920"
+          "hash": "dbbece79ebd4328be73b6ce84bb9c493cc98d89aadc949e8799bd023fbab7951"
         },
         {
           "path": "skins.json",
@@ -24494,7 +24494,7 @@
     },
     {
       "id": "maps-game",
-      "title": "\u041A\u0430\u0440\u0442\u044B \u0432 \u043F\u0430\u043F\u043A\u0435 \u0438\u0433\u0440\u044B",
+      "title": "Карты в папке игры",
       "target": "GameAssetsMaps",
       "targetSubPath": "Nova Maps",
       "sourceSubPath": "Maps",
@@ -24509,12 +24509,27 @@
     },
     {
       "id": "maps-user",
-      "title": "\u041A\u0430\u0440\u0442\u044B \u0432 \u043F\u0440\u043E\u0444\u0438\u043B\u0435 \u0438\u0433\u0440\u043E\u043A\u0430",
+      "title": "Карты в профиле игрока",
       "target": "UserMaps",
       "targetSubPath": "Nova Maps",
       "sourceSubPath": "Maps",
       "exclusive": true,
       "files": []
+    },
+    {
+      "id": "wonder-art-library",
+      "title": "Nova wonder art registration",
+      "target": "ModDlc",
+      "targetSubPath": "../Expansion2/Buildings/Wonders",
+      "sourceSubPath": "../Expansion2Wonders",
+      "exclusive": false,
+      "files": [
+        {
+          "path": "Civ5ArtDefines_Expansion2_Wonders.xml",
+          "size": 4989,
+          "hash": "216eeddb1ae2154a3efb2b34ad7f63197d41bbe431a5400bd3fe9b23a034c98c"
+        }
+      ]
     }
   ],
   "generated": {
