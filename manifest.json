@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.177",
+  "packageVersion": "1.5.178",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-11-06T21:56:08.357468+00:00",
+  "createdUtc": "2026-11-07T09:41:52.700881+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "relay://109.73.196.175:443/blobs/",
@@ -19838,7 +19838,7 @@
         {
           "path": "Override/CIV5Units_Mongol.xml",
           "size": 10067943,
-          "hash": "904830b57e5c7c337dca54c82f30bb5a346c7446d99a70c0194588163f9de47b"
+          "hash": "e887e8a21c8a303bb98b6866e233d017a61bd640a96f47ed76422e09b5f15347"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -20173,7 +20173,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "dbbece79ebd4328be73b6ce84bb9c493cc98d89aadc949e8799bd023fbab7951"
+          "hash": "ad8e14f1490d20a23f05097c70c3f27e0918f91304a772d16fa7dd5f91aae108"
         },
         {
           "path": "skins.json",
@@ -24057,8 +24057,8 @@
         },
         {
           "path": "tmp/ui/MainMenu.lua",
-          "size": 37048,
-          "hash": "0a03f9f5cd968cdc3c0f00b4b6af63b49a592c341a6f01cba25fe8be61166f86"
+          "size": 38306,
+          "hash": "9d740d15e7b950c06e68145d1d4cfe9c234c8866db97b7eef69556d9937746c1"
         },
         {
           "path": "tmp/ui/MainMenu.xml",
@@ -26532,14 +26532,14 @@
     "discord": "https://discord.gg/SxzjCCcQMJ"
   },
   "client": {
-    "version": "0.3.120",
-    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.120.zip",
-    "sha256": "ceb2bf27608b020bb79e38f45ac60e8f54426c6cf4a41f1ac289e30e7e5aabae",
-    "size": 64563604,
+    "version": "0.3.121",
+    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.121.zip",
+    "sha256": "2629ed85dab82d22f495597cdf16933c66585fb12f9dba717c0d5afa5b49a1a3",
+    "size": 62595960,
     "notes": "",
     "mirrors": [
-      "relay://109.73.196.175:443/client/nova-client-0.3.120.zip",
-      "http://109.73.196.175/client/nova-client-0.3.120.zip"
+      "relay://109.73.196.175:443/client/nova-client-0.3.121.zip",
+      "http://109.73.196.175/client/nova-client-0.3.121.zip"
     ],
     "IsUsable": true
   }
