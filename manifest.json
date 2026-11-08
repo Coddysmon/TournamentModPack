@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "1.5.178",
+  "packageVersion": "1.5.179",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-11-07T09:41:52.700881+00:00",
+  "createdUtc": "2026-11-08T10:42:23.713726+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "relay://109.73.196.175:443/blobs/",
@@ -16977,8 +16977,8 @@
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4544512,
-          "hash": "6a89ba75742d1a1dda22feb354d380b7d445e671a0236529cac0f443c72cbc15"
+          "size": 4545024,
+          "hash": "b6d007fd02adff75f7339b0fefd67ea535e229f30e2b7c3b09bae6d1dd565144"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -19838,7 +19838,7 @@
         {
           "path": "Override/CIV5Units_Mongol.xml",
           "size": 10067943,
-          "hash": "e887e8a21c8a303bb98b6866e233d017a61bd640a96f47ed76422e09b5f15347"
+          "hash": "ed52c59e53db83ba7708a82097c72c79f99f9d0dc2796e85c550da6769b96c2d"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -20173,7 +20173,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 9,
-          "hash": "ad8e14f1490d20a23f05097c70c3f27e0918f91304a772d16fa7dd5f91aae108"
+          "hash": "f1599b6498e2b3f4d09e7fd11acb60ecc27f0084587a5569604c8e4171ff75ff"
         },
         {
           "path": "skins.json",
@@ -24147,8 +24147,8 @@
         },
         {
           "path": "tmp/ui/NovaNickStyles.lua",
-          "size": 10424,
-          "hash": "bb748294a2513276c208e375762c66f4012fb7dce5a42caa7a138c6a7a13a065"
+          "size": 10489,
+          "hash": "18bd3ece0c5979bb8736154e83f898267566cd553e6e34e97db3d238d2ffe567"
         },
         {
           "path": "tmp/ui/NovaSkins.lua",
@@ -26532,14 +26532,14 @@
     "discord": "https://discord.gg/SxzjCCcQMJ"
   },
   "client": {
-    "version": "0.3.121",
-    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.121.zip",
-    "sha256": "2629ed85dab82d22f495597cdf16933c66585fb12f9dba717c0d5afa5b49a1a3",
-    "size": 62595960,
+    "version": "0.3.122",
+    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.122.zip",
+    "sha256": "0d4dce52866c62d50991812222e7c4aa4aa60999fee76e03423304325e2aa9a6",
+    "size": 62597261,
     "notes": "",
     "mirrors": [
-      "relay://109.73.196.175:443/client/nova-client-0.3.121.zip",
-      "http://109.73.196.175/client/nova-client-0.3.121.zip"
+      "relay://109.73.196.175:443/client/nova-client-0.3.122.zip",
+      "http://109.73.196.175/client/nova-client-0.3.122.zip"
     ],
     "IsUsable": true
   }
