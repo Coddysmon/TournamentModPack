@@ -26532,14 +26532,14 @@
     "discord": "https://discord.gg/SxzjCCcQMJ"
   },
   "client": {
-    "version": "0.3.122",
-    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.122.zip",
-    "sha256": "0d4dce52866c62d50991812222e7c4aa4aa60999fee76e03423304325e2aa9a6",
-    "size": 62597261,
+    "version": "0.3.123",
+    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.123.zip",
+    "sha256": "f6cd136b6d3bc7cde85b7f2837611ceb12e2bd6c85a44a4ac25bc1ec4bfbc57a",
+    "size": 62596866,
     "notes": "",
     "mirrors": [
-      "relay://109.73.196.175:443/client/nova-client-0.3.122.zip",
-      "http://109.73.196.175/client/nova-client-0.3.122.zip"
+      "relay://109.73.196.175:443/client/nova-client-0.3.123.zip",
+      "http://109.73.196.175/client/nova-client-0.3.123.zip"
     ],
     "IsUsable": true
   }
