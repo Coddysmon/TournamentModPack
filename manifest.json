@@ -28376,15 +28376,10 @@
     "discord": "https://discord.gg/SxzjCCcQMJ"
   },
   "client": {
-    "version": "0.3.124",
-    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.124.zip",
-    "sha256": "6b732c500ed75759e3401bd0f614ed8c9d170ff753200a802d7bc1420c9eff39",
-    "size": 64566614,
-    "IsUsable": true,
-    "notes": "Исправлен выбор узла связи по свежим замерам; европейский маршрут для Грея.",
-    "mirrors": [
-      "relay://109.73.196.175:443/client/nova-client-0.3.124.zip",
-      "http://109.73.196.175/client/nova-client-0.3.124.zip"
-    ]
+    "version": "0.3.125",
+    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.125.zip",
+    "sha256": "2cd28c3d19170ed12db208c11282bc15ffe8129a0b796c5b5a3e53a0921f4f5c",
+    "size": 64566638,
+    "IsUsable": true
   }
 }
