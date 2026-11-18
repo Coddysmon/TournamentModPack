@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "2.0.3",
+  "packageVersion": "2.0.5",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-11-18T09:19:48.242137+00:00",
+  "createdUtc": "2026-11-18T20:16:24.822633+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "relay://109.73.196.175:443/blobs/",
@@ -18722,8 +18722,8 @@
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4568064,
-          "hash": "f8feb5423ba0678b9b8f2855cc33b9027f6f6232ae3a0f278dffd4c4555f7daf"
+          "size": 4570112,
+          "hash": "25a962b2f48b4ffd8cfc2d93477e76e9378c52bbb94f30ca98dfc4f5fae7f4e4"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -21483,7 +21483,7 @@
         {
           "path": "Override/CIV5Units_Mongol.xml",
           "size": 10112144,
-          "hash": "3aab47a3d618d25d6182f892ae1e5ff01005d7693c6bf48c3d5c4f5595aaf754"
+          "hash": "1b7d2dd530c0c05efc3d0b26b39575d22137d50bfb046a12bfa4de889efec52c"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -21913,7 +21913,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 7,
-          "hash": "2ba6fd74b89fc9b132bedccf4d179978eef150b2d80aa8bd0b54fdcf3bcd70ca"
+          "hash": "39074ceee603fa5addba75dca5f3ff16615784db351bfe14d9a0575a2e49f3de"
         },
         {
           "path": "SkinShots/10TP.png",
@@ -27786,6 +27786,12 @@
   },
   "news": {
     "entries": [
+      {
+        "date": "2026-11-18T23:16:24.822633+03:00",
+        "title": "Nova 2.0.5 — тренировка авиации",
+        "body": "Исправлена отсутствующая кнопка тренировки у боевых воздушных юнитов. Тренировка даёт +2 опыта за ход и отнимает 10 здоровья, как у наземных юнитов. Атака или перехват прерывают тренировку. Прежние условия сохранены: быстрая скорость, собственная территория, до движения и боя, больше 10 здоровья и без ожидающего повышения.\n\nВыпуск основан на 2.0.3; остальные изменения отменённой 2.0.4 не включены. Всем участникам сетевой партии нужно обновиться.",
+        "tag": "ОБНОВЛЕНИЕ"
+      },
       {
         "date": "2026-11-17T00:00:00+00:00",
         "title": "Nova 2.0.1 — исправления и связь",
