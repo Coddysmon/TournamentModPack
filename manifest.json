@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "2.0.1",
+  "packageVersion": "2.0.2",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-11-17T19:09:06.577901+00:00",
+  "createdUtc": "2026-11-18T00:48:05.975147+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "relay://109.73.196.175:443/blobs/",
@@ -197,8 +197,8 @@
         },
         {
           "path": "Art/DOM_NOVA_FLORENCE_MAP.dds",
-          "size": 1555328,
-          "hash": "b184b8096ec81dc68c628820f2df6c9fb58929a2dad48d20a772a2d224a74210"
+          "size": 6220928,
+          "hash": "a9f4b8894390a915f1fcaabc652b2d435c1eb98453753979fda0d5da7c6855c5"
         },
         {
           "path": "Art/DOM_NOVA_KONGO_MAP.dds",
@@ -18722,8 +18722,8 @@
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4567040,
-          "hash": "e19e85b42b84321b680f1907048466ca81b1dfb4141b11ca8e78bfe03f1775aa"
+          "size": 4568064,
+          "hash": "3b720e772797dff96dcd97ce4590f513f80b3020a135812e3b21ebd094a41cc7"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -21442,8 +21442,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 13517455,
-          "hash": "449882a991d44e2c8c47fef6a886cc4a3f5dc26ee7331344838f914d6740d497"
+          "size": 13524190,
+          "hash": "3bc6e07ad6e528ab246869e3d1042eae85619890aaf48139beaf4082a37a676a"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -21483,7 +21483,7 @@
         {
           "path": "Override/CIV5Units_Mongol.xml",
           "size": 10112144,
-          "hash": "5a685b70a61c2f6ee760c30364580cbf984519adb20db0f50f86eb00cbc44d26"
+          "hash": "ac191f353fbb9cc5cc8bb2acd45eb6a2c52ebc711acf5d7edfec2a0a60bde2a8"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -21913,7 +21913,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 7,
-          "hash": "5ec59dc9b30e1df8e3fdae5adc45cd70b414740556237e9c80a9052f88b2d2fe"
+          "hash": "8f74f4a02b9f7e225a14ea2a775d0c0ae6e7a683a546e7ecb50af3823f5d6fcc"
         },
         {
           "path": "SkinShots/10TP.png",
@@ -25422,8 +25422,8 @@
         },
         {
           "path": "tmp/eui/UnitPanel.lua",
-          "size": 97160,
-          "hash": "8290b70254c56b8e8878e0b703d604362666613d064cf14c8891287a1c71dc19"
+          "size": 97616,
+          "hash": "3cd59b4a1fed8efa7259fb4535fff1c2e2f84fd81f3f3c6d62fff12022792bb4"
         },
         {
           "path": "tmp/eui/UnitPanel.xml",
@@ -26197,8 +26197,8 @@
         },
         {
           "path": "tmp/ui/UnitPanel.lua",
-          "size": 75629,
-          "hash": "f6c0ec93aeafb78dfdd9b05db39f4f10da50aaecf752e84d98a3ec463940244e"
+          "size": 76141,
+          "hash": "b5cbb83b3f38975ff10c224d4b968325fbbed51790f82bf7331ae20e58b6b184"
         },
         {
           "path": "tmp/ui/UnitPanel.xml",
