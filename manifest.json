@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "2.0.3",
+  "packageVersion": "2.0.4",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-11-18T09:19:48.242137+00:00",
+  "createdUtc": "2026-11-18T15:40:38.351361+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "relay://109.73.196.175:443/blobs/",
@@ -2523,27 +2523,27 @@
         {
           "path": "Art/NovaAfonso128.dds",
           "size": 65664,
-          "hash": "ecd0de4e788db313eefefa747327a565aae7351b43b24ae6ff8169c26cbcbd74"
+          "hash": "28a3a5893c99ede80ac4f002c64b89afdbc78b0e8292d44363b1f50f52b7d785"
         },
         {
           "path": "Art/NovaAfonso256.dds",
           "size": 262272,
-          "hash": "9b2d9dd728d4fe59aeeee517b8ef7f6e07a317d98a26d0b7263f1931e79f4543"
+          "hash": "0cbe77196944dd4eacbc9e67f7af68e2b80fdab9450ab9550fb1210c8e85635f"
         },
         {
           "path": "Art/NovaAfonso45.dds",
           "size": 8228,
-          "hash": "b12487816682972cae18e55bcf467cabeffb98af52a8948233347182d7d9fc19"
+          "hash": "fc81dfefcd61a28a942a8b7c1e75105dd5d8d0a29102deb8b20fa839148da47c"
         },
         {
           "path": "Art/NovaAfonso64.dds",
           "size": 16512,
-          "hash": "d2707cdf3691be6cedd248d45a687a5a4a92b0dc259bda762b614fc5bcfb8443"
+          "hash": "c477a821abdce87dd3fb25e57f6ef96a7c3b6af4c67a2a220fb7f5d311d5af6e"
         },
         {
           "path": "Art/NovaAfonso80.dds",
           "size": 25728,
-          "hash": "2c115f0fe609f8123cf159e41dc0042bb6d9ca784e99aa76cb8dfe9a75adbe0b"
+          "hash": "4a8a98b8902ce51d1acef1c4a7facf501ff4e6348d4a6280fd63e63dd04a3587"
         },
         {
           "path": "Art/NovaCactus128.dds",
@@ -2829,6 +2829,36 @@
           "path": "Art/NovaMuskoxSheep_DIFF.dds",
           "size": 11064,
           "hash": "7b0c6a4e1e218d91cd510586d420409df9330e6286e283e01e98cc37a44622c9"
+        },
+        {
+          "path": "Art/NovaSpindletop128.dds",
+          "size": 65664,
+          "hash": "df7258f0aaef9d9499801d5cce14188f2d2c4645a3a502d1fd9409a79fa7765c"
+        },
+        {
+          "path": "Art/NovaSpindletop256.dds",
+          "size": 262272,
+          "hash": "cf8bffd2fd0b48803c87b89ceedeeabcf58dc7ca099c3593021121de507175d4"
+        },
+        {
+          "path": "Art/NovaSpindletop45.dds",
+          "size": 8228,
+          "hash": "2f2d8d1374bebd5dfe5e7930a7056c2e8fa3b8418556cf72c91123390c0de426"
+        },
+        {
+          "path": "Art/NovaSpindletop64.dds",
+          "size": 16512,
+          "hash": "b809c6fb4a1a6a554d7d6dc6133d9fabd656c33af9002abb9b8efd399669188c"
+        },
+        {
+          "path": "Art/NovaSpindletop80.dds",
+          "size": 25728,
+          "hash": "b3c1265a17a2a313a593bd8249b4cbf019fb37fd0f2acf4b4615f1f73bb871d1"
+        },
+        {
+          "path": "Art/NovaSpindletopSplash.dds",
+          "size": 2208512,
+          "hash": "d1b4a4eed5244f7dcc4fd019f7b6c0183824f45e951e764c3c8f417fa72ee3b6"
         },
         {
           "path": "Art/NovaTestBamboo128.dds",
@@ -18722,8 +18752,8 @@
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4568064,
-          "hash": "f8feb5423ba0678b9b8f2855cc33b9027f6f6232ae3a0f278dffd4c4555f7daf"
+          "size": 4568576,
+          "hash": "445d74ad5fdf362e0f1d7f6c2ee0d6292b04306d03b47fedc55665bc6d5bdbd0"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -21442,8 +21472,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 13529236,
-          "hash": "b36ed31e987e09c82e4860ce2f90a8346ff1843f0947751613819ab67b89d84c"
+          "size": 13537570,
+          "hash": "edded2c5218a1d73c31bbc69431eec0615545f55a25b2efb1dd88e3d0b827596"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -21482,8 +21512,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 10112144,
-          "hash": "3aab47a3d618d25d6182f892ae1e5ff01005d7693c6bf48c3d5c4f5595aaf754"
+          "size": 10113268,
+          "hash": "849384ea8476dc14b9d8d4a64e96091d49ec67c41bd97c953d88fd6dffbf54b8"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -21913,7 +21943,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 7,
-          "hash": "2ba6fd74b89fc9b132bedccf4d179978eef150b2d80aa8bd0b54fdcf3bcd70ca"
+          "hash": "fe1c719f2145676b5256737fbbab0de27ba335231497f4cb6e07a67ecc1a515b"
         },
         {
           "path": "SkinShots/10TP.png",
@@ -25382,8 +25412,8 @@
         },
         {
           "path": "tmp/eui/SocialPolicyPopup.lua",
-          "size": 56468,
-          "hash": "a6530db7cd21ee0ea026d15a6113e4821d3d7da7f40598f8c8c4a606a47d141c"
+          "size": 57601,
+          "hash": "cd9d0eb1fa9f83cb546a350f5c815276e78aec507331aceb292c2476fe8130f0"
         },
         {
           "path": "tmp/eui/TechButtonInclude.lua",
@@ -26097,8 +26127,8 @@
         },
         {
           "path": "tmp/ui/SocialPolicyPopup.lua",
-          "size": 66678,
-          "hash": "5c9b7456e56f23bf14685643815185795e79562206263cca76ba2b6c895290a5"
+          "size": 67891,
+          "hash": "e05706c884f8f07ce81f1d84cfcb9e66caa3fca2fe09639e2b095acf072dc962"
         },
         {
           "path": "tmp/ui/SocialPolicyPopup.xml",
@@ -27786,6 +27816,12 @@
   },
   "news": {
     "entries": [
+      {
+        "date": "2026-11-18T18:40:38.271005+03:00",
+        "title": "Nova 2.0.4 — Спиндлтоп и исправления",
+        "body": "Новое чудо — Скважина Спиндлтопа: +5 нефти, +5 культуры и +2 счастья. Стоимость равна дамбе Гувера; открывается с биологией. Бесплатные нефтеперерабатывающие заводы выдаются столице и четырём старейшим городам; если городов меньше пяти, заводы получат следующие основанные города. Заводы дают +2 золота и +2 культуры, отдельно строить их нельзя.\n\nИсправлены баги:\n• Флоренция: доступные институты выбранной идеологии теперь можно покупать за золото. Исправление включает обычный интерфейс и EUI.\n• Межевой пост: больше не присоединяет клетку сразу и не списывает золото. При следующем расширении города за культуру приоритет получает клетка с действующим межевым постом.\n• Конго: уменьшен портрет Афонсу I в малых иконках — теперь он соответствует размеру остальных лидеров.\n\nВсем участникам сетевой партии нужно обновить мод. Новых сетевых изменений в этом выпуске нет.",
+        "tag": "ОБНОВЛЕНИЕ"
+      },
       {
         "date": "2026-11-17T00:00:00+00:00",
         "title": "Nova 2.0.1 — исправления и связь",
