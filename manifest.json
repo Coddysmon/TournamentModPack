@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "2.0.5",
+  "packageVersion": "2.0.6",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-11-18T20:16:24.822633+00:00",
+  "createdUtc": "2026-11-20T10:27:23.555558+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "relay://109.73.196.175:443/blobs/",
@@ -2523,27 +2523,27 @@
         {
           "path": "Art/NovaAfonso128.dds",
           "size": 65664,
-          "hash": "ecd0de4e788db313eefefa747327a565aae7351b43b24ae6ff8169c26cbcbd74"
+          "hash": "28a3a5893c99ede80ac4f002c64b89afdbc78b0e8292d44363b1f50f52b7d785"
         },
         {
           "path": "Art/NovaAfonso256.dds",
           "size": 262272,
-          "hash": "9b2d9dd728d4fe59aeeee517b8ef7f6e07a317d98a26d0b7263f1931e79f4543"
+          "hash": "0cbe77196944dd4eacbc9e67f7af68e2b80fdab9450ab9550fb1210c8e85635f"
         },
         {
           "path": "Art/NovaAfonso45.dds",
           "size": 8228,
-          "hash": "b12487816682972cae18e55bcf467cabeffb98af52a8948233347182d7d9fc19"
+          "hash": "fc81dfefcd61a28a942a8b7c1e75105dd5d8d0a29102deb8b20fa839148da47c"
         },
         {
           "path": "Art/NovaAfonso64.dds",
           "size": 16512,
-          "hash": "d2707cdf3691be6cedd248d45a687a5a4a92b0dc259bda762b614fc5bcfb8443"
+          "hash": "c477a821abdce87dd3fb25e57f6ef96a7c3b6af4c67a2a220fb7f5d311d5af6e"
         },
         {
           "path": "Art/NovaAfonso80.dds",
           "size": 25728,
-          "hash": "2c115f0fe609f8123cf159e41dc0042bb6d9ca784e99aa76cb8dfe9a75adbe0b"
+          "hash": "4a8a98b8902ce51d1acef1c4a7facf501ff4e6348d4a6280fd63e63dd04a3587"
         },
         {
           "path": "Art/NovaCactus128.dds",
@@ -18722,8 +18722,8 @@
         },
         {
           "path": "CvGameCore_Expansion2.dll",
-          "size": 4570112,
-          "hash": "25a962b2f48b4ffd8cfc2d93477e76e9378c52bbb94f30ca98dfc4f5fae7f4e4"
+          "size": 4580352,
+          "hash": "798288c62734bedb3ee73173a395abbfa4d958f9ce53bf242f4671f59aaf4445"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -21442,8 +21442,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 13529236,
-          "hash": "b36ed31e987e09c82e4860ce2f90a8346ff1843f0947751613819ab67b89d84c"
+          "size": 13530184,
+          "hash": "5d5f7b7bc901ba4df4ce7fc76f66045d01c8adc21d0940a746710f49e2ce5c25"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -21482,8 +21482,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 10112144,
-          "hash": "1b7d2dd530c0c05efc3d0b26b39575d22137d50bfb046a12bfa4de889efec52c"
+          "size": 10112488,
+          "hash": "b089ef052dd811fa7774ef4085deb1b5c36a89dcaf778c7a13d2fa05abbbcd25"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -21913,7 +21913,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 7,
-          "hash": "39074ceee603fa5addba75dca5f3ff16615784db351bfe14d9a0575a2e49f3de"
+          "hash": "55bf189b8df791d660c9f77a742c9e8131774cc81a2c30c0e942b4efd414d2d9"
         },
         {
           "path": "SkinShots/10TP.png",
@@ -25382,8 +25382,8 @@
         },
         {
           "path": "tmp/eui/SocialPolicyPopup.lua",
-          "size": 56468,
-          "hash": "a6530db7cd21ee0ea026d15a6113e4821d3d7da7f40598f8c8c4a606a47d141c"
+          "size": 56608,
+          "hash": "2a9b9ca0b7bc3bab20578c8d020ae37e9f9dc8ed4529d473616bac5b27110413"
         },
         {
           "path": "tmp/eui/TechButtonInclude.lua",
@@ -26097,8 +26097,8 @@
         },
         {
           "path": "tmp/ui/SocialPolicyPopup.lua",
-          "size": 66678,
-          "hash": "5c9b7456e56f23bf14685643815185795e79562206263cca76ba2b6c895290a5"
+          "size": 66914,
+          "hash": "e3ab58dcb794527c41585741a996472d8757adff0e8f943b357886bed3aaf013"
         },
         {
           "path": "tmp/ui/SocialPolicyPopup.xml",
@@ -27786,6 +27786,12 @@
   },
   "news": {
     "entries": [
+      {
+        "date": "2026-11-20T10:27:23.555558+00:00",
+        "title": "Nova 2.0.6 — исправления Флоренции, Конго и межевого поста",
+        "body": "• Флоренция: идеологические институты теперь можно покупать за золото при выполнении их условий. Исправлены ограничения DLL и кнопки выбора в обычном интерфейсе и EUI.\n• Россия: берёзовые, дубовые и хвойные леса теперь дают положенный национальный бонус +1 еды, как обычный лес.\n• Конго: уменьшен портрет в драфте и списках цивилизаций.\n• Эра-бонус Конго «Города Конго» теперь доступен как полноценный выбор эпохи Возрождения. После выбора города получают +1 культуры за каждых 5 жителей; бонус занимает один выбор своей эпохи.\n• Межевой пост больше не покупает клетку, не тратит золото и не присоединяет землю сразу. При следующем расширении границ за культуру город приоритетно получает соседнюю доступную клетку со своим неповреждённым постом. Описания обновлены.\n• Гонец Конго сохраняет способность получать еду за первую встречу с городом-государством и дополнительное очко передвижения после улучшения из руин. Исправлена выдача сохраняемого повышения.\n\nТренировка авиации из 2.0.5 сохранена. Всем участникам сетевой партии нужно обновить мод до 2.0.6 перед игрой.",
+        "tag": "ИСПРАВЛЕНИЕ"
+      },
       {
         "date": "2026-11-18T23:16:24.822633+03:00",
         "title": "Nova 2.0.5 — тренировка авиации",
