@@ -1,13 +1,14 @@
 {
   "schemaVersion": 1,
-  "packageVersion": "2.0.6",
+  "packageVersion": "2.0.7",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-11-20T10:27:23.555558+00:00",
+  "createdUtc": "2026-11-20T13:02:28.1425757+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "relay://109.73.196.175:443/blobs/",
     "layout": "Flat",
     "mirrors": [
+      "https://github.com/Coddysmon/TournamentModPack/releases/download/patch-2.0.7/",
       "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
       "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/",
       "https://github.com/Coddysmon/TournamentModPack/releases/download/cas2/",
@@ -21483,7 +21484,7 @@
         {
           "path": "Override/CIV5Units_Mongol.xml",
           "size": 10112488,
-          "hash": "b089ef052dd811fa7774ef4085deb1b5c36a89dcaf778c7a13d2fa05abbbcd25"
+          "hash": "73d12ab49f906835b073b2175e691603dea69274c1381702ae2d67a7b921f19c"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -21913,7 +21914,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 7,
-          "hash": "55bf189b8df791d660c9f77a742c9e8131774cc81a2c30c0e942b4efd414d2d9"
+          "hash": "9c2d74e0a286e176e84eda6eb22d6d64fcf4bfd8504ea0cd9a5f7180884d6281"
         },
         {
           "path": "SkinShots/10TP.png",
@@ -25782,13 +25783,13 @@
         },
         {
           "path": "tmp/ui/LoadScreen.lua",
-          "size": 5559,
-          "hash": "d251c54b9d30e428753ae37eb5edb61294ef01beeba288b68f894ad48f204a3e"
+          "size": 5879,
+          "hash": "78fafcc07d2aac25383a1b6fee42190edaf61666152a01297145055c4e9e16d0"
         },
         {
           "path": "tmp/ui/LoadScreen.xml",
-          "size": 3406,
-          "hash": "ff9dfc09053b1ec6b7bdc69eec4f63523eadf67d86c2b03046b0e514ef78cb7e"
+          "size": 3541,
+          "hash": "26d08abf2fcd38190b58f2e5dd59023db4b6ef71cfb768050b9ff6686e7e5435"
         },
         {
           "path": "tmp/ui/Lobby.xml",
@@ -26738,6 +26739,11 @@
         "when": []
       },
       {
+        "from": "tmp/ui/ResourceTooltipGenerator.lua",
+        "to": "UI/ResourceTooltipGenerator.lua",
+        "when": []
+      },
+      {
         "from": "tmp/ui/EUI_unit_include.lua",
         "to": "UI/EUI_unit_include.lua",
         "when": []
@@ -27672,11 +27678,6 @@
             "expected": false
           }
         ]
-      },
-      {
-        "from": "tmp/ui/ResourceTooltipGenerator.lua",
-        "to": "UI/ResourceTooltipGenerator.lua",
-        "when": []
       }
     ]
   },
