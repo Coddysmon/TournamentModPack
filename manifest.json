@@ -1,14 +1,15 @@
 {
   "schemaVersion": 1,
   "releaseName": "NOVA 2.0",
-  "packageVersion": "2.0.7",
+  "packageVersion": "2.0.8",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-11-20T13:02:28.1425757+00:00",
+  "createdUtc": "2026-11-20T14:27:57.8547707+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "relay://109.73.196.175:443/blobs/",
     "layout": "Flat",
     "mirrors": [
+      "https://github.com/Coddysmon/TournamentModPack/releases/download/patch-2.0.8/",
       "https://github.com/Coddysmon/TournamentModPack/releases/download/patch-2.0.7/",
       "https://github.com/Coddysmon/TournamentModPack/releases/download/cas/",
       "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/",
@@ -2810,7 +2811,7 @@
         {
           "path": "Art/NovaMenuBackground.dds",
           "size": 8294528,
-          "hash": "beb06d0d656a54a05d34d1669f54076b6277897490613d0e150dea2de2bc6c22"
+          "hash": "13338622e0e453ee84b61d63910ef5915ff7838a5eabc5b2a4538c2e07d6af23"
         },
         {
           "path": "Art/NovaMenuLogo.dds",
@@ -2831,6 +2832,71 @@
           "path": "Art/NovaMuskoxSheep_DIFF.dds",
           "size": 11064,
           "hash": "7b0c6a4e1e218d91cd510586d420409df9330e6286e283e01e98cc37a44622c9"
+        },
+        {
+          "path": "Art/NovaPediaArticle.dds",
+          "size": 131200,
+          "hash": "8bae4334b2b791dcd384d04a06707e3254445effce9f45533136635c9afd2b87"
+        },
+        {
+          "path": "Art/NovaPediaCategory.dds",
+          "size": 131200,
+          "hash": "b7b0f645a86d4b2184ff1fef9eb656b906b09f5985e6cd4bfce70a742d54faa9"
+        },
+        {
+          "path": "Art/NovaPediaFrame.dds",
+          "size": 32896,
+          "hash": "3ef1fe7f6ff1953157777bf5d1d393934b53bd9f4263de0a058d70c46de96804"
+        },
+        {
+          "path": "Art/NovaPediaHeading.dds",
+          "size": 32896,
+          "hash": "dbc5b8f807d4871fdcefb1730e43e04bb40905e9c580bc95b1e0040f5481a008"
+        },
+        {
+          "path": "Art/NovaPediaHover.dds",
+          "size": 65664,
+          "hash": "bc11b261f470026635739d93696726477836354df11552ff307ddf8a8a31841d"
+        },
+        {
+          "path": "Art/NovaPediaRow.dds",
+          "size": 32896,
+          "hash": "e720ad2e3b2515dbd52000096abbc8e041c45297ceb50183ea7d06c0dc4b90ae"
+        },
+        {
+          "path": "Art/NovaPediaTitle.dds",
+          "size": 262272,
+          "hash": "4f31fbb7b6521bcca8219b426564bda0ddc2e2c6e7cfab7e602b60a03b6e8ce1"
+        },
+        {
+          "path": "Art/NovaRomanDown.dds",
+          "size": 32896,
+          "hash": "651ea1ef48c5c9aa69da30e21bb92ca8577fb67bd84021b50de2a94a850940a4"
+        },
+        {
+          "path": "Art/NovaRomanKnob.dds",
+          "size": 32896,
+          "hash": "15337c6ecf048b96a3bb8905df9ef2f842bd9e0687e27243cfa9e906911bdc5d"
+        },
+        {
+          "path": "Art/NovaRomanPlate.dds",
+          "size": 32896,
+          "hash": "38e6a0bed3ba8ddbdb7ae55f18d0d0c7004e7733beb7dabddea6d8da9b7c315c"
+        },
+        {
+          "path": "Art/NovaRomanRail.dds",
+          "size": 16512,
+          "hash": "7e9bd6a75be4749dde98726346a8c8e74db2cfa29db73c0d1d23dcda7faaf52a"
+        },
+        {
+          "path": "Art/NovaRomanScroll.dds",
+          "size": 32896,
+          "hash": "3b398376ecf7eac3067d61247f4a1a10a8bd49d8a6acc2693fc4c14941648df2"
+        },
+        {
+          "path": "Art/NovaRomanUp.dds",
+          "size": 32896,
+          "hash": "8ffc12217ebd8716ae4ae7245da56982536b015707c14a142dbaa0223337f9fb"
         },
         {
           "path": "Art/NovaTestBamboo128.dds",
@@ -21485,7 +21551,7 @@
         {
           "path": "Override/CIV5Units_Mongol.xml",
           "size": 10112488,
-          "hash": "73d12ab49f906835b073b2175e691603dea69274c1381702ae2d67a7b921f19c"
+          "hash": "5c175bf7158717597f85d972c13f604b5657d43691d94ff54f1336ee33738692"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -21915,7 +21981,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 7,
-          "hash": "9c2d74e0a286e176e84eda6eb22d6d64fcf4bfd8504ea0cd9a5f7180884d6281"
+          "hash": "8095fa556419be514bc2eb93a553a8b5c89c6e2c37d165d38a2dc45c142cb0a6"
         },
         {
           "path": "SkinShots/10TP.png",
@@ -25379,8 +25445,8 @@
         },
         {
           "path": "tmp/eui/OptionsMenu.xml.ignore",
-          "size": 43075,
-          "hash": "13b85296668f5e5f76f6cd3864c749614afe75767d6918d0444666196e41d16c"
+          "size": 55028,
+          "hash": "a4e158b1214fc21bd4ca19de3e2f7590426868dfe312a53a20a13c80bf80216f"
         },
         {
           "path": "tmp/eui/SocialPolicyPopup.lua",
@@ -25459,8 +25525,8 @@
         },
         {
           "path": "tmp/ui/AdvancedSetup.xml",
-          "size": 16994,
-          "hash": "738a1d4a944a9b3148a104bdd97b9080a5bdef125f04f98857d13da9ad19ee59"
+          "size": 34073,
+          "hash": "5d6cdca5dbb2d55d1d8f2d4b8609c36af629d527a93fe1fb80840357a088d39d"
         },
         {
           "path": "tmp/ui/AnnexCityPopup.lua",
@@ -25594,13 +25660,23 @@
         },
         {
           "path": "tmp/ui/CivilopediaScreen.xml",
-          "size": 101991,
-          "hash": "40ec5906f2213bad6e14db8b6a4457a929bb2f6e4285e0051919514ef6c76ccc"
+          "size": 154718,
+          "hash": "cb492ee991751714c3b39d5cfdad03503a949e33484e7e6b65565a4cca2e3398"
         },
         {
           "path": "tmp/ui/ConfirmCommandPopup.lua",
           "size": 2066,
           "hash": "b304373310fae9e7f2b15bc1c9f2d2f6c30a6204396afb0ea9c2243138bb0bd0"
+        },
+        {
+          "path": "tmp/ui/ContentSwitch.xml",
+          "size": 2800,
+          "hash": "368e3f13a790e68e152225a1c9d103747a4d4342256fd2913f2dad6100b6d82f"
+        },
+        {
+          "path": "tmp/ui/Credits.xml",
+          "size": 2630,
+          "hash": "c262a6d1c0b79b1f4e1eacaa1578dfa8420720dabc982c6b6b8ce8edebee9080"
         },
         {
           "path": "tmp/ui/CultureOverview.lua",
@@ -25611,6 +25687,11 @@
           "path": "tmp/ui/CultureOverview.xml",
           "size": 90501,
           "hash": "4f01fad7480e3dda461ed142173205741d23433c098dc5b618fef3ab562482d0"
+        },
+        {
+          "path": "tmp/ui/CustomMod.xml",
+          "size": 6145,
+          "hash": "fa2ea43d88416e3ed44dca6acf38b9adb73f038ad164aa49e94101c7e3ec7888"
         },
         {
           "path": "tmp/ui/Demographics.lua",
@@ -25693,6 +25774,11 @@
           "hash": "ae7600312e1211f7190f242b3498a0f4952edf520572e4e0e553762bc27ab8c7"
         },
         {
+          "path": "tmp/ui/EULA.xml",
+          "size": 4694,
+          "hash": "c447d79de68c4111d4a597d3f6faa76a7ecf0cfb84555d6178791c5873edacfd"
+        },
+        {
           "path": "tmp/ui/EconomicGeneralInfo.lua",
           "size": 26526,
           "hash": "42d3052309f3f2abe22cf8428305f44ade80c246078eb62c08e3c8c1bac98e2f"
@@ -25723,9 +25809,19 @@
           "hash": "49526229e63efb9b00df74bb4cc8df5d3b1cb52dd6dcdc7ba16184267e88d3fd"
         },
         {
+          "path": "tmp/ui/ExitConfirm.xml",
+          "size": 4422,
+          "hash": "bad2bad0c6ca7adb3b63f63e982419b515c70042b45ce2a2230a076cb1c18cdf"
+        },
+        {
           "path": "tmp/ui/FrontEnd.lua",
           "size": 5258,
           "hash": "fc23b848ea488485be63cabca33606ed184e239eeb7844686ca3f18dc4c11ed1"
+        },
+        {
+          "path": "tmp/ui/FrontEndPopup.xml",
+          "size": 988,
+          "hash": "e2bd7c11eafe07a8b7d64644a8805918d0388738d0e8c046f43a2563d4c4d5ee"
         },
         {
           "path": "tmp/ui/GPList.lua",
@@ -25749,8 +25845,8 @@
         },
         {
           "path": "tmp/ui/GameSetupScreen.xml",
-          "size": 10075,
-          "hash": "11e0f962af82c7587d7012f2853d8e8e7badc2b2cdbc214ecd149da69b3bb144"
+          "size": 13073,
+          "hash": "550a71494a70bf2ca88447900b1742f78d0b6756a2cd2a66157b3b79379ac7a9"
         },
         {
           "path": "tmp/ui/GoodyHutPopup.lua",
@@ -25778,9 +25874,34 @@
           "hash": "7148a670194f11aff47ec6c4d5c0f82113b161a27e90ad28ad456b6a1b70f221"
         },
         {
+          "path": "tmp/ui/InstalledPanel.xml",
+          "size": 15938,
+          "hash": "3b90b2685e1b29fa2213306a11a727069206565e3188bc805761f85b4767e5f4"
+        },
+        {
           "path": "tmp/ui/JoiningRoom.lua",
-          "size": 8424,
-          "hash": "8775b261938e3c4f0c58228869adca8cb2b368ee853d3013ca6079af055a74a3"
+          "size": 8405,
+          "hash": "c9b82301f4cc52ffff276146c7a56401bf4ae33a99fceb173d15be10c54fc94e"
+        },
+        {
+          "path": "tmp/ui/JoiningRoom.xml",
+          "size": 620,
+          "hash": "c32c4023c54b3a0982af61881035115526826b87a2b6ba19456e0faef2fa2330"
+        },
+        {
+          "path": "tmp/ui/LegalScreen.xml",
+          "size": 3337,
+          "hash": "87f9b69097237bbfa3d43a593bbba3ee6997aef415323c5de181b6524e037907"
+        },
+        {
+          "path": "tmp/ui/LoadMenu.xml",
+          "size": 18634,
+          "hash": "6e99e1fc0a784770bcd83f0f9ea662b47c6229b01b5e29f151835f3bab969ea6"
+        },
+        {
+          "path": "tmp/ui/LoadReplayMenu.xml",
+          "size": 18328,
+          "hash": "9e24dd42fc2a099d20d61004418978aa119d45412ed7cd6a191b6aad21a88780"
         },
         {
           "path": "tmp/ui/LoadScreen.lua",
@@ -25789,13 +25910,23 @@
         },
         {
           "path": "tmp/ui/LoadScreen.xml",
-          "size": 3541,
-          "hash": "26d08abf2fcd38190b58f2e5dd59023db4b6ef71cfb768050b9ff6686e7e5435"
+          "size": 3878,
+          "hash": "5c1f54cb4c4c4924aadeceec115f22d9de40cfdc5101892ffc50d8b7d8776383"
+        },
+        {
+          "path": "tmp/ui/LoadTutorial.xml",
+          "size": 8642,
+          "hash": "97f41c29d40e7b862d048b1502e55b730888278f524a72c9a4ce266050283cf3"
+        },
+        {
+          "path": "tmp/ui/Lobby.lua",
+          "size": 26508,
+          "hash": "c1b8433ec4ab8c9576713535db327189afbf4a950a27819f4388ae551419f84f"
         },
         {
           "path": "tmp/ui/Lobby.xml",
-          "size": 8395,
-          "hash": "23a01fc431a15c5e99caefe5185d0b1daa7e8b6733fc71524030dc09e518a0c9"
+          "size": 14018,
+          "hash": "1e11b146f6d55d2f99971368507251d5601eac4bc50daed5ea98cf0e62efbe3b"
         },
         {
           "path": "tmp/ui/LuxuryPlacer.lua",
@@ -25813,9 +25944,14 @@
           "hash": "9801863ba8a49d880df21d005a88850ab31c4f5386aa4fe45b67473e04ad3805"
         },
         {
+          "path": "tmp/ui/MPGameSetupScreen.lua",
+          "size": 8033,
+          "hash": "c9ffdf57fe2894fb1b349a687f998f298681569527e478149865786e40e76fca"
+        },
+        {
           "path": "tmp/ui/MPGameSetupScreen.xml",
-          "size": 23114,
-          "hash": "bc3cbd7f3079cf90f73baba208458b8e49752f6945d7c5ec1c448e79ec72f86a"
+          "size": 59322,
+          "hash": "9b77290f744a57004b2fc94ef2e472e6f4895d6b6cf75d9b0d812ef575794a58"
         },
         {
           "path": "tmp/ui/MPList.lua",
@@ -25844,8 +25980,8 @@
         },
         {
           "path": "tmp/ui/MainMenu.xml",
-          "size": 18847,
-          "hash": "b954dd7efc932292ea3da75fb47b47e621e6fb672acfb7ab3447cc3aa77afbe3"
+          "size": 20720,
+          "hash": "959239a1e24459f908b8ad2c5a89d9d1e72dc0441a150b988551958d2f379927"
         },
         {
           "path": "tmp/ui/MatchOutcomeRecorder.lua",
@@ -25863,9 +25999,34 @@
           "hash": "c1e066f912d600226c57bb29d2202a9b4ac51f15d9fe552767400c86121b76ba"
         },
         {
+          "path": "tmp/ui/ModsBrowser.xml",
+          "size": 5288,
+          "hash": "625b775542f6e3af735e7f0e958a5a51f37cb7b55e43492489ca1cea7f541f33"
+        },
+        {
+          "path": "tmp/ui/ModsError.xml",
+          "size": 1963,
+          "hash": "4afc44d7c02852b9ae2f71a7500d3db3dc78735e449c7eb8fef480db86f82aae"
+        },
+        {
+          "path": "tmp/ui/ModsMenu.xml",
+          "size": 7673,
+          "hash": "3a8c3986ab1dd97e8d9f015523eb72957584214c7716c9e89720af7e2c77cdf0"
+        },
+        {
+          "path": "tmp/ui/ModsMultiplayer.xml",
+          "size": 10115,
+          "hash": "c2e8a2229ad6f9348509770f701aa829643cb943a7a6c3ebcb800445bf216f96"
+        },
+        {
+          "path": "tmp/ui/ModsSinglePlayer.xml",
+          "size": 9084,
+          "hash": "0bf0178f5d6c476e0ca9cc0f9713dd338ee39ed7adf495e827d8c70dbb04e1d5"
+        },
+        {
           "path": "tmp/ui/MultiplayerSelect.xml",
-          "size": 5919,
-          "hash": "ebf384d703edcba7eeb6e98fd1ddec2ecc69e9aa592dba928d309a765995790a"
+          "size": 7717,
+          "hash": "dbfe237809aeb297c1ff7480224dbcf5c518732d7f846b56f39b6831e391a4f0"
         },
         {
           "path": "tmp/ui/NetworkKickedPopup.lua",
@@ -25969,8 +26130,13 @@
         },
         {
           "path": "tmp/ui/OptionsMenu.xml.ignore",
-          "size": 41848,
-          "hash": "0e39455599c2bf076ae37c6550996bbad3de79b63440b4875ffcb85e88a033f7"
+          "size": 53318,
+          "hash": "7fda644f88a48ab4577a33ea51912293633ab41f609c9c4b2a4431c23c68bf34"
+        },
+        {
+          "path": "tmp/ui/OtherMenu.xml",
+          "size": 10090,
+          "hash": "f648bd2252312e1e45fda337f4563b6762af2892da4b692ec62aaf3914657499"
         },
         {
           "path": "tmp/ui/PlotHelpManager.lua",
@@ -25991,6 +26157,16 @@
           "path": "tmp/ui/PopulateUniques.lua",
           "size": 10387,
           "hash": "d2d9f3d523073cea4b8027076ec118feeb7f27259c4009b76389708cff265a88"
+        },
+        {
+          "path": "tmp/ui/PreGameScreen.xml",
+          "size": 7992,
+          "hash": "6faf86274bd2ec3f7bf0bfc2967008b2514db4ce50de729e55fbd7eb16f0ef4c"
+        },
+        {
+          "path": "tmp/ui/PremiumContentMenu.xml",
+          "size": 6933,
+          "hash": "e31fef7dcd288cff823eec65d5aa81e554bec24721c619b0a1fa83c22d58bbad"
         },
         {
           "path": "tmp/ui/ProductionPopup.lua",
@@ -26048,6 +26224,11 @@
           "hash": "2a63810f236b6fa5912094f9b8d5b40ccc4c4d6e7ec87eed678a3c5639ea5335"
         },
         {
+          "path": "tmp/ui/ScenariosMenu.xml",
+          "size": 7215,
+          "hash": "41ffcfaa8e8760ca9f653e2a9036ce2744e3636ca7c2d7ec2cd857151e7fbdfa"
+        },
+        {
           "path": "tmp/ui/SeaWanderers.lua",
           "size": 3159,
           "hash": "a7ab571b17f7b3f1e002574c0ebc3b5e8c7a59e4ffdcabc2cfdc1e5887594396"
@@ -26059,28 +26240,33 @@
         },
         {
           "path": "tmp/ui/SelectCivilization.xml",
-          "size": 3032,
-          "hash": "17315345641e445f1a6760eb834e46546bc1c90df998898ab96b287e97180914"
+          "size": 5325,
+          "hash": "13be25bff9fd80eb21956e7d38e5ca2f45bd08516e7afc420ef99125e32503ab"
         },
         {
           "path": "tmp/ui/SelectDifficulty.xml",
-          "size": 3322,
-          "hash": "ff3bcbe314a9d9dd0ab4339e9ecc5c30bbc49d8c34a07eb07d0e8f2379f55a64"
+          "size": 5742,
+          "hash": "ca9de0c5238d1cf65aec1c9460bfad6cc44fec01b2a789573d1639e499f841cb"
         },
         {
           "path": "tmp/ui/SelectGameSpeed.xml",
-          "size": 3267,
-          "hash": "de0e393047ec1eba5e6ea15fb00bb901036a0f1618d34286696f12f81e96a0f7"
+          "size": 5687,
+          "hash": "e631ee08d8617e51cdc30718ab245ba70ab6a8e9e97363cc50430a8edea9315c"
         },
         {
           "path": "tmp/ui/SelectMapSize.xml",
-          "size": 3280,
-          "hash": "525fd69608e238cb46bee12db9790cb1706bebdefb5a3e220f7ebfcc84bdf531"
+          "size": 5700,
+          "hash": "89c564654429e4952e110248e285c08eda76ac2c2b0613ff0cabe14731bad893"
         },
         {
           "path": "tmp/ui/SelectMapType.xml",
-          "size": 2745,
-          "hash": "d55c70bae8b2cfce00fce88911945222c9291e03d359ba6692691d44a2c0a001"
+          "size": 5165,
+          "hash": "1d9bd0920631bde8151f1a6f9e15693468d5c4a3632b79207ee3e0d9e4b1d0f5"
+        },
+        {
+          "path": "tmp/ui/SetCivNames.xml",
+          "size": 8278,
+          "hash": "4c817a41507c719372de7a4700c2672b82bee337953318f13044c587902daa1f"
         },
         {
           "path": "tmp/ui/SimpleDiploTrade.lua",
@@ -26094,8 +26280,8 @@
         },
         {
           "path": "tmp/ui/SinglePlayer.xml",
-          "size": 4885,
-          "hash": "042eb82003ed4dddddfb28d128f2a549405d12a1d934199f2977afb0e0014250"
+          "size": 6660,
+          "hash": "22d1ef3c1e64d0784f6b8b4ddf8d47d0141b47dcab18b6ba60545130fbfe0ce0"
         },
         {
           "path": "tmp/ui/SocialPolicyPopup.lua",
@@ -26109,13 +26295,13 @@
         },
         {
           "path": "tmp/ui/StagingRoom.lua",
-          "size": 161452,
-          "hash": "00f142ada0cda0e94c66c19b2e114adf7fcee9c91a4cc44c02a9eb8441d0c492"
+          "size": 162594,
+          "hash": "773885321e1bb43419930cc6bf399e57155f2f3af32f25352feb7b65f1214e4c"
         },
         {
           "path": "tmp/ui/StagingRoom.xml",
-          "size": 59464,
-          "hash": "6678d1a334c6681c9638cdb84b36e054a32824272e8c8e3341ec9d9949cfb64c"
+          "size": 120099,
+          "hash": "c484df75b683ca84f0c74ca587449a8fdb3b4a1e236f1644f25d8fd8f1bd7705"
         },
         {
           "path": "tmp/ui/TechButtonInclude.lua",
@@ -26239,8 +26425,8 @@
         },
         {
           "path": "ui_check.bat",
-          "size": 41624,
-          "hash": "a27e3e1e7d48951a6f8a4796d5b718ce34d270751f97b0e4a0abe7a9d3e26b6e"
+          "size": 43776,
+          "hash": "510fb19832e4410b0379a15fa6c0da68070bfc9ed231b32af02f064f1d5c4485"
         }
       ]
     },
@@ -27679,6 +27865,126 @@
             "expected": false
           }
         ]
+      },
+      {
+        "from": "tmp/ui/ContentSwitch.xml",
+        "to": "UI/ContentSwitch.xml",
+        "when": []
+      },
+      {
+        "from": "tmp/ui/Credits.xml",
+        "to": "UI/Credits.xml",
+        "when": []
+      },
+      {
+        "from": "tmp/ui/CustomMod.xml",
+        "to": "UI/CustomMod.xml",
+        "when": []
+      },
+      {
+        "from": "tmp/ui/EULA.xml",
+        "to": "UI/EULA.xml",
+        "when": []
+      },
+      {
+        "from": "tmp/ui/ExitConfirm.xml",
+        "to": "UI/ExitConfirm.xml",
+        "when": []
+      },
+      {
+        "from": "tmp/ui/FrontEndPopup.xml",
+        "to": "UI/FrontEndPopup.xml",
+        "when": []
+      },
+      {
+        "from": "tmp/ui/InstalledPanel.xml",
+        "to": "UI/InstalledPanel.xml",
+        "when": []
+      },
+      {
+        "from": "tmp/ui/JoiningRoom.xml",
+        "to": "UI/JoiningRoom.xml",
+        "when": []
+      },
+      {
+        "from": "tmp/ui/LegalScreen.xml",
+        "to": "UI/LegalScreen.xml",
+        "when": []
+      },
+      {
+        "from": "tmp/ui/LoadMenu.xml",
+        "to": "UI/LoadMenu.xml",
+        "when": []
+      },
+      {
+        "from": "tmp/ui/LoadReplayMenu.xml",
+        "to": "UI/LoadReplayMenu.xml",
+        "when": []
+      },
+      {
+        "from": "tmp/ui/LoadTutorial.xml",
+        "to": "UI/LoadTutorial.xml",
+        "when": []
+      },
+      {
+        "from": "tmp/ui/Lobby.lua",
+        "to": "UI/Lobby.lua",
+        "when": []
+      },
+      {
+        "from": "tmp/ui/ModsBrowser.xml",
+        "to": "UI/ModsBrowser.xml",
+        "when": []
+      },
+      {
+        "from": "tmp/ui/ModsError.xml",
+        "to": "UI/ModsError.xml",
+        "when": []
+      },
+      {
+        "from": "tmp/ui/ModsMenu.xml",
+        "to": "UI/ModsMenu.xml",
+        "when": []
+      },
+      {
+        "from": "tmp/ui/ModsMultiplayer.xml",
+        "to": "UI/ModsMultiplayer.xml",
+        "when": []
+      },
+      {
+        "from": "tmp/ui/ModsSinglePlayer.xml",
+        "to": "UI/ModsSinglePlayer.xml",
+        "when": []
+      },
+      {
+        "from": "tmp/ui/MPGameSetupScreen.lua",
+        "to": "UI/MPGameSetupScreen.lua",
+        "when": []
+      },
+      {
+        "from": "tmp/ui/OtherMenu.xml",
+        "to": "UI/OtherMenu.xml",
+        "when": []
+      },
+      {
+        "from": "tmp/ui/PreGameScreen.xml",
+        "to": "UI/PreGameScreen.xml",
+        "when": []
+      },
+      {
+        "from": "tmp/ui/PremiumContentMenu.xml",
+        "to": "UI/PremiumContentMenu.xml",
+        "when": []
+      },
+      {
+        "from": "tmp/ui/ScenariosMenu.xml",
+        "to": "UI/ScenariosMenu.xml",
+        "when": []
+      },
+      {
+        "from": "tmp/ui/SetCivNames.xml",
+        "to": "UI/SetCivNames.xml",
+        "when": []
       }
     ]
   },
@@ -27788,6 +28094,12 @@
   },
   "news": {
     "entries": [
+      {
+        "date": "2026-11-20T17:28:25+03:00",
+        "title": "Nova 2.0.8 — обновление",
+        "tag": "ОБНОВЛЕНИЕ",
+        "body": "Римское оформление главного меню, Цивилопедии и экранов загрузки. Полноэкранное сетевое лобби и настройка партии. Экраны выбора цивилизации и одиночной игры отцентрированы."
+      },
       {
         "date": "2026-11-20T16:07:27+03:00",
         "title": "Nova 2.0.7 — обновление",
@@ -28122,6 +28434,14 @@
       }
     ],
     "Usable": [
+      {
+        "date": "2026-11-20T17:28:25+03:00",
+        "title": "Nova 2.0.8 — обновление",
+        "tag": "ОБНОВЛЕНИЕ",
+        "body": "Римское оформление главного меню, Цивилопедии и экранов загрузки. Полноэкранное сетевое лобби и настройка партии. Экраны выбора цивилизации и одиночной игры отцентрированы.",
+        "HasUsableUrl": false,
+        "IsUsable": true
+      },
       {
         "date": "2026-11-20T16:07:27+03:00",
         "title": "Nova 2.0.7 — обновление",
