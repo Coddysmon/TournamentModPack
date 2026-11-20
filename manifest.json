@@ -28095,6 +28095,14 @@
   "news": {
     "entries": [
       {
+        "date": "2026-11-20T18:35:01+03:00",
+        "title": "Медали NOVA SEASON I появились в профилях игроков",
+        "tag": "НОВОСТЬ",
+        "body": "В лаунчере Nova 0.3.126 откройте раздел «Профиль» и найдите игрока по игровому нику или ID. В его карточке, в разделе «Награды», видна медаль за место в турнире.\n\nПризёры NOVA SEASON I\n1-е место — Coddys\n2-е место — An4ouS_\n3-е место — NotUrban\n\nПоздравляем призёров первого сезона!",
+        "titleEn": "NOVA SEASON I medals are now on player profiles",
+        "bodyEn": "In Nova Launcher 0.3.126, open Profile and search by in-game name or profile ID. The Awards section shows the player’s tournament medal.\n\nNOVA SEASON I podium\n1st place — Coddys\n2nd place — An4ouS_\n3rd place — NotUrban\n\nCongratulations to the Season I medalists!"
+      },
+      {
         "date": "2026-11-20T17:28:25+03:00",
         "title": "Nova 2.0.8 — обновление",
         "tag": "ОБНОВЛЕНИЕ",
@@ -28434,6 +28442,16 @@
       }
     ],
     "Usable": [
+      {
+        "date": "2026-11-20T18:35:01+03:00",
+        "title": "Медали NOVA SEASON I появились в профилях игроков",
+        "tag": "НОВОСТЬ",
+        "body": "В лаунчере Nova 0.3.126 откройте раздел «Профиль» и найдите игрока по игровому нику или ID. В его карточке, в разделе «Награды», видна медаль за место в турнире.\n\nПризёры NOVA SEASON I\n1-е место — Coddys\n2-е место — An4ouS_\n3-е место — NotUrban\n\nПоздравляем призёров первого сезона!",
+        "titleEn": "NOVA SEASON I medals are now on player profiles",
+        "bodyEn": "In Nova Launcher 0.3.126, open Profile and search by in-game name or profile ID. The Awards section shows the player’s tournament medal.\n\nNOVA SEASON I podium\n1st place — Coddys\n2nd place — An4ouS_\n3rd place — NotUrban\n\nCongratulations to the Season I medalists!",
+        "HasUsableUrl": false,
+        "IsUsable": true
+      },
       {
         "date": "2026-11-20T17:28:25+03:00",
         "title": "Nova 2.0.8 — обновление",
