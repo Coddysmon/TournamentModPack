@@ -1,14 +1,15 @@
 {
   "schemaVersion": 1,
   "releaseName": "NOVA 2.0",
-  "packageVersion": "2.0.12",
+  "packageVersion": "2.0.13",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-11-24T14:40:42.3639433+00:00",
+  "createdUtc": "2026-11-25T20:28:15.1750773+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "relay://109.73.196.175:443/blobs/",
     "layout": "Flat",
     "mirrors": [
+      "https://github.com/Coddysmon/TournamentModPack/releases/download/patch-2.0.13/",
       "https://github.com/Coddysmon/TournamentModPack/releases/download/patch-2.0.12/",
       "https://github.com/Coddysmon/TournamentModPack/releases/download/patch-2.0.11/",
       "https://github.com/Coddysmon/TournamentModPack/releases/download/patch-2.0.9/",
@@ -18804,7 +18805,7 @@
         {
           "path": "CvGameCore_Expansion2.dll",
           "size": 4571648,
-          "hash": "7773a75e8b41c4e9de6ac0ad26657132596bcc28304036b026158b1593bf8f61"
+          "hash": "c163faf05de3c543a90cbc9f1d714507a44d7423d6d272c310adbba495722ab6"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -21564,7 +21565,7 @@
         {
           "path": "Override/CIV5Units_Mongol.xml",
           "size": 10113967,
-          "hash": "90c2b6f70056a31370ae17d0f6d572a3d3dfecfb726b047bf54d8cee2595d372"
+          "hash": "b91da733fc40472d8ecf927703931e2b39599051c1a77feaf657924d0b5db24a"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -21994,7 +21995,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 8,
-          "hash": "76807c461f763be1d1742e7071cfd279591e0d76328b9cf6613981b413ecfeed"
+          "hash": "98742bf583aa128af9787dfa5937bdb0a97372c787dcb0a04e70b34a17f56bc3"
         },
         {
           "path": "SkinShots/10TP.png",
@@ -25428,8 +25429,8 @@
         },
         {
           "path": "tmp/eui/ConfirmCommandPopup.lua",
-          "size": 2231,
-          "hash": "868dfaab452a7a94c8d8e21be44481ab39d67be5527a06dcec32082a95bd7f4b"
+          "size": 2314,
+          "hash": "180083c8ca9b02092e640cc444f601a70afaf33e5b6d1df2be32c81135e063c1"
         },
         {
           "path": "tmp/eui/DiploCorner.lua",
@@ -25678,8 +25679,8 @@
         },
         {
           "path": "tmp/ui/ConfirmCommandPopup.lua",
-          "size": 2066,
-          "hash": "b304373310fae9e7f2b15bc1c9f2d2f6c30a6204396afb0ea9c2243138bb0bd0"
+          "size": 2149,
+          "hash": "385553fac20cdb3fac80b8aca438b713bf50f815423f116d8031ae7b29fe4530"
         },
         {
           "path": "tmp/ui/ContentSwitch.xml",
@@ -26193,8 +26194,8 @@
         },
         {
           "path": "tmp/ui/ProposalChartPopup.lua",
-          "size": 18345,
-          "hash": "48801db0ecfd7b38a21773d225f481a11e595553d6ffd6208dcefefbf83ff05e"
+          "size": 18408,
+          "hash": "2ea73875d919e8b0dc61c17ac30f2f7d413ee8223eb37adae9c5b6ec8dadec62"
         },
         {
           "path": "tmp/ui/ProposalChartPopup.xml",
@@ -28118,6 +28119,12 @@
   "news": {
     "entries": [
       {
+        "date": "2026-11-25T23:28:51+03:00",
+        "title": "Nova 2.0.13 — обновление",
+        "tag": "ОБНОВЛЕНИЕ",
+        "body": "Если в сетевой партии у игрока пропала связь, его цивилизация остаётся за ним. ИИ не перехватывает управление, а игрок может перезайти за свою цивилизацию. После голосования за исключение хост может подтвердить или отменить кик."
+      },
+      {
         "date": "2026-11-24T17:41:14+03:00",
         "title": "Nova 2.0.12 — обновление",
         "tag": "ОБНОВЛЕНИЕ",
@@ -28489,6 +28496,14 @@
       }
     ],
     "Usable": [
+      {
+        "date": "2026-11-25T23:28:51+03:00",
+        "title": "Nova 2.0.13 — обновление",
+        "tag": "ОБНОВЛЕНИЕ",
+        "body": "Если в сетевой партии у игрока пропала связь, его цивилизация остаётся за ним. ИИ не перехватывает управление, а игрок может перезайти за свою цивилизацию. После голосования за исключение хост может подтвердить или отменить кик.",
+        "HasUsableUrl": false,
+        "IsUsable": true
+      },
       {
         "date": "2026-11-24T17:41:14+03:00",
         "title": "Nova 2.0.12 — обновление",
