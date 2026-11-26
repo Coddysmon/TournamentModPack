@@ -1,14 +1,15 @@
 {
   "schemaVersion": 1,
   "releaseName": "NOVA 2.0",
-  "packageVersion": "2.0.13",
+  "packageVersion": "2.0.14",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-11-25T20:28:15.1750773+00:00",
+  "createdUtc": "2026-11-26T15:38:42.663187+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "relay://109.73.196.175:443/blobs/",
     "layout": "Flat",
     "mirrors": [
+      "https://github.com/Coddysmon/TournamentModPack/releases/download/patch-2.0.14/",
       "https://github.com/Coddysmon/TournamentModPack/releases/download/patch-2.0.13/",
       "https://github.com/Coddysmon/TournamentModPack/releases/download/patch-2.0.12/",
       "https://github.com/Coddysmon/TournamentModPack/releases/download/patch-2.0.11/",
@@ -18805,7 +18806,7 @@
         {
           "path": "CvGameCore_Expansion2.dll",
           "size": 4571648,
-          "hash": "c163faf05de3c543a90cbc9f1d714507a44d7423d6d272c310adbba495722ab6"
+          "hash": "289222ac9dfdf8e0cbc013d26e2a02461aa0bc1df00cc129e401185d0e519679"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -21524,8 +21525,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 13529271,
-          "hash": "4ef2bd2ef8bb897a48fca1ff379c2a2f5bdd88e05bd07ecb79fba9b59a36f142"
+          "size": 13530909,
+          "hash": "dc5a2af388efa10a26af9974b7aab1587e4638156dd113b81a8b7dc92b5ba7ff"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -21564,8 +21565,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 10113967,
-          "hash": "b91da733fc40472d8ecf927703931e2b39599051c1a77feaf657924d0b5db24a"
+          "size": 10114754,
+          "hash": "e38cc3b0ed868483fa6fbd32030ed298f8f87586e41d72acbc25f5490178b306"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -21995,7 +21996,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 8,
-          "hash": "98742bf583aa128af9787dfa5937bdb0a97372c787dcb0a04e70b34a17f56bc3"
+          "hash": "e20b666952334cc8f754d51c4b1047d47c3f8bf7d1d7559fa4df9f6d0c4dadd6"
         },
         {
           "path": "SkinShots/10TP.png",
@@ -28119,6 +28120,12 @@
   "news": {
     "entries": [
       {
+        "date": "2026-11-26T18:39:24+03:00",
+        "title": "Nova 2.0.14 — обновление",
+        "tag": "ОБНОВЛЕНИЕ",
+        "body": "Ирокезы используют хвойные леса, дубравы и березняки для передвижения и соединения городов. Длинный дом даёт +1 производство с каждой такой обрабатываемой клетки, а мохоки получают в этих лесах +33% к атаке и защите. «Голос прибоя» даёт мидиям +1 культуру и +1 веру. «Бог моря» даёт +1 производство с рыбацких лодок на мидиях. Обновлены русские и английские подсказки пантеонов и карточка мидий. На быстрой скорости стоимость ядерной ракеты снижена с 1210 до 1000 производства."
+      },
+      {
         "date": "2026-11-25T23:28:51+03:00",
         "title": "Nova 2.0.13 — обновление",
         "tag": "ОБНОВЛЕНИЕ",
@@ -28496,6 +28503,14 @@
       }
     ],
     "Usable": [
+      {
+        "date": "2026-11-26T18:39:24+03:00",
+        "title": "Nova 2.0.14 — обновление",
+        "tag": "ОБНОВЛЕНИЕ",
+        "body": "Ирокезы используют хвойные леса, дубравы и березняки для передвижения и соединения городов. Длинный дом даёт +1 производство с каждой такой обрабатываемой клетки, а мохоки получают в этих лесах +33% к атаке и защите. «Голос прибоя» даёт мидиям +1 культуру и +1 веру. «Бог моря» даёт +1 производство с рыбацких лодок на мидиях. Обновлены русские и английские подсказки пантеонов и карточка мидий. На быстрой скорости стоимость ядерной ракеты снижена с 1210 до 1000 производства.",
+        "HasUsableUrl": false,
+        "IsUsable": true
+      },
       {
         "date": "2026-11-25T23:28:51+03:00",
         "title": "Nova 2.0.13 — обновление",
