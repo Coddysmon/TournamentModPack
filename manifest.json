@@ -28120,6 +28120,12 @@
   "news": {
     "entries": [
       {
+        "date": "2026-11-26T20:38:43+03:00",
+        "title": "Лаунчер 0.3.127 — реакции на новости",
+        "tag": "ЛАУНЧЕР",
+        "body": "Нажмите смайлик с плюсом под новостью и выберите одну из 13 цветных реакций. Свой выбор можно изменить или снять повторным нажатием. Рядом со смайликом видны реакции читателей и их количество."
+      },
+      {
         "date": "2026-11-26T18:39:24+03:00",
         "title": "Nova 2.0.14 — обновление",
         "tag": "ОБНОВЛЕНИЕ",
@@ -28843,10 +28849,10 @@
     "discord": "https://discord.gg/SxzjCCcQMJ"
   },
   "client": {
-    "version": "0.3.126",
-    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.126.zip",
-    "sha256": "ac04a0a5f8c4e006894907f8bb82f034aad1962777717b6e8e268a6e79588eb7",
-    "size": 65014995,
+    "version": "0.3.127",
+    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.127.zip",
+    "sha256": "3f34ba6211f15e06325efef6a4acd38df7cc05a4ede07a109a9ea7a3b8d62632",
+    "size": 65053492,
     "IsUsable": true
   }
 }
