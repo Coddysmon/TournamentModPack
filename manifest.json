@@ -1,14 +1,15 @@
 {
   "schemaVersion": 1,
   "releaseName": "NOVA 2.0",
-  "packageVersion": "2.0.14",
+  "packageVersion": "2.0.15",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-11-26T15:38:42.663187+00:00",
+  "createdUtc": "2026-11-27T07:36:42.899783+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "relay://109.73.196.175:443/blobs/",
     "layout": "Flat",
     "mirrors": [
+      "https://github.com/Coddysmon/TournamentModPack/releases/download/patch-2.0.15/",
       "https://github.com/Coddysmon/TournamentModPack/releases/download/patch-2.0.14/",
       "https://github.com/Coddysmon/TournamentModPack/releases/download/patch-2.0.13/",
       "https://github.com/Coddysmon/TournamentModPack/releases/download/patch-2.0.12/",
@@ -18806,7 +18807,7 @@
         {
           "path": "CvGameCore_Expansion2.dll",
           "size": 4571648,
-          "hash": "289222ac9dfdf8e0cbc013d26e2a02461aa0bc1df00cc129e401185d0e519679"
+          "hash": "b1fe904dc7d6959df9cc993800688bd4e00ea98d09bea5a85e8a5ff6106e589c"
         },
         {
           "path": "Fonts/EmoteIcons_Patch.ggxml",
@@ -21565,8 +21566,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 10114754,
-          "hash": "e38cc3b0ed868483fa6fbd32030ed298f8f87586e41d72acbc25f5490178b306"
+          "size": 10114980,
+          "hash": "2722e01a25a3890f894e9dfecd274acde6bbc1c8a1acccff5e2b00c933b191fa"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -21996,7 +21997,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 8,
-          "hash": "e20b666952334cc8f754d51c4b1047d47c3f8bf7d1d7559fa4df9f6d0c4dadd6"
+          "hash": "d1f7f8fbfd37fc1ac57eb1e204078ad4b1fba7656587845989af95c2263964cb"
         },
         {
           "path": "SkinShots/10TP.png",
@@ -28120,6 +28121,12 @@
   "news": {
     "entries": [
       {
+        "date": "2026-11-27T10:36:42+03:00",
+        "title": "Nova 2.0.15 — обновление",
+        "tag": "ОБНОВЛЕНИЕ",
+        "body": "«Укрепрайон» (Outworks) теперь даёт бонусы от оборонительных зданий только в первых пяти полученных городах и на клетках в радиусе одного тайла от них. Потеря одного из этих городов не передаёт бонус шестому. Уточнили описание политики."
+      },
+      {
         "date": "2026-11-26T20:38:43+03:00",
         "title": "Лаунчер 0.3.127 — реакции на новости",
         "tag": "ЛАУНЧЕР",
@@ -28509,6 +28516,14 @@
       }
     ],
     "Usable": [
+      {
+        "date": "2026-11-27T10:36:42+03:00",
+        "title": "Nova 2.0.15 — обновление",
+        "tag": "ОБНОВЛЕНИЕ",
+        "body": "«Укрепрайон» (Outworks) теперь даёт бонусы от оборонительных зданий только в первых пяти полученных городах и на клетках в радиусе одного тайла от них. Потеря одного из этих городов не передаёт бонус шестому. Уточнили описание политики.",
+        "HasUsableUrl": false,
+        "IsUsable": true
+      },
       {
         "date": "2026-11-26T18:39:24+03:00",
         "title": "Nova 2.0.14 — обновление",
