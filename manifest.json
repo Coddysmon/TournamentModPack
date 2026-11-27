@@ -28124,49 +28124,65 @@
         "date": "2026-11-27T10:36:42+03:00",
         "title": "Nova 2.0.15 — обновление",
         "tag": "ОБНОВЛЕНИЕ",
-        "body": "«Укрепрайон» (Outworks) теперь даёт бонусы от оборонительных зданий только в первых пяти полученных городах и на клетках в радиусе одного тайла от них. Потеря одного из этих городов не передаёт бонус шестому. Уточнили описание политики."
+        "body": "«Укрепрайон» (Outworks) теперь даёт бонусы от оборонительных зданий только в первых пяти полученных городах и на клетках в радиусе одного тайла от них. Потеря одного из этих городов не передаёт бонус шестому. Уточнили описание политики.",
+        "titleEn": "Nova 2.0.15 — Outworks",
+        "bodyEn": "Outworks now grants defensive building bonuses only in the first five cities you acquire, including tiles within one tile of each city. Losing one of those cities does not pass its bonus to your sixth city. The policy description now explains this limit."
       },
       {
         "date": "2026-11-26T20:38:43+03:00",
         "title": "Лаунчер 0.3.127 — реакции на новости",
         "tag": "ЛАУНЧЕР",
-        "body": "Нажмите смайлик с плюсом под новостью и выберите одну из 13 цветных реакций. Свой выбор можно изменить или снять повторным нажатием. Рядом со смайликом видны реакции читателей и их количество."
+        "body": "Нажмите смайлик с плюсом под новостью и выберите одну из 13 цветных реакций. Свой выбор можно изменить или снять повторным нажатием. Рядом со смайликом видны реакции читателей и их количество.",
+        "titleEn": "Launcher 0.3.127 — news reactions",
+        "bodyEn": "Click the smiley with a plus sign below a post to choose from 13 color reactions. Pick another to change your vote, or click the same reaction again to remove it. The reactions next to the smiley show how many readers picked each one."
       },
       {
         "date": "2026-11-26T18:39:24+03:00",
         "title": "Nova 2.0.14 — обновление",
         "tag": "ОБНОВЛЕНИЕ",
-        "body": "Ирокезы используют хвойные леса, дубравы и березняки для передвижения и соединения городов. Длинный дом даёт +1 производство с каждой такой обрабатываемой клетки, а мохоки получают в этих лесах +33% к атаке и защите. «Голос прибоя» даёт мидиям +1 культуру и +1 веру. «Бог моря» даёт +1 производство с рыбацких лодок на мидиях. Обновлены русские и английские подсказки пантеонов и карточка мидий. На быстрой скорости стоимость ядерной ракеты снижена с 1210 до 1000 производства."
+        "body": "Ирокезы используют хвойные леса, дубравы и березняки для передвижения и соединения городов. Длинный дом даёт +1 производство с каждой такой обрабатываемой клетки, а мохоки получают в этих лесах +33% к атаке и защите. «Голос прибоя» даёт мидиям +1 культуру и +1 веру. «Бог моря» даёт +1 производство с рыбацких лодок на мидиях. Обновлены русские и английские подсказки пантеонов и карточка мидий. На быстрой скорости стоимость ядерной ракеты снижена с 1210 до 1000 производства.",
+        "titleEn": "Nova 2.0.14 — patch notes",
+        "bodyEn": "The Iroquois can use conifer forests, oak groves and birch woods for movement and city connections. Longhouses grant +1 Production per worked tile of these types, and Mohawk Warriors gain +33% attack and defense in them. Voice of the Surf grants Mussels +1 Culture and +1 Faith. God of the Sea grants +1 Production from Fishing Boats on Mussels. Updated both language versions of the pantheon tooltips and Mussels entry. On Quick speed, Nuclear Missiles now cost 1,000 Production, down from 1,210."
       },
       {
         "date": "2026-11-25T23:28:51+03:00",
         "title": "Nova 2.0.13 — обновление",
         "tag": "ОБНОВЛЕНИЕ",
-        "body": "Если в сетевой партии у игрока пропала связь, его цивилизация остаётся за ним. ИИ не перехватывает управление, а игрок может перезайти за свою цивилизацию. После голосования за исключение хост может подтвердить или отменить кик."
+        "body": "Если в сетевой партии у игрока пропала связь, его цивилизация остаётся за ним. ИИ не перехватывает управление, а игрок может перезайти за свою цивилизацию. После голосования за исключение хост может подтвердить или отменить кик.",
+        "titleEn": "Nova 2.0.13 — multiplayer reconnects",
+        "bodyEn": "When a player disconnects, their civilization stays reserved for them. The AI does not take over, and the player can rejoin as the same civilization. After a vote to kick a player, the host can confirm or cancel the kick."
       },
       {
         "date": "2026-11-24T17:41:14+03:00",
         "title": "Nova 2.0.12 — обновление",
         "tag": "ОБНОВЛЕНИЕ",
-        "body": "В сетевой партии с включённым таймером первый ход длится 2 минуты, затем действует скорость из настроек лобби. Доходы клеток автоматически отображаются при старте и после ресинхронизации. Исправлены фон мультиплеера, центрирование меню и подсветка кнопок. Джизья даёт +3 веры от Великого храма и +1 очко великого торговца от Великого эмпория. При постройке суда в городе без религии появляется пантеон. Линейному кораблю Англии больше не нужно железо. Дорожные пантеоны действуют и в столице. Бог вина даёт веру вместо золота, а Scents of the East даёт производство и культуру с сахара, пряностей и благовоний."
+        "body": "В сетевой партии с включённым таймером первый ход длится 2 минуты, затем действует скорость из настроек лобби. Доходы клеток автоматически отображаются при старте и после ресинхронизации. Исправлены фон мультиплеера, центрирование меню и подсветка кнопок. Джизья даёт +3 веры от Великого храма и +1 очко великого торговца от Великого эмпория. При постройке суда в городе без религии появляется пантеон. Линейному кораблю Англии больше не нужно железо. Дорожные пантеоны действуют и в столице. Бог вина даёт веру вместо золота, а Scents of the East даёт производство и культуру с сахара, пряностей и благовоний.",
+        "titleEn": "Nova 2.0.12 — patch notes",
+        "bodyEn": "With the multiplayer turn timer enabled, the opening turn lasts two minutes. Subsequent turns use the lobby setting. Tile yields appear at game start and after a resync. Fixed the multiplayer background, menu alignment and button highlighting. Jizya grants +3 Faith from the Grand Temple and +1 Great Merchant point from the Grand Emporium. Building a Courthouse establishes a pantheon in a city with no religion. England's Ship of the Line no longer requires Iron. Road pantheons also apply to the capital. God of Wine grants Faith instead of Gold. Scents of the East grants Production and Culture from Sugar, Spices and Incense."
       },
       {
         "date": "2026-11-23T01:09:22+03:00",
         "title": "Nova 2.0.11 — обновление",
         "tag": "ОБНОВЛЕНИЕ",
-        "body": "При знакомстве с городом-государством над юнитом, который его обнаружил, всплывает полученная сумма золота. Например, обычная награда — 30 золота за первое знакомство среди цивилизаций и 15 за последующее. У Конго, когда срабатывает бонус гонца маниконго, за монетами появляется зелёное «+5» с иконкой еды. Еду получает ближайший к этому городу-государству город Конго."
+        "body": "При знакомстве с городом-государством над юнитом, который его обнаружил, всплывает полученная сумма золота. Например, обычная награда — 30 золота за первое знакомство среди цивилизаций и 15 за последующее. У Конго, когда срабатывает бонус гонца маниконго, за монетами появляется зелёное «+5» с иконкой еды. Еду получает ближайший к этому городу-государству город Конго.",
+        "titleEn": "Nova 2.0.11 — city-state meeting rewards",
+        "bodyEn": "When you meet a city-state, the Gold you receive floats up beside the unit that found it. A typical reward is 30 Gold if you are the first civilization to meet it and 15 Gold otherwise. When Kongo's messenger earns Food, a green +5 and a Food icon appear beside the Gold. The Food goes to the nearest Kongo city."
       },
       {
         "date": "2026-11-21T14:44:44.953428+00:00",
         "title": "Nova 2.0.10 — изменения идеологии «Свобода»",
         "body": "• Всеобщее избирательное право: теперь даёт +1 счастье за каждых 4 назначенных специалистов суммарно во всех городах. Прежнее снижение недовольства специалистов убрано.\n• При принятии Всеобщего избирательного права начинается золотой век. Бонус +50% к длительности золотых веков сохранён.\n• Урбанизация больше не даёт бонусов обсерватории.\n• Всеобщее здравоохранение в идеологии «Свобода» больше не даёт бонусов водяной мельнице. Бонусы больницы, медицинской лаборатории и акведука сохранены.\n• Обновлены русские и английские описания политик.\n\nВсем участникам сетевой партии необходимо обновить мод до одной версии перед игрой. Золотой век выдаётся при принятии политики, а не задним числом за уже принятую политику в сохранении.",
-        "tag": "БАЛАНС"
+        "tag": "БАЛАНС",
+        "titleEn": "Nova 2.0.10 — Freedom ideology changes",
+        "bodyEn": "• Universal Suffrage grants +1 Happiness per four assigned specialists across your empire. The previous specialist unhappiness reduction has been removed.\n• Adopting Universal Suffrage starts a Golden Age. The +50% Golden Age duration bonus remains. Existing saves do not receive a retroactive Golden Age.\n• Urbanization no longer grants Observatory bonuses.\n• Universal Healthcare in Freedom no longer grants Water Mill bonuses. Hospital, Medical Lab and Aqueduct bonuses remain.\n• Updated the Russian and English policy descriptions. All multiplayer participants must use the same mod version."
       },
       {
         "date": "2026-11-21T16:04:37+03:00",
         "title": "Nova 2.0.9 — обновление",
         "tag": "ОБНОВЛЕНИЕ",
-        "body": "Хост может менять таймер прямо во время сетевой партии. Нажмите Shift + левую кнопку мыши на кнопке таймера у мини-карты. Над списком игроков появится поле. Введите число и нажмите Enter. Новое значение действует для всех со следующего хода и сохраняется до следующего изменения. В относительном режиме, например, 70 означает 70% прибавки времени за города и юниты. В обычном режиме вводите секунды, в Pitboss — часы. В лобби это же поле открывается нажатием на строку «Таймер хода». Чтобы свернуть поле без изменений, нажмите на подпись рядом с числом.\n\n• Вавилон с уникальными стенами стреляет по варварам на две клетки. Для фрегата больше не требуется железо. Боевые корабли могут тренироваться на своей территории на быстрой скорости.\n• Смотровая башня видит на три клетки, а после открытия пороха — на четыре, в том числе за холмами и горами.\n• Исправлен двойной бонус науки от обсерватории на лесопилке в тундре. Новый захват с выбором марионетки больше не увеличивает стоимость технологий и институтов.\n• После переподключения обновляются значки доходов на карте. Экраны ожидания и банов в драфте получили римское оформление."
+        "body": "Хост может менять таймер прямо во время сетевой партии. Нажмите Shift + левую кнопку мыши на кнопке таймера у мини-карты. Над списком игроков появится поле. Введите число и нажмите Enter. Новое значение действует для всех со следующего хода и сохраняется до следующего изменения. В относительном режиме, например, 70 означает 70% прибавки времени за города и юниты. В обычном режиме вводите секунды, в Pitboss — часы. В лобби это же поле открывается нажатием на строку «Таймер хода». Чтобы свернуть поле без изменений, нажмите на подпись рядом с числом.\n\n• Вавилон с уникальными стенами стреляет по варварам на две клетки. Для фрегата больше не требуется железо. Боевые корабли могут тренироваться на своей территории на быстрой скорости.\n• Смотровая башня видит на три клетки, а после открытия пороха — на четыре, в том числе за холмами и горами.\n• Исправлен двойной бонус науки от обсерватории на лесопилке в тундре. Новый захват с выбором марионетки больше не увеличивает стоимость технологий и институтов.\n• После переподключения обновляются значки доходов на карте. Экраны ожидания и банов в драфте получили римское оформление.",
+        "titleEn": "Nova 2.0.9 — multiplayer timer and balance",
+        "bodyEn": "Hosts can change the timer during a match. Shift + left-click the timer by the minimap. Enter a number above the player list and press Enter. It applies to everyone from the next turn until changed again. In relative mode, 70 means 70% of the extra time for cities and units. In normal mode enter seconds, or hours in Pitboss. In the lobby, click the Turn Timer row to open the same field. Click the label beside the number to close it without changes.\n• Babylonian Walls give cities a two-tile range against barbarians. Frigates no longer require Iron. On Quick speed, naval combat units can train in friendly territory.\n• Watchtowers see three tiles, or four after Gunpowder, even across hills and mountains.\n• Fixed the double Observatory Science bonus on tundra Lumber Mills. Choosing to puppet a newly captured city no longer increases technology or policy costs.\n• Map yield icons refresh after reconnecting. The draft waiting and ban screens now use the lobby's Roman style."
       },
       {
         "date": "2026-11-20T18:35:01+03:00",
@@ -28180,25 +28196,33 @@
         "date": "2026-11-20T17:28:25+03:00",
         "title": "Nova 2.0.8 — обновление",
         "tag": "ОБНОВЛЕНИЕ",
-        "body": "Римское оформление главного меню, Цивилопедии и экранов загрузки. Полноэкранное сетевое лобби и настройка партии. Экраны выбора цивилизации и одиночной игры отцентрированы."
+        "body": "Римское оформление главного меню, Цивилопедии и экранов загрузки. Полноэкранное сетевое лобби и настройка партии. Экраны выбора цивилизации и одиночной игры отцентрированы.",
+        "titleEn": "Nova 2.0.8 — Roman menus",
+        "bodyEn": "The main menu, Civilopedia and loading screens now use the Roman theme. The multiplayer lobby and setup screen fill the window. The civilization selection and single-player setup screens are centered."
       },
       {
         "date": "2026-11-20T16:07:27+03:00",
         "title": "Nova 2.0.7 — обновление",
         "tag": "ОБНОВЛЕНИЕ",
-        "body": "На экранах загрузки Конго и Флоренции появились подписи в честь первого сезона Nova. В правом нижнем углу экрана Конго указано сообщество, а на экране Флоренции — Coddys."
+        "body": "На экранах загрузки Конго и Флоренции появились подписи в честь первого сезона Nova. В правом нижнем углу экрана Конго указано сообщество, а на экране Флоренции — Coddys.",
+        "titleEn": "Nova 2.0.7 — Season I credits",
+        "bodyEn": "Kongo and Florence now have Season I credits in the lower-right corner of their loading screens. Kongo credits the Nova community, and Florence credits Coddys."
       },
       {
         "date": "2026-11-20T10:27:23.555558+00:00",
         "title": "Nova 2.0.6 — исправления Флоренции, Конго и межевого поста",
         "body": "• Флоренция: идеологические институты теперь можно покупать за золото при выполнении их условий. Исправлены ограничения DLL и кнопки выбора в обычном интерфейсе и EUI.\n• Россия: берёзовые, дубовые и хвойные леса теперь дают положенный национальный бонус +1 еды, как обычный лес.\n• Конго: уменьшен портрет в драфте и списках цивилизаций.\n• Эра-бонус Конго «Города Конго» теперь доступен как полноценный выбор эпохи Возрождения. После выбора города получают +1 культуры за каждых 5 жителей; бонус занимает один выбор своей эпохи.\n• Межевой пост больше не покупает клетку, не тратит золото и не присоединяет землю сразу. При следующем расширении границ за культуру город приоритетно получает соседнюю доступную клетку со своим неповреждённым постом. Описания обновлены.\n• Гонец Конго сохраняет способность получать еду за первую встречу с городом-государством и дополнительное очко передвижения после улучшения из руин. Исправлена выдача сохраняемого повышения.\n\nТренировка авиации из 2.0.5 сохранена. Всем участникам сетевой партии нужно обновить мод до 2.0.6 перед игрой.",
-        "tag": "ИСПРАВЛЕНИЕ"
+        "tag": "ИСПРАВЛЕНИЕ",
+        "titleEn": "Nova 2.0.6 — Florence, Kongo and the Border Post",
+        "bodyEn": "• Florence can buy ideology tenets with Gold once their requirements are met. Fixed the DLL restrictions and selection buttons in the standard UI and EUI.\n• Russia gets its usual +1 Food forest bonus in birch woods, oak groves and conifer forests.\n• Kongo's portrait is smaller in the draft and civilization lists. Cities of Kongo is now a selectable Renaissance era bonus. It grants +1 Culture per five citizens in each city and uses one era bonus choice.\n• A Border Post no longer buys or claims a tile on completion. At the city's next cultural border expansion, it prioritizes an eligible adjacent tile with its own intact post.\n• After upgrading from ruins, Kongo's messenger keeps its extra movement point and its ability to earn Food for first contact with a city-state.\nAircraft training from 2.0.5 remains. All multiplayer participants need 2.0.6 before playing together."
       },
       {
         "date": "2026-11-18T23:16:24.822633+03:00",
         "title": "Nova 2.0.5 — тренировка авиации",
         "body": "Исправлена отсутствующая кнопка тренировки у боевых воздушных юнитов. Тренировка даёт +2 опыта за ход и отнимает 10 здоровья, как у наземных юнитов. Атака или перехват прерывают тренировку. Прежние условия сохранены: быстрая скорость, собственная территория, до движения и боя, больше 10 здоровья и без ожидающего повышения.\n\nВыпуск основан на 2.0.3; остальные изменения отменённой 2.0.4 не включены. Всем участникам сетевой партии нужно обновиться.",
-        "tag": "ОБНОВЛЕНИЕ"
+        "tag": "ОБНОВЛЕНИЕ",
+        "titleEn": "Nova 2.0.5 — aircraft training",
+        "bodyEn": "Restored the training button for air combat units. Like land units, aircraft earn 2 XP and spend 10 HP per turn of training. Attacking or intercepting interrupts training. On Quick speed, train in friendly territory before moving or fighting, with more than 10 HP and no promotion pending.\nThis release builds on 2.0.3. Other changes from the withdrawn 2.0.4 release are excluded. All multiplayer participants must update."
       },
       {
         "date": "2026-11-17T00:00:00+00:00",
@@ -28206,73 +28230,97 @@
         "body": "Лаунчер 0.3.124: игра учитывает свежий выбор сервера вместо старого сохранённого узла; для Грея выбран европейский узел.\n\nФлоренция: кнопка улучшения клетки перенесена к кнопке возврата на карте города в EUI. Банк больше не даёт очки великого генерала и флотоводца; описание исправлено.\n\nИсправлены пустые разделы религии и Всемирного конгресса в Цивилопедии. Способность гонца Конго приносить еду за первую встречу с городом-государством сохраняется после улучшения в лучника из руин.\n\nДля сетевой игры обновите мод и лаунчер у всех участников перед следующей партией. Снижение пинга зависит от маршрута и соединения; отсутствие всех вылетов не подтверждено игровой проверкой.",
         "tag": "ИСПРАВЛЕНИЕ",
         "HasUsableUrl": false,
-        "IsUsable": true
+        "IsUsable": true,
+        "titleEn": "Nova 2.0.1 — fixes and connectivity",
+        "bodyEn": "Launcher 0.3.124 uses your latest server choice when starting the game. Grey's selected relay is in Europe.\nFlorence's tile improvement button is now beside the back button on the EUI city map. The bank no longer grants Great General or Great Admiral points, and its description has been corrected.\nFixed empty Religion and World Congress sections in the Civilopedia. Kongo's messenger keeps its first-contact Food ability after a ruins upgrade to an Archer.\nUpdate both the mod and the launcher for every player before your next match. Ping improvements depend on your route and connection. Testing has not ruled out all disconnects."
       },
       {
         "date": "2026-11-17T18:00:00+03:00",
         "title": "Nova 2.0 — новая сборка",
         "body": "Конго и Флоренция, полевая гаубица, метро, новые улучшения и ресурсы. Подробные изменения собраны в следующих записях. Для нового размещения лесов, кактусов и глины начните новую партию на Nova Tournament Pangaea. Число ходов и цены указаны для быстрой скорости, если не оговорено иное.",
-        "tag": "ОБНОВЛЕНИЕ"
+        "tag": "ОБНОВЛЕНИЕ",
+        "titleEn": "Nova 2.0 — new release",
+        "bodyEn": "This release adds Kongo and Florence, the Field Howitzer, the Metro, new tile improvements and new resources. The following posts cover the changes in detail. Start a new Nova Tournament Pangaea game to see the new forest, cactus and Clay placement. Turn counts and prices are for Quick speed unless otherwise stated."
       },
       {
         "date": "2026-11-17T17:59:59+03:00",
         "title": "Nova 2.0 — Конго",
         "body": "• Каждый город Конго приносит +1 золото за ход за каждых 3 жителей. При первом достижении 3, 6, 9 и следующих кратных 3 значений населения город получает одну доступную клетку.\n• Эра-бонус «Города Конго» (Возрождение) даёт каждому городу +1 культуры за каждых 5 жителей.\n• Гонец маниконго заменяет разведчика. У него 5 боевой силы и 3 очка передвижения. Если именно он впервые встречает город-государство, ближайший к нему город Конго получает 5 еды.\n• Мельница Мбанза-Конго заменяет водяную мельницу. В городе у реки она даёт +3 еды, +2 производства и +1 культуры, содержание стоит 2 золота в ход.\n• У Афонсу I обновлён портрет на зелёном фоне.",
-        "tag": "ОБНОВЛЕНИЕ"
+        "tag": "ОБНОВЛЕНИЕ",
+        "titleEn": "Nova 2.0 — Kongo",
+        "bodyEn": "• Each city earns +1 Gold per turn per three citizens. The first time it reaches 3, 6, 9 or another multiple of three citizens, it claims one available tile.\n• The Renaissance era bonus Cities of Kongo grants each city +1 Culture per five citizens.\n• The Manikongo Messenger replaces the Scout, with 5 Combat Strength and 3 Movement. If it makes first contact with a city-state, the nearest Kongo city receives 5 Food.\n• The Mbanza Kongo Mill replaces the Water Mill. In a riverside city it grants +3 Food, +2 Production and +1 Culture. Upkeep is 2 Gold per turn.\n• Afonso I has an updated portrait with a green background."
       },
       {
         "date": "2026-11-17T17:59:58+03:00",
         "title": "Nova 2.0 — Флоренция",
         "body": "• С Средневековья Флоренция может покупать доступные общественные институты за 1500 золота. Цена повышается на 250 золота за каждую следующую эпоху. Доступные улучшения собственных клеток можно строить мгновенно через экран города за 40 золота.\n• Кондотьер заменяет рыцаря. У него 22 боевой силы и 4 очка передвижения. Флоренция получает золото в размере четверти урона, который кондотьер наносит юнитам в ближнем бою, включая ответные атаки.\n• Банк Медичи заменяет банк. Он даёт +5 золота и +15% золота в городе, не требует содержания и добавляет по одному очку за ход к появлению гражданских великих людей.\n• Эра-бонус «Меценатство Медичи» становится доступен в Средневековье и при выборе сразу даёт 500 золота.\n• Город-государство Флоренция переименован в Лукку. У Флоренции свой экран загрузки, флаг и карта 1494 года на экране выбора цивилизации.",
-        "tag": "ОБНОВЛЕНИЕ"
+        "tag": "ОБНОВЛЕНИЕ",
+        "titleEn": "Nova 2.0 — Florence",
+        "bodyEn": "• From the Medieval era, Florence can buy available social policies for 1,500 Gold. The price rises by 250 Gold per subsequent era. Use the city screen to instantly build an available improvement on your own tile for 40 Gold.\n• The Condottiere replaces the Knight, with 22 Combat Strength and 4 Movement. Florence earns Gold equal to a quarter of the melee damage it deals to units, including counterattacks.\n• The Medici Bank replaces the Bank. It grants +5 Gold, +15% city Gold and one point per turn toward each civilian Great Person, with no maintenance.\n• The Medici Patronage era bonus is available in the Medieval era and immediately grants 500 Gold when selected.\n• The Florence city-state is now Lucca. Florence has its own loading screen, flag and a 1494 map on the civilization selection screen."
       },
       {
         "date": "2026-11-17T17:59:57+03:00",
         "title": "Nova 2.0 — армия и города (1/2)",
         "body": "• На быстрой скорости наземные боевые юниты могут тренироваться на своей территории. Полный ход тренировки даёт 2 опыта и расходует 10 ОЗ. В этот ход юнит не лечится даже в городе. Тренировка требует свободного хода, прерывается боем и приостанавливается при доступном повышении.\n• Лучники потеряли 1 единицу боевой силы при защите. Метколучники, катапульты, требушеты и пушки потеряли по 2, артиллерия и пулемёты Гатлинга по 3, пулемётные роты, реактивная артиллерия и расчёты с базуками по 5. Защита арбалетчиков снижена с 12 до 10. Сила дальнего боя у этих юнитов сохраняется.\n• Мушкетёры получили 3 очка передвижения. Янычар восстанавливает до 50 ОЗ за убийство юнита, кроме варвара. Дальность полёта B-17 выросла с 10 до 11.\n• Баллистика открывает полевую гаубицу между артиллерией и реактивной артиллерией. У неё 28 боевой силы, 43 силы дальнего боя, 2 очка передвижения и дальность стрельбы 3. Базовая стоимость — 385 производства. Для гаубицы есть отдельный портрет и модели артиллерии разных цивилизаций. Эмблема на карте оформлена в стиле обычной артиллерии.",
-        "tag": "ОБНОВЛЕНИЕ"
+        "tag": "ОБНОВЛЕНИЕ",
+        "titleEn": "Nova 2.0 — army and cities (1/2)",
+        "bodyEn": "• On Quick speed, land combat units can train in friendly territory. A full turn grants 2 XP and costs 10 HP. The unit cannot heal that turn, even in a city. Training requires an unused turn, ends on combat and pauses for an available promotion.\n• Defensive strength falls by 1 for Archers, by 2 for Composite Bowmen, Catapults, Trebuchets and Cannons, by 3 for Artillery and Gatling Guns, and by 5 for Machine Guns, Rocket Artillery and Bazookas. Crossbowmen drop from 12 to 10. Ranged strength is unchanged.\n• Musketmen have 3 Movement. Janissaries heal up to 50 HP after killing a non-barbarian unit. B-17 range increases from 10 to 11.\n• Ballistics unlocks the Field Howitzer between Artillery and Rocket Artillery. It has 28 Combat Strength, 43 Ranged Strength, 2 Movement, range 3 and a base cost of 385 Production. It has a new portrait, civilization-specific artillery models and a map emblem in the regular artillery style."
       },
       {
         "date": "2026-11-17T17:59:56+03:00",
         "title": "Nova 2.0 — армия и города (2/2)",
         "body": "• Производство юнитов начиная с эпохи Возрождения подорожало на 10%. Это касается и обоих противотанковых юнитов. Обычная цена улучшения учитывает разницу в стоимости производства.\n• Улучшение самолётов первой ступени до истребителя или бомбардировщика стоит 120 золота. Истребитель до реактивного улучшается за 150 золота, бомбардировщик до малозаметного — за 220. Те же правила действуют для «Зеро» и B-17. Скидки применяются к этим ценам. Галера улучшается за 65 золота на быстрой скорости и за 100 на стандартной до скидок.\n• Город стреляет на 1 клетку по обычным противникам и на 2 клетки по варварам. Стены, включая вавилонские, увеличивают обе дальности на 1 клетку.\n• Превышение лимита снабжения армии больше не снижает производство городов. «Медик» и «Медик II» дают по +10 к лечению на клетке юнита, в том числе в городе.",
-        "tag": "ОБНОВЛЕНИЕ"
+        "tag": "ОБНОВЛЕНИЕ",
+        "titleEn": "Nova 2.0 — army and cities (2/2)",
+        "bodyEn": "• Units from the Renaissance onward cost 10% more Production, including both anti-tank units. Standard upgrade prices account for the difference in Production cost.\n• Upgrading an early aircraft to a Fighter or Bomber costs 120 Gold. A Fighter upgrades to a Jet Fighter for 150 Gold, and a Bomber to a Stealth Bomber for 220. These prices also apply to the Zero and B-17. Upgrade discounts still apply. A Galley upgrade costs 65 Gold on Quick speed or 100 on Standard before discounts.\n• Cities can fire one tile against regular enemies and two against barbarians. Walls, including the Walls of Babylon, add one tile to both ranges.\n• Exceeding supply no longer reduces city Production. Medic and Medic II each grant +10 healing on the unit's tile, including in cities."
       },
       {
         "date": "2026-11-17T17:59:55+03:00",
         "title": "Nova 2.0 — институты, идеологии и религия (1/2)",
         "body": "• После открытия ветки «Путь» можно выбрать «Постоялые дворы» или «Царскую дорогу» в любом порядке. Когда приняты оба института, открываются «Охранная грамота», «Странствующие учёные» и «Торговая хартия». «Странствующие учёные» больше не выдают бесплатный караван.\n• +1 золото за монумент перенесено с завершения «Воли» в «Гражданство».\n• В «Свободе» «Всеобщее избирательное право» стало принципом первого уровня. «Капитализм» перешёл на второй уровень и даёт по +2 местного счастья от рынка, банка и фондовой биржи. «Урбанизация» распространяет бонус +2 науки и +2 производства также на обсерватории.\n• В «Порядке» «Рабочие факультеты» стали принципом первого уровня. «Культурная революция» даёт по +1 культуры от монумента, амфитеатра, оперного театра, музея и телецентра вместо +2. Бонус +5 туризма сохраняется. В подсказке «Юных пионеров» уточнены электростанции, которые дают счастье.",
-        "tag": "ОБНОВЛЕНИЕ"
+        "tag": "ОБНОВЛЕНИЕ",
+        "titleEn": "Nova 2.0 — policies, ideologies and religion (1/2)",
+        "bodyEn": "• After opening the Path branch, take Inns and Royal Road in either order. Together they unlock Safe Conduct, Traveling Scholars and Trade Charter. Traveling Scholars no longer grants a free Caravan.\n• The +1 Gold per Monument bonus moves from the Liberty finisher to Citizenship.\n• In Freedom, Universal Suffrage moves to tier 1. Capitalism moves to tier 2 and grants +2 local Happiness each from Markets, Banks and Stock Exchanges. Urbanization extends its +2 Science and +2 Production bonus to Observatories.\n• In Order, Workers' Faculties moves to tier 1. Cultural Revolution grants +1 Culture each from Monuments, Amphitheaters, Opera Houses, Museums and Broadcast Towers, down from +2. Its +5 Tourism bonus remains. The Young Pioneers tooltip now identifies the power plants that grant Happiness."
       },
       {
         "date": "2026-11-17T17:59:54+03:00",
         "title": "Nova 2.0 — институты, идеологии и религия (2/2)",
         "body": "• В «Автократии» «Промышленный шпионаж» ускоряет кражу технологий на 50% вместо 100%, дополнительный шпион сохраняется. «Третий путь» даёт по +5 еды, производства, золота, науки, культуры и веры за каждую удерживаемую изначальную столицу. Стратегические ресурсы по-прежнему удваиваются.\n• «Объединённый фронт» позволяет получать военные подарки и от союзных городов-государств с невоенной специализацией. На быстрой скорости базовый срок до первого подарка от союзника составляет 4–6 ходов, между следующими подарками — 9–13. У дружественного военного города-государства это 6–8 и 13–17 ходов соответственно. Способности цивилизаций и резолюции Конгресса могут менять сроки.\n• «Благотворительность» даёт два дополнительных делегата. Завершение «Оплота» выдаёт великого интенданта. Он полностью восстанавливает здоровье города и расходуется. В подсказке «Оплота» указан замок Эльц.\n• «Религиозное основание» дополнительно даёт +1 счастья за каждый город, исповедующий эту религию. Бонус «Основания» составляет +1 культуры за каждых 5 последователей.",
-        "tag": "ОБНОВЛЕНИЕ"
+        "tag": "ОБНОВЛЕНИЕ",
+        "titleEn": "Nova 2.0 — policies, ideologies and religion (2/2)",
+        "bodyEn": "• In Autocracy, Industrial Espionage speeds up technology theft by 50%, down from 100%. You still receive an extra Spy. Third Alternative grants +5 Food, Production, Gold, Science, Culture and Faith per original capital you hold. Strategic resources are still doubled.\n• United Front allows non-militaristic allied city-states to gift military units. On Quick speed, an ally's first gift takes 4–6 turns and subsequent gifts take 9–13. For a friendly militaristic city-state, the intervals are 6–8 and 13–17 turns respectively. Civilization abilities and World Congress resolutions can change these intervals.\n• Charity grants two extra delegates. Completing Bulwark grants a Great Quartermaster who is consumed to fully heal a city. The Bulwark tooltip now mentions Eltz Castle.\n• Religious Foundation also grants +1 Happiness per city following the religion. Foundation grants +1 Culture per five followers."
       },
       {
         "date": "2026-11-17T17:59:53+03:00",
         "title": "Nova 2.0 — улучшения и транспорт (1/2)",
         "body": "• «Строительство» открывает пограничный пост. На быстрой скорости он строится 4 хода. Если клетку можно купить, при завершении можно присоединить её за обычную цену. Пока клетка остаётся нейтральной, пост даёт ей приоритет при культурном расширении границ.\n• «Инженерное дело» открывает смотровую башню. На быстрой скорости она строится 6 ходов. После изучения «Пороха» дальность обзора вырастает с 3 до 4 клеток и у уже построенных башен. Рельеф и преграды влияют на видимость.\n• «Экология» открывает метро поверх действующих железных дорог. Непрерывное метро до собственной столицы даёт соединённому городу +4 еды и +10% науки в дополнение к железнодорожному бонусу +25% производства. Содержание стоит 2 золота за клетку. Гражданские юниты едут по метро быстрее, для военных оно работает как железная дорога. После «Телекоммуникаций» метро даёт один дополнительный торговый маршрут, если со столицей соединены как минимум три других города.",
-        "tag": "ОБНОВЛЕНИЕ"
+        "tag": "ОБНОВЛЕНИЕ",
+        "titleEn": "Nova 2.0 — improvements and transport (1/2)",
+        "bodyEn": "• Construction unlocks the Border Post, which takes four turns to build on Quick speed. If the tile can be bought, you can claim it at the normal price on completion. While neutral, a tile with a post takes priority during cultural border expansion.\n• Engineering unlocks the Watchtower, which takes six turns to build on Quick. Gunpowder increases sight from three to four tiles for existing towers as well. Terrain and obstacles affect visibility.\n• Ecology unlocks Metro tracks over existing Railroads. A continuous Metro line to your own capital gives a connected city +4 Food and +10% Science on top of the Railroad's +25% Production. Upkeep is 2 Gold per tile. Civilian units travel faster by Metro, while military units move as on a Railroad. After Telecommunications, connecting the capital to at least three other cities grants one extra trade route."
       },
       {
         "date": "2026-11-17T17:59:52+03:00",
         "title": "Nova 2.0 — улучшения и транспорт (2/2)",
         "body": "• В дереве технологий обновлена иконка метро. Наведение показывает его бонусы, правый клик открывает статью о метро в Цивилопедии. Значок связи метро под названием города показывается в размере полной текстуры.\n• В стандартном интерфейсе и EUI уточнён расчёт оставшихся ходов строительства. У фортов появились отдельные модели разрушенного состояния. Подсказки ресурсов показывают базовый доход, счастье и прибавку от улучшения.",
-        "tag": "ОБНОВЛЕНИЕ"
+        "tag": "ОБНОВЛЕНИЕ",
+        "titleEn": "Nova 2.0 — improvements and transport (2/2)",
+        "bodyEn": "• The technology tree has a new Metro icon. Hover over it to see the bonuses or right-click to open the Civilopedia entry. The Metro connection icon under a city's name now displays at its full texture size.\n• The standard UI and EUI now give more accurate estimates of remaining build turns. Forts have distinct ruined models. Resource tooltips show base yields, Happiness and improvement bonuses."
       },
       {
         "date": "2026-11-17T17:59:51+03:00",
         "title": "Nova 2.0 — карты и ресурсы (1/2)",
         "body": "• На Nova Tournament Pangaea стало меньше рассеянных лесов. Примерно треть подходящих клеток обычного леса вне стартового размещения занимают хвойные леса, дубравы и березняки. Каждый из трёх видов даёт +1 еды и +1 производства. Их можно вырубать и улучшать лесопилкой. Обновлены текстуры целых и разрушенных лесопилок. Восстановлен рельеф кратера Барринджера.\n• Бамбук появляется на лугах. Действующая плантация даёт +10% к избытку еды для роста.\n• Лён появляется на равнинах. Действующая плантация даёт +10% культуры и +1 золото на клетке. Рынок добавляет ещё +1 золото на клетке.\n• Мидии появляются у побережья. Клетка даёт +1 производства, рыбацкие лодки добавляют +1 производства. Маяк добавляет +1 еды и +1 производства. У мидий есть анимация и модель плота.\n• Глина встречается у рек на открытых лугах, открытых равнинах и болотах на лугах. Каменоломня даёт +1 производства и сохраняет болото. Каменная мастерская добавляет +1 производства с обрабатываемой глины, Мавзолей Галикарнаса — +2 золота.",
-        "tag": "ОБНОВЛЕНИЕ"
+        "tag": "ОБНОВЛЕНИЕ",
+        "titleEn": "Nova 2.0 — maps and resources (1/2)",
+        "bodyEn": "• Nova Tournament Pangaea generates fewer scattered forests. Outside starting areas, roughly a third of eligible ordinary forest tiles become conifer forests, oak groves or birch woods. All three grant +1 Food and +1 Production and can be chopped or improved with a Lumber Mill. Updated intact and ruined Lumber Mill textures and restored the Barringer Crater terrain.\n• Bamboo appears on Grassland. A working Plantation grants +10% surplus Food toward growth.\n• Flax appears on Plains. A working Plantation grants +10% Culture and +1 Gold on its tile. A Market adds another +1 Gold there.\n• Mussels appear in coastal waters and grant +1 Production. Fishing Boats add +1 Production, and a Lighthouse adds +1 Food and +1 Production. Mussels have a raft model and animation.\n• Clay appears on open riverside Grassland and Plains and on Grassland Marshes. A Quarry adds +1 Production and preserves the Marsh. A Stone Works adds +1 Production from worked Clay, and the Mausoleum of Halicarnassus adds +2 Gold."
       },
       {
         "date": "2026-11-17T17:59:50+03:00",
         "title": "Nova 2.0 — карты и ресурсы (2/2)",
         "body": "• Овцебык появляется на ровной тундре и даёт +1 еды. Пастбище добавляет +1 производства, конюшня — ещё +1 производства. Овцебык выглядит как тёмная овца, со штатными анимациями выпаса и оформлением пастбища.\n• Кактусы сагуаро появляются на сухих ровных клетках голой пустыни, в первую очередь возле подходящих стартовых позиций. Целевая доля — около двух третей подходящих клеток. После расчистки с «Горным делом» остаются «Каменистые пески».\n• После «Государственной службы» болото даёт дополнительные +2 еды, +2 культуры и +2 веры. Плантации на шёлке и красителях теперь дают +1 еды вместо +1 золота и сохраняют +1 культуры.\n• Бразильский лагерь красного дерева можно строить в джунглях с бананами и другими ресурсами, ресурс сохраняется. Индонезийские мускатный орех, гвоздика и перец при импорте дают по 4 счастья. Собственные источники дают по 2.",
-        "tag": "ОБНОВЛЕНИЕ"
+        "tag": "ОБНОВЛЕНИЕ",
+        "titleEn": "Nova 2.0 — maps and resources (2/2)",
+        "bodyEn": "• Musk Ox appears on flat Tundra and grants +1 Food. A Pasture adds +1 Production and a Stable adds another +1. It uses a dark sheep model with the usual grazing animations and pasture graphics.\n• Saguaro Cacti appear on flat, bare Desert tiles, especially near suitable starts. The target is roughly two-thirds of eligible tiles. Clearing them with Mining leaves Rocky Sands.\n• After Civil Service, Marshes gain an extra +2 Food, +2 Culture and +2 Faith. Plantations on Silk and Dyes now grant +1 Food instead of +1 Gold and retain +1 Culture.\n• Brazilwood Camps can be built in resource-bearing Jungle, including Bananas, while preserving the resource. Imported Indonesian Nutmeg, Cloves and Pepper grant 4 Happiness each. Domestic sources grant 2 each."
       },
       {
         "date": "2026-11-02T00:00:00+00:00",
@@ -28522,7 +28570,9 @@
         "tag": "ОБНОВЛЕНИЕ",
         "body": "«Укрепрайон» (Outworks) теперь даёт бонусы от оборонительных зданий только в первых пяти полученных городах и на клетках в радиусе одного тайла от них. Потеря одного из этих городов не передаёт бонус шестому. Уточнили описание политики.",
         "HasUsableUrl": false,
-        "IsUsable": true
+        "IsUsable": true,
+        "titleEn": "Nova 2.0.15 — Outworks",
+        "bodyEn": "Outworks now grants defensive building bonuses only in the first five cities you acquire, including tiles within one tile of each city. Losing one of those cities does not pass its bonus to your sixth city. The policy description now explains this limit."
       },
       {
         "date": "2026-11-26T18:39:24+03:00",
@@ -28530,7 +28580,9 @@
         "tag": "ОБНОВЛЕНИЕ",
         "body": "Ирокезы используют хвойные леса, дубравы и березняки для передвижения и соединения городов. Длинный дом даёт +1 производство с каждой такой обрабатываемой клетки, а мохоки получают в этих лесах +33% к атаке и защите. «Голос прибоя» даёт мидиям +1 культуру и +1 веру. «Бог моря» даёт +1 производство с рыбацких лодок на мидиях. Обновлены русские и английские подсказки пантеонов и карточка мидий. На быстрой скорости стоимость ядерной ракеты снижена с 1210 до 1000 производства.",
         "HasUsableUrl": false,
-        "IsUsable": true
+        "IsUsable": true,
+        "titleEn": "Nova 2.0.14 — patch notes",
+        "bodyEn": "The Iroquois can use conifer forests, oak groves and birch woods for movement and city connections. Longhouses grant +1 Production per worked tile of these types, and Mohawk Warriors gain +33% attack and defense in them. Voice of the Surf grants Mussels +1 Culture and +1 Faith. God of the Sea grants +1 Production from Fishing Boats on Mussels. Updated both language versions of the pantheon tooltips and Mussels entry. On Quick speed, Nuclear Missiles now cost 1,000 Production, down from 1,210."
       },
       {
         "date": "2026-11-25T23:28:51+03:00",
@@ -28538,7 +28590,9 @@
         "tag": "ОБНОВЛЕНИЕ",
         "body": "Если в сетевой партии у игрока пропала связь, его цивилизация остаётся за ним. ИИ не перехватывает управление, а игрок может перезайти за свою цивилизацию. После голосования за исключение хост может подтвердить или отменить кик.",
         "HasUsableUrl": false,
-        "IsUsable": true
+        "IsUsable": true,
+        "titleEn": "Nova 2.0.13 — multiplayer reconnects",
+        "bodyEn": "When a player disconnects, their civilization stays reserved for them. The AI does not take over, and the player can rejoin as the same civilization. After a vote to kick a player, the host can confirm or cancel the kick."
       },
       {
         "date": "2026-11-24T17:41:14+03:00",
@@ -28546,7 +28600,9 @@
         "tag": "ОБНОВЛЕНИЕ",
         "body": "В сетевой партии с включённым таймером первый ход длится 2 минуты, затем действует скорость из настроек лобби. Доходы клеток автоматически отображаются при старте и после ресинхронизации. Исправлены фон мультиплеера, центрирование меню и подсветка кнопок. Джизья даёт +3 веры от Великого храма и +1 очко великого торговца от Великого эмпория. При постройке суда в городе без религии появляется пантеон. Линейному кораблю Англии больше не нужно железо. Дорожные пантеоны действуют и в столице. Бог вина даёт веру вместо золота, а Scents of the East даёт производство и культуру с сахара, пряностей и благовоний.",
         "HasUsableUrl": false,
-        "IsUsable": true
+        "IsUsable": true,
+        "titleEn": "Nova 2.0.12 — patch notes",
+        "bodyEn": "With the multiplayer turn timer enabled, the opening turn lasts two minutes. Subsequent turns use the lobby setting. Tile yields appear at game start and after a resync. Fixed the multiplayer background, menu alignment and button highlighting. Jizya grants +3 Faith from the Grand Temple and +1 Great Merchant point from the Grand Emporium. Building a Courthouse establishes a pantheon in a city with no religion. England's Ship of the Line no longer requires Iron. Road pantheons also apply to the capital. God of Wine grants Faith instead of Gold. Scents of the East grants Production and Culture from Sugar, Spices and Incense."
       },
       {
         "date": "2026-11-23T01:09:22+03:00",
@@ -28554,7 +28610,9 @@
         "tag": "ОБНОВЛЕНИЕ",
         "body": "При знакомстве с городом-государством над юнитом, который его обнаружил, всплывает полученная сумма золота. Например, обычная награда — 30 золота за первое знакомство среди цивилизаций и 15 за последующее. У Конго, когда срабатывает бонус гонца маниконго, за монетами появляется зелёное «+5» с иконкой еды. Еду получает ближайший к этому городу-государству город Конго.",
         "HasUsableUrl": false,
-        "IsUsable": true
+        "IsUsable": true,
+        "titleEn": "Nova 2.0.11 — city-state meeting rewards",
+        "bodyEn": "When you meet a city-state, the Gold you receive floats up beside the unit that found it. A typical reward is 30 Gold if you are the first civilization to meet it and 15 Gold otherwise. When Kongo's messenger earns Food, a green +5 and a Food icon appear beside the Gold. The Food goes to the nearest Kongo city."
       },
       {
         "date": "2026-11-21T16:04:37+03:00",
@@ -28562,7 +28620,9 @@
         "tag": "ОБНОВЛЕНИЕ",
         "body": "Хост может менять таймер прямо во время сетевой партии. Нажмите Shift + левую кнопку мыши на кнопке таймера у мини-карты. Над списком игроков появится поле. Введите число и нажмите Enter. Новое значение действует для всех со следующего хода и сохраняется до следующего изменения. В относительном режиме, например, 70 означает 70% прибавки времени за города и юниты. В обычном режиме вводите секунды, в Pitboss — часы. В лобби это же поле открывается нажатием на строку «Таймер хода». Чтобы свернуть поле без изменений, нажмите на подпись рядом с числом.\n\n• Вавилон с уникальными стенами стреляет по варварам на две клетки. Для фрегата больше не требуется железо. Боевые корабли могут тренироваться на своей территории на быстрой скорости.\n• Смотровая башня видит на три клетки, а после открытия пороха — на четыре, в том числе за холмами и горами.\n• Исправлен двойной бонус науки от обсерватории на лесопилке в тундре. Новый захват с выбором марионетки больше не увеличивает стоимость технологий и институтов.\n• После переподключения обновляются значки доходов на карте. Экраны ожидания и банов в драфте получили римское оформление.",
         "HasUsableUrl": false,
-        "IsUsable": true
+        "IsUsable": true,
+        "titleEn": "Nova 2.0.9 — multiplayer timer and balance",
+        "bodyEn": "Hosts can change the timer during a match. Shift + left-click the timer by the minimap. Enter a number above the player list and press Enter. It applies to everyone from the next turn until changed again. In relative mode, 70 means 70% of the extra time for cities and units. In normal mode enter seconds, or hours in Pitboss. In the lobby, click the Turn Timer row to open the same field. Click the label beside the number to close it without changes.\n• Babylonian Walls give cities a two-tile range against barbarians. Frigates no longer require Iron. On Quick speed, naval combat units can train in friendly territory.\n• Watchtowers see three tiles, or four after Gunpowder, even across hills and mountains.\n• Fixed the double Observatory Science bonus on tundra Lumber Mills. Choosing to puppet a newly captured city no longer increases technology or policy costs.\n• Map yield icons refresh after reconnecting. The draft waiting and ban screens now use the lobby's Roman style."
       },
       {
         "date": "2026-11-20T18:35:01+03:00",
@@ -28580,7 +28640,9 @@
         "tag": "ОБНОВЛЕНИЕ",
         "body": "Римское оформление главного меню, Цивилопедии и экранов загрузки. Полноэкранное сетевое лобби и настройка партии. Экраны выбора цивилизации и одиночной игры отцентрированы.",
         "HasUsableUrl": false,
-        "IsUsable": true
+        "IsUsable": true,
+        "titleEn": "Nova 2.0.8 — Roman menus",
+        "bodyEn": "The main menu, Civilopedia and loading screens now use the Roman theme. The multiplayer lobby and setup screen fill the window. The civilization selection and single-player setup screens are centered."
       },
       {
         "date": "2026-11-20T16:07:27+03:00",
@@ -28588,7 +28650,9 @@
         "tag": "ОБНОВЛЕНИЕ",
         "body": "На экранах загрузки Конго и Флоренции появились подписи в честь первого сезона Nova. В правом нижнем углу экрана Конго указано сообщество, а на экране Флоренции — Coddys.",
         "HasUsableUrl": false,
-        "IsUsable": true
+        "IsUsable": true,
+        "titleEn": "Nova 2.0.7 — Season I credits",
+        "bodyEn": "Kongo and Florence now have Season I credits in the lower-right corner of their loading screens. Kongo credits the Nova community, and Florence credits Coddys."
       },
       {
         "date": "2026-11-02T00:00:00+00:00",
@@ -28864,10 +28928,10 @@
     "discord": "https://discord.gg/SxzjCCcQMJ"
   },
   "client": {
-    "version": "0.3.128",
-    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.128.zip",
-    "sha256": "d62cc10957e734471e925120436f26489cb91990ddbea727c253bb2c5009cf04",
-    "size": 65053647,
+    "version": "0.3.129",
+    "url": "https://github.com/Coddysmon/TournamentModPack/releases/download/cas10/nova-client-0.3.129.zip",
+    "sha256": "486c7e9a316e72d149181290e06a1ae0c035a2dbc896d8b1754fda2ccfe7995e",
+    "size": 65053925,
     "IsUsable": true
   }
 }
