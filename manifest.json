@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "releaseName": "NOVA 2.0",
-  "packageVersion": "2.0.15",
+  "packageVersion": "2.0.16",
   "packageFolderName": "Nova",
-  "createdUtc": "2026-11-27T07:36:42.899783+00:00",
+  "createdUtc": "2026-11-28T14:11:12.906976+00:00",
   "hashAlgorithm": "SHA256",
   "content": {
     "baseUrl": "relay://109.73.196.175:443/blobs/",
@@ -21526,8 +21526,8 @@
         },
         {
           "path": "Override/CIV5Units.xml",
-          "size": 13530909,
-          "hash": "dc5a2af388efa10a26af9974b7aab1587e4638156dd113b81a8b7dc92b5ba7ff"
+          "size": 13533998,
+          "hash": "14e35c9c8c32408f85e29d3f15f41729590b2a9a4caebee8d34b918903366e69"
         },
         {
           "path": "Override/CIV5Units_Babylon.xml",
@@ -21566,8 +21566,8 @@
         },
         {
           "path": "Override/CIV5Units_Mongol.xml",
-          "size": 10114980,
-          "hash": "2722e01a25a3890f894e9dfecd274acde6bbc1c8a1acccff5e2b00c933b191fa"
+          "size": 10115557,
+          "hash": "aa652a18b2ee5f6a857ea71096b06841cffd27735195f704b6938753015e01b6"
         },
         {
           "path": "Override/CIV5Units_Mongol.xmlmerchant_icon_fix",
@@ -21997,7 +21997,7 @@
         {
           "path": "PATCH_VERSION.txt",
           "size": 8,
-          "hash": "d1f7f8fbfd37fc1ac57eb1e204078ad4b1fba7656587845989af95c2263964cb"
+          "hash": "ff5718d8c8e373e0eaeae7ebcfe791ba3ce41675d2a6d3898a4c5f8d07a7a0af"
         },
         {
           "path": "SkinShots/10TP.png",
@@ -25466,8 +25466,8 @@
         },
         {
           "path": "tmp/eui/SocialPolicyPopup.lua",
-          "size": 56608,
-          "hash": "2a9b9ca0b7bc3bab20578c8d020ae37e9f9dc8ed4529d473616bac5b27110413"
+          "size": 56795,
+          "hash": "d0d5ea3c2a3cd85172fc1f385928d21091fd345c3fe20fcb9ffa4d557bd9d0b6"
         },
         {
           "path": "tmp/eui/TechButtonInclude.lua",
@@ -26306,13 +26306,13 @@
         },
         {
           "path": "tmp/ui/SocialPolicyPopup.lua",
-          "size": 66914,
-          "hash": "e3ab58dcb794527c41585741a996472d8757adff0e8f943b357886bed3aaf013"
+          "size": 67101,
+          "hash": "b3f9a98b14d36df37f71d212f5cf9888b68b1de16bd85a9d864e7b07e97aa5ce"
         },
         {
           "path": "tmp/ui/SocialPolicyPopup.xml",
-          "size": 58814,
-          "hash": "98c0138b46b58447796cbbaa0528b6ceb945abca278f4f9d7459dad51265bb3f"
+          "size": 59004,
+          "hash": "9c51dc59452fe6d33cf66ec080a834a168c50db38e5df3f62fea06f01de85b71"
         },
         {
           "path": "tmp/ui/StagingRoom.lua",
@@ -28120,6 +28120,12 @@
   },
   "news": {
     "entries": [
+      {
+        "date": "2026-11-28T14:11:12.906976+00:00",
+        "title": "Nova 2.0.16 — пантеоны и окно идеологий",
+        "body": "Добавлен пантеон «Дары засушливых земель»: +1 еда и +1 вера на клетках с пшеницей и кактусом. Пшеница убрана из пантеона «Бог Солнца».\n\nИсправления:\n• Добавлены значки банана, пшеницы и кактуса в описаниях пантеонов.\n• В выборе идеологических институтов добавлена прокрутка: длинные списки и описания больше не выходят за рамку окна. Исправление включено для обычного интерфейса и EUI.",
+        "tag": "ОБНОВЛЕНИЕ"
+      },
       {
         "date": "2026-11-27T10:36:42+03:00",
         "title": "Nova 2.0.15 — обновление",
